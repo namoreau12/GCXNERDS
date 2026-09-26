@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saved Posts | Games Cards Exchange</title>
+    <meta name="description" content="Review saved GCX community posts about games, cards, streamer campaigns, trade ideas, and events." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header has-mobile-nav">
+      <a class="brand" href="index.html" aria-label="Games Cards Exchange home">
+        <span class="brand-mark">GCX</span>
+        <span>Games Cards Exchange</span>
+      </a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="news.html">News</a>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Games</button>
+          <div class="nav-dropdown">
+            <a href="games.html">Game Database</a>
+            <a href="consoles.html">Console Database</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Cards</button>
+          <div class="nav-dropdown">
+            <a href="pokemon.html">Pokemon Cards</a>
+            <a href="magic.html">Magic Cards</a>
+            <a href="yugioh.html">Yu-Gi-Oh! Cards</a>
+            <a href="index.html#cards">Marketplace Beta</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Community</button>
+          <div class="nav-dropdown">
+            <a href="community.html">Community Feed</a>
+            <a href="community-members.html">Members</a>
+            <a href="community-groups.html">Groups</a>
+            <a href="community-events.html">Events</a>
+            <a href="streamers.html">Streamer Highlights</a>
+          </div>
+        </div>
+        <a href="search.html">Search</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search" role="search" action="search.html" method="get">
+          <label class="sr-only" for="site-search">Search GCX</label>
+          <input id="site-search" name="q" type="search" placeholder="Search games, cards, news" />
+        </form>
+        <a class="account-link" href="auth.html">Sign In</a>
+      </div>
+    </header>
+
+    <main class="community-page">
+      <section class="community-hero">
+        <div>
+          <p class="kicker">Saved Posts</p>
+          <h1>Keep trade ideas, replay picks, creator pushes, and collection posts within reach.</h1>
+          <p>Saved posts become each member's personal shortlist for cards to revisit, games to research, creators to support, and conversations worth joining later.</p>
+        </div>
+        <div class="community-stats" aria-label="Saved post stats">
+          <div><strong id="saved-total-count">0</strong><span>saved posts</span></div>
+          <div><strong id="saved-category-count">0</strong><span>categories</span></div>
+          <div><strong id="saved-profile-label">GCX</strong><span>active member</span></div>
+        </div>
+      </section>
+
+      <section class="saved-layout">
+        <aside class="community-panel saved-sidebar">
+          <div class="section-heading">
+            <p class="kicker">Member</p>
+            <h2>Saved By</h2>
+          </div>
+          <label>
+            Active profile
+            <select id="saved-viewer"></select>
+          </label>
+          <a class="button secondary" href="community.html">Open feed</a>
+          <a class="button secondary" href="community-activity.html">Open activity</a>
+        </aside>
+
+        <section class="community-panel saved-main-panel">
+          <div class="section-heading">
+            <p class="kicker">Collection</p>
+            <h2>Saved Community Posts</h2>
+          </div>
+          <div id="saved-post-list" class="saved-post-list"></div>
+        </section>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <p><strong>Games Cards Exchange</strong></p>
+        <p>Games, cards, movies, streaming, reviews, guides, and collector-first marketplace tools.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="trust.html">Trust</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="about.html">About</a>
+        <a href="trust.html#editorial">Editorial Standards</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="marketplace-rules.html">Marketplace Rules</a>
+        <a href="contact.html">Contact</a>
+        <a href="news.html">Newsroom</a>
+      </nav>
+    </footer>
+    <script src="site.js?v=20260906"></script>
+    <script src="community-saved.js"></script>
+    <script src="community-badge.js"></script>
+  </body>
+</html>

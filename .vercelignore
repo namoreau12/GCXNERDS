@@ -1,0 +1,17 @@
+.env
+.env.*
+.cache/
+node_modules/
+*.zip
+*.log
+internal/
+data/launch-readiness/*.tmp
+
+# Large local datasets are served from Supabase in production.
+data/games/
+data/pokemon/cards.json
+data/pokemon/cards-by-set/
+data/magic/cards-search.json
+data/magic/cards-by-set/
+data/yugioh/cards-search.json
+data/yugioh/cards-by-set/

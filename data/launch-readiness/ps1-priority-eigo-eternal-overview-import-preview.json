@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-08-23T17:58:53.107Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-eigo-eternal-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 25
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-eigo-no-tetsujin-center-shiken-trial",
+      "title": "Eigo no Tetsujin: Center Shiken Trial",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-eikan-wa-kimi-ni-4",
+      "title": "Eikan wa Kimi ni 4",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-eikou-no-st-andrews",
+      "title": "Eikou no St Andrews",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-eisei-meijin",
+      "title": "Eisei Meijin",
+      "reviewer": "codex",
+      "sourceUrl": "https://psxdatacenter.com/games/J/E/SLPS-00090.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-eisei-meijin-ii",
+      "title": "Eisei Meijin II",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-eisei-meijin-iii",
+      "title": "Eisei Meijin III",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-eithea",
+      "title": "Eithéa",
+      "reviewer": "codex",
+      "sourceUrl": "https://psxdatacenter.com/games/J/E/SLPS-03141.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-eko-no-kids-taga-tame-hi-kane-ha-naru",
+      "title": "Eko no Kids: Taga Tame Hi Kane Ha Naru",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-elan",
+      "title": "Elan",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-elan-plus",
+      "title": "Elan Plus",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-eldergate",
+      "title": "Eldergate",
+      "reviewer": "codex",
+      "sourceUrl": "https://psxdatacenter.com/games/J/E/SLPM-86494.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-elemental-pinball",
+      "title": "Elemental Pinball",
+      "reviewer": "codex",
+      "sourceUrl": "https://psxdatacenter.com/games/P/E/SLES-04038.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-elf-o-karu-monotachi",
+      "title": "Elf o Karu Monotachi",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Those_Who_Hunt_Elves"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-elf-o-karu-monotachi-ii",
+      "title": "Elf o Karu Monotachi II",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Those_Who_Hunt_Elves"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-elf-o-karu-monotachi-hanafuda-hen",
+      "title": "Elf o Karu Monotachi: Hanafuda Hen",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Those_Who_Hunt_Elves"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-elfin-paradise",
+      "title": "Elfin Paradise",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-emit-value-set",
+      "title": "EMIT Value Set",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-emmyrea",
+      "title": "Emmyrea",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-end-sector",
+      "title": "End Sector",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-endless-season-anoko-doko-noko",
+      "title": "Endless Season: Anoko Doko Noko",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-enen-angel",
+      "title": "Enen Angel",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-engacho",
+      "title": "Engacho!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-eos-edge-of-skyhigh",
+      "title": "EOS: Edge of Skyhigh",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-equestrian-showcase",
+      "title": "Equestrian Showcase",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-eternal-melody",
+      "title": "Eternal Melody",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

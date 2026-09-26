@@ -1,0 +1,158 @@
+{
+  "generatedAt": "2026-08-25T00:16:47.307Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps4-priority-funtime-accolade-reviewed-overviews-2026-08-24.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps4",
+      "updated": 20,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps4",
+      "gameId": "ps4-funtime",
+      "title": "#Funtime",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-killallzombies",
+      "title": "#killallzombies",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-2urvive",
+      "title": "2urvive",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-3-c-sand-puzzle",
+      "title": "3 °C Sand Puzzle",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-3d-billiards",
+      "title": "3D Billiards",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-3d-minigolf",
+      "title": "3D MiniGolf",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-5-star-wrestling-regenesis",
+      "title": "5 Star Wrestling: ReGenesis",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/5_Star_Wrestling:_ReGenesis"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-7th-sector",
+      "title": "7th Sector",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-8-to-glory",
+      "title": "8 to Glory",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-9-nine",
+      "title": "9 -Nine-",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-9th-dawn-iii",
+      "title": "9th Dawn III",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-20-bunnies",
+      "title": "20 Bunnies",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-39-days-to-mars",
+      "title": "39 Days to Mars",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-a-certain-magical-virtual-on",
+      "title": "A Certain Magical Virtual-On",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/A_Certain_Magical_Virtual-On"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-a-healer-only-lives-twice",
+      "title": "A Healer Only Lives Twice",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-a-hole-new-world",
+      "title": "A Hole New World",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-a-train-express",
+      "title": "A-Train Express",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/A-Train_Express"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-aaru-s-awakening",
+      "title": "Aaru's Awakening",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-abyss-the-wraiths-of-eden",
+      "title": "Abyss: The Wraiths of Eden",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-accolade-sports-collection",
+      "title": "Accolade Sports Collection",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Accolade_games"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-08-23T16:19:54.047Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-sports-puzzle-import-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 12
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-big-ol-bass-2",
+      "title": "Big Ol' Bass 2",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Big_Ol%27_Bass_2&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-big-strike-bowling",
+      "title": "Big Strike Bowling",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Big_Strike_Bowling&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-billiards",
+      "title": "Billiards",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Billiards_(video_game)&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-bishi-bashi-special-3-step-champ",
+      "title": "Bishi Bashi Special 3: Step Champ",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Bishi_Bashi_Special_3:_Step_Champ&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-black-bass-with-blue-marlin",
+      "title": "Black Bass with Blue Marlin",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Black_Bass_with_Blue_Marlin&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-black-matrix-cross",
+      "title": "Black/Matrix Cross",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Black/Matrix_Cross&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-blademaker",
+      "title": "BladeMaker",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=BladeMaker&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-blaze-and-blade-busters",
+      "title": "Blaze and Blade Busters",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Blaze_and_Blade_Busters&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-blend-x-brand",
+      "title": "Blend X Brand",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Blend_X_Brand&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-block-and-switch",
+      "title": "Block & Switch",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Block_%26_Switch&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-block-kuzushi-kowashite-help",
+      "title": "Block Kuzushi Kowashite Help!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-block-kuzushi-deden-no-gyakushuu",
+      "title": "Block Kuzushi: Deden no Gyakushuu",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

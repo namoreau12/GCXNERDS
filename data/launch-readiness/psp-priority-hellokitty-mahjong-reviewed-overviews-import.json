@@ -1,0 +1,158 @@
+{
+  "generatedAt": "2026-08-29T15:15:39.225Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\psp-priority-hellokitty-mahjong-reviewed-overviews-2026-08-29.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "psp",
+      "updated": 20,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "psp",
+      "gameId": "psp-hello-kitty-puzzle-party",
+      "title": "Hello Kitty: Puzzle Party",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-hentai-ouji-to-warawanai-neko",
+      "title": "Hentai Ouji to Warawanai Neko.",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hentai_Ouji_to_Warawanai_Neko."
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-heroes-phantasia",
+      "title": "Heroes Phantasia",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-heroes-vs",
+      "title": "Heroes' VS",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Heroes%27_VS"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-higurashi-daybreak-portable",
+      "title": "Higurashi Daybreak Portable",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Higurashi_Daybreak#Higurashi_Daybreak_Portable"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-higurashi-daybreak-portable-mega-edition",
+      "title": "Higurashi Daybreak Portable Mega Edition",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Higurashi_Daybreak#Higurashi_Daybreak_Portable"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-higurashi-no-naku-koro-ni-jan",
+      "title": "Higurashi no Naku Koro ni Jan",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-hiiro-no-kakera-portable",
+      "title": "Hiiro no Kakera Portable",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-hiiro-no-kakera-shin-tamayori-hime-denshou-portable",
+      "title": "Hiiro no Kakera: Shin Tamayori Hime Denshou Portable",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-hiiro-no-kakera-shin-tamayorihime-denshou-piece-of-future",
+      "title": "Hiiro no Kakera: Shin Tamayorihime Denshou - Piece of Future",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-himawari-no-kyoukai-to-nagai-natsuyasumi-extra-vacation",
+      "title": "Himawari no Kyoukai to Nagai Natsuyasumi: Extra Vacation",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-himawari-pebble-in-the-sky-portable",
+      "title": "Himawari: Pebble in the Sky Portable",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-himehibi-new-princess-days-zoku-ni-gakku-portable",
+      "title": "Himehibi: New Princess Days!! Zoku! Ni-Gakku Portable",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-himehibi-princess-days-portable",
+      "title": "Himehibi: Princess Days Portable",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-hisshou-pachinko-pachi-slot-kouryaku-series-portable-vol-1-shinseiki-evangelion-tamashii-no-kiseki",
+      "title": "Hisshou Pachinko * Pachi-Slot Kouryaku Series Portable Vol. 1: Shinseiki Evangelion Tamashii no Kiseki",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-hisshou-pachinko-pachi-slot-kouryaku-series-portable-vol-2-cr-evangelion-hajimari-no-fukuin",
+      "title": "Hisshou Pachinko * Pachi-Slot Kouryaku Series Portable Vol. 2: CR Evangelion - Hajimari no Fukuin",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-hitsuji-kunnara-kiss-shite-ageru",
+      "title": "Hitsuji Kunnara Kiss Shite Ageru *",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-hiyoko-kantei",
+      "title": "Hiyoko Kantei",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-hokuto-no-ken-raoh-gaiden-ten-no-haoh",
+      "title": "Hokuto no Ken: Raoh Gaiden - Ten no Haoh",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-honkaku-yonin-uchi-pro-mahjong-mahjong-ou-portable",
+      "title": "Honkaku Yonin-uchi Pro Mahjong: Mahjong-Ou Portable",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_Portable_games"
+    }
+  ]
+}

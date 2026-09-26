@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-08-25T17:14:45.916Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-mutsuzaki-natsuyume-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 10,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mutsuzaki-hoshi-kikari",
+      "title": "Mutsuzaki Hoshi Kikari",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-66359.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mystereet",
+      "title": "Mystereet",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-66415.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mystic-nights",
+      "title": "Mystic Nights",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://jeremydecola.github.io/Mystic-Nights-Archive/"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-nadepro-kisama-mo-seiyu-yattemiro",
+      "title": "NadePro!! Kisama mo Seiyu Yattemiro!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://tcrf.net/NadePro%21%21_Kisama_mo_Seiyuu_Yattemiro%21"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-nana",
+      "title": "Nana",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.imdb.com/title/tt36348024/"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-nankuro",
+      "title": "Nankuro",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/games/details/402326-superlite-2000-vol-9-numcro"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-naraku-no-shiro",
+      "title": "Naraku no Shiro",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPS-25848.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-national-geographic-safari-adventures-africa",
+      "title": "National Geographic: Safari Adventures Africa",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://wiki.pcsx2.net/National_Geographic:_Safari_Adventures_Africa"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-natsu-shoujo-promised-summer",
+      "title": "Natsu Shoujo: Promised Summer",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-65634.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-natsu-yume-ya-wa",
+      "title": "Natsu Yume Ya Wa",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-66383.html"
+    }
+  ]
+}

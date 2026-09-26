@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-08-23T16:17:11.187Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-obscure-sports-racing-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 12
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-autobahn-raser-ii",
+      "title": "Autobahn Raser II",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Autobahn_Raser_II&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-baby-felix-tennis",
+      "title": "Baby Felix Tennis",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Baby_Felix_Tennis&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-backguiner-yomigaeru-yuushatachi-guiner-tenshou",
+      "title": "Backguiner ~Yomigaeru Yuushatachi~ \"Guiner Tenshou\"",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Backguiner_~Yomigaeru_Yuushatachi~_%22Guiner_Tenshou%22&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-backguiner-act-2-yomigaeru-yuushatachi-hishou-hen-uragiri-no-senjou",
+      "title": "Backguiner ACT-2 ~Yomigaeru Yuushatachi~ Hishou Hen \"Uragiri no Senjou\"",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Backguiner_ACT-2_~Yomigaeru_Yuushatachi~_Hishou_Hen_%22Uragiri_no_Senjou%22&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-bakusou-dekotora-densetsu-2-otoko-jinsei-yume-ichiro",
+      "title": "Bakusou Dekotora Densetsu 2: Otoko Jinsei Yume Ichiro",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Bakusou_Dekotora_Densetsu_2:_Otoko_Jinsei_Yume_Ichiro&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-bakusou-dekotora-densetsu-otoko-ippiki-yume-kaidoi",
+      "title": "Bakusou Dekotora Densetsu: Otoko Ippiki Yume Kaidoi",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Bakusou_Dekotora_Densetsu:_Otoko_Ippiki_Yume_Kaidoi&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-barbie-gotta-have-games",
+      "title": "Barbie: Gotta Have Games",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Barbie:_Gotta_Have_Games&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-bear-in-the-big-blue-house",
+      "title": "Bear in the Big Blue House",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Bear_in_the_Big_Blue_House_(video_game)&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-beat-planet-music",
+      "title": "Beat Planet Music",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Beat_Planet_Music&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-big-bass-fishing",
+      "title": "Big Bass Fishing",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Big_Bass_Fishing&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-big-bass-world-championship",
+      "title": "Big Bass World Championship",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Big_Bass_World_Championship&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-big-league-slugger-baseball",
+      "title": "Big League Slugger Baseball",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Big_League_Slugger_Baseball&action=edit&redlink=1"
+    }
+  ]
+}

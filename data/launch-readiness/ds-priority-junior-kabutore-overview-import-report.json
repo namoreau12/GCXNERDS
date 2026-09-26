@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-25T11:34:34.055Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ds-priority-junior-kabutore-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ds",
+      "updated": 15,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ds",
+      "gameId": "ds-junior-brain-trainer-math-edition",
+      "title": "Junior Brain Trainer: Math Edition",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.esrb.org/ratings/29953/junior-brain-trainer-math-edition/"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-junior-classic-games",
+      "title": "Junior Classic Games",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.vgchartz.com/game/36929/junior-classic-games/"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-junior-island-adventure",
+      "title": "Junior Island Adventure",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.pricecharting.com/game/nintendo-ds/junior-island-adventure"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-junior-mystery-quest",
+      "title": "Junior Mystery Quest",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.esrb.org/ratings/31036/junior-mystery-quest/"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-just-sing",
+      "title": "Just Sing!",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.bol.com/nl/nl/p/just-sing-nds/1004004011242254/"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-just-sing-2",
+      "title": "Just Sing! 2",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://worthplaying.com/article/2012/1/10/news/84694-just-sing-vol-2-nds-full-tracklist-unveiled/"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-just-sing-3",
+      "title": "Just Sing! 3",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://engine-software.com/?page_id=184"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-juushin-embu-ds",
+      "title": "Juushin Embu DS",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hero_Tales"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-juushinden-ultimate-beast-battlers",
+      "title": "Juushinden: Ultimate Beast Battlers",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://shonumi.github.io/articles/art23.html"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-k-1-world-gp",
+      "title": "K-1 World GP",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_%28J%E2%80%93P%29"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-k3-en-de-vrolijke-noten",
+      "title": "K3 en de vrolijke noten",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.bol.com/nl/nl/p/k3-de-vrolijke-noten/1004004010722699/"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-k3-en-het-ijsprinsesje",
+      "title": "K3 en het Ijsprinsesje",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.mariods.nl/nintendo-ds-spel-info.php?Nintendo=K3_en_het_IJsprinsesje"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-k3-fashion-party",
+      "title": "K3 Fashion Party",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.mariods.nl/en/Nintendo-DS-game-information.php?Nintendo=K3_Fashion_Party"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-k3-karaoke",
+      "title": "K3 Karaoke",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.pricecharting.com/game/pal-nintendo-ds/k3-karaoke"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-k11-kommissare-im-einsatz",
+      "title": "K11: Kommissare im Einsatz",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://usk.de/usktitle/27011/"
+    }
+  ]
+}

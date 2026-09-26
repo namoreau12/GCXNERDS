@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: games-cards-exchange
+    runtime: node
+    plan: starter
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GCX_SITE_URL
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_AUTH_ENABLED
+        value: "true"
+      - key: GCX_ADMIN_EMAILS
+        sync: false
+      - key: POKEMON_TCG_API_KEY
+        sync: false
+      - key: POKEMON_CACHE_TTL_MS
+        value: "43200000"
+      - key: NEWS_CACHE_TTL_MS
+        value: "1200000"

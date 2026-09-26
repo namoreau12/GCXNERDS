@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "generatedAt": "2026-08-25T18:54:54.470Z",
+  "changedStringCount": 2,
+  "changes": [
+    {
+      "path": "4.body.15",
+      "before": "One Pikachu per regular booster is the confirmed mechanic. Specific illustration odds are still unknown, so This guide does not publish a clean \"1-in-30\" claim for any particular design unless Pokémon or reliable post-release data supports it.",
+      "after": "One Pikachu per regular booster is the confirmed mechanic. Specific illustration odds are still unknown, so this guide does not publish a clean \"1-in-30\" claim for any particular design unless Pokémon or reliable post-release data supports it."
+    },
+    {
+      "path": "5.media.2.caption",
+      "before": "After Opening Night Live, this watchlist will receive one approved visual per top entry where possible, plus official trailer embeds for the three to five biggest reveals. Until then, Rumor or placeholder coverage is not presented as confirmed media.",
+      "after": "After Opening Night Live, this watchlist will receive one approved visual per top entry where possible, plus official trailer embeds for the three to five biggest reveals. Until then, rumor or placeholder coverage is not presented as confirmed media."
+    }
+  ],
+  "truncatedChanges": 0
+}

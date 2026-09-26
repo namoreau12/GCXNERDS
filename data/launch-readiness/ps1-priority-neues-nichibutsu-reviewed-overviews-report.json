@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-08-25T16:12:21.908Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-neues-nichibutsu-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 10,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-neues",
+      "title": "Neues",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-02871.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nfl-gameday-2003",
+      "title": "NFL GameDay 2003",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NFL_GameDay_(video_game_series)#NFL_GameDay_2003"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nfl-gameday-2004",
+      "title": "NFL GameDay 2004",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://game-rave.com/?p=11465"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nfl-gameday-2005",
+      "title": "NFL GameDay 2005",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/U/N/SCUS-94695.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nhl-open-ice-2-on-2-challenge",
+      "title": "NHL Open Ice: 2 on 2 Challenge",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NHL_Open_Ice"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nhl-powerplay-98",
+      "title": "NHL PowerPlay 98",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://game-rave.com/?p=9519"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nhl-rock-the-rink",
+      "title": "NHL Rock the Rink",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NHL_Rock_the_Rink"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nibiiro-no-koubou-32-nin-no-sensha-chou",
+      "title": "Nibiiro no Koubou: 32-nin no Sensha Chou",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-00721.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nice-cats",
+      "title": "Nice Cats",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/P/N/SLES-02960.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nichibutsu-mahjong-joshikou-meijinsen",
+      "title": "Nichibutsu Mahjong: Joshikou Meijinsen",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-00038.html"
+    }
+  ]
+}

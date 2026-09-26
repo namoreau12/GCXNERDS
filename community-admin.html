@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Community Moderation | Games Cards Exchange</title>
+    <meta
+      name="description"
+      content="Review reported GCX community posts, comments, and streamer nominations."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header has-mobile-nav">
+      <a class="brand" href="index.html" aria-label="Games Cards Exchange home">
+        <span class="brand-mark">GCX</span>
+        <span>Games Cards Exchange</span>
+      </a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="news.html">News</a>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Games</button>
+          <div class="nav-dropdown">
+            <a href="games.html">Game Database</a>
+            <a href="consoles.html">Console Database</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Cards</button>
+          <div class="nav-dropdown">
+            <a href="pokemon.html">Pokemon Cards</a>
+            <a href="magic.html">Magic Cards</a>
+            <a href="yugioh.html">Yu-Gi-Oh! Cards</a>
+            <a href="index.html#cards">Marketplace Beta</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Community</button>
+          <div class="nav-dropdown">
+            <a href="community.html">Community Feed</a>
+            <a href="community-members.html">Members</a>
+            <a href="community-groups.html">Groups</a>
+            <a href="community-events.html">Events</a>
+            <a href="streamers.html">Streamer Highlights</a>
+          </div>
+        </div>
+        <a href="search.html">Search</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search" role="search" action="search.html" method="get">
+          <label class="sr-only" for="site-search">Search GCX</label>
+          <input id="site-search" name="q" type="search" placeholder="Search games, cards, news" />
+        </form>
+        <a class="account-link" href="auth.html">Sign In</a>
+      </div>
+    </header>
+
+    <main class="community-page">
+      <section class="community-hero">
+        <div>
+          <p class="kicker">Moderation</p>
+          <h1>Keep the community useful before it gets noisy.</h1>
+          <p>
+            Staff-only tools for reviewing reported posts, comments, streamer nominations, and weekly creator closeouts before the community scales.
+          </p>
+          <a class="feed-link" href="docs/moderation-operations-readiness.md">Open moderation readiness checklist</a>
+        </div>
+        <a class="button" href="community.html">Back to feed</a>
+      </section>
+
+      <section id="moderation-summary" class="moderation-summary" aria-live="polite">
+        <article>
+          <span>Access</span>
+          <strong>Checking</strong>
+          <p>Confirming staff session.</p>
+        </article>
+      </section>
+
+      <section class="moderation-grid">
+        <article class="moderation-panel">
+          <div class="section-heading">
+            <p class="kicker">Weekly Ops</p>
+            <h2>Streamer Closeout</h2>
+          </div>
+          <div id="streamer-closeout-summary" class="moderation-list"></div>
+          <form id="streamer-closeout-form" class="community-form">
+            <label>
+              Archive week
+              <input name="weekLabel" type="text" placeholder="Current campaign week" />
+            </label>
+            <label>
+              Next week label
+              <input name="nextWeekLabel" type="text" placeholder="Next voting week" />
+            </label>
+            <label>
+              Archive note
+              <textarea name="summary" rows="4" placeholder="Short recap for the spotlight archive"></textarea>
+            </label>
+            <button class="button" type="submit">Close streamer week</button>
+            <p id="streamer-closeout-status" class="form-status" role="status"></p>
+          </form>
+        </article>
+
+        <article class="moderation-panel">
+          <div class="section-heading">
+            <p class="kicker">Reports</p>
+            <h2>Posts</h2>
+          </div>
+          <div id="moderation-posts" class="moderation-list"></div>
+        </article>
+
+        <article class="moderation-panel">
+          <div class="section-heading">
+            <p class="kicker">Reports</p>
+            <h2>Comments</h2>
+          </div>
+          <div id="moderation-comments" class="moderation-list"></div>
+        </article>
+
+        <article class="moderation-panel">
+          <div class="section-heading">
+            <p class="kicker">Creators</p>
+            <h2>Nominations</h2>
+          </div>
+          <div id="moderation-nominations" class="moderation-list"></div>
+        </article>
+
+        <article class="moderation-panel">
+          <div class="section-heading">
+            <p class="kicker">Sponsors</p>
+            <h2>Sponsor Leads</h2>
+          </div>
+          <div id="moderation-sponsor-leads" class="moderation-list"></div>
+        </article>
+
+        <article class="moderation-panel moderation-panel-wide">
+          <div class="section-heading">
+            <p class="kicker">Editorial Control</p>
+            <h2>GCX Social</h2>
+            <p>Hide duplicate/outdated posts, mark stale items for refresh, or pin a discussion candidate before it reaches the public feed.</p>
+          </div>
+          <form id="social-intake-form" class="community-form moderation-intake-form">
+            <div class="moderation-edit-grid">
+              <label>
+                Headline
+                <input name="title" type="text" maxlength="140" placeholder="Short Social headline" required />
+              </label>
+              <label>
+                Post type
+                <select name="postType">
+                  <option value="quick_news">Quick news</option>
+                  <option value="gcx_news_share">GCX news share</option>
+                  <option value="external_story_share">External story share</option>
+                  <option value="video_post">Video post</option>
+                  <option value="tcg_card_post">TCG/card post</option>
+                  <option value="community_prompt">Community prompt</option>
+                </select>
+              </label>
+              <label>
+                Category
+                <input name="category" type="text" maxlength="40" value="Gaming" />
+              </label>
+              <label>
+                Source name
+                <input name="sourceName" type="text" maxlength="120" placeholder="Official source or outlet" />
+              </label>
+              <label class="moderation-note-label-wide">
+                Source / target URL
+                <input name="linkUrl" type="url" placeholder="https://..." />
+              </label>
+              <label>
+                Topic / game
+                <input name="topic" type="text" maxlength="160" placeholder="Game, card set, event" />
+              </label>
+              <label class="moderation-note-label-wide">
+                GCX commentary
+                <textarea name="body" rows="4" maxlength="900" placeholder="Original GCX summary or discussion prompt" required></textarea>
+              </label>
+              <label>
+                Image URL
+                <input name="imageUrl" type="url" placeholder="Official media URL when allowed" />
+              </label>
+              <label>
+                Priority
+                <input name="editorialPriority" type="number" min="0" max="100" value="0" />
+              </label>
+            </div>
+            <button class="button" type="submit">Create Social review draft</button>
+            <p id="social-intake-status" class="form-status" role="status"></p>
+          </form>
+          <div id="social-editorial-tools" class="moderation-list"></div>
+        </article>
+
+        <article class="moderation-panel moderation-panel-wide">
+          <div class="section-heading">
+            <p class="kicker">Editorial Control</p>
+            <h2>Streaming Spotlight</h2>
+            <p>Choose the featured watch item and remove stale replays without pretending anything is live.</p>
+          </div>
+          <form id="streaming-intake-form" class="community-form moderation-intake-form">
+            <div class="moderation-edit-grid">
+              <label>
+                Stream/video title
+                <input name="title" type="text" maxlength="160" placeholder="Watch item title" required />
+              </label>
+              <label>
+                Platform
+                <input name="platform" type="text" maxlength="40" placeholder="YouTube, Twitch, official site" required />
+              </label>
+              <label>
+                Creator/channel
+                <input name="creator" type="text" maxlength="120" placeholder="Official channel or creator" required />
+              </label>
+              <label>
+                Game/category
+                <input name="game" type="text" maxlength="120" placeholder="Game, event, TCG" />
+              </label>
+              <label class="moderation-note-label-wide">
+                Watch URL
+                <input name="watch_url" type="url" placeholder="https://..." required />
+              </label>
+              <label>
+                Source
+                <input name="source" type="text" maxlength="140" placeholder="Official source" required />
+              </label>
+              <label>
+                Embed URL
+                <input name="embed_url" type="url" placeholder="Optional official embed URL" />
+              </label>
+              <label>
+                Thumbnail URL
+                <input name="thumbnail_url" type="url" placeholder="Optional official thumbnail" />
+              </label>
+              <label>
+                Scheduled start
+                <input name="scheduled_start" type="datetime-local" />
+              </label>
+              <label>
+                Priority
+                <input name="editorialPriority" type="number" min="0" max="100" value="0" />
+              </label>
+              <label class="moderation-note-label-wide">
+                GCX reason
+                <textarea name="editorial_reason" rows="4" maxlength="500" placeholder="Why this is worth watching"></textarea>
+              </label>
+            </div>
+            <button class="button" type="submit">Create Streaming review draft</button>
+            <p id="streaming-intake-status" class="form-status" role="status"></p>
+          </form>
+          <div id="streaming-editorial-tools" class="moderation-list"></div>
+        </article>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <p><strong>Games Cards Exchange</strong></p>
+        <p>Games, cards, movies, streaming, reviews, guides, and collector-first marketplace tools.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="trust.html">Trust</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="about.html">About</a>
+        <a href="trust.html#editorial">Editorial Standards</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="marketplace-rules.html">Marketplace Rules</a>
+        <a href="contact.html">Contact</a>
+        <a href="news.html">Newsroom</a>
+      </nav>
+    </footer>
+    <script src="site.js?v=20260906"></script>
+    <script src="community-admin.js"></script>
+    <script src="community-badge.js"></script>
+  </body>
+</html>

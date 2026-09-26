@@ -1,0 +1,180 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-26T00:46:05.955Z",
+  "platform": "ps2",
+  "baseUrl": "http://localhost:3060",
+  "checked": 10,
+  "failures": [],
+  "samples": [
+    {
+      "id": "ps2-summer",
+      "title": "_Summer",
+      "pageUrl": "http://localhost:3060/ps2-game.html?id=ps2-summer",
+      "imageUrl": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/_summer%20Double%20Sharp%20(Japan).png",
+      "ok": true,
+      "imageLoaded": true,
+      "matchingImage": {
+        "src": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/_summer%20Double%20Sharp%20(Japan).png",
+        "naturalWidth": 486,
+        "naturalHeight": 680,
+        "alt": "_Summer box art",
+        "complete": true
+      },
+      "hasHorizontalOverflow": false,
+      "consoleErrors": []
+    },
+    {
+      "id": "ps2-hack-g-u-vol-1-rebirth",
+      "title": ".hack//G.U.vol.1//Rebirth",
+      "pageUrl": "http://localhost:3060/ps2-game.html?id=ps2-hack-g-u-vol-1-rebirth",
+      "imageUrl": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dot%20Hack%20G.U.%20Vol.%201%20-%20Rebirth%20(USA).png",
+      "ok": true,
+      "imageLoaded": true,
+      "matchingImage": {
+        "src": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dot%20Hack%20G.U.%20Vol.%201%20-%20Rebirth%20(USA).png",
+        "naturalWidth": 512,
+        "naturalHeight": 735,
+        "alt": ".hack//G.U.vol.1//Rebirth box art",
+        "complete": true
+      },
+      "hasHorizontalOverflow": false,
+      "consoleErrors": []
+    },
+    {
+      "id": "ps2-hack-g-u-vol-2-reminisce",
+      "title": ".hack//G.U.vol.2//Reminisce",
+      "pageUrl": "http://localhost:3060/ps2-game.html?id=ps2-hack-g-u-vol-2-reminisce",
+      "imageUrl": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dot%20Hack%20G.U.%20Vol.%202%20-%20Reminisce%20(USA).png",
+      "ok": true,
+      "imageLoaded": true,
+      "matchingImage": {
+        "src": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dot%20Hack%20G.U.%20Vol.%202%20-%20Reminisce%20(USA).png",
+        "naturalWidth": 512,
+        "naturalHeight": 726,
+        "alt": ".hack//G.U.vol.2//Reminisce box art",
+        "complete": true
+      },
+      "hasHorizontalOverflow": false,
+      "consoleErrors": []
+    },
+    {
+      "id": "ps2-hack-g-u-vol-3-redemption",
+      "title": ".hack//G.U.vol.3//Redemption",
+      "pageUrl": "http://localhost:3060/ps2-game.html?id=ps2-hack-g-u-vol-3-redemption",
+      "imageUrl": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dot%20Hack%20G.U.%20Vol.%203%20-%20Redemption%20(USA).png",
+      "ok": true,
+      "imageLoaded": true,
+      "matchingImage": {
+        "src": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dot%20Hack%20G.U.%20Vol.%203%20-%20Redemption%20(USA).png",
+        "naturalWidth": 512,
+        "naturalHeight": 730,
+        "alt": ".hack//G.U.vol.3//Redemption box art",
+        "complete": true
+      },
+      "hasHorizontalOverflow": false,
+      "consoleErrors": []
+    },
+    {
+      "id": "ps2-hack-infection-part-1",
+      "title": ".hack//Infection Part 1",
+      "pageUrl": "http://localhost:3060/ps2-game.html?id=ps2-hack-infection-part-1",
+      "imageUrl": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dot%20Hack%20Part%201%20-%20Infection%20(USA).png",
+      "ok": true,
+      "imageLoaded": true,
+      "matchingImage": {
+        "src": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dot%20Hack%20Part%201%20-%20Infection%20(USA).png",
+        "naturalWidth": 512,
+        "naturalHeight": 726,
+        "alt": ".hack//Infection Part 1 box art",
+        "complete": true
+      },
+      "hasHorizontalOverflow": false,
+      "consoleErrors": []
+    },
+    {
+      "id": "ps2-hack-mutation-part-2",
+      "title": ".hack//Mutation Part 2",
+      "pageUrl": "http://localhost:3060/ps2-game.html?id=ps2-hack-mutation-part-2",
+      "imageUrl": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dot%20Hack%20Part%202%20-%20Mutation%20(USA).png",
+      "ok": true,
+      "imageLoaded": true,
+      "matchingImage": {
+        "src": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dot%20Hack%20Part%202%20-%20Mutation%20(USA).png",
+        "naturalWidth": 512,
+        "naturalHeight": 726,
+        "alt": ".hack//Mutation Part 2 box art",
+        "complete": true
+      },
+      "hasHorizontalOverflow": false,
+      "consoleErrors": []
+    },
+    {
+      "id": "ps2-hack-outbreak-part-3",
+      "title": ".hack//Outbreak Part 3",
+      "pageUrl": "http://localhost:3060/ps2-game.html?id=ps2-hack-outbreak-part-3",
+      "imageUrl": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dot%20Hack%20Part%203%20-%20Outbreak%20(USA).png",
+      "ok": true,
+      "imageLoaded": true,
+      "matchingImage": {
+        "src": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dot%20Hack%20Part%203%20-%20Outbreak%20(USA).png",
+        "naturalWidth": 512,
+        "naturalHeight": 726,
+        "alt": ".hack//Outbreak Part 3 box art",
+        "complete": true
+      },
+      "hasHorizontalOverflow": false,
+      "consoleErrors": []
+    },
+    {
+      "id": "ps2-hack-quarantine-part-4",
+      "title": ".hack//Quarantine Part 4",
+      "pageUrl": "http://localhost:3060/ps2-game.html?id=ps2-hack-quarantine-part-4",
+      "imageUrl": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dot%20Hack%20Part%204%20-%20Quarantine%20(USA).png",
+      "ok": true,
+      "imageLoaded": true,
+      "matchingImage": {
+        "src": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dot%20Hack%20Part%204%20-%20Quarantine%20(USA).png",
+        "naturalWidth": 512,
+        "naturalHeight": 726,
+        "alt": ".hack//Quarantine Part 4 box art",
+        "complete": true
+      },
+      "hasHorizontalOverflow": false,
+      "consoleErrors": []
+    },
+    {
+      "id": "ps2-2nd-super-robot-wars-alpha",
+      "title": "2nd Super Robot Wars Alpha",
+      "pageUrl": "http://localhost:3060/ps2-game.html?id=ps2-2nd-super-robot-wars-alpha",
+      "imageUrl": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dai-2-Ji%20Super%20Robot%20Taisen%20Alpha%20(Japan)%20(Genteiban%20Collection%20Figure%20Box).png",
+      "ok": true,
+      "imageLoaded": true,
+      "matchingImage": {
+        "src": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/Dai-2-Ji%20Super%20Robot%20Taisen%20Alpha%20(Japan)%20(Genteiban%20Collection%20Figure%20Box).png",
+        "naturalWidth": 486,
+        "naturalHeight": 680,
+        "alt": "2nd Super Robot Wars Alpha box art",
+        "complete": true
+      },
+      "hasHorizontalOverflow": false,
+      "consoleErrors": []
+    },
+    {
+      "id": "ps2-3-nen-b-gumi-kinpachi-sensei-densetsu-no-kyoudan-ni-tate",
+      "title": "3-Nen B-Gumi Kinpachi Sensei Densetsu no Kyoudan ni Tate!",
+      "pageUrl": "http://localhost:3060/ps2-game.html?id=ps2-3-nen-b-gumi-kinpachi-sensei-densetsu-no-kyoudan-ni-tate",
+      "imageUrl": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/3-nen%20B-gumi%20Kinpachi%20Sensei%20-%20Densetsu%20no%20Kyoudan%20ni%20Tate!%20(Japan).png",
+      "ok": true,
+      "imageLoaded": true,
+      "matchingImage": {
+        "src": "https://raw.githubusercontent.com/libretro-thumbnails/Sony_-_PlayStation_2/master/Named_Boxarts/3-nen%20B-gumi%20Kinpachi%20Sensei%20-%20Densetsu%20no%20Kyoudan%20ni%20Tate!%20(Japan).png",
+        "naturalWidth": 486,
+        "naturalHeight": 680,
+        "alt": "3-Nen B-Gumi Kinpachi Sensei Densetsu no Kyoudan ni Tate! box art",
+        "complete": true
+      },
+      "hasHorizontalOverflow": false,
+      "consoleErrors": []
+    }
+  ]
+}

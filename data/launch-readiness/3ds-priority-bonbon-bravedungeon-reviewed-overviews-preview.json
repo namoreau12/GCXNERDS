@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-08-25T15:29:40.110Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\3ds-priority-bonbon-bravedungeon-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "3ds",
+      "updated": 10,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bonbon-ribbon-tokimeki-coord-kirakira-dance",
+      "title": "Bonbon Ribbon: Tokimeki Coord Kirakira Dance",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/games/details/103590-bonbonribbon-tokimeki-coord-kirakira-dance"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bonds-of-the-skies",
+      "title": "Bonds of the Skies",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.kemco-games.com/global/pr/bos_3ds.html"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bookstores-everywhere",
+      "title": "Bookstores Everywhere",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendolife.com/news/2012/09/3ds_bookstore_anywhere_app_bringing_ebooks_to_japan"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bowling-bonanza-3d",
+      "title": "Bowling Bonanza 3D",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendo.com/en-gb/Games/Nintendo-3DS-games/Bowling-Bonanza-3D-688867.html"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-box-up",
+      "title": "Box Up",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendo.com/en-gb/Games/New-Nintendo-3DS-Download-Software/BOX-UP-1149774.html"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-boxboxboy",
+      "title": "BoxBoxBoy!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendo.com/en-gb/Games/Nintendo-3DS-download-software/BOXBOXBOY--1114172.html"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-boxzle",
+      "title": "Boxzle",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_3DS_games_(0%E2%80%93M)"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-brain-training-3d",
+      "title": "Brain Training 3D",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.amazon.co.uk/Funbox-Media-11084-Brain-Training/dp/B005BNQWH6"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-brave-company",
+      "title": "Brave Company",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://forums.consolewars.de/threads/brave-company-cattle-call-x-nbgi.48340/"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-brave-dungeon",
+      "title": "Brave Dungeon",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://videochums.com/review/brave-dungeon"
+    }
+  ]
+}

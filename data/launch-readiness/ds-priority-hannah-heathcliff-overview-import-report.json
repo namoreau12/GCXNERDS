@@ -1,0 +1,158 @@
+{
+  "generatedAt": "2026-08-25T00:02:05.979Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ds-priority-hannah-heathcliff-reviewed-overviews-2026-08-24.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ds",
+      "updated": 20,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ds",
+      "gameId": "ds-hannah-montana-the-movie",
+      "title": "Hannah Montana: The Movie",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hannah_Montana:_The_Movie_(video_game)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-hanshin-tigers-ds",
+      "title": "Hanshin Tigers DS",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-happy-bakery",
+      "title": "Happy Bakery",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-happy-cooking",
+      "title": "Happy Cooking",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-happy-happy-clover",
+      "title": "Happy Happy Clover",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Happy_Happy_Clover"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-happy-hippos-on-tour",
+      "title": "Happy Hippos On Tour",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-happy-my-sweets",
+      "title": "Happy My Sweets",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-harlem-globetrotters-world-tour",
+      "title": "Harlem Globetrotters: World Tour",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-harobots-action",
+      "title": "Harobots Action!",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-harukanaru-toki-no-naka-de-maihitoyo",
+      "title": "Harukanaru Toki no Naka de: Maihitoyo",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-harukanaru-toki-no-naka-de-yumenoukihashi",
+      "title": "Harukanaru Toki no Naka de: Yumenoukihashi",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-hasbro-family-game-night",
+      "title": "Hasbro Family Game Night",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hasbro_Family_Game_Night"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-have-fun-with-crosswords",
+      "title": "Have Fun With Crosswords",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-hayarigami-2-ds-toshidensetsu-kaii-jiken",
+      "title": "Hayarigami 2 DS: Toshidensetsu Kaii Jiken",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-hayarigami-ds-toshidensetsu-kaii-jiken",
+      "title": "Hayarigami DS: Toshidensetsu Kaii Jiken",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-hayate-no-gotoku-boku-ga-romeo-de-romeo-ga-boku-de",
+      "title": "Hayate no Gotoku!: Boku ga Romeo de Romeo ga Boku de",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hayate_the_Combat_Butler"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-hayate-no-gotoku-ojo-sama-produce-daisakusen-bokuiro-ni-somare-gakkou-hen",
+      "title": "Hayate no Gotoku!: Ojō-sama Produce Daisakusen Bokuiro ni Somare! Gakkou-Hen",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hayate_the_Combat_Butler"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-hayate-no-gotoku-ojo-sama-produce-daisakusen-bokuiro-ni-somare-oyashiki-hen",
+      "title": "Hayate no Gotoku!: Ojō-sama Produce Daisakusen Bokuiro ni Somare! Oyashiki-Hen",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hayate_the_Combat_Butler"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-heartcatch-precure-oshare-collection",
+      "title": "HeartCatch PreCure! Oshare Collection",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-heathcliff-frantic-foto",
+      "title": "Heathcliff! Frantic Foto",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+    }
+  ]
+}

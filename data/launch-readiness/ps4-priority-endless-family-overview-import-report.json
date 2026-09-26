@@ -1,0 +1,186 @@
+{
+  "generatedAt": "2026-08-25T01:36:05.438Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps4-priority-endless-family-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps4",
+      "updated": 24,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps4",
+      "gameId": "ps4-endless-dungeon",
+      "title": "Endless Dungeon",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-endless-fables-dark-moor",
+      "title": "Endless Fables: Dark Moor",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-energy-hook",
+      "title": "Energy Hook",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-enigmatis-2-the-mists-of-ravenwood",
+      "title": "Enigmatis 2: The Mists of Ravenwood",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-enigmatis-3-the-shadow-of-karkhala",
+      "title": "Enigmatis 3: The Shadow of Karkhala",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-enigmatis-the-ghosts-of-maple-creek",
+      "title": "Enigmatis: The Ghosts of Maple Creek",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-esports-life-tycoon",
+      "title": "ESports Life Tycoon",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-etherborn",
+      "title": "Etherborn",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-euro-fishing",
+      "title": "Euro Fishing",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-evan-s-remains",
+      "title": "Evan's Remains",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-eventide-2-sorcerer-s-mirror",
+      "title": "Eventide 2: Sorcerer's Mirror",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-eventide-3-legacy-of-legends",
+      "title": "Eventide 3: Legacy of Legends",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-eventide-slavic-fable",
+      "title": "Eventide: Slavic Fable",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-ever-forward",
+      "title": "Ever Forward",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-evertried",
+      "title": "Evertried",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-exile-s-end",
+      "title": "Exile's End",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Exile%27s_End"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-exophobia",
+      "title": "Exophobia",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-extinction",
+      "title": "Extinction",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Extinction_(video_game)"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-exzeus-the-complete-collection",
+      "title": "ExZeus: The Complete Collection",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-fairy-fencer-f-advent-dark-force",
+      "title": "Fairy Fencer F: Advent Dark Force",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fairy_Fencer_F:_Advent_Dark_Force"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-fallen-legion-revenants",
+      "title": "Fallen Legion: Revenants",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fallen_Legion:_Revenants"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-fallen-legion-sins-of-an-empire",
+      "title": "Fallen Legion: Sins of an Empire",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fallen_Legion:_Sins_of_an_Empire"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-family-feud",
+      "title": "Family Feud",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Family_Feud_(video_game_series)#Hasbro,_Global_Star,_and_Ubisoft_versions"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-family-mysteries-2-echoes-of-tomorrow",
+      "title": "Family Mysteries 2: Echoes of Tomorrow",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

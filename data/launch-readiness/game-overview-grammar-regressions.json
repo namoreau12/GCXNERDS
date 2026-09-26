@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-26T00:42:41.796Z",
+  "scannedFiles": 686,
+  "selfTest": {
+    "ok": true,
+    "failures": []
+  },
+  "findings": [],
+  "truncatedFindings": 0
+}

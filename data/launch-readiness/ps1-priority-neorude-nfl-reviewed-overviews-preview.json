@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-08-25T16:00:46.939Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-neorude-nfl-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 10,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-neorude-kizamareta-monshou",
+      "title": "Neorude: Kizamareta Monshou",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-02417.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nessa-no-hoshi",
+      "title": "Nessa no Hoshi",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-00913.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-netz-magazine-altezza",
+      "title": "Netz Magazine: Altezza",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPM-86163.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-next-king-koi-no-sennen-oukoku",
+      "title": "Next King: Koi no Sennen Oukoku",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-00859.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nfl-full-contact",
+      "title": "NFL Full Contact",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://game-rave.com/?p=8985"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nfl-gameday",
+      "title": "NFL GameDay",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NFL_GameDay_(video_game)"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nfl-gameday-99",
+      "title": "NFL GameDay 99",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NFL_GameDay_(video_game_series)#NFL_GameDay_99"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nfl-gameday-2000",
+      "title": "NFL GameDay 2000",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NFL_GameDay_(video_game_series)#NFL_GameDay_2000"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nfl-gameday-2001",
+      "title": "NFL GameDay 2001",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NFL_GameDay_(video_game_series)#NFL_GameDay_2001"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nfl-gameday-2002",
+      "title": "NFL GameDay 2002",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NFL_GameDay_(video_game_series)#NFL_GameDay_2002"
+    }
+  ]
+}

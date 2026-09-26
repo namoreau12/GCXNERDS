@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-25T14:03:08.265Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-monster-motor-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 15,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-monopoly-party",
+      "title": "Monopoly Party!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://ps2.gamespy.com/playstation-2/monopoly-party/"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-monster-4x4-masters-of-metal",
+      "title": "Monster 4x4: Masters of Metal",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Monster_Jam_video_games#Monster_4x4:_Masters_of_Metal"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-monster-attack",
+      "title": "Monster Attack",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Earth_Defense_Force"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-monster-eggs",
+      "title": "Monster Eggs",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.vgchartz.com/game/40734/monster-eggs/summary"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-monster-jam",
+      "title": "Monster Jam",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Monster_Jam_video_games#Monster_Jam"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-monster-rancher-3",
+      "title": "Monster Rancher 3",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Monster_Rancher_3"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-monster-rancher-4",
+      "title": "Monster Rancher 4",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Monster_Rancher_4"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-monster-trux-extreme-arena-edition",
+      "title": "Monster Trux Extreme: Arena Edition",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Monster_Trux%3A_Arenas"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-monster-trux-extreme-offroad-edition",
+      "title": "Monster Trux Extreme: Offroad Edition",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://archive.org/details/MonsterTrux_Windows"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-moorhuhn-fun-kart-2008",
+      "title": "Moorhuhn Fun Kart 2008",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLES-55122.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-morita-shogi",
+      "title": "Morita Shogi",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_shogi_video_games"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-moto-x-maniac",
+      "title": "Moto X Maniac",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.honestgamers.com/45432/playstation-2/moto-x-maniac/game.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-motogp-3",
+      "title": "MotoGP 3",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/MotoGP_3"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-motogp-07",
+      "title": "MotoGP 07",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/MotoGP_%2707_(PS2)"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-motor-mayhem-vehicular-combat-league",
+      "title": "Motor Mayhem: Vehicular Combat League",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Motor_Mayhem"
+    }
+  ]
+}

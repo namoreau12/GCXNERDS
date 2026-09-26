@@ -1,0 +1,158 @@
+{
+  "generatedAt": "2026-08-25T00:33:50.866Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps4-priority-castle-asemblance-reviewed-overviews-2026-08-24.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps4",
+      "updated": 20,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-archives-castle-of-dragon",
+      "title": "Arcade Archives: Castle of Dragon",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-archives-champion-wrestler",
+      "title": "Arcade Archives: Champion Wrestler",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-archives-cop-01",
+      "title": "Arcade Archives: Cop 01",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-archives-crime-city",
+      "title": "Arcade Archives: Crime City",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-archives-cue-brick",
+      "title": "Arcade Archives: Cue Brick",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-archives-cybattler",
+      "title": "Arcade Archives: Cybattler",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-classics-anniversary-collection",
+      "title": "Arcade Classics Anniversary Collection",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Arcade_Classics_Anniversary_Collection"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-paradise",
+      "title": "Arcade Paradise",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-spirits",
+      "title": "Arcade Spirits",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-archaica-the-path-of-light",
+      "title": "Archaica: The Path of Light",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-archetype-arcadia",
+      "title": "Archetype Arcadia",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arietta-of-spirits",
+      "title": "Arietta of Spirits",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-asatsugutori",
+      "title": "Asatsugutori",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-asdivine-dios",
+      "title": "Asdivine Dios",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Asdivine_Dios"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-asdivine-hearts",
+      "title": "Asdivine Hearts",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Asdivine_Hearts"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-asdivine-hearts-ii",
+      "title": "Asdivine Hearts II",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Asdivine_Hearts_II"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-asdivine-kamura",
+      "title": "Asdivine Kamura",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Asdivine_Kamura"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-asdivine-menace",
+      "title": "Asdivine Menace",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Asdivine_Menace"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-asemblance",
+      "title": "Asemblance",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-asemblance-oversight",
+      "title": "Asemblance: Oversight",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

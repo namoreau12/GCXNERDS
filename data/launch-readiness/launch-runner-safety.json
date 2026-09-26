@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-26T00:44:37.792Z",
+  "checkedFile": "scripts/run-launch-checks.js",
+  "requiredScripts": [
+    "build-launch-readiness-report.js",
+    "audit-launch-readiness-report.js",
+    "audit-admin-ui-access.js",
+    "audit-image-queue-workflow-ui.js",
+    "audit-overview-queue-workflow-ui.js",
+    "audit-server-health-contract.js",
+    "audit-runtime-links.js"
+  ],
+  "missingScripts": [],
+  "reportBuildAllowsFailure": false,
+  "auditRunsAfterBuild": true,
+  "failures": []
+}

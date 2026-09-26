@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Community Events | Games Cards Exchange</title>
+    <meta name="description" content="Join GCX replay nights, card condition checks, streamer vote parties, and community events." />
+    <link rel="canonical" href="https://gcxnerds.com/community-events.html" />
+    <meta property="og:title" content="Community Events | Games Cards Exchange" />
+    <meta property="og:description" content="Join GCX replay nights, card condition checks, streamer vote parties, and community events." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gcxnerds.com/community-events.html" />
+    <meta property="og:image" content="https://gcxnerds.com/assets/news/pokemon-tcg-30th-celebration.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Community Events | Games Cards Exchange" />
+    <meta name="twitter:description" content="Join GCX replay nights, card condition checks, streamer vote parties, and community events." />
+    <meta name="twitter:image" content="https://gcxnerds.com/assets/news/pokemon-tcg-30th-celebration.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header has-mobile-nav">
+      <a class="brand" href="index.html" aria-label="Games Cards Exchange home">
+        <span class="brand-mark">GCX</span>
+        <span>Games Cards Exchange</span>
+      </a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="news.html">News</a>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Games</button>
+          <div class="nav-dropdown">
+            <a href="games.html">Game Database</a>
+            <a href="consoles.html">Console Database</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Cards</button>
+          <div class="nav-dropdown">
+            <a href="pokemon.html">Pokemon Cards</a>
+            <a href="magic.html">Magic Cards</a>
+            <a href="yugioh.html">Yu-Gi-Oh! Cards</a>
+            <a href="index.html#cards">Marketplace Beta</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Community</button>
+          <div class="nav-dropdown">
+            <a href="community.html">Community Feed</a>
+            <a href="community-members.html">Members</a>
+            <a href="community-groups.html">Groups</a>
+            <a href="community-events.html">Events</a>
+            <a href="streamers.html">Streamer Highlights</a>
+          </div>
+        </div>
+        <a href="search.html">Search</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search" role="search" action="search.html" method="get">
+          <label class="sr-only" for="site-search">Search GCX</label>
+          <input id="site-search" name="q" type="search" placeholder="Search games, cards, news" />
+        </form>
+        <a class="account-link" href="auth.html">Sign In</a>
+      </div>
+    </header>
+
+    <main class="community-page">
+      <section class="community-hero">
+        <div>
+          <p class="kicker">Events</p>
+          <h1>Give the GCX community reasons to show up together.</h1>
+          <p>Replay nights, card condition checks, streamer vote parties, and marketplace beta watch sessions turn casual browsing into recurring traffic.</p>
+        </div>
+        <div class="community-stats" aria-label="Event stats">
+          <div><strong id="event-count">0</strong><span>events</span></div>
+          <div><strong id="event-rsvp-count">0</strong><span>RSVPs</span></div>
+          <div><strong>Live</strong><span>community hooks</span></div>
+        </div>
+      </section>
+
+      <section class="events-layout">
+        <aside class="community-panel">
+          <div class="section-heading">
+            <p class="kicker">Host</p>
+            <h2>Create Event</h2>
+          </div>
+          <label class="profile-switcher">
+            Active profile
+            <select id="event-viewer"></select>
+          </label>
+          <form id="event-form" class="community-form">
+            <label>
+              Title
+              <input name="title" type="text" placeholder="Event title" required />
+            </label>
+            <label>
+              Type
+              <select name="type">
+                <option>Retro replay</option>
+                <option>Card collecting</option>
+                <option>Streamer campaign</option>
+                <option>Marketplace watch</option>
+                <option>Community</option>
+              </select>
+            </label>
+            <label>
+              Group
+              <select id="event-group" name="groupId"></select>
+            </label>
+            <label>
+              Starts
+              <input name="startsAt" type="datetime-local" required />
+            </label>
+            <label>
+              Description
+              <textarea name="description" rows="4" placeholder="What should members bring or do?"></textarea>
+            </label>
+            <label>
+              Link
+              <input name="linkUrl" type="url" placeholder="https:// or local page" />
+            </label>
+            <button class="button" type="submit">Create event</button>
+            <p id="event-status" class="form-status" role="status"></p>
+          </form>
+        </aside>
+
+        <section>
+          <div class="section-heading">
+            <p class="kicker">Calendar</p>
+            <h2>Upcoming Events</h2>
+          </div>
+          <div id="event-list" class="event-grid"></div>
+        </section>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <p><strong>Games Cards Exchange</strong></p>
+        <p>Games, cards, movies, streaming, reviews, guides, and collector-first marketplace tools.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="trust.html">Trust</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="about.html">About</a>
+        <a href="trust.html#editorial">Editorial Standards</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="marketplace-rules.html">Marketplace Rules</a>
+        <a href="contact.html">Contact</a>
+        <a href="news.html">Newsroom</a>
+      </nav>
+    </footer>
+    <script src="site.js?v=20260906"></script>
+    <script src="community-events.js"></script>
+    <script src="community-badge.js"></script>
+  </body>
+</html>

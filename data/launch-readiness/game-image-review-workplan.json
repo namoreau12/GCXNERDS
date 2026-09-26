@@ -1,0 +1,511 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-26T00:50:29.500Z",
+  "totals": {
+    "missingImages": 4662,
+    "imagePct": 89.1,
+    "readyRows": 0,
+    "finishableTargetCount": 5,
+    "finishableRecordCount": 335,
+    "priorityTargetCount": 8,
+    "milestoneTargetCount": 3
+  },
+  "nextFinishable": {
+    "type": "finishable-platform",
+    "platformSlug": "gameboy",
+    "platformLabel": "GAMEBOY Games",
+    "missingImages": 39,
+    "imagePct": 98,
+    "records": 39,
+    "batchPath": "data/games/finishable-review-batches/gameboy-image-review-batch.csv",
+    "recentProviderAttempts": [
+      {
+        "provider": "PriceCharting Game Boy/Game Boy Color pages",
+        "script": "manual PriceCharting source sweep",
+        "checkedAt": "2026-09-05T16:23:45.878Z",
+        "candidates": 57,
+        "matched": 18,
+        "result": "partially_imported_then_exhausted_for_current_missing_queue",
+        "notes": "Reviewed current Game Boy finishable queue; imported exact platform cover matches, rejected title-variant mismatches, and left remaining rows for MobyGames/manual source review."
+      }
+    ],
+    "providerNextRecommended": "MobyGames or another reviewed commercial metadata provider; current direct/free strict passes are exhausted for the remaining rows.",
+    "dryRun": "node scripts/import-game-image-urls.js data/games/finishable-review-batches/gameboy-image-review-batch.csv --dry-run --validate-remote",
+    "import": "node scripts/import-game-image-urls.js data/games/finishable-review-batches/gameboy-image-review-batch.csv --validate-remote",
+    "needsExternalProvider": true
+  },
+  "nextExternalProviderTarget": {
+    "type": "finishable-platform",
+    "platformSlug": "gameboy",
+    "platformLabel": "GAMEBOY Games",
+    "missingImages": 39,
+    "imagePct": 98,
+    "records": 39,
+    "batchPath": "data/games/finishable-review-batches/gameboy-image-review-batch.csv",
+    "recentProviderAttempts": [
+      {
+        "provider": "PriceCharting Game Boy/Game Boy Color pages",
+        "script": "manual PriceCharting source sweep",
+        "checkedAt": "2026-09-05T16:23:45.878Z",
+        "candidates": 57,
+        "matched": 18,
+        "result": "partially_imported_then_exhausted_for_current_missing_queue",
+        "notes": "Reviewed current Game Boy finishable queue; imported exact platform cover matches, rejected title-variant mismatches, and left remaining rows for MobyGames/manual source review."
+      }
+    ],
+    "providerNextRecommended": "MobyGames or another reviewed commercial metadata provider; current direct/free strict passes are exhausted for the remaining rows.",
+    "dryRun": "node scripts/import-game-image-urls.js data/games/finishable-review-batches/gameboy-image-review-batch.csv --dry-run --validate-remote",
+    "import": "node scripts/import-game-image-urls.js data/games/finishable-review-batches/gameboy-image-review-batch.csv --validate-remote",
+    "needsExternalProvider": true
+  },
+  "nextMilestone": {
+    "type": "coverage-milestone",
+    "targetPct": 90,
+    "currentPct": 89.1,
+    "additionalImagesNeeded": 400,
+    "records": 400,
+    "platforms": [
+      "ps2"
+    ],
+    "batchPath": "data/games/milestone-review-batches/90-pct-image-review-batch.csv",
+    "dryRun": "node scripts/import-game-image-urls.js data/games/milestone-review-batches/90-pct-image-review-batch.csv --dry-run --validate-remote",
+    "import": "node scripts/import-game-image-urls.js data/games/milestone-review-batches/90-pct-image-review-batch.csv --validate-remote"
+  },
+  "finishableTargets": [
+    {
+      "type": "finishable-platform",
+      "platformSlug": "gameboy",
+      "platformLabel": "GAMEBOY Games",
+      "missingImages": 39,
+      "imagePct": 98,
+      "records": 39,
+      "batchPath": "data/games/finishable-review-batches/gameboy-image-review-batch.csv",
+      "recentProviderAttempts": [
+        {
+          "provider": "PriceCharting Game Boy/Game Boy Color pages",
+          "script": "manual PriceCharting source sweep",
+          "checkedAt": "2026-09-05T16:23:45.878Z",
+          "candidates": 57,
+          "matched": 18,
+          "result": "partially_imported_then_exhausted_for_current_missing_queue",
+          "notes": "Reviewed current Game Boy finishable queue; imported exact platform cover matches, rejected title-variant mismatches, and left remaining rows for MobyGames/manual source review."
+        }
+      ],
+      "providerNextRecommended": "MobyGames or another reviewed commercial metadata provider; current direct/free strict passes are exhausted for the remaining rows.",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/finishable-review-batches/gameboy-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/finishable-review-batches/gameboy-image-review-batch.csv --validate-remote",
+      "needsExternalProvider": true
+    },
+    {
+      "type": "finishable-platform",
+      "platformSlug": "saturn",
+      "platformLabel": "SATURN Games",
+      "missingImages": 41,
+      "imagePct": 96,
+      "records": 41,
+      "batchPath": "data/games/finishable-review-batches/saturn-image-review-batch.csv",
+      "recentProviderAttempts": [
+        {
+          "provider": "PriceCharting Sega Saturn pages",
+          "script": "manual PriceCharting source sweep",
+          "checkedAt": "2026-09-05T16:23:45.878Z",
+          "candidates": 45,
+          "matched": 4,
+          "result": "partially_imported_then_exhausted_for_current_missing_queue",
+          "notes": "Reviewed current Saturn finishable queue; imported exact Sega Saturn cover matches and left remaining rows for MobyGames/manual source review."
+        }
+      ],
+      "providerNextRecommended": "MobyGames or another reviewed commercial metadata provider; current direct/free strict passes are exhausted for the remaining rows.",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/finishable-review-batches/saturn-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/finishable-review-batches/saturn-image-review-batch.csv --validate-remote",
+      "needsExternalProvider": true
+    },
+    {
+      "type": "finishable-platform",
+      "platformSlug": "ps5",
+      "platformLabel": "PS5 Games",
+      "missingImages": 57,
+      "imagePct": 94.7,
+      "records": 57,
+      "batchPath": "data/games/finishable-review-batches/ps5-image-review-batch.csv",
+      "recentProviderAttempts": [
+        {
+          "provider": "PlayStation Store official search",
+          "script": "scripts/enrich-ps5-playstation-store-images.js",
+          "checkedAt": "2026-09-05T16:23:45.878Z",
+          "candidates": 57,
+          "matched": 0,
+          "result": "exhausted_for_current_missing_queue",
+          "notes": "Dry run found no strict full-game PS5 store matches for the current missing-image queue; route remaining rows to MobyGames/manual reviewed sources."
+        }
+      ],
+      "providerNextRecommended": "MobyGames or another reviewed commercial metadata provider; current direct/free strict passes are exhausted for the remaining rows.",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/finishable-review-batches/ps5-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/finishable-review-batches/ps5-image-review-batch.csv --validate-remote",
+      "needsExternalProvider": true
+    },
+    {
+      "type": "finishable-platform",
+      "platformSlug": "wii",
+      "platformLabel": "WII Games",
+      "missingImages": 67,
+      "imagePct": 95.8,
+      "records": 67,
+      "batchPath": "data/games/finishable-review-batches/wii-image-review-batch.csv",
+      "recentProviderAttempts": [
+        {
+          "provider": "PriceCharting Wii pages",
+          "script": "manual PriceCharting source sweep",
+          "checkedAt": "2026-09-05T16:23:45.878Z",
+          "candidates": 69,
+          "matched": 2,
+          "result": "partially_imported_then_exhausted_for_current_missing_queue",
+          "notes": "Reviewed current Wii finishable queue in chunks; imported exact Wii cover matches, rejected cross-platform mismatch, and left remaining rows for MobyGames/manual source review."
+        }
+      ],
+      "providerNextRecommended": "MobyGames or another reviewed commercial metadata provider; current direct/free strict passes are exhausted for the remaining rows.",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/finishable-review-batches/wii-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/finishable-review-batches/wii-image-review-batch.csv --validate-remote",
+      "needsExternalProvider": true
+    },
+    {
+      "type": "finishable-platform",
+      "platformSlug": "ds",
+      "platformLabel": "DS Games",
+      "missingImages": 131,
+      "imagePct": 96,
+      "records": 131,
+      "batchPath": "data/games/finishable-review-batches/ds-image-review-batch.csv",
+      "recentProviderAttempts": [
+        {
+          "provider": "PriceCharting Nintendo DS pages",
+          "script": "manual PriceCharting source sweep",
+          "checkedAt": "2026-09-05T16:30:46.910Z",
+          "candidates": 20,
+          "matched": 0,
+          "result": "no_safe_imports_in_checked_chunk",
+          "notes": "Checked first 20 current DS finishable rows with short timeouts; one near-match had a title spelling mismatch and was not imported."
+        },
+        {
+          "provider": "PriceCharting Nintendo DS pages",
+          "script": "scripts/propose-pricecharting-image-candidates.js + reviewed import CSVs",
+          "checkedAt": "2026-09-05T17:06:20.000Z",
+          "candidates": 191,
+          "matched": 14,
+          "result": "partially_imported_low_yield_remaining_queue",
+          "notes": "Reviewed bounded DS PriceCharting chunks after queue refreshes; imported exact Nintendo DS product-page cover matches only, rejected spelling/platform/ambiguity concerns, and left remaining rows for MobyGames/manual source review."
+        }
+      ],
+      "providerNextRecommended": "MobyGames or another reviewed commercial metadata provider; the current PriceCharting Nintendo DS sweep is now low-yield for the remaining rows.",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/finishable-review-batches/ds-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/finishable-review-batches/ds-image-review-batch.csv --validate-remote",
+      "needsExternalProvider": true
+    }
+  ],
+  "priorityTargets": [
+    {
+      "type": "priority-platform",
+      "platformSlug": "ps2",
+      "platformLabel": "PS2 Games",
+      "missingImages": 727,
+      "imagePct": 83.2,
+      "records": 100,
+      "batchPath": "data/games/review-batches/ps2-image-review-batch.csv",
+      "recentProviderAttempts": [
+        {
+          "provider": "libretro-thumbnails enhanced",
+          "script": "scripts/enrich-ps2-libretro-images-enhanced.js",
+          "checkedAt": "2026-09-05T16:13:22.063Z",
+          "candidates": 733,
+          "matched": 0,
+          "result": "exhausted_for_current_missing_queue",
+          "notes": "Dry run found no strict matches for the current PS2 missing-image queue; do not rerun unchanged source before queue/data changes."
+        },
+        {
+          "provider": "PlayStation Chihiro legacy store search",
+          "script": "scripts/enrich-ps2-playstation-chihiro-images.js",
+          "checkedAt": "2026-09-05T16:13:22.063Z",
+          "candidates": 733,
+          "matched": 0,
+          "result": "exhausted_for_current_missing_queue",
+          "notes": "Dry run found no strict PS2 catalog matches for the current PS2 missing-image queue; route remaining rows to MobyGames or manual reviewed sources."
+        },
+        {
+          "provider": "PriceCharting PlayStation 2 pages",
+          "script": "scripts/propose-pricecharting-image-candidates.js + reviewed import CSV",
+          "checkedAt": "2026-09-05T18:16:44.441Z",
+          "candidates": 50,
+          "matched": 6,
+          "result": "partially_imported_review_required",
+          "notes": "Reviewed first PS2 priority chunk with platform-label guardrails; imported exact or close PlayStation 2 product-page cover matches only and rejected wrong-platform/title-mismatch candidates."
+        }
+      ],
+      "providerNextRecommended": "MobyGames or another reviewed commercial metadata provider; current automated Libretro and PlayStation Chihiro passes are exhausted for the remaining PS2 rows.",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/review-batches/ps2-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/review-batches/ps2-image-review-batch.csv --validate-remote",
+      "needsExternalProvider": true
+    },
+    {
+      "type": "priority-platform",
+      "platformSlug": "vita",
+      "platformLabel": "VITA Games",
+      "missingImages": 631,
+      "imagePct": 63.2,
+      "records": 100,
+      "batchPath": "data/games/review-batches/vita-image-review-batch.csv",
+      "recentProviderAttempts": [
+        {
+          "provider": "PriceCharting PlayStation Vita pages",
+          "script": "scripts/propose-pricecharting-image-candidates.js + reviewed import CSV",
+          "checkedAt": "2026-09-05T17:14:30.000Z",
+          "candidates": 50,
+          "matched": 6,
+          "result": "partially_imported_review_required",
+          "notes": "Reviewed first Vita priority chunk; imported exact PlayStation Vita product-page cover matches only and rejected cross-platform PS3/PS4/PSP source-title matches."
+        },
+        {
+          "provider": "PriceCharting PlayStation Vita pages",
+          "script": "scripts/propose-pricecharting-image-candidates.js + reviewed import CSV",
+          "checkedAt": "2026-09-05T17:18:31.046Z",
+          "candidates": 50,
+          "matched": 3,
+          "result": "partially_imported_review_required",
+          "notes": "Reviewed second Vita priority chunk; imported exact PlayStation Vita product-page cover matches only."
+        }
+      ],
+      "providerNextRecommended": "",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/review-batches/vita-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/review-batches/vita-image-review-batch.csv --validate-remote",
+      "needsExternalProvider": false
+    },
+    {
+      "type": "priority-platform",
+      "platformSlug": "ps3",
+      "platformLabel": "PS3 Games",
+      "missingImages": 607,
+      "imagePct": 73.7,
+      "records": 100,
+      "batchPath": "data/games/review-batches/ps3-image-review-batch.csv",
+      "recentProviderAttempts": [
+        {
+          "provider": "PriceCharting PlayStation 3 pages",
+          "script": "scripts/propose-pricecharting-image-candidates.js + reviewed import CSV",
+          "checkedAt": "2026-09-05T17:27:23.046Z",
+          "candidates": 50,
+          "matched": 2,
+          "result": "partially_imported_review_required",
+          "notes": "Reviewed first PS3 priority chunk; imported exact PlayStation 3 product-page cover matches only."
+        },
+        {
+          "provider": "PriceCharting PlayStation 3 pages",
+          "script": "scripts/propose-pricecharting-image-candidates.js + reviewed import CSV",
+          "checkedAt": "2026-09-05T17:32:24.960Z",
+          "candidates": 50,
+          "matched": 1,
+          "result": "partially_imported_review_required",
+          "notes": "Reviewed second PS3 priority chunk; imported exact PlayStation 3 product-page cover matches only."
+        }
+      ],
+      "providerNextRecommended": "",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/review-batches/ps3-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/review-batches/ps3-image-review-batch.csv --validate-remote",
+      "needsExternalProvider": false
+    },
+    {
+      "type": "priority-platform",
+      "platformSlug": "switch",
+      "platformLabel": "SWITCH Games",
+      "missingImages": 475,
+      "imagePct": 89.1,
+      "records": 100,
+      "batchPath": "data/games/review-batches/switch-image-review-batch.csv",
+      "recentProviderAttempts": [
+        {
+          "provider": "PriceCharting Nintendo Switch pages",
+          "script": "scripts/propose-pricecharting-image-candidates.js + reviewed import CSV",
+          "checkedAt": "2026-09-05T17:40:12.798Z",
+          "candidates": 50,
+          "matched": 4,
+          "result": "partially_imported_review_required",
+          "notes": "Reviewed first Switch priority chunk; imported exact Nintendo Switch product-page cover matches only and rejected one variant/title mismatch."
+        }
+      ],
+      "providerNextRecommended": "",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/review-batches/switch-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/review-batches/switch-image-review-batch.csv --validate-remote",
+      "needsExternalProvider": false
+    },
+    {
+      "type": "priority-platform",
+      "platformSlug": "3ds",
+      "platformLabel": "3DS Games",
+      "missingImages": 460,
+      "imagePct": 74.5,
+      "records": 100,
+      "batchPath": "data/games/review-batches/3ds-image-review-batch.csv",
+      "recentProviderAttempts": [
+        {
+          "provider": "PriceCharting Nintendo 3DS pages",
+          "script": "scripts/propose-pricecharting-image-candidates.js",
+          "checkedAt": "2026-09-05T17:58:00.000Z",
+          "candidates": 50,
+          "matched": 0,
+          "result": "no_safe_imports_in_checked_chunk",
+          "notes": "Reviewed first 3DS priority chunk with platform-label guardrails; rejected wrong-title and wrong-platform product-page matches."
+        }
+      ],
+      "providerNextRecommended": "MobyGames or another reviewed commercial metadata provider; current PriceCharting pass returned no safe imports for this checked chunk.",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/review-batches/3ds-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/review-batches/3ds-image-review-batch.csv --validate-remote",
+      "needsExternalProvider": true
+    },
+    {
+      "type": "priority-platform",
+      "platformSlug": "psp",
+      "platformLabel": "PSP Games",
+      "missingImages": 445,
+      "imagePct": 76.7,
+      "records": 100,
+      "batchPath": "data/games/review-batches/psp-image-review-batch.csv",
+      "recentProviderAttempts": [
+        {
+          "provider": "PriceCharting PSP pages",
+          "script": "scripts/propose-pricecharting-image-candidates.js + reviewed import CSV",
+          "checkedAt": "2026-09-05T18:01:09.889Z",
+          "candidates": 50,
+          "matched": 4,
+          "result": "partially_imported_review_required",
+          "notes": "Reviewed first PSP priority chunk with platform-label guardrails; imported exact PSP product-page cover matches only and rejected one Nintendo DS platform mismatch."
+        }
+      ],
+      "providerNextRecommended": "",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/review-batches/psp-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/review-batches/psp-image-review-batch.csv --validate-remote",
+      "needsExternalProvider": false
+    },
+    {
+      "type": "priority-platform",
+      "platformSlug": "xbox360",
+      "platformLabel": "XBOX360 Games",
+      "missingImages": 366,
+      "imagePct": 82.9,
+      "records": 100,
+      "batchPath": "data/games/review-batches/xbox360-image-review-batch.csv",
+      "recentProviderAttempts": [
+        {
+          "provider": "PriceCharting Xbox 360 pages",
+          "script": "scripts/propose-pricecharting-image-candidates.js + reviewed import CSV",
+          "checkedAt": "2026-09-05T18:09:00.906Z",
+          "candidates": 50,
+          "matched": 12,
+          "result": "partially_imported_review_required",
+          "notes": "Reviewed first Xbox 360 priority chunk with platform-label guardrails; imported exact or close Xbox 360 product-page cover matches only."
+        },
+        {
+          "provider": "PriceCharting Xbox 360 pages",
+          "script": "scripts/propose-pricecharting-image-candidates.js + reviewed import CSV",
+          "checkedAt": "2026-09-05T18:21:41.849Z",
+          "candidates": 50,
+          "matched": 3,
+          "result": "partially_imported_review_required",
+          "notes": "Reviewed second Xbox 360 priority chunk with platform-label guardrails; imported exact or close Xbox 360 product-page cover matches only."
+        }
+      ],
+      "providerNextRecommended": "",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/review-batches/xbox360-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/review-batches/xbox360-image-review-batch.csv --validate-remote",
+      "needsExternalProvider": false
+    },
+    {
+      "type": "priority-platform",
+      "platformSlug": "ps4",
+      "platformLabel": "PS4 Games",
+      "missingImages": 311,
+      "imagePct": 91,
+      "records": 100,
+      "batchPath": "data/games/review-batches/ps4-image-review-batch.csv",
+      "recentProviderAttempts": [
+        {
+          "provider": "PriceCharting PlayStation 4 pages",
+          "script": "scripts/propose-pricecharting-image-candidates.js + reviewed import CSV",
+          "checkedAt": "2026-09-05T18:12:51.634Z",
+          "candidates": 50,
+          "matched": 3,
+          "result": "partially_imported_review_required",
+          "notes": "Reviewed first PS4 priority chunk with platform-label guardrails; imported exact or close PlayStation 4 product-page cover matches only and rejected wrong-platform/title-mismatch candidates."
+        }
+      ],
+      "providerNextRecommended": "",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/review-batches/ps4-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/review-batches/ps4-image-review-batch.csv --validate-remote",
+      "needsExternalProvider": false
+    }
+  ],
+  "milestoneTargets": [
+    {
+      "type": "coverage-milestone",
+      "targetPct": 90,
+      "currentPct": 89.1,
+      "additionalImagesNeeded": 400,
+      "records": 400,
+      "platforms": [
+        "ps2"
+      ],
+      "batchPath": "data/games/milestone-review-batches/90-pct-image-review-batch.csv",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/milestone-review-batches/90-pct-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/milestone-review-batches/90-pct-image-review-batch.csv --validate-remote"
+    },
+    {
+      "type": "coverage-milestone",
+      "targetPct": 95,
+      "currentPct": 89.1,
+      "additionalImagesNeeded": 2531,
+      "records": 2531,
+      "platforms": [
+        "ps2",
+        "vita",
+        "ps3",
+        "switch",
+        "3ds"
+      ],
+      "batchPath": "data/games/milestone-review-batches/95-pct-image-review-batch.csv",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/milestone-review-batches/95-pct-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/milestone-review-batches/95-pct-image-review-batch.csv --validate-remote"
+    },
+    {
+      "type": "coverage-milestone",
+      "targetPct": 100,
+      "currentPct": 89.1,
+      "additionalImagesNeeded": 4662,
+      "records": 4662,
+      "platforms": [
+        "ps2",
+        "vita",
+        "ps3",
+        "switch",
+        "3ds",
+        "psp",
+        "xbox360",
+        "ps4",
+        "ps1",
+        "ds",
+        "wii",
+        "ps5",
+        "saturn",
+        "gameboy",
+        "gba",
+        "snes",
+        "xbox"
+      ],
+      "batchPath": "data/games/milestone-review-batches/100-pct-image-review-batch.csv",
+      "dryRun": "node scripts/import-game-image-urls.js data/games/milestone-review-batches/100-pct-image-review-batch.csv --dry-run --validate-remote",
+      "import": "node scripts/import-game-image-urls.js data/games/milestone-review-batches/100-pct-image-review-batch.csv --validate-remote"
+    }
+  ],
+  "rules": [
+    "Import only rows with a direct image URL, direct source URL, provider name, approved/verified/reviewed status, and reviewer.",
+    "Prefer official publisher/store/media-kit assets, then commercially appropriate providers after confirming terms.",
+    "Do not bulk import scraped artwork, watermarked images, logos, screenshots, or mismatched regional covers as box art."
+  ],
+  "recommendedNextStep": "GAMEBOY Games needs an external reviewed source next: MobyGames or another reviewed commercial metadata provider; current direct/free strict passes are exhausted for the remaining rows."
+}

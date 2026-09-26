@@ -1,0 +1,547 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-26T00:44:27.969Z",
+  "importsDir": "data\\games\\reviewed-overview-imports",
+  "filesChecked": 663,
+  "filesWithPendingImports": 0,
+  "filesWithSupersededReviewedRows": 32,
+  "filesFullyApplied": 480,
+  "filesWithRejectedRows": 183,
+  "totals": {
+    "wouldImport": 0,
+    "supersededReviewedRows": 47,
+    "skipped": 7216,
+    "rejected": 1398
+  },
+  "topPendingImports": [],
+  "topSupersededReviewedRows": [
+    {
+      "file": "snes-priority-overviews-46-2026-09-06.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\snes-priority-overviews-46-2026-09-06.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 4,
+      "skipped": 8,
+      "rejected": 0,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "snes",
+          "gameId": "snes-jimmy-houston-s-bass-tournament-u-s-a",
+          "title": "Jimmy Houston's Bass Tournament U.S.A.",
+          "reviewer": "Codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Super_Nintendo_Entertainment_System_games"
+        },
+        {
+          "platform": "snes",
+          "gameId": "snes-jissen-pachi-slot-hisshouhou-classic",
+          "title": "Jissen Pachi-Slot Hisshouhou! Classic",
+          "reviewer": "Codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Super_Nintendo_Entertainment_System_games"
+        },
+        {
+          "platform": "snes",
+          "gameId": "snes-jissen-pachi-slot-hisshouhou-twin",
+          "title": "Jissen Pachi-Slot Hisshouhou! Twin",
+          "reviewer": "Codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Super_Nintendo_Entertainment_System_games"
+        },
+        {
+          "platform": "snes",
+          "gameId": "snes-jissen-pachi-slot-hisshouhou-yamasa-densetsu",
+          "title": "Jissen Pachi-Slot Hisshouhou! Yamasa Densetsu",
+          "reviewer": "Codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Super_Nintendo_Entertainment_System_games"
+        }
+      ]
+    },
+    {
+      "file": "ps1-priority-360-arthur-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps1-priority-360-arthur-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 3,
+      "skipped": 0,
+      "rejected": 5,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "ps1",
+          "gameId": "ps1-2999-nen-no-game-kids",
+          "title": "2999-Nen no Game Kids",
+          "reviewer": "GCX editorial cleanup",
+          "sourceUrl": "https://psxdatacenter.com/games/J/0-9/SCPS-19004.html"
+        },
+        {
+          "platform": "ps1",
+          "gameId": "ps1-a-nanjarin",
+          "title": "A Nanjarin",
+          "reviewer": "GCX editorial cleanup",
+          "sourceUrl": "https://archive.org/details/psx_ananjari"
+        },
+        {
+          "platform": "ps1",
+          "gameId": "ps1-angolmois-99",
+          "title": "Angolmois 99",
+          "reviewer": "GCX editorial cleanup",
+          "sourceUrl": "https://psxdatacenter.com/games/J/A/SLPM-86278.html"
+        }
+      ]
+    },
+    {
+      "file": "3ds-priority-overviews-71-2026-09-06.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\3ds-priority-overviews-71-2026-09-06.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 2,
+      "skipped": 10,
+      "rejected": 0,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "3ds",
+          "gameId": "3ds-operation-cobra",
+          "title": "Operation Cobra",
+          "reviewer": "Codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_3DS_games_(N%E2%80%93Z)"
+        },
+        {
+          "platform": "3ds",
+          "gameId": "3ds-oshare-na-koinu-3d",
+          "title": "Oshare na Koinu 3D",
+          "reviewer": "Codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_3DS_games_(N%E2%80%93Z)"
+        }
+      ]
+    },
+    {
+      "file": "ds-priority-dekiru-wilden-reviewed-overviews-2026-08-23.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ds-priority-dekiru-wilden-reviewed-overviews-2026-08-23.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 2,
+      "skipped": 23,
+      "rejected": 0,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "ds",
+          "gameId": "ds-die-drei-das-geheimnis-der-geisterinsel",
+          "title": "Die drei ??? Das Geheimnis der Geisterinsel",
+          "reviewer": "codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+        },
+        {
+          "platform": "ds",
+          "gameId": "ds-die-drei-das-geheimnis-der-toten",
+          "title": "Die drei ??? Das Geheimnis der Toten",
+          "reviewer": "codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+        }
+      ]
+    },
+    {
+      "file": "ps1-priority-crossword-darkhunter-reviewed-overviews-2026-08-23.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps1-priority-crossword-darkhunter-reviewed-overviews-2026-08-23.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 2,
+      "skipped": 35,
+      "rejected": 0,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "ps1",
+          "gameId": "ps1-crw-counter-revolution-war",
+          "title": "CRW: Counter Revolution War",
+          "reviewer": "codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+        },
+        {
+          "platform": "ps1",
+          "gameId": "ps1-damdam-stompland",
+          "title": "DamDam StompLand",
+          "reviewer": "codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+        }
+      ]
+    },
+    {
+      "file": "ps1-priority-darkhunter-digitalglider-reviewed-overviews-2026-08-23.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps1-priority-darkhunter-digitalglider-reviewed-overviews-2026-08-23.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 2,
+      "skipped": 35,
+      "rejected": 0,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "ps1",
+          "gameId": "ps1-denki-groove-jigoku-v",
+          "title": "Denki Groove Jigoku V",
+          "reviewer": "codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+        },
+        {
+          "platform": "ps1",
+          "gameId": "ps1-destructo-2",
+          "title": "Destructo 2",
+          "reviewer": "codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+        }
+      ]
+    },
+    {
+      "file": "ps1-priority-dinomaster-doukyuusei-reviewed-overviews-2026-08-23.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps1-priority-dinomaster-doukyuusei-reviewed-overviews-2026-08-23.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 2,
+      "skipped": 33,
+      "rejected": 0,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "ps1",
+          "gameId": "ps1-dinomaster-party",
+          "title": "Dinomaster Party",
+          "reviewer": "codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+        },
+        {
+          "platform": "ps1",
+          "gameId": "ps1-doki-doki-shutter-chance",
+          "title": "Doki Doki Shutter Chance",
+          "reviewer": "codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+        }
+      ]
+    },
+    {
+      "file": "ps1-priority-doumu-egg-reviewed-overviews-2026-08-23.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps1-priority-doumu-egg-reviewed-overviews-2026-08-23.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 2,
+      "skipped": 33,
+      "rejected": 0,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "ps1",
+          "gameId": "ps1-dragon-money",
+          "title": "Dragon Money",
+          "reviewer": "codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+        },
+        {
+          "platform": "ps1",
+          "gameId": "ps1-easter-bunny-s-big-day",
+          "title": "Easter Bunny's Big Day",
+          "reviewer": "codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+        }
+      ]
+    },
+    {
+      "file": "ps1-priority-gatchaman-kakinoki-reviewed-overviews-2026-08-24.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps1-priority-gatchaman-kakinoki-reviewed-overviews-2026-08-24.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 2,
+      "skipped": 8,
+      "rejected": 0,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "ps1",
+          "gameId": "ps1-kahen-soukou-gunbike-speed-power-gunbike",
+          "title": "Kahen Soukou Gunbike: Speed Power Gunbike",
+          "reviewer": "GCX",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+        },
+        {
+          "platform": "ps1",
+          "gameId": "ps1-kaibutsu-para-dice",
+          "title": "Kaibutsu Para-Dice",
+          "reviewer": "GCX",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+        }
+      ]
+    },
+    {
+      "file": "ps2-priority-haru-highheat-reviewed-overviews-2026-08-23.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps2-priority-haru-highheat-reviewed-overviews-2026-08-23.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 2,
+      "skipped": 26,
+      "rejected": 0,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "ps2",
+          "gameId": "ps2-heisei-bakutoden",
+          "title": "Heisei Bakutoden",
+          "reviewer": "GCX",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+        },
+        {
+          "platform": "ps2",
+          "gameId": "ps2-higanbana",
+          "title": "Higanbana",
+          "reviewer": "GCX",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+        }
+      ]
+    },
+    {
+      "file": "saturn-priority-overviews-99-2026-09-07.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\saturn-priority-overviews-99-2026-09-07.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 2,
+      "skipped": 10,
+      "rejected": 0,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "saturn",
+          "gameId": "saturn-game-ware-vol-4",
+          "title": "Game-Ware Vol. 4",
+          "reviewer": "GCX editorial",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Sega_Saturn_games"
+        },
+        {
+          "platform": "saturn",
+          "gameId": "saturn-ginga-eiyu-densetsu",
+          "title": "Ginga Eiyū Densetsu",
+          "reviewer": "GCX editorial",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Legend_of_the_Galactic_Heroes#Games"
+        }
+      ]
+    },
+    {
+      "file": "snes-priority-overviews-17-2026-09-06.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\snes-priority-overviews-17-2026-09-06.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 2,
+      "skipped": 10,
+      "rejected": 0,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "snes",
+          "gameId": "snes-honkaku-mahjong-tetsuman-ii",
+          "title": "Honkaku Mahjong: Tetsuman II",
+          "reviewer": "GCX",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Super_Nintendo_Entertainment_System_games"
+        },
+        {
+          "platform": "snes",
+          "gameId": "snes-horai-gakuen-no-boken",
+          "title": "Horai Gakuen no Boken!",
+          "reviewer": "GCX",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Super_Nintendo_Entertainment_System_games"
+        }
+      ]
+    },
+    {
+      "file": "ds-priority-asonde-bakusou-reviewed-overviews-2026-08-23.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ds-priority-asonde-bakusou-reviewed-overviews-2026-08-23.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 1,
+      "skipped": 24,
+      "rejected": 0,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "ds",
+          "gameId": "ds-atama-de-do-kotenko-kotenko",
+          "title": "Atama de Do! Kotenko Kotenko",
+          "reviewer": "codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+        }
+      ]
+    },
+    {
+      "file": "ds-priority-balls-bikkuriman-reviewed-overviews-2026-08-23.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ds-priority-balls-bikkuriman-reviewed-overviews-2026-08-23.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 1,
+      "skipped": 24,
+      "rejected": 0,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "ds",
+          "gameId": "ds-beetle-junior-ds",
+          "title": "Beetle Junior DS",
+          "reviewer": "codex",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+        }
+      ]
+    },
+    {
+      "file": "ds-priority-gaitame-galileo-reviewed-overviews-2026-08-24.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ds-priority-gaitame-galileo-reviewed-overviews-2026-08-24.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 1,
+      "skipped": 9,
+      "rejected": 0,
+      "pendingRows": [],
+      "supersededRows": [
+        {
+          "platform": "ds",
+          "gameId": "ds-gakkou-no-kowai-uwasa-hanako-san-ga-kita-minna-no-hanako-san",
+          "title": "Gakkou no Kowai Uwasa: Hanako-San ga Kita!! Minna no Hanako-San",
+          "reviewer": "GCX",
+          "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(D%E2%80%93I)"
+        }
+      ]
+    }
+  ],
+  "topRejected": [
+    {
+      "file": "ps1-priority-moorhen-motocross-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps1-priority-moorhen-motocross-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 0,
+      "rejected": 15,
+      "pendingRows": [],
+      "supersededRows": []
+    },
+    {
+      "file": "ps2-priority-lovesmash-lupin-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps2-priority-lovesmash-lupin-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 0,
+      "rejected": 15,
+      "pendingRows": [],
+      "supersededRows": []
+    },
+    {
+      "file": "ps2-priority-majokko-marykate-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps2-priority-majokko-marykate-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 0,
+      "rejected": 15,
+      "pendingRows": [],
+      "supersededRows": []
+    },
+    {
+      "file": "ps2-priority-master-memorial-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps2-priority-master-memorial-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 0,
+      "rejected": 15,
+      "pendingRows": [],
+      "supersededRows": []
+    },
+    {
+      "file": "ps3-priority-a-adams-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps3-priority-a-adams-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 0,
+      "rejected": 15,
+      "pendingRows": [],
+      "supersededRows": []
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 1,
+      "rejected": 14,
+      "pendingRows": [],
+      "supersededRows": []
+    },
+    {
+      "file": "ds-priority-joan-junior-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ds-priority-joan-junior-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 1,
+      "rejected": 14,
+      "pendingRows": [],
+      "supersededRows": []
+    },
+    {
+      "file": "ds-priority-junior-kabutore-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ds-priority-junior-kabutore-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 1,
+      "rejected": 14,
+      "pendingRows": [],
+      "supersededRows": []
+    },
+    {
+      "file": "ds-priority-kabutore-kangaeru-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ds-priority-kabutore-kangaeru-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 1,
+      "rejected": 14,
+      "pendingRows": [],
+      "supersededRows": []
+    },
+    {
+      "file": "gameboy-licensed-classics-reviewed-overviews.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\gameboy-licensed-classics-reviewed-overviews.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 2,
+      "rejected": 14,
+      "pendingRows": [],
+      "supersededRows": []
+    },
+    {
+      "file": "ps1-priority-mikagura-minna-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps1-priority-mikagura-minna-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 1,
+      "rejected": 14,
+      "pendingRows": [],
+      "supersededRows": []
+    },
+    {
+      "file": "ps1-priority-minna-mitsumete-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps1-priority-minna-mitsumete-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 1,
+      "rejected": 14,
+      "pendingRows": [],
+      "supersededRows": []
+    },
+    {
+      "file": "ps1-priority-mitsumete-montecarlo-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps1-priority-mitsumete-montecarlo-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 1,
+      "rejected": 14,
+      "pendingRows": [],
+      "supersededRows": []
+    },
+    {
+      "file": "ps1-priority-motteke-mydream-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ps1-priority-motteke-mydream-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 1,
+      "rejected": 14,
+      "pendingRows": [],
+      "supersededRows": []
+    },
+    {
+      "file": "ds-priority-jewels-pachislot-reviewed-overviews-2026-08-25.csv",
+      "inputPath": "data\\games\\reviewed-overview-imports\\ds-priority-jewels-pachislot-reviewed-overviews-2026-08-25.csv",
+      "wouldImport": 0,
+      "supersededReviewedRows": 0,
+      "skipped": 2,
+      "rejected": 13,
+      "pendingRows": [],
+      "supersededRows": []
+    }
+  ],
+  "failures": []
+}

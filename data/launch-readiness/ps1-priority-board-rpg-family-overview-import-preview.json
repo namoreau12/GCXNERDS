@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-08-23T16:22:07.035Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-board-rpg-family-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 12
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-block-wars",
+      "title": "Block Wars",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-blockids",
+      "title": "Blockids",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Blockids&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-blood-lines",
+      "title": "Blood Lines",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Blood_Lines_(video_game)&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-blue-breaker-burst-bishou-o-anata-to",
+      "title": "Blue Breaker Burst: Bishou o Anata to",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Blue_Breaker_Burst:_Bishou_o_Anata_to&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-blue-breaker-burst-egao-no-asuni",
+      "title": "Blue Breaker Burst: Egao no Asuni",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Blue_Breaker_Burst:_Egao_no_Asuni&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-blue-forest-monogatari-kaze-no-fuuin",
+      "title": "Blue Forest Monogatari: Kaze no Fuuin",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-blue-s-clues-blue-s-big-musical",
+      "title": "Blue's Clues: Blue's Big Musical",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Blue%27s_Clues:_Blue%27s_Big_Musical&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-board-game-top-shop",
+      "title": "Board Game Top Shop",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Board_Game_Top_Shop"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-bokan-go-go-go",
+      "title": "Bokan Go Go Go",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-boku-no-choro-q",
+      "title": "Boku no Choro-Q",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Choro_Q_video_games"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-boku-wa-koukuu-kanseikan",
+      "title": "Boku wa Koukuu Kanseikan",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-bokujyoukeieteki-board-game-umapoly",
+      "title": "Bokujyoukeieteki Board Game: Umapoly",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Console component pressure chain</title>
+  <desc id="desc">GCX editorial flow chart showing how AI server demand can pressure memory and storage supply, raise console build costs, affect retail pricing, and influence used console demand.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#121419"/>
+      <stop offset=".58" stop-color="#20242b"/>
+      <stop offset="1" stop-color="#332820"/>
+    </linearGradient>
+    <linearGradient id="row" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#fff8e8"/>
+      <stop offset="1" stop-color="#f3e7d1"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#d13f32"/>
+      <stop offset="1" stop-color="#f2b84b"/>
+    </linearGradient>
+    <filter id="shadow" x="-6%" y="-10%" width="112%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity=".24"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <path d="M0 548 C180 470 345 595 535 506 C694 431 815 437 983 354 C1077 308 1141 296 1200 302 L1200 720 L0 720 Z" fill="#0d0f14" opacity=".45"/>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="80" y="88" fill="#f6f0df" font-size="30" font-weight="800">GCX Hardware Economics</text>
+    <text x="80" y="143" fill="#ffffff" font-size="44" font-weight="900">Why Console Prices Are Under Pressure</text>
+    <text x="80" y="184" fill="#d7dde7" font-size="22" font-weight="700">A market mechanism to watch, not a claim that one factor explains every price hike.</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" filter="url(#shadow)">
+    <g transform="translate(80 242)">
+      <rect width="1040" height="74" rx="16" fill="url(#row)"/>
+      <circle cx="43" cy="37" r="24" fill="url(#accent)"/>
+      <text x="43" y="45" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="900">1</text>
+      <text x="92" y="29" fill="#d13f32" font-size="15" font-weight="950" letter-spacing="1.5">DEMAND</text>
+      <text x="92" y="57" fill="#15171d" font-size="24" font-weight="900">AI server buildout increases appetite for memory and storage.</text>
+    </g>
+
+    <g transform="translate(80 331)">
+      <rect width="1040" height="74" rx="16" fill="url(#row)"/>
+      <circle cx="43" cy="37" r="24" fill="url(#accent)"/>
+      <text x="43" y="45" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="900">2</text>
+      <text x="92" y="29" fill="#d13f32" font-size="15" font-weight="950" letter-spacing="1.5">SUPPLY</text>
+      <text x="92" y="57" fill="#15171d" font-size="24" font-weight="900">Component pressure makes easy capacity harder to count on.</text>
+    </g>
+
+    <g transform="translate(80 420)">
+      <rect width="1040" height="74" rx="16" fill="url(#row)"/>
+      <circle cx="43" cy="37" r="24" fill="url(#accent)"/>
+      <text x="43" y="45" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="900">3</text>
+      <text x="92" y="29" fill="#d13f32" font-size="15" font-weight="950" letter-spacing="1.5">HARDWARE</text>
+      <text x="92" y="57" fill="#15171d" font-size="24" font-weight="900">Console bill-of-material costs can rise before shoppers see the impact.</text>
+    </g>
+
+    <g transform="translate(80 509)">
+      <rect width="1040" height="74" rx="16" fill="url(#row)"/>
+      <circle cx="43" cy="37" r="24" fill="url(#accent)"/>
+      <text x="43" y="45" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="900">4</text>
+      <text x="92" y="29" fill="#d13f32" font-size="15" font-weight="950" letter-spacing="1.5">RETAIL</text>
+      <text x="92" y="57" fill="#15171d" font-size="24" font-weight="900">MSRP changes, bundles, and premium mixes push prices higher.</text>
+    </g>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="80" y="623" width="1040" height="58" rx="14" fill="#0f1218" opacity=".82"/>
+    <text x="110" y="647" fill="#ffffff" font-size="20" font-weight="900">Editorial guardrail</text>
+    <text x="110" y="672" fill="#d7dde7" font-size="18" font-weight="700">GCX separates official MSRP changes, Circana ASP data, and component-cost analysis.</text>
+  </g>
+</svg>

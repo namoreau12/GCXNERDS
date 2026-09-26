@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-08-25T15:07:09.369Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\3ds-priority-bibi-birdmania-reviewed-overviews-2026-08-25.csv",
+  "force": true,
+  "summary": [
+    {
+      "platform": "3ds",
+      "updated": 1,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bibi-and-tina",
+      "title": "Bibi & Tina",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bibi-blocksberg-das-gro-e-hexenbesen-rennen-2",
+      "title": "Bibi Blocksberg - Das große Hexenbesen-Rennen 2",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-big-bass-arcade-no-limit",
+      "title": "Big Bass Arcade: No Limit",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-big-hero-6-battle-in-the-bay",
+      "title": "Big Hero 6: Battle in the Bay",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bike-rider-dx",
+      "title": "Bike Rider DX",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bike-rider-dx2-galaxy",
+      "title": "Bike Rider DX2: Galaxy",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bikkuri-tobidasu-mahou-no-pen",
+      "title": "Bikkuri! Tobidasu! Mahou no Pen",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bikkuriman-kanjuku-haoh-sanmi-douran-sensouki",
+      "title": "Bikkuriman Kanjuku Haoh: Sanmi Douran Sensouki",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bird-mania-3d",
+      "title": "Bird Mania 3D",
+      "reason": "Already applied in live game data"
+    }
+  ],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bingo-collection",
+      "title": "Bingo Collection",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://kotaku.com/games/bingo-collection"
+    }
+  ]
+}

@@ -1,0 +1,1102 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-26T00:44:28.125Z",
+  "cacheDir": ".cache\\overview-import-freshness",
+  "scannedReports": 663,
+  "rejectedRows": 1398,
+  "reasonCount": 2,
+  "platformCount": 13,
+  "fileCount": 183,
+  "topReasons": [
+    {
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "count": 1397,
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "reason": "newOverview is too short, template-like, or contains internal editorial language",
+      "count": 1,
+      "action": "Rewrite newOverview with specific player-facing detail and remove template/internal language before re-running the dry-run importer."
+    }
+  ],
+  "topPlatforms": [
+    {
+      "platform": "ps2",
+      "count": 307
+    },
+    {
+      "platform": "ps1",
+      "count": 299
+    },
+    {
+      "platform": "ds",
+      "count": 260
+    },
+    {
+      "platform": "ps4",
+      "count": 177
+    },
+    {
+      "platform": "3ds",
+      "count": 94
+    },
+    {
+      "platform": "psp",
+      "count": 74
+    },
+    {
+      "platform": "ps3",
+      "count": 45
+    },
+    {
+      "platform": "vita",
+      "count": 39
+    },
+    {
+      "platform": "gameboy",
+      "count": 31
+    },
+    {
+      "platform": "gba",
+      "count": 27
+    },
+    {
+      "platform": "switch",
+      "count": 22
+    },
+    {
+      "platform": "wii",
+      "count": 20
+    }
+  ],
+  "topFiles": [
+    {
+      "file": "ps1-priority-moorhen-motocross-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ps1-priority-moorhen-motocross-reviewed-overviews-2026-08-25.csv",
+      "count": 15
+    },
+    {
+      "file": "ps2-priority-lovesmash-lupin-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ps2-priority-lovesmash-lupin-reviewed-overviews-2026-08-25.csv",
+      "count": 15
+    },
+    {
+      "file": "ps2-priority-majokko-marykate-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ps2-priority-majokko-marykate-reviewed-overviews-2026-08-25.csv",
+      "count": 15
+    },
+    {
+      "file": "ps2-priority-master-memorial-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ps2-priority-master-memorial-reviewed-overviews-2026-08-25.csv",
+      "count": 15
+    },
+    {
+      "file": "ps3-priority-a-adams-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ps3-priority-a-adams-reviewed-overviews-2026-08-25.csv",
+      "count": 15
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "count": 14
+    },
+    {
+      "file": "ds-priority-joan-junior-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ds-priority-joan-junior-reviewed-overviews-2026-08-25.csv",
+      "count": 14
+    },
+    {
+      "file": "ds-priority-junior-kabutore-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ds-priority-junior-kabutore-reviewed-overviews-2026-08-25.csv",
+      "count": 14
+    },
+    {
+      "file": "ds-priority-kabutore-kangaeru-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ds-priority-kabutore-kangaeru-reviewed-overviews-2026-08-25.csv",
+      "count": 14
+    },
+    {
+      "file": "gameboy-licensed-classics-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/gameboy-licensed-classics-reviewed-overviews.csv",
+      "count": 14
+    },
+    {
+      "file": "ps1-priority-mikagura-minna-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ps1-priority-mikagura-minna-reviewed-overviews-2026-08-25.csv",
+      "count": 14
+    },
+    {
+      "file": "ps1-priority-minna-mitsumete-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ps1-priority-minna-mitsumete-reviewed-overviews-2026-08-25.csv",
+      "count": 14
+    },
+    {
+      "file": "ps1-priority-mitsumete-montecarlo-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ps1-priority-mitsumete-montecarlo-reviewed-overviews-2026-08-25.csv",
+      "count": 14
+    },
+    {
+      "file": "ps1-priority-motteke-mydream-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ps1-priority-motteke-mydream-reviewed-overviews-2026-08-25.csv",
+      "count": 14
+    },
+    {
+      "file": "ds-priority-jewels-pachislot-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ds-priority-jewels-pachislot-reviewed-overviews-2026-08-25.csv",
+      "count": 13
+    },
+    {
+      "file": "ps1-priority-meru-mighty-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ps1-priority-meru-mighty-reviewed-overviews-2026-08-25.csv",
+      "count": 13
+    },
+    {
+      "file": "ps2-priority-mahjong-majin-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ps2-priority-mahjong-majin-reviewed-overviews-2026-08-25.csv",
+      "count": 13
+    },
+    {
+      "file": "ps4-priority-blair-bow-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ps4-priority-blair-bow-reviewed-overviews-2026-08-25.csv",
+      "count": 13
+    },
+    {
+      "file": "vita-rpg-visual-novel-indie-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/vita-rpg-visual-novel-indie-reviewed-overviews.csv",
+      "count": 13
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-2.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-2.csv",
+      "count": 12
+    },
+    {
+      "file": "3ds-recognizable-eshop-classics-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-recognizable-eshop-classics-reviewed-overviews.csv",
+      "count": 12
+    },
+    {
+      "file": "ds-family-anime-collector-reviewed-overviews-8.json",
+      "inputPath": "data/games/reviewed-overview-imports/ds-family-anime-collector-reviewed-overviews-8.csv",
+      "count": 12
+    },
+    {
+      "file": "ds-family-licensed-collector-reviewed-overviews-9.json",
+      "inputPath": "data/games/reviewed-overview-imports/ds-family-licensed-collector-reviewed-overviews-9.csv",
+      "count": 12
+    },
+    {
+      "file": "ds-priority-jewelmatch-jeweltime-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ds-priority-jewelmatch-jeweltime-reviewed-overviews-2026-08-25.csv",
+      "count": 12
+    },
+    {
+      "file": "ds-priority-kanji-kawaii-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/ds-priority-kanji-kawaii-reviewed-overviews-2026-08-25.csv",
+      "count": 12
+    }
+  ],
+  "sampleRows": [
+    {
+      "file": "3ds-eshop-licensed-catalog-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-eshop-licensed-catalog-reviewed-overviews-6.csv",
+      "platform": "3ds",
+      "gameId": "3ds-a-ressha-de-ikou-3d-neo",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-eshop-licensed-catalog-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-eshop-licensed-catalog-reviewed-overviews-6.csv",
+      "platform": "3ds",
+      "gameId": "3ds-adventure-bar-story",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-eshop-licensed-catalog-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-eshop-licensed-catalog-reviewed-overviews-6.csv",
+      "platform": "3ds",
+      "gameId": "3ds-adventure-labyrinth-story",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-eshop-licensed-catalog-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-eshop-licensed-catalog-reviewed-overviews-6.csv",
+      "platform": "3ds",
+      "gameId": "3ds-aeternoblade",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-eshop-licensed-catalog-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-eshop-licensed-catalog-reviewed-overviews-6.csv",
+      "platform": "3ds",
+      "gameId": "3ds-aikatsu-my-no-1-stage",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-eshop-licensed-catalog-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-eshop-licensed-catalog-reviewed-overviews-6.csv",
+      "platform": "3ds",
+      "gameId": "3ds-airace-speed",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-eshop-licensed-catalog-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-eshop-licensed-catalog-reviewed-overviews-6.csv",
+      "platform": "3ds",
+      "gameId": "3ds-airace-xeno",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-eshop-licensed-catalog-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-eshop-licensed-catalog-reviewed-overviews-6.csv",
+      "platform": "3ds",
+      "gameId": "3ds-akari-by-nikoli",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-eshop-licensed-catalog-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-eshop-licensed-catalog-reviewed-overviews-6.csv",
+      "platform": "3ds",
+      "gameId": "3ds-alchemic-dungeons",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-eshop-licensed-catalog-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-eshop-licensed-catalog-reviewed-overviews-6.csv",
+      "platform": "3ds",
+      "gameId": "3ds-ambition-of-the-slimes",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-eshop-licensed-catalog-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-eshop-licensed-catalog-reviewed-overviews-6.csv",
+      "platform": "3ds",
+      "gameId": "3ds-atv-wild-ride-3d",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-2.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-2.csv",
+      "platform": "3ds",
+      "gameId": "3ds-disney-magical-world",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-2.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-2.csv",
+      "platform": "3ds",
+      "gameId": "3ds-dragon-quest-monsters-joker-3",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-2.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-2.csv",
+      "platform": "3ds",
+      "gameId": "3ds-dragon-quest-monsters-joker-3-professional",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-2.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-2.csv",
+      "platform": "3ds",
+      "gameId": "3ds-lego-jurassic-world",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-2.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-2.csv",
+      "platform": "3ds",
+      "gameId": "3ds-lego-star-wars-the-force-awakens",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-2.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-2.csv",
+      "platform": "3ds",
+      "gameId": "3ds-my-nintendo-picross-the-legend-of-zelda-twilight-princess",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-2.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-2.csv",
+      "platform": "3ds",
+      "gameId": "3ds-naruto-powerful-shippuden",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-2.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-2.csv",
+      "platform": "3ds",
+      "gameId": "3ds-persona-q2-new-cinema-labyrinth",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-2.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-2.csv",
+      "platform": "3ds",
+      "gameId": "3ds-puzzle-and-dragons-super-mario-bros-edition",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-2.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-2.csv",
+      "platform": "3ds",
+      "gameId": "3ds-sonic-boom-fire-and-ice",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-2.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-2.csv",
+      "platform": "3ds",
+      "gameId": "3ds-yo-kai-watch-busters-2-treasure-legend-banbaraya-magnum",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-2.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-2.csv",
+      "platform": "3ds",
+      "gameId": "3ds-yo-kai-watch-busters-2-treasure-legend-banbaraya-sword",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-3.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-3.csv",
+      "platform": "3ds",
+      "gameId": "3ds-final-fantasy",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-3.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-3.csv",
+      "platform": "3ds",
+      "gameId": "3ds-meitantei-conan-marionette-symphony",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-3.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-3.csv",
+      "platform": "3ds",
+      "gameId": "3ds-one-piece-super-grand-battle-x",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-3.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-3.csv",
+      "platform": "3ds",
+      "gameId": "3ds-one-piece-unlimited-cruise-sp",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-franchise-collector-reviewed-overviews-3.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-franchise-collector-reviewed-overviews-3.csv",
+      "platform": "3ds",
+      "gameId": "3ds-sd-gundam-g-generation",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-pokemon-tcg-anime-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-pokemon-tcg-anime-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-pokemon-dream-radar",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-pokemon-tcg-anime-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-pokemon-tcg-anime-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-pokemon-picross",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-pokemon-tcg-anime-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-pokemon-tcg-anime-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-the-thieves-and-the-1000-pokemon",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-pokemon-tcg-anime-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-pokemon-tcg-anime-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-yu-gi-oh-zexal-world-duel-carnival",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-pokemon-tcg-anime-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-pokemon-tcg-anime-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-dragon-ball-heroes-ultimate-mission-2",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-pokemon-tcg-anime-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-pokemon-tcg-anime-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-dragon-ball-heroes-ultimate-mission-x",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-pokemon-tcg-anime-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-pokemon-tcg-anime-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-monster-hunter-diary-poka-poka-airou-village-dx",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-pokemon-tcg-anime-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-pokemon-tcg-anime-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-yo-kai-sangokushi",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-pokemon-tcg-anime-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-pokemon-tcg-anime-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-attack-on-titan-humanity-in-chains",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-6-1-unlimited",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-12-sai-honto-no-kimochi",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-12-sai-koisuru-diary",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-12-sai-torokeru-puzzle-futari-no-harmony",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-36-fragments-of-midnight",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-50-pinch-barrage",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-101-dinopets-3d",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-101-penguin-pets-3d",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-101-pony-pets-3d",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-accel-knights-2-full-throttle",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-acrylic-palette-irodori-cafe-cheers",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-aikatsu-stars-first-appeal",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-aikatsu-stars-my-special-appeal",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-6x1-aikatsu-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-aikatsu-2-nin-no-my-princess",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-areyou-azito-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-areyou-azito-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-asonde-shogi-ga-tsuyoku-naru-ginsei-shogi-dx",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-areyou-azito-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-areyou-azito-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-astro",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-areyou-azito-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-areyou-azito-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-atlantis-6",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-bearshark-bestof-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-bearshark-bestof-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-best-of-arcade-games",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-bearshark-bestof-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-bearshark-bestof-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-best-of-casual-games",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-bibi-birdmania-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-bibi-birdmania-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-bikkuri-tobidasu-mahou-no-pen",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-bibi-birdmania-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-bibi-birdmania-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-bikkuriman-kanjuku-haoh-sanmi-douran-sensouki",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-bibi-birdmania-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-bibi-birdmania-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-bingo-collection",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-birdmania-blookid-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-birdmania-blookid-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-bit-dungeon-plus",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-birdmania-blookid-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-birdmania-blookid-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-blockform",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-birdmania-blookid-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-birdmania-blookid-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-bloo-kid-2",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-boku-bombmonkey-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-boku-bombmonkey-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-boku-no-hero-academia-battle-for-all",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-boku-bombmonkey-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-boku-bombmonkey-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-boku-wa-koukuu-kanseikan-airport-hero-3d-haneda-with-jal",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-boku-bombmonkey-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-boku-bombmonkey-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-boku-wa-koukuu-kanseikan-airport-hero-3d-naha-premium",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-boku-bombmonkey-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-boku-bombmonkey-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-boku-wa-koukuu-kanseikan-airport-hero-3d-shin-chitose-with-jal",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-boku-bombmonkey-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-boku-bombmonkey-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-bokura-no-gakkou-sensou-tsuukai-adventure",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-boku-bombmonkey-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-boku-bombmonkey-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-bokura-no-nanokakan-sensou-yuujou-adventure",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-bonbon-bravedungeon-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-bonbon-bravedungeon-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-bonbon-ribbon-tokimeki-coord-kirakira-dance",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-bonbon-bravedungeon-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-bonbon-bravedungeon-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-bookstores-everywhere",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-bonbon-bravedungeon-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-bonbon-bravedungeon-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-box-up",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-bonbon-bravedungeon-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-bonbon-bravedungeon-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-boxzle",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-bonbon-bravedungeon-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-bonbon-bravedungeon-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-brain-training-3d",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-bonbon-bravedungeon-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-bonbon-bravedungeon-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-brave-company",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-breakout-defender",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-breakout-defender-2",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-breakout-defense-2",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-brick-thru",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-bricks-defender",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-bricks-defender-2",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-bricks-defender-3",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-priority-breakout-bricks-reviewed-overviews-2026-08-25.csv",
+      "platform": "3ds",
+      "gameId": "3ds-bricks-defender-4",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-recognizable-eshop-classics-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-recognizable-eshop-classics-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-3d-block-kuzushi",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-recognizable-eshop-classics-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-recognizable-eshop-classics-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-3d-ecco-the-dolphin",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-recognizable-eshop-classics-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-recognizable-eshop-classics-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-3d-game-collection-55-in-1",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-recognizable-eshop-classics-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-recognizable-eshop-classics-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-3d-mahjongg",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-recognizable-eshop-classics-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-recognizable-eshop-classics-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-3d-retro-dungeon-puzzle-challenge",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-recognizable-eshop-classics-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-recognizable-eshop-classics-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-3d-solitaire",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-recognizable-eshop-classics-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-recognizable-eshop-classics-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-3d-streets-of-rage",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-recognizable-eshop-classics-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-recognizable-eshop-classics-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-4-elements",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-recognizable-eshop-classics-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-recognizable-eshop-classics-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-10-in-1-arcade-collection",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-recognizable-eshop-classics-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-recognizable-eshop-classics-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-50-classic-games-3d",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-recognizable-eshop-classics-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-recognizable-eshop-classics-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-80-s-overdrive",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "3ds-recognizable-eshop-classics-reviewed-overviews.json",
+      "inputPath": "data/games/reviewed-overview-imports/3ds-recognizable-eshop-classics-reviewed-overviews.csv",
+      "platform": "3ds",
+      "gameId": "3ds-a-train-3d-city-simulator",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "ds-board-education-sim-mystery-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/ds-board-education-sim-mystery-reviewed-overviews-6.csv",
+      "platform": "ds",
+      "gameId": "ds-50-more-classic-games",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "ds-board-education-sim-mystery-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/ds-board-education-sim-mystery-reviewed-overviews-6.csv",
+      "platform": "ds",
+      "gameId": "ds-100-all-time-favorites",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "ds-board-education-sim-mystery-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/ds-board-education-sim-mystery-reviewed-overviews-6.csv",
+      "platform": "ds",
+      "gameId": "ds-100-classic-games",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "ds-board-education-sim-mystery-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/ds-board-education-sim-mystery-reviewed-overviews-6.csv",
+      "platform": "ds",
+      "gameId": "ds-1000-bornes",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "ds-board-education-sim-mystery-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/ds-board-education-sim-mystery-reviewed-overviews-6.csv",
+      "platform": "ds",
+      "gameId": "ds-1001-crosswords",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    },
+    {
+      "file": "ds-board-education-sim-mystery-reviewed-overviews-6.json",
+      "inputPath": "data/games/reviewed-overview-imports/ds-board-education-sim-mystery-reviewed-overviews-6.csv",
+      "platform": "ds",
+      "gameId": "ds-1500ds-spirits-vol-1-mahjong",
+      "title": "",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row",
+      "action": "Refresh currentOverview from live game data, re-read the reviewed copy beside the current record, then import with --force only after confirming the row is still accurate."
+    }
+  ],
+  "csvPath": "data/launch-readiness/overview-import-repair-queue.csv"
+}

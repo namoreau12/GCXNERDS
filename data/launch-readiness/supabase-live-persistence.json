@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-26T00:45:01.140Z",
+  "base": "http://localhost:3063",
+  "endpoints": [
+    {
+      "status": 201,
+      "source": "local+supabase",
+      "id": "newsletter-1790383499199-supabase-smoke-1790383498141"
+    },
+    {
+      "status": 201,
+      "source": "local+supabase",
+      "id": "collector-waitlist-1790383499331-supabase-smoke-beta-item-1790383498141"
+    },
+    {
+      "status": 201,
+      "source": "local+supabase",
+      "id": "sponsor-1790383499624-supabase-smoke-co-1790383498141"
+    }
+  ],
+  "remoteCounts": {
+    "newsletter": 1,
+    "collectorWaitlist": 1,
+    "marketplaceIntent": 1,
+    "sponsorLead": 1
+  },
+  "postCleanupCounts": {
+    "newsletter": 0,
+    "collectorWaitlist": 0,
+    "marketplaceIntent": 0,
+    "sponsorLead": 0
+  },
+  "cleanedTables": [
+    "newsletter_subscriptions",
+    "collector_waitlist",
+    "marketplace_listing_intents",
+    "sponsor_leads"
+  ],
+  "restoredLocalCommunity": true
+}

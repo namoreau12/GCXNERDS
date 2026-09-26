@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-08-23T18:54:14.210Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-goemon-gt-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 25
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-goemon-shin-sedai-shumei",
+      "title": "Goemon: Shin Sedai Shumei!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Goemon:_Shin_Sedai_Sh%C5%ABmei!"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gogo-i-land",
+      "title": "GoGo I-land",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-goiken-muyou-ii",
+      "title": "Goiken Muyou II",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gokujou-parodius-da-deluxe-pack",
+      "title": "Gokujou Parodius Da! Deluxe Pack",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Parodius"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gokuu-densetsu-magic-beast-warriors",
+      "title": "Gokuu Densetsu: Magic Beast Warriors",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-goldie",
+      "title": "Goldie",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-goo-goo-soundy",
+      "title": "Goo! Goo! Soundy",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-googootrops",
+      "title": "Googootrops",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-goryujin-electro",
+      "title": "Goryujin + Electro",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gotouchi-hello-kitty-sugoroku-monogatari",
+      "title": "Gotouchi Hello Kitty Sugoroku Monogatari",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gourmet-action-game-manpuku-nabe-kazoku",
+      "title": "Gourmet Action Game: Manpuku!! Nabe Kazoku",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gp-challenge",
+      "title": "GP Challenge",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/GP_Challenge"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gradius-deluxe-pack",
+      "title": "Gradius Deluxe Pack",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gradius_Deluxe_Pack"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-granyuu-shima-daibouken",
+      "title": "Granyuu-shima! Daibouken",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-great-hits",
+      "title": "Great Hits",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-grid-runner",
+      "title": "Grid Runner",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Grid_Runner"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-grille-logic",
+      "title": "Grille Logic",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gritz-the-primordial-adventure",
+      "title": "Gritz: The Primordial Adventure",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-groove-adventure-rave-mikan-no-hiseki",
+      "title": "Groove Adventure Rave: Mikan no Hiseki",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-groove-adventure-rave-plue-no-daibouken",
+      "title": "Groove Adventure Rave: Plue no Daibouken",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-groove-adventure-rave-yuukyuu-no-kizuna",
+      "title": "Groove Adventure Rave: Yuukyuu no Kizuna",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-growlanser",
+      "title": "Growlanser",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Growlanser"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gt-kai-all-japan-grand-touring-car-championship",
+      "title": "GT Kai: All Japan Grand Touring Car Championship",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gt-max-rev-all-japan-grand-touring-car-championship",
+      "title": "GT Max Rev.: All Japan Grand Touring Car Championship",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gt-straight-victory-hoshino-kazuyoshi-e-no-chousen",
+      "title": "GT Straight Victory: Hoshino Kazuyoshi e no Chousen",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

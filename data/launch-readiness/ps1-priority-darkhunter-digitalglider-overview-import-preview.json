@@ -1,0 +1,275 @@
+{
+  "generatedAt": "2026-08-23T17:30:20.935Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-darkhunter-digitalglider-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 37
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-dark-hunter-shita-youma-no-mori",
+      "title": "Dark Hunter: Shita Youma no Mori",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-dark-tales-from-the-lost-soul",
+      "title": "Dark Tales: From the Lost Soul",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-dave-mirra-freestyle-bmx",
+      "title": "Dave Mirra Freestyle BMX",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dave_Mirra_Freestyle_BMX"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-dave-mirra-freestyle-bmx-maximum-remix",
+      "title": "Dave Mirra Freestyle BMX: Maximum Remix",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dave_Mirra_Freestyle_BMX"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-davis-cup-complete-tennis",
+      "title": "Davis Cup Complete Tennis",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-dead-in-the-water",
+      "title": "Dead in the Water",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dead_in_the_Water_(video_game)"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-deadheat-road",
+      "title": "Deadheat Road",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-deadly-skies",
+      "title": "Deadly Skies",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-death-wing",
+      "title": "Death Wing",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-debut-21",
+      "title": "Debut 21",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-deep-sea-adventure-kaitei-kyuu-panthalassa-no-nazo",
+      "title": "Deep Sea Adventure: Kaitei Kyuu Panthalassa no Nazo",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-dekiru-game-center",
+      "title": "Dekiru! Game Center",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-dengeki-construction-ochige-yarouze",
+      "title": "Dengeki Construction: Ochige-Yarouze!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-denki-groove-jigoku-v",
+      "title": "Denki Groove Jigoku V",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-denpa-shounenteki-game",
+      "title": "Denpa Shounenteki Game",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-densetsu-kemono-no-ana-monster-complete-world-ver-2",
+      "title": "Densetsu Kemono no Ana: Monster Complete World Ver. 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-densha-daisuki-plarail-de-ippai",
+      "title": "Densha Daisuki: Plarail de Ippai",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-densha-de-go-nagoya-railroad",
+      "title": "Densha de Go! Nagoya Railroad",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-densha-de-go-professional-shiyou",
+      "title": "Densha de Go! Professional Shiyou",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-derby-jockey-2001",
+      "title": "Derby Jockey 2001",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-derby-jockey-r",
+      "title": "Derby Jockey R",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-derby-stallion",
+      "title": "Derby Stallion",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Derby_Stallion"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-derby-stallion-99",
+      "title": "Derby Stallion '99",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Derby_Stallion"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-deserted-island",
+      "title": "Deserted Island",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-destructo-2",
+      "title": "Destructo 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-detective-barbie-the-mystery-cruise",
+      "title": "Detective Barbie: The Mystery Cruise",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Detective_Barbie"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-detective-mouse",
+      "title": "Detective Mouse",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-devicereign",
+      "title": "DeviceReign",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-dezaemon-kids",
+      "title": "Dezaemon Kids!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-dezaemon-plus",
+      "title": "Dezaemon Plus",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-diablo",
+      "title": "Diablo",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Diablo_(video_game)"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-die-hard-trilogy-2-viva-las-vegas",
+      "title": "Die Hard Trilogy 2: Viva Las Vegas",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Die_Hard_Trilogy_2:_Viva_Las_Vegas"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-diet-nyuumon-set-undou-kaishou",
+      "title": "Diet Nyuumon Set Undou Kaishou!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-digical-league",
+      "title": "Digical League",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-digicro-digital-number-crossword",
+      "title": "DigiCro: Digital Number Crossword",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-digital-figure-iina",
+      "title": "Digital Figure Iina",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-digital-glider-airman",
+      "title": "Digital Glider Airman",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "generatedAt": "2026-09-26T00:37:33.236Z",
+  "ok": true,
+  "base": "http://localhost:3000",
+  "seedPages": [
+    {
+      "path": "/",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 69
+    },
+    {
+      "path": "/news.html",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 189
+    },
+    {
+      "path": "/games.html",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 144
+    },
+    {
+      "path": "/consoles.html",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 192
+    },
+    {
+      "path": "/pokemon.html",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 126
+    },
+    {
+      "path": "/magic.html",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 346
+    },
+    {
+      "path": "/yugioh.html",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 25
+    },
+    {
+      "path": "/community.html",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 135
+    },
+    {
+      "path": "/community-groups.html",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 32
+    },
+    {
+      "path": "/community-events.html",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 30
+    },
+    {
+      "path": "/community-members.html",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 59
+    },
+    {
+      "path": "/streamers.html",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 57
+    },
+    {
+      "path": "/sponsors.html",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 29
+    },
+    {
+      "path": "/search.html",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 24
+    },
+    {
+      "path": "/article.html?id=gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 47
+    },
+    {
+      "path": "/console.html?id=nintendo-switch",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 28
+    },
+    {
+      "path": "/dreamcast-game.html?id=dreamcast-sonic-adventure",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 26
+    },
+    {
+      "path": "/magic-card.html?set=10e&id=7a5cd03c-4227-4551-aa4b-7d119f0468b5",
+      "status": 200,
+      "overflow": false,
+      "linkCount": 28
+    }
+  ],
+  "checkedLinks": 674,
+  "broken": [],
+  "consoleErrors": []
+}

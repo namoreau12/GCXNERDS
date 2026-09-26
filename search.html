@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search | Games Cards Exchange</title>
+    <meta name="description" content="Search GCX gaming news, card guides, marketplace trackers, games, and community coverage." /><script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://gcxnerds.com/",
+        "name": "Games Cards Exchange",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://gcxnerds.com/search.html?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <link rel="canonical" href="https://gcxnerds.com/search.html" />
+    <meta property="og:title" content="Search | Games Cards Exchange" />
+    <meta property="og:description" content="Search GCX gaming news, card guides, marketplace trackers, games, and community coverage." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gcxnerds.com/search.html" />
+    <meta property="og:image" content="https://gcxnerds.com/assets/news/pokemon-tcg-30th-celebration.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Search | Games Cards Exchange" />
+    <meta name="twitter:description" content="Search GCX gaming news, card guides, marketplace trackers, games, and community coverage." />
+    <meta name="twitter:image" content="https://gcxnerds.com/assets/news/pokemon-tcg-30th-celebration.jpg" /><link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header has-mobile-nav">
+      <a class="brand" href="index.html" aria-label="Games Cards Exchange home">
+        <span class="brand-mark">GCX</span>
+        <span>Games Cards Exchange</span>
+      </a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="news.html">News</a>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Games</button>
+          <div class="nav-dropdown">
+            <a href="games.html">Game Database</a>
+            <a href="consoles.html">Console Database</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Cards</button>
+          <div class="nav-dropdown">
+            <a href="pokemon.html">Pokemon Cards</a>
+            <a href="magic.html">Magic Cards</a>
+            <a href="yugioh.html">Yu-Gi-Oh! Cards</a>
+            <a href="index.html#cards">Marketplace Beta</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Community</button>
+          <div class="nav-dropdown">
+            <a href="community.html">Community Feed</a>
+            <a href="community-members.html">Members</a>
+            <a href="community-groups.html">Groups</a>
+            <a href="community-events.html">Events</a>
+            <a href="streamers.html">Streamer Highlights</a>
+          </div>
+        </div>
+        <a href="search.html">Search</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search" role="search" action="search.html" method="get">
+          <label class="sr-only" for="site-search">Search GCX</label>
+          <input id="site-search" name="q" type="search" placeholder="Search games, cards, news" />
+        </form>
+        <a class="account-link" href="auth.html">Sign In</a>
+      </div>
+    </header>
+
+    <main class="news-page search-page">
+      <section class="news-hero">
+        <div>
+          <p class="kicker">Search GCX</p>
+          <h1>Find stories, guides, and collector tools</h1>
+          <p>Search original GCX coverage, live news, card guides, price trackers, and game database paths.</p>
+        </div>
+      </section>
+
+      <form id="search-page-form" class="search-panel" role="search">
+        <label class="sr-only" for="search-page-input">Search GCX</label>
+        <input id="search-page-input" name="q" type="search" placeholder="Search Pokemon, GTA, Switch, cards, streamers..." />
+        <button class="button" type="submit">Search</button>
+      </form>
+
+      <section class="content-band">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Results</p>
+            <h2 id="search-results-heading">Search results</h2>
+          </div>
+        </div>
+        <div id="search-results" class="search-results-grid" aria-live="polite">
+          <div class="index-message">Enter a search above.</div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <p><strong>Games Cards Exchange</strong></p>
+        <p>Games, cards, movies, streaming, reviews, guides, and collector-first marketplace tools.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="trust.html">Trust</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="about.html">About</a>
+        <a href="trust.html#editorial">Editorial Standards</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="marketplace-rules.html">Marketplace Rules</a>
+        <a href="contact.html">Contact</a>
+        <a href="news.html">Newsroom</a>
+      </nav>
+    </footer>
+    <script src="site.js?v=20260906"></script>
+    <script src="search.js?v=20260825-preview-cleanup"></script>
+    <script src="community-badge.js"></script>
+  </body>
+</html>

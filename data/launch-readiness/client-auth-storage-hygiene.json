@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-09-05T18:24:34.571Z",
+  "base": "http://localhost:3000",
+  "ok": true,
+  "staticChecks": [
+    {
+      "name": "auth page stores session saved-at timestamp",
+      "ok": true
+    },
+    {
+      "name": "auth page clears session saved-at timestamp",
+      "ok": true
+    },
+    {
+      "name": "global header checks stale session storage",
+      "ok": true
+    },
+    {
+      "name": "global header clears saved-at timestamp",
+      "ok": true
+    }
+  ],
+  "authStorageCleared": true,
+  "headerStorageCleared": true,
+  "consoleErrors": []
+}

@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-08-23T19:00:58.132Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-guardian-hanafuda-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 25
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-guardian-recall",
+      "title": "Guardian Recall",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-guitar-freaks",
+      "title": "Guitar Freaks",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/GuitarFreaks_and_DrumMania"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-guitar-freaks-append-2nd-mix",
+      "title": "Guitar Freaks Append 2nd Mix",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/GuitarFreaks_and_DrumMania"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gunbare-game-tengoku-2",
+      "title": "GunBare! Game Tengoku 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gundress",
+      "title": "GunDress",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gung-ho-brigade",
+      "title": "Gung Ho Brigade",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-guntu-western-front-june-1944",
+      "title": "Guntu Western Front June, 1944",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-guruguru-town-hanamarukun",
+      "title": "Guruguru Town Hanamarukun",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gussun-oyoyo",
+      "title": "Gussun Oyoyo",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gute-zeiten-schlechte-zeiten-quiz",
+      "title": "Gute Zeiten Schlechte Zeiten Quiz",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gute-zeiten-schlechte-zeiten-vol-2",
+      "title": "Gute Zeiten Schlechte Zeiten Vol.2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gute-zeiten-schlechte-zeiten-vol-3",
+      "title": "Gute Zeiten Schlechte Zeiten Vol.3",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-guucho-de-park-theme-park-monogatari",
+      "title": "Guucho de Park: Theme Park Monogatari",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-hai-shin-2",
+      "title": "Hai-Shin 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-hajime-no-ippo-the-fighting",
+      "title": "Hajime no Ippo: The Fighting!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hajime_no_Ippo:_The_Fighting!"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-hakai-ou-king-of-crusher",
+      "title": "Hakai Ou: King of Crusher",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-hamster-club-i",
+      "title": "Hamster Club i",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-hamster-monogatari",
+      "title": "Hamster Monogatari",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-hamster-no-odaken",
+      "title": "Hamster no Odaken",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-hana-to-ryuu",
+      "title": "Hana to Ryuu",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-hanabi-fantast",
+      "title": "Hanabi Fantast",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-hanafuda",
+      "title": "Hanafuda",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-hanafuda-hyper-value-2800",
+      "title": "Hanafuda (Hyper Value 2800)",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-hanafuda-and-card-game",
+      "title": "Hanafuda & Card Game",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-hanafuda-graffiti-koi-koi-monogatari",
+      "title": "Hanafuda Graffiti: Koi Koi Monogatari",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

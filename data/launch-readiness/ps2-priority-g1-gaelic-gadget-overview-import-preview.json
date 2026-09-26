@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-08-23T16:45:31.828Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-g1-gaelic-gadget-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 12
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-g1-jockey-4-2006",
+      "title": "G1 Jockey 4 2006",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/G1_Jockey"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-g1-jockey-4-2007",
+      "title": "G1 Jockey 4 2007",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/G1_Jockey"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-g1-jockey-4-2008",
+      "title": "G1 Jockey 4 2008",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/G1_Jockey"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gacharoku",
+      "title": "Gacharoku",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gacharoku-2-kondo-wa-sekai-isshuu-yo",
+      "title": "Gacharoku 2: Kondo wa Sekai Isshuu yo!!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gachinko-pro-yakyuu",
+      "title": "Gachinko Pro Yakyuu",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gadget-and-the-gadgetinis",
+      "title": "Gadget & the Gadgetinis",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gadget_%26_the_Gadgetinis_(video_game)"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gadget-racers",
+      "title": "Gadget Racers",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gadget_Racers"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gaelic-games-football",
+      "title": "Gaelic Games: Football",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gaelic_Games:_Football"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gaelic-games-football-2",
+      "title": "Gaelic Games: Football 2",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gaelic_Games:_Football_2"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gaelic-games-hurling",
+      "title": "Gaelic Games: Hurling",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gaelic_Games:_Hurling"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gaika-no-gouhou-air-land-force",
+      "title": "Gaika no Gouhou: Air Land Force",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    }
+  ]
+}

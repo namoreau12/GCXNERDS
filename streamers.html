@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Streamer Highlights | Games Cards Exchange</title>
+    <meta
+      name="description"
+      content="Vote for GCX streamers of the week, nominate creators, and spotlight gaming and collecting channels."
+    />
+    <link rel="canonical" href="https://gcxnerds.com/streamers.html" />
+    <meta property="og:title" content="Streamer Highlights | Games Cards Exchange" />
+    <meta property="og:description" content="Vote for GCX streamers of the week, nominate creators, and spotlight gaming and collecting channels." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gcxnerds.com/streamers.html" />
+    <meta property="og:image" content="https://gcxnerds.com/assets/news/pokemon-tcg-30th-celebration.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Streamer Highlights | Games Cards Exchange" />
+    <meta name="twitter:description" content="Vote for GCX streamers of the week, nominate creators, and spotlight gaming and collecting channels." />
+    <meta name="twitter:image" content="https://gcxnerds.com/assets/news/pokemon-tcg-30th-celebration.jpg" /><link rel="stylesheet" href="styles.css" />
+      <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Games Cards Exchange",
+      "url": "https://gcxnerds.com",
+      "logo": "https://gcxnerds.com/assets/news/pokemon-tcg-30th-celebration.jpg"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://gcxnerds.com/streamers.html#webpage",
+      "url": "https://gcxnerds.com/streamers.html",
+      "name": "Streamer Highlights",
+      "description": "GCX streamer campaigns, creator spotlights, voting, and community activity.",
+      "isPartOf": {
+        "@id": "https://gcxnerds.com/#website"
+      },
+      "publisher": {
+        "@id": "https://gcxnerds.com/#organization"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Streamer Highlights"
+      }
+    }
+  ]
+}</script>
+  </head>
+  <body>
+    <header class="site-header has-mobile-nav">
+      <a class="brand" href="index.html" aria-label="Games Cards Exchange home">
+        <span class="brand-mark">GCX</span>
+        <span>Games Cards Exchange</span>
+      </a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="news.html">News</a>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Games</button>
+          <div class="nav-dropdown">
+            <a href="games.html">Game Database</a>
+            <a href="consoles.html">Console Database</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Cards</button>
+          <div class="nav-dropdown">
+            <a href="pokemon.html">Pokemon Cards</a>
+            <a href="magic.html">Magic Cards</a>
+            <a href="yugioh.html">Yu-Gi-Oh! Cards</a>
+            <a href="index.html#cards">Marketplace Beta</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Community</button>
+          <div class="nav-dropdown">
+            <a href="community.html">Community Feed</a>
+            <a href="community-members.html">Members</a>
+            <a href="community-groups.html">Groups</a>
+            <a href="community-events.html">Events</a>
+            <a href="streamers.html">Streamer Highlights</a>
+          </div>
+        </div>
+        <a href="search.html">Search</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search" role="search" action="search.html" method="get">
+          <label class="sr-only" for="site-search">Search GCX</label>
+          <input id="site-search" name="q" type="search" placeholder="Search games, cards, news" />
+        </form>
+        <a class="account-link" href="auth.html">Sign In</a>
+      </div>
+    </header>
+
+    <main class="community-page">
+      <section class="streamer-hero">
+        <div>
+          <p class="kicker">GCX Creator Spotlight</p>
+          <h1>Vote creators into the weekly GCX spotlight.</h1>
+          <p>
+            Gaming, Pokemon, TCG, retro, collecting, and community creators can campaign for two launch slots:
+            one featured creator and one rising creator. Votes are community-driven; sponsored placements are labeled separately.
+          </p>
+        </div>
+        <div class="streamer-hero-actions">
+          <a class="button" href="#creator-application">Apply to be featured</a>
+          <a class="button secondary" href="sponsors.html?ref=streamer-page">Sponsor the spotlight</a>
+        </div>
+      </section>
+
+      <section class="creator-launch-strip" aria-label="Creator spotlight launch program">
+        <article>
+          <span>01</span>
+          <strong>Featured Creator</strong>
+          <p>A higher-reach creator who can bring new audiences into GCX games, cards, and community coverage.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>Rising Creator</strong>
+          <p>A smaller channel with a focused community that deserves a real signal boost.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>Community Vote</strong>
+          <p>Votes help decide visibility. GCX still reviews creators for eligibility, safety, and fit.</p>
+        </article>
+      </section>
+
+      <section class="streaming-watch-section" aria-label="Streaming Spotlight">
+        <div class="section-heading">
+          <p class="kicker">Streaming Spotlight</p>
+          <h2>Something worth watching next</h2>
+          <p>Official videos, creator channels, tournaments, and scheduled picks. GCX only labels something live when provider data verifies it.</p>
+        </div>
+        <div id="featured-stream" class="featured-stream"></div>
+        <div class="streaming-rails">
+          <section>
+            <div class="section-heading compact-heading">
+              <p class="kicker">Watch Now</p>
+              <h2>Replays and Channels</h2>
+            </div>
+            <div id="streaming-live-now" class="streaming-card-grid"></div>
+          </section>
+          <section>
+            <div class="section-heading compact-heading">
+              <p class="kicker">Upcoming</p>
+              <h2>Scheduled Picks</h2>
+            </div>
+            <div id="streaming-upcoming" class="streaming-card-grid"></div>
+          </section>
+          <section>
+            <div class="section-heading compact-heading">
+              <p class="kicker">GCX Picks</p>
+              <h2>Editorial Watchlist</h2>
+            </div>
+            <div id="streaming-picks" class="streaming-card-grid"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="streamer-layout">
+        <section aria-label="Streamer voting">
+          <div class="section-heading">
+            <p class="kicker">Vote</p>
+            <h2>This Week's Board</h2>
+          </div>
+          <div id="campaign-strip" class="campaign-strip"></div>
+          <div id="spotlight-slots" class="spotlight-slots"></div>
+          <div id="streamer-grid" class="streamer-grid"></div>
+          <div class="section-heading">
+            <p class="kicker">Archive</p>
+            <h2>Past Spotlight Winners</h2>
+          </div>
+          <div id="spotlight-history" class="spotlight-history"></div>
+        </section>
+
+        <aside id="creator-application" class="community-panel creator-application-panel">
+          <div class="section-heading">
+            <p class="kicker">Apply</p>
+            <h2>Apply to be Featured</h2>
+          </div>
+          <form id="nomination-form" class="community-form">
+            <label>
+              Creator name
+              <input name="name" type="text" placeholder="Channel or creator name" required />
+            </label>
+            <label>
+              Handle
+              <input name="handle" type="text" placeholder="@creator" />
+            </label>
+            <label>
+              Contact email
+              <input name="email" type="email" placeholder="creator@example.com" required />
+            </label>
+            <label>
+              Primary channel link
+              <input name="linkUrl" type="url" placeholder="https://..." required />
+            </label>
+            <label>
+              Other channels
+              <input name="otherLinks" type="text" placeholder="YouTube, TikTok, Kick, Instagram links" />
+            </label>
+            <label>
+              Audience size
+              <input name="audienceSize" type="text" placeholder="Followers/subscribers and average viewers" />
+            </label>
+            <fieldset class="creator-check-grid">
+              <legend>Content fit</legend>
+              <label><input name="platforms" type="checkbox" value="Twitch" /> Twitch</label>
+              <label><input name="platforms" type="checkbox" value="YouTube" /> YouTube</label>
+              <label><input name="platforms" type="checkbox" value="TikTok" /> TikTok</label>
+              <label><input name="categories" type="checkbox" value="Gaming" /> Gaming</label>
+              <label><input name="categories" type="checkbox" value="Pokemon" /> Pokemon</label>
+              <label><input name="categories" type="checkbox" value="TCG" /> TCG</label>
+              <label><input name="categories" type="checkbox" value="Retro" /> Retro</label>
+              <label><input name="categories" type="checkbox" value="Collecting" /> Collecting</label>
+            </fieldset>
+            <label>
+              Why they fit GCX
+              <textarea name="specialty" rows="5" placeholder="Games, cards, retro, collecting, community events, charity streams, etc."></textarea>
+            </label>
+            <label>
+              Applicant or nominator
+              <input name="nominatedBy" type="text" placeholder="Your name or team" />
+            </label>
+            <label class="form-consent">
+              <input name="consent" type="checkbox" required />
+              I understand this saves a creator application for GCX review. It does not guarantee placement, sponsorship, payment, or marketplace access.
+            </label>
+            <button class="button" type="submit">Submit creator application</button>
+            <p class="form-disclosure">
+              GCX stores this application with timestamp, channel links, contact email, and consent version for creator review.
+              See the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms</a>.
+            </p>
+            <p id="nomination-status" class="form-status" role="status"></p>
+          </form>
+          <div class="growth-card creator-rules-card">
+            <h3>Launch eligibility</h3>
+            <ul class="check-list">
+              <li>Creator content should fit gaming, cards, collecting, retro, or community events.</li>
+              <li>Sponsored placements must be labeled and cannot replace community vote results.</li>
+              <li>GCX may reject spam, harassment, scams, unsafe trading, or misleading promotion.</li>
+              <li>Marketplace trading is still beta; no real-money trading is live through creator pages.</li>
+            </ul>
+          </div>
+          <div class="growth-card">
+            <h3>Why this grows GCX</h3>
+            <p>
+              Creators get a reason to send their audience here, GCX gets recurring voting traffic, and the winner page can point people into game libraries, card indexes, and marketplace beta interest.
+            </p>
+            <a class="feed-link" href="community-growth.html">Open growth dashboard</a>
+          </div>
+          <div class="growth-card">
+            <h3>Revenue paths</h3>
+            <ul class="check-list" id="revenue-list">
+              <li>Sponsored weekly spotlight packages</li>
+              <li>Affiliate links for creator gear and collector supplies</li>
+              <li>Marketplace beta trust placements for approved partners</li>
+            </ul>
+            <a class="feed-link" href="sponsors.html?ref=streamer-page">Open sponsor intake</a>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <p><strong>Games Cards Exchange</strong></p>
+        <p>Games, cards, movies, streaming, reviews, guides, and collector-first marketplace tools.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="trust.html">Trust</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="about.html">About</a>
+        <a href="trust.html#editorial">Editorial Standards</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="marketplace-rules.html">Marketplace Rules</a>
+        <a href="contact.html">Contact</a>
+        <a href="news.html">Newsroom</a>
+      </nav>
+    </footer>
+    <script src="site.js?v=20260906"></script>
+    <script src="streamers.js"></script>
+    <script src="community-badge.js"></script>
+  </body>
+</html>

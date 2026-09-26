@@ -1,0 +1,16 @@
+.env
+.cache/
+node_modules/
+*.zip
+data/launch-readiness/*.tmp
+*.log
+*.pid
+
+# Large generated datasets are loaded from Supabase in production.
+data/games/
+data/pokemon/cards.json
+data/pokemon/cards-by-set/
+data/magic/cards-search.json
+data/magic/cards-by-set/
+data/yugioh/cards-search.json
+data/yugioh/cards-by-set/

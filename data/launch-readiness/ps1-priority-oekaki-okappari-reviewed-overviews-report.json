@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-08-25T18:02:32.144Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-oekaki-okappari-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 10,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-oekaki-puzzle",
+      "title": "Oekaki Puzzle",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/S/SLPS-02068.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-oekaki-puzzle-2",
+      "title": "Oekaki Puzzle 2",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/S/SLPM-86955.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-oekaki-puzzle-3",
+      "title": "Oekaki Puzzle 3",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/S/SLPM-86955.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-oekaki-puzzle-4",
+      "title": "Oekaki Puzzle 4",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/S/SLPM-86675.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-oekaki-puzzle-5",
+      "title": "Oekaki Puzzle 5",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/S/SLPM-86800.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-oh-no",
+      "title": "Oh No!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/O/SLPS-02764.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-oha-star-dance-dance-revolution",
+      "title": "Oha Star Dance Dance Revolution",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Oha_Suta_Dance_Dance_Revolution"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-oja-majo-do-re-mi-mahodou-dance-carnival",
+      "title": "Oja Majo Do-Re-Mi #: Mahodou Dance Carnival!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.mobygames.com/game/214430/ojamajo-doremi-sharp-maho-do-dance-carnival/"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-ojyousama-express",
+      "title": "Ojyousama Express",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/O/SLPS-01495.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-okada-toshi-no-tsume-shougi-kyoushitsu-nintei-ou",
+      "title": "Okada Toshi no Tsume Shougi Kyoushitsu Nintei-Ou",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-01757.html"
+    }
+  ]
+}

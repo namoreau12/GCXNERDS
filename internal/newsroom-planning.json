@@ -1,0 +1,28 @@
+[
+  {
+    "articleId": "gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide",
+    "newsroomOpportunityScore": 99,
+    "contentRole": "Primary pillar page",
+    "internalLinkTargets": [
+      "Every Pokemon 30th Celebration Pikachu Revealed",
+      "Pokemon 30th Celebration MSRP & Preorder Tracker",
+      "Every 30th Celebration Product Ranked",
+      "Pokemon 30th Celebration Chase Cards",
+      "Complete Classic Collection Checklist",
+      "Best 30th Celebration Products to Buy"
+    ],
+    "recommendedHeroImage": "Official 30th Celebration key art featuring Pikachu and anniversary branding.",
+    "updatePolicy": "Preserve this URL permanently. Update existing sections instead of publishing replacement guides.",
+    "claimStatusSystem": {
+      "official": "Direct Pokemon source",
+      "verifiedReporting": "Strong reputable secondary source",
+      "reportedNotOfficial": "Keep wording qualified",
+      "rumorLeak": "Exclude from core guide unless editorially necessary and explicitly labeled"
+    },
+    "editorialRules": [
+      "Never describe presale pricing as market value without identifying it as presale pricing.",
+      "Never call a card a confirmed chase card based solely on hype or listings.",
+      "Never infer scarcity before retail distribution data exists."
+    ]
+  }
+]

@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-08-23T18:44:57.923Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-gale-gekiretsu-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 25
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gale-gunner",
+      "title": "Gale Gunner",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-galeoz",
+      "title": "Galeoz",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gallop-racer",
+      "title": "Gallop Racer",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gallop_Racer"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gallop-racer-2-the-one-and-only-road-to-victory",
+      "title": "Gallop Racer 2: The One and Only Road to Victory",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gallop-racer-3-the-one-and-only-road-to-victory",
+      "title": "Gallop Racer 3: The One and Only Road to Victory",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gallop-racer-2000",
+      "title": "Gallop Racer 2000",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gambler-jiko-chuushinha-ippatsu-shoubu",
+      "title": "Gambler Jiko Chuushinha: Ippatsu Shoubu!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-game-de-seishun",
+      "title": "Game de Seishun",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-game-de-wa-jimeru-toeic-test-mazuha-nyuumonhen1500",
+      "title": "Game de wa Jimeru TOEIC Test Mazuha Nyuumonhen1500",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-game-nihonshi-kakumeiji-oda-nobunaga",
+      "title": "Game Nihonshi: Kakumeiji Oda Nobunaga",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-game-no-tatsujin",
+      "title": "Game no Tatsujin",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-game-no-tatsujin-2",
+      "title": "Game no Tatsujin 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-game-no-tatsujin-the-shanghai",
+      "title": "Game no Tatsujin: The Shanghai",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-game-soft-o-tsukurou",
+      "title": "Game Soft o Tsukurou",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-ganba-no-bouken-the-puzzle-action",
+      "title": "Ganba no Bouken: The Puzzle Action",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gamba_no_B%C5%8Dken"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gangway-monsters",
+      "title": "Gangway Monsters",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-ganso-family-mahjong",
+      "title": "Ganso Family Mahjong",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-ganso-family-mahjong-2",
+      "title": "Ganso Family Mahjong 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-ganso-doubutsu-uranai-renai-uranai-puzzle",
+      "title": "Ganso! Doubutsu Uranai / Renai Uranai Puzzle",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gatekeepers",
+      "title": "GateKeepers",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gear-senshi-dendoh",
+      "title": "Gear Senshi Dendoh",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gear_Fighter_Dendoh"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gegege-no-kitaro-gyakushuu-youkai-daichisen",
+      "title": "Gegege no Kitaro: Gyakushuu! Youkai Daichisen",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/GeGeGe_no_Kitar%C5%8D"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gegege-no-kitaro-noroi-no-nikuto-katachi-tachi",
+      "title": "Gegege no Kitaro: Noroi no Nikuto Katachi Tachi",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/GeGeGe_no_Kitar%C5%8D"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gekioh-shooting-king",
+      "title": "Gekioh: Shooting King",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shienryu#Gekioh_Shooting_King"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gekiretsu-pachinkazu",
+      "title": "Gekiretsu Pachinkazu",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

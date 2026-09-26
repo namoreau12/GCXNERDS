@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-08-25T03:35:07.261Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps4-priority-melbits-metalmax-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps4",
+      "updated": 8,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps4",
+      "gameId": "ps4-melbits-world",
+      "title": "Melbits World",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.playstation.com/en-us/games/melbits-world/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-melty-blood-type-lumina",
+      "title": "Melty Blood: Type Lumina",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://meltyblood.typelumina.com/en/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-memories-off-historia-vol-1",
+      "title": "Memories Off Historia Vol. 1",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.gematsu.com/2021/01/memories-off-historia-vol-1-and-vol-2-debut-trailer"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-memories-off-historia-vol-2",
+      "title": "Memories Off Historia Vol. 2",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.gematsu.com/2021/01/memories-off-historia-vol-1-and-vol-2-debut-trailer"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-memories-off-innocent-fille",
+      "title": "Memories Off: Innocent Fille",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Memories_Off"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-mercenaries-blaze-dawn-of-the-twin-dragons",
+      "title": "Mercenaries Blaze: Dawn of the Twin Dragons",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-us/product/UP5820-CUSA27609_00-MBLAZE5US0UP5820"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-metal-max-xeno",
+      "title": "Metal Max Xeno",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Metal_Max_Xeno"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-metal-max-xeno-reborn",
+      "title": "Metal Max Xeno Reborn",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://pqube.co.uk/games/metal-max-xeno-reborn/"
+    }
+  ]
+}

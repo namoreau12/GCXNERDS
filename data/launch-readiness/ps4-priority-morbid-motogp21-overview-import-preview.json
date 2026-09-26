@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-08-25T03:51:27.371Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps4-priority-morbid-motogp21-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps4",
+      "updated": 8,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps4",
+      "gameId": "ps4-morbid-the-seven-acolytes",
+      "title": "Morbid: The Seven Acolytes",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-gb/product/EP1121-CUSA20417_00-0000000MORBIDEU1"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-more-dark",
+      "title": "More Dark",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.ratalaikagames.com/games/moredark.php"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-mosaic",
+      "title": "Mosaic",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://rawfury.com/games/mosaic/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-motogp-14",
+      "title": "MotoGP 14",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-gb/product/EP4356-CUSA00318_00-MOTOGP1400000000"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-motogp-17",
+      "title": "MotoGP 17",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-is/product/EP4356-CUSA07865_00-MOTOGP17FULLGAME"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-motogp-19",
+      "title": "MotoGP 19",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-us/concept/233375"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-motogp-20",
+      "title": "MotoGP 20",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-gb/product/EP4356-CUSA17832_00-MOTOGP20FULLGAME"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-motogp-21",
+      "title": "MotoGP 21",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/concept/10001934"
+    }
+  ]
+}

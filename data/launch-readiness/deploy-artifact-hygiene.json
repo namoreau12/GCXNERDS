@@ -1,0 +1,72 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-26T00:44:37.392Z",
+  "failures": [],
+  "warnings": [
+    "11 root-level ZIP backup/share artifact(s) exist locally; keep deploys Git/Docker-based or move them outside the web root before manual upload.",
+    "1 root-level ZIP artifact(s) are zero bytes and should not be shared or uploaded."
+  ],
+  "rootZipFiles": [
+    {
+      "name": "GCX-project-shareable-20260820-023846.zip",
+      "bytes": 85727196
+    },
+    {
+      "name": "GCX-project-shareable-20260820-002956.zip",
+      "bytes": 85592393
+    },
+    {
+      "name": "GCX-project-shareable-20260820-014232.zip",
+      "bytes": 85430212
+    },
+    {
+      "name": "GCX-project-shareable-20260819-230941.zip",
+      "bytes": 85372715
+    },
+    {
+      "name": "GCX-project-shareable-20260819-205018.zip",
+      "bytes": 85348589
+    },
+    {
+      "name": "GCX-project-shareable-20260819-025710.zip",
+      "bytes": 85130979
+    },
+    {
+      "name": "GCX-project-backup-20260818-235137.zip",
+      "bytes": 84531642
+    },
+    {
+      "name": "GCX-project-backup-20260819-002402.zip",
+      "bytes": 84490121
+    },
+    {
+      "name": "GCX-project-backup-20260819-010719.zip",
+      "bytes": 84482480
+    },
+    {
+      "name": "GamesCardsExchange-backup-20260818-225340.zip",
+      "bytes": 84330846
+    },
+    {
+      "name": "GCX-project-shareable-20260820-002930.zip",
+      "bytes": 0
+    }
+  ],
+  "zeroByteZipFiles": [
+    {
+      "name": "GCX-project-shareable-20260820-002930.zip",
+      "bytes": 0
+    }
+  ],
+  "checks": {
+    "gitignoreProtectsEnv": true,
+    "gitignoreProtectsZip": true,
+    "dockerignoreProtectsEnv": true,
+    "dockerignoreProtectsZip": true,
+    "renderHealthCheckPath": "/api/health",
+    "launchGuideHealthCheckPath": "/api/health",
+    "renderSecretsAreDashboardSynced": true,
+    "envExampleUsesPlaceholders": true,
+    "startScript": "node server.js"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-08-25T18:27:08.443Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-okappari-option-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 10,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-okappari-oh",
+      "title": "Okappari-Oh",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/O/SLPS-01524.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-olympia-takasago-virtua-pachi-slot-iii",
+      "title": "Olympia Takasago: Virtua Pachi-Slot III",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/O/SLPS-01386.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-omega-assault",
+      "title": "Omega Assault",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/P/O/SLES-04051.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-omiai-commando-bakappuru-ni-tukkomi-o",
+      "title": "Omiai Commando: Bakappuru ni Tukkomi o",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/O/SLPM-86439.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-omise-de-tensyu",
+      "title": "Omise de Tensyu",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/O/SLPS-01876.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-omizu-no-hanamichi",
+      "title": "Omizu no Hanamichi",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/O/SLPS-02815.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-otenki-kororin",
+      "title": "Otenki Kororin",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/O/SLPM-87047.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-option-tuning-car-battle",
+      "title": "Option Tuning Car Battle",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/O/SLPS-01207.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-option-tuning-car-battle-2",
+      "title": "Option Tuning Car Battle 2",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/O/SLPS-01857.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-option-tuning-car-battle-spec-r",
+      "title": "Option Tuning Car Battle Spec-R",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/O/SLPS-02587.html"
+    }
+  ]
+}

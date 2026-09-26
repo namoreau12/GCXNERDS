@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-26T00:44:37.510Z",
+  "dependencyCount": 0,
+  "lockfiles": [],
+  "usesNpmInstall": true,
+  "usesNpmCi": false,
+  "failures": [],
+  "warnings": [
+    "No lockfile is present because the app currently has no package dependencies; add a lockfile and switch to npm ci before adding dependencies."
+  ]
+}

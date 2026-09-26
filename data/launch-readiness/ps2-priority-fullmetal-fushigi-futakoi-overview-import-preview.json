@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-08-23T16:40:53.796Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-fullmetal-fushigi-futakoi-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 12
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-full-house-kiss",
+      "title": "Full House Kiss",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Full_House_Kiss"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-full-house-kiss-2",
+      "title": "Full House Kiss 2",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Full_House_Kiss"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fullmetal-alchemist-2-curse-of-the-crimson-elixir",
+      "title": "Fullmetal Alchemist 2: Curse of the Crimson Elixir",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fullmetal_Alchemist_2:_Curse_of_the_Crimson_Elixir"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fullmetal-alchemist-3-the-girl-who-succeeds-god",
+      "title": "Fullmetal Alchemist 3: The Girl who Succeeds God",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fullmetal_Alchemist_3:_The_Girl_who_Succeeds_God"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-furasera-hurrah-sailor",
+      "title": "Furasera: Hurrah! Sailor",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-furry-tales",
+      "title": "Furry Tales",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fushigi-no-kuni-no-alice",
+      "title": "Fushigi no Kuni no Alice",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fushigi-no-umi-no-nadia-inherit-the-blue-water",
+      "title": "Fushigi no Umi no Nadia: Inherit the Blue Water",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fushigi-yuugi-genbu-kaiten-gaiden-kagami-no-miko",
+      "title": "Fushigi Yuugi: Genbu Kaiten Gaiden - Kagami no Miko",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fushigi-yuugi-suzaku-ibun",
+      "title": "Fushigi Yuugi: Suzaku Ibun",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-futakoi-alternative",
+      "title": "Futakoi Alternative",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Futakoi_Alternative"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-futakoi-koi-to-mizugi-no-survival",
+      "title": "Futakoi: Koi to Mizugi no Survival",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-08-25T14:54:17.068Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\3ds-priority-azito-battleminer-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "3ds",
+      "updated": 11,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "3ds",
+      "gameId": "3ds-azito-3d-kyoto",
+      "title": "Azito 3D Kyoto",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://nintendoeverything.com/azito-3d-heading-to-3ds/"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-azito-3d-osaka",
+      "title": "Azito 3D Osaka",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gdri.smspower.org/wiki/index.php/Astec21"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-azito-3d-tokyo",
+      "title": "Azito 3D Tokyo",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gdri.smspower.org/wiki/index.php/Astec21"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-azure-snake",
+      "title": "Azure Snake",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendo.com/en-gb/Games/Nintendo-3DS-download-software/Azure-Snake-1495153.html"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-b-o-o-l-master-labyrinth-puzzle",
+      "title": "B.O.O.L: Master Labyrinth Puzzle",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendo.com/en-gb/Games/New-Nintendo-3DS-Download-Software/B-O-O-L-Master-labyrinth-puzzles-1898645.html"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-back-in-1995-64",
+      "title": "Back in 1995 64",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendolife.com/news/2016/07/faux-retro_survival_horror_back_in_1995_64_shuffles_menacingly_towards_the_nintendo_3ds"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-banana-bliss-jungle-puzzles",
+      "title": "Banana Bliss: Jungle Puzzles",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendo.com/en-gb/Games/Nintendo-3DS-download-software/Banana-Bliss-Jungle-Puzzles-843327.html"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-battle-cats-pop",
+      "title": "Battle Cats Pop!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://battlecats.club/en/series/tobidasu/"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-battle-of-elemental-reboost",
+      "title": "Battle of Elemental REBOOST",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.gematsu.com/2016/04/battle-elemental-reboost-announced-3ds"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-battleminer",
+      "title": "Battleminer",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendoworldreport.com/review/39217/battleminer-review"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-battleminerz",
+      "title": "Battleminerz",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendo.com/en-gb/Games/Nintendo-3DS-download-software/Battleminerz-1320027.html"
+    }
+  ]
+}

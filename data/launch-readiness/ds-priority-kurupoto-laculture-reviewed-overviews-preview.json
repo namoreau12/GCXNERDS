@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-08-25T16:46:20.819Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ds-priority-kurupoto-laculture-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ds",
+      "updated": 10,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ds",
+      "gameId": "ds-kurupoto-cool-cool-stars",
+      "title": "Kurupoto Cool Cool Stars",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/games/details/14666-kurupoto-cool-cool-stars"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-kururin-doughnuts-okashi-recipe",
+      "title": "Kururin Doughnuts: Okashi Recipe",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/games/details/141593-kururin-doughnut-okashi-na-recipe"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-kutsushita-nyanko-kutsushita-o-haita-neko-to-kurashi-hajime-mashita",
+      "title": "Kutsushita Nyanko: Kutsushita o Haita Neko to Kurashi Hajime Mashita",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/games/details/134193-kutsushita-nyanko-kutsushita-o-haita-neko-to-kurashi-hajime-mashita"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-kuukan-zukei-hirameki-training-kuutore",
+      "title": "Kuukan * Zukei: Hirameki Training - KuuTore",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://downloads.khinsider.com/game-soundtracks/album/kuukan-zukei-hirameki-training-kuutore-2008-nds-gamerip"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-kuwagata-tsumami",
+      "title": "Kuwagata Tsumami",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/games/details/134194-kuwagata-tsumami-kuttsuke-tsumami-bako"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-kyouryuu-monster",
+      "title": "Kyouryuu Monster",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.play-asia.com/en/kyouryuu-ikusei-battle-rpg-kyouryuu-monster/13/7025rz"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-l-enigmistica",
+      "title": "L'Enigmistica",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.mobygames.com/company/25950/pub-company-srl/"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-l-histoire-de-france-pour-les-nuls",
+      "title": "L'Histoire de France Pour Les Nuls",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.jeuxvideo.com/jeux/nintendo-ds/00025485-l-histoire-de-france-pour-les-nuls.htm"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-la-carte-au-tresor",
+      "title": "La Carte au Tresor",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(J%E2%80%93P)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-la-culture-generale-pour-les-nuls-edition-2",
+      "title": "La Culture Generale Pour Les Nuls Edition 2",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(J%E2%80%93P)"
+    }
+  ]
+}

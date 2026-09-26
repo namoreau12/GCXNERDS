@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yu-Gi-Oh! Cards | Games Cards Exchange</title>
+    <meta
+      name="description"
+      content="Search and browse Yu-Gi-Oh! cards by release year, set, card name, set code, rarity, banlist status, and market data."
+    />
+    <link rel="canonical" href="https://gcxnerds.com/yugioh.html" />
+    <meta property="og:title" content="Yu-Gi-Oh! Cards | Games Cards Exchange" />
+    <meta property="og:description" content="Search and browse Yu-Gi-Oh! cards by release year, set, card name, set code, rarity, banlist status, and market data." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gcxnerds.com/yugioh.html" />
+    <meta property="og:image" content="https://gcxnerds.com/assets/news/pokemon-tcg-30th-celebration.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Yu-Gi-Oh! Cards | Games Cards Exchange" />
+    <meta name="twitter:description" content="Search and browse Yu-Gi-Oh! cards by release year, set, card name, set code, rarity, banlist status, and market data." />
+    <meta name="twitter:image" content="https://gcxnerds.com/assets/news/pokemon-tcg-30th-celebration.jpg" /><link rel="stylesheet" href="styles.css" />
+      <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Games Cards Exchange",
+      "url": "https://gcxnerds.com",
+      "logo": "https://gcxnerds.com/assets/news/pokemon-tcg-30th-celebration.jpg"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://gcxnerds.com/yugioh.html#webpage",
+      "url": "https://gcxnerds.com/yugioh.html",
+      "name": "Yu-Gi-Oh! Cards",
+      "description": "Search and browse Yu-Gi-Oh! card sets, printings, rarities, banlist information, and market data.",
+      "isPartOf": {
+        "@id": "https://gcxnerds.com/#website"
+      },
+      "publisher": {
+        "@id": "https://gcxnerds.com/#organization"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Yu-Gi-Oh! Cards"
+      }
+    }
+  ]
+}</script>
+  </head>
+  <body>
+    <header class="site-header has-mobile-nav">
+      <a class="brand" href="index.html" aria-label="Games Cards Exchange home">
+        <span class="brand-mark">GCX</span>
+        <span>Games Cards Exchange</span>
+      </a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="news.html">News</a>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Games</button>
+          <div class="nav-dropdown">
+            <a href="games.html">Game Database</a>
+            <a href="consoles.html">Console Database</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Cards</button>
+          <div class="nav-dropdown">
+            <a href="pokemon.html">Pokemon Cards</a>
+            <a href="magic.html">Magic Cards</a>
+            <a href="yugioh.html">Yu-Gi-Oh! Cards</a>
+            <a href="index.html#cards">Marketplace Beta</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Community</button>
+          <div class="nav-dropdown">
+            <a href="community.html">Community Feed</a>
+            <a href="community-members.html">Members</a>
+            <a href="community-groups.html">Groups</a>
+            <a href="community-events.html">Events</a>
+            <a href="streamers.html">Streamer Highlights</a>
+          </div>
+        </div>
+        <a href="search.html">Search</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search" role="search" action="search.html" method="get">
+          <label class="sr-only" for="site-search">Search GCX</label>
+          <input id="site-search" name="q" type="search" placeholder="Search games, cards, news" />
+        </form>
+        <a class="account-link" href="auth.html">Sign In</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="yugioh-index" class="card-index-band card-index-page">
+        <div class="section-heading index-heading">
+          <div>
+            <p class="kicker">Yu-Gi-Oh! Card Index</p>
+            <h1>Browse Yu-Gi-Oh! cards</h1>
+            <p class="index-intro">
+              Search by card name, set code, set name, rarity, type, archetype, attribute, or browse by release year and set.
+            </p>
+          </div>
+          <div class="index-actions">
+            <label class="sr-only" for="yugioh-set-search">Search Yu-Gi-Oh! sets</label>
+            <input id="yugioh-set-search" type="search" placeholder="Search sets or years" />
+          </div>
+        </div>
+
+        <div class="card-search-panel">
+          <label for="yugioh-card-search">Search card</label>
+          <div class="card-search-row">
+            <input id="yugioh-card-search" type="search" placeholder="Search for card" autocomplete="off" />
+            <button class="button" id="yugioh-card-search-button" type="button">Search</button>
+          </div>
+          <div id="yugioh-card-search-results" class="card-search-results" aria-live="polite">
+            Search by card name, set name, set code, rarity, type, archetype, attribute, or a mix of terms.
+          </div>
+          <p class="image-rights-note">
+            GCX uses approved card images where available; when image rights are unclear, card records may show metadata-first placeholders and source links. <a href="trust.html#image-rights">Image rights policy</a>
+          </p>
+        </div>
+
+        <div class="index-shell">
+          <aside class="series-panel" aria-label="Yu-Gi-Oh! release years">
+            <div class="panel-title">
+              <h3>Release Years</h3>
+              <span id="yugioh-year-count">Loading</span>
+            </div>
+            <div id="yugioh-year-list" class="series-list" aria-live="polite"></div>
+          </aside>
+
+          <section class="sets-panel" aria-label="Yu-Gi-Oh! sets">
+            <div class="panel-title">
+              <h3 id="selected-yugioh-year-title">Select a year</h3>
+              <span id="yugioh-sets-count">0 sets</span>
+            </div>
+            <div id="yugioh-sets-grid" class="sets-grid" aria-live="polite"></div>
+          </section>
+
+          <section class="cards-panel" aria-label="Yu-Gi-Oh! cards in selected set">
+            <div id="selected-yugioh-set" class="selected-set">
+              <h3>Choose a set</h3>
+              <p>Cards will appear here in set-code order with approved imagery when available.</p>
+            </div>
+            <div id="yugioh-cards-grid" class="cards-grid" aria-live="polite"></div>
+            <div id="yugioh-card-detail" class="card-detail" aria-live="polite">
+              <div>
+                <h3>Select a card</h3>
+                <p>Price, rarity, banlist status, variants, and beta waitlist tools will appear here.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <p><strong>Games Cards Exchange</strong></p>
+        <p>Games, cards, movies, streaming, reviews, guides, and collector-first marketplace tools.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="trust.html">Trust</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="about.html">About</a>
+        <a href="trust.html#editorial">Editorial Standards</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="marketplace-rules.html">Marketplace Rules</a>
+        <a href="contact.html">Contact</a>
+        <a href="news.html">Newsroom</a>
+      </nav>
+    </footer>
+
+    <script src="site.js?v=20260906"></script>
+    <script src="yugioh.js?v=1"></script>
+  </body>
+</html>

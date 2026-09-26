@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-08-25T17:20:09.668Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-nupa-odo-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 10,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nupa-numeric-paint-puzzle",
+      "title": "NuPa: Numeric Paint Puzzle",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-00294.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nurse-monogatari",
+      "title": "Nurse Monogatari",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.honestgamers.com/listings/0/6/0/953/0/jp/all/1/1.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nyan-to-wonderful",
+      "title": "Nyan to Wonderful",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-00442.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-oasis-road",
+      "title": "Oasis Road",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/O/SLPS-01899.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-ocha-no-ma-battle",
+      "title": "Ocha no ma Battle",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/O/SLPM-86681.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-ochan-no-oekaki-logic",
+      "title": "Ochan no Oekaki Logic",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/O-Chan_no_Oekaki_Logic"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-ochan-no-oekaki-logic-2",
+      "title": "Ochan no Oekaki Logic 2",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/O-Chan_no_Oekaki_Logic"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-ochan-no-oekaki-logic-3",
+      "title": "Ochan no Oekaki Logic 3",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/O-Chan_no_Oekaki_Logic"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-oda-nobunaga-den",
+      "title": "Oda Nobunaga Den",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/O/SLPS-01595.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-odo-odo-oddity",
+      "title": "Odo Odo Oddity",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.hardcoregaming101.net/odo-odo-oddity/"
+    }
+  ]
+}

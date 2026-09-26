@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-08-25T16:51:34.820Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-nishijin-nobunaga-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 10,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nishijin-pachinko-tettei-kouryaku-cr-hanaman-sokuhou-and-cr-obake-land",
+      "title": "Nishijin Pachinko Tettei Kouryaku: CR Hanaman Sokuhou & CR Obake Land",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-03268.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-no-appointment-gals-olympos",
+      "title": "No-Appointment Gals: Olympos",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-00493.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nobunaga-hiroku-ge-ten-no-yume",
+      "title": "Nobunaga Hiroku: Ge-Ten no Yume",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-00862.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nobunaga-no-yabou-returns",
+      "title": "Nobunaga no Yabou Returns",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.mobygames.com/game/208885/nobunaga-no-yabo-returns/"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nobunaga-no-yabou-bushou-fuuunroku",
+      "title": "Nobunaga no Yabou: Bushou Fuuunroku",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPM-86174.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nobunaga-no-yabou-haouden",
+      "title": "Nobunaga no Yabou: Haouden",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-91022.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nobunaga-no-yabou-reppuuden",
+      "title": "Nobunaga no Yabou: Reppuuden",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPM-86887.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nobunaga-no-yabou-sengouku-gunyuuden",
+      "title": "Nobunaga no Yabou: Sengouku Gunyuuden",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-01247.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nobunaga-no-yabou-shouseiroku",
+      "title": "Nobunaga no Yabou: Shouseiroku",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-01115.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-nobunaga-no-yabou-tenshouki",
+      "title": "Nobunaga no Yabou: Tenshouki",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/games/J/N/SLPS-00980.html"
+    }
+  ]
+}

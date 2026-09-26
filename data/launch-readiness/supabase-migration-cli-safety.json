@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-26T00:50:01.279Z",
+  "checks": {
+    "helpExitCode": 0,
+    "shortHelpExitCode": 0,
+    "refreshWithoutPathsExitCode": 1
+  },
+  "failures": []
+}

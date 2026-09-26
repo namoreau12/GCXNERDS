@@ -1,0 +1,261 @@
+{
+  "generatedAt": "2026-08-23T17:15:23.194Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-highschool-hisshou-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 35
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-high-school-musical-sing-it",
+      "title": "High School Musical: Sing It!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/High_School_Musical:_Sing_It!"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-higurashi-no-naku-koro-ni-matsuri",
+      "title": "Higurashi no Naku Koro ni Matsuri",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Higurashi_no_Naku_Koro_ni_Matsuri"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-higurashi-no-naku-koro-ni-matsuri-kakera-asobi",
+      "title": "Higurashi no Naku Koro ni Matsuri: Kakera Asobi",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Higurashi_no_Naku_Koro_ni_Matsuri:_Kakera_Asobi"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hiiro-no-kakera",
+      "title": "Hiiro no Kakera",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hiiro_no_Kakera"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hiiro-no-kakera-ano-sora-no-shita-de",
+      "title": "Hiiro no Kakera: Ano Sora no Shita de",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hiiro-no-kakera-shin-tamayori-hime-denshou",
+      "title": "Hiiro no Kakera: Shin Tamayori Hime Denshou",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-himehibi-new-princess-days-zoku-ni-gakki",
+      "title": "Himehibi: New Princess Days!! Zoku! Ni-Gakki",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-himehibi-princess-days",
+      "title": "HimeHibi: Princess Days",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hissatsu-pachi-slot-evolution-ninja-hattori-kun-v",
+      "title": "Hissatsu Pachi-Slot Evolution: Ninja Hattori-Kun V",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hissatsu-pachinko-evolution-2-osomatsu-kun",
+      "title": "Hissatsu Pachinko Evolution 2: Osomatsu-Kun",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hissatsu-pachinko-station-v-honoo-no-bakushougun",
+      "title": "Hissatsu Pachinko Station V: Honoo no Bakushougun",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hissatsu-pachinko-station-v2",
+      "title": "Hissatsu Pachinko Station V2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hissatsu-pachinko-station-v3",
+      "title": "Hissatsu Pachinko Station V3",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hissatsu-pachinko-station-v4",
+      "title": "Hissatsu Pachinko Station V4",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hissatsu-pachinko-station-v5",
+      "title": "Hissatsu Pachinko Station V5",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hissatsu-pachinko-station-v6",
+      "title": "Hissatsu Pachinko Station V6",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hissatsu-pachinko-station-v7",
+      "title": "Hissatsu Pachinko Station V7",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hissatsu-pachinko-station-v8",
+      "title": "Hissatsu Pachinko Station V8",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hissatsu-pachinko-station-v9-osomatsu-kun",
+      "title": "Hissatsu Pachinko Station V9: Osomatsu-kun",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hissatsu-pachinko-station-v10",
+      "title": "Hissatsu Pachinko Station V10",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hissatsu-pachinko-station-v11",
+      "title": "Hissatsu Pachinko Station V11",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hissatsu-ura-kagyou",
+      "title": "Hissatsu Ura-Kagyou",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hisshou-pachinko-kouryaku-series-vol-1-cr-shinseiki-evangelion",
+      "title": "Hisshou Pachinko Kouryaku Series Vol. 1: CR Shinseiki Evangelion",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hisshou-pachinko-pachi-slot-kouryaku-series-vol-2-bomber-powerful-and-yume-yume-world-dx",
+      "title": "Hisshou Pachinko*Pachi-Slot Kouryaku Series Vol. 2: Bomber Powerful & Yume Yume World DX",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hisshou-pachinko-pachi-slot-kouryaku-series-vol-4-cr-ashita-gaarusa-yoshimoto-world",
+      "title": "Hisshou Pachinko*Pachi-Slot Kouryaku Series Vol. 4: CR Ashita Gaarusa Yoshimoto World",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hisshou-pachinko-pachi-slot-kouryaku-series-vol-5-cr-shinseiki-evangelion-2nd-impact-pachi-slot-shinseiki-evangelion",
+      "title": "Hisshou Pachinko*Pachi-Slot Kouryaku Series Vol. 5: CR Shinseiki Evangelion 2nd Impact * Pachi-Slot Shinseiki Evangelion",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hisshou-pachinko-pachi-slot-kouryaku-series-vol-6-7cafe-keishikina-bomber-powerful-2",
+      "title": "Hisshou Pachinko*Pachi-Slot Kouryaku Series Vol. 6: 7Cafe Keishikina Bomber Powerful 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hisshou-pachinko-pachi-slot-kouryaku-series-vol-7-cr-fever-powerful-zero",
+      "title": "Hisshou Pachinko*Pachi-Slot Kouryaku Series Vol. 7: CR Fever Powerful Zero",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hisshou-pachinko-pachi-slot-kouryaku-series-vol-10-cr-shinseiki-evangelion-kiseki-no-kachi",
+      "title": "Hisshou Pachinko*Pachi-Slot Kouryaku Series Vol. 10: CR Shinseiki Evangelion: Kiseki no Kachi",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hisshou-pachinko-pachi-slot-kouryaku-series-vol-11-shinseiki-evangelion-magokoro-o-kimi-ni",
+      "title": "Hisshou Pachinko*Pachi-Slot Kouryaku Series Vol. 11: Shinseiki Evangelion – Magokoro o, Kimi ni",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hisshou-pachinko-pachi-slot-kouryaku-series-vol-12-cr-shinseiki-evangelion-shito-futatabi",
+      "title": "Hisshou Pachinko*Pachi-Slot Kouryaku Series Vol. 12: CR Shinseiki Evangelion – Shito, Futatabi",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hisshou-pachinko-pachi-slot-kouryaku-series-vol-13-shinseiki-evangelion-yakusoku-no-toki",
+      "title": "Hisshou Pachinko*Pachi-Slot Kouryaku Series Vol. 13: Shinseiki Evangelion – Yakusoku no Toki",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hisshou-pachinko-pachi-slot-kouryaku-series-vol-14-cr-shinseiki-evangelion-saigo-no-mono",
+      "title": "Hisshou Pachinko*Pachi-Slot Kouryaku Series Vol. 14: CR Shinseiki Evangelion: Saigo no Mono",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hisshou-pachinko-pachi-slot-kouryoku-series-vol-9-cr-fever-captain-harlock",
+      "title": "Hisshou Pachinko*Pachi-Slot Kouryoku Series Vol. 9: CR Fever Captain Harlock",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hisui-no-shizuku-hiiro-no-kakera-2",
+      "title": "Hisui no Shizuku: Hiiro no Kakera 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    }
+  ]
+}

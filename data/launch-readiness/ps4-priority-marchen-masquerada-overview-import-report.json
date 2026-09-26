@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-08-25T03:09:20.017Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps4-priority-marchen-masquerada-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps4",
+      "updated": 8,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps4",
+      "gameId": "ps4-marchen-forest-mylne-and-the-forest-gift",
+      "title": "Marchen Forest: Mylne and the Forest Gift",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.cloudedleopardent.com/game/marchen-forest/en/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-marenian-tavern-story-patty-and-the-hungry-god",
+      "title": "Marenian Tavern Story: Patty and the Hungry God",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.kemco.jp/game/adventure-bar/en/index.html"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-marooners",
+      "title": "Marooners",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.m2h.nl/marooners/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-marsupilami-hoobadventure",
+      "title": "Marsupilami: Hoobadventure",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.microids.com/game-marsupilami-hoobadventure/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-martha-is-dead",
+      "title": "Martha is Dead",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://wiredproductions.com/games/martha-is-dead/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-mary-skelter-2",
+      "title": "Mary Skelter 2",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.steampowered.com/app/1496250/Mary_Skelter_2/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-mary-skelter-finale",
+      "title": "Mary Skelter Finale",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://ifi.games/game/mary-skelter-finale/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-masquerada-songs-and-shadows",
+      "title": "Masquerada: Songs and Shadows",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-us/product/UP2251-CUSA07449_00-MASQUERADA17WHS1"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-25T11:43:55.093Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-mitsumete-montecarlo-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 15,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-mitsumete-knight-r-daibouken-hen",
+      "title": "Mitsumete Knight R Daibouken hen",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.honestgamers.com/48556/playstation/mitsumete-knight-r-daiboukenhen/game.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-mizuki-shigeru-no-yokai-butouden",
+      "title": "Mizuki Shigeru no Yokai Butouden",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.honestgamers.com/48557/playstation/mizuki-shigeru-no-yokai-butouden/game.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-mobile-armor",
+      "title": "Mobile Armor",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://tcrf.net/Mobile_Armor"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-mobius-link-3d",
+      "title": "Mobius Link 3D",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://backloggd.com/games/mobius-link-3d/"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-momotarou-densetsu",
+      "title": "Momotarou Densetsu",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://psxdatacenter.com/games/J/M/SLPS-91171.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-momotarou-matsuri-ishikawa-rokuemon-no-maki",
+      "title": "Momotarou Matsuri: Ishikawa Rokuemon no Maki",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/games/images/135860-momotarou-matsuri-ishikawa-rokuemon-no-maki"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-mona-and-moki-drive-me-wild",
+      "title": "Mona & Moki: Drive Me Wild",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/games/details/167723-mona-moki-1-drive-me-wild"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-mona-and-moki-drive-me-wilder",
+      "title": "Mona & Moki: Drive Me Wilder",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/developers/games/23239-the-lightspan-partnership"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-money-idol-exchanger",
+      "title": "Money Idol Exchanger",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://psxdatacenter.com/games/J/M/SLPS-00963.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-monster-race",
+      "title": "Monster * Race",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://psxdatacenter.com/games/J/M/SLPM-86143.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-monster-collection-kamen-no-madoushi",
+      "title": "Monster Collection: Kamen no Madoushi",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://psxdatacenter.com/games/J/M/SLPS-02245.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-monster-complete-world",
+      "title": "Monster Complete World",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://psxdatacenter.com/games/J/M/SLPS-01870.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-monster-punish",
+      "title": "Monster Punish",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://psxdatacenter.com/games/J/M/SLPS-02491.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-monster-racer",
+      "title": "Monster Racer",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://psxdatacenter.com/games/P/M/SLES-03246.html"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-monte-carlo-games-compendium",
+      "title": "Monte Carlo Games Compendium",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://psxdatacenter.com/games/P/M/SLES-03813.html"
+    }
+  ]
+}

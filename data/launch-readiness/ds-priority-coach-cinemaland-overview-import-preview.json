@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-08-23T18:51:00.947Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ds-priority-coach-cinemaland-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ds",
+      "updated": 25
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ds",
+      "gameId": "ds-coach-cerebral",
+      "title": "Coach Cerebral",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cocoro-no-cocoron",
+      "title": "Cocoro no Cocoron",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-code-geass-hangyaku-no-lelouch",
+      "title": "Code Geass: Hangyaku no Lelouch",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Code_Geass:_Lelouch_of_the_Rebellion"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-code-geass-hangyaku-no-lelouch-r2-banjou-no-geass-gekijou",
+      "title": "Code Geass: Hangyaku no Lelouch R2 - Banjou no Geass Gekijou",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Code_Geass:_Lelouch_of_the_Rebellion"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-commando-steel-disaster",
+      "title": "Commando: Steel Disaster",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Commando:_Steel_Disaster"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cookie-shop",
+      "title": "Cookie Shop",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cookin-idol-i-my-main-game-de-hirameki-kirameki-cooking",
+      "title": "Cookin' Idol I! My! Main! Game de Hirameki! Kirameki Cooking",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cool-104-joker-and-setline",
+      "title": "Cool 104 Joker & Setline",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cornelsen-trainer-englisch-klasse-5-und-6",
+      "title": "Cornelsen Trainer: Englisch Klasse 5 und 6",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cornelsen-trainer-englisch-klasse-7-und-8",
+      "title": "Cornelsen Trainer: Englisch Klasse 7 und 8",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cornelsen-trainer-mathe-klasse-5",
+      "title": "Cornelsen Trainer: Mathe Klasse 5",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cornelsen-trainer-mathe-klasse-6",
+      "title": "Cornelsen Trainer: Mathe Klasse 6",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-coropata",
+      "title": "Coropata",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cory-in-the-house",
+      "title": "Cory in the House",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cory_in_the_House_(video_game)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cosmetic-paradise",
+      "title": "Cosmetic Paradise",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cosmetic-paradise-kirei-no-mahou",
+      "title": "Cosmetic Paradise: Kirei no Mahou",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cosmetic-paradise-princess-life",
+      "title": "Cosmetic Paradise: Princess Life",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cosmopolitan",
+      "title": "Cosmopolitan",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cosmos-chaos",
+      "title": "Cosmos Chaos!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-countdown-the-game",
+      "title": "Countdown: The Game",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cradle-of-rome",
+      "title": "Cradle of Rome",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cradle_of_Rome"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-crayon-shin-chan-ds-arashi-o-yobu-nutte-crayoon-daisakusen",
+      "title": "Crayon Shin-Chan DS: Arashi o Yobu Nutte Crayoon Daisakusen!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-crayon-shin-chan-shokkugan-densetsu-o-yobu-omake-daiketsusen",
+      "title": "Crayon Shin-Chan Shokkugan! Densetsu o Yobu Omake Daiketsusen!!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-crayon-shin-chan-arashi-o-yobu-nendororo-n-daihenshin",
+      "title": "Crayon Shin-Chan: Arashi o Yobu - Nendororo~n Daihenshin",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-crayon-shin-chan-arashi-o-yobu-cinema-land",
+      "title": "Crayon Shin-Chan: Arashi o Yobu Cinema Land",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    }
+  ]
+}

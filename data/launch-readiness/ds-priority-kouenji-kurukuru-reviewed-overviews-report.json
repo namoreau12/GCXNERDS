@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-08-25T16:32:23.935Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ds-priority-kouenji-kurukuru-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ds",
+      "updated": 10,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ds",
+      "gameId": "ds-kouenji-joshi-soccer-2-koi-wa-nebagiba-kouenji",
+      "title": "Kouenji Joshi Soccer 2: Koi wa Nebagiba Kouenji",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/games/images/141640-kouenji-joshi-soccer-2-koi-wa-nebagiba-kouenji"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-koukou-juken-eitango-get-through-1900-eitan-zamurai-ds",
+      "title": "Koukou Juken: Eitango Get Through 1900 - Eitan Zamurai DS",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.honestgamers.com/56497/ds/koukou-juken-eitango-get-through-1900-eitan-zamurai-ds/game.html"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-koukou-yakyuu-dou-ds",
+      "title": "Koukou Yakyuu Dou DS",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/games/images/141338-koukou-yakyuu-dou-ds"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-koushounin-ds-the-negotiator",
+      "title": "Koushounin DS: The Negotiator",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://japanretrodirect.ocnk.com/product/3517"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-kreuzwortraetsel-ds-welt-edition",
+      "title": "Kreuzwortraetsel DS: Welt Edition",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.retrogames.cc/nds-games/kreuzwortraetsel-ds-welt-edition-germany.html"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-kumatanchi",
+      "title": "Kumatanchi",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.hardcoregaming101.net/kumatanchi/"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-kunitori-zunou-battle-nobunaga-no-yabou",
+      "title": "Kunitori Zunou Battle: Nobunaga no Yabou",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://ontlogy.wordpress.com/2013/05/23/game-spotlight-kunitori-zunou-battle-nobunaga-no-yabou/"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-kupuu-mamegoma",
+      "title": "Kupuu!! Mamegoma!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.vgchartz.com/game/36122/qupu-mame-goma/"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-kurayami-no-hate-de-kimi-o-matsu",
+      "title": "Kurayami no Hate de Kimi o Matsu",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gamegear.net/archive/games/nds/kurayami-no-hate-de-kimi-o-matsu-japan"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-kurukuru-princess-tokimeki-figure-mezase-vancouver",
+      "title": "Kurukuru * Princess: Tokimeki Figure * Mezase! Vancouver",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/games/images/134192-kurukuru-princess-tokimeki-figure-mezase-vancouver"
+    }
+  ]
+}

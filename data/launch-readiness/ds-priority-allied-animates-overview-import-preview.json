@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-08-23T17:55:14.765Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ds-priority-allied-animates-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ds",
+      "updated": 25
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ds",
+      "gameId": "ds-allied-ace-pilots",
+      "title": "Allied Ace Pilots",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-alpha-and-omega",
+      "title": "Alpha and Omega",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Alpha_and_Omega_(film)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-alssongdalssong-myeonghwatamheom-ds",
+      "title": "Alssongdalssong - Myeonghwatamheom DS",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-amazing-adventures-the-forgotten-ruins",
+      "title": "Amazing Adventures: The Forgotten Ruins",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-america-s-next-top-model",
+      "title": "America's Next Top Model",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/America%27s_Next_Top_Model"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-america-s-next-top-model-2008",
+      "title": "America's Next Top Model (2008)",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-american-girl-julie-finds-a-way",
+      "title": "American Girl: Julie Finds a Way",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/American_Girl:_Julie_Finds_a_Way"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-amf-bowling-pinbusters",
+      "title": "AMF Bowling Pinbusters!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/AMF_Bowling_Pinbusters!"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-amici",
+      "title": "Amici",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-angel-cat-sugar",
+      "title": "Angel Cat Sugar",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-angelique-duet",
+      "title": "Angelique Duet",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Angelique_Duet"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animal-boxing",
+      "title": "Animal Boxing",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Animal_Boxing"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animal-life-africa",
+      "title": "Animal Life: Africa",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animal-life-australia",
+      "title": "Animal Life: Australia",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animal-life-dinosaurs",
+      "title": "Animal Life: Dinosaurs",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animal-life-eurasia",
+      "title": "Animal Life: Eurasia",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animal-life-north-america",
+      "title": "Animal Life: North America",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animal-paradise",
+      "title": "Animal Paradise",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Animal_Paradise"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animal-paradise-wild",
+      "title": "Animal Paradise Wild",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Animal_Paradise_Wild"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animal-planet-emergency-vets",
+      "title": "Animal Planet: Emergency Vets",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animal-planet-vet-life",
+      "title": "Animal Planet: Vet Life",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animal-world-big-cats",
+      "title": "Animal World: Big Cats",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animal-world-dinosaurs",
+      "title": "Animal World: Dinosaurs",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animaniacs-lights-camera-action",
+      "title": "Animaniacs: Lights, Camera, Action",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Animaniacs:_Lights,_Camera,_Action"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animates",
+      "title": "AniMates",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/AniMates"
+    }
+  ]
+}

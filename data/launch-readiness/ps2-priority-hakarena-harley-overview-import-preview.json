@@ -1,0 +1,198 @@
+{
+  "generatedAt": "2026-08-23T17:06:49.083Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-hakarena-harley-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 26
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hakarena-heart-kimi-ga-tame-ni-kagayaki-o",
+      "title": "Hakarena Heart: Kimi ga Tame ni Kagayaki o",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hakoniwa-tetsudou-blue-train-tokkyuuhen",
+      "title": "Hakoniwa Tetsudou: Blue Train Tokkyuuhen",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hakuouki",
+      "title": "Hakuouki",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hakuouki"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hakuouki-reimeiroku",
+      "title": "Hakuouki: Reimeiroku",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hakuouki-zuisouroku",
+      "title": "Hakuouki: Zuisouroku",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hakushaku-to-yousei-yume-to-kizuna-ni-omoi-hasete",
+      "title": "Hakushaku to Yousei: Yume to Kizuna ni Omoi Hasete",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hametsu-no-mars",
+      "title": "Hametsu no Mars",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hamster-heroes",
+      "title": "Hamster Heroes",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hana-to-otome-ni-shukufuku-o-harukaze-no-okurimono",
+      "title": "Hana to Otome ni Shukufuku o: Harukaze no Okurimono",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hana-to-taiyou-to-ame-to",
+      "title": "Hana to Taiyou to Ame to",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Flower,_Sun,_and_Rain"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hanabi-hyakkei",
+      "title": "Hanabi Hyakkei",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hanabi-shokunin-ninarou-2",
+      "title": "Hanabi Shokunin Ninarou 2",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hanafuda",
+      "title": "Hanafuda",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hanafuda"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hanakisou",
+      "title": "Hanakisou",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hanayoi-romanesque-ai-to-kanashimi-sore-wa-kimi-no-tame-no-aria",
+      "title": "Hanayoi Romanesque: Ai to Kanashimi Sore wa Kimi no Tame no Aria",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hanjuku-eiyuu-4-7-jin-no-hanjuku-eiyuu",
+      "title": "Hanjuku Eiyuu 4: 7-Jin no Hanjuku Eiyuu",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hanjuku-eiyuu-tai-3d",
+      "title": "Hanjuku Eiyuu Tai 3D",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hanjuku_Eiyuu_Tai_3D"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hannspree-ten-kate-honda-sbk",
+      "title": "Hannspree Ten Kate Honda SBK",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hansel-and-gretel",
+      "title": "Hansel & Gretel",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hanuman-boy-warrior",
+      "title": "Hanuman: Boy Warrior",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-happiness-de-lucks",
+      "title": "Happiness! De-Lucks",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-happy-breeding-cheerful-party",
+      "title": "Happy Breeding: Cheerful Party",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-happy-happy-boarders-in-hokkaido",
+      "title": "Happy! Happy!! Boarders in Hokkaido",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hard-hitter-tennis",
+      "title": "Hard Hitter Tennis",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hard_Hitter_Tennis"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hard-knock-high",
+      "title": "Hard Knock High",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-harley-davidson-motorcycles-race-to-the-rally",
+      "title": "Harley-Davidson Motorcycles: Race to the Rally",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    }
+  ]
+}

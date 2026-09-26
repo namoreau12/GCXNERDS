@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-08-25T16:07:04.955Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ds-priority-knerten-koisuru-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ds",
+      "updated": 10,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ds",
+      "gameId": "ds-knerten-gets-married",
+      "title": "Knerten Gets Married",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.pricecharting.com/game/pal-nintendo-ds/knerten-gets-married"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-knigge-spielend-zum-guten-benehmen",
+      "title": "Knigge: Spielend zum guten Benehmen",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(J%E2%80%93P)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-knock-em-downs-world-s-fair",
+      "title": "Knock 'Em Downs: World's Fair",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.esrb.org/ratings/26291/knock-em-downs-worlds-fair/"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-know-how",
+      "title": "Know How",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.mobygames.com/game/40054/know-how-think-and-play-outside-the-box/"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-know-how-2",
+      "title": "Know How 2",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.mobygames.com/game/49241/know-how-2-think-and-play-outside-the-box/"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-kodawari-saihai-simulation-ocha-no-ma-pro-yakyuu-ds",
+      "title": "Kodawari Saihai Simulation: Ocha no Ma Pro Yakyuu DS",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://solarisjapan.com/products/kodawari-saihai-simulation-ocha-no-ma-pro-yakyuu-ds"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-kodawari-saihai-simulation-ocha-no-ma-pro-yakyuu-ds-2010-nendohan",
+      "title": "Kodawari Saihai Simulation: Ocha no Ma Pro Yakyuu DS 2010 Nendohan",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/games/images/134132-kodawari-saihai-simulation-ocha-no-ma-pro-yakyuu-ds-2010-nendohan"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-koh-lanta-survie-dans-la-jungle",
+      "title": "Koh-Lanta: Survie Dans La Jungle!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.jeuxvideo.com/jeux/nintendo-ds/00032438-koh-lanta-survie-dans-la-jungle.htm"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-koinu-de-kururin",
+      "title": "Koinu de Kururin",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://nintendoeverything.com/new-puzzle-game-launching-for-wiiware-in-japan/"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-koisuru-purin-koi-wa-daibouken-dr-kanmi-no-yabou",
+      "title": "Koisuru Purin! Koi wa Daibouken! Dr. Kanmi no Yabou!?",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gbatemp.net/threads/koisuru-purin-translation-pudding-in-love.476436/"
+    }
+  ]
+}

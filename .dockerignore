@@ -1,0 +1,7 @@
+.env
+.cache
+.git
+node_modules
+*.zip
+*.log
+data/launch-readiness/*.tmp

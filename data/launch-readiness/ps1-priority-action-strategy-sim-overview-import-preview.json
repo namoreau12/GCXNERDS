@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-08-23T16:24:01.032Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-action-strategy-sim-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 12
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-bokurato-asobou-ultraman-tv",
+      "title": "Bokurato Asobou! Ultraman TV",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Bokurato_Asobou!_Ultraman_TV&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-bomb-boat",
+      "title": "Bomb Boat",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-bottom-of-the-9th-97",
+      "title": "Bottom of the 9th '97",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Bottom_of_the_9th_%2797&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-boundary-gate-daughter-of-kingdom",
+      "title": "Boundary Gate: Daughter of Kingdom",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-bounty-hunter-sara-holy-mountain-no-teiou",
+      "title": "Bounty Hunter Sara: Holy Mountain no Teiou",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Bounty_Hunter_Sara:_Holy_Mountain_no_Teiou&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-bounty-sword-first",
+      "title": "Bounty Sword First",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-bounty-sword-double-edge",
+      "title": "Bounty Sword: Double Edge",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-boys-be-kono-koi-no-yukue",
+      "title": "Boys Be... Kono Koi no Yukue",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Boys_Be..."
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-bratz",
+      "title": "Bratz",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bratz_(video_game)"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-brave-saga-2",
+      "title": "Brave Saga 2",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Brave_Saga_2"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-brave-sword",
+      "title": "Brave Sword",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Brave_Sword&action=edit&redlink=1"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-break-point",
+      "title": "Break Point",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "/w/index.php?title=Break_Point_(video_game)&action=edit&redlink=1"
+    }
+  ]
+}

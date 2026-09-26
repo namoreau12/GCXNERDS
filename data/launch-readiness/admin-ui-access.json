@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-09-26T00:45:29.623Z",
+  "base": "http://localhost:3060",
+  "ok": true,
+  "status": 200,
+  "hasSignedOutSummary": true,
+  "hasSignedOutQueues": true,
+  "hidesStaffActions": true,
+  "disabledControls": 4,
+  "totalControls": 4,
+  "overflow": false,
+  "consoleErrors": []
+}

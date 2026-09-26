@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-08-23T18:20:34.522Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ds-priority-cake3-challengeword-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ds",
+      "updated": 25
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ds",
+      "gameId": "ds-cake-mania-3",
+      "title": "Cake Mania 3",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cake_Mania_3"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cake-mania-main-street",
+      "title": "Cake Mania Main Street",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cake_Mania:_Main_Street"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-call-of-atlantis",
+      "title": "Call of Atlantis",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-calvin-tucker-s-redneck-farm-animals-racing-tournament",
+      "title": "Calvin Tucker's Redneck Farm Animals Racing Tournament",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-candace-kane-s-candy-factory",
+      "title": "Candace Kane's Candy Factory",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-captain-sabertooth-and-the-trials-by-fire",
+      "title": "Captain Sabertooth and the Trials by Fire",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-captain-tsubasa-gekito-no-kiseki",
+      "title": "Captain Tsubasa: Gekito no Kiseki",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-carcassonne",
+      "title": "Carcassonne",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-card-de-asobu-hajimete-no-ds",
+      "title": "Card de Asobu! Hajimete no DS",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-card-game-9",
+      "title": "Card Game 9",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-casper-s-scare-school-classroom-capers",
+      "title": "Casper's Scare School Classroom Capers",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Casper%27s_Scare_School_(video_game)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-casper-s-scare-school-spooky-sports-day",
+      "title": "Casper's Scare School Spooky Sports Day",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Casper%27s_Scare_School_(video_game)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-casual-classics",
+      "title": "Casual Classics",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-casual-mania",
+      "title": "Casual Mania",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-catan-die-erste-insel",
+      "title": "Catan: Die Erste Insel",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cate-west-the-vanishing-files",
+      "title": "Cate West: The Vanishing Files",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cate_West:_The_Vanishing_Files"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cats-and-dogs-the-revenge-of-kitty-galore",
+      "title": "Cats And Dogs: The Revenge Of Kitty Galore",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cedric-l-anniversaire-de-chen",
+      "title": "Cedric - L'Anniversaire de Chen",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-cesar-millan-s-dog-whisperer",
+      "title": "Cesar Millan's Dog Whisperer",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-chainz-galaxy",
+      "title": "Chainz Galaxy",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-challenge-me-kids-brain-games",
+      "title": "Challenge Me Kids: Brain Games",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-challenge-me-brain-puzzles",
+      "title": "Challenge Me: Brain Puzzles",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-challenge-me-brain-puzzles-2",
+      "title": "Challenge Me: Brain Puzzles 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-challenge-me-math-workout",
+      "title": "Challenge Me: Math Workout",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-challenge-me-word-puzzles",
+      "title": "Challenge Me: Word Puzzles",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    }
+  ]
+}

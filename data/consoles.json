@@ -1,0 +1,871 @@
+[
+  {
+    "id": "nintendo-switch-2",
+    "name": "Nintendo Switch 2",
+    "manufacturer": "Nintendo",
+    "type": "Hybrid",
+    "generation": "Current",
+    "releaseYear": 2025,
+    "media": "Game cards, digital",
+    "marketTier": "Current demand",
+    "tags": [
+      "nintendo",
+      "switch",
+      "hybrid",
+      "current",
+      "portable"
+    ],
+    "tradeNotes": "High demand current Nintendo hardware; condition, screen, dock, Joy-Con drift, box, and warranty status matter.",
+    "imageUrl": "https://assets.nintendo.com/image/upload/v1743547392/ccb3e8ca3c296e21a8c933e8369031511589d0ef6b079cf5bb3667b09893482c/Global%20Nav/Explore/Nintendo-Switch-2.png",
+    "imageSourceUrl": "https://www.nintendo.com/us/gaming-systems/switch-2/",
+    "imageCredit": "Nintendo official product asset"
+  },
+  {
+    "id": "nintendo-switch-oled",
+    "name": "Nintendo Switch OLED",
+    "manufacturer": "Nintendo",
+    "type": "Hybrid",
+    "generation": "Modern",
+    "releaseYear": 2021,
+    "media": "Game cards, digital",
+    "marketTier": "High demand",
+    "tags": [
+      "nintendo",
+      "switch",
+      "oled",
+      "hybrid",
+      "portable"
+    ],
+    "tradeNotes": "Popular for collectors and families; inspect display burn-in, rails, dock, and Joy-Con condition.",
+    "imageUrl": "assets/consoles/nintendo-switch-oled.png",
+    "imageSourceUrl": "https://www.public.gr/product/gaming/nintendo/consoles/nintendo-switch-oled-model-white/1629626",
+    "imageCredit": "Transparent local product cutout"
+  },
+  {
+    "id": "nintendo-switch",
+    "name": "Nintendo Switch",
+    "manufacturer": "Nintendo",
+    "type": "Hybrid",
+    "generation": "Modern",
+    "releaseYear": 2017,
+    "media": "Game cards, digital",
+    "marketTier": "High demand",
+    "tags": [
+      "nintendo",
+      "switch",
+      "hybrid",
+      "portable"
+    ],
+    "tradeNotes": "Strong used market; identify V1/V2 model, battery condition, dock, charger, and Joy-Con drift.",
+    "imageUrl": "assets/consoles/nintendo-switch.png",
+    "imageSourceUrl": "https://www.nintendo.com/hk/hardware/switch/compare/",
+    "imageCredit": "Transparent local product cutout from Nintendo product asset"
+  },
+  {
+    "id": "nintendo-switch-lite",
+    "name": "Nintendo Switch Lite",
+    "manufacturer": "Nintendo",
+    "type": "Handheld",
+    "generation": "Modern",
+    "releaseYear": 2019,
+    "media": "Game cards, digital",
+    "marketTier": "Budget demand",
+    "tags": [
+      "nintendo",
+      "switch",
+      "lite",
+      "handheld"
+    ],
+    "tradeNotes": "Entry-level Switch market; screen, buttons, sticks, and charger inclusion are key.",
+    "imageUrl": "https://www.nintendo.com/eu/media/images/08_content_images/systems_5/nintendo_switch_3/not_approved_1/top_switch_lite_blue.png",
+    "imageSourceUrl": "https://www.nintendo.com/en-gb/Hardware/Nintendo-Switch-Family/Nintendo-Switch-Lite/Nintendo-Switch-Lite-1595961.html",
+    "imageCredit": "Nintendo official product asset"
+  },
+  {
+    "id": "playstation-5",
+    "name": "PlayStation 5",
+    "manufacturer": "Sony",
+    "type": "Home",
+    "generation": "Current",
+    "releaseYear": 2020,
+    "media": "Ultra HD Blu-ray, digital",
+    "marketTier": "Current demand",
+    "tags": [
+      "sony",
+      "playstation",
+      "ps5",
+      "current"
+    ],
+    "tradeNotes": "Separate disc and digital editions; verify controller drift, storage, plates, stand, and overheating history.",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$800px--t$",
+    "imageSourceUrl": "https://www.playstation.com/en-us/ps5/",
+    "imageCredit": "PlayStation official product asset"
+  },
+  {
+    "id": "playstation-5-slim",
+    "name": "PlayStation 5 Slim",
+    "manufacturer": "Sony",
+    "type": "Home",
+    "generation": "Current",
+    "releaseYear": 2023,
+    "media": "Detachable disc drive, digital",
+    "marketTier": "Current demand",
+    "tags": [
+      "sony",
+      "playstation",
+      "ps5",
+      "slim"
+    ],
+    "tradeNotes": "Check disc-drive inclusion, vertical stand, controller condition, and console storage.",
+    "imageUrl": "https://store.sony.com.au/on/demandware.static/-/Sites-sony-master-catalog/default/dwf11f74b4/images/PLAYSTATION5WSLIM/PLAYSTATION5WSLIM.png",
+    "imageSourceUrl": "https://store.sony.com.au/playstation-5-console/PLAYSTATION5WSLIM.html",
+    "imageCredit": "Sony official product asset"
+  },
+  {
+    "id": "playstation-5-pro",
+    "name": "PlayStation 5 Pro",
+    "manufacturer": "Sony",
+    "type": "Home",
+    "generation": "Current",
+    "releaseYear": 2024,
+    "media": "Digital, optional disc drive",
+    "marketTier": "Premium demand",
+    "tags": [
+      "sony",
+      "playstation",
+      "ps5",
+      "pro",
+      "4k"
+    ],
+    "tradeNotes": "Premium buyer pool; verify model, storage, original packaging, and disc-drive bundle status.",
+    "imageUrl": "https://store.sony.com.au/on/demandware.static/-/Sites-sony-master-catalog/default/dw0592efcb/images/PLAYSTATION5PRO/PLAYSTATION5PRO.png",
+    "imageSourceUrl": "https://store.sony.com.au/playstation-5-console/PLAYSTATION5PRO.html",
+    "imageCredit": "Sony official product asset"
+  },
+  {
+    "id": "xbox-series-x",
+    "name": "Xbox Series X",
+    "manufacturer": "Microsoft",
+    "type": "Home",
+    "generation": "Current",
+    "releaseYear": 2020,
+    "media": "Ultra HD Blu-ray, digital",
+    "marketTier": "Current demand",
+    "tags": [
+      "microsoft",
+      "xbox",
+      "series x",
+      "current"
+    ],
+    "tradeNotes": "Check disc drive, controller, storage expansion, HDMI port, and Game Pass bundle claims.",
+    "imageUrl": "https://cms-assets.xboxservices.com/assets/24/2d/242d8d4d-058d-44ba-9f06-e6d7035fd31a.png?n=Console-Hub_Content-Placement-0_642227-3_1146x618_01.png",
+    "imageSourceUrl": "https://www.xbox.com/en-US/consoles",
+    "imageCredit": "Xbox official product asset"
+  },
+  {
+    "id": "xbox-series-s",
+    "name": "Xbox Series S",
+    "manufacturer": "Microsoft",
+    "type": "Home",
+    "generation": "Current",
+    "releaseYear": 2020,
+    "media": "Digital",
+    "marketTier": "Budget demand",
+    "tags": [
+      "microsoft",
+      "xbox",
+      "series s",
+      "digital"
+    ],
+    "tradeNotes": "Budget current-gen option; storage size and controller condition drive value.",
+    "imageUrl": "https://cms-assets.xboxservices.com/assets/3c/b0/3cb07aa8-e5e8-4c3b-a59f-3d161a430c60.png?n=Console-Hub_Content-Placement-0_389964-1_1146x618_01.png",
+    "imageSourceUrl": "https://www.xbox.com/en-US/consoles",
+    "imageCredit": "Xbox official product asset"
+  },
+  {
+    "id": "steam-deck-oled",
+    "name": "Steam Deck OLED",
+    "manufacturer": "Valve",
+    "type": "Handheld PC",
+    "generation": "Modern",
+    "releaseYear": 2023,
+    "media": "Digital PC games",
+    "marketTier": "High demand",
+    "tags": [
+      "valve",
+      "steam deck",
+      "pc handheld",
+      "oled"
+    ],
+    "tradeNotes": "Strong enthusiast market; list storage, screen type, battery health, accessories, and case.",
+    "imageUrl": "https://cdn.fastly.steamstatic.com/steamdeck/images/press/renderings/press_oled_front_english.png",
+    "imageSourceUrl": "https://www.steamdeck.com/en/press",
+    "imageCredit": "Valve press kit asset"
+  },
+  {
+    "id": "steam-deck",
+    "name": "Steam Deck LCD",
+    "manufacturer": "Valve",
+    "type": "Handheld PC",
+    "generation": "Modern",
+    "releaseYear": 2022,
+    "media": "Digital PC games",
+    "marketTier": "High demand",
+    "tags": [
+      "valve",
+      "steam deck",
+      "pc handheld"
+    ],
+    "tradeNotes": "Storage tier, SSD upgrades, screen scratches, and battery health matter.",
+    "imageUrl": "https://cdn.fastly.steamstatic.com/steamdeck/images/press/renderings/rendering07.png",
+    "imageSourceUrl": "https://www.steamdeck.com/en/press",
+    "imageCredit": "Valve press kit asset"
+  },
+  {
+    "id": "asus-rog-ally",
+    "name": "ASUS ROG Ally",
+    "manufacturer": "ASUS",
+    "type": "Handheld PC",
+    "generation": "Modern",
+    "releaseYear": 2023,
+    "media": "Digital PC games",
+    "marketTier": "Enthusiast demand",
+    "tags": [
+      "asus",
+      "rog ally",
+      "pc handheld",
+      "windows"
+    ],
+    "tradeNotes": "Verify model, storage, SD card reader health, charger, and Windows condition.",
+    "imageUrl": "https://press.asus.com/assets/w_640,h_640/28ead953-371d-4a0d-be2e-7d46c70499f8/2023%20ROG%20Ally_RC71L_Product%20Photos_11.png",
+    "imageSourceUrl": "https://press.asus.com/media/photos/3/albums/265/?slide=28ead953-371d-4a0d-be2e-7d46c70499f8",
+    "imageCredit": "ASUS Pressroom product asset"
+  },
+  {
+    "id": "asus-rog-ally-x",
+    "name": "ASUS ROG Ally X",
+    "manufacturer": "ASUS",
+    "type": "Handheld PC",
+    "generation": "Modern",
+    "releaseYear": 2024,
+    "media": "Digital PC games",
+    "marketTier": "Enthusiast demand",
+    "tags": [
+      "asus",
+      "rog ally x",
+      "pc handheld",
+      "windows",
+      "z1 extreme",
+      "1tb",
+      "24gb ram"
+    ],
+    "tradeNotes": "Distinguish from the original ROG Ally by black shell, 80Wh battery, 24GB RAM, 1TB SSD, dual USB-C ports, charger, and Windows condition.",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/files/media/C03ED571-0D4B-47B3-90B0-BEF72BB26C05/v2/images/large/1x/nr2501_kv.png",
+    "imageSourceUrl": "https://rog.asus.com/gaming-handhelds/rog-ally/rog-ally-x-2024/",
+    "imageCredit": "ASUS official product asset"
+  },
+  {
+    "id": "playstation-4-pro",
+    "name": "PlayStation 4 Pro",
+    "manufacturer": "Sony",
+    "type": "Home",
+    "generation": "Eighth",
+    "releaseYear": 2016,
+    "media": "Blu-ray, digital",
+    "marketTier": "Budget demand",
+    "tags": [
+      "sony",
+      "playstation",
+      "ps4",
+      "pro"
+    ],
+    "tradeNotes": "Popular budget PlayStation; inspect fan noise, drive, controller, and hard drive.",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps4-pro-image-block-01-en-24jul20?$800px--t$",
+    "imageSourceUrl": "https://www.playstation.com/en-cz/ps4/",
+    "imageCredit": "PlayStation official product asset"
+  },
+  {
+    "id": "playstation-4",
+    "name": "PlayStation 4",
+    "manufacturer": "Sony",
+    "type": "Home",
+    "generation": "Eighth",
+    "releaseYear": 2013,
+    "media": "Blu-ray, digital",
+    "marketTier": "Budget demand",
+    "tags": [
+      "sony",
+      "playstation",
+      "ps4"
+    ],
+    "tradeNotes": "Large used market; model, storage, controller, and fan condition affect price.",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps4-product-thumbnail-01-en-14sep21?$800px--t$",
+    "imageSourceUrl": "https://www.playstation.com/en-cz/ps4/",
+    "imageCredit": "PlayStation official product asset"
+  },
+  {
+    "id": "xbox-one-x",
+    "name": "Xbox One X",
+    "manufacturer": "Microsoft",
+    "type": "Home",
+    "generation": "Eighth",
+    "releaseYear": 2017,
+    "media": "Ultra HD Blu-ray, digital",
+    "marketTier": "Budget demand",
+    "tags": [
+      "microsoft",
+      "xbox",
+      "one x"
+    ],
+    "tradeNotes": "Still attractive for 4K Blu-ray and back-compat; check HDMI and disc drive."
+  },
+  {
+    "id": "wii-u",
+    "name": "Wii U",
+    "manufacturer": "Nintendo",
+    "type": "Home",
+    "generation": "Eighth",
+    "releaseYear": 2012,
+    "media": "Optical disc, digital",
+    "marketTier": "Collector demand",
+    "tags": [
+      "nintendo",
+      "wii u",
+      "gamepad"
+    ],
+    "tradeNotes": "GamePad condition is everything; include charger, sensor bar, and storage details.",
+    "imageUrl": "https://www.nintendo.com/eu/media/images/01_website_elements/hardware_1/hardware_2012_WiiU_black_large_support_carousel_image.png",
+    "imageSourceUrl": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html",
+    "imageCredit": "Nintendo official history asset"
+  },
+  {
+    "id": "nintendo-3ds-xl",
+    "name": "New Nintendo 3DS XL",
+    "manufacturer": "Nintendo",
+    "type": "Handheld",
+    "generation": "Eighth",
+    "releaseYear": 2015,
+    "media": "Game cards, digital",
+    "marketTier": "Collector demand",
+    "tags": [
+      "nintendo",
+      "3ds",
+      "handheld",
+      "dual screen"
+    ],
+    "tradeNotes": "High used demand; screens, hinge, stylus, charger, region, and special editions matter.",
+    "imageUrl": "https://www.nintendo.com/eu/media/images/01_website_elements/hardware_1/hardware_2015_NewNintendo3DSXL_Black_support_carousel_image.png",
+    "imageSourceUrl": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html",
+    "imageCredit": "Nintendo official history asset"
+  },
+  {
+    "id": "playstation-vita",
+    "name": "PlayStation Vita",
+    "manufacturer": "Sony",
+    "type": "Handheld",
+    "generation": "Eighth",
+    "releaseYear": 2011,
+    "media": "Game cards, digital",
+    "marketTier": "Collector demand",
+    "tags": [
+      "sony",
+      "playstation",
+      "vita",
+      "handheld"
+    ],
+    "tradeNotes": "OLED model and memory card size strongly affect value.",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps3-PS3Vita-image-block-01-en-09oct24?$800px--t$",
+    "imageSourceUrl": "https://www.playstation.com/en-us/playstation-history/2007-ps3-ps-vita/",
+    "imageCredit": "PlayStation official history asset"
+  },
+  {
+    "id": "playstation-3",
+    "name": "PlayStation 3",
+    "manufacturer": "Sony",
+    "type": "Home",
+    "generation": "Seventh",
+    "releaseYear": 2006,
+    "media": "Blu-ray, digital",
+    "marketTier": "Retro demand",
+    "tags": [
+      "sony",
+      "playstation",
+      "ps3",
+      "blu-ray"
+    ],
+    "tradeNotes": "Backwards-compatible fat models need careful testing; check YLOD risk, drive, and controller.",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps3-console-image-block-01-en-18nov24?$800px--t$",
+    "imageSourceUrl": "https://www.playstation.com/en-us/playstation-history/2007-ps3-ps-vita/",
+    "imageCredit": "PlayStation official history asset"
+  },
+  {
+    "id": "xbox-360",
+    "name": "Xbox 360",
+    "manufacturer": "Microsoft",
+    "type": "Home",
+    "generation": "Seventh",
+    "releaseYear": 2005,
+    "media": "DVD, digital",
+    "marketTier": "Retro demand",
+    "tags": [
+      "microsoft",
+      "xbox",
+      "360"
+    ],
+    "tradeNotes": "Model revision matters; check red-ring history, hard drive, power brick, and controller.",
+    "imageUrl": "https://xboxwire.thesourcemediaassets.com/sites/2/Xbox360_Console_controller_RHS_34_rgb_Launch2013-No-Kinect-Small.png",
+    "imageSourceUrl": "https://news.xbox.com/en-us/2016/04/20/xbox-360-celebrating-10-years/",
+    "imageCredit": "Xbox Wire official product asset"
+  },
+  {
+    "id": "nintendo-wii",
+    "name": "Nintendo Wii",
+    "manufacturer": "Nintendo",
+    "type": "Home",
+    "generation": "Seventh",
+    "releaseYear": 2006,
+    "media": "Optical disc",
+    "marketTier": "Family retro",
+    "tags": [
+      "nintendo",
+      "wii",
+      "motion"
+    ],
+    "tradeNotes": "Bundle value depends on remotes, nunchuks, sensor bar, GameCube compatibility, and cables.",
+    "imageUrl": "https://www.nintendo.com/eu/media/images/01_website_elements/hardware_1/hardware_2006_Wii_large_support_carousel_image.png",
+    "imageSourceUrl": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html",
+    "imageCredit": "Nintendo official history asset"
+  },
+  {
+    "id": "nintendo-ds-lite",
+    "name": "Nintendo DS Lite",
+    "manufacturer": "Nintendo",
+    "type": "Handheld",
+    "generation": "Seventh",
+    "releaseYear": 2006,
+    "media": "Game cards, GBA cartridges",
+    "marketTier": "Retro demand",
+    "tags": [
+      "nintendo",
+      "ds",
+      "handheld"
+    ],
+    "tradeNotes": "Check hinges, screens, stylus, GBA slot cover, and charger.",
+    "imageUrl": "https://www.nintendo.com/eu/media/images/01_website_elements/hardware_1/hardware_2006_DS_Lite_large_support_carousel_image.png",
+    "imageSourceUrl": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html",
+    "imageCredit": "Nintendo official history asset"
+  },
+  {
+    "id": "psp",
+    "name": "PlayStation Portable",
+    "manufacturer": "Sony",
+    "type": "Handheld",
+    "generation": "Seventh",
+    "releaseYear": 2004,
+    "media": "UMD, Memory Stick",
+    "marketTier": "Retro demand",
+    "tags": [
+      "sony",
+      "playstation",
+      "psp",
+      "handheld"
+    ],
+    "tradeNotes": "Model, battery swelling, UMD drive, screen, and memory card are key.",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps2-PSPlarge-image-block-01-en-18nov24?$800px--t$",
+    "imageSourceUrl": "https://www.playstation.com/en-in/playstation-history/2000-ps2-psp/",
+    "imageCredit": "PlayStation official history asset"
+  },
+  {
+    "id": "playstation-2",
+    "name": "PlayStation 2",
+    "manufacturer": "Sony",
+    "type": "Home",
+    "generation": "Sixth",
+    "releaseYear": 2000,
+    "media": "DVD, CD",
+    "marketTier": "Retro staple",
+    "tags": [
+      "sony",
+      "playstation",
+      "ps2",
+      "dvd"
+    ],
+    "tradeNotes": "Fat vs Slim, disc drive condition, memory cards, controllers, and cables drive listings.",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps2-console-image-block-01-en-08oct24?$800px--t$",
+    "imageSourceUrl": "https://www.playstation.com/en-in/playstation-history/2000-ps2-psp/",
+    "imageCredit": "PlayStation official history asset"
+  },
+  {
+    "id": "nintendo-gamecube",
+    "name": "Nintendo GameCube",
+    "manufacturer": "Nintendo",
+    "type": "Home",
+    "generation": "Sixth",
+    "releaseYear": 2001,
+    "media": "MiniDVD",
+    "marketTier": "Collector demand",
+    "tags": [
+      "nintendo",
+      "gamecube",
+      "retro"
+    ],
+    "tradeNotes": "Color, controller count, disc drive, digital AV port, Game Boy Player, and box matter.",
+    "imageUrl": "https://www.nintendo.com/eu/media/images/01_website_elements/hardware_1/hardware_2002_Nintendo_Gamecube_large_support_carousel_image.png",
+    "imageSourceUrl": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html",
+    "imageCredit": "Nintendo official history asset"
+  },
+  {
+    "id": "original-xbox",
+    "name": "Original Xbox",
+    "manufacturer": "Microsoft",
+    "type": "Home",
+    "generation": "Sixth",
+    "releaseYear": 2001,
+    "media": "DVD",
+    "marketTier": "Retro demand",
+    "tags": [
+      "microsoft",
+      "xbox",
+      "original xbox"
+    ],
+    "tradeNotes": "Check clock capacitor, disc drive, controller type, and hard drive status."
+  },
+  {
+    "id": "sega-dreamcast",
+    "name": "Sega Dreamcast",
+    "manufacturer": "Sega",
+    "type": "Home",
+    "generation": "Sixth",
+    "releaseYear": 1998,
+    "media": "GD-ROM",
+    "marketTier": "Collector demand",
+    "tags": [
+      "sega",
+      "dreamcast",
+      "retro"
+    ],
+    "tradeNotes": "GD-ROM health, controller ports, VMUs, modem, and region affect value."
+  },
+  {
+    "id": "game-boy-advance-sp",
+    "name": "Game Boy Advance SP",
+    "manufacturer": "Nintendo",
+    "type": "Handheld",
+    "generation": "Sixth",
+    "releaseYear": 2003,
+    "media": "Game Boy Advance cartridges",
+    "marketTier": "Collector demand",
+    "tags": [
+      "nintendo",
+      "game boy",
+      "gba",
+      "handheld"
+    ],
+    "tradeNotes": "AGS-101 backlit model is especially valuable; check hinge, shell, screen, and battery.",
+    "imageUrl": "https://www.nintendo.com/eu/media/images/01_website_elements/hardware_1/hardware_2003_gameboy_color_large_support_carousel_image.png",
+    "imageSourceUrl": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html",
+    "imageCredit": "Nintendo official history asset"
+  },
+  {
+    "id": "game-boy-advance",
+    "name": "Game Boy Advance",
+    "manufacturer": "Nintendo",
+    "type": "Handheld",
+    "generation": "Sixth",
+    "releaseYear": 2001,
+    "media": "Game Boy Advance cartridges",
+    "marketTier": "Retro demand",
+    "tags": [
+      "nintendo",
+      "game boy",
+      "gba",
+      "handheld"
+    ],
+    "tradeNotes": "Original screen visibility, battery terminals, shell condition, and mods affect price.",
+    "imageUrl": "https://www.nintendo.com/eu/media/images/01_website_elements/hardware_1/hardware_2001_Gameboy_Advanced_large_support_carousel_image.png",
+    "imageSourceUrl": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html",
+    "imageCredit": "Nintendo official history asset"
+  },
+  {
+    "id": "playstation",
+    "name": "PlayStation",
+    "manufacturer": "Sony",
+    "type": "Home",
+    "generation": "Fifth",
+    "releaseYear": 1994,
+    "media": "CD-ROM",
+    "marketTier": "Retro staple",
+    "tags": [
+      "sony",
+      "playstation",
+      "ps1",
+      "retro"
+    ],
+    "tradeNotes": "Disc drive, controller, memory cards, model number, and mod history matter.",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps1-console-image-block-01-en-02oct24?$800px--t$",
+    "imageSourceUrl": "https://www.playstation.com/en-us/playstation-history/1994-ps-one/",
+    "imageCredit": "PlayStation official history asset"
+  },
+  {
+    "id": "nintendo-64",
+    "name": "Nintendo 64",
+    "manufacturer": "Nintendo",
+    "type": "Home",
+    "generation": "Fifth",
+    "releaseYear": 1996,
+    "media": "Cartridges",
+    "marketTier": "Collector demand",
+    "tags": [
+      "nintendo",
+      "n64",
+      "cartridge",
+      "retro"
+    ],
+    "tradeNotes": "Controller stick condition, Expansion Pak, color variants, and cartridge slot health matter.",
+    "imageUrl": "https://www.nintendo.com/eu/media/images/01_website_elements/hardware_1/hardware_1997_Nintendo_64_large_support_carousel_image.png",
+    "imageSourceUrl": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html",
+    "imageCredit": "Nintendo official history asset"
+  },
+  {
+    "id": "sega-saturn",
+    "name": "Sega Saturn",
+    "manufacturer": "Sega",
+    "type": "Home",
+    "generation": "Fifth",
+    "releaseYear": 1994,
+    "media": "CD-ROM",
+    "marketTier": "Collector demand",
+    "tags": [
+      "sega",
+      "saturn",
+      "retro"
+    ],
+    "tradeNotes": "Region, disc drive, RAM cart compatibility, and controller condition matter."
+  },
+  {
+    "id": "atari-jaguar",
+    "name": "Atari Jaguar",
+    "manufacturer": "Atari",
+    "type": "Home",
+    "generation": "Fifth",
+    "releaseYear": 1993,
+    "media": "Cartridges",
+    "marketTier": "Collector niche",
+    "tags": [
+      "atari",
+      "jaguar",
+      "retro",
+      "collector"
+    ],
+    "tradeNotes": "Niche collector item; box, controller overlay, power supply, and CD add-on compatibility matter."
+  },
+  {
+    "id": "game-boy-color",
+    "name": "Game Boy Color",
+    "manufacturer": "Nintendo",
+    "type": "Handheld",
+    "generation": "Fifth",
+    "releaseYear": 1998,
+    "media": "Game Boy cartridges",
+    "marketTier": "Retro demand",
+    "tags": [
+      "nintendo",
+      "game boy",
+      "color",
+      "handheld"
+    ],
+    "tradeNotes": "Shell color, battery terminals, screen, speaker, and mod status affect listings.",
+    "imageUrl": "https://www.nintendo.com/eu/media/images/01_website_elements/hardware_1/hardware_1999_Gameboy_Color_large_support_carousel_image.png",
+    "imageSourceUrl": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html",
+    "imageCredit": "Nintendo official history asset"
+  },
+  {
+    "id": "super-nintendo",
+    "name": "Super Nintendo Entertainment System",
+    "manufacturer": "Nintendo",
+    "type": "Home",
+    "generation": "Fourth",
+    "releaseYear": 1990,
+    "media": "Cartridges",
+    "marketTier": "Retro staple",
+    "tags": [
+      "nintendo",
+      "snes",
+      "super nintendo",
+      "16-bit"
+    ],
+    "tradeNotes": "Yellowing, controller condition, cables, cartridge slot, and box/manuals are important.",
+    "imageUrl": "assets/consoles/super-nintendo.png",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:SNES-USA.png",
+    "imageCredit": "North American SNES product image"
+  },
+  {
+    "id": "sega-genesis",
+    "name": "Sega Genesis",
+    "manufacturer": "Sega",
+    "type": "Home",
+    "generation": "Fourth",
+    "releaseYear": 1988,
+    "media": "Cartridges",
+    "marketTier": "Retro staple",
+    "tags": [
+      "sega",
+      "genesis",
+      "mega drive",
+      "16-bit"
+    ],
+    "tradeNotes": "Model 1 vs Model 2, controllers, cables, and add-on compatibility matter."
+  },
+  {
+    "id": "turbografx-16",
+    "name": "TurboGrafx-16",
+    "manufacturer": "NEC",
+    "type": "Home",
+    "generation": "Fourth",
+    "releaseYear": 1987,
+    "media": "HuCard",
+    "marketTier": "Collector demand",
+    "tags": [
+      "nec",
+      "turbografx",
+      "pc engine",
+      "retro"
+    ],
+    "tradeNotes": "Region, controller, TurboTap, CD add-on, and HuCard slot condition matter."
+  },
+  {
+    "id": "neo-geo-aes",
+    "name": "Neo Geo AES",
+    "manufacturer": "SNK",
+    "type": "Home",
+    "generation": "Fourth",
+    "releaseYear": 1990,
+    "media": "Cartridges",
+    "marketTier": "Premium collector",
+    "tags": [
+      "snk",
+      "neo geo",
+      "aes",
+      "collector"
+    ],
+    "tradeNotes": "Premium collector hardware; serial, region, arcade stick, box, and cartridge authenticity matter."
+  },
+  {
+    "id": "game-boy",
+    "name": "Game Boy",
+    "manufacturer": "Nintendo",
+    "type": "Handheld",
+    "generation": "Fourth",
+    "releaseYear": 1989,
+    "media": "Game Boy cartridges",
+    "marketTier": "Retro staple",
+    "tags": [
+      "nintendo",
+      "game boy",
+      "handheld"
+    ],
+    "tradeNotes": "Screen lines, battery corrosion, speaker, shell, and modded backlight status matter.",
+    "imageUrl": "https://www.nintendo.com/eu/media/images/01_website_elements/hardware_1/hardware_1990_Gameboy_large_support_carousel_image.png",
+    "imageSourceUrl": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html",
+    "imageCredit": "Nintendo official history asset"
+  },
+  {
+    "id": "nes",
+    "name": "Nintendo Entertainment System",
+    "manufacturer": "Nintendo",
+    "type": "Home",
+    "generation": "Third",
+    "releaseYear": 1983,
+    "media": "Cartridges",
+    "marketTier": "Retro staple",
+    "tags": [
+      "nintendo",
+      "nes",
+      "8-bit"
+    ],
+    "tradeNotes": "72-pin connector, controller ports, zapper, power supply, and box condition matter.",
+    "imageUrl": "https://www.nintendo.com/eu/media/images/01_website_elements/hardware_1/hardware_1986_Nintendo_Entertainment_System_large_support_carousel_image.png",
+    "imageSourceUrl": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html",
+    "imageCredit": "Nintendo official history asset"
+  },
+  {
+    "id": "sega-master-system",
+    "name": "Sega Master System",
+    "manufacturer": "Sega",
+    "type": "Home",
+    "generation": "Third",
+    "releaseYear": 1985,
+    "media": "Cartridges, cards",
+    "marketTier": "Retro demand",
+    "tags": [
+      "sega",
+      "master system",
+      "8-bit"
+    ],
+    "tradeNotes": "Region and included controller/light phaser can change value."
+  },
+  {
+    "id": "atari-7800",
+    "name": "Atari 7800",
+    "manufacturer": "Atari",
+    "type": "Home",
+    "generation": "Third",
+    "releaseYear": 1986,
+    "media": "Cartridges",
+    "marketTier": "Collector niche",
+    "tags": [
+      "atari",
+      "7800",
+      "retro"
+    ],
+    "tradeNotes": "Backwards compatibility, controller condition, and power supply are key."
+  },
+  {
+    "id": "atari-2600",
+    "name": "Atari 2600",
+    "manufacturer": "Atari",
+    "type": "Home",
+    "generation": "Second",
+    "releaseYear": 1977,
+    "media": "Cartridges",
+    "marketTier": "Classic collector",
+    "tags": [
+      "atari",
+      "2600",
+      "classic"
+    ],
+    "tradeNotes": "Six-switch vs four-switch, woodgrain shell, joysticks, paddles, and RF adapter condition matter."
+  },
+  {
+    "id": "intellivision",
+    "name": "Intellivision",
+    "manufacturer": "Mattel",
+    "type": "Home",
+    "generation": "Second",
+    "releaseYear": 1979,
+    "media": "Cartridges",
+    "marketTier": "Classic collector",
+    "tags": [
+      "mattel",
+      "intellivision",
+      "classic"
+    ],
+    "tradeNotes": "Controller overlays, keypad condition, and power/video output matter."
+  },
+  {
+    "id": "colecovision",
+    "name": "ColecoVision",
+    "manufacturer": "Coleco",
+    "type": "Home",
+    "generation": "Second",
+    "releaseYear": 1982,
+    "media": "Cartridges",
+    "marketTier": "Classic collector",
+    "tags": [
+      "coleco",
+      "colecovision",
+      "classic"
+    ],
+    "tradeNotes": "Controller condition, expansion modules, and power supply are common listing concerns."
+  }
+]

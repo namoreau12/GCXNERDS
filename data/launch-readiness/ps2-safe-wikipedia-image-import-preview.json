@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-08-25T17:51:10.448Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\ps2-safe-wikipedia-image-import-20260825.csv",
+  "validateRemote": true,
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 5
+    }
+  ],
+  "rejected": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mahjong",
+      "title": "Mahjong",
+      "imageProvider": "Reviewed Wikipedia page image",
+      "imageSourceUrl": "https://en.wikipedia.org/wiki/Mahjong"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-othello",
+      "title": "Othello",
+      "imageProvider": "Reviewed Wikipedia page image",
+      "imageSourceUrl": "https://en.wikipedia.org/wiki/Othello"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-crossword",
+      "title": "Crossword",
+      "imageProvider": "Reviewed Wikipedia page image",
+      "imageSourceUrl": "https://en.wikipedia.org/wiki/Crossword"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-hanafuda",
+      "title": "Hanafuda",
+      "imageProvider": "Reviewed Wikipedia page image",
+      "imageSourceUrl": "https://en.wikipedia.org/wiki/Hanafuda"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-yoshinoya",
+      "title": "Yoshinoya",
+      "imageProvider": "Reviewed Wikipedia page image",
+      "imageSourceUrl": "https://en.wikipedia.org/wiki/Yoshinoya"
+    }
+  ],
+  "coverageImpact": {
+    "current": {
+      "totalGames": 42622,
+      "images": 37768,
+      "imagePct": 88.6
+    },
+    "projected": {
+      "images": 37773,
+      "imagePct": 88.6,
+      "addedImages": 5
+    },
+    "milestones": [
+      {
+        "targetPct": 90,
+        "beforeNeeded": 592,
+        "afterNeeded": 587,
+        "progressFromImport": 5,
+        "targetMetAfterImport": false
+      },
+      {
+        "targetPct": 95,
+        "beforeNeeded": 2723,
+        "afterNeeded": 2718,
+        "progressFromImport": 5,
+        "targetMetAfterImport": false
+      },
+      {
+        "targetPct": 100,
+        "beforeNeeded": 4854,
+        "afterNeeded": 4849,
+        "progressFromImport": 5,
+        "targetMetAfterImport": false
+      }
+    ]
+  }
+}

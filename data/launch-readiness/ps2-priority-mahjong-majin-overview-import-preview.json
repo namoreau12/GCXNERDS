@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-25T11:28:21.289Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-mahjong-majin-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 15,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mahjong-hiryu-densetsu-tenpai",
+      "title": "Mahjong Hiryu Densetsu: Tenpai",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.honestgamers.com/45312/playstation-2/mahjong-hiryu-densetsu-tenpai/game.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mahjong-party-idol-to-mahjong-shoubu",
+      "title": "Mahjong Party: Idol to Mahjong Shoubu",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPS-20349.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mahjong-san-goku-shi",
+      "title": "Mahjong San Goku Shi",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/games/details/390321-mahjong-sangokushi"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mahjong-sengen-kyoujin-de-ron",
+      "title": "Mahjong Sengen Kyoujin de Ron!",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.nin-nin-game.com/en/playstation-2"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mahjong-taikai-iii",
+      "title": "Mahjong Taikai III",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.mobygames.com/game/62630/mahjong-taikai-iii-millennium-league/"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mahjong-yarouze-2",
+      "title": "Mahjong Yarouze! 2",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28L%E2%80%93Z%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mahoroba-stories",
+      "title": "Mahoroba Stories",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://downloads.khinsider.com/game-soundtracks/album/mahoroba-stories-library-of-fortune-ps2-gamerip-2007"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mahoromatic-moetto-kirakira-maid-san",
+      "title": "Mahoromatic: Moetto - KiraKira Maid-San",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-65333.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mahou-sensei-negima-1-jikanme-okochama-sensei-wa-mahoutsukai",
+      "title": "Mahou Sensei Negima! 1-Jikanme ~Okochama Sensei wa Mahoutsukai!~",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-65871.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mahou-sensei-negima-2-jikanme-tatakau-otometachi-mahora-daiundokai-sp",
+      "title": "Mahou Sensei Negima! 2-Jikanme ~Tatakau Otometachi! Mahora Daiundokai SP~",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.play-asia.com/en/mahou-sensei-negima-2-jikanme-konami-the-best/13/70157y"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mahou-sensei-negima-kagai-jugyou-otome-no-dokidoki-beachside",
+      "title": "Mahou Sensei Negima! Kagai Jugyou ~Otome no Dokidoki Beachside~",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.pricecharting.com/game/jp-playstation-2/mahou-sensei-negima-kagai-jugyou-~otome-no-dokidoki-beachside~"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mahou-tsukai-kurohime",
+      "title": "Mahou Tsukai Kurohime",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-66164.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mai-hime-unmei-no-keitouju",
+      "title": "Mai-HiME: Unmei no Keitouju",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPS-25507.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mai-otome-hime-otome-butou-shi",
+      "title": "Mai-Otome Hime: Otome Butou Shi",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://tcrf.net/Mai-Otome_Hime%3A_Otome_Butou_Shi"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-majin-tantei-nougami-neuro-battle-da-yo",
+      "title": "Majin Tantei Nougami Neuro: Battle da Yo!",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-55031.html"
+    }
+  ]
+}

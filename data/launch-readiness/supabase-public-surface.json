@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "configured": true,
+  "generatedAt": "2026-09-26T00:44:48.171Z",
+  "checks": [
+    {
+      "table": "profiles",
+      "expected": "server-only",
+      "status": 401,
+      "ok": true
+    },
+    {
+      "table": "newsletter_subscriptions",
+      "expected": "server-only",
+      "status": 401,
+      "ok": true
+    },
+    {
+      "table": "collector_waitlist",
+      "expected": "server-only",
+      "status": 401,
+      "ok": true
+    },
+    {
+      "table": "sponsor_leads",
+      "expected": "server-only",
+      "status": 401,
+      "ok": true
+    },
+    {
+      "table": "moderation_reports",
+      "expected": "server-only",
+      "status": 401,
+      "ok": true
+    },
+    {
+      "table": "marketplace_listing_intents",
+      "expected": "server-only",
+      "status": 401,
+      "ok": true
+    },
+    {
+      "table": "news_article_comments",
+      "expected": "public-read-filtered-by-rls",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "table": "community_posts",
+      "expected": "public-read-filtered-by-rls",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "table": "community_comments",
+      "expected": "public-read-filtered-by-rls",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "table": "sponsor_promotions",
+      "expected": "public-read-filtered-by-rls",
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "failures": [],
+  "nextStep": "Supabase public API surface matches GCX launch expectations."
+}

@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-09-26T00:49:34.322Z",
+  "ok": true,
+  "base": "http://localhost:3060",
+  "status": "ready-with-warnings",
+  "warnings": 4,
+  "staleFiles": 0,
+  "checkedLinks": 674,
+  "headerChecks": {
+    "cacheControlNoStore": true,
+    "contentTypeOptions": true,
+    "healthHeader": true
+  }
+}

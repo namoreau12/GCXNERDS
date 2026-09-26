@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-08-23T18:13:31.527Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ds-priority-balls-bikkuriman-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ds",
+      "updated": 25
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ds",
+      "gameId": "ds-balls-of-fury",
+      "title": "Balls of Fury",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Balls_of_Fury"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-battle-of-giants-dinosaurs",
+      "title": "Battle of Giants: Dinosaurs",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Giants:_Dinosaurs"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-battle-of-giants-dragons",
+      "title": "Battle of Giants: Dragons",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Giants:_Dragons"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-battle-of-giants-mutant-insects",
+      "title": "Battle of Giants: Mutant Insects",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Battle_of_Giants:_Mutant_Insects"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-battle-spirits-digital-starter",
+      "title": "Battle Spirits: Digital Starter",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-beastly-frantic-foto",
+      "title": "Beastly Frantic Foto",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-beat-the-intro",
+      "title": "Beat the Intro",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-beetle-junior-ds",
+      "title": "Beetle Junior DS",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-benjamin-blumchen-vorschulspass-lernen-spielen-und-verstehen",
+      "title": "Benjamin Blumchen Vorschulspass: Lernen spielen und verstehen",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-benjamin-the-elephant-a-day-at-the-zoo",
+      "title": "Benjamin the Elephant: A Day at the Zoo",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-bermuda-triangle-saving-the-coral",
+      "title": "Bermuda Triangle: Saving the Coral",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-best-friends-tonight",
+      "title": "Best Friends Tonight",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-best-of-arcade-games-ds",
+      "title": "Best of Arcade Games DS",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-best-of-board-games-ds",
+      "title": "Best of Board Games DS",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-best-of-card-games-ds",
+      "title": "Best of Card Games DS",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-bibi-and-tina-jump-and-ride",
+      "title": "Bibi & Tina - Jump & Ride",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-bibi-and-tina-das-grosse-unwetter",
+      "title": "Bibi & Tina: Das grosse Unwetter",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-bibi-and-tina-the-great-hunt",
+      "title": "Bibi & Tina: The Great Hunt",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-bibi-blocksberg-das-gestohlene-hexbuch",
+      "title": "BiBi Blocksberg: Das gestohlene Hexbuch",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-bibi-blocksberg-der-verhexte-schloss-schatz",
+      "title": "Bibi Blocksberg: Der verhexte Schloss-Schatz",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-bibi-blocksberg-mathe-klassen-1-bis-4",
+      "title": "Bibi Blocksberg: Mathe Klassen 1 bis 4",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-bibi-blocksberg-neustadt-im-hex-chaos",
+      "title": "Bibi Blocksberg: Neustadt im Hex-Chaos",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-bienvenue-chez-les-ch-tis",
+      "title": "Bienvenue chez les Ch'tis",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-big-league-sports-summer",
+      "title": "Big League Sports Summer",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-bikkuriman-daijiten",
+      "title": "Bikkuriman Daijiten",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_Nintendo_DS_games_(0%E2%80%93C)"
+    }
+  ]
+}

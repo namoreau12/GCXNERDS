@@ -1,0 +1,165 @@
+{
+  "generatedAt": "2026-08-25T01:31:03.853Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps4-priority-dungeontop-empire-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps4",
+      "updated": 21,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps4",
+      "gameId": "ps4-dungeontop",
+      "title": "DungeonTop",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-dungreed",
+      "title": "Dungreed",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-dusk-diver",
+      "title": "Dusk Diver",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-dustoff-heli-rescue-2",
+      "title": "Dustoff Heli Rescue 2",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-dustoff-z",
+      "title": "Dustoff Z",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-dynasty-warriors-godseekers",
+      "title": "Dynasty Warriors: Godseekers",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dynasty_Warriors:_Godseekers"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-earth-defense-force-6",
+      "title": "Earth Defense Force 6",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Earth_Defense_Force_6"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-earth-defense-force-world-brothers",
+      "title": "Earth Defense Force: World Brothers",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Earth_Defense_Force:_World_Brothers"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-earth-wars",
+      "title": "Earth Wars",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-earthnight",
+      "title": "EarthNight",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-easy-dice-for-rpg-tabletop",
+      "title": "Easy Dice for RPG/Tabletop",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-ebaseball-powerful-pro-yakyuu-2020",
+      "title": "eBaseball Powerful Pro Yakyuu 2020",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/EBaseball_Powerful_Pro_Yakyuu_2020"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-ebaseball-powerful-pro-yakyuu-2022",
+      "title": "eBaseball Powerful Pro Yakyuu 2022",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-edge-of-eternity",
+      "title": "Edge of Eternity",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-effie",
+      "title": "Effie",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-efootball-pes-2021-season-update",
+      "title": "eFootball PES 2021 Season Update",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/EFootball_PES_2021_Season_Update"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-efootball-pro-evolution-soccer-2020",
+      "title": "eFootball Pro Evolution Soccer 2020",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/EFootball_Pro_Evolution_Soccer_2020"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-electronic-super-joy-2",
+      "title": "Electronic Super Joy 2",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Electronic_Super_Joy_2"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-elex-ii",
+      "title": "ELEX II",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-embers-of-mirrim",
+      "title": "Embers of Mirrim",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-empire-of-angels-iv",
+      "title": "Empire of Angels IV",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

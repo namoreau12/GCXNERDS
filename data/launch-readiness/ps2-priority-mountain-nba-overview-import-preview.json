@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-08-25T14:20:25.928Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-mountain-nba-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 11,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mountain-bike-adrenaline",
+      "title": "Mountain Bike Adrenaline",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://francksauer.com/index.php/games?catid=15%3Apublished-games&id=25%3Amountain-bike-adrenaline&view=article"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-my-home-o-tsukurou-2-jujitsu-kantan-sekkei",
+      "title": "My Home o Tsukurou 2! Jūjitsu! Kantan Sekkei!!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPS-20177.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-my-home-o-tsukurou-2-shou",
+      "title": "My Home o Tsukurou 2! Shou",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPS-20177.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-my-merry-maybe",
+      "title": "My Merry Maybe",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-66488.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-myself-yourself",
+      "title": "Myself ; Yourself",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Myself_;_Yourself"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-myth-makers-orbs-of-doom",
+      "title": "Myth Makers: Orbs of Doom",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Myth_Makers%3A_Orbs_of_Doom"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-myth-makers-trixie-in-toyland",
+      "title": "Myth Makers: Trixie in Toyland",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Myth_Makers%3A_Trixie_in_Toyland"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-nascar-08",
+      "title": "NASCAR 08",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NASCAR_08"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-nascar-thunder-2002",
+      "title": "NASCAR Thunder 2002",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NASCAR_Thunder_2002"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-nascar-dirt-to-daytona",
+      "title": "NASCAR: Dirt to Daytona",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NASCAR:_Dirt_to_Daytona"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-nba-live-06",
+      "title": "NBA Live 06",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NBA_Live_06"
+    }
+  ]
+}

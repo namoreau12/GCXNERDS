@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-08-25T03:41:23.708Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps4-priority-micetopia-minutes-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps4",
+      "updated": 8,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps4",
+      "gameId": "ps4-micetopia",
+      "title": "Micetopia",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.ratalaikagames.com/games/micetopia.php"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-micro-machines-world-series",
+      "title": "Micro Machines World Series",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Micro_Machines_World_Series"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-mighty-fight-federation",
+      "title": "Mighty Fight Federation",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-us/product/UP2262-PPSA02990_00-9063270209529730"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-miles-and-kilo",
+      "title": "Miles & Kilo",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.eastasiasoft.com/games/Miles-and-Kilo"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-minecraft-story-mode-season-2",
+      "title": "Minecraft: Story Mode - Season 2",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-gb/product/EP2026-CUSA08689_00-MSM200000000GAME"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-minoria",
+      "title": "Minoria",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-hu/product/EP3919-CUSA19047_00-MINORIAEU0000000/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-minotaur-arcade-volume-1",
+      "title": "Minotaur Arcade Volume 1",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.steampowered.com/app/906110/Minotaur_Arcade_Volume_1/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-minutes",
+      "title": "Minutes",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.thesixthaxis.com/2014/11/04/minutes-review-ps4-ps-vita/"
+    }
+  ]
+}

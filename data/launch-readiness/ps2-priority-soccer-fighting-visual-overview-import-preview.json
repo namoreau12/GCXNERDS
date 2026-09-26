@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-08-23T16:31:36.420Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-soccer-fighting-visual-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 12
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fifa-soccer-07",
+      "title": "FIFA Soccer 07",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_07"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fifa-soccer-13",
+      "title": "FIFA Soccer 13",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_13"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fifa-soccer-world-championship",
+      "title": "FIFA Soccer World Championship",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_(video_game_series)"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fifa-total-football",
+      "title": "FIFA Total Football",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_(video_game_series)"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fifa-total-football-2",
+      "title": "FIFA Total Football 2",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FIFA_(video_game_series)"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fightbox",
+      "title": "FightBox",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FightBox"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fighter-maker-2",
+      "title": "Fighter Maker 2",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fighter_Maker"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fighting-angels",
+      "title": "Fighting Angels",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-fighting-fury",
+      "title": "Fighting Fury",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tomy"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-final-approach",
+      "title": "Final Approach",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Final_Approach_(visual_novel)"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-final-approach-2-1st-priority",
+      "title": "Final Approach 2: 1st Priority",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Final_Approach_(visual_novel)"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-finalist",
+      "title": "Finalist",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Final_Approach_(visual_novel)"
+    }
+  ]
+}

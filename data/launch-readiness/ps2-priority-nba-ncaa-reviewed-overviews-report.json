@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-25T14:32:10.705Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-nba-ncaa-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 15,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-nba-live-09",
+      "title": "NBA Live 09",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NBA_Live_09"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-nba-shootout-2001",
+      "title": "NBA Shootout 2001",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NBA_ShootOut_2001"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-nba-shootout-2003",
+      "title": "NBA Shootout 2003",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NBA_ShootOut_2003"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-nba-shootout-2004",
+      "title": "NBA Shootout 2004",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NBA_ShootOut_2004"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-nba-starting-five",
+      "title": "NBA Starting Five",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.gamestop.com/video-games/retro-gaming/products/nba-starting-five---playstation-2/20017785.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-nba-starting-five-2005",
+      "title": "NBA Starting Five 2005",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.ebay.com/p/56256885"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-ncaa-basketball-09",
+      "title": "NCAA Basketball 09",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://ir.ea.com/press-releases/press-release-details/2008/NCAA-Basketball-09-from-EA-Sports-Ships-to-Stores-Today/default.aspx"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-ncaa-gamebreaker-2001",
+      "title": "NCAA Gamebreaker 2001",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NCAA_GameBreaker_2001"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-ncaa-gamebreaker-2003",
+      "title": "NCAA Gamebreaker 2003",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NCAA_GameBreaker_2003"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-ncaa-gamebreaker-2004",
+      "title": "NCAA Gamebreaker 2004",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NCAA_GameBreaker_2004"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-ncaa-march-madness-08",
+      "title": "NCAA March Madness 08",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NCAA_March_Madness_08"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-ncaa-march-madness-2002",
+      "title": "NCAA March Madness 2002",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NCAA_March_Madness_2002"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-ncaa-march-madness-2003",
+      "title": "NCAA March Madness 2003",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NCAA_March_Madness_2003"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-ncaa-march-madness-2004",
+      "title": "NCAA March Madness 2004",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NCAA_March_Madness_2004"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-ncaa-march-madness-2005",
+      "title": "NCAA March Madness 2005",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/NCAA_March_Madness_2005"
+    }
+  ]
+}

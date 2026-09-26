@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-25T13:57:38.928Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-slugfest-monster-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 15,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mlb-slugfest-20-03",
+      "title": "MLB SlugFest 20-03",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/MLB_Slugfest_2003"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mlb-slugfest-20-04",
+      "title": "MLB SlugFest 20-04",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/MLB_Slugfest_2004"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mlb-slugfest-2006",
+      "title": "MLB SlugFest 2006",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/MLB_Slugfest_2006"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-mlb-slugfest-loaded",
+      "title": "MLB SlugFest: Loaded",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/MLB_Slugfest%3A_Loaded"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-moe-moe-2-ji-daisenryaku-2",
+      "title": "Moe Moe 2-Ji Daisenryaku 2",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Daisenryaku"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-moe-moe-2-ji-daisenryaku-deluxe",
+      "title": "Moe Moe 2-Ji Daisenryaku Deluxe",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Daisenryaku"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-momotarou-dentetsu-11",
+      "title": "Momotarou Dentetsu 11",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.honestgamers.com/45411/playstation-2/momotarou-dentetsu-11/game.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-momotarou-dentetsu-12",
+      "title": "Momotarou Dentetsu 12",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-74102.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-momotarou-dentetsu-15",
+      "title": "Momotarou Dentetsu 15",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Momotaro_Dentetsu#Console_games"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-momotarou-dentetsu-16",
+      "title": "Momotarou Dentetsu 16",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Momotaro_Dentetsu#Console_games"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-momotarou-dentetsu-usa",
+      "title": "Momotarou Dentetsu USA",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.mobygames.com/game/62660/momotaro-dentetsu-usa/"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-momotarou-dentetsu-x-kyushu-hen-mo-arubai",
+      "title": "Momotarou Dentetsu X: Kyushu-hen mo Arubai",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-62117.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-monkey-turn-v",
+      "title": "Monkey Turn V",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPS-20381.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-monochrome",
+      "title": "Monochrome",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-65682.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-monopoly",
+      "title": "Monopoly",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Monopoly_video_games#List"
+    }
+  ]
+}

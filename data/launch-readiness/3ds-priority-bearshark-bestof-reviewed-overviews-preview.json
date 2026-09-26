@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-08-25T14:59:50.838Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\3ds-priority-bearshark-bestof-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "3ds",
+      "updated": 10,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bearshark",
+      "title": "BearShark",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendoworldreport.com/review/34126/bearshark-nintendo-3ds"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-beast-saga-saikyou-gekiotsu-coliseum",
+      "title": "Beast Saga: Saikyou Gekiotsu Coliseum",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://lunaticobscurity.blogspot.com/2017/03/beast-saga-saikyou-gekiotsu-coliseum-3ds.html"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bella-sara-2-the-magic-of-drasilmare",
+      "title": "Bella Sara 2: The Magic of Drasilmare",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendo.com/en-gb/Games/Nintendo-3DS-games/Bella-Sara-2-The-Magic-of-Drasilmare-833338.html"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-bella-sara-the-magical-horse-adventures",
+      "title": "Bella Sara: The Magical Horse Adventures",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://kotaku.com/games/bella-sara-the-magical-horse-adventures"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-best-friends-my-horse-3d",
+      "title": "Best Friends: My Horse 3D",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.treva-entertainment.com/english/press/my-horse-3d-eshop/"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-best-of-arcade-games",
+      "title": "Best of Arcade Games",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.amazon.de/-/en/Best-Arcade-Games-Nintendo-3DS/dp/B00JL6KVMQ"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-best-of-board-games",
+      "title": "Best of Board Games",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendo.com/nl-be/Games/Nintendo-3DS-downloadsoftware/Best-of-Board-Games-Chess-955782.html"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-best-of-casual-games",
+      "title": "Best of Casual Games",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendolife.com/games/browse?title=company%3Abigben-interactive"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-best-of-mahjong",
+      "title": "Best of Mahjong",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.nintendo.com/nl-nl/Games/Nintendo-3DS-downloadsoftware/Best-of-Mahjong-943318.html"
+    },
+    {
+      "platform": "3ds",
+      "gameId": "3ds-best-of-solitaire",
+      "title": "Best of Solitaire",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://purenintendo.com/pn-review-best-of-solitaire-3ds/"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "generatedAt": "2026-09-26T00:49:52.446Z",
+  "configured": true,
+  "ready": true,
+  "serviceRoleTablesReady": true,
+  "publicReadTablesReady": true,
+  "tables": [
+    {
+      "table": "newsletter_subscriptions",
+      "requiredColumns": [
+        "email",
+        "status",
+        "source_page",
+        "referrer",
+        "consent_version",
+        "interest_category",
+        "created_at",
+        "updated_at"
+      ],
+      "ok": true,
+      "status": 200,
+      "detail": "reachable with required columns"
+    },
+    {
+      "table": "collector_waitlist",
+      "requiredColumns": [
+        "profile_id",
+        "item",
+        "intent",
+        "status",
+        "source_page",
+        "referrer",
+        "consent_version",
+        "created_at",
+        "updated_at"
+      ],
+      "ok": true,
+      "status": 200,
+      "detail": "reachable with required columns"
+    },
+    {
+      "table": "news_article_comments",
+      "requiredColumns": [
+        "local_id",
+        "story_id",
+        "profile_id",
+        "author",
+        "handle",
+        "body",
+        "status",
+        "reports",
+        "created_at",
+        "updated_at"
+      ],
+      "ok": true,
+      "status": 200,
+      "detail": "reachable with required columns"
+    },
+    {
+      "table": "community_posts",
+      "requiredColumns": [
+        "local_id",
+        "profile_id",
+        "title",
+        "body",
+        "category",
+        "tags",
+        "link_url",
+        "image_url",
+        "status",
+        "reports",
+        "created_at",
+        "updated_at"
+      ],
+      "ok": true,
+      "status": 200,
+      "detail": "reachable with required columns"
+    },
+    {
+      "table": "community_comments",
+      "requiredColumns": [
+        "local_id",
+        "local_post_id",
+        "profile_id",
+        "author",
+        "handle",
+        "body",
+        "status",
+        "reports",
+        "created_at",
+        "updated_at"
+      ],
+      "ok": true,
+      "status": 200,
+      "detail": "reachable with required columns"
+    },
+    {
+      "table": "moderation_reports",
+      "requiredColumns": [
+        "reporter_profile_id",
+        "target_type",
+        "target_id",
+        "reason",
+        "status",
+        "created_at"
+      ],
+      "ok": true,
+      "status": 200,
+      "detail": "reachable with required columns"
+    },
+    {
+      "table": "sponsor_leads",
+      "requiredColumns": [
+        "local_id",
+        "name",
+        "email",
+        "company",
+        "package_interest",
+        "budget_range",
+        "goal",
+        "source",
+        "ref",
+        "status",
+        "created_at",
+        "updated_at"
+      ],
+      "ok": true,
+      "status": 200,
+      "detail": "reachable with required columns"
+    },
+    {
+      "table": "sponsor_promotions",
+      "requiredColumns": [
+        "local_id",
+        "sponsor_name",
+        "title",
+        "body",
+        "image_url",
+        "destination_url",
+        "placement",
+        "package_type",
+        "cta_label",
+        "priority",
+        "status",
+        "clicks",
+        "starts_at",
+        "ends_at",
+        "created_at",
+        "updated_at"
+      ],
+      "ok": true,
+      "status": 200,
+      "detail": "reachable with required columns"
+    },
+    {
+      "table": "marketplace_listing_intents",
+      "requiredColumns": [
+        "local_id",
+        "profile_id",
+        "item_title",
+        "item_type",
+        "source_id",
+        "intent",
+        "status",
+        "safety_note",
+        "created_at",
+        "updated_at"
+      ],
+      "ok": true,
+      "status": 200,
+      "detail": "reachable with required columns"
+    }
+  ],
+  "publicReads": [
+    {
+      "table": "news_article_comments",
+      "ok": true,
+      "status": 200,
+      "detail": "public read endpoint is reachable; RLS still filters rows."
+    },
+    {
+      "table": "community_posts",
+      "ok": true,
+      "status": 200,
+      "detail": "public read endpoint is reachable; RLS still filters rows."
+    },
+    {
+      "table": "community_comments",
+      "ok": true,
+      "status": 200,
+      "detail": "public read endpoint is reachable; RLS still filters rows."
+    },
+    {
+      "table": "sponsor_promotions",
+      "ok": true,
+      "status": 200,
+      "detail": "public read endpoint is reachable; RLS still filters rows."
+    }
+  ],
+  "nextStep": "Launch data tables are reachable through Supabase REST. Run the website smoke test with Supabase enabled before public traffic."
+}

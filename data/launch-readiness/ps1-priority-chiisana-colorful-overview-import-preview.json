@@ -1,0 +1,233 @@
+{
+  "generatedAt": "2026-08-23T17:20:51.105Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-chiisana-colorful-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 31
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-chiisana-kyojin-microman",
+      "title": "Chiisana Kyojin Microman",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-chiisana-oukoku-eltoria",
+      "title": "Chiisana Oukoku Eltoria",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-chinmoku-no-kantai",
+      "title": "Chinmoku no Kantai",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chinmoku_no_Kantai"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-cho-nazo-oh",
+      "title": "Cho-Nazo-Oh",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-chocolate-kiss",
+      "title": "Chocolate Kiss",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-choro-q",
+      "title": "Choro Q",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Choro_Q_video_games"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-choro-q-2",
+      "title": "Choro Q 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Choro_Q_video_games"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-choro-q-3",
+      "title": "Choro Q 3",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Choro_Q_video_games"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-choro-q-jet-rainbow-wings",
+      "title": "Choro Q Jet: Rainbow Wings",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Choro_Q_video_games"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-choro-q-marine-q-boat",
+      "title": "Choro Q Marine: Q-Boat",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Choro_Q_video_games"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-choro-q-wonderful",
+      "title": "Choro Q Wonderful!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Choro_Q_video_games"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-chou-jiryoku-senshi-microman-generation-2000",
+      "title": "Chou Jiryoku Senshi Microman: Generation 2000",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-chou-mashin-eiyuuden-wataru-another-step",
+      "title": "Chou Mashin Eiyuuden Wataru: Another Step",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-chou-sentou-kyuugi-vanborg",
+      "title": "Chou Sentou Kyuugi Vanborg",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-chou-kousoku-grandoll",
+      "title": "Chou-Kousoku GranDoll",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hyper_Speed_GranDoll#Video_games"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-choujin-gakuen-gowcaizer",
+      "title": "Choujin Gakuen Gowcaizer",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-chuushingura",
+      "title": "Chuushingura",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-cindy-s-caribbean-holiday",
+      "title": "Cindy's Caribbean Holiday",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-cindy-s-fashion-world",
+      "title": "Cindy's Fashion World",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-circadia",
+      "title": "Circadia",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-circuit-beat",
+      "title": "Circuit Beat",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-city-bravo",
+      "title": "City Bravo!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-city-bravo-business-hen",
+      "title": "City Bravo! Business Hen",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-civizard-majutsu-no-keifu",
+      "title": "Civizard: Majutsu no Keifu",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-classic-road",
+      "title": "Classic Road",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-classic-road-2",
+      "title": "Classic Road 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-classic-road-yuushun-2",
+      "title": "Classic Road Yuushun 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-click-medic",
+      "title": "Click Medic",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-cocktail-harmony",
+      "title": "Cocktail Harmony",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-colorful-logic",
+      "title": "Colorful Logic",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-colorful-logic-2",
+      "title": "Colorful Logic 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

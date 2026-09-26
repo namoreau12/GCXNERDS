@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Community Growth Dashboard | Games Cards Exchange</title>
+    <meta
+      name="description"
+      content="Track Games Cards Exchange community growth, topic traction, streamer votes, moderation load, and monetization paths."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header has-mobile-nav">
+      <a class="brand" href="index.html" aria-label="Games Cards Exchange home">
+        <span class="brand-mark">GCX</span>
+        <span>Games Cards Exchange</span>
+      </a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="news.html">News</a>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Games</button>
+          <div class="nav-dropdown">
+            <a href="games.html">Game Database</a>
+            <a href="consoles.html">Console Database</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Cards</button>
+          <div class="nav-dropdown">
+            <a href="pokemon.html">Pokemon Cards</a>
+            <a href="magic.html">Magic Cards</a>
+            <a href="yugioh.html">Yu-Gi-Oh! Cards</a>
+            <a href="index.html#cards">Marketplace Beta</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Community</button>
+          <div class="nav-dropdown">
+            <a href="community.html">Community Feed</a>
+            <a href="community-members.html">Members</a>
+            <a href="community-groups.html">Groups</a>
+            <a href="community-events.html">Events</a>
+            <a href="streamers.html">Streamer Highlights</a>
+          </div>
+        </div>
+        <a href="search.html">Search</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search" role="search" action="search.html" method="get">
+          <label class="sr-only" for="site-search">Search GCX</label>
+          <input id="site-search" name="q" type="search" placeholder="Search games, cards, news" />
+        </form>
+        <a class="account-link" href="auth.html">Sign In</a>
+      </div>
+    </header>
+
+    <main class="community-page">
+      <section class="community-hero growth-hero">
+        <div>
+          <p class="kicker">Growth</p>
+          <h1>Community Growth Dashboard</h1>
+          <p>
+            A working control room for the GCX social layer: audience activity, topic traction, streamer voting, moderation load, and monetization paths pulled from live local community data.
+          </p>
+        </div>
+        <div class="community-stats" aria-label="Growth snapshot">
+          <div><strong id="growth-profiles">0</strong><span>profiles</span></div>
+          <div><strong id="growth-posts">0</strong><span>posts</span></div>
+          <div><strong id="growth-votes">0</strong><span>weekly votes</span></div>
+        </div>
+      </section>
+
+      <section class="growth-dashboard">
+        <section class="growth-main">
+          <div class="section-heading">
+            <p class="kicker">Snapshot</p>
+            <h2>Community Health</h2>
+          </div>
+          <div id="growth-metrics" class="growth-metric-grid"></div>
+
+          <div class="section-heading">
+            <p class="kicker">Topics</p>
+            <h2>Where People Are Gathering</h2>
+          </div>
+          <div id="growth-topics" class="growth-topic-grid"></div>
+
+          <div class="section-heading">
+            <p class="kicker">Feed</p>
+            <h2>Trending Posts</h2>
+          </div>
+          <div id="growth-trending-posts" class="growth-topic-grid"></div>
+
+          <div class="section-heading">
+            <p class="kicker">Groups</p>
+            <h2>Group Traction</h2>
+          </div>
+          <div id="growth-groups" class="growth-topic-grid"></div>
+
+          <div class="section-heading">
+            <p class="kicker">Events</p>
+            <h2>Upcoming Community Hooks</h2>
+          </div>
+          <div id="growth-events" class="traffic-analytics-grid"></div>
+
+          <div class="section-heading">
+            <p class="kicker">Creators</p>
+            <h2>Streamer Leaderboard</h2>
+          </div>
+          <div id="growth-streamer-slots" class="traffic-analytics-grid"></div>
+          <div id="growth-streamers" class="growth-leaderboard"></div>
+
+          <div class="section-heading">
+            <p class="kicker">Archive</p>
+            <h2>Spotlight History</h2>
+          </div>
+          <div id="growth-spotlight-history" class="traffic-analytics-grid"></div>
+
+          <div class="section-heading">
+            <p class="kicker">Traffic</p>
+            <h2>Referral Activity</h2>
+          </div>
+          <div id="growth-traffic" class="traffic-analytics-grid"></div>
+
+          <div class="section-heading">
+            <p class="kicker">Invites</p>
+            <h2>Referral Leaderboard</h2>
+          </div>
+          <div id="growth-referrals" class="growth-leaderboard"></div>
+
+          <div class="section-heading">
+            <p class="kicker">Pipeline</p>
+            <h2>Sponsor Leads</h2>
+          </div>
+          <div id="growth-sponsor-leads" class="traffic-analytics-grid"></div>
+
+          <div class="section-heading">
+            <p class="kicker">Inventory</p>
+            <h2>Promoted Placements</h2>
+          </div>
+          <div id="growth-promotions" class="traffic-analytics-grid"></div>
+
+          <div class="section-heading">
+            <p class="kicker">Share</p>
+            <h2>Weekly Campaign Kit</h2>
+          </div>
+          <div id="growth-campaign-kit" class="growth-campaign-kit"></div>
+        </section>
+
+        <aside class="community-panel growth-sidebar">
+          <div class="section-heading">
+            <p class="kicker">Money</p>
+            <h2>Revenue Paths</h2>
+          </div>
+          <div id="growth-revenue" class="growth-list"></div>
+          <a class="button" href="sponsors.html">Open sponsor intake</a>
+
+          <div class="section-heading">
+            <p class="kicker">Ops</p>
+            <h2>Moderation Load</h2>
+          </div>
+          <div id="growth-moderation" class="growth-list"></div>
+
+          <div class="section-heading">
+            <p class="kicker">Next</p>
+            <h2>Best Moves</h2>
+          </div>
+          <div id="growth-actions" class="growth-list"></div>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <p><strong>Games Cards Exchange</strong></p>
+        <p>Games, cards, movies, streaming, reviews, guides, and collector-first marketplace tools.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="trust.html">Trust</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="about.html">About</a>
+        <a href="trust.html#editorial">Editorial Standards</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="marketplace-rules.html">Marketplace Rules</a>
+        <a href="contact.html">Contact</a>
+        <a href="news.html">Newsroom</a>
+      </nav>
+    </footer>
+    <script src="site.js?v=20260906"></script>
+    <script src="community-growth.js"></script>
+    <script src="community-badge.js"></script>
+  </body>
+</html>

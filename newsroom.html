@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Newsroom Intake | Games Cards Exchange</title>
+    <meta name="description" content="Add original GCX newsroom stories to Games Cards Exchange." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header has-mobile-nav">
+      <a class="brand" href="index.html" aria-label="Games Cards Exchange home">
+        <span class="brand-mark">GCX</span>
+        <span>Games Cards Exchange</span>
+      </a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="news.html">News</a>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Games</button>
+          <div class="nav-dropdown">
+            <a href="games.html">Game Database</a>
+            <a href="consoles.html">Console Database</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Cards</button>
+          <div class="nav-dropdown">
+            <a href="pokemon.html">Pokemon Cards</a>
+            <a href="magic.html">Magic Cards</a>
+            <a href="yugioh.html">Yu-Gi-Oh! Cards</a>
+            <a href="index.html#cards">Marketplace Beta</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Community</button>
+          <div class="nav-dropdown">
+            <a href="community.html">Community Feed</a>
+            <a href="community-members.html">Members</a>
+            <a href="community-groups.html">Groups</a>
+            <a href="community-events.html">Events</a>
+            <a href="streamers.html">Streamer Highlights</a>
+          </div>
+        </div>
+        <a href="search.html">Search</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search" role="search" action="search.html" method="get">
+          <label class="sr-only" for="site-search">Search GCX</label>
+          <input id="site-search" name="q" type="search" placeholder="Search games, cards, news" />
+        </form>
+        <a class="account-link" href="auth.html">Sign In</a>
+      </div>
+    </header>
+
+    <main class="news-page">
+      <section class="news-hero">
+        <div>
+          <p class="kicker">GCX Staff</p>
+          <h1>Newsroom operating system</h1>
+          <p>Plan story coverage, protect canonical hubs, track source confidence, and publish original GCX stories from one editorial control room.</p>
+        </div>
+        <div class="news-hero-meta">
+          <a href="news.html">Back to news</a>
+        </div>
+      </section>
+
+      <section class="newsroom-ops-panel" aria-labelledby="newsroom-ops-title">
+        <div class="newsroom-ops-heading">
+          <div>
+            <p class="kicker">Operating Layer</p>
+            <h2 id="newsroom-ops-title">Editorial command center</h2>
+            <p>Human-controlled queues for what to write, what to update, and what should remain a living hub.</p>
+          </div>
+          <div id="newsroom-ops-generated" class="health-generated">Loading newsroom operating report...</div>
+        </div>
+        <div id="newsroom-ops-summary" class="newsroom-ops-summary" aria-live="polite"></div>
+        <div class="newsroom-ops-grid">
+          <section class="newsroom-ops-section">
+            <div class="newsroom-section-head">
+              <p class="kicker">Story Queue</p>
+              <h3>What should GCX cover next?</h3>
+            </div>
+            <div id="newsroom-story-queue" class="newsroom-queue-list" aria-live="polite"></div>
+          </section>
+          <section class="newsroom-ops-section">
+            <div class="newsroom-section-head">
+              <p class="kicker">Topic Clusters</p>
+              <h3>Canonical hubs and support coverage</h3>
+            </div>
+            <div id="newsroom-clusters" class="newsroom-queue-list" aria-live="polite"></div>
+          </section>
+        </div>
+        <div class="newsroom-ops-grid">
+          <section class="newsroom-ops-section">
+            <div class="newsroom-section-head">
+              <p class="kicker">Tasks</p>
+              <h3>Editorial work queue</h3>
+            </div>
+            <div id="newsroom-tasks" class="newsroom-queue-list" aria-live="polite"></div>
+          </section>
+          <section class="newsroom-ops-section">
+            <div class="newsroom-section-head">
+              <p class="kicker">Sources</p>
+              <h3>Confidence and citation rules</h3>
+            </div>
+            <div id="newsroom-sources-registry" class="newsroom-source-list" aria-live="polite"></div>
+          </section>
+        </div>
+        <section class="newsroom-ops-section newsroom-ops-wide">
+          <div class="newsroom-section-head">
+            <p class="kicker">Guardrails</p>
+            <h3>Automation stays below editorial judgment</h3>
+          </div>
+          <div id="newsroom-guardrails" class="newsroom-guardrail-list" aria-live="polite"></div>
+        </section>
+      </section>
+
+      <section class="content-band newsroom-intake">
+        <form id="newsroom-form" class="auth-card newsroom-form">
+          <p class="kicker">Publish Story</p>
+          <h2>Article details</h2>
+          <label>
+            Headline
+            <input name="title" type="text" required />
+          </label>
+          <label>
+            Short excerpt
+            <textarea name="excerpt" rows="3" maxlength="500" required></textarea>
+          </label>
+          <label>
+            Category
+            <select name="category">
+              <option value="Gaming">Gaming</option>
+              <option value="Cards">Cards</option>
+              <option value="Streamers">Streamers</option>
+              <option value="Industry">Industry</option>
+              <option value="Media">Movies and TV</option>
+            </select>
+          </label>
+          <div class="newsroom-brain-panel">
+            <div>
+              <p class="kicker">Newsroom Brain V3</p>
+              <h3>Editorial package</h3>
+              <p>Classify the story before publishing so GCX can track quality, clusters, and update strategy over time.</p>
+            </div>
+            <div class="newsroom-field-grid">
+              <label>
+                Topic cluster
+                <input name="topicCluster" type="text" placeholder="Pokemon TCG 30th Celebration" />
+              </label>
+              <label>
+                Canonical topic
+                <input name="canonicalTopic" type="text" placeholder="Main guide or event hub this belongs to" />
+              </label>
+              <label>
+                Article type
+                <select name="articleType">
+                  <option value="Major News">Major News</option>
+                  <option value="Breaking News">Breaking News</option>
+                  <option value="News Analysis">News Analysis</option>
+                  <option value="Living Guide">Living Guide</option>
+                  <option value="Feature">Feature</option>
+                  <option value="Buyer / Collector Guide">Buyer / Collector Guide</option>
+                  <option value="Event Hub">Event Hub</option>
+                  <option value="Tracker">Tracker</option>
+                </select>
+              </label>
+              <label>
+                Lifecycle state
+                <select name="storyLifecycleState">
+                  <option value="Ready">Ready</option>
+                  <option value="Draft">Draft</option>
+                  <option value="Fact Check">Fact Check</option>
+                  <option value="Published">Published</option>
+                  <option value="Updating">Updating</option>
+                  <option value="Evergreen">Evergreen</option>
+                  <option value="Watching">Watching</option>
+                </select>
+              </label>
+              <label>
+                Opportunity score
+                <input name="opportunityScore" type="number" min="0" max="100" placeholder="85" />
+              </label>
+              <label>
+                QA score
+                <input name="qaScore" type="number" min="0" max="100" placeholder="90" />
+              </label>
+              <label>
+                Source confidence
+                <select name="confidence">
+                  <option value="Official">Official</option>
+                  <option value="Verified Reporting">Verified Reporting</option>
+                  <option value="Reported / Not Official">Reported / Not Official</option>
+                  <option value="Rumor / Leak">Rumor / Leak</option>
+                </select>
+              </label>
+              <label>
+                Update frequency
+                <select name="updateFrequency">
+                  <option value="As news develops">As news develops</option>
+                  <option value="Daily during active cycle">Daily during active cycle</option>
+                  <option value="Weekly">Weekly</option>
+                  <option value="Monthly / evergreen">Monthly / evergreen</option>
+                </select>
+              </label>
+            </div>
+            <div class="newsroom-check-row">
+              <label><input name="livingArticle" type="checkbox" value="true" /> Living article</label>
+              <label><input name="deepResearchUsed" type="checkbox" value="true" /> Deep research used</label>
+            </div>
+            <label>
+              Target search intent
+              <textarea name="targetSearchIntent" rows="2" placeholder="What reader question should this page answer?"></textarea>
+            </label>
+            <label>
+              Internal links / related GCX coverage
+              <textarea name="relatedLinks" rows="3" placeholder="Pokemon 30th Celebration MSRP Tracker | article.html?id=..."></textarea>
+            </label>
+          </div>
+          <label>
+            Main image URL or local asset path
+            <input name="imageUrl" type="text" placeholder="assets/news/gamescom-2026-showcase.jpg" required />
+          </label>
+          <label>
+            Image credit
+            <input name="imageCredit" type="text" placeholder="Publisher / Studio / GCX" />
+          </label>
+          <label>
+            Article body
+            <textarea name="body" rows="12" required></textarea>
+          </label>
+          <label>
+            Source links
+            <textarea name="sourceLinks" rows="4" placeholder="Official page | https://example.com"></textarea>
+          </label>
+          <button class="button" type="submit">Publish to news</button>
+          <p id="newsroom-status" class="auth-status"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <p><strong>Games Cards Exchange</strong></p>
+        <p>Games, cards, movies, streaming, reviews, guides, and collector-first marketplace tools.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="trust.html">Trust</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="about.html">About</a>
+        <a href="trust.html#editorial">Editorial Standards</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="marketplace-rules.html">Marketplace Rules</a>
+        <a href="contact.html">Contact</a>
+        <a href="news.html">Newsroom</a>
+      </nav>
+    </footer>
+    <script src="site.js?v=20260906"></script>
+    <script src="newsroom.js"></script>
+  </body>
+</html>

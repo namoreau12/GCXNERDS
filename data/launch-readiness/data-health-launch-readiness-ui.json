@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-09-26T00:45:48.640Z",
+  "base": "http://localhost:3060",
+  "ok": true,
+  "status": 200,
+  "gateCount": 85,
+  "articleReadthroughCardCount": 0,
+  "officialMediaCardCount": 0,
+  "articleIssueCount": 0,
+  "officialMediaQueueCount": 0,
+  "nextActionCount": 2,
+  "hasCoverageMilestone": true,
+  "hasOverviewQuality": true,
+  "hasWeakOverviewCount": true,
+  "hasImageProvenance": true,
+  "hasProviderCoverage": true,
+  "hasSourceCoverage": true,
+  "overflow": false,
+  "consoleErrors": []
+}

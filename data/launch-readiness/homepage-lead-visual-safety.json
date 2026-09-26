@@ -1,0 +1,248 @@
+{
+  "generatedAt": "2026-09-26T00:45:22.208Z",
+  "base": "http://localhost:3060",
+  "ok": true,
+  "checks": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "mediaType": "official-product-image",
+      "imageUrl": "https://assets.nintendo.com/image/upload/v1643742733/ncom/global/social-share.jpg",
+      "title": "Nintendo Wins $4.5M Switch Piracy Judgment Against Reddit Moderator",
+      "hero": {
+        "top": 185,
+        "right": 372,
+        "bottom": 788,
+        "left": 18,
+        "width": 354,
+        "height": 603
+      },
+      "image": {
+        "top": 185,
+        "right": 372,
+        "bottom": 427,
+        "left": 18,
+        "width": 354,
+        "height": 242
+      },
+      "copy": {
+        "top": 427,
+        "right": 372,
+        "bottom": 788,
+        "left": 18,
+        "width": 354,
+        "height": 361
+      },
+      "titleBounds": {
+        "top": 479,
+        "right": 354,
+        "bottom": 569,
+        "left": 36,
+        "width": 318,
+        "height": 91
+      },
+      "cta": {
+        "top": 728,
+        "right": 256,
+        "bottom": 770,
+        "left": 36,
+        "width": 220,
+        "height": 42
+      },
+      "copyPosition": "relative",
+      "copyClipped": false,
+      "titleInsideCopy": true,
+      "ctaInsideHero": true,
+      "imageObjectFit": "cover",
+      "graphicHasSeparatedCopy": true,
+      "mediaHasSeparatedCopy": true,
+      "usesOverlayCopy": false,
+      "usesSvgLead": false,
+      "heroFitsViewport": true,
+      "ok": true
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 900
+      },
+      "mediaType": "official-product-image",
+      "imageUrl": "https://assets.nintendo.com/image/upload/v1643742733/ncom/global/social-share.jpg",
+      "title": "Nintendo Wins $4.5M Switch Piracy Judgment Against Reddit Moderator",
+      "hero": {
+        "top": 149,
+        "right": 787,
+        "bottom": 674,
+        "left": 33,
+        "width": 754,
+        "height": 525
+      },
+      "image": {
+        "top": 149,
+        "right": 787,
+        "bottom": 359,
+        "left": 33,
+        "width": 754,
+        "height": 210
+      },
+      "copy": {
+        "top": 359,
+        "right": 787,
+        "bottom": 674,
+        "left": 33,
+        "width": 754,
+        "height": 315
+      },
+      "titleBounds": {
+        "top": 413,
+        "right": 754,
+        "bottom": 473,
+        "left": 66,
+        "width": 689,
+        "height": 60
+      },
+      "cta": {
+        "top": 614,
+        "right": 286,
+        "bottom": 656,
+        "left": 66,
+        "width": 220,
+        "height": 42
+      },
+      "copyPosition": "relative",
+      "copyClipped": false,
+      "titleInsideCopy": true,
+      "ctaInsideHero": true,
+      "imageObjectFit": "cover",
+      "graphicHasSeparatedCopy": true,
+      "mediaHasSeparatedCopy": true,
+      "usesOverlayCopy": false,
+      "usesSvgLead": false,
+      "heroFitsViewport": true,
+      "ok": true
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "mediaType": "official-product-image",
+      "imageUrl": "https://assets.nintendo.com/image/upload/v1643742733/ncom/global/social-share.jpg",
+      "title": "Nintendo Wins $4.5M Switch Piracy Judgment Against Reddit Moderator",
+      "hero": {
+        "top": 99,
+        "right": 887,
+        "bottom": 688,
+        "left": 51,
+        "width": 836,
+        "height": 589
+      },
+      "image": {
+        "top": 99,
+        "right": 887,
+        "bottom": 355,
+        "left": 51,
+        "width": 836,
+        "height": 256
+      },
+      "copy": {
+        "top": 355,
+        "right": 887,
+        "bottom": 688,
+        "left": 51,
+        "width": 836,
+        "height": 333
+      },
+      "titleBounds": {
+        "top": 415,
+        "right": 841,
+        "bottom": 480,
+        "left": 97,
+        "width": 744,
+        "height": 65
+      },
+      "cta": {
+        "top": 620,
+        "right": 317,
+        "bottom": 662,
+        "left": 97,
+        "width": 220,
+        "height": 42
+      },
+      "copyPosition": "relative",
+      "copyClipped": false,
+      "titleInsideCopy": true,
+      "ctaInsideHero": true,
+      "imageObjectFit": "cover",
+      "graphicHasSeparatedCopy": true,
+      "mediaHasSeparatedCopy": true,
+      "usesOverlayCopy": false,
+      "usesSvgLead": false,
+      "heroFitsViewport": true,
+      "ok": true
+    },
+    {
+      "viewport": {
+        "width": 1586,
+        "height": 987
+      },
+      "mediaType": "official-product-image",
+      "imageUrl": "https://assets.nintendo.com/image/upload/v1643742733/ncom/global/social-share.jpg",
+      "title": "Nintendo Wins $4.5M Switch Piracy Judgment Against Reddit Moderator",
+      "hero": {
+        "top": 99,
+        "right": 1188,
+        "bottom": 750,
+        "left": 56,
+        "width": 1132,
+        "height": 651
+      },
+      "image": {
+        "top": 99,
+        "right": 1188,
+        "bottom": 399,
+        "left": 56,
+        "width": 1132,
+        "height": 300
+      },
+      "copy": {
+        "top": 399,
+        "right": 1188,
+        "bottom": 750,
+        "left": 56,
+        "width": 1132,
+        "height": 351
+      },
+      "titleBounds": {
+        "top": 459,
+        "right": 862,
+        "bottom": 539,
+        "left": 102,
+        "width": 760,
+        "height": 80
+      },
+      "cta": {
+        "top": 680,
+        "right": 322,
+        "bottom": 722,
+        "left": 102,
+        "width": 220,
+        "height": 42
+      },
+      "copyPosition": "relative",
+      "copyClipped": false,
+      "titleInsideCopy": true,
+      "ctaInsideHero": true,
+      "imageObjectFit": "cover",
+      "graphicHasSeparatedCopy": true,
+      "mediaHasSeparatedCopy": true,
+      "usesOverlayCopy": false,
+      "usesSvgLead": false,
+      "heroFitsViewport": true,
+      "ok": true
+    }
+  ],
+  "consoleErrors": []
+}

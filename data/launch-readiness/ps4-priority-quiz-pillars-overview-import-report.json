@@ -1,0 +1,186 @@
+{
+  "generatedAt": "2026-08-25T02:15:31.533Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps4-priority-quiz-pillars-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps4",
+      "updated": 24,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps4",
+      "gameId": "ps4-it-s-quiz-time",
+      "title": "It's Quiz Time",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-japanese-rail-sim-journey-to-kyoto",
+      "title": "Japanese Rail Sim: Journey to Kyoto",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-jay-and-silent-bob-mall-brawl",
+      "title": "Jay and Silent Bob: Mall Brawl",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-jet-set-knights",
+      "title": "Jet Set Knights",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-jett-the-far-shore",
+      "title": "Jett: The Far Shore",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-jikkyou-powerful-pro-baseball-2016",
+      "title": "Jikkyou Powerful Pro Baseball 2016",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jikkyou_Powerful_Pro_Baseball_2016"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-jikkyou-powerful-pro-baseball-2018",
+      "title": "Jikkyou Powerful Pro Baseball 2018",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jikkyou_Powerful_Pro_Baseball_2018"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-jinki-resurrection",
+      "title": "Jinki Resurrection",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-jisei-the-first-case-hd",
+      "title": "Jisei: The First Case HD",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-jotun-valhalla-edition",
+      "title": "Jotun: Valhalla Edition",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jotun:_Valhalla_Edition"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-joysound-dive-2",
+      "title": "Joysound Dive 2",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-jumanji-the-video-game",
+      "title": "Jumanji: The Video Game",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jumanji:_The_Video_Game"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-jump-king",
+      "title": "Jump King",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-jump-stars",
+      "title": "Jump Stars",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-just-deal-with-it",
+      "title": "Just Deal With It!",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-just-die-already",
+      "title": "Just Die Already",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-kakuro",
+      "title": "Kakuro",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kakuro"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-kamen-rider-battride-war-genesis",
+      "title": "Kamen Rider: Battride War Genesis",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kamen_Rider:_Battride_War"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-kamiko",
+      "title": "Kamiko",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kamiko"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-kamiwaza-way-of-the-thief",
+      "title": "Kamiwaza: Way of the Thief",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kamiwaza"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-karumaruka-circle",
+      "title": "Karumaruka Circle",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-katana-kami-a-way-of-the-samurai-story",
+      "title": "Katana Kami: A Way of the Samurai Story",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-kaze-and-the-wild-masks",
+      "title": "Kaze and the Wild Masks",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-ken-follett-s-the-pillars-of-the-earth",
+      "title": "Ken Follett's The Pillars of the Earth",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ken_Follett%27s_The_Pillars_of_the_Earth"
+    }
+  ]
+}

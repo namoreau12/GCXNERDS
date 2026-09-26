@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Member Profile | Games Cards Exchange</title>
+    <meta name="description" content="View a GCX community member profile, posts, interests, and collector activity." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header has-mobile-nav">
+      <a class="brand" href="index.html" aria-label="Games Cards Exchange home">
+        <span class="brand-mark">GCX</span>
+        <span>Games Cards Exchange</span>
+      </a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="news.html">News</a>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Games</button>
+          <div class="nav-dropdown">
+            <a href="games.html">Game Database</a>
+            <a href="consoles.html">Console Database</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Cards</button>
+          <div class="nav-dropdown">
+            <a href="pokemon.html">Pokemon Cards</a>
+            <a href="magic.html">Magic Cards</a>
+            <a href="yugioh.html">Yu-Gi-Oh! Cards</a>
+            <a href="index.html#cards">Marketplace Beta</a>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Community</button>
+          <div class="nav-dropdown">
+            <a href="community.html">Community Feed</a>
+            <a href="community-members.html">Members</a>
+            <a href="community-groups.html">Groups</a>
+            <a href="community-events.html">Events</a>
+            <a href="streamers.html">Streamer Highlights</a>
+          </div>
+        </div>
+        <a href="search.html">Search</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search" role="search" action="search.html" method="get">
+          <label class="sr-only" for="site-search">Search GCX</label>
+          <input id="site-search" name="q" type="search" placeholder="Search games, cards, news" />
+        </form>
+        <a class="account-link" href="auth.html">Sign In</a>
+      </div>
+    </header>
+
+    <main class="community-page">
+      <section id="profile-hero" class="profile-hero">
+        <div class="index-message">Loading profile...</div>
+      </section>
+
+      <section id="profile-edit-section" class="profile-edit-section" hidden>
+        <form id="profile-edit-form" class="profile-edit-card">
+          <div class="section-heading">
+            <p class="kicker">Your Profile</p>
+            <h2>Edit public details</h2>
+          </div>
+          <label>
+            Display name
+            <input name="displayName" type="text" maxlength="80" required />
+          </label>
+          <label>
+            Avatar URL
+            <input name="avatarUrl" type="url" />
+          </label>
+          <label>
+            Bio
+            <textarea name="bio" rows="4" maxlength="240"></textarea>
+          </label>
+          <label>
+            Interests
+            <input name="interests" type="text" placeholder="games, pokemon, collecting" />
+          </label>
+          <p class="form-disclosure">
+            Profile details are public on GCX member pages. Keep private contact, payment, and shipping information out of your profile.
+          </p>
+          <button class="button" type="submit">Save profile</button>
+          <p id="profile-edit-status" class="auth-status"></p>
+        </form>
+      </section>
+
+      <section class="community-feed">
+        <div class="section-heading">
+          <p class="kicker">Timeline</p>
+          <h2>Member Social Activity</h2>
+        </div>
+        <div id="profile-posts" class="feed-list"></div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <p><strong>Games Cards Exchange</strong></p>
+        <p>Games, cards, movies, streaming, reviews, guides, and collector-first marketplace tools.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="trust.html">Trust</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="about.html">About</a>
+        <a href="trust.html#editorial">Editorial Standards</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="marketplace-rules.html">Marketplace Rules</a>
+        <a href="contact.html">Contact</a>
+        <a href="news.html">Newsroom</a>
+      </nav>
+    </footer>
+    <script src="site.js?v=20260906"></script>
+    <script src="profile.js"></script>
+    <script src="community-badge.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-26T00:50:28.300Z",
+  "storyCount": 28,
+  "structuredTableCount": 29,
+  "structuredTables": [
+    {
+      "storyId": "gcx-newsroom-minecraft-live-2026-time-how-to-watch-what-to-expect",
+      "blockIndex": 7,
+      "columns": 3,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-gears-of-war-e-day-gamescom-hands-on",
+      "blockIndex": 17,
+      "columns": 2,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-gears-of-war-e-day-gamescom-hands-on",
+      "blockIndex": 24,
+      "columns": 2,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-final-fantasy-vii-revelation-gamescom-2026",
+      "blockIndex": 17,
+      "columns": 2,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-console-sales-average-hardware-price-542",
+      "blockIndex": 7,
+      "columns": 3,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-console-sales-average-hardware-price-542",
+      "blockIndex": 16,
+      "columns": 4,
+      "rows": 6
+    },
+    {
+      "storyId": "gcx-newsroom-console-sales-average-hardware-price-542",
+      "blockIndex": 22,
+      "columns": 5,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-pokemon-winds-waves-turn-based-battles-champions",
+      "blockIndex": 7,
+      "columns": 2,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-pokemon-winds-waves-turn-based-battles-champions",
+      "blockIndex": 31,
+      "columns": 3,
+      "rows": 5
+    },
+    {
+      "storyId": "gcx-newsroom-the-witcher-4-targeting-2028-release-window",
+      "blockIndex": 20,
+      "columns": 2,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-the-witcher-4-targeting-2028-release-window",
+      "blockIndex": 36,
+      "columns": 2,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-blood-of-dawnwalker-60fps-performance-mode-launch",
+      "blockIndex": 17,
+      "columns": 4,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-gamescom-2026-games-were-watching-most",
+      "blockIndex": 8,
+      "columns": 2,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-gamescom-2026-games-were-watching-most",
+      "blockIndex": 88,
+      "columns": 2,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-the-duskbloods-network-test-what-we-learned",
+      "blockIndex": 24,
+      "columns": 3,
+      "rows": 6
+    },
+    {
+      "storyId": "gcx-newsroom-the-duskbloods-network-test-what-we-learned",
+      "blockIndex": 39,
+      "columns": 2,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-pokemon-30th-celebration-msrp-preorder-tracker",
+      "blockIndex": 8,
+      "columns": 4,
+      "rows": 16
+    },
+    {
+      "storyId": "gcx-newsroom-pokemon-30th-celebration-msrp-preorder-tracker",
+      "blockIndex": 13,
+      "columns": 4,
+      "rows": 2
+    },
+    {
+      "storyId": "gcx-newsroom-pokemon-30th-celebration-msrp-preorder-tracker",
+      "blockIndex": 20,
+      "columns": 3,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-pokemon-30th-celebration-msrp-preorder-tracker",
+      "blockIndex": 27,
+      "columns": 4,
+      "rows": 5
+    },
+    {
+      "storyId": "gcx-newsroom-pokemon-30th-celebration-msrp-preorder-tracker",
+      "blockIndex": 32,
+      "columns": 3,
+      "rows": 5
+    },
+    {
+      "storyId": "gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide",
+      "blockIndex": 20,
+      "columns": 3,
+      "rows": 5
+    },
+    {
+      "storyId": "gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide",
+      "blockIndex": 35,
+      "columns": 2,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-gta-vi-leaking-again",
+      "blockIndex": 10,
+      "columns": 2,
+      "rows": 3
+    },
+    {
+      "storyId": "gcx-newsroom-gamescom-2026-before-gta-vi",
+      "blockIndex": 14,
+      "columns": 2,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-phantom-blade-zero-beyond-combat",
+      "blockIndex": 10,
+      "columns": 2,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-horizon-hunters-gathering-rework",
+      "blockIndex": 14,
+      "columns": 3,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-1000-dollar-ps6-analysis",
+      "blockIndex": 5,
+      "columns": 2,
+      "rows": 4
+    },
+    {
+      "storyId": "gcx-newsroom-1000-dollar-ps6-analysis",
+      "blockIndex": 14,
+      "columns": 2,
+      "rows": 4
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-08-25T02:36:20.475Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps4-priority-langrisser-letcome-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps4",
+      "updated": 8,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps4",
+      "gameId": "ps4-langrisser-i-and-ii-hd-remastered",
+      "title": "Langrisser I & II HD Remastered",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://nisamerica.com/games/langrisser"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-lapis-x-labyrinth",
+      "title": "Lapis x Labyrinth",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://nisamerica.com/games/lapislabyrinth"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-lara-croft-and-the-temple-of-osiris",
+      "title": "Lara Croft and the Temple of Osiris",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.square-enix-games.com/en_US/games/lara-croft-temple-osiris"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-laser-league",
+      "title": "Laser League",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://505games.com/games/laser-league/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-laws-of-machine",
+      "title": "Laws of Machine",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/uk-ua/product/EP1555-CUSA09527_00-13081985BEBUA012"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-leap-of-fate",
+      "title": "Leap of Fate",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://clever-plays.com/leap-of-fate/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-leo-s-fortune-hd-edition",
+      "title": "Leo's Fortune: HD Edition",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-ca/product/UP1149-CUSA02595_00-LEOSFORTUNE00000"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-let-them-come",
+      "title": "Let Them Come",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://versusevil.com/games/let-them-come/"
+    }
+  ]
+}

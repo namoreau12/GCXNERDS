@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-08-25T02:40:39.076Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps4-priority-letsing-lifegoes-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps4",
+      "updated": 8,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps4",
+      "gameId": "ps4-let-s-sing-2020",
+      "title": "Let's Sing 2020",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://letssing2020.com/int_ps4.html"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-let-s-sing-2021",
+      "title": "Let's Sing 2021",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://letssing2021.com/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-let-s-sing-country",
+      "title": "Let's Sing Country",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-us/product/UP2047-CUSA15815_00-VGKMLETSSINGCS20"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-let-s-sing-queen",
+      "title": "Let's Sing Queen",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://ravenscourt.games/en-GB/games/letssingqueen"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-lethal-league",
+      "title": "Lethal League",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://team-reptile.com/category/lethal-league/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-lethal-league-blaze",
+      "title": "Lethal League Blaze",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.lethalleagueblaze.com/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-letter-quest-remastered",
+      "title": "Letter Quest Remastered",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-gb/concept/208909"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-life-goes-on-done-to-death",
+      "title": "Life Goes On: Done to Death",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.lgogame.com/"
+    }
+  ]
+}

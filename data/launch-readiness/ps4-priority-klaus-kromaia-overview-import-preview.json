@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-08-25T02:28:03.510Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps4-priority-klaus-kromaia-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps4",
+      "updated": 8,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps4",
+      "gameId": "ps4-klaus",
+      "title": "Klaus",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://klausgame.com/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-knightin",
+      "title": "Knightin'+",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-gb/product/EP0896-CUSA17958_00-RGKNIGHTINBUNDLE"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-knot",
+      "title": "Knot",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.warlockarts.com/knot/index.php"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-knowledge-is-power-decades",
+      "title": "Knowledge is Power: Decades",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/concept/232856"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-koi",
+      "title": "Koi",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-gb/product/EP1830-CUSA05104_00-KOIGAMEBUNDLE002"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-koihime-enbu",
+      "title": "Koihime Enbu",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://koihime-ac.jp/en/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-koihime-enbu-ryorairai",
+      "title": "Koihime Enbu RyoRaiRai",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-us/product/UP1056-CUSA06733_00-KOIHIMEENBUUS000"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-kromaia-omega",
+      "title": "Kromaia Omega",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-id/product/EP4034-CUSA03094_00-ASIA000000000000"
+    }
+  ]
+}

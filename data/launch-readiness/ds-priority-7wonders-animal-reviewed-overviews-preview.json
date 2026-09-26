@@ -1,0 +1,172 @@
+{
+  "generatedAt": "2026-08-26T02:41:57.180Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ds-priority-7wonders-animal-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ds",
+      "updated": 3,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [
+    {
+      "platform": "ds",
+      "gameId": "ds-7-wonders-of-the-ancient-world",
+      "title": "7 Wonders of the Ancient World",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-007-quantum-of-solace",
+      "title": "007: Quantum of Solace",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-7th-dragon",
+      "title": "7th Dragon",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-101-in-1-explosive-megamix",
+      "title": "101-in-1 Explosive Megamix",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-a-witch-s-tale",
+      "title": "A Witch's Tale",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-ace-attorney-investigations-miles-edgeworth",
+      "title": "Ace Attorney Investigations: Miles Edgeworth",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-adventure-time-hey-ice-king-why-d-you-steal-our-garbage",
+      "title": "Adventure Time: Hey Ice King! Why'd You Steal Our Garbage?!!",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-again",
+      "title": "Again",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-agatha-christie-the-abc-murders",
+      "title": "Agatha Christie: The ABC Murders",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-age-of-empires-mythologies",
+      "title": "Age of Empires: Mythologies",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-age-of-empires-the-age-of-kings",
+      "title": "Age of Empires: The Age of Kings",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-air-traffic-chaos",
+      "title": "Air Traffic Chaos",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-alex-rider-stormbreaker",
+      "title": "Alex Rider: Stormbreaker",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-alice-in-wonderland",
+      "title": "Alice in Wonderland",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-aliens-in-the-attic",
+      "title": "Aliens in the Attic",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-aliens-infestation",
+      "title": "Aliens: Infestation",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-all-star-cheer-squad",
+      "title": "All Star Cheer Squad",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-alvin-and-the-chipmunks",
+      "title": "Alvin and the Chipmunks",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-alvin-and-the-chipmunks-chipwrecked",
+      "title": "Alvin and the Chipmunks: Chipwrecked",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-alvin-and-the-chipmunks-the-squeakquel",
+      "title": "Alvin and the Chipmunks: The Squeakquel",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-american-girl-kit-mystery-challenge",
+      "title": "American Girl: Kit Mystery Challenge!",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animal-genius",
+      "title": "Animal Genius",
+      "reason": "Already applied in live game data"
+    }
+  ],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ds",
+      "gameId": "ds-advance-wars-days-of-ruin",
+      "title": "Advance Wars: Days of Ruin",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Advance_Wars:_Days_of_Ruin"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-advance-wars-dual-strike",
+      "title": "Advance Wars: Dual Strike",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Advance_Wars:_Dual_Strike"
+    },
+    {
+      "platform": "ds",
+      "gameId": "ds-animal-crossing-wild-world",
+      "title": "Animal Crossing: Wild World",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Animal_Crossing:_Wild_World"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Pokemon battle-system fork analysis graphic</title>
+  <desc id="desc">Editorial graphic showing classic turn-based battles preserved by Pokemon Champions while future RPGs may experiment.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#132235"/>
+      <stop offset="0.58" stop-color="#213247"/>
+      <stop offset="1" stop-color="#2f3b3b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd76a"/>
+      <stop offset="1" stop-color="#f29f3d"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7de5ff"/>
+      <stop offset="1" stop-color="#4da3ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <path d="M0 546 C180 478 345 568 512 497 C690 421 842 429 1017 361 C1098 329 1160 315 1200 318 L1200 675 L0 675 Z" fill="#0f1724" opacity=".45"/>
+  <circle cx="1022" cy="140" r="86" fill="#ffffff" opacity=".06"/>
+  <circle cx="183" cy="146" r="58" fill="#ffffff" opacity=".05"/>
+  <text x="72" y="96" fill="#f6f0df" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">GCX Analysis</text>
+  <text x="72" y="148" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">Pokemon's Battle-System Fork</text>
+  <text x="72" y="196" fill="#d9e6ec" font-family="Arial, Helvetica, sans-serif" font-size="25">Champions protects the classic rules while future RPGs gain room to experiment.</text>
+  <line x1="150" y1="380" x2="1050" y2="380" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity=".28"/>
+  <path d="M600 380 C674 300 747 275 840 274" fill="none" stroke="url(#cyan)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M600 380 C682 464 763 491 856 500" fill="none" stroke="url(#gold)" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="600" cy="380" r="44" fill="#f6f0df"/>
+  <circle cx="600" cy="380" r="28" fill="#111827"/>
+  <circle cx="600" cy="380" r="9" fill="#f6f0df"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="114" y="304" width="242" height="152" rx="18" fill="#f6f0df"/>
+    <text x="138" y="354" fill="#111827" font-size="27" font-weight="800">Traditional RPG</text>
+    <text x="138" y="392" fill="#334155" font-size="21">Choose moves</text>
+    <text x="138" y="423" fill="#334155" font-size="21">Resolve turns</text>
+    <rect x="792" y="194" width="290" height="166" rx="18" fill="#132235" stroke="#78dcff" stroke-width="3"/>
+    <text x="818" y="246" fill="#ffffff" font-size="29" font-weight="800">Future RPGs</text>
+    <text x="818" y="286" fill="#d9e6ec" font-size="21">Open-world systems</text>
+    <text x="818" y="317" fill="#d9e6ec" font-size="21">Real-time or hybrid?</text>
+    <rect x="792" y="426" width="290" height="166" rx="18" fill="#172033" stroke="#ffd76a" stroke-width="3"/>
+    <text x="818" y="478" fill="#ffffff" font-size="29" font-weight="800">Champions</text>
+    <text x="818" y="518" fill="#f5e8c1" font-size="21">Classic competitive</text>
+    <text x="818" y="549" fill="#f5e8c1" font-size="21">battle home</text>
+  </g>
+  <text x="72" y="625" fill="#b9c9d3" font-family="Arial, Helvetica, sans-serif" font-size="19">Confirmed: Champions preserves traditional battling. Unknown: Winds &amp; Waves combat format.</text>
+</svg>

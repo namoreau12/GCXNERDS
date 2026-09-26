@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-08-25T03:04:10.771Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps4-priority-mafia-def-maquette-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps4",
+      "updated": 8,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps4",
+      "gameId": "ps4-mafia-iii-definitive-edition",
+      "title": "Mafia III: Definitive Edition",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.playstation.com/en-us/product/UP1001-CUSA03652_00-MAFIA3DEFINITIVE"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-magic-scroll-tactics",
+      "title": "Magic Scroll Tactics",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://store.steampowered.com/app/840100/Magic_Scroll_Tactics/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-magic-story-fear-and-the-mysterious-school",
+      "title": "Magic Story Fear and the Mysterious School",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://puyonexus.com/wiki/Mado_Monogatari:_Fia_and_the_Wondrous_Academy"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-maglam-lord",
+      "title": "Maglam Lord",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://pqube.co.uk/games/maglam-lord/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-mahjong",
+      "title": "Mahjong",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.sanukgames.com/games"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-manifold-garden",
+      "title": "Manifold Garden",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://www.playstation.com/en-au/games/manifold-garden/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-mantis-burn-racing",
+      "title": "Mantis Burn Racing",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://blog.playstation.com/2016/10/04/mantis-burn-racing-brings-top-down-arcade-action-to-ps4-october-12/"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-maquette",
+      "title": "Maquette",
+      "reviewer": "GCX editorial cleanup",
+      "sourceUrl": "https://annapurnainteractive.com/en/games/maquette"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-08-23T16:26:03.261Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-sports-strategy-sim-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 12
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-break-volley",
+      "title": "Break Volley",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-breakthru",
+      "title": "BreakThru!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/BreakThru!_(video_game)"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-breed-master",
+      "title": "Breed Master",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-breeding-stud-99",
+      "title": "Breeding Stud '99",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-breeding-stud-2",
+      "title": "Breeding Stud 2",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-breeding-stud-bokujou-de-aimashou",
+      "title": "Breeding Stud: Bokujou de Aimashou",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-brian-lara-cricket",
+      "title": "Brian Lara Cricket",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Brian_Lara_Cricket_(1998_video_game)"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-brigandine-grand-edition",
+      "title": "Brigandine Grand Edition",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Brigandine_(video_game)#Brigandine:_Grand_Edition"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-brigandine-legend-of-forsena",
+      "title": "Brigandine: Legend of Forsena",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Brigandine_(video_game)"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-brightis",
+      "title": "Brightis",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-brunswick-circuit-pro-bowling-2",
+      "title": "Brunswick Circuit Pro Bowling 2",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Brunswick_Circuit_Pro_Bowling_2"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-buckle-up",
+      "title": "Buckle Up!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

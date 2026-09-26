@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "generatedAt": "2026-08-29T17:29:37.608Z",
+  "checkedFiles": 3,
+  "failures": [],
+  "results": [
+    {
+      "file": "assets/news/console-component-pressure-flow.svg",
+      "ok": true,
+      "failures": []
+    },
+    {
+      "file": "assets/news/console-hardware-price-542.svg",
+      "ok": true,
+      "failures": []
+    },
+    {
+      "file": "assets/news/pokemon-battle-system-fork.svg",
+      "ok": true,
+      "failures": []
+    }
+  ]
+}

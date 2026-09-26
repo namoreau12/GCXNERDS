@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-09-26T00:45:50.144Z",
+  "base": "http://localhost:3060",
+  "ok": true,
+  "status": 200,
+  "hasMilestone": true,
+  "hasWorkplan": true,
+  "hasWorkplanCoverageMilestone": true,
+  "hasProviderReadiness": true,
+  "hasImportReadiness": true,
+  "hasProviderKeyStatus": true,
+  "hasWorkplanNextReview": true,
+  "hasMilestoneNextReview": true,
+  "providerTileCount": 4,
+  "milestoneBatchCount": 3,
+  "queueModeOptions": 2,
+  "initialRecordCount": 50,
+  "firstMilestonePlatform": "ps2",
+  "selectedPlatform": "ps2",
+  "overflow": false,
+  "consoleErrors": []
+}

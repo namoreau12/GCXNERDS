@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-23T23:49:20.370Z",
+  "base": "http://localhost:3060",
+  "checkedSurfaces": 2,
+  "results": [
+    {
+      "id": "community-feed",
+      "path": "/api/community/feed",
+      "expectedFirstStatus": 401,
+      "attempts": 26,
+      "body": {
+        "title": "Launch throttle audit",
+        "body": "This request should be blocked before any content is created."
+      },
+      "firstStatus": 401,
+      "finalStatus": 429,
+      "retryAfter": "900",
+      "firstError": "Log in to post to the GCX community.",
+      "finalError": "Too much community posting. Try again later."
+    },
+    {
+      "id": "news-comments",
+      "path": "/api/news/gcx-newsroom-console-sales-average-hardware-price-542/comments",
+      "expectedFirstStatus": 401,
+      "attempts": 22,
+      "body": {
+        "body": "This request should be blocked before any article comment is created."
+      },
+      "firstStatus": 401,
+      "finalStatus": 429,
+      "retryAfter": "900",
+      "firstError": "Log in to comment on GCX articles.",
+      "finalError": "Too many article comments. Try again later."
+    }
+  ],
+  "failures": []
+}

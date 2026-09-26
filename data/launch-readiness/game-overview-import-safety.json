@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-26T00:42:42.221Z",
+  "checkedFiles": [
+    "scripts/import-game-overview-rewrites.js",
+    "data/games/overview-rewrite-batches/*.csv"
+  ],
+  "requiredHeaders": [
+    "newOverview",
+    "reviewStatus",
+    "reviewer",
+    "currentOverview"
+  ],
+  "dryRunPreservesDatasets": true,
+  "validImportableRows": 1,
+  "invalidRejectedRows": 3,
+  "failures": []
+}

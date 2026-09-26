@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-08-23T16:57:31.246Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-getbackers-godiego-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 17
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-getbackers-dakkanya-urashinshiku-saikyou-battle",
+      "title": "GetBackers Dakkanya: Urashinshiku Saikyou Battle",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-getsumento-heiki-mina-futatsu-no-project-m",
+      "title": "Getsumento Heiki Mina: Futatsu no Project M",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-ghost-vibration",
+      "title": "Ghost Vibration",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-ghostbusters-the-video-game",
+      "title": "Ghostbusters: The Video Game",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ghostbusters:_The_Video_Game"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-giant-robo-the-animation-chikyuu-ga-seishisuru-hi",
+      "title": "Giant Robo: The Animation - Chikyuu ga Seishisuru Hi",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gift",
+      "title": "Gift",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gift_(computer_game)"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gift-prism",
+      "title": "Gift: Prism",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gigawing-generations",
+      "title": "Gigawing Generations",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gin-no-eclipse",
+      "title": "Gin no Eclipse",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gintama-gin-san-to-issho-boku-no-kabuki-machi-nikki",
+      "title": "Gintama Gin-San to Issho! Boku no Kabuki Machi Nikki",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-girl-zone",
+      "title": "Girl Zone",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-girls-bravo-romance-15-s",
+      "title": "Girls Bravo: Romance 15's",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gitadora-guitar-freaks-4th-mix-and-drummania-3rd-mix",
+      "title": "GitaDora! Guitar Freaks 4th Mix & DrumMania 3rd Mix",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-global-folktale",
+      "title": "Global Folktale",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-go-go-copter",
+      "title": "Go Go Copter",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-go-kart-rally",
+      "title": "Go Kart Rally",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-go-diego-go-great-dinosaur-rescue",
+      "title": "Go, Diego, Go! Great Dinosaur Rescue",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Go,_Diego,_Go!_Great_Dinosaur_Rescue"
+    }
+  ]
+}

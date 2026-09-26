@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-08-23T18:48:01.228Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-tomarunner-godzilla-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 25
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gekisou-tomarunner",
+      "title": "Gekisou TomaRunner",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gekitotsu-toma-l-arc-tomarunner-vs-l-arc-en-ciel",
+      "title": "Gekitotsu Toma L'Arc: Tomarunner vs L'Arc-en-Ciel",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gekka-ni-no-kishi-o-ryusen",
+      "title": "Gekka Ni no Kishi: O Ryusen",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-genghis-khan-aoki-ookami-to-shiroki-mejika-iv",
+      "title": "Genghis Khan: Aoki Ookami to Shiroki Mejika IV",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-genso-suikogaiden-vol-1-harmonia-no-kenshi",
+      "title": "Genso Suikogaiden Vol. 1: Harmonia no Kenshi",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gens%C5%8D_Suikogaiden"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-genso-suikogaiden-vol-2-crystal-valley-no-kettou",
+      "title": "Genso Suikogaiden Vol. 2: Crystal Valley no Kettou",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gens%C5%8D_Suikogaiden"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gensou-maden-saiyuuki-harukanaru-nishi-e",
+      "title": "Gensou Maden Saiyuuki: Harukanaru Nishi e",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gensou-no-artemis-actress-school-mystery-adventure",
+      "title": "Gensou no Artemis: Actress School Mystery Adventure",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-geom-cube",
+      "title": "Geom Cube",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-geometry-duel",
+      "title": "Geometry Duel",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-germs",
+      "title": "Germs",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-getbackers-dakkanya",
+      "title": "GetBackers Dakkanya",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-getter-robo-daikessen",
+      "title": "Getter Robo Daikessen!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-ginga-eiyuu-densetsu",
+      "title": "Ginga Eiyuu Densetsu",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-ginga-ojousama-densetsu-yuna-final-edition",
+      "title": "Ginga Ojousama Densetsu Yuna: Final Edition",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gionbana",
+      "title": "Gionbana",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gionbana-2",
+      "title": "Gionbana 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-glint-glitters",
+      "title": "Glint Glitters",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-global-domination",
+      "title": "Global Domination",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-global-force-shin-sentou-kokka",
+      "title": "Global Force: Shin Sentou Kokka",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-glocal-hexcite",
+      "title": "Glocal Hexcite",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-go-ii-professional-taikyogu-igo",
+      "title": "Go II Professional Taikyogu Igo",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-go-jin-senki",
+      "title": "Go-Jin Senki",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-gochachiru",
+      "title": "Gochachiru",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-godzilla-trading-battle",
+      "title": "Godzilla Trading Battle",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Godzilla_Trading_Battle"
+    }
+  ]
+}

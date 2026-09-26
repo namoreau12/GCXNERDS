@@ -1,0 +1,158 @@
+{
+  "generatedAt": "2026-08-25T00:26:21.159Z",
+  "mode": "import",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps4-priority-amazing-blastoff-reviewed-overviews-2026-08-24.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps4",
+      "updated": 20,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps4",
+      "gameId": "ps4-amazing-discoveries-in-outer-space",
+      "title": "Amazing Discoveries in Outer Space",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-american-fugitive",
+      "title": "American Fugitive",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-amoeba-battle-microscopic-rts-action",
+      "title": "Amoeba Battle: Microscopic RTS Action",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-anarcute",
+      "title": "Anarcute",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-ancestors-the-humankind-odyssey",
+      "title": "Ancestors: The Humankind Odyssey",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ancestors:_The_Humankind_Odyssey"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-angerforce-reloaded",
+      "title": "AngerForce: Reloaded",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-anima-gate-of-memories-the-nameless-chronicles",
+      "title": "Anima: Gate of Memories - The Nameless Chronicles",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-anime-studio-story",
+      "title": "Anime Studio Story",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-ankora-lost-days",
+      "title": "Ankora: Lost Days",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-anoko-wa-ore-kara-hanarenai",
+      "title": "Anoko wa Ore kara Hanarenai",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-antiquia-lost",
+      "title": "Antiquia Lost",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Antiquia_Lost"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-aqua-moto-racing-utopia",
+      "title": "Aqua Moto Racing Utopia",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Aqua_Moto_Racing_Utopia"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arc-of-alchemist",
+      "title": "Arc of Alchemist",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-archives-a-jax",
+      "title": "Arcade Archives: A-Jax",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/A-Jax_(video_game)"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-archives-alpine-ski",
+      "title": "Arcade Archives: Alpine Ski",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Alpine_Ski"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-archives-aqua-jet",
+      "title": "Arcade Archives: Aqua Jet",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-archives-armed-f",
+      "title": "Arcade Archives: Armed F",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Formation_Armed_F"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-archives-assault-plus",
+      "title": "Arcade Archives: Assault Plus",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Assault_(1988_video_game)"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-archives-black-heart",
+      "title": "Arcade Archives: Black Heart",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps4",
+      "gameId": "ps4-arcade-archives-blast-off",
+      "title": "Arcade Archives: Blast Off",
+      "reviewer": "gcx-editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_4_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

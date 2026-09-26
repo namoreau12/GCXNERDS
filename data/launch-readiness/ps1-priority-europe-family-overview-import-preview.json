@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-08-23T18:32:47.526Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-europe-family-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 25
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-europe-racer",
+      "title": "Europe Racer",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Europe_Racer"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-eve-the-fatal-attraction",
+      "title": "EVE The Fatal Attraction",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-eve-zero",
+      "title": "Eve Zero",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-eve-the-lost-one",
+      "title": "EVE: The Lost One",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-evergreen-avenue",
+      "title": "Evergreen Avenue",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-exalegiuse",
+      "title": "Exalegiuse",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-expendable",
+      "title": "Expendable",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Expendable"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-explosive-racing",
+      "title": "Explosive Racing",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Explosive_Racing"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-extra-bright",
+      "title": "Extra Bright",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-extreme-500",
+      "title": "Extreme 500",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-extreme-go-kart-racing",
+      "title": "Extreme Go-Kart Racing",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-extreme-power",
+      "title": "Extreme Power",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-f-1-grand-prix-1996-team-unei-simulation",
+      "title": "F-1 Grand Prix 1996: Team Unei Simulation",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-fa-manager",
+      "title": "FA Manager",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/FA_Manager"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-faire-games-language-arts",
+      "title": "Faire Games: Language Arts",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-faire-games-mathematics",
+      "title": "Faire Games: Mathematics",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-falcata",
+      "title": "Falcata",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-family-bowling",
+      "title": "Family Bowling",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-family-card-game-fun-pack",
+      "title": "Family Card Game Fun Pack",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-family-chess",
+      "title": "Family Chess",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-family-diamond",
+      "title": "Family Diamond",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-family-feud",
+      "title": "Family Feud",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Family_Feud_(video_game_series)"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-family-game-pack",
+      "title": "Family Game Pack",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-family-games-compendium",
+      "title": "Family Games Compendium",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-family-gunjin-shogi",
+      "title": "Family Gunjin Shogi",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

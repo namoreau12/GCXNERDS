@@ -1,0 +1,247 @@
+{
+  "generatedAt": "2026-08-23T17:24:02.443Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps1-priority-colorful-crossword-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps1",
+      "updated": 33
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps1",
+      "gameId": "ps1-colorful-logic-3",
+      "title": "Colorful Logic 3",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-combat-choro-q",
+      "title": "Combat Choro Q",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Choro_Q_video_games"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-combi-mahjong-awaseuchi-with-maboroshi-tsukiyo-characters",
+      "title": "Combi Mahjong Awaseuchi with Maboroshi Tsukiyo Characters",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-community-pom",
+      "title": "Community Pom",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Community_Pom"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-community-pom-omoide-o-dakishimete",
+      "title": "Community Pom: Omoide o Dakishimete",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-contender-2",
+      "title": "Contender 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-conveni-2-zenkoku-chain-tenkai-da",
+      "title": "Conveni 2: Zenkoku Chain Tenkai da!",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-conveni-ano-machi-wo-dokusen-seyo",
+      "title": "Conveni: Ano Machi wo Dokusen Seyo",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-cosmic-cookoff-language-arts",
+      "title": "Cosmic Cookoff: Language Arts",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-cosmic-cookoff-mathematics",
+      "title": "Cosmic Cookoff: Mathematics",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-cosmowarrior-zero",
+      "title": "Cosmowarrior Zero",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cosmowarrior_Zero"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-cotton-original",
+      "title": "Cotton Original",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cotton:_Fantastic_Night_Dreams"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-cowboy-bebop",
+      "title": "Cowboy Bebop",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cowboy_Bebop_(PlayStation_game)"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-cranky-pro",
+      "title": "Cranky Pro",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-crayon-shin-chan",
+      "title": "Crayon Shin-chan",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Crayon_Shin-chan"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-crazy-balloon-2000",
+      "title": "Crazy Balloon 2000",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-crazy-climber-2000",
+      "title": "Crazy Climber 2000",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-creative-camp",
+      "title": "Creative Camp",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-creative-isle",
+      "title": "Creative Isle",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-creative-journey",
+      "title": "Creative Journey",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-creative-voyage",
+      "title": "Creative Voyage",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-creatures",
+      "title": "Creatures",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-creatures-3-raised-in-space",
+      "title": "Creatures 3: Raised in Space",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Creatures_3:_Raised_in_Space"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-crime-crackers",
+      "title": "Crime Crackers",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Crime_Crackers"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-crime-crackers-2",
+      "title": "Crime Crackers 2",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Crime_Crackers_2"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-crime-killer",
+      "title": "Crime Killer",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-crisis-city",
+      "title": "Crisis City",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-croket-kindan-no-kinka-box",
+      "title": "Croket! Kindan no Kinka Box",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-cross-romance-koi-to-mahjong-to-hanafuda-to",
+      "title": "Cross Romance: Koi to Mahjong to Hanafuda to",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-cross-tantei-monogatari-1-kouhen",
+      "title": "Cross Tantei Monogatari 1: Kouhen",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-cross-tantei-monogatari-1-zenpen",
+      "title": "Cross Tantei Monogatari 1: Zenpen",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-crossroad-crisis",
+      "title": "Crossroad Crisis",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    },
+    {
+      "platform": "ps1",
+      "gameId": "ps1-crossword",
+      "title": "Crossword",
+      "reviewer": "codex",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_%28console%29_games_%28A%E2%80%93L%29"
+    }
+  ]
+}

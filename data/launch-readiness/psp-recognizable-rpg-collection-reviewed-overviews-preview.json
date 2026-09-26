@@ -1,0 +1,151 @@
+{
+  "generatedAt": "2026-08-25T17:29:18.684Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\psp-recognizable-rpg-collection-reviewed-overviews.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "psp",
+      "updated": 0,
+      "refreshedSearchText": 11
+    }
+  ],
+  "rejected": [
+    {
+      "platform": "psp",
+      "gameId": "psp-7th-dragon-2020",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-7th-dragon-2020-ii",
+      "reason": "currentOverview is stale; rerun with --force after re-reviewing this row"
+    }
+  ],
+  "skipped": [
+    {
+      "platform": "psp",
+      "gameId": "psp-101-in-1-megamix",
+      "title": "101-in-1 Megamix",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-428-fuusa-sareta-shibuya",
+      "title": "428: Fuusa Sareta Shibuya",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-aces-of-war",
+      "title": "Aces of War",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-activision-hits-remixed",
+      "title": "Activision Hits Remixed",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-adventure-player",
+      "title": "Adventure Player",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-adventures-to-go",
+      "title": "Adventures to Go!",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-afl-challenge",
+      "title": "AFL Challenge",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-agarest-senki-marriage",
+      "title": "Agarest Senki Marriage",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-ailu-de-puzzle",
+      "title": "Ailu de Puzzle",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-akaya-akashiya-ayakashino",
+      "title": "Akaya Akashiya Ayakashino",
+      "reason": "Already applied in live game data"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-amnesia",
+      "title": "Amnesia",
+      "reason": "Already applied in live game data"
+    }
+  ],
+  "refreshedSearchRows": [
+    {
+      "platform": "psp",
+      "gameId": "psp-101-in-1-megamix",
+      "title": "101-in-1 Megamix"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-428-fuusa-sareta-shibuya",
+      "title": "428: Fuusa Sareta Shibuya"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-aces-of-war",
+      "title": "Aces of War"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-activision-hits-remixed",
+      "title": "Activision Hits Remixed"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-adventure-player",
+      "title": "Adventure Player"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-adventures-to-go",
+      "title": "Adventures to Go!"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-afl-challenge",
+      "title": "AFL Challenge"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-agarest-senki-marriage",
+      "title": "Agarest Senki Marriage"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-ailu-de-puzzle",
+      "title": "Ailu de Puzzle"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-akaya-akashiya-ayakashino",
+      "title": "Akaya Akashiya Ayakashino"
+    },
+    {
+      "platform": "psp",
+      "gameId": "psp-amnesia",
+      "title": "Amnesia"
+    }
+  ],
+  "importedRows": []
+}

@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-08-25T17:45:56.397Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-natsuiro-neppachi-reviewed-overviews-2026-08-25.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 10,
+      "refreshedSearchText": 0
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "refreshedSearchRows": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-natsuiro-komachi",
+      "title": "Natsuiro Komachi",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-65356.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-natsuiro-hoshikuzu-no-memory",
+      "title": "Natsuiro: Hoshikuzu no Memory",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-65786.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-natsuzora-no-monologue",
+      "title": "Natsuzora no Monologue",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://sandeian.wordpress.com/2011/01/28/otome-game-review-natsuzora-no-monologue/"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-natural-2-duo-sakurairo-no-kisetsu",
+      "title": "Natural 2: Duo - Sakurairo no Kisetsu",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://www.play-asia.com/en/natural-2-duo-sakurairo-no-kisetsu-deluxe-pack/13/70gpw"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-negima-3-jikanme-koi-to-mahou-to-sekaiju-densetsu",
+      "title": "Negima!? 3-Jikanme ~Koi to Mahou to Sekaiju Densetsu~",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPM-66593.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-negima-dream-tactic-yumemiru-otome-princess",
+      "title": "Negima!? Dream Tactic Yumemiru Otome Princess",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://gamesdb.launchbox-app.com/games/details/128795-negima-dream-tactic-yumemiru-otome-princess"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-neo-angelique",
+      "title": "Neo Angelique",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Angelique_(video_game_series)"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-neo-angelique-full-voice",
+      "title": "Neo Angelique Full Voice",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Angelique_(video_game_series)"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-neo-atlas-iii",
+      "title": "Neo Atlas III",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://psxdatacenter.com/psx2/games2/SLPS-25016.html"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-neppachi-gold-cr-monster-mansion",
+      "title": "Neppachi Gold: CR Monster Mansion",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_(L%E2%80%93Z)"
+    }
+  ]
+}

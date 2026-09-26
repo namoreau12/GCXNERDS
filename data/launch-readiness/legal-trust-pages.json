@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "generatedAt": "2026-09-26T00:50:29.112Z",
+  "checkedPages": 7,
+  "checkedFiles": [
+    {
+      "file": "privacy.html",
+      "required": 5,
+      "forbidden": 0
+    },
+    {
+      "file": "terms.html",
+      "required": 7,
+      "forbidden": 0
+    },
+    {
+      "file": "marketplace-rules.html",
+      "required": 5,
+      "forbidden": 0
+    },
+    {
+      "file": "trust.html",
+      "required": 5,
+      "forbidden": 0
+    },
+    {
+      "file": "pokemon.html",
+      "required": 4,
+      "forbidden": 1
+    },
+    {
+      "file": "magic.html",
+      "required": 4,
+      "forbidden": 1
+    },
+    {
+      "file": "yugioh.html",
+      "required": 4,
+      "forbidden": 1
+    }
+  ],
+  "failures": []
+}

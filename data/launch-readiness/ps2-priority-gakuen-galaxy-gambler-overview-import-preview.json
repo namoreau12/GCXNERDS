@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2026-08-23T16:47:48.375Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-gakuen-galaxy-gambler-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 12
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gakkou-o-tsukurou-happy-days",
+      "title": "Gakkou o Tsukurou!! Happy Days",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gakuen-alice-kirakira-memory-kiss",
+      "title": "Gakuen Alice: KiraKira Memory Kiss",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gakuen_Alice#Video_games"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gakuen-heaven-boy-s-love-scramble-type-b",
+      "title": "Gakuen Heaven: Boy's Love Scramble: Type B",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gakuen_Heaven"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gakuen-heaven-boy-s-love-scramble",
+      "title": "Gakuen Heaven: Boy's Love Scramble!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gakuen_Heaven"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gakuen-heaven-okawari-boy-s-love-attack",
+      "title": "Gakuen Heaven: Okawari! Boy's Love Attack!",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gakuen_Heaven"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gakuen-toshi-vara-noir",
+      "title": "Gakuen Toshi Vara Noir",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gakuen_Toshi_Vara_Noir"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-galaxy-angel",
+      "title": "Galaxy Angel",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Galaxy_Angel"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-galaxy-angel-ii-eigou-kaiki-no-koku",
+      "title": "Galaxy Angel II: Eigou Kaiki no Koku",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Galaxy_Angel_II"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-galaxy-angel-ii-mugen-kairou-no-kagi",
+      "title": "Galaxy Angel II: Mugen Kairou no Kagi",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Galaxy_Angel_II"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-galaxy-angel-ii-zettairyouiki-no-tobira",
+      "title": "Galaxy Angel II: Zettairyouiki no Tobira",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Galaxy_Angel_II"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-galaxy-angel-eternal-lovers",
+      "title": "Galaxy Angel: Eternal Lovers",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Galaxy_Angel"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-galaxy-angel-moonlit-lovers",
+      "title": "Galaxy Angel: Moonlit Lovers",
+      "reviewer": "GCX Editorial",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Galaxy_Angel"
+    }
+  ]
+}

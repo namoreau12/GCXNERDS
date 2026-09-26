@@ -1,0 +1,335 @@
+{
+  "version": "newsroom-os-v1",
+  "generatedFrom": "GCX Newsroom Operating System Pack",
+  "scoringWeights": {
+    "storyOpportunity": {
+      "audienceSize": 20,
+      "engagementMomentum": 15,
+      "recency": 10,
+      "storyImportance": 15,
+      "sourceStrength": 10,
+      "headlineConvergence": 5,
+      "searchLongevity": 10,
+      "originalEditorialOpportunity": 10,
+      "updatePotential": 5
+    },
+    "qaReview": {
+      "reportingCompleteness": 20,
+      "sourceStrength": 20,
+      "originalValue": 15,
+      "searchIntent": 15,
+      "readability": 10,
+      "headlineQuality": 10,
+      "internalLinking": 5,
+      "freshness": 5
+    }
+  },
+  "topics": [
+    {
+      "id": "topic-pokemon-30th-celebration",
+      "name": "Pokemon TCG: 30th Celebration",
+      "slug": "pokemon-30th-celebration",
+      "topicType": "tcg_set",
+      "primaryEntity": "Pokemon TCG",
+      "status": "active",
+      "importanceScore": 99,
+      "audienceSizeScore": 95,
+      "notes": "Primary GCX pillar for 30th anniversary collector coverage."
+    },
+    {
+      "id": "topic-gamescom-2026",
+      "name": "Gamescom 2026",
+      "slug": "gamescom-2026",
+      "topicType": "event",
+      "primaryEntity": "Gamescom",
+      "status": "active",
+      "importanceScore": 92,
+      "audienceSizeScore": 90,
+      "notes": "Reusable model for live-event hubs and post-event recap conversion."
+    },
+    {
+      "id": "topic-gta-vi",
+      "name": "GTA VI",
+      "slug": "gta-vi",
+      "topicType": "game",
+      "primaryEntity": "Grand Theft Auto VI",
+      "status": "watching",
+      "importanceScore": 100,
+      "audienceSizeScore": 100,
+      "notes": "Standalone coverage should require material new information and clear search intent."
+    }
+  ],
+  "topicClusters": [
+    {
+      "id": "cluster-pokemon-30th-celebration",
+      "name": "Pokemon 30th Celebration",
+      "slug": "pokemon-30th-celebration",
+      "hubArticleId": "gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide",
+      "clusterStatus": "active",
+      "evergreenValue": 10,
+      "priority": "urgent",
+      "nextRecommendedArticle": "Pokemon 30th Celebration Chase Cards",
+      "missingIntents": [
+        "chase-card guide",
+        "every Pikachu revealed",
+        "product ranking"
+      ],
+      "notes": "Card reveals should normally update the hub unless the reader intent is distinct."
+    },
+    {
+      "id": "cluster-gamescom-2026",
+      "name": "Gamescom 2026",
+      "slug": "gamescom-2026",
+      "hubArticleId": "gamescom-2026-schedule-games-announcements",
+      "clusterStatus": "active",
+      "evergreenValue": 8,
+      "priority": "high",
+      "nextRecommendedArticle": "Opening Night Live Recap",
+      "missingIntents": [
+        "Opening Night Live recap",
+        "Xbox at Gamescom",
+        "major reveal explainers"
+      ],
+      "notes": "Before event: schedule guide. During event: live hub. After event: evergreen recap."
+    },
+    {
+      "id": "cluster-gta-vi",
+      "name": "GTA VI",
+      "slug": "gta-vi",
+      "hubArticleId": "gcx-newsroom-gta-vi-leaking-again",
+      "clusterStatus": "emerging",
+      "evergreenValue": 10,
+      "priority": "high",
+      "nextRecommendedArticle": "GTA VI everything-we-know hub",
+      "missingIntents": [
+        "release date hub",
+        "preorder tracker",
+        "official trailer recap"
+      ],
+      "notes": "Avoid one-off duplicate URLs for incremental rumors."
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-pokemon-official",
+      "name": "Pokemon.com",
+      "domain": "pokemon.com",
+      "sourceType": "official",
+      "primaryOrSecondary": "primary",
+      "expertiseTags": [
+        "Pokemon TCG",
+        "Pokemon products"
+      ],
+      "reliabilityScore": 10,
+      "speedScore": 8,
+      "originalReportingScore": 10,
+      "citationPreference": "Use as the primary factual source for official Pokemon claims.",
+      "specialWarnings": "Do not infer scarcity or market value from presale listings.",
+      "active": true
+    },
+    {
+      "id": "source-rockstar-newswire",
+      "name": "Rockstar Newswire",
+      "domain": "rockstargames.com",
+      "sourceType": "official",
+      "primaryOrSecondary": "primary",
+      "expertiseTags": [
+        "GTA",
+        "Rockstar"
+      ],
+      "reliabilityScore": 10,
+      "speedScore": 9,
+      "originalReportingScore": 10,
+      "citationPreference": "Use as primary source for GTA VI dates, trailers, and preorder claims.",
+      "specialWarnings": "Leaks need separate labeling and should not overwrite official copy.",
+      "active": true
+    },
+    {
+      "id": "source-pokebeach",
+      "name": "PokeBeach",
+      "domain": "pokebeach.com",
+      "sourceType": "specialist_publication",
+      "primaryOrSecondary": "secondary",
+      "expertiseTags": [
+        "Pokemon TCG",
+        "card reveals"
+      ],
+      "reliabilityScore": 8,
+      "speedScore": 10,
+      "originalReportingScore": 8,
+      "citationPreference": "Useful for fast TCG reporting, then verify against official Pokemon sources when possible.",
+      "specialWarnings": "Keep reported/unofficial labels until official confirmation exists.",
+      "active": true
+    },
+    {
+      "id": "source-reddit",
+      "name": "Reddit",
+      "domain": "reddit.com",
+      "sourceType": "community",
+      "primaryOrSecondary": "community_signal",
+      "expertiseTags": [
+        "audience interest",
+        "collector sentiment"
+      ],
+      "reliabilityScore": 2,
+      "speedScore": 10,
+      "originalReportingScore": 2,
+      "citationPreference": "Use only as community-interest signal, not factual confirmation.",
+      "specialWarnings": "Never upgrade Reddit claims to fact without primary or reputable secondary confirmation.",
+      "active": true
+    }
+  ],
+  "searchIntents": [
+    {
+      "id": "intent-pokemon-30th-main",
+      "query": "pokemon 30th celebration",
+      "intentType": "informational",
+      "topicId": "topic-pokemon-30th-celebration",
+      "priority": "urgent",
+      "primaryArticleId": "gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide",
+      "notes": "Main living guide intent."
+    },
+    {
+      "id": "intent-pokemon-30th-msrp",
+      "query": "pokemon 30th celebration msrp",
+      "intentType": "commercial_research",
+      "topicId": "topic-pokemon-30th-celebration",
+      "priority": "urgent",
+      "primaryArticleId": "gcx-newsroom-pokemon-30th-celebration-msrp-preorder-tracker",
+      "notes": "Collector utility intent: what should this cost?"
+    },
+    {
+      "id": "intent-gamescom-2026-schedule",
+      "query": "gamescom 2026 schedule",
+      "intentType": "live_event",
+      "topicId": "topic-gamescom-2026",
+      "priority": "high",
+      "primaryArticleId": "gamescom-2026-schedule-games-announcements",
+      "notes": "Event hub intent."
+    }
+  ],
+  "storyOpportunities": [
+    {
+      "id": "story-pokemon-30th-chase-cards",
+      "titleWorking": "Pokemon 30th Celebration Chase Cards",
+      "topicId": "topic-pokemon-30th-celebration",
+      "topicClusterId": "cluster-pokemon-30th-celebration",
+      "category": "Cards",
+      "scoreCurrent": 94,
+      "scorePrevious": 88,
+      "scoreChange": 6,
+      "scoreChangeReason": "Collector search intent is strong and can link from the complete guide and MSRP tracker.",
+      "recommendation": "write_now",
+      "lifecycleState": "researching",
+      "articleTypeRecommended": "buyer_guide",
+      "updateOrNew": "new_article",
+      "existingArticleId": "",
+      "cannibalizationRisk": "low",
+      "deepResearchRecommended": true,
+      "recommendedAngle": "Explain which revealed cards collectors are watching without pretending hype equals confirmed market value.",
+      "headlineMode": "hybrid",
+      "primarySearchIntent": "pokemon 30th celebration chase cards",
+      "expiresAt": ""
+    },
+    {
+      "id": "story-gamescom-onl-recap",
+      "titleWorking": "Gamescom Opening Night Live 2026 Recap",
+      "topicId": "topic-gamescom-2026",
+      "topicClusterId": "cluster-gamescom-2026",
+      "category": "Gaming",
+      "scoreCurrent": 90,
+      "scorePrevious": 83,
+      "scoreChange": 7,
+      "scoreChangeReason": "Event recap becomes useful once announcements are official.",
+      "recommendation": "strong_story",
+      "lifecycleState": "watching",
+      "articleTypeRecommended": "live_recap",
+      "updateOrNew": "create_standalone_and_update_hub",
+      "existingArticleId": "gamescom-2026-schedule-games-announcements",
+      "cannibalizationRisk": "medium",
+      "deepResearchRecommended": true,
+      "recommendedAngle": "Create recap only after there is enough official announcement substance; update the hub either way.",
+      "headlineMode": "search_first",
+      "primarySearchIntent": "gamescom 2026 opening night live recap",
+      "expiresAt": ""
+    },
+    {
+      "id": "story-gta-vi-official-update",
+      "titleWorking": "GTA VI Official Update Watch",
+      "topicId": "topic-gta-vi",
+      "topicClusterId": "cluster-gta-vi",
+      "category": "Gaming",
+      "scoreCurrent": 96,
+      "scorePrevious": 96,
+      "scoreChange": 0,
+      "scoreChangeReason": "Audience demand is huge, but duplicate rumor posts should be avoided.",
+      "recommendation": "watch",
+      "lifecycleState": "watching",
+      "articleTypeRecommended": "major_news",
+      "updateOrNew": "update_existing",
+      "existingArticleId": "gcx-newsroom-gta-vi-leaking-again",
+      "cannibalizationRisk": "high",
+      "deepResearchRecommended": false,
+      "recommendedAngle": "Wait for material official information or clearly labeled verified reporting before creating a new URL.",
+      "headlineMode": "hybrid",
+      "primarySearchIntent": "gta 6 release date",
+      "expiresAt": ""
+    }
+  ],
+  "articleRelationships": [
+    {
+      "id": "rel-pokemon-msrp-to-guide",
+      "fromArticleId": "gcx-newsroom-pokemon-30th-celebration-msrp-preorder-tracker",
+      "toArticleId": "gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide",
+      "relationshipType": "supporting",
+      "anchorTextSuggestion": "Pokemon 30th Celebration complete guide"
+    },
+    {
+      "id": "rel-pokemon-guide-to-msrp",
+      "fromArticleId": "gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide",
+      "toArticleId": "gcx-newsroom-pokemon-30th-celebration-msrp-preorder-tracker",
+      "relationshipType": "child",
+      "anchorTextSuggestion": "MSRP and preorder tracker"
+    }
+  ],
+  "liveEvents": [
+    {
+      "id": "event-gamescom-2026",
+      "name": "Gamescom 2026",
+      "slug": "gamescom-2026",
+      "hubArticleId": "gamescom-2026-schedule-games-announcements",
+      "status": "upcoming",
+      "startAt": "2026-08-26T00:00:00.000Z",
+      "endAt": "2026-08-30T23:59:59.000Z",
+      "timezone": "Europe/Berlin",
+      "officialWatchUrl": "https://www.gamescom.global/",
+      "secondaryWatchUrl": "",
+      "latestUpdateText": "Keep schedule and recap state clearly separated.",
+      "latestUpdateAt": "2026-08-22T00:00:00.000Z"
+    }
+  ],
+  "editorialTasks": [
+    {
+      "id": "task-pokemon-chase-cards",
+      "taskType": "draft",
+      "relatedStoryId": "story-pokemon-30th-chase-cards",
+      "relatedArticleId": "",
+      "priority": "high",
+      "status": "queued",
+      "assignedTo": "GCX Newsroom",
+      "dueAt": "",
+      "notes": "Build as a supporting article; link from the hub and MSRP tracker."
+    },
+    {
+      "id": "task-gamescom-event-mode",
+      "taskType": "event_live_update",
+      "relatedStoryId": "story-gamescom-onl-recap",
+      "relatedArticleId": "gamescom-2026-schedule-games-announcements",
+      "priority": "high",
+      "status": "queued",
+      "assignedTo": "GCX Newsroom",
+      "dueAt": "",
+      "notes": "When event starts, switch hub from schedule mode to live update mode, then recap mode after the event."
+    }
+  ]
+}

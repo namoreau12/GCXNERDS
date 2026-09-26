@@ -1,0 +1,128 @@
+{
+  "generatedAt": "2026-08-23T16:54:26.843Z",
+  "mode": "dry-run",
+  "inputPath": "C:\\Users\\namor\\OneDrive\\Documents\\Project Game Website\\data\\games\\reviewed-overview-imports\\ps2-priority-gecko-getbackers-reviewed-overviews-2026-08-23.csv",
+  "force": false,
+  "summary": [
+    {
+      "platform": "ps2",
+      "updated": 16
+    }
+  ],
+  "rejected": [],
+  "skipped": [],
+  "importedRows": [
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gecko-blaster",
+      "title": "Gecko Blaster",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gegege-no-kitarou-ibun-youkai-kitan",
+      "title": "Gegege no Kitarou: Ibun Youkai Kitan",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gekikuukan-pro-yakyuu-at-the-end-of-the-century-1999",
+      "title": "Gekikuukan Pro Yakyuu: At the End of the Century 1999",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gekitou-pro-yakyuu",
+      "title": "Gekitou Pro Yakyuu",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gendai-daisenryaku-isshoku-sokuhatsu-gunji-balance-houkai",
+      "title": "Gendai Daisenryaku: Isshoku Sokuhatsu - Gunji Balance Houkai",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-gene-troopers",
+      "title": "Gene Troopers",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-generation-of-chaos-desire",
+      "title": "Generation of Chaos Desire",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-generation-of-chaos-iii-toki-no-fuuin",
+      "title": "Generation of Chaos III: Toki no Fuuin",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-generation-of-chaos-iv",
+      "title": "Generation of Chaos IV",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-generation-of-chaos-next",
+      "title": "Generation of Chaos Next",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-genshi-no-kotoba",
+      "title": "Genshi no Kotoba",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-georama-sensen-ijou-nashi-stalingrad-e-no-michi",
+      "title": "Georama Sensen Ijou Nashi: Stalingrad e no Michi",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-germany-s-next-topmodel-2009",
+      "title": "Germany's Next Topmodel 2009",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-get-ride-amdriver-soukoku-no-shinjitsu",
+      "title": "Get Ride! AMDriver: Soukoku no Shinjitsu",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-getbackers-dakkanya-dakkandayo-zenin-shuugou",
+      "title": "GetBackers Dakkanya: Dakkandayo! Zenin Shuugou!!",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    },
+    {
+      "platform": "ps2",
+      "gameId": "ps2-getbackers-dakkanya-ubawareta-mugenjou",
+      "title": "GetBackers Dakkanya: Ubawareta Mugenjou",
+      "reviewer": "GCX",
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_PlayStation_2_games_%28A%E2%80%93K%29"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "games-cards-exchange",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GCX gaming and trading-card publication with a lightweight Node backend.",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "node scripts/verify-production-build.js",
+    "check": "node --check server.js && node --check script.js && node --check news.js && node --check article.js && node --check scripts/audit-game-search-index-quality.js && node --check scripts/cleanup-game-search-index-quality.js && node scripts/audit-pricecharting-candidate-guardrails.js",
+    "audit:media": "node scripts/audit-newsroom-media.js && node scripts/audit-newsroom-image-uniqueness.js && node scripts/audit-article-visual-quality.js && node scripts/build-newsroom-editorial-readthrough.js && node scripts/build-newsroom-official-media-queue.js && node scripts/audit-newsroom-promotion-readiness.js",
+    "audit:visual": "node scripts/audit-homepage-lead-visual-safety.js && node scripts/audit-prominent-news-official-media.js && node scripts/audit-image-text-layout-system.js && node scripts/audit-editorial-svg-text-fit.js && node scripts/audit-game-image-fallback-ui.js",
+    "audit:cards": "node scripts/audit-card-system-health.js && node scripts/audit-tcg-card-media-guardrails.js",
+    "audit:launch": "node scripts/run-launch-checks.js",
+    "validate:supabase": "node scripts/validate-supabase-auth-setup.js && node scripts/validate-supabase-launch-data-setup.js"
+  }
+}
