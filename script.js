@@ -465,7 +465,7 @@ function streamerShareToFeedUrl(streamer) {
   const url = new URL("community.html", window.location.href);
   url.searchParams.set("shareUrl", streamerCampaignUrl(streamer).toString());
   url.searchParams.set("title", `Vote for ${streamer.name}`);
-  url.searchParams.set("body", `${streamer.name} is in the GCX streamer spotlight race. Vote, share, and help bring more fans into games, cards, and collecting conversations.`);
+  url.searchParams.set("body", `${streamer.name} is in the GCX creator spotlight. Vote, share, and help bring more fans into games, cards, and collecting conversations.`);
   url.searchParams.set("category", "Streaming");
   return `${url.pathname.replace(/^\//, "")}${url.search}`;
 }
@@ -476,7 +476,7 @@ function recordHomeStreamerTraffic(streamer, type, campaignUrl) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       type,
-      source: "homepage_streamer_race",
+      source: "homepage_creator_spotlight",
       targetType: "streamer",
       targetId: streamer.id,
       ref: `home-${streamer.id}`,
@@ -545,7 +545,7 @@ function renderHomeCommunityPulse(discovery = {}) {
 function renderHomeStreamers(campaign = {}) {
   if (!homeStreamerGrid) return;
   const voted = readStreamerVotes();
-  const featured = homeStreamers.slice(0, 2);
+  const featured = homeStreamers.slice(0, 3);
 
   if (!featured.length) {
     homeStreamerGrid.innerHTML = `<div class="index-message">Streamer voting could not be loaded.</div>`;
@@ -556,7 +556,7 @@ function renderHomeStreamers(campaign = {}) {
     .map((streamer, index) => {
       const campaignUrl = streamerCampaignUrl(streamer).toString();
       const campaignPath = `${new URL(campaignUrl).pathname.replace(/^\//, "")}${new URL(campaignUrl).search}`;
-      const slot = index === 0 ? campaign.popularSlot || "Popular Streamer of the Week" : campaign.risingSlot || "Community Pick of the Week";
+      const slot = streamer.slotLabel || streamer.spotlight || `Creator Spotlight ${index + 1}`;
       const hasVoted = voted.has(streamer.id);
       return `
         <article class="home-streamer-card">
@@ -590,9 +590,9 @@ async function loadHomeStreamers() {
     const response = await fetch("/api/community/streamers");
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || "Streamer voting could not be loaded.");
-    homeStreamers = (result.data || [])
-      .sort((a, b) => Number(b.weeklyVotes || b.votes || 0) - Number(a.weeklyVotes || a.votes || 0))
-      .slice(0, 2);
+    homeStreamers = (result.creatorSpotlight || result.data || [])
+      .sort((a, b) => Number(a.spotlightOrder || 99) - Number(b.spotlightOrder || 99) || Number(b.weeklyVotes || b.votes || 0) - Number(a.weeklyVotes || a.votes || 0))
+      .slice(0, 3);
     renderHomeStreamers(result.campaign || {});
   } catch (error) {
     homeStreamerGrid.innerHTML = `<div class="index-message">Streamer voting could not be loaded.</div>`;

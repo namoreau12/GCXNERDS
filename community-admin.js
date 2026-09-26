@@ -396,7 +396,7 @@ function renderQueue(target, items, type) {
 function renderCloseoutSummary(data) {
   if (!streamerCloseoutSummary) return;
   const slots = data.slots || {};
-  const winners = [slots.popular, slots.rising].filter(Boolean);
+  const winners = (data.creatorSpotlight || slots.selected || [slots.popular, slots.rising, slots.third]).filter(Boolean).slice(0, 3);
   streamerCloseoutSummary.innerHTML = winners.length
     ? winners
         .map(

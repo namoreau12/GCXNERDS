@@ -248,9 +248,9 @@ function renderDashboard(data) {
   ].join("");
 
   const streamerSlots = data.streamerSlots || {};
+  const creatorSpotlight = (data.creatorSpotlight || streamerSlots.selected || [streamerSlots.popular, streamerSlots.rising, streamerSlots.third]).filter(Boolean).slice(0, 3);
   if (growthStreamerSlots) {
-    growthStreamerSlots.innerHTML = [streamerSlots.popular, streamerSlots.rising]
-      .filter(Boolean)
+    growthStreamerSlots.innerHTML = creatorSpotlight
       .map(
         (streamer) => `
           <article class="traffic-analytics-card">

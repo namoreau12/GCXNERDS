@@ -79,7 +79,7 @@ function shareToFeedPath() {
   const url = new URL("community.html", window.location.href);
   url.searchParams.set("shareUrl", campaignUrl());
   url.searchParams.set("title", `Vote for ${activeStreamer.name}`);
-  url.searchParams.set("body", `${activeStreamer.name} is in the GCX streamer spotlight race. Help push this creator up the weekly board.`);
+  url.searchParams.set("body", `${activeStreamer.name} is in the GCX creator spotlight. Help push this creator up the weekly board.`);
   url.searchParams.set("category", "Streaming");
   return `${url.pathname.replace(/^\//, "")}${url.search}`;
 }
@@ -206,7 +206,7 @@ function renderShareKit() {
     {
       title: "Community post",
       audience: "GCX members",
-      copy: `${activeStreamer.name} is in the GCX streamer spotlight race. Vote, share, and bring more fans into the games/cards community.`,
+      copy: `${activeStreamer.name} is in the GCX creator spotlight. Vote, share, and bring more fans into the games/cards community.`,
     },
     {
       title: "Sponsor note",

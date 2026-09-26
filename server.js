@@ -3979,11 +3979,8 @@ function activePromotions(data, placement = "") {
 
 function buildSponsorPackages(data) {
   const campaign = data.campaign || {};
-  const topStreamers = [...(data.streamers || [])]
-    .sort((a, b) => Number(b.weeklyVotes || b.votes || 0) - Number(a.weeklyVotes || a.votes || 0))
-    .slice(0, 2);
+  const topStreamers = buildCreatorSpotlight(data);
   const trafficEvents = data.trafficEvents || [];
-  const packageNames = [campaign.popularSlot || "Popular Streamer of the Week", campaign.risingSlot || "Community Pick of the Week"];
 
   const streamerPackages = topStreamers.map((streamer, index) => {
     const streamerTraffic = summarizeTrafficEvents(trafficEvents.filter((event) => event.targetId === streamer.id || event.ref === streamer.id));
@@ -3992,7 +3989,7 @@ function buildSponsorPackages(data) {
     const suggestedHigh = index === 0 ? Math.max(500, Math.ceil(weeklyVotes / 100) * 100) : Math.max(250, Math.ceil(weeklyVotes / 120) * 100);
     return {
       id: `sponsor-package-${streamer.id}`,
-      packageName: packageNames[index],
+      packageName: streamer.slotLabel || `Creator Spotlight ${index + 1}`,
       creatorId: streamer.id,
       creatorName: streamer.name,
       creatorHandle: streamer.handle,
@@ -4008,7 +4005,7 @@ function buildSponsorPackages(data) {
       campaignViews: streamerTraffic.byType.find((item) => item.label === "campaign_view")?.count || 0,
       suggestedBudget: `$${suggestedLow.toLocaleString()}-$${suggestedHigh.toLocaleString()} weekly`,
       deliverables: [
-        "Homepage streamer race placement",
+        "Homepage creator spotlight placement",
         "Creator campaign page sponsor CTA",
         "Voting board mention",
         "Growth dashboard referral tracking",
@@ -4115,11 +4112,90 @@ function isRisingStreamer(streamer) {
   return text.includes("rising") || text.includes("community pick") || text.includes("smaller") || text.includes("nominee");
 }
 
-function buildStreamerSlots(data) {
+function creatorCampaignUrl(streamer) {
+  return streamer?.campaignUrl || `streamer.html?id=${streamer?.id || ""}`;
+}
+
+function defaultCreatorSpotlightConfig() {
+  return [
+    {
+      streamerId: "nova-circuit",
+      slotKey: "spotlight-lead",
+      slotLabel: "Creator Spotlight 1",
+      slotDescription: "The lead GCX creator pick for this week's games, cards, and community traffic push.",
+    },
+    {
+      streamerId: "pixel-pantry",
+      slotKey: "spotlight-community",
+      slotLabel: "Creator Spotlight 2",
+      slotDescription: "A creator with a strong community fit for cards, collecting, and friendly discovery.",
+    },
+    {
+      streamerId: "boss-rush-brian",
+      slotKey: "spotlight-owner",
+      slotLabel: "Creator Spotlight 3",
+      slotDescription: "A GCX owner's pick for retro libraries, challenge runs, and collector-friendly streams.",
+    },
+  ];
+}
+
+function buildCreatorSpotlight(data) {
   const ranked = [...(data.streamers || [])]
     .map((streamer) => ({
       ...streamer,
-      campaignUrl: streamer.campaignUrl || `streamer.html?id=${streamer.id}`,
+      campaignUrl: creatorCampaignUrl(streamer),
+    }))
+    .sort((a, b) => Number(b.weeklyVotes || b.votes || 0) - Number(a.weeklyVotes || a.votes || 0));
+  const byId = new Map(ranked.map((streamer) => [streamer.id, streamer]));
+  const configuredSlots = Array.isArray(data.creatorSpotlight) && data.creatorSpotlight.length ? data.creatorSpotlight : defaultCreatorSpotlightConfig();
+  const usedIds = new Set();
+
+  const resolved = configuredSlots
+    .slice(0, 3)
+    .map((slot, index) => {
+      const streamer = byId.get(slot.streamerId);
+      if (!streamer || usedIds.has(streamer.id)) return null;
+      usedIds.add(streamer.id);
+      return {
+        ...streamer,
+        slotKey: slot.slotKey || `spotlight-${index + 1}`,
+        slotLabel: slot.slotLabel || slot.label || streamer.spotlight || `Creator Spotlight ${index + 1}`,
+        slotDescription: slot.slotDescription || slot.description || streamer.pitch || streamer.specialty || "",
+        spotlightOrder: index + 1,
+      };
+    })
+    .filter(Boolean);
+
+  ranked.forEach((streamer) => {
+    if (resolved.length >= 3 || usedIds.has(streamer.id)) return;
+    usedIds.add(streamer.id);
+    resolved.push({
+      ...streamer,
+      slotKey: `spotlight-${resolved.length + 1}`,
+      slotLabel: streamer.spotlight || `Creator Spotlight ${resolved.length + 1}`,
+      slotDescription: streamer.pitch || streamer.specialty || "",
+      spotlightOrder: resolved.length + 1,
+    });
+  });
+
+  return resolved.slice(0, 3);
+}
+
+function buildStreamerSlots(data) {
+  const creatorSpotlight = buildCreatorSpotlight(data);
+  if (creatorSpotlight.length) {
+    return {
+      popular: creatorSpotlight[0] || null,
+      rising: creatorSpotlight[1] || null,
+      third: creatorSpotlight[2] || null,
+      selected: creatorSpotlight,
+    };
+  }
+
+  const ranked = [...(data.streamers || [])]
+    .map((streamer) => ({
+      ...streamer,
+      campaignUrl: creatorCampaignUrl(streamer),
     }))
     .sort((a, b) => Number(b.weeklyVotes || b.votes || 0) - Number(a.weeklyVotes || a.votes || 0));
   const rising = ranked.find(isRisingStreamer) || ranked[1] || ranked[0] || null;
@@ -4150,12 +4226,16 @@ function buildSpotlightHistory(data) {
     .sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0))
     .map((week) => ({
       ...week,
+      featuredCreators: Array.isArray(week.featuredCreators)
+        ? week.featuredCreators
+        : [week.popularWinner, week.risingWinner].filter(Boolean),
       popularWinner: week.popularWinner || null,
       risingWinner: week.risingWinner || null,
     }));
 }
 
 function closeStreamerWeek(data, options = {}) {
+  const creatorSpotlight = buildCreatorSpotlight(data);
   const slots = buildStreamerSlots(data);
   const now = new Date().toISOString();
   const weekLabel = safeText(options.weekLabel || data.campaign?.weekLabel || "Current voting week", 80);
@@ -4175,11 +4255,12 @@ function closeStreamerWeek(data, options = {}) {
   const historyItem = {
     id: historyId,
     weekLabel,
+    featuredCreators: creatorSpotlight.map(winnerPayload).filter(Boolean),
     popularWinner: winnerPayload(slots.popular),
     risingWinner: winnerPayload(slots.rising),
     summary: safeText(
       options.summary ||
-        `${slots.popular?.name || "The popular creator"} and ${slots.rising?.name || "the community pick"} closed the GCX weekly streamer spotlight.`,
+        `${creatorSpotlight.map((streamer) => streamer.name).filter(Boolean).join(", ") || "The featured creators"} closed the GCX weekly creator spotlight.`,
       360
     ),
     createdAt: now,
@@ -4339,6 +4420,7 @@ function buildCommunityGrowthData(data) {
       campaignUrl: streamer.campaignUrl || `streamers.html?creator=${streamer.id}`,
     }));
   const streamerSlots = buildStreamerSlots(data);
+  const creatorSpotlight = buildCreatorSpotlight(data);
   const spotlightHistory = buildSpotlightHistory(data);
 
   return {
@@ -4396,6 +4478,7 @@ function buildCommunityGrowthData(data) {
       .sort((a, b) => b.postCount - a.postCount || b.memberCount - a.memberCount),
     streamerLeaderboard,
     streamerSlots,
+    creatorSpotlight,
     spotlightHistory,
     referralLeaderboard: buildReferralLeaderboard(data),
     moderation: {
@@ -4492,8 +4575,8 @@ function buildCommunityGrowthData(data) {
     ],
     nextActions: [
       {
-        title: "Push one weekly streamer race",
-        body: "Use the top two streamer cards as the recurring reason creators send viewers back to GCX.",
+        title: "Push the weekly creator spotlight",
+        body: "Use the three creator spotlight cards as the recurring reason creators send viewers back to GCX.",
         url: "streamers.html",
       },
       {
@@ -7424,6 +7507,7 @@ async function handleCommunityApi(req, res, url) {
       .map((streamer) => ({ ...streamer, campaignUrl: streamer.campaignUrl || `streamer.html?id=${streamer.id}` }))
       .sort((a, b) => Number(b.votes || 0) - Number(a.votes || 0));
     const slots = buildStreamerSlots(data);
+    const creatorSpotlight = buildCreatorSpotlight(data);
     const spotlightHistory = buildSpotlightHistory(data);
     sendJson(
       res,
@@ -7436,6 +7520,7 @@ async function handleCommunityApi(req, res, url) {
           .filter(isPublicStreamingSpotlightItem)
           .map(buildStreamingSpotlightPublicPayload),
         slots,
+        creatorSpotlight,
         spotlightHistory,
         totalCount: streamers.length,
       },
@@ -7454,7 +7539,7 @@ async function handleCommunityApi(req, res, url) {
         nextWeekLabel: body.nextWeekLabel,
         summary: body.summary,
       });
-      const winners = [result.historyItem.popularWinner, result.historyItem.risingWinner].filter(Boolean);
+      const winners = (result.historyItem.featuredCreators || [result.historyItem.popularWinner, result.historyItem.risingWinner]).filter(Boolean);
 
       addNotification(data, defaultCommunityProfileId(data), {
         type: "streamer_week_closed",
@@ -7480,6 +7565,7 @@ async function handleCommunityApi(req, res, url) {
         {
           data: result.historyItem,
           slots: result.slots,
+          creatorSpotlight: buildCreatorSpotlight(data),
           streamerCount: result.streamers.length,
           spotlightHistory: buildSpotlightHistory(data),
         },
@@ -7503,12 +7589,14 @@ async function handleCommunityApi(req, res, url) {
 
     const rank = streamers.findIndex((item) => item.id === streamer.id) + 1;
     const slots = buildStreamerSlots(data);
+    const creatorSpotlight = buildCreatorSpotlight(data);
     const spotlightHistory = buildSpotlightHistory(data);
-    const topTwo = streamers.slice(0, 2).map((item) => ({
+    const topSpotlight = creatorSpotlight.map((item) => ({
       id: item.id,
       name: item.name,
       weeklyVotes: Number(item.weeklyVotes || 0),
-      campaignUrl: item.campaignUrl || `streamer.html?id=${item.id}`,
+      campaignUrl: creatorCampaignUrl(item),
+      slotLabel: item.slotLabel || item.spotlight || item.tier,
     }));
     const relatedPosts = data.posts
       .filter(isPublicCommunityPost)
@@ -7525,13 +7613,14 @@ async function handleCommunityApi(req, res, url) {
         data: {
           ...streamer,
           rank,
-          slotKey: slots.popular?.id === streamer.id ? "popular" : slots.rising?.id === streamer.id ? "rising" : "pool",
-          slotLabel: slots.popular?.id === streamer.id ? slots.popular.slotLabel : slots.rising?.id === streamer.id ? slots.rising.slotLabel : streamer.spotlight || "Voting Pool",
-          campaignUrl: streamer.campaignUrl || `streamer.html?id=${streamer.id}`,
+          slotKey: creatorSpotlight.find((item) => item.id === streamer.id)?.slotKey || "pool",
+          slotLabel: creatorSpotlight.find((item) => item.id === streamer.id)?.slotLabel || streamer.spotlight || "Voting Pool",
+          campaignUrl: creatorCampaignUrl(streamer),
           shareCopy: `Vote for ${streamer.name} in the GCX streamer spotlight and help bring more gaming and collecting fans into the community.`,
         },
         campaign: data.campaign,
         slots,
+        creatorSpotlight,
         spotlightHistory,
         traffic: streamerTraffic,
         shareTemplates: [
@@ -7551,7 +7640,8 @@ async function handleCommunityApi(req, res, url) {
             copy: `${streamer.name}'s GCX campaign connects streamer votes with game libraries, card collecting, community posts, and future marketplace-beta traffic.`,
           },
         ],
-        topTwo,
+        topTwo: topSpotlight,
+        topSpotlight,
         relatedPosts,
       },
       { "X-GCX-Data-Source": "local" }

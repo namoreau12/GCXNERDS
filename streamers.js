@@ -15,6 +15,7 @@ const viewedSpotlightStorageKey = "gcx-streaming-spotlight-viewed-v1";
 let streamers = [];
 let campaign = {};
 let slots = {};
+let creatorSpotlight = [];
 let history = [];
 let streamingSpotlight = [];
 
@@ -69,7 +70,7 @@ function shareToFeedUrl(streamer) {
   const url = new URL("community.html", window.location.href);
   url.searchParams.set("shareUrl", referralCampaignUrl(streamer).toString());
   url.searchParams.set("title", `Vote for ${streamer.name}`);
-  url.searchParams.set("body", `${streamer.name} is in the GCX streamer spotlight race. Vote, share, and bring more fans into the games/cards community.`);
+  url.searchParams.set("body", `${streamer.name} is in the GCX creator spotlight. Vote, share, and bring more fans into the games/cards community.`);
   url.searchParams.set("category", "Streaming");
   return `${url.pathname.replace(/^\//, "")}${url.search}`;
 }
@@ -251,29 +252,30 @@ function renderStreamingSpotlight() {
 
 function renderStreamers() {
   const voted = new Set(readVotes());
-  const slotPair = [slots.popular, slots.rising].filter(Boolean);
+  const selectedSpotlight = (creatorSpotlight.length ? creatorSpotlight : slots.selected || [slots.popular, slots.rising, slots.third]).filter(Boolean).slice(0, 3);
 
   if (campaignStrip) {
+    const names = selectedSpotlight.map((streamer) => streamer.name).join(" + ");
     campaignStrip.innerHTML = `
       <div>
         <strong>${escapeHtml(campaign.weekLabel || "Current voting week")}</strong>
-        <span>${escapeHtml(campaign.popularSlot || "Popular Streamer")} + ${escapeHtml(campaign.risingSlot || "Rising Creator")}</span>
+        <span>${escapeHtml(campaign.spotlightTheme || "Three creator spotlight")}</span>
       </div>
       <div>
-        <strong>${escapeHtml(slotPair.map((streamer) => streamer.name).join(" vs ") || "Voting open")}</strong>
+        <strong>${escapeHtml(names || "Spotlight selection open")}</strong>
         <span>${escapeHtml(campaign.sponsorPackage || "Sponsor package ready for launch")}</span>
       </div>
     `;
   }
 
   if (spotlightSlots) {
-    spotlightSlots.innerHTML = slotPair.length
-      ? slotPair
+    spotlightSlots.innerHTML = selectedSpotlight.length
+      ? selectedSpotlight
           .map((streamer) => {
             const campaignUrlObject = referralCampaignUrl(streamer);
             const campaignPath = `${campaignUrlObject.pathname.replace(/^\//, "")}${campaignUrlObject.search}`;
             return `
-              <article class="spotlight-slot-card ${streamer.slotKey === "rising" ? "is-rising" : "is-popular"}">
+              <article class="spotlight-slot-card ${escapeHtml(streamer.slotKey || "")}">
                 <img src="${escapeHtml(streamer.imageUrl)}" alt="${escapeHtml(streamer.name)} weekly slot" loading="lazy" />
                 <div>
                   <span>${escapeHtml(streamer.slotLabel || streamer.spotlight || streamer.tier)}</span>
@@ -305,7 +307,7 @@ function renderStreamers() {
     spotlightHistory.innerHTML = history.length
       ? history
           .map((week) => {
-            const winners = [week.popularWinner, week.risingWinner].filter(Boolean);
+            const winners = (week.featuredCreators || [week.popularWinner, week.risingWinner]).filter(Boolean).slice(0, 3);
             return `
               <article class="spotlight-history-card">
                 <div>
@@ -337,13 +339,14 @@ function renderStreamers() {
     .map((streamer, index) => {
       const platforms = (streamer.platforms || []).map((platform) => `<span>${escapeHtml(platform)}</span>`).join("");
       const hasVoted = voted.has(streamer.id);
-      const rank = index === 0 ? "Top vote-getter" : index === 1 ? "Rising spotlight" : "Nominee";
+      const spotlightSlot = selectedSpotlight.find((item) => item.id === streamer.id);
+      const rank = spotlightSlot?.slotLabel || (index < 3 ? "Creator Spotlight" : "Nominee");
       const campaignUrlObject = referralCampaignUrl(streamer);
       const campaignUrl = campaignUrlObject.toString();
       const campaignPath = `${campaignUrlObject.pathname.replace(/^\//, "")}${campaignUrlObject.search}`;
 
       return `
-        <article class="streamer-card ${index < 2 ? "is-featured" : ""}">
+        <article class="streamer-card ${spotlightSlot || index < 3 ? "is-featured" : ""}">
           <img src="${escapeHtml(streamer.imageUrl)}" alt="${escapeHtml(streamer.name)} channel spotlight" loading="lazy" />
             <div class="streamer-card-copy">
               <div class="console-card-topline">
@@ -384,6 +387,7 @@ async function loadStreamers() {
     streamers = result.data || [];
     campaign = result.campaign || {};
     slots = result.slots || {};
+    creatorSpotlight = result.creatorSpotlight || (result.slots?.selected || []).filter(Boolean);
     history = result.spotlightHistory || [];
     streamingSpotlight = result.streamingSpotlight || [];
     renderStreamingSpotlight();
