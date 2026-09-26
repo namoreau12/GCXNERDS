@@ -5462,7 +5462,7 @@
       "targetId": "nova-circuit",
       "createdAt": "2026-08-22T22:51:56.002Z",
       "targetType": "streamer",
-      "campaignUrl": "http://localhost:3000/streamer.html?id=nova-circuit&ref=nova-circuit"
+      "campaignUrl": "https://gcxnerds.com/streamer.html?id=nova-circuit&ref=nova-circuit"
     },
     {
       "id": "traffic-1786918660417-campaign-share-feed",
@@ -5473,7 +5473,7 @@
       "targetId": "nova-circuit",
       "createdAt": "2026-08-16T22:17:40.417Z",
       "targetType": "streamer",
-      "campaignUrl": "http://localhost:3018/streamer.html?id=nova-circuit&ref=home-nova-circuit"
+      "campaignUrl": "https://gcxnerds.com/streamer.html?id=nova-circuit&ref=home-nova-circuit"
     },
     {
       "id": "traffic-1786918546156-share-copy",
@@ -5484,7 +5484,7 @@
       "targetId": "nova-circuit",
       "createdAt": "2026-08-16T22:15:46.157Z",
       "targetType": "streamer",
-      "campaignUrl": "http://localhost:3018/streamer.html?id=nova-circuit&ref=creator-discord"
+      "campaignUrl": "https://gcxnerds.com/streamer.html?id=nova-circuit&ref=creator-discord"
     },
     {
       "id": "traffic-1786916296012-sponsor-page-view",

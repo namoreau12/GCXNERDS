@@ -18,6 +18,9 @@ function writeJson(filePath, value) {
 function normalizeRenderedSrc(value) {
   try {
     const url = new URL(value || "", base);
+    if (url.pathname === "/api/image-proxy" && url.searchParams.get("url")) {
+      return `image-proxy:${url.searchParams.get("url")}`;
+    }
     url.search = "";
     url.hash = "";
     return url.href;

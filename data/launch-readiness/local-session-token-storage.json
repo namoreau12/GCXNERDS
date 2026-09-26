@@ -1,9 +1,0 @@
-{
-  "generatedAt": "2026-09-23T23:51:06.381Z",
-  "base": "http://localhost:3060",
-  "ok": true,
-  "source": "local",
-  "rawTokenPersisted": false,
-  "tokenHashStored": true,
-  "restoredAfterAudit": true
-}

@@ -6,6 +6,7 @@ node_modules/
 *.log
 internal/
 data/launch-readiness/*.tmp
+data/launch-readiness/
 
 # Large local datasets are served from Supabase in production.
 data/games/
