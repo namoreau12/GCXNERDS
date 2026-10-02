@@ -5,7 +5,7 @@
   "description": "GCX gaming and trading-card publication with a lightweight Node backend.",
   "main": "server.js",
   "engines": {
-    "node": ">=20"
+    "node": "24.x"
   },
   "scripts": {
     "start": "node server.js",
