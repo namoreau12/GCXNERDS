@@ -2,6 +2,7 @@
 .cache/
 node_modules/
 *.zip
+outputs/
 data/launch-readiness/
 *.log
 *.pid
