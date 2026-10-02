@@ -6,7 +6,7 @@
     "api/index.js": {
       "runtime": "nodejs20.x",
       "maxDuration": 30,
-      "includeFiles": "{assets/**,data/community.json,data/consoles.json,data/games.json,data/newsroom.json,data/newsroom-os.json,data/pokemon/manifest.json,data/pokemon/sets.json,data/magic/manifest.json,data/magic/sets.json,data/yugioh/manifest.json,data/yugioh/sets.json,scripts/game-dataset-utils.js,*.html,*.js,*.css,*.ico,*.txt,*.xml}"
+      "includeFiles": "{assets/**,data/**,scripts/game-dataset-utils.js,*.html,*.js,*.css,*.ico,*.txt,*.xml}"
     }
   },
   "rewrites": [
