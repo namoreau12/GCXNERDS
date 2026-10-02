@@ -6,7 +6,7 @@
     "api/index.js": {
       "runtime": "nodejs20.x",
       "maxDuration": 30,
-      "includeFiles": "{assets/**,data/**,scripts/game-dataset-utils.js,*.html,*.js,*.css,*.ico,*.txt,*.xml}"
+      "includeFiles": "{assets/**,data/*.json,data/*/*.json,scripts/game-dataset-utils.js,*.html,*.js,*.css,*.ico,*.txt,*.xml}"
     }
   },
   "rewrites": [
