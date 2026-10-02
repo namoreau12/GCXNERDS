@@ -2,13 +2,6 @@
   "version": 2,
   "framework": null,
   "buildCommand": "npm run build",
-  "functions": {
-    "api/index.js": {
-      "runtime": "nodejs24.x",
-      "maxDuration": 30,
-      "includeFiles": "{assets/**,data/*.json,data/*/*.json,scripts/game-dataset-utils.js,*.html,*.js,*.css,*.ico,*.txt,*.xml}"
-    }
-  },
   "rewrites": [
     {
       "source": "/(.*)",
