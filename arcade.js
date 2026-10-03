@@ -269,7 +269,7 @@ function levelDifficulty(level) {
       tier: 0,
       targetCount: 32,
       obstacleCount: 0,
-      speed: Math.hypot(250, 360),
+      speed: Math.hypot(200, 300),
       paddleWidth: 144,
       paddleMaxSpeed: 760,
       bonusChance: 0.22,
@@ -548,9 +548,12 @@ function prepareLevel(level) {
   const config = levelDifficulty(level);
   const random = seededRandom(`${challenge?.seed || "gcx-rally"}:serve:${level}`);
   const serveAngle = (random() > 0.5 ? 1 : -1) * (0.42 + random() * 0.42);
+  const launchVx = level === 1 ? (random() > 0.5 ? 200 : -200) : Math.sin(serveAngle) * config.speed;
+  const launchVy = level === 1 ? -300 : -Math.cos(serveAngle) * config.speed;
   game.level = level;
   game.levelStartedAt = performance.now();
   game.levelClearUntil = 0;
+  game.waitingForServe = true;
   game.paddle.w = config.paddleWidth;
   game.paddle.maxSpeed = config.paddleMaxSpeed;
   game.paddle.x = canvas.width / 2 - game.paddle.w / 2;
@@ -559,10 +562,21 @@ function prepareLevel(level) {
   game.ball.x = canvas.width / 2;
   game.ball.y = canvas.height - 94;
   game.ball.r = clamp(10 - Math.floor(config.tier / 5), 8, 10);
-  game.ball.vx = level === 1 ? (random() > 0.5 ? 250 : -250) : Math.sin(serveAngle) * config.speed;
-  game.ball.vy = level === 1 ? -360 : -Math.cos(serveAngle) * config.speed;
+  game.ball.vx = 0;
+  game.ball.vy = 0;
+  game.ball.pendingVx = launchVx;
+  game.ball.pendingVy = launchVy;
   game.ball.speed = config.speed;
   game.targets = generateLevelObjects(challenge?.seed, level);
+}
+
+function launchLevel() {
+  if (!game?.running || game.ended || !game.waitingForServe) return;
+  game.waitingForServe = false;
+  game.levelStartedAt = performance.now();
+  game.ball.vx = game.ball.pendingVx || 0;
+  game.ball.vy = game.ball.pendingVy || -levelDifficulty(game.level).speed;
+  playTone(329.63, 0.1, { type: "triangle", gain: 0.04 });
 }
 
 function resetGame() {
@@ -579,6 +593,7 @@ function resetGame() {
     highestLevel: 1,
     levelStartedAt: performance.now(),
     levelClearUntil: 0,
+    waitingForServe: true,
     rally: 0,
     paddle: {
       x: canvas.width / 2 - 72,
@@ -595,7 +610,9 @@ function resetGame() {
       y: canvas.height - 92,
       r: 10,
       vx: 0,
-      vy: -360,
+      vy: 0,
+      pendingVx: 0,
+      pendingVy: -300,
       speed: 365,
     },
     targets: [],
@@ -673,6 +690,17 @@ function draw() {
     ctx.font = "900 34px Inter, sans-serif";
     ctx.textAlign = "center";
     ctx.fillText(`Level ${game.level}`, canvas.width / 2, canvas.height / 2);
+    ctx.restore();
+  }
+  if (game.waitingForServe && game.running && !game.ended) {
+    ctx.save();
+    ctx.fillStyle = "rgba(255,255,255,0.94)";
+    ctx.font = "900 28px Inter, sans-serif";
+    ctx.textAlign = "center";
+    ctx.fillText(`Level ${game.level} Ready`, canvas.width / 2, canvas.height / 2 - 10);
+    ctx.font = "800 16px Inter, sans-serif";
+    ctx.fillStyle = "rgba(255,255,255,0.72)";
+    ctx.fillText("Press Space or click to launch", canvas.width / 2, canvas.height / 2 + 22);
     ctx.restore();
   }
 }
@@ -757,6 +785,12 @@ function update(dt) {
   }
   paddle.x = Math.max(18, Math.min(canvas.width - paddle.w - 18, paddle.x));
   if (paddle.x <= 18 || paddle.x >= canvas.width - paddle.w - 18) paddle.vx = 0;
+
+  if (game.waitingForServe) {
+    ball.x = paddle.x + paddle.w / 2;
+    ball.y = paddle.y - ball.r - 8;
+    return;
+  }
 
   ball.x += ball.vx * dt;
   ball.y += ball.vy * dt;
@@ -867,6 +901,7 @@ function bindControls() {
       target instanceof HTMLSelectElement ||
       target?.isContentEditable;
     if (isTyping) return;
+    if (event.key === " " || event.code === "Space") launchLevel();
     if (["ArrowLeft", "ArrowRight", "a", "A", "d", "D"].includes(event.key)) inputMode = "keyboard";
     keys.add(event.key);
     if (["ArrowLeft", "ArrowRight", "a", "A", "d", "D", " "].includes(event.key)) event.preventDefault();
@@ -891,6 +926,7 @@ function bindControls() {
     const rect = canvas.getBoundingClientRect();
     inputMode = "pointer";
     pointerX = ((event.clientX - rect.left) / rect.width) * canvas.width;
+    launchLevel();
     canvas.setPointerCapture?.(event.pointerId);
   });
 }
