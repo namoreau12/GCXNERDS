@@ -81,13 +81,39 @@ function storyPreviewText(story) {
   return "Open the full GCX story for the latest confirmed details, context, and source links.";
 }
 
+function resultTypeLabel(type) {
+  const labels = {
+    community: "Community",
+    creator: "Creator",
+    destination: "Hub",
+    game: "Game record",
+    news: "News",
+  };
+  return labels[String(type || "").toLowerCase()] || "Result";
+}
+
+function emptyResultsMessage(query) {
+  return `
+    <div class="index-message search-empty-state">
+      <strong>No Games Exchange results matched "${escapeHtml(query)}".</strong>
+      <span>Try Pokemon, Final Fantasy, streamers, community, Magic, or another game title.</span>
+    </div>
+  `;
+}
+
 function resultCard(result) {
+  const href = result.url || result.articleUrl || "search.html";
+  const type = resultTypeLabel(result.type);
+  const category = result.category && result.category !== type ? result.category : "";
   return `
     <article class="search-result-card">
-      <span>${escapeHtml(result.category || "Games Exchange")}</span>
-      <h3><a href="${escapeHtml(result.url || result.articleUrl)}">${escapeHtml(result.title)}</a></h3>
+      <div class="search-result-meta">
+        <span>${escapeHtml(type)}</span>
+        ${category ? `<span>${escapeHtml(category)}</span>` : ""}
+      </div>
+      <h3><a href="${escapeHtml(href)}">${escapeHtml(result.title)}</a></h3>
       <p>${escapeHtml(cleanPreviewText(result.excerpt || ""))}</p>
-      <a class="feed-link" href="${escapeHtml(result.url || result.articleUrl)}">Open result</a>
+      <a class="feed-link" href="${escapeHtml(href)}">Open result</a>
     </article>
   `;
 }
@@ -109,11 +135,13 @@ async function runSearch(query) {
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || "Search could not load.");
     const matches = result.data || [];
+    const countLabel = matches.length === 1 ? "1 result" : `${matches.length} results`;
+    searchHeading.textContent = `${countLabel} for "${query}"`;
     searchResults.innerHTML = matches.length
       ? matches.map(resultCard).join("")
-      : `<div class="index-message">No Games Exchange results matched "${escapeHtml(query)}". Try Pokemon, Switch, GTA, cards, games, or streamers.</div>`;
+      : emptyResultsMessage(query);
   } catch (error) {
-    searchResults.innerHTML = `<div class="index-message">Search could not load. Make sure the local server is running.</div>`;
+    searchResults.innerHTML = `<div class="index-message">Search is temporarily unavailable. Try News, Community, Streamer Highlights, or the card and game databases from the main navigation.</div>`;
   }
 }
 

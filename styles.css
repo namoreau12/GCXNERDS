@@ -3236,6 +3236,34 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
   font: inherit;
 }
 
+.search-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.search-suggestions a {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0 12px;
+  background: white;
+  color: var(--ink);
+  font-weight: 850;
+}
+
+.search-suggestions a:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+
 .search-results-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3251,11 +3279,24 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
   border-radius: 8px;
 }
 
-.search-result-card span {
+.search-result-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.search-result-meta span {
+  display: inline-flex;
+  min-height: 24px;
+  align-items: center;
+  border: 1px solid rgba(217, 59, 53, 0.16);
+  border-radius: 999px;
+  padding: 0 8px;
+  background: rgba(217, 59, 53, 0.06);
   color: var(--red);
   font-size: 0.78rem;
   font-weight: 950;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
@@ -3272,6 +3313,15 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
 .search-result-card p {
   color: var(--muted);
   line-height: 1.55;
+}
+
+.search-empty-state {
+  align-items: start;
+  gap: 6px;
+}
+
+.search-empty-state span {
+  color: var(--muted);
 }
 
 .tcg-tools-strip {

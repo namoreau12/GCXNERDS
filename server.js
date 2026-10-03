@@ -1271,6 +1271,14 @@ function siteSearchNewsUrl(story) {
   return story.articleUrl || story.externalUrl || "news.html";
 }
 
+function siteSearchNewsType(story) {
+  const type = normalize(story?.type);
+  const sourceName = normalize(story?.sourceName);
+  if (type === "streamer" || sourceName === "gcx streamers") return "creator";
+  if (type === "social" || sourceName === "gcx community") return "community";
+  return "news";
+}
+
 async function buildSiteSearchResults(query, limit = 24) {
   const q = safeText(query, 120);
   if (!normalize(q)) return { query: q, data: [], totalCount: 0 };
@@ -1280,7 +1288,7 @@ async function buildSiteSearchResults(query, limit = 24) {
   const newsStories = await buildNewsStories();
   newsStories
     .map((story) => ({
-      type: "news",
+      type: siteSearchNewsType(story),
       category: story.category || "News",
       title: story.title,
       excerpt: storyPreviewText(story, 220),
