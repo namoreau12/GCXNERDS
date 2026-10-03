@@ -25,6 +25,9 @@ function socialDuplicateKey(post = {}) {
   if (post.resharedPostId) {
     return slugify(["reshare", post.resharedPostId, post.profileId || post.author || post.id].filter(Boolean).join(":")).slice(0, 180);
   }
+  if (post.isSeedContent && post.seedBatchId && post.id) {
+    return slugify(["seed", post.seedBatchId, post.id].join(":")).slice(0, 180);
+  }
   const canonicalUrl = safeUrl(post.canonicalUrl || post.linkUrl || post.sourceUrl || post.originalUrl || "");
   const sourceUrl = safeUrl(post.sourceUrl || post.originalUrl || "");
   const externalPostId = safeText(post.externalPostId || post.externalContentId || "", 160);

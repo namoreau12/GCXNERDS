@@ -58,7 +58,7 @@ function main() {
       return { id: item.id, title: item.title, issues: validateStreamingItem(normalized) };
     })
     .filter((item) => item.issues.length);
-  const sourceOptionalTypes = new Set(["community_prompt", "fun_stat", "community_post"]);
+  const sourceOptionalTypes = new Set(["community_prompt", "fun_stat", "community_post", "photo_post"]);
   const unsourcedFactualPostIssues = publishedPosts
     .filter((post) => !post.sourceName && !post.sourceUrl && !post.linkUrl && !sourceOptionalTypes.has(post.postType || ""))
     .map((post) => ({ id: post.id, title: post.title, postType: post.postType || "community_post" }));
