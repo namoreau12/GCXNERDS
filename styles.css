@@ -1331,7 +1331,7 @@ main {
 .hero-story[data-media-type="graphic"] .hero-copy h1 {
   max-width: 760px;
   font-size: clamp(1.75rem, 3vw, 3rem);
-  line-height: 1.02;
+  line-height: 1.12;
 }
 
 .hero-story[data-media-type="graphic"] .hero-copy p:not(.kicker) {
@@ -9830,7 +9830,7 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
 
   .console-detail-copy h1 {
     font-size: clamp(2rem, 10vw, 3.2rem);
-    line-height: 1;
+    line-height: 1.12;
   }
 
   .creator-application-panel {
@@ -9996,7 +9996,7 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
 
   .pokemon-guide-feature .feature-hero-copy h1 {
     font-size: clamp(1.8rem, 5.6vw, 2.6rem);
-    line-height: 1.02;
+    line-height: 1.12;
   }
 
   .pokemon-guide-feature .article-dek {
@@ -10450,7 +10450,7 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
 
   .pokemon-guide-feature .feature-hero-copy h1 {
     font-size: clamp(1.38rem, 5.8vw, 1.86rem);
-    line-height: 1.04;
+    line-height: 1.12;
   }
 
   .pokemon-guide-feature .feature-hero-copy .meta {
