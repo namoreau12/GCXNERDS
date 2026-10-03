@@ -445,15 +445,18 @@ function buildPublicHealthStatus() {
   const blockers = Array.isArray(launchReport?.blockers) ? launchReport.blockers : [];
   const warnings = Array.isArray(launchReport?.warnings) ? launchReport.warnings : [];
   const currentLaunchChecksOk = process.env.GCX_CURRENT_LAUNCH_CHECKS_OK === "true";
-  const currentRunSelfChecks = new Set(["launch-checks", "server-health-contract"]);
-  const effectiveBlockers = currentLaunchChecksOk
-    ? blockers.filter((blocker) => !currentRunSelfChecks.has(blocker?.id || ""))
-    : blockers;
-  const effectiveStatus = currentLaunchChecksOk && status === "blocked" && effectiveBlockers.length === 0 ? "ready-with-warnings" : status;
+  const effectiveBlockers = blockers.filter((blocker) => {
+    const id = blocker?.id || "";
+    if (id === "server-health-contract") return false;
+    if (id === "launch-checks" && currentLaunchChecksOk) return false;
+    return true;
+  });
+  const onlySelfCheckBlockers = blockers.length > 0 && effectiveBlockers.length === 0;
+  const effectiveStatus = status === "blocked" && onlySelfCheckBlockers ? "ready-with-warnings" : status;
   const staleFiles = Array.isArray(dataFreshness?.stale) ? dataFreshness.stale : [];
   const runtimeOk = runtimeLinks ? Boolean(runtimeLinks.ok) : null;
   const dataFreshnessOk = dataFreshness ? Boolean(dataFreshness.ok && staleFiles.length === 0) : null;
-  const launchReady = Boolean((launchReport?.launchReady || currentLaunchChecksOk) && effectiveBlockers.length === 0);
+  const launchReady = Boolean((launchReport?.launchReady || onlySelfCheckBlockers) && effectiveBlockers.length === 0);
 
   return {
     ok: launchReady && dataFreshnessOk !== false && runtimeOk !== false,
