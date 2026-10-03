@@ -526,6 +526,32 @@ function drawPowerUp(item) {
   ctx.restore();
 }
 
+function drawMiniRocket(rocket) {
+  ctx.save();
+  ctx.translate(rocket.x, rocket.y);
+  ctx.rotate(rocket.angle + Math.PI / 2);
+  ctx.shadowColor = "rgba(249, 115, 22, 0.72)";
+  ctx.shadowBlur = 14;
+  ctx.fillStyle = "#f97316";
+  roundedRectPath(ctx, -4, -11, 8, 18, 4);
+  ctx.fill();
+  ctx.fillStyle = "#fff7ed";
+  ctx.beginPath();
+  ctx.moveTo(0, -17);
+  ctx.lineTo(6, -8);
+  ctx.lineTo(-6, -8);
+  ctx.closePath();
+  ctx.fill();
+  ctx.fillStyle = "rgba(250, 204, 21, 0.82)";
+  ctx.beginPath();
+  ctx.moveTo(0, 13);
+  ctx.lineTo(4, 23);
+  ctx.lineTo(-4, 23);
+  ctx.closePath();
+  ctx.fill();
+  ctx.restore();
+}
+
 function destroyTarget(target, multiplier = 1) {
   if (!target || !target.alive || target.kind === "obstacle") return 0;
   target.alive = false;
@@ -578,12 +604,60 @@ function nearestBreakableTarget(x, y) {
     .sort((a, b) => a.distance - b.distance)[0];
 }
 
+function rocketImpact(x, y) {
+  const nearest = nearestBreakableTarget(x, y);
+  if (!nearest) return;
+  const destroyedTargets = game.targets
+    .filter((target) => target.alive && target.kind !== "obstacle")
+    .map((target) => {
+      const centerX = target.x + target.w / 2;
+      const centerY = target.y + target.h / 2;
+      return {
+        target,
+        distance: Math.hypot(centerX - nearest.centerX, centerY - nearest.centerY),
+      };
+    })
+    .sort((a, b) => a.distance - b.distance)
+    .slice(0, 3);
+  destroyedTargets.forEach(({ target }) => destroyTarget(target, 0.9));
+  if (destroyedTargets.length) {
+    game.rally += destroyedTargets.length;
+    playTone(220 + destroyedTargets.length * 44, 0.16, { type: "triangle", gain: 0.075, slideTo: 520 });
+  }
+}
+
+function spawnRocketSwarm(x, y) {
+  const targets = game.targets.filter((target) => target.alive && target.kind !== "obstacle");
+  if (!targets.length) return;
+  const sortedTargets = targets
+    .map((target) => ({
+      target,
+      centerX: target.x + target.w / 2,
+      centerY: target.y + target.h / 2,
+      distance: Math.hypot(target.x + target.w / 2 - x, target.y + target.h / 2 - y),
+    }))
+    .sort((a, b) => a.distance - b.distance);
+  const destinations = [sortedTargets[0], sortedTargets[Math.min(sortedTargets.length - 1, Math.max(1, Math.floor(sortedTargets.length * 0.38)))]];
+  game.rockets.push(
+    ...destinations.map((destination, index) => ({
+      x,
+      y,
+      startX: x,
+      startY: y,
+      targetX: destination.centerX,
+      targetY: destination.centerY,
+      age: 0,
+      duration: 0.72 + index * 0.12,
+      phase: index * Math.PI,
+      angle: -Math.PI / 2,
+    }))
+  );
+  playTone(392, 0.1, { type: "sawtooth", gain: 0.055, slideTo: 587.33 });
+}
+
 function activatePowerUp(type, x = game.paddle.x + game.paddle.w / 2, y = game.paddle.y) {
   if (type === "rocket") {
-    const nearest = nearestBreakableTarget(x, y);
-    if (nearest) {
-      explodeAt(nearest.centerX, nearest.centerY, 112);
-    }
+    spawnRocketSwarm(x, y);
   } else if (type === "laser") {
     game.laserUntil = performance.now() + 5000;
     playTone(783.99, 0.12, { type: "sine", gain: 0.07 });
@@ -598,6 +672,26 @@ function activatePowerUp(type, x = game.paddle.x + game.paddle.w / 2, y = game.p
     game.rally += destroyed;
     playTone(110, 0.32, { type: "sawtooth", gain: 0.095, slideTo: 55 });
   }
+}
+
+function updateRockets(dt) {
+  if (!game.rockets?.length) return;
+  game.rockets = game.rockets.filter((rocket) => {
+    rocket.age += dt;
+    const progress = clamp(rocket.age / rocket.duration, 0, 1);
+    const ease = 1 - Math.pow(1 - progress, 2);
+    const swirl = Math.sin(progress * Math.PI * 4 + rocket.phase) * 28 * (1 - progress);
+    const nextX = rocket.startX + (rocket.targetX - rocket.startX) * ease + swirl;
+    const nextY = rocket.startY + (rocket.targetY - rocket.startY) * ease - Math.sin(progress * Math.PI) * 82;
+    rocket.angle = Math.atan2(nextY - rocket.y, nextX - rocket.x);
+    rocket.x = nextX;
+    rocket.y = nextY;
+    if (progress >= 1) {
+      rocketImpact(rocket.targetX, rocket.targetY);
+      return false;
+    }
+    return true;
+  });
 }
 
 function updatePowerUps(dt) {
@@ -735,6 +829,7 @@ function prepareLevel(level) {
   game.ball.speed = config.speed;
   game.targets = generateLevelObjects(challenge?.seed, level);
   game.powerUps = [];
+  game.rockets = [];
   game.laserUntil = 0;
   game.laserTimer = 0;
 }
@@ -764,6 +859,7 @@ function resetGame() {
     levelClearUntil: 0,
     waitingForServe: true,
     powerUps: [],
+    rockets: [],
     laserUntil: 0,
     laserTimer: 0,
     rally: 0,
@@ -847,6 +943,7 @@ function draw() {
     drawTargetTile(target);
   });
   game.powerUps?.forEach(drawPowerUp);
+  game.rockets?.forEach(drawMiniRocket);
 
   drawPaddle();
   if (game.laserUntil && performance.now() < game.laserUntil) {
@@ -975,11 +1072,13 @@ function update(dt) {
     ball.x = paddle.x + paddle.w / 2;
     ball.y = paddle.y - ball.r - 8;
     updatePowerUps(dt);
+    updateRockets(dt);
     updateLasers(dt);
     return;
   }
 
   updatePowerUps(dt);
+  updateRockets(dt);
   updateLasers(dt);
 
   ball.x += ball.vx * dt;
