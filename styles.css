@@ -11164,3 +11164,95 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
     line-height: 1.4;
   }
 }
+
+/* Mobile overflow guardrails for editorial, social, streamer, and ops pages. */
+.news-page,
+.community-page,
+.news-page > .news-hero,
+.community-page > .community-hero,
+.community-page > .streamer-hero,
+.health-page,
+.health-page * {
+  box-sizing: border-box;
+}
+
+.news-page > .news-hero,
+.community-page > .community-hero,
+.community-page > .streamer-hero {
+  width: 100%;
+  max-width: 100%;
+}
+
+.news-page > .news-hero *,
+.community-page > .community-hero *,
+.community-page > .streamer-hero *,
+.community-layout *,
+.streamer-layout *,
+.streamer-rankings *,
+.health-page * {
+  min-width: 0;
+}
+
+.news-page > .news-hero h1,
+.community-page > .community-hero h1,
+.community-page > .streamer-hero h1,
+.news-page > .news-hero p,
+.community-page > .community-hero p,
+.community-page > .streamer-hero p,
+.streamer-rankings a,
+.leaderboard-row,
+.leaderboard-row *,
+.leaderboard-votes,
+.launch-gate-card,
+.launch-gate-card *,
+.launch-next-actions,
+.launch-next-actions *,
+.health-readiness-card,
+.health-readiness-card *,
+.health-link-list,
+.health-link-list *,
+.health-command-list code {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.community-layout,
+.streamer-layout,
+.community-layout > *,
+.streamer-layout > * {
+  max-width: 100%;
+}
+
+.leaderboard-votes {
+  min-width: 0;
+}
+
+.launch-gate-card p,
+.launch-next-actions li,
+.health-readiness-card p,
+.health-link-list a {
+  white-space: normal;
+}
+
+@media (max-width: 640px) {
+  .news-page > .news-hero,
+  .community-page > .community-hero,
+  .community-page > .streamer-hero {
+    padding-inline: 18px;
+  }
+
+  .news-page > .news-hero h1,
+  .community-page > .community-hero h1,
+  .community-page > .streamer-hero h1 {
+    max-width: 100%;
+    font-size: clamp(1.3rem, 5vw, 1.58rem);
+    line-height: 1.42;
+  }
+
+  .health-readiness-card,
+  .launch-gate-card,
+  .launch-next-actions {
+    padding: 14px;
+  }
+}
