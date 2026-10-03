@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "build": "node scripts/build-vercel-output.js && node scripts/verify-production-build.js",
+    "build": "node scripts/build-sitemap.js && node scripts/build-vercel-output.js && node scripts/verify-production-build.js",
     "check": "node --check server.js && node --check script.js && node --check news.js && node --check article.js && node --check scripts/audit-game-search-index-quality.js && node --check scripts/cleanup-game-search-index-quality.js && node scripts/audit-pricecharting-candidate-guardrails.js",
     "audit:media": "node scripts/audit-newsroom-media.js && node scripts/audit-newsroom-image-uniqueness.js && node scripts/audit-article-visual-quality.js && node scripts/build-newsroom-editorial-readthrough.js && node scripts/build-newsroom-official-media-queue.js && node scripts/audit-newsroom-promotion-readiness.js",
     "audit:visual": "node scripts/audit-display-heading-typography.js && node scripts/audit-homepage-lead-visual-safety.js && node scripts/audit-prominent-news-official-media.js && node scripts/audit-image-text-layout-system.js && node scripts/audit-editorial-svg-text-fit.js && node scripts/audit-game-image-fallback-ui.js",

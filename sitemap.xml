@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gcxnerds.com/</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/3ds.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/about.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -66,6 +66,11 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://gcxnerds.com/article.html?id=gcx-newsroom-gears-of-war-e-day-early-access-live</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://gcxnerds.com/article.html?id=gcx-newsroom-gears-of-war-e-day-gamescom-hands-on</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -78,6 +83,11 @@
   <url>
     <loc>https://gcxnerds.com/article.html?id=gcx-newsroom-horizon-hunters-gathering-rework</loc>
     <lastmod>2026-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://gcxnerds.com/article.html?id=gcx-newsroom-magic-the-gathering-reality-fracture-launch</loc>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -103,6 +113,11 @@
   <url>
     <loc>https://gcxnerds.com/article.html?id=gcx-newsroom-phantom-blade-zero-beyond-combat</loc>
     <lastmod>2026-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://gcxnerds.com/article.html?id=gcx-newsroom-pokemon-30th-celebration-booster-bundles-mini-tins-october-2</loc>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -136,6 +151,11 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://gcxnerds.com/article.html?id=gcx-newsroom-ps5-qssr-ai-upscaling-explained</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://gcxnerds.com/article.html?id=gcx-newsroom-silent-hill-townfall-launch-first-person-horror</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -157,207 +177,207 @@
   </url>
   <url>
     <loc>https://gcxnerds.com/community-activity.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/community-events.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/community-groups.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/community-members.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/community.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/consoles.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/contact.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/dreamcast.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/ds.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/gameboy.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/gamecube.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/games.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/gba.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/genesis.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/magic.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/marketplace-rules.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/n64.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/nes.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/news.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/pokemon.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/privacy.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/ps1.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/ps2.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/ps3.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/ps4.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/ps5.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/psp.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/saturn.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/search.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/snes.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/sponsors.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/streamers.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/switch.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/switch2.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/terms.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/trust.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/vita.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/wii.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/xbox.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/xbox360.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://gcxnerds.com/yugioh.html</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

@@ -71,6 +71,14 @@ function publicUrl(page) {
   return `${siteUrl}${page === "index.html" ? "/" : `/${page}`}`;
 }
 
+function fileLastmod(page, fallback) {
+  try {
+    return dateOnly(fs.statSync(path.join(rootDir, page)).mtime, fallback);
+  } catch {
+    return fallback;
+  }
+}
+
 function readNewsroomStories() {
   const newsroomPath = path.join(rootDir, "data", "newsroom.json");
   if (!fs.existsSync(newsroomPath)) return [];
@@ -84,7 +92,7 @@ function buildUrls() {
     .filter((page) => fs.existsSync(path.join(rootDir, page)))
     .map((page) => ({
       loc: publicUrl(page),
-      lastmod: today,
+      lastmod: fileLastmod(page, today),
       changefreq: page === "index.html" || page === "news.html" ? "daily" : "weekly",
     }));
 
