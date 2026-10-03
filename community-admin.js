@@ -465,6 +465,10 @@ function renderCreatorSpotlightEditor(data) {
           <input name="slotLabel" type="text" maxlength="80" value="${escapeHtml(slot.slotLabel || slot.spotlight || `Creator Highlight ${index + 1}`)}" />
         </label>
         <label>
+          Twitch username
+          <input name="twitchLogin" type="text" maxlength="80" value="${escapeHtml(slot.twitchLogin || streamers.find((streamer) => streamer.id === selectedId)?.twitchLogin || "")}" placeholder="cohhcarnage" />
+        </label>
+        <label>
           Card description
           <textarea name="slotDescription" rows="3" maxlength="260">${escapeHtml(slot.slotDescription || slot.pitch || slot.specialty || "")}</textarea>
         </label>
@@ -769,6 +773,7 @@ creatorSpotlightForm?.addEventListener("submit", async (event) => {
     streamerId: row.querySelector('[name="streamerId"]')?.value || "",
     slotKey: row.querySelector('[name="slotKey"]')?.value || `spotlight-${index + 1}`,
     slotLabel: row.querySelector('[name="slotLabel"]')?.value || `Creator Highlight ${index + 1}`,
+    twitchLogin: row.querySelector('[name="twitchLogin"]')?.value || "",
     slotDescription: row.querySelector('[name="slotDescription"]')?.value || "",
   }));
 

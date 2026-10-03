@@ -2,6 +2,7 @@ const streamerGrid = document.querySelector("#streamer-grid");
 const campaignStrip = document.querySelector("#campaign-strip");
 const spotlightSlots = document.querySelector("#spotlight-slots");
 const spotlightHistory = document.querySelector("#spotlight-history");
+const creatorLiveStage = document.querySelector("#creator-live-stage");
 const featuredStream = document.querySelector("#featured-stream");
 const streamingLiveNow = document.querySelector("#streaming-live-now");
 const streamingUpcoming = document.querySelector("#streaming-upcoming");
@@ -18,6 +19,7 @@ let slots = {};
 let creatorSpotlight = [];
 let history = [];
 let streamingSpotlight = [];
+let activeLiveStreamerId = "";
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -114,6 +116,57 @@ function twitchChannelFromUrl(url) {
   } catch {
     return "";
   }
+}
+
+function twitchLoginForStreamer(streamer) {
+  return String(streamer.twitchLogin || twitchChannelFromUrl(streamer.linkUrl || "") || "").replace(/^@+/, "").toLowerCase();
+}
+
+function twitchParentHost() {
+  return window.location.hostname || "localhost";
+}
+
+function twitchPlayerUrl(streamer, autoplay = false) {
+  const channel = twitchLoginForStreamer(streamer);
+  if (!channel) return "";
+  const url = new URL("https://player.twitch.tv/");
+  url.searchParams.set("channel", channel);
+  url.searchParams.set("parent", twitchParentHost());
+  url.searchParams.set("muted", "true");
+  url.searchParams.set("autoplay", autoplay ? "true" : "false");
+  return url.toString();
+}
+
+function twitchChatUrl(streamer) {
+  const channel = twitchLoginForStreamer(streamer);
+  if (!channel) return "";
+  const url = new URL(`https://www.twitch.tv/embed/${encodeURIComponent(channel)}/chat`);
+  url.searchParams.set("parent", twitchParentHost());
+  url.searchParams.set("darkpopout", "");
+  return url.toString();
+}
+
+function streamerLiveStatus(streamer) {
+  return streamer.liveStatus || {};
+}
+
+function streamerPreviewImage(streamer) {
+  const live = streamerLiveStatus(streamer);
+  return live.thumbnailUrl || streamer.livePreviewUrl || streamer.imageUrl || "";
+}
+
+function liveMetaLine(streamer) {
+  const live = streamerLiveStatus(streamer);
+  if (live.isLive) {
+    return [
+      live.gameName || "Live now",
+      live.viewerCount ? `${Number(live.viewerCount).toLocaleString()} watching` : "",
+    ]
+      .filter(Boolean)
+      .join(" - ");
+  }
+  if (twitchLoginForStreamer(streamer)) return "Twitch channel ready";
+  return "Channel link needed";
 }
 
 function streamEmbedUrl(item) {
@@ -250,9 +303,96 @@ function renderStreamingSpotlight() {
   trackVisibleStreamingSpotlightViews();
 }
 
+function renderCreatorLiveStage(selectedSpotlight = []) {
+  if (!creatorLiveStage) return;
+  const stageCandidates = selectedSpotlight.filter((streamer) => streamer.liveStageEnabled !== false && twitchLoginForStreamer(streamer));
+  const liveCandidate = stageCandidates.find((streamer) => streamerLiveStatus(streamer).isLive);
+  const activeStreamer = stageCandidates.find((streamer) => streamer.id === activeLiveStreamerId) || liveCandidate || stageCandidates[0];
+
+  if (!activeStreamer) {
+    creatorLiveStage.innerHTML = `
+      <div class="index-message">
+        Add Twitch usernames to the featured creators to unlock the GCX Live Creator Stage.
+      </div>
+    `;
+    return;
+  }
+
+  activeLiveStreamerId = activeStreamer.id;
+  const live = streamerLiveStatus(activeStreamer);
+  const playerUrl = twitchPlayerUrl(activeStreamer, false);
+  const chatUrl = twitchChatUrl(activeStreamer);
+  const previewImage = streamerPreviewImage(activeStreamer);
+  const stageButtons = stageCandidates
+    .map((streamer) => {
+      const status = streamerLiveStatus(streamer);
+      return `
+        <button class="${streamer.id === activeStreamer.id ? "creator-stage-chip is-active" : "creator-stage-chip"}" type="button" data-live-stage="${escapeHtml(streamer.id)}">
+          <span class="${status.isLive ? "live-dot is-live" : "live-dot"}" aria-hidden="true"></span>
+          ${escapeHtml(streamer.name)}
+        </button>
+      `;
+    })
+    .join("");
+
+  creatorLiveStage.innerHTML = `
+    <article class="creator-stage-card">
+      <div class="creator-stage-player">
+        ${
+          playerUrl
+            ? `
+              <iframe
+                src="${escapeHtml(playerUrl)}"
+                title="${escapeHtml(`${activeStreamer.name} Twitch player`)}"
+                loading="lazy"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            `
+            : previewImage
+              ? `<img src="${escapeHtml(previewImage)}" alt="${escapeHtml(activeStreamer.name)} stream preview" loading="lazy" decoding="async" />`
+              : `<div class="stream-placeholder">Twitch</div>`
+        }
+      </div>
+      <div class="creator-stage-copy">
+        <span class="${live.isLive ? "stream-live-pill is-live" : "stream-live-pill"}">${live.isLive ? "LIVE NOW" : "CHANNEL READY"}</span>
+        <p class="kicker">${escapeHtml(activeStreamer.slotLabel || activeStreamer.spotlight || "GCX Creator")}</p>
+        <h3>${escapeHtml(activeStreamer.name)}</h3>
+        <p>${escapeHtml(live.title || activeStreamer.pitch || activeStreamer.specialty || "Open the Twitch channel inside GCX.")}</p>
+        <div class="creator-stage-meta">
+          <span>${escapeHtml(liveMetaLine(activeStreamer))}</span>
+          ${activeStreamer.twitchLogin ? `<span>@${escapeHtml(activeStreamer.twitchLogin)}</span>` : ""}
+        </div>
+        <div class="streamer-actions">
+          <a class="button" href="${escapeHtml(activeStreamer.linkUrl || "#")}" target="_blank" rel="noreferrer">Open Twitch</a>
+          <a class="button secondary" href="${escapeHtml(referralCampaignUrl(activeStreamer).pathname.replace(/^\//, "") + referralCampaignUrl(activeStreamer).search)}">Campaign page</a>
+        </div>
+        <div class="creator-stage-picker" aria-label="Choose a spotlight creator">
+          ${stageButtons}
+        </div>
+      </div>
+      ${
+        chatUrl
+          ? `
+            <aside class="creator-stage-chat" aria-label="${escapeHtml(activeStreamer.name)} Twitch chat">
+              <iframe
+                src="${escapeHtml(chatUrl)}"
+                title="${escapeHtml(`${activeStreamer.name} Twitch chat`)}"
+                loading="lazy"
+                sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-modals"
+              ></iframe>
+            </aside>
+          `
+          : ""
+      }
+    </article>
+  `;
+}
+
 function renderStreamers() {
   const voted = new Set(readVotes());
   const selectedSpotlight = (creatorSpotlight.length ? creatorSpotlight : slots.selected || [slots.popular, slots.rising, slots.third]).filter(Boolean).slice(0, 6);
+  renderCreatorLiveStage(selectedSpotlight);
 
   if (campaignStrip) {
     const names = selectedSpotlight.map((streamer) => streamer.name).join(" + ");
@@ -274,15 +414,22 @@ function renderStreamers() {
           .map((streamer) => {
             const campaignUrlObject = referralCampaignUrl(streamer);
             const campaignPath = `${campaignUrlObject.pathname.replace(/^\//, "")}${campaignUrlObject.search}`;
+            const live = streamerLiveStatus(streamer);
+            const previewImage = streamerPreviewImage(streamer);
             return `
-              <article class="spotlight-slot-card ${escapeHtml(streamer.slotKey || "")}">
-                <img src="${escapeHtml(streamer.imageUrl)}" alt="${escapeHtml(streamer.name)} weekly slot" loading="lazy" />
+              <article class="spotlight-slot-card ${escapeHtml(streamer.slotKey || "")} ${live.isLive ? "is-live" : ""}">
+                <div class="spotlight-media">
+                  <img src="${escapeHtml(previewImage)}" alt="${escapeHtml(streamer.name)} weekly slot" loading="lazy" />
+                  <span class="${live.isLive ? "creator-live-badge is-live" : "creator-live-badge"}">${live.isLive ? "LIVE" : "Twitch"}</span>
+                </div>
                 <div>
                   <span>${escapeHtml(streamer.slotLabel || streamer.spotlight || streamer.tier)}</span>
                   <h3>${escapeHtml(streamer.name)}</h3>
                   <p>${escapeHtml(streamer.slotDescription || streamer.pitch || streamer.specialty)}</p>
+                  <p class="creator-live-meta">${escapeHtml(live.title || liveMetaLine(streamer))}</p>
                   <strong>${Number(streamer.weeklyVotes || streamer.votes || 0).toLocaleString()} weekly votes</strong>
                   <div class="streamer-actions">
+                    <button class="button" type="button" data-live-stage="${escapeHtml(streamer.id)}">${live.isLive ? "Watch live" : "Preview channel"}</button>
                     <a class="button" href="${escapeHtml(campaignPath)}">Open campaign</a>
                     <a class="button secondary" href="${escapeHtml(shareToFeedUrl(streamer))}">Share to feed</a>
                   </div>
@@ -506,8 +653,16 @@ streamerGrid?.addEventListener("click", async (event) => {
 });
 
 document.addEventListener("click", (event) => {
+  const stageButton = event.target.closest("[data-live-stage]");
   const button = event.target.closest("[data-load-stream-embed]");
   const watchLink = event.target.closest("[data-stream-watch]");
+  if (stageButton) {
+    activeLiveStreamerId = stageButton.dataset.liveStage;
+    renderStreamers();
+    creatorLiveStage?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+    return;
+  }
+
   if (watchLink) {
     trackStreamingSpotlightEngagement(watchLink.dataset.streamWatch, "watch_click");
   }

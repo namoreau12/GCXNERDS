@@ -91,6 +91,17 @@ const noindexStaticPages = new Set([
   "xbox360-game.html",
 ]);
 
+let twitchTokenCache = {
+  token: "",
+  expiresAt: 0,
+};
+
+let twitchLiveCache = {
+  key: "",
+  expiresAt: 0,
+  data: new Map(),
+};
+
 function loadEnvFile() {
   if (!fs.existsSync(envPath)) return;
 
@@ -4181,6 +4192,137 @@ function creatorCampaignUrl(streamer) {
   return streamer?.campaignUrl || `streamer.html?id=${streamer?.id || ""}`;
 }
 
+function twitchLoginForStreamer(streamer) {
+  const explicit = safeText(streamer?.twitchLogin || "", 80).replace(/^@+/, "").toLowerCase();
+  if (explicit) return explicit;
+  try {
+    const parsed = new URL(streamer?.linkUrl || "");
+    if (!/(^|\.)twitch\.tv$/i.test(parsed.hostname)) return "";
+    return safeText(parsed.pathname.replace(/^\/+/, "").split("/")[0] || "", 80).toLowerCase();
+  } catch {
+    return "";
+  }
+}
+
+function twitchThumbnailUrl(value, width = 640, height = 360) {
+  return String(value || "").replace("{width}", String(width)).replace("{height}", String(height));
+}
+
+function twitchCredentialsConfigured() {
+  return Boolean(process.env.TWITCH_CLIENT_ID && process.env.TWITCH_CLIENT_SECRET);
+}
+
+async function twitchAppToken() {
+  if (!twitchCredentialsConfigured()) return "";
+  const now = Date.now();
+  if (twitchTokenCache.token && twitchTokenCache.expiresAt > now + 60 * 1000) {
+    return twitchTokenCache.token;
+  }
+
+  const body = new URLSearchParams({
+    client_id: process.env.TWITCH_CLIENT_ID,
+    client_secret: process.env.TWITCH_CLIENT_SECRET,
+    grant_type: "client_credentials",
+  });
+  const response = await fetch("https://id.twitch.tv/oauth2/token", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body,
+  });
+  if (!response.ok) throw new Error(`Twitch token request failed with ${response.status}`);
+  const result = await response.json();
+  twitchTokenCache = {
+    token: result.access_token || "",
+    expiresAt: now + Math.max(60, Number(result.expires_in || 0) - 60) * 1000,
+  };
+  return twitchTokenCache.token;
+}
+
+async function fetchTwitchLiveStatus(logins) {
+  const uniqueLogins = Array.from(new Set((logins || []).map((login) => safeText(login, 80).toLowerCase()).filter(Boolean))).slice(0, 100);
+  if (!uniqueLogins.length || !twitchCredentialsConfigured()) return new Map();
+
+  const cacheKey = uniqueLogins.slice().sort().join(",");
+  const now = Date.now();
+  if (twitchLiveCache.key === cacheKey && twitchLiveCache.expiresAt > now) {
+    return twitchLiveCache.data;
+  }
+
+  const token = await twitchAppToken();
+  if (!token) return new Map();
+
+  const url = new URL("https://api.twitch.tv/helix/streams");
+  uniqueLogins.forEach((login) => url.searchParams.append("user_login", login));
+  const response = await fetch(url, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Client-Id": process.env.TWITCH_CLIENT_ID,
+    },
+  });
+  if (!response.ok) throw new Error(`Twitch streams request failed with ${response.status}`);
+
+  const result = await response.json();
+  const liveMap = new Map();
+  (result.data || []).forEach((item) => {
+    const login = safeText(item.user_login || "", 80).toLowerCase();
+    if (!login) return;
+    liveMap.set(login, {
+      isLive: item.type === "live",
+      title: item.title || "",
+      gameName: item.game_name || "",
+      viewerCount: Number(item.viewer_count || 0),
+      startedAt: item.started_at || "",
+      thumbnailUrl: twitchThumbnailUrl(item.thumbnail_url, 640, 360),
+      checkedAt: new Date().toISOString(),
+      source: "twitch",
+    });
+  });
+
+  twitchLiveCache = {
+    key: cacheKey,
+    expiresAt: now + 60 * 1000,
+    data: liveMap,
+  };
+  return liveMap;
+}
+
+async function enrichStreamersWithTwitchStatus(streamers = []) {
+  const base = streamers.map((streamer) => {
+    const twitchLogin = twitchLoginForStreamer(streamer);
+    return {
+      ...streamer,
+      twitchLogin,
+      liveStageEnabled: streamer.liveStageEnabled !== false,
+    };
+  });
+
+  const logins = base.map((streamer) => streamer.twitchLogin).filter(Boolean);
+  let liveMap = new Map();
+  let error = "";
+  try {
+    liveMap = await fetchTwitchLiveStatus(logins);
+  } catch (twitchError) {
+    error = safeText(twitchError.message || "Twitch live status is unavailable.", 160);
+  }
+
+  return base.map((streamer) => {
+    const liveStatus = streamer.twitchLogin ? liveMap.get(streamer.twitchLogin) : null;
+    return {
+      ...streamer,
+      liveStatus: liveStatus || {
+        isLive: false,
+        title: "",
+        gameName: "",
+        viewerCount: 0,
+        thumbnailUrl: "",
+        checkedAt: liveMap.size ? new Date().toISOString() : "",
+        source: twitchCredentialsConfigured() ? "twitch" : "not_configured",
+        error,
+      },
+    };
+  });
+}
+
 function defaultCreatorSpotlightConfig() {
   return [
     {
@@ -7586,11 +7728,15 @@ async function handleCommunityApi(req, res, url) {
   }
 
   if (req.method === "GET" && route === "streamers") {
-    const streamers = [...data.streamers]
+    const enrichedData = {
+      ...data,
+      streamers: await enrichStreamersWithTwitchStatus(data.streamers || []),
+    };
+    const streamers = [...enrichedData.streamers]
       .map((streamer) => ({ ...streamer, campaignUrl: streamer.campaignUrl || `streamer.html?id=${streamer.id}` }))
       .sort((a, b) => Number(b.votes || 0) - Number(a.votes || 0));
-    const slots = buildStreamerSlots(data);
-    const creatorSpotlight = buildCreatorSpotlight(data);
+    const slots = buildStreamerSlots(enrichedData);
+    const creatorSpotlight = buildCreatorSpotlight(enrichedData);
     const spotlightHistory = buildSpotlightHistory(data);
     sendJson(
       res,
@@ -7606,6 +7752,11 @@ async function handleCommunityApi(req, res, url) {
         creatorSpotlight,
         spotlightHistory,
         totalCount: streamers.length,
+        liveStatus: {
+          provider: "twitch",
+          configured: twitchCredentialsConfigured(),
+          checkedAt: new Date().toISOString(),
+        },
       },
       { "X-GCX-Data-Source": "local" }
     );
@@ -7626,6 +7777,7 @@ async function handleCommunityApi(req, res, url) {
           streamerId: safeText(slot.streamerId, 80),
           slotKey: safeText(slot.slotKey || `spotlight-${index + 1}`, 60),
           slotLabel: safeText(slot.slotLabel || `Creator Highlight ${index + 1}`, 80),
+          twitchLogin: safeText(slot.twitchLogin || "", 80).replace(/^@+/, "").toLowerCase(),
           slotDescription: safeText(slot.slotDescription || "", 260),
         }))
         .filter((slot) => slot.streamerId);
@@ -7644,7 +7796,17 @@ async function handleCommunityApi(req, res, url) {
         usedIds.add(slot.streamerId);
       }
 
-      data.creatorSpotlight = slots;
+      data.streamers = (data.streamers || []).map((streamer) => {
+        const matchingSlot = slots.find((slot) => slot.streamerId === streamer.id);
+        return matchingSlot
+          ? {
+              ...streamer,
+              twitchLogin: matchingSlot.twitchLogin || twitchLoginForStreamer(streamer),
+              liveStageEnabled: true,
+            }
+          : streamer;
+      });
+      data.creatorSpotlight = slots.map(({ twitchLogin, ...slot }) => slot);
       saveCommunityData(data);
       sendJson(
         res,

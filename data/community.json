@@ -3120,7 +3120,10 @@
       "specialty": "Variety gaming, RPGs, community-first streaming",
       "spotlight": "Editorial Pick",
       "campaignUrl": "streamer.html?id=cohhcarnage",
-      "weeklyVotes": 0
+      "weeklyVotes": 0,
+      "twitchLogin": "cohhcarnage",
+      "livePreviewUrl": "",
+      "liveStageEnabled": true
     },
     {
       "id": "lirik",
@@ -3137,7 +3140,10 @@
       "specialty": "Variety gaming, new releases, community reactions",
       "spotlight": "Variety Pick",
       "campaignUrl": "streamer.html?id=lirik",
-      "weeklyVotes": 0
+      "weeklyVotes": 0,
+      "twitchLogin": "lirik",
+      "livePreviewUrl": "",
+      "liveStageEnabled": true
     },
     {
       "id": "shroud",
@@ -3154,7 +3160,10 @@
       "specialty": "FPS, competitive shooters, high-skill highlights",
       "spotlight": "FPS Pick",
       "campaignUrl": "streamer.html?id=shroud",
-      "weeklyVotes": 0
+      "weeklyVotes": 0,
+      "twitchLogin": "shroud",
+      "livePreviewUrl": "",
+      "liveStageEnabled": true
     },
     {
       "id": "itmejp",
@@ -3171,7 +3180,10 @@
       "specialty": "Gaming talk, tabletop energy, creator-led discussion",
       "spotlight": "Community Host",
       "campaignUrl": "streamer.html?id=itmejp",
-      "weeklyVotes": 0
+      "weeklyVotes": 0,
+      "twitchLogin": "itmejp",
+      "livePreviewUrl": "",
+      "liveStageEnabled": true
     },
     {
       "id": "gamesdonequick",
@@ -3188,7 +3200,10 @@
       "specialty": "Speedruns, charity events, community watch parties",
       "spotlight": "Speedrun Pick",
       "campaignUrl": "streamer.html?id=gamesdonequick",
-      "weeklyVotes": 0
+      "weeklyVotes": 0,
+      "twitchLogin": "gamesdonequick",
+      "livePreviewUrl": "",
+      "liveStageEnabled": true
     },
     {
       "id": "iitztimmy",
@@ -3205,7 +3220,10 @@
       "specialty": "Competitive shooters, ranked climbs, viral highlight potential",
       "spotlight": "Competitive Pick",
       "campaignUrl": "streamer.html?id=iitztimmy",
-      "weeklyVotes": 0
+      "weeklyVotes": 0,
+      "twitchLogin": "iitztimmy",
+      "livePreviewUrl": "",
+      "liveStageEnabled": true
     }
   ],
   "streamingSpotlight": [
