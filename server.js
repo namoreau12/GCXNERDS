@@ -1271,6 +1271,101 @@ function siteSearchNewsUrl(story) {
   return story.articleUrl || story.externalUrl || "news.html";
 }
 
+function cardSearchResultExcerpt(card = {}, franchise = "tcg") {
+  if (franchise === "pokemon") {
+    return [
+      card.set?.name || "Pokemon TCG",
+      card.number ? `#${card.number}` : "",
+      card.rarity,
+      card.supertype,
+      ...(Array.isArray(card.types) ? card.types : []),
+    ]
+      .filter(Boolean)
+      .join(" - ");
+  }
+
+  if (franchise === "magic") {
+    return [
+      card.setName || "Magic: The Gathering",
+      card.set ? String(card.set).toUpperCase() : "",
+      card.collectorNumber ? `#${card.collectorNumber}` : "",
+      card.rarity,
+      card.typeLine,
+    ]
+      .filter(Boolean)
+      .join(" - ");
+  }
+
+  return [
+    card.setName || "Yu-Gi-Oh!",
+    card.cardNumberDisplay || card.setCode,
+    card.rarity || card.setRarity,
+    card.type,
+    card.race,
+  ]
+    .filter(Boolean)
+    .join(" - ");
+}
+
+function buildCardSearchResults(query, limit) {
+  const results = [];
+  const pokemonData = loadLocalPokemonData();
+  if (pokemonData) {
+    pokemonData.cards
+      .filter((card) => pokemonItemMatchesQuery(card, query))
+      .sort((a, b) => scorePokemonCardMatch(b, query) - scorePokemonCardMatch(a, query) || a.name.localeCompare(b.name) || String(a.number).localeCompare(String(b.number), undefined, { numeric: true }))
+      .slice(0, limit)
+      .forEach((card) => {
+        results.push({
+          type: "card",
+          category: "Pokemon TCG",
+          title: card.name,
+          excerpt: cardSearchResultExcerpt(card, "pokemon"),
+          url: `card.html?id=${encodeURIComponent(card.id)}`,
+          score: scorePokemonCardMatch(card, query),
+        });
+      });
+  }
+
+  const magicData = loadLocalMagicData();
+  if (magicData) {
+    magicData.cards
+      .filter((card) => magicCardMatchesQuery(card, query))
+      .sort((a, b) => scoreMagicCardMatch(b, query) - scoreMagicCardMatch(a, query) || a.name.localeCompare(b.name) || String(a.collectorNumber).localeCompare(String(b.collectorNumber), undefined, { numeric: true }))
+      .slice(0, limit)
+      .forEach((card) => {
+        results.push({
+          type: "card",
+          category: "Magic",
+          title: card.name,
+          excerpt: cardSearchResultExcerpt(card, "magic"),
+          url: `magic-card.html?set=${encodeURIComponent(card.set || card.setCode)}&id=${encodeURIComponent(card.id || card.cardId)}`,
+          score: scoreMagicCardMatch(card, query),
+        });
+      });
+  }
+
+  const yugiohData = loadLocalYugiohData();
+  if (yugiohData) {
+    yugiohData.cards
+      .filter((card) => yugiohCardMatchesQuery(card, query))
+      .sort((a, b) => scoreYugiohCardMatch(b, query) - scoreYugiohCardMatch(a, query) || a.name.localeCompare(b.name) || String(a.setCode).localeCompare(String(b.setCode), undefined, { numeric: true }))
+      .slice(0, limit)
+      .forEach((card) => {
+        results.push({
+          type: "card",
+          category: "Yu-Gi-Oh!",
+          title: card.name,
+          excerpt: cardSearchResultExcerpt(card, "yugioh"),
+          url: `yugioh-card.html?set=${encodeURIComponent(card.setId)}&id=${encodeURIComponent(card.printingId || card.id)}`,
+          score: scoreYugiohCardMatch(card, query),
+        });
+      });
+  }
+
+  return results.sort((a, b) => b.score - a.score || a.title.localeCompare(b.title)).slice(0, limit);
+}
+
 function siteSearchNewsType(story) {
   const type = normalize(story?.type);
   const sourceName = normalize(story?.sourceName);
@@ -1282,7 +1377,7 @@ function siteSearchNewsType(story) {
 async function buildSiteSearchResults(query, limit = 24) {
   const q = safeText(query, 120);
   if (!normalize(q)) return { query: q, data: [], totalCount: 0 };
-  const perTypeLimit = Math.max(3, Math.ceil(limit / 3));
+  const perTypeLimit = Math.max(4, Math.ceil(limit / 4));
   const results = [];
 
   const newsStories = await buildNewsStories();
@@ -1331,6 +1426,8 @@ async function buildSiteSearchResults(query, limit = 24) {
     .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title))
     .slice(0, perTypeLimit)
     .forEach((item) => results.push(item));
+
+  buildCardSearchResults(q, perTypeLimit).forEach((item) => results.push(item));
 
   staticSearchDestinations()
     .map((item) => ({

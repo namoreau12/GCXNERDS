@@ -83,6 +83,7 @@ function storyPreviewText(story) {
 
 function resultTypeLabel(type) {
   const labels = {
+    card: "Card",
     community: "Community",
     creator: "Creator",
     destination: "Hub",
