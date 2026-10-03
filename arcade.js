@@ -4,6 +4,7 @@ const arcadeStage = document.querySelector(".arcade-stage");
 const startButton = document.querySelector("#arcade-start");
 const overlay = document.querySelector("#arcade-overlay");
 const scoreEl = document.querySelector("#arcade-score");
+const levelEl = document.querySelector("#arcade-level");
 const hitsEl = document.querySelector("#arcade-hits");
 const timeEl = document.querySelector("#arcade-time");
 const bestEl = document.querySelector("#arcade-best");
@@ -67,6 +68,10 @@ function formatTime(ms) {
   const minutes = Math.floor(totalSeconds / 60);
   const seconds = totalSeconds % 60;
   return `${minutes}:${String(seconds).padStart(2, "0")}`;
+}
+
+function clamp(value, min, max) {
+  return Math.max(min, Math.min(max, value));
 }
 
 function initAudio() {
@@ -238,7 +243,7 @@ function renderLeaderboard() {
         <li${row.empty ? ' class="is-empty"' : ""}>
           <span>${row.rank}</span>
           <strong>${escapeHtml(row.playerName)}</strong>
-          <em>${row.empty ? "-" : Number(row.score || 0).toLocaleString()}</em>
+          <em>${row.empty ? "-" : `${Number(row.score || 0).toLocaleString()} / L${Number(row.level || 1).toLocaleString()}`}</em>
         </li>
       `
     )
@@ -256,31 +261,97 @@ async function loadDailyChallenge() {
   updateCountdown();
 }
 
-function createTargets(seed) {
-  const random = seededRandom(seed);
-  const targets = [];
-  const rows = 4;
-  const cols = 8;
-  const gap = 12;
-  const width = 78;
-  const height = 24;
-  const startX = (canvas.width - cols * width - (cols - 1) * gap) / 2;
-  const startY = 74;
-  for (let row = 0; row < rows; row += 1) {
-    for (let col = 0; col < cols; col += 1) {
-      const bonus = random() > 0.78;
-      targets.push({
-        x: startX + col * (width + gap),
-        y: startY + row * (height + gap),
-        w: width,
-        h: height,
-        value: bonus ? 275 : 125 + row * 35,
-        bonus,
-        alive: true,
-      });
+function levelDifficulty(level) {
+  const safeLevel = Math.max(1, Math.round(level || 1));
+  const tier = Math.floor((safeLevel - 1) / 5);
+  return {
+    level: safeLevel,
+    tier,
+    targetCount: clamp(18 + Math.floor(safeLevel * 1.45) + tier * 2, 20, 78),
+    obstacleCount: clamp(Math.floor((safeLevel - 3) / 3) + Math.floor(tier * 0.8), 0, 18),
+    speed: clamp(365 + safeLevel * 14 + tier * 18, 365, 980),
+    paddleWidth: clamp(150 - tier * 5 - Math.floor(safeLevel / 9) * 4, 92, 150),
+    paddleMaxSpeed: clamp(760 + tier * 32, 760, 1040),
+    bonusChance: clamp(0.13 + tier * 0.018, 0.13, 0.32),
+    minGap: clamp(15 - Math.floor(tier / 2), 6, 15),
+  };
+}
+
+function candidateOverlaps(candidate, objects, gap) {
+  return objects.some(
+    (item) =>
+      candidate.x < item.x + item.w + gap &&
+      candidate.x + candidate.w + gap > item.x &&
+      candidate.y < item.y + item.h + gap &&
+      candidate.y + candidate.h + gap > item.y
+  );
+}
+
+function generateLevelObjects(seed, level) {
+  const config = levelDifficulty(level);
+  const random = seededRandom(`${seed || "gcx-rally"}:level:${config.level}`);
+  const objects = [];
+  const shapes = [
+    { w: 70, h: 22, weight: 0.44 },
+    { w: 92, h: 20, weight: 0.22 },
+    { w: 52, h: 28, weight: 0.18 },
+    { w: 42, h: 42, weight: 0.1 },
+    { w: 116, h: 18, weight: 0.06 },
+  ];
+  const playLeft = 38;
+  const playRight = canvas.width - 38;
+  const playTop = 68;
+  const playBottom = Math.min(394, canvas.height - 132);
+
+  const pickShape = () => {
+    const roll = random();
+    let total = 0;
+    for (const shape of shapes) {
+      total += shape.weight;
+      if (roll <= total) return shape;
     }
+    return shapes[0];
+  };
+
+  const place = (kind, index) => {
+    for (let attempt = 0; attempt < 180; attempt += 1) {
+      const shape = kind === "obstacle" ? shapes[3 + Math.floor(random() * 2)] || shapes[3] : pickShape();
+      const laneBias = index / Math.max(1, config.targetCount + config.obstacleCount);
+      const wave = Math.sin((config.level * 0.73 + index * 1.17) * Math.PI);
+      const xRange = playRight - playLeft - shape.w;
+      const yRange = playBottom - playTop - shape.h;
+      const x = playLeft + clamp((random() * 0.74 + laneBias * 0.26) * xRange + wave * 26, 0, xRange);
+      const y = playTop + clamp(random() * yRange, 0, yRange);
+      const candidate = {
+        kind,
+        x,
+        y,
+        w: shape.w,
+        h: shape.h,
+        bonus: kind === "target" && random() < config.bonusChance,
+        alive: true,
+      };
+      if (!candidateOverlaps(candidate, objects, config.minGap)) return candidate;
+    }
+    return null;
+  };
+
+  for (let index = 0; index < config.obstacleCount; index += 1) {
+    const obstacle = place("obstacle", index);
+    if (!obstacle) continue;
+    obstacle.value = 0;
+    objects.push(obstacle);
   }
-  return targets;
+
+  for (let index = 0; index < config.targetCount; index += 1) {
+    const target = place("target", index + config.obstacleCount);
+    if (!target) continue;
+    const depth = (target.y - playTop) / Math.max(1, playBottom - playTop);
+    target.value = Math.round((target.bonus ? 340 : 110) + config.level * 18 + depth * 120 + config.tier * 24);
+    objects.push(target);
+  }
+
+  return objects.sort((a, b) => a.y - b.y || a.x - b.x);
 }
 
 function roundedRectPath(context, x, y, width, height, radius) {
@@ -299,6 +370,29 @@ function roundedRectPath(context, x, y, width, height, radius) {
 }
 
 function drawTargetTile(target) {
+  if (target.kind === "obstacle") {
+    ctx.save();
+    ctx.shadowColor = "rgba(11, 18, 32, 0.38)";
+    ctx.shadowBlur = 8;
+    ctx.shadowOffsetY = 3;
+    roundedRectPath(ctx, target.x, target.y, target.w, target.h, 10);
+    const obstacleGradient = ctx.createLinearGradient(target.x, target.y, target.x, target.y + target.h);
+    obstacleGradient.addColorStop(0, "#9ca3af");
+    obstacleGradient.addColorStop(0.52, "#4b5563");
+    obstacleGradient.addColorStop(1, "#1f2937");
+    ctx.fillStyle = obstacleGradient;
+    ctx.fill();
+    ctx.shadowColor = "transparent";
+    ctx.lineWidth = 1.5;
+    ctx.strokeStyle = "rgba(255, 255, 255, 0.24)";
+    ctx.stroke();
+    ctx.fillStyle = "rgba(255, 255, 255, 0.24)";
+    roundedRectPath(ctx, target.x + 8, target.y + 5, target.w - 16, Math.max(4, target.h * 0.22), 4);
+    ctx.fill();
+    ctx.restore();
+    return;
+  }
+
   const base = target.bonus ? "#8b5cf6" : "#d93b35";
   const edge = target.bonus ? "#5b21b6" : "#9f2427";
   const shine = target.bonus ? "rgba(245, 235, 255, 0.72)" : "rgba(255, 238, 226, 0.72)";
@@ -408,9 +502,29 @@ function drawPaddle() {
   ctx.restore();
 }
 
+function prepareLevel(level) {
+  const config = levelDifficulty(level);
+  const random = seededRandom(`${challenge?.seed || "gcx-rally"}:serve:${level}`);
+  const serveAngle = (random() > 0.5 ? 1 : -1) * (0.42 + random() * 0.42);
+  game.level = level;
+  game.levelStartedAt = performance.now();
+  game.levelClearUntil = 0;
+  game.paddle.w = config.paddleWidth;
+  game.paddle.maxSpeed = config.paddleMaxSpeed;
+  game.paddle.x = canvas.width / 2 - game.paddle.w / 2;
+  game.paddle.y = canvas.height - 58;
+  game.paddle.vx = 0;
+  game.ball.x = canvas.width / 2;
+  game.ball.y = canvas.height - 94;
+  game.ball.r = clamp(10 - Math.floor(config.tier / 5), 8, 10);
+  game.ball.vx = Math.sin(serveAngle) * config.speed;
+  game.ball.vy = -Math.cos(serveAngle) * config.speed;
+  game.ball.speed = config.speed;
+  game.targets = generateLevelObjects(challenge?.seed, level);
+}
+
 function resetGame() {
   resumeAudio();
-  const random = seededRandom(challenge?.seed || "gcx-rally");
   game = {
     running: true,
     ended: false,
@@ -419,6 +533,10 @@ function resetGame() {
     endedAt: 0,
     score: 0,
     hits: 0,
+    level: 1,
+    highestLevel: 1,
+    levelStartedAt: performance.now(),
+    levelClearUntil: 0,
     rally: 0,
     paddle: {
       x: canvas.width / 2 - 72,
@@ -434,11 +552,13 @@ function resetGame() {
       x: canvas.width / 2,
       y: canvas.height - 92,
       r: 10,
-      vx: random() > 0.5 ? 250 : -250,
+      vx: 0,
       vy: -360,
+      speed: 365,
     },
-    targets: createTargets(challenge?.seed),
+    targets: [],
   };
+  prepareLevel(1);
   if (submitButton) submitButton.disabled = true;
   if (statusEl) statusEl.textContent = "";
   overlay?.classList.add("is-hidden");
@@ -462,7 +582,7 @@ function endGame(message) {
     overlay.innerHTML = `
       <p class="kicker">Run Complete</p>
       <h2>${escapeHtml(message)}</h2>
-      <p>Final score: <strong>${game.score.toLocaleString()}</strong>. Add your display name for today's Top 5 board.</p>
+      <p>Final score: <strong>${game.score.toLocaleString()}</strong>. You reached <strong>Level ${game.highestLevel || game.level || 1}</strong>. Add your display name for today's Top 5 board.</p>
       <form id="arcade-overlay-submit" class="arcade-overlay-form">
         <label>
           Display name
@@ -504,12 +624,76 @@ function draw() {
 
   ctx.fillStyle = "rgba(255,255,255,0.84)";
   ctx.font = "700 18px Inter, sans-serif";
-  ctx.fillText(`GCX Rally ${challenge?.dayId || ""}`, 28, 36);
+  ctx.fillText(`GCX Rally ${challenge?.dayId || ""} - Level ${game.level || 1}`, 28, 36);
+  if (game.levelClearUntil && performance.now() < game.levelClearUntil) {
+    ctx.save();
+    ctx.fillStyle = "rgba(255,255,255,0.9)";
+    ctx.font = "900 34px Inter, sans-serif";
+    ctx.textAlign = "center";
+    ctx.fillText(`Level ${game.level}`, canvas.width / 2, canvas.height / 2);
+    ctx.restore();
+  }
+}
+
+function normalizeBallSpeed(targetSpeed) {
+  const { ball } = game;
+  const currentSpeed = Math.hypot(ball.vx, ball.vy) || targetSpeed;
+  const speed = clamp(targetSpeed, 330, 1040);
+  ball.vx = (ball.vx / currentSpeed) * speed;
+  ball.vy = (ball.vy / currentSpeed) * speed;
+  if (Math.abs(ball.vy) < speed * 0.48) {
+    ball.vy = (ball.vy < 0 ? -1 : 1) * speed * 0.48;
+    const xSpeed = Math.sqrt(Math.max(0, speed * speed - ball.vy * ball.vy));
+    ball.vx = (ball.vx < 0 ? -1 : 1) * xSpeed;
+  }
+}
+
+function reflectBallFromRect(rect) {
+  const { ball } = game;
+  const previousX = ball.x - ball.vx * (game.lastDt || 0.016);
+  const previousY = ball.y - ball.vy * (game.lastDt || 0.016);
+  const fromLeft = previousX + ball.r <= rect.x;
+  const fromRight = previousX - ball.r >= rect.x + rect.w;
+  const fromTop = previousY + ball.r <= rect.y;
+  const fromBottom = previousY - ball.r >= rect.y + rect.h;
+
+  if ((fromLeft || fromRight) && !fromTop && !fromBottom) {
+    ball.vx *= -1;
+    ball.x = fromLeft ? rect.x - ball.r : rect.x + rect.w + ball.r;
+    return;
+  }
+  if (fromTop || fromBottom) {
+    ball.vy *= -1;
+    ball.y = fromTop ? rect.y - ball.r : rect.y + rect.h + ball.r;
+    return;
+  }
+
+  const overlapLeft = Math.abs(ball.x + ball.r - rect.x);
+  const overlapRight = Math.abs(rect.x + rect.w - (ball.x - ball.r));
+  const overlapTop = Math.abs(ball.y + ball.r - rect.y);
+  const overlapBottom = Math.abs(rect.y + rect.h - (ball.y - ball.r));
+  const minOverlap = Math.min(overlapLeft, overlapRight, overlapTop, overlapBottom);
+  if (minOverlap === overlapLeft || minOverlap === overlapRight) ball.vx *= -1;
+  else ball.vy *= -1;
+}
+
+function advanceLevel() {
+  const levelDuration = performance.now() - game.levelStartedAt;
+  const nextLevel = game.level + 1;
+  const clearBonus = Math.round(950 + game.level * 240 + Math.max(0, 90000 - levelDuration) / 65 + game.rally * 9);
+  game.score += clearBonus;
+  game.score = Math.round(game.score);
+  game.rally += 4;
+  game.highestLevel = Math.max(game.highestLevel || 1, nextLevel);
+  playTone(440 + Math.min(420, game.level * 18), 0.18, { type: "triangle", gain: 0.08, slideTo: 880 + Math.min(600, game.level * 20) });
+  prepareLevel(nextLevel);
+  game.levelClearUntil = performance.now() + 850;
 }
 
 function update(dt) {
   if (!game?.running) return;
   const { paddle, ball } = game;
+  game.lastDt = dt;
   const leftPressed = keys.has("ArrowLeft") || keys.has("a") || keys.has("A");
   const rightPressed = keys.has("ArrowRight") || keys.has("d") || keys.has("D");
   if (inputMode === "keyboard") {
@@ -552,32 +736,38 @@ function update(dt) {
     ball.vy > 0
   ) {
     const hitPosition = (ball.x - (paddle.x + paddle.w / 2)) / (paddle.w / 2);
-    ball.vx = hitPosition * 440;
-    ball.vy = -Math.min(620, Math.abs(ball.vy) + 18);
+    const config = levelDifficulty(game.level);
+    const bounceAngle = clamp(hitPosition, -0.92, 0.92) * 1.08;
+    const targetSpeed = clamp((ball.speed || config.speed) + 12 + game.level * 0.7, config.speed, 1080);
+    ball.speed = targetSpeed;
+    ball.vx = Math.sin(bounceAngle) * targetSpeed;
+    ball.vy = -Math.cos(bounceAngle) * targetSpeed;
     game.rally += 1;
-    game.score += 20 + Math.min(150, game.rally * 5);
+    game.score += 20 + game.level * 3 + Math.min(180, game.rally * 5);
     playTone(246.94 + Math.min(260, game.rally * 5), 0.09, { type: "triangle", gain: 0.055 });
   }
 
   for (const target of game.targets) {
     if (!target.alive) continue;
     if (ball.x + ball.r < target.x || ball.x - ball.r > target.x + target.w || ball.y + ball.r < target.y || ball.y - ball.r > target.y + target.h) continue;
-    target.alive = false;
-    ball.vy *= -1;
-    game.hits += 1;
-    game.rally += 2;
-    game.score += target.value + Math.min(300, game.rally * 12);
-    playTone(target.bonus ? 659.25 : 523.25, 0.13, { type: "sine", gain: target.bonus ? 0.09 : 0.07, slideTo: target.bonus ? 880 : 659.25 });
+    reflectBallFromRect(target);
+    normalizeBallSpeed((ball.speed || levelDifficulty(game.level).speed) + (target.kind === "obstacle" ? 4 : 7));
+    if (target.kind === "obstacle") {
+      game.rally += 1;
+      game.score += 8 + game.level;
+      playTone(174.61 + Math.min(120, game.level * 4), 0.08, { type: "square", gain: 0.038 });
+    } else {
+      target.alive = false;
+      game.hits += 1;
+      game.rally += 2;
+      game.score += target.value + Math.min(360, game.rally * 12) + game.level * 5;
+      playTone(target.bonus ? 659.25 : 523.25, 0.13, { type: "sine", gain: target.bonus ? 0.09 : 0.07, slideTo: target.bonus ? 880 : 659.25 });
+    }
     break;
   }
 
   if (ball.y - ball.r > canvas.height) endGame("The rally dropped.");
-  if (game.targets.every((target) => !target.alive)) {
-    game.score += 1500 + Math.max(0, 180000 - (performance.now() - game.startedAt)) / 100;
-    game.score = Math.round(game.score);
-    playTone(440, 0.18, { type: "triangle", gain: 0.08, slideTo: 880 });
-    endGame("Board cleared.");
-  }
+  if (game.running && game.targets.filter((target) => target.kind !== "obstacle").every((target) => !target.alive)) advanceLevel();
 }
 
 let lastFrame = 0;
@@ -587,6 +777,7 @@ function tick(timestamp) {
   update(dt);
   draw();
   if (scoreEl && game) scoreEl.textContent = Math.round(game.score).toLocaleString();
+  if (levelEl && game) levelEl.textContent = String(game.level || 1);
   if (hitsEl && game) hitsEl.textContent = String(game.hits);
   if (timeEl && game) timeEl.textContent = formatTime((game.endedAt || performance.now()) - game.startedAt);
   if (game?.running) animationId = requestAnimationFrame(tick);
@@ -608,6 +799,7 @@ async function submitScore(event) {
       playerName,
       score: Math.round(game.score),
       hits: game.hits,
+      level: game.highestLevel || game.level || 1,
       durationMs: Math.round(game.endedAt - game.startedAt),
     }),
   });
@@ -691,11 +883,16 @@ async function init() {
       ended: false,
       startedAt: performance.now(),
       score: 0,
+      level: 1,
+      highestLevel: 1,
+      levelStartedAt: performance.now(),
+      levelClearUntil: 0,
       hits: 0,
       paddle: { x: canvas.width / 2 - 72, y: canvas.height - 58, w: 144, h: 16, vx: 0, maxSpeed: 760, acceleration: 4200, friction: 9 },
-      ball: { x: canvas.width / 2, y: canvas.height - 92, r: 10 },
-      targets: createTargets(challenge.seed),
+      ball: { x: canvas.width / 2, y: canvas.height - 92, r: 10, vx: 0, vy: -360, speed: 365 },
+      targets: generateLevelObjects(challenge.seed, 1),
     };
+    if (levelEl) levelEl.textContent = "1";
     draw();
   } catch (error) {
     if (statusEl) statusEl.textContent = error.message;

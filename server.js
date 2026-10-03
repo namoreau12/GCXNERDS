@@ -2929,6 +2929,7 @@ function normalizeArcadeScoreRow(row = {}) {
     playerName: row.player_name || row.playerName || "GCX Player",
     score: Number(row.score || 0),
     hits: Number(row.hits || 0),
+    level: Number(row.level || row.max_level || row.maxLevel || 1),
     durationMs: Number(row.duration_ms || row.durationMs || 0),
     submittedAt: row.submitted_at || row.submittedAt || new Date().toISOString(),
   };
@@ -2943,6 +2944,7 @@ function arcadeScoreSupabaseRow(row = {}) {
     player_name: row.playerName,
     score: Number(row.score || 0),
     hits: Number(row.hits || 0),
+    level: Number(row.level || 1),
     duration_ms: Number(row.durationMs || 0),
     submitted_at: supabaseTimestamp(row.submittedAt),
   };
@@ -2958,7 +2960,7 @@ async function loadArcadeData() {
   if (!supabaseConfigured()) return { scores: localScores };
 
   try {
-    const rows = await supabaseRequest("arcade_scores?select=local_id,game_id,day_id,player_key,player_name,score,hits,duration_ms,submitted_at&order=submitted_at.desc&limit=1000", {
+    const rows = await supabaseRequest("arcade_scores?select=local_id,game_id,day_id,player_key,player_name,score,hits,level,duration_ms,submitted_at&order=submitted_at.desc&limit=1000", {
       headers: { Prefer: "count=none" },
     });
     const remoteScores = Array.isArray(rows) ? rows.map(normalizeArcadeScoreRow) : [];
@@ -2989,6 +2991,7 @@ function publicArcadeScore(row, rank = 0) {
     playerName: row.playerName,
     score: Number(row.score || 0),
     hits: Number(row.hits || 0),
+    level: Number(row.level || 1),
     durationMs: Number(row.durationMs || 0),
     submittedAt: row.submittedAt,
   };
@@ -3032,9 +3035,10 @@ async function handleArcadeApi(req, res, url) {
         return;
       }
 
-      const score = Math.max(0, Math.min(999999, Math.round(Number(body.score || 0))));
-      const hits = Math.max(0, Math.min(9999, Math.round(Number(body.hits || 0))));
-      const durationMs = Math.max(0, Math.min(1000 * 60 * 12, Math.round(Number(body.durationMs || 0))));
+      const score = Math.max(0, Math.min(99999999, Math.round(Number(body.score || 0))));
+      const hits = Math.max(0, Math.min(999999, Math.round(Number(body.hits || 0))));
+      const level = Math.max(1, Math.min(9999, Math.round(Number(body.level || 1))));
+      const durationMs = Math.max(0, Math.min(1000 * 60 * 180, Math.round(Number(body.durationMs || 0))));
       const playerName = safeText(body.playerName || "GCX Player", 24).replace(/[^\w .'-]/g, "").trim() || "GCX Player";
       const playerKeyRaw = safeText(body.playerKey || `${playerName}:${clientIp(req)}`, 120);
       const playerKey = crypto.createHash("sha256").update(playerKeyRaw).digest("hex");
@@ -3057,6 +3061,7 @@ async function handleArcadeApi(req, res, url) {
           existing.playerName = playerName;
           existing.score = score;
           existing.hits = hits;
+          existing.level = level;
           existing.durationMs = durationMs;
           existing.submittedAt = submittedAt;
           changedRow = existing;
@@ -3070,6 +3075,7 @@ async function handleArcadeApi(req, res, url) {
           playerName,
           score,
           hits,
+          level,
           durationMs,
           submittedAt,
         };

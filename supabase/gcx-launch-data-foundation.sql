@@ -144,6 +144,7 @@ create table if not exists public.arcade_scores (
   player_name text not null,
   score integer not null default 0 check (score >= 0),
   hits integer not null default 0 check (hits >= 0),
+  level integer not null default 1 check (level >= 1),
   duration_ms integer not null default 0 check (duration_ms >= 0),
   submitted_at timestamptz not null default now(),
   created_at timestamptz not null default now(),
@@ -176,6 +177,7 @@ alter table public.arcade_scores add column if not exists player_key text;
 alter table public.arcade_scores add column if not exists player_name text;
 alter table public.arcade_scores add column if not exists score integer;
 alter table public.arcade_scores add column if not exists hits integer;
+alter table public.arcade_scores add column if not exists level integer not null default 1;
 alter table public.arcade_scores add column if not exists duration_ms integer;
 alter table public.arcade_scores add column if not exists submitted_at timestamptz;
 
