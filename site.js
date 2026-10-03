@@ -664,15 +664,13 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.querySelectorAll(".nav-trigger").forEach((trigger) => {
+  trigger.setAttribute("aria-haspopup", "true");
   trigger.setAttribute("aria-expanded", "false");
   const menu = trigger.closest(".nav-menu");
   menu?.addEventListener("focusin", () => trigger.setAttribute("aria-expanded", "true"));
   menu?.addEventListener("focusout", () => trigger.setAttribute("aria-expanded", "false"));
-  trigger.addEventListener("click", () => {
-    const isOpen = trigger.getAttribute("aria-expanded") === "true";
-    trigger.setAttribute("aria-expanded", String(!isOpen));
-    menu?.classList.toggle("is-open", !isOpen);
-  });
+  menu?.addEventListener("mouseenter", () => trigger.setAttribute("aria-expanded", "true"));
+  menu?.addEventListener("mouseleave", () => trigger.setAttribute("aria-expanded", "false"));
 });
 
 document.addEventListener(

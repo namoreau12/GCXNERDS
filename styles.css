@@ -157,7 +157,7 @@ input {
   align-items: center;
   color: #30323a;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 850;
 }
 
 .mobile-nav-toggle {
@@ -216,6 +216,11 @@ input {
   color: var(--red);
 }
 
+.nav > a,
+.nav-trigger {
+  font-weight: 850;
+}
+
 .nav-menu {
   position: relative;
 }
@@ -225,23 +230,17 @@ input {
   padding: 0;
   color: inherit;
   background: transparent;
-  font-weight: 800;
   cursor: pointer;
-}
-
-.nav-trigger::after {
-  content: " v";
-  font-size: 0.75rem;
 }
 
 .nav-dropdown {
   position: absolute;
-  top: calc(100% + 12px);
+  top: 100%;
   left: 0;
   z-index: 20;
   display: none;
   min-width: 190px;
-  padding: 8px;
+  padding: 10px 8px 8px;
   background: white;
   border: 1px solid var(--line);
   border-radius: 8px;
