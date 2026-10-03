@@ -11242,6 +11242,52 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   white-space: normal;
 }
 
+/* Article previews must grow instead of clipping headlines or decks mid-word. */
+.newsroom-grid .news-card {
+  grid-template-rows: 180px auto;
+}
+
+.newsroom-grid .news-card > div,
+.news-card > div,
+.pulse-copy,
+.story-card div,
+.news-lead > div {
+  overflow: visible;
+}
+
+.newsroom-grid .news-card h3,
+.newsroom-grid .news-card p:not(.meta),
+.pulse-card h3,
+.pulse-card p,
+.story-card h3,
+.story-card p:not(.meta):not(.story-source-note),
+.news-card h3,
+.news-card p:not(.meta),
+.news-lead h2,
+.news-lead p:not(.meta),
+.news-compact h3,
+.hero-copy h1,
+.hero-copy p:not(.kicker),
+.article-copy h1,
+.article-dek {
+  display: block;
+  overflow: visible;
+  -webkit-box-orient: unset;
+  -webkit-line-clamp: unset;
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: none;
+}
+
+.pulse-source {
+  display: flex;
+  overflow: visible;
+  -webkit-box-orient: unset;
+  -webkit-line-clamp: unset;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
 @media (max-width: 640px) {
   .news-page > .news-hero,
   .community-page > .community-hero,
