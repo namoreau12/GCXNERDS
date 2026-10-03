@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 120" role="img" aria-labelledby="title desc">
+  <title id="title">Games Exchange logo</title>
+  <desc id="desc">A red GCX sticker mark beside a blue Games Exchange wordmark.</desc>
+  <rect x="16" y="30" width="128" height="64" rx="18" fill="#d93b35" transform="rotate(-4 80 62)" />
+  <rect x="18" y="32" width="124" height="60" rx="16" fill="none" stroke="#111217" stroke-opacity=".14" stroke-width="2" transform="rotate(-4 80 62)" />
+  <circle cx="128" cy="41" r="10" fill="#f7f4ed" opacity=".94" />
+  <text x="80" y="73" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="950" text-anchor="middle">GCX</text>
+  <text x="160" y="57" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="950">Games</text>
+  <text x="160" y="88" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="950">Exchange</text>
+</svg>

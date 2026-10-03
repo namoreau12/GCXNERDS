@@ -125,12 +125,18 @@ input {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 0;
   max-width: 100%;
   font-size: 1.28rem;
   font-weight: 850;
   letter-spacing: 0;
   min-width: 0;
+}
+
+.brand-logo {
+  display: block;
+  width: clamp(168px, 15vw, 214px);
+  height: auto;
 }
 
 .brand-wordmark {
