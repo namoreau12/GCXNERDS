@@ -361,7 +361,6 @@ function homeLeadCandidateScore(story) {
   if (/^https?:\/\//i.test(imageUrl)) score += 12;
   if (/\.(jpe?g|png|webp)(\?|$)/i.test(imageUrl)) score += 8;
   if (/\.svg(\?|$)/i.test(imageUrl)) score -= 60;
-  if (normalize(story.category || story.type).includes("review")) score += 3;
   return score;
 }
 

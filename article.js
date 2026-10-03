@@ -1356,11 +1356,11 @@ function renderLiveEventGuide(story) {
 function renderPokemonPikachuChecklist(story) {
   const sourceLinks = story.sourceLinks || [];
   const relatedLinks = story.relatedLinks || [];
-  const guide = story.pikachuGuide || {};
-  const revealedDedupe = dedupeArticleCards(guide.revealedPikachu || [], "pokemon");
+  const hub = story.pikachuGuide || {};
+  const revealedDedupe = dedupeArticleCards(hub.revealedPikachu || [], "pokemon");
   const revealed = revealedDedupe.cards;
-  const missing = guide.missingSlots || [];
-  const pikachuExDedupe = dedupeArticleCards(guide.pikachuEx || [], "pokemon");
+  const missing = hub.missingSlots || [];
+  const pikachuExDedupe = dedupeArticleCards(hub.pikachuEx || [], "pokemon");
   const pikachuEx = pikachuExDedupe.cards;
   const checklistWarnings = [
     revealedDedupe.duplicates.length ? `DUPLICATE_RENDER_ON_PAGE: ${revealedDedupe.duplicates.length} checklist duplicates hidden` : "",
@@ -1435,7 +1435,7 @@ function renderPokemonPikachuChecklist(story) {
         return `
           ${rendered}
           <section class="chase-card-grid pikachu-watchlist-grid" aria-label="Pikachu chase cards to watch">
-            ${(guide.chaseWatchlist || []).map((name) => `
+            ${(hub.chaseWatchlist || []).map((name) => `
               <article>
                 <span>GCX Watchlist</span>
                 <h3>${escapeHtml(name)}</h3>
@@ -1479,12 +1479,12 @@ function renderPokemonPikachuChecklist(story) {
           <section id="pikachu-status" class="pikachu-status-panel" aria-label="Pikachu checklist status">
             <div>
               <span>Revealed</span>
-              <strong>${Number(guide.revealedCount || revealed.length).toLocaleString()} / ${Number(guide.totalSubsetCards || 30).toLocaleString()}</strong>
+              <strong>${Number(hub.revealedCount || revealed.length).toLocaleString()} / ${Number(hub.totalSubsetCards || 30).toLocaleString()}</strong>
               <p>Confirmed cards in the special Pikachu subset.</p>
             </div>
             <div>
               <span>Still Hidden</span>
-              <strong>${Number(guide.missingCount || missing.length).toLocaleString()}</strong>
+              <strong>${Number(hub.missingCount || missing.length).toLocaleString()}</strong>
               <p>Slots held as placeholders until official reveal.</p>
             </div>
             <div>
@@ -1494,14 +1494,14 @@ function renderPokemonPikachuChecklist(story) {
             </div>
             <div>
               <span>Release</span>
-              <strong>${escapeHtml(guide.releaseDate || "September 16, 2026")}</strong>
+              <strong>${escapeHtml(hub.releaseDate || "September 16, 2026")}</strong>
               <p>Market and grading claims stay cautious before retail data exists.</p>
             </div>
           </section>
 
           <section class="feature-update-callout pikachu-update-callout">
             <span>Living Checklist</span>
-            <p>${escapeHtml(guide.lastRevealNote || "GCX will update this same article as more Pikachu cards are officially revealed.")}</p>
+            <p>${escapeHtml(hub.lastRevealNote || "GCX will update this same article as more Pikachu cards are officially revealed.")}</p>
           </section>
 
           ${window.GCX_TCG_IDENTITY?.renderWarnings ? window.GCX_TCG_IDENTITY.renderWarnings(checklistWarnings) : ""}
