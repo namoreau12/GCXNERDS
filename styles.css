@@ -3009,7 +3009,7 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
 }
 
 .radar {
-  align-self: stretch;
+  align-self: start;
 }
 
 .section-heading h2 {
@@ -3035,6 +3035,10 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
   gap: 12px;
   min-height: 62px;
   border-bottom: 1px solid var(--line);
+}
+
+.trend-list li:last-child {
+  border-bottom: 0;
 }
 
 .trend-list span {
@@ -6352,38 +6356,6 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   background: rgba(255, 255, 255, 0.14);
 }
 
-.creator-launch-strip {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.creator-launch-strip article {
-  display: grid;
-  gap: 8px;
-  padding: 16px;
-  background: white;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  box-shadow: 0 12px 34px rgba(17, 18, 23, 0.06);
-}
-
-.creator-launch-strip span {
-  color: var(--teal);
-  font-size: 0.78rem;
-  font-weight: 950;
-}
-
-.creator-launch-strip strong {
-  font-size: 1.08rem;
-}
-
-.creator-launch-strip p {
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.5;
-}
-
 .profile-handle {
   margin: 8px 0;
   color: rgba(255, 255, 255, 0.72) !important;
@@ -9647,7 +9619,6 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   .game-detail,
   .console-tools,
   .community-home-grid,
-  .creator-launch-strip,
   .campaign-strip,
   .moderation-grid,
   .creator-control-row,
