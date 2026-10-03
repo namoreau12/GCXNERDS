@@ -761,12 +761,13 @@ function renderPosts() {
           ${renderOfficialEmbed(post)}
           ${image}
           <h3>${escapeHtml(post.title)}</h3>
-          <p>${escapeHtml(post.body)}</p>
+          <p class="feed-card-body">${escapeHtml(post.body)}</p>
           ${reshared}
           ${linkPreview}
           <div class="feed-tags">${tags}</div>
           ${post.pollOptions?.length ? renderPoll(post, reacted) : renderReactionBar(post, reacted)}
           <div class="feed-actions">
+            <a class="feed-discussion-link" href="community-post.html?id=${encodeURIComponent(post.id)}">Open discussion</a>
             ${link}
             <button class="text-button" type="button" data-save-post="${escapeHtml(post.id)}" data-saved="${post.isSaved ? "true" : "false"}">
               ${post.isSaved ? "Saved" : "Save"} · ${Number(post.savedCount || 0).toLocaleString()}
@@ -776,8 +777,10 @@ function renderPosts() {
             <button class="text-button muted" type="button" data-report-post="${escapeHtml(post.id)}" ${reported.has(post.id) ? "disabled" : ""}>
               ${reported.has(post.id) ? "Reported" : "Report"}
             </button>
-            <span>${Number(post.comments || 0).toLocaleString()} comments</span>
-            <span data-view-count>${Number(post.viewCount || 0).toLocaleString()} views</span>
+            <div class="feed-metrics">
+              <span>${Number(post.comments || 0).toLocaleString()} comments</span>
+              <span data-view-count>${Number(post.viewCount || 0).toLocaleString()} views</span>
+            </div>
           </div>
           ${renderDiscussionNudge(post)}
           <details class="comment-drawer">

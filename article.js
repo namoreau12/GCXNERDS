@@ -634,6 +634,84 @@ function renderRelatedCoverage(relatedLinks) {
     : "";
 }
 
+function quickVersionItems(story) {
+  const explicit = story.quickVersion || story.quickFacts || story.takeaways || story.keyTakeaways;
+  if (Array.isArray(explicit)) {
+    return explicit
+      .map((item) => (Array.isArray(item) ? item.filter(Boolean).join(": ") : String(item || "")))
+      .map((item) => plainText(item, 180))
+      .filter(Boolean)
+      .slice(0, 5);
+  }
+
+  const body = (story.body || []).filter((block) => !isStructuredTableBlock(block)).map((block) => String(block || ""));
+  const bulletItems = body
+    .flatMap((block) =>
+      block
+        .split("\n")
+        .map((line) => line.trim())
+        .filter((line) => line.startsWith("* "))
+        .map((line) => plainText(line.replace(/^\*\s+/, ""), 180))
+    )
+    .filter(Boolean);
+
+  if (bulletItems.length >= 3) return bulletItems.slice(0, 5);
+
+  return plainText(story.excerpt || body.find(Boolean) || "", 420)
+    .split(/(?<=[.!?])\s+/)
+    .map((sentence) => sentence.trim())
+    .filter((sentence) => sentence.length > 24)
+    .slice(0, 4);
+}
+
+function renderQuickVersion(story) {
+  const items = quickVersionItems(story);
+  if (!items.length) return "";
+  return `
+    <section class="article-quick-version" aria-label="The quick version">
+      <div>
+        <p class="kicker">The Quick Version</p>
+        <h2>What matters first</h2>
+      </div>
+      <ol>
+        ${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+      </ol>
+    </section>
+  `;
+}
+
+function renderCultureLoop(story) {
+  const topic = story.canonicalTopic || story.topicCluster || story.category || "Gaming";
+  const shareUrl = story.shareUrl || "community.html";
+  const searchQuery = encodeURIComponent(topic);
+  return `
+    <section class="article-culture-loop" aria-label="Story discovery loop">
+      <div>
+        <p class="kicker">GCX Loop</p>
+        <h2>Follow the story beyond the article</h2>
+        <p>Use this story as a jump point into the clips, creators, and community conversation around ${escapeHtml(topic)}.</p>
+      </div>
+      <div class="culture-loop-grid">
+        <a href="${escapeHtml(shareUrl)}">
+          <span>Community</span>
+          <strong>Post this story</strong>
+          <small>Start or join the GCX discussion.</small>
+        </a>
+        <a href="streamers.html">
+          <span>Creators</span>
+          <strong>Find related watch picks</strong>
+          <small>Open creator spotlights and official video picks.</small>
+        </a>
+        <a href="search.html?q=${searchQuery}">
+          <span>Discovery</span>
+          <strong>Search the topic</strong>
+          <small>Find more GCX coverage tied to this beat.</small>
+        </a>
+      </div>
+    </section>
+  `;
+}
+
 function renderSourceSection(sourceLinks) {
   return sourceLinks.length
     ? `
@@ -1061,6 +1139,9 @@ function renderPremiumPokemonGuide(story) {
             `).join("")}
           </section>
 
+          ${renderQuickVersion(story)}
+          ${renderCultureLoop(story)}
+
           <div class="article-body feature-body">
             ${bodyHtml}
           </div>
@@ -1202,6 +1283,9 @@ function renderLiveEventGuide(story) {
               </div>
             `).join("")}
           </section>
+
+          ${renderQuickVersion(story)}
+          ${renderCultureLoop(story)}
 
           <section id="gamescom-2026-schedule" class="event-schedule" aria-label="Gamescom 2026 schedule">
             <div class="comparison-head">
@@ -1427,6 +1511,9 @@ function renderPokemonPikachuChecklist(story) {
             <p>GCX displays card images only when the source path is approved for our use. Revealed cards can still appear as source-linked placeholders until usage rights are verified.</p>
           </section>
 
+          ${renderQuickVersion(story)}
+          ${renderCultureLoop(story)}
+
           <div class="article-body feature-body pikachu-body">
             ${bodyHtml}
           </div>
@@ -1470,12 +1557,14 @@ function renderArticle(story) {
         <h1>${escapeHtml(story.title)}</h1>
         <p class="article-dek">${escapeHtml(plainText(story.excerpt || (story.body || [])[0], 320))}</p>
         ${renderArticleMetaPanel(story, sourceLinks)}
+        ${renderQuickVersion(story)}
         ${ledeMedia}
         <div class="article-actions">
           ${showSourceButton ? `<a class="button" href="${escapeHtml(sourceHref)}">Open source</a>` : ""}
           <a class="button secondary" href="${escapeHtml(story.shareUrl || "community.html")}">Share to community</a>
           <a class="button secondary" href="news.html">Back to news</a>
         </div>
+        ${renderCultureLoop(story)}
         <div class="article-body">
           ${renderArticleBlocksWithMedia(story, paragraphs)}
         </div>
