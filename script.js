@@ -1611,7 +1611,7 @@ async function loadCardsForSet(setId) {
     }
   } catch (error) {
     renderSelectedSet(set, " - Could not load cards");
-    setMessage(cardsGrid, "The cards could not be loaded right now. Try again in a moment or check the backend cache/API key.");
+    setMessage(cardsGrid, "The cards could not be loaded right now. Try again in a moment.");
   }
 }
 
@@ -1644,8 +1644,8 @@ async function loadPokemonIndex() {
   } catch (error) {
     seriesCount.textContent = "Unavailable";
     setsCount.textContent = "0 sets";
-    setMessage(seriesList, "Pokemon set data could not be loaded. The public API may be rate-limited or offline.");
-    setMessage(setsGrid, "Add server-side caching before production so the index stays reliable.");
+    setMessage(seriesList, "Pokemon set data is temporarily unavailable.");
+    setMessage(setsGrid, "Try refreshing in a moment, or use the card articles and tracker links above.");
   }
 }
 
