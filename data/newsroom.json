@@ -9,6 +9,696 @@
     "storyLifecycleState": "ready-for-publish",
     "deepResearchUsed": false,
     "livingArticle": false,
+    "lastUpdated": "2026-10-02",
+    "lastReviewedAt": "2026-10-02",
+    "editorialOwner": "GCX Newsroom",
+    "id": "gcx-newsroom-ps5-qssr-ai-upscaling-explained",
+    "slug": "ps5-qssr-ai-upscaling-explained",
+    "title": "PS5 Is Getting AI Upscaling - and You Won't Need a PS5 Pro to Use It",
+    "seoTitle": "PS5 QSSR AI Upscaling Explained: What It Is and Which Games Support It",
+    "excerpt": "Sony is bringing QSSR AI upscaling to the standard PS5, with Marvel's Wolverine and Ghost of Yotei among the first games to support it.",
+    "metaDescription": "Sony is bringing QSSR AI upscaling to the base PS5. Here is what it does, how it differs from PS5 Pro's PSSR, and which games support it first.",
+    "category": "Gaming",
+    "articleType": "Major News / Platform Explainer",
+    "publishedAt": "2026-10-02T21:00:00.000-04:00",
+    "qaScore": 95,
+    "opportunityScore": 97,
+    "topicCluster": "PS5 / QSSR",
+    "canonicalTopic": "PS5 QSSR AI upscaling",
+    "targetSearchIntent": "PS5 QSSR AI upscaling, PS5 QSSR explained, QSSR vs PSSR, Marvel's Wolverine QSSR, Ghost of Yotei QSSR",
+    "updateFrequency": "Update when Sony names more QSSR-supported games, publishes image comparisons, or expands developer guidance.",
+    "updatePolicy": "Preserve this URL as GCX's base-PS5 QSSR explainer.",
+    "claimStatus": "Official PlayStation Blog / GCX explainer",
+    "confidence": "Official PlayStation Blog / GCX explainer",
+    "heroImage": "https://blog.playstation.com/tachyon/2026/10/5f2b04388e41b48507f4c8d57ce8f53bd059f03a.jpg",
+    "heroImageSource": "Official PlayStation Blog",
+    "heroImageSourceUrl": "https://blog.playstation.com/2026/10/01/ai-upscaling-is-coming-to-ps5/",
+    "heroImageCredit": "Sony Interactive Entertainment / PlayStation",
+    "heroImageAlt": "Official PlayStation Blog hero image for PS5 QSSR AI upscaling.",
+    "heroImageFocalX": "50%",
+    "heroImageFocalY": "48%",
+    "trailerUrl": "https://www.youtube.com/watch?v=RcFYsDKbAIk",
+    "mediaType": "official-promotional-art",
+    "imageUrl": "https://blog.playstation.com/tachyon/2026/10/5f2b04388e41b48507f4c8d57ce8f53bd059f03a.jpg",
+    "imageCredit": "Sony Interactive Entertainment / PlayStation",
+    "tags": [
+      "PlayStation",
+      "PS5",
+      "QSSR",
+      "PSSR",
+      "Marvel's Wolverine",
+      "Ghost of Yotei"
+    ],
+    "relatedLinks": [
+      {
+        "label": "PS5 Game Library",
+        "url": "ps5.html"
+      },
+      {
+        "label": "Gaming News",
+        "url": "news.html"
+      }
+    ],
+    "sourceLinks": [
+      {
+        "label": "PlayStation Blog: AI upscaling is coming to PS5",
+        "url": "https://blog.playstation.com/2026/10/01/ai-upscaling-is-coming-to-ps5/"
+      },
+      {
+        "label": "Marvel's Wolverine official support-game trailer",
+        "url": "https://www.youtube.com/watch?v=RcFYsDKbAIk"
+      },
+      {
+        "label": "Ghost of Yotei official support-game trailer",
+        "url": "https://www.youtube.com/watch?v=E929-XwrS_Q"
+      }
+    ],
+    "media": [
+      {
+        "id": "ps5-qssr-wolverine-support-trailer",
+        "mediaType": "trailer",
+        "placement": "after-dek",
+        "source": "PlayStation",
+        "sourceUrl": "https://www.youtube.com/watch?v=RcFYsDKbAIk",
+        "embedUrl": "https://www.youtube.com/embed/RcFYsDKbAIk",
+        "caption": "Official PlayStation trailer for Marvel's Wolverine, one of the first announced QSSR-supported PS5 games.",
+        "credit": "Sony Interactive Entertainment / PlayStation",
+        "altText": "Official Marvel's Wolverine trailer embed.",
+        "rightsStatus": "official-embed"
+      },
+      {
+        "id": "ps5-qssr-wolverine-image",
+        "mediaType": "image",
+        "afterHeading": "The First Supported Games Matter",
+        "source": "PlayStation Blog",
+        "sourceUrl": "https://blog.playstation.com/2026/10/01/ai-upscaling-is-coming-to-ps5/",
+        "imageUrl": "https://blog.playstation.com/tachyon/2026/10/96e00dbbaf5eb86be6bd1f23edd3033cb4712ad4.jpg",
+        "caption": "Marvel's Wolverine is one of the first PS5 games Sony says will support QSSR.",
+        "credit": "Sony Interactive Entertainment / PlayStation",
+        "altText": "Official Marvel's Wolverine image from the PlayStation Blog QSSR announcement.",
+        "rightsStatus": "press-asset"
+      },
+      {
+        "id": "ps5-qssr-ghost-yotei-image",
+        "mediaType": "image",
+        "afterHeading": "The First Supported Games Matter",
+        "source": "PlayStation Blog",
+        "sourceUrl": "https://blog.playstation.com/2026/10/01/ai-upscaling-is-coming-to-ps5/",
+        "imageUrl": "https://blog.playstation.com/tachyon/2026/10/596d3801fadae7f05816d22e353f48ac7c84d14d.jpg",
+        "caption": "Ghost of Yotei is also named in Sony's first QSSR support list.",
+        "credit": "Sony Interactive Entertainment / PlayStation",
+        "altText": "Official Ghost of Yotei image from the PlayStation Blog QSSR announcement.",
+        "rightsStatus": "press-asset"
+      },
+      {
+        "id": "ps5-qssr-ghost-yotei-support-trailer",
+        "mediaType": "trailer",
+        "afterHeading": "What We Still Need to See",
+        "source": "PlayStation",
+        "sourceUrl": "https://www.youtube.com/watch?v=E929-XwrS_Q",
+        "embedUrl": "https://www.youtube.com/embed/E929-XwrS_Q",
+        "caption": "Official Ghost of Yotei trailer, included as a supported-game example while Sony's QSSR post has no dedicated QSSR video.",
+        "credit": "Sony Interactive Entertainment / PlayStation",
+        "altText": "Official Ghost of Yotei trailer embed.",
+        "rightsStatus": "official-embed"
+      }
+    ],
+    "body": [
+      "Sony is bringing **AI-guided upscaling** to the standard PlayStation 5, and that instantly makes QSSR one of the most important PS5 platform updates of the year.",
+      "The feature is called **Quick Spectral Super Resolution**, or **QSSR**. Sony describes it as a new performance tier of AI upscaling built for the base PS5, while **PSSR** remains the higher-end path for PS5 Pro.",
+      "## What QSSR Actually Is",
+      "QSSR is designed to improve image detail and stability on the standard PS5 by using a streamlined neural network architecture and a tuned implementation for the base console.",
+      "The consumer takeaway is simple: this is not just a PS5 Pro trick anymore. Sony is bringing some of the same AI-upscaling idea to the larger PS5 audience.",
+      "## QSSR vs PSSR",
+      {
+        "type": "table",
+        "caption": "Sony is positioning QSSR and PSSR as related but separate upscaling paths.",
+        "headers": [
+          "Feature",
+          "Console",
+          "What it means"
+        ],
+        "rows": [
+          [
+            "PSSR",
+            "PS5 Pro",
+            "Sony's higher-end PlayStation Spectral Super Resolution path for the Pro hardware tier."
+          ],
+          [
+            "QSSR",
+            "Base PS5",
+            "A faster AI-upscaling library designed to bring improved detail and stability to the standard PS5."
+          ],
+          [
+            "Shared idea",
+            "Both",
+            "Use reconstruction rather than relying only on native internal resolution."
+          ],
+          [
+            "Open question",
+            "Future PS5 games",
+            "How widely developers adopt QSSR after the first wave."
+          ]
+        ]
+      },
+      "## The First Supported Games Matter",
+      "Sony says the first titles to use QSSR are **Marvel's Wolverine** and **Ghost of Yotei**. That matters because the announcement is not an abstract technology promise. It starts with two highly visible PlayStation games.",
+      "If the feature works well, QSSR could become one of those behind-the-scenes upgrades players feel immediately: sharper image quality, better stability, and fewer compromises between fidelity and performance modes.",
+      "## What We Know",
+      "* QSSR is coming to the base PS5\n* Sony says it uses AI-guided upscaling principles\n* PSSR remains tied to PS5 Pro\n* Marvel's Wolverine and Ghost of Yotei are the first announced QSSR titles\n* Sony plans to offer QSSR broadly to PlayStation developers",
+      "## What We Still Need to See",
+      "* direct side-by-side image-quality comparisons\n* how QSSR behaves across performance and fidelity modes\n* whether existing PS5 games receive patches\n* how broad adoption becomes across first-party and third-party releases",
+      "## GCX Takeaway",
+      "The most exciting part is not just that PS5 is getting a new graphics option. It is that Sony is making AI upscaling a platform feature for the console most players already own."
+    ]
+  },
+  {
+    "sourceName": "GCX Newsroom",
+    "sourceUrl": "news.html",
+    "externalUrl": "news.html",
+    "shareUrl": "community.html",
+    "type": "editorial",
+    "editorialStatus": "ready-for-publish",
+    "storyLifecycleState": "ready-for-publish",
+    "deepResearchUsed": false,
+    "livingArticle": false,
+    "lastUpdated": "2026-10-02",
+    "lastReviewedAt": "2026-10-02",
+    "editorialOwner": "GCX Newsroom",
+    "id": "gcx-newsroom-gears-of-war-e-day-early-access-live",
+    "slug": "gears-of-war-e-day-early-access-live",
+    "title": "Gears of War: E-Day Is Playable Now - Here's What Early Access Includes Before the Oct. 6 Launch",
+    "seoTitle": "Gears of War: E-Day Early Access Is Live - Launch Trailer, Platforms, and Details",
+    "excerpt": "Gears of War: E-Day early access is live for Premium Edition players and Game Pass subscribers with the Premium Upgrade before the full October 6 launch.",
+    "metaDescription": "Gears of War: E-Day is now playable in early access. Here is what is available before the full Oct. 6 launch, plus platforms, Game Pass details, and the official launch trailer.",
+    "category": "Gaming",
+    "articleType": "Major News / Early Access Launch Coverage",
+    "publishedAt": "2026-10-02T20:50:00.000-04:00",
+    "qaScore": 95,
+    "opportunityScore": 95,
+    "topicCluster": "Gears of War: E-Day",
+    "canonicalTopic": "Gears of War: E-Day early access",
+    "targetSearchIntent": "Gears of War E-Day early access, Gears E-Day launch trailer, Gears E-Day platforms, Gears E-Day Game Pass",
+    "updateFrequency": "Update when Xbox publishes launch notes, server status updates, review timing, or post-launch patch details.",
+    "updatePolicy": "Preserve this URL as the early-access launch hub for Gears of War: E-Day.",
+    "claimStatus": "Official Xbox Wire / The Coalition / GCX launch coverage",
+    "confidence": "Official Xbox Wire / The Coalition / GCX launch coverage",
+    "heroImage": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/10/GoW_EDAY_Adagio_4K_Final_09-0f31e58cf65dec22523a.jpg",
+    "heroImageSource": "Official Xbox Wire launch article",
+    "heroImageSourceUrl": "https://news.xbox.com/en-us/2026/10/01/gears-of-war-e-day-early-access-launch-trailer-xbox/",
+    "heroImageCredit": "Xbox / The Coalition",
+    "heroImageAlt": "Official Gears of War: E-Day launch image from Xbox Wire.",
+    "heroImageFocalX": "50%",
+    "heroImageFocalY": "46%",
+    "trailerUrl": "https://www.youtube.com/watch?v=3onc3ownB14",
+    "mediaType": "official-screenshot",
+    "imageUrl": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/10/GoW_EDAY_Adagio_4K_Final_09-0f31e58cf65dec22523a.jpg",
+    "imageCredit": "Xbox / The Coalition",
+    "tags": [
+      "Gears of War",
+      "Xbox",
+      "The Coalition",
+      "Game Pass",
+      "Early Access"
+    ],
+    "relatedLinks": [
+      {
+        "label": "Gears of War: E-Day Gamescom Hands-On",
+        "url": "article.html?id=gcx-newsroom-gears-of-war-e-day-gamescom-hands-on"
+      },
+      {
+        "label": "Xbox Game Library",
+        "url": "xbox.html"
+      }
+    ],
+    "sourceLinks": [
+      {
+        "label": "Xbox Wire early access launch article",
+        "url": "https://news.xbox.com/en-us/2026/10/01/gears-of-war-e-day-early-access-launch-trailer-xbox/"
+      },
+      {
+        "label": "Official Gears of War site",
+        "url": "https://www.gearsofwar.com/en-us/"
+      },
+      {
+        "label": "Gears of War: E-Day gameplay updates",
+        "url": "https://www.gearsofwar.com/en-us/news/e-day-gameplay-updates/"
+      },
+      {
+        "label": "Official launch trailer",
+        "url": "https://www.youtube.com/watch?v=3onc3ownB14"
+      }
+    ],
+    "media": [
+      {
+        "id": "gears-e-day-launch-trailer",
+        "mediaType": "trailer",
+        "placement": "after-dek",
+        "source": "Xbox",
+        "sourceUrl": "https://www.youtube.com/watch?v=3onc3ownB14",
+        "embedUrl": "https://www.youtube.com/embed/3onc3ownB14",
+        "caption": "Official Gears of War: E-Day launch trailer from Xbox.",
+        "credit": "Xbox / The Coalition",
+        "altText": "Official Gears of War: E-Day launch trailer embed.",
+        "rightsStatus": "official-embed"
+      },
+      {
+        "id": "gears-e-day-official-media-gallery",
+        "mediaType": "gallery",
+        "afterHeading": "What the Game Is About",
+        "caption": "Official Gears of War: E-Day media from Xbox Wire and GearsofWar.com.",
+        "source": "Xbox / The Coalition",
+        "sourceUrl": "https://www.gearsofwar.com/en-us/",
+        "credit": "Xbox / The Coalition",
+        "rightsStatus": "press-asset",
+        "items": [
+          {
+            "imageUrl": "https://live.cdn.gearsofwar.com/gearsofwar/sites/3/2026/05/01_GoW_EDAY_StoryofEmergence_Final-6a1766321388d-2048x1152.jpg",
+            "caption": "Marcus and Dom face Emergence Day in official Gears of War: E-Day media.",
+            "altText": "Marcus and Dom overlooking destruction in official Gears of War: E-Day art.",
+            "sourceUrl": "https://www.gearsofwar.com/en-us/",
+            "rightsStatus": "press-asset"
+          },
+          {
+            "imageUrl": "https://live.cdn.gearsofwar.com/gearsofwar/sites/3/2026/05/02_GoW_EDAY_BravoSquad_Final-6a176637d1a6c-2048x1152.jpg",
+            "caption": "Bravo Squad is part of the E-Day campaign framing.",
+            "altText": "Bravo Squad stands together in official Gears of War: E-Day media.",
+            "sourceUrl": "https://www.gearsofwar.com/en-us/",
+            "rightsStatus": "press-asset"
+          },
+          {
+            "imageUrl": "https://live.cdn.gearsofwar.com/gearsofwar/sites/3/2026/05/03_GoW_EDAY_Boomer_Final-6a17663e3da94-2048x1152.jpg",
+            "caption": "Official media highlights the Locust threat and the game's darker horror tone.",
+            "altText": "A Boomer emerges from flames in official Gears of War: E-Day media.",
+            "sourceUrl": "https://www.gearsofwar.com/en-us/",
+            "rightsStatus": "press-asset"
+          },
+          {
+            "imageUrl": "https://live.cdn.gearsofwar.com/gearsofwar/sites/3/2026/07/GoW_EDAY_HordeSiege_Corpser_comp-6a6937d51e69f.jpg",
+            "caption": "Horde Siege is part of the broader launch package beyond the campaign.",
+            "altText": "A Corpser appears in an official Gears of War: E-Day Horde Siege image.",
+            "sourceUrl": "https://www.gearsofwar.com/en-us/news/multiplayer/",
+            "rightsStatus": "press-asset"
+          }
+        ]
+      }
+    ],
+    "body": [
+      "**Gears of War: E-Day** is now playable in early access for Premium Edition players and Game Pass subscribers with the Premium Upgrade, giving Xbox fans a head start before the full launch on **October 6, 2026**.",
+      "That makes this more than a launch-trailer story. This is the moment where the long-awaited prequel starts moving from hype to hands-on experience.",
+      "## Early Access Starts the Real Conversation",
+      "Once early access begins, the questions change. Players are no longer asking only what the game looks like in trailers. They are asking how the campaign feels, how polished the launch build is, and whether The Coalition has recaptured the weight of classic Gears.",
+      "## Platforms / Launch Timing",
+      {
+        "type": "table",
+        "caption": "Xbox's official launch article lays out the early-access and full-release timing.",
+        "headers": [
+          "Item",
+          "Detail"
+        ],
+        "rows": [
+          [
+            "Early access",
+            "Live October 1, 2026 at 8:00 a.m. PT / 15:00 UTC for eligible players."
+          ],
+          [
+            "Full launch",
+            "October 6, 2026 at 8:00 a.m. PT / 15:00 UTC."
+          ],
+          [
+            "Platforms",
+            "Xbox Series X|S, Windows PC, Steam, cloud gaming through Game Pass Ultimate and GeForce NOW."
+          ],
+          [
+            "Access path",
+            "Premium Edition or Game Pass with the Premium Upgrade for early access."
+          ]
+        ]
+      },
+      "## What the Game Is About",
+      "E-Day goes back to **Emergence Day**, the catastrophic beginning of the Locust invasion. The story focuses on a younger **Marcus Fenix** and **Dom Santiago**, turning the series into a prequel about horror, chaos, and survival before the legends were fully formed.",
+      "## What We Know",
+      "* Gears of War: E-Day early access is live now\n* full launch is October 6, 2026\n* the official launch trailer is live\n* the game is coming to Xbox Series X|S, Windows PC, Steam, and cloud\n* the story returns to Emergence Day\n* Marcus Fenix and Dom Santiago are central characters",
+      "## Why Players Should Care",
+      "The Coalition has been clear that E-Day is meant to feel like Gears but play like new. That means cover, weight, weapon impact, horror, and the Locust threat all have to land together.",
+      "If early access confirms that balance, this could be the Xbox release that turns October into a real event."
+    ]
+  },
+  {
+    "sourceName": "GCX Newsroom",
+    "sourceUrl": "news.html",
+    "externalUrl": "news.html",
+    "shareUrl": "community.html",
+    "type": "editorial",
+    "editorialStatus": "ready-for-publish",
+    "storyLifecycleState": "ready-for-publish",
+    "deepResearchUsed": false,
+    "livingArticle": false,
+    "lastUpdated": "2026-10-02",
+    "lastReviewedAt": "2026-10-02",
+    "editorialOwner": "GCX Newsroom",
+    "id": "gcx-newsroom-pokemon-30th-celebration-booster-bundles-mini-tins-october-2",
+    "slug": "pokemon-30th-celebration-booster-bundles-mini-tins-october-2",
+    "title": "Pokemon 30th Celebration Booster Bundles and Mini Tins Are Finally Here - Here's What's Inside",
+    "seoTitle": "Pokemon 30th Celebration Booster Bundles, Mini Tins, and More Launch Today",
+    "excerpt": "The October 2 Pokemon TCG wave adds 30th Celebration Booster Bundles, Mini Tins, Enhanced 2-Pack Blisters, and Mini Portfolios.",
+    "metaDescription": "Pokemon TCG: 30th Celebration Booster Bundles, Mini Tins, Enhanced 2-Pack Blisters, and Mini Portfolios launch on October 2. Here is what each product includes.",
+    "category": "Cards",
+    "articleType": "Major News / Product Guide",
+    "publishedAt": "2026-10-02T20:40:00.000-04:00",
+    "qaScore": 95,
+    "opportunityScore": 94,
+    "topicCluster": "Pokemon TCG: 30th Celebration",
+    "canonicalTopic": "Pokemon TCG 30th Celebration October 2 products",
+    "targetSearchIntent": "Pokemon 30th Celebration Booster Bundle, Pokemon 30th Celebration Mini Tin, Enhanced 2-Pack Blister, Mini Portfolio October 2",
+    "updateFrequency": "Update if Pokemon publishes more official product images, MSRP details, sellout notes, or restock guidance.",
+    "updatePolicy": "Preserve this URL as the October 2 30th Celebration product guide.",
+    "claimStatus": "Official Pokemon product pages / GCX collector guide",
+    "confidence": "Official Pokemon product pages / GCX collector guide",
+    "heroImage": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/us/img/trading-card-game/tiles/2026/product-showcase/10/product-showcase-169-en.png",
+    "heroImageSource": "Official Pokemon product showcase",
+    "heroImageSourceUrl": "https://www.pokemon.com/us/news/check-out-every-pokemon-tcg-product-release-in-october-2026",
+    "heroImageCredit": "The Pokemon Company International",
+    "heroImageAlt": "Official Pokemon TCG October 2026 product showcase image.",
+    "heroImageFocalX": "50%",
+    "heroImageFocalY": "50%",
+    "trailerUrl": "",
+    "mediaType": "official-product-image",
+    "imageUrl": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/us/img/trading-card-game/tiles/2026/product-showcase/10/product-showcase-169-en.png",
+    "imageCredit": "The Pokemon Company International",
+    "tags": [
+      "Pokemon TCG",
+      "30th Celebration",
+      "Booster Bundle",
+      "Mini Tin",
+      "Collectors"
+    ],
+    "relatedLinks": [
+      {
+        "label": "Pokemon 30th Celebration Complete Guide",
+        "url": "article.html?id=gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide"
+      },
+      {
+        "label": "Pokemon Card Database",
+        "url": "pokemon.html"
+      }
+    ],
+    "sourceLinks": [
+      {
+        "label": "Pokemon TCG October 2026 product releases",
+        "url": "https://www.pokemon.com/us/news/check-out-every-pokemon-tcg-product-release-in-october-2026"
+      },
+      {
+        "label": "Pokemon TCG: 30th Celebration product showcase",
+        "url": "https://www.pokemon.com/us/news/pokemon-tcg-30th-celebration-product-showcase"
+      }
+    ],
+    "media": [
+      {
+        "id": "pokemon-30th-october-product-gallery",
+        "mediaType": "gallery",
+        "placement": "after-dek",
+        "caption": "Official October 2 Pokemon TCG product images.",
+        "source": "Pokemon.com",
+        "sourceUrl": "https://www.pokemon.com/us/news/check-out-every-pokemon-tcg-product-release-in-october-2026",
+        "credit": "The Pokemon Company International",
+        "rightsStatus": "press-asset",
+        "items": [
+          {
+            "imageUrl": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/us/img/trading-card-game/tiles/30th/product-showcase/inline/booster-bundle-en.png",
+            "caption": "The 30th Celebration Booster Bundle includes six booster packs.",
+            "altText": "Official Pokemon TCG 30th Celebration Booster Bundle product image.",
+            "sourceUrl": "https://www.pokemon.com/us/news/check-out-every-pokemon-tcg-product-release-in-october-2026",
+            "rightsStatus": "press-asset"
+          },
+          {
+            "imageUrl": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/us/img/trading-card-game/tiles/30th/product-showcase/inline/mini-tin.png",
+            "caption": "The 30th Celebration Mini Tin line includes ten collectible tin designs.",
+            "altText": "Official Pokemon TCG 30th Celebration Mini Tin product image.",
+            "sourceUrl": "https://www.pokemon.com/us/news/check-out-every-pokemon-tcg-product-release-in-october-2026",
+            "rightsStatus": "press-asset"
+          },
+          {
+            "imageUrl": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/us/img/trading-card-game/tiles/2026/product-showcase/10/inline/enhanced-2-pack-blister-en.png",
+            "caption": "The Enhanced 2-Pack Blister includes two booster packs, a foil promo card, and a coin.",
+            "altText": "Official Pokemon TCG Enhanced 2-Pack Blister product image.",
+            "sourceUrl": "https://www.pokemon.com/us/news/check-out-every-pokemon-tcg-product-release-in-october-2026",
+            "rightsStatus": "press-asset"
+          },
+          {
+            "imageUrl": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/us/img/trading-card-game/tiles/2026/product-showcase/10/inline/mini-portfolio.png",
+            "caption": "The Mini Portfolio includes a mini binder and one Pokemon TCG booster pack.",
+            "altText": "Official Pokemon TCG Mini Portfolio product image.",
+            "sourceUrl": "https://www.pokemon.com/us/news/check-out-every-pokemon-tcg-product-release-in-october-2026",
+            "rightsStatus": "press-asset"
+          },
+          {
+            "imageUrl": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/us/img/trading-card-game/tiles/30th/product-showcase/30th-product-showcase-169-en.png",
+            "caption": "Pokemon's 30th Celebration product showcase gives collectors a broader view of the anniversary lineup.",
+            "altText": "Official Pokemon TCG 30th Celebration product showcase image.",
+            "sourceUrl": "https://www.pokemon.com/us/news/pokemon-tcg-30th-celebration-product-showcase",
+            "rightsStatus": "press-asset"
+          }
+        ]
+      }
+    ],
+    "body": [
+      "The next big wave of **Pokemon TCG: 30th Celebration** products launches today, **October 2**, giving collectors several new ways to open the anniversary set.",
+      "The lineup includes the Booster Bundle, Mini Tins, Enhanced 2-Pack Blister, and Mini Portfolio. For collectors, the biggest hook is simple: this wave is practical. It is built around pack access, collectible tins, and shelf-friendly accessories.",
+      "## What's Inside Each Product",
+      {
+        "type": "table",
+        "caption": "Official Pokemon product pages list the core contents for the October 2 wave.",
+        "headers": [
+          "Product",
+          "What it includes",
+          "Why collectors care"
+        ],
+        "rows": [
+          [
+            "Booster Bundle",
+            "6 Pokemon TCG: 30th Celebration booster packs.",
+            "Clean pack access without extra accessories."
+          ],
+          [
+            "Mini Tin",
+            "2 30th Celebration booster packs, 1 sticker sheet, and 1 matching Pokemon art card.",
+            "Ten designs combine into day-themed and night-themed artwork scenes."
+          ],
+          [
+            "Enhanced 2-Pack Blister",
+            "2 booster packs, 1 random foil promo card, and 1 Pokemon coin.",
+            "Good for collectors chasing promos alongside packs."
+          ],
+          [
+            "Mini Portfolio",
+            "1 Pokemon TCG booster pack and 1 mini portfolio binder.",
+            "A small display/storage product for favorite pulls."
+          ]
+        ]
+      },
+      "## Booster Bundle",
+      "The **Booster Bundle** is the straightforward one: six 30th Celebration booster packs and no extra ceremony. If you want packs more than accessories, this is the cleanest product in the wave.",
+      "## Mini Tins",
+      "The **Mini Tins** are the visual star. Pokemon says there are **10 different designs**, and the artwork can be combined to form two large images: one day-themed and one night-themed.",
+      "Each tin includes two 30th Celebration booster packs, a sticker sheet, and a Pokemon art card matching the tin design.",
+      "## Enhanced 2-Pack Blister",
+      "The Enhanced 2-Pack Blister adds a foil promo card and coin to the two-pack format. Pokemon's October product page highlights Gengar, Marshadow, and Team Rocket's Mimikyu as featured foil-card possibilities.",
+      "## Mini Portfolio",
+      "The Mini Portfolio is the small binder option. It comes with one booster pack and gives collectors an easy place to start storing favorite pulls from the anniversary set.",
+      "## What We Know",
+      "* the products launch October 2, 2026\n* Booster Bundles include 6 packs\n* Mini Tins come in 10 designs\n* each Mini Tin includes 2 packs, stickers, and an art card\n* Enhanced 2-Pack Blisters include 2 packs, a foil promo, and a coin\n* Mini Portfolios include 1 pack and a mini binder",
+      "## GCX Takeaway",
+      "This is the most collector-friendly 30th Celebration wave so far because each product has a clear job. Booster Bundles are for opening packs, Mini Tins are for display and set building, Blisters add promo value, and Mini Portfolios give newer collectors a simple place to keep the cards they pull."
+    ]
+  },
+  {
+    "sourceName": "GCX Newsroom",
+    "sourceUrl": "news.html",
+    "externalUrl": "news.html",
+    "shareUrl": "community.html",
+    "type": "editorial",
+    "editorialStatus": "ready-for-publish",
+    "storyLifecycleState": "ready-for-publish",
+    "deepResearchUsed": false,
+    "livingArticle": false,
+    "lastUpdated": "2026-10-02",
+    "lastReviewedAt": "2026-10-02",
+    "editorialOwner": "GCX Newsroom",
+    "id": "gcx-newsroom-magic-the-gathering-reality-fracture-launch",
+    "slug": "magic-the-gathering-reality-fracture-launch",
+    "title": "Magic: The Gathering's Reality Fracture Launches Today - and Jace Has Apparently Broken the Multiverse",
+    "seoTitle": "Magic: The Gathering Reality Fracture Launches Today - New Cards, Mechanics, and Products",
+    "excerpt": "Reality Fracture is live for Magic: The Gathering, bringing shattered mirror cards, borderless echoed pairs, and a Jace-centered multiverse crisis.",
+    "metaDescription": "Magic: The Gathering's Reality Fracture launches October 2 with new mechanics, shattered-mirror cards, borderless echoed pairs, and a multiverse story centered around Jace.",
+    "category": "Cards",
+    "articleType": "Major News / Set Launch Guide",
+    "publishedAt": "2026-10-02T20:30:00.000-04:00",
+    "qaScore": 94,
+    "opportunityScore": 91,
+    "topicCluster": "Magic: The Gathering - Reality Fracture",
+    "canonicalTopic": "Magic: The Gathering Reality Fracture",
+    "targetSearchIntent": "Magic Reality Fracture launch, Reality Fracture cards, shattered mirror cards, borderless echoed pairs, Jace Reality Fracture",
+    "updateFrequency": "Update if Wizards publishes additional launch videos, official card galleries, product corrections, or event details.",
+    "updatePolicy": "Preserve this URL as GCX's Reality Fracture launch guide.",
+    "claimStatus": "Official Wizards of the Coast / GCX TCG launch guide",
+    "confidence": "Official Wizards of the Coast / GCX TCG launch guide",
+    "heroImage": "https://images.ctfassets.net/s5n2t79q9icq/1dQnj1H9MICej73LzXygjn/e2736e3996e8515ac69400d5cf4900c5/FRA_The_Theorist__Jace_Beleren_960x540.jpg",
+    "heroImageSource": "Official Wizards of the Coast article",
+    "heroImageSourceUrl": "https://magic.wizards.com/en/news/feature/collecting-reality-fracture",
+    "heroImageCredit": "Wizards of the Coast",
+    "heroImageAlt": "Official Reality Fracture art featuring The Theorist, Jace Beleren.",
+    "heroImageFocalX": "50%",
+    "heroImageFocalY": "44%",
+    "trailerUrl": "",
+    "mediaType": "official-card-art",
+    "imageUrl": "https://images.ctfassets.net/s5n2t79q9icq/1dQnj1H9MICej73LzXygjn/e2736e3996e8515ac69400d5cf4900c5/FRA_The_Theorist__Jace_Beleren_960x540.jpg",
+    "imageCredit": "Wizards of the Coast",
+    "tags": [
+      "Magic: The Gathering",
+      "Reality Fracture",
+      "Jace",
+      "TCG",
+      "Wizards of the Coast"
+    ],
+    "relatedLinks": [
+      {
+        "label": "Magic Card Database",
+        "url": "magic.html"
+      },
+      {
+        "label": "Trading Card News",
+        "url": "news.html"
+      }
+    ],
+    "sourceLinks": [
+      {
+        "label": "Wizards: Reality Fracture product page",
+        "url": "https://magic.wizards.com/en/products/reality-fracture"
+      },
+      {
+        "label": "Wizards: Collecting Reality Fracture",
+        "url": "https://magic.wizards.com/en/news/feature/collecting-reality-fracture"
+      },
+      {
+        "label": "Wizards: Reality Fracture Card Image Gallery",
+        "url": "https://magic.wizards.com/en/products/reality-fracture/card-image-gallery"
+      },
+      {
+        "label": "Wizards: Where to Find Reality Fracture Previews",
+        "url": "https://magic.wizards.com/en/news/announcements/where-to-find-reality-fracture-previews"
+      }
+    ],
+    "media": [
+      {
+        "id": "reality-fracture-feature-gallery",
+        "mediaType": "gallery",
+        "placement": "after-dek",
+        "caption": "Official Reality Fracture cards, products, and set imagery from Wizards of the Coast.",
+        "source": "Wizards of the Coast",
+        "sourceUrl": "https://magic.wizards.com/en/news/feature/collecting-reality-fracture",
+        "credit": "Wizards of the Coast",
+        "rightsStatus": "press-asset",
+        "items": [
+          {
+            "imageUrl": "https://media.wizards.com/2026/images/daily/FjG9SWaGN4/en_47TEXCMlkM.webp",
+            "caption": "Reality Fracture Play Booster Box.",
+            "altText": "Official Reality Fracture Play Booster Box product image.",
+            "sourceUrl": "https://magic.wizards.com/en/news/feature/collecting-reality-fracture",
+            "rightsStatus": "press-asset"
+          },
+          {
+            "imageUrl": "https://media.wizards.com/2026/images/daily/FjG9SWaGN4/en_00paGIeBG6.webp",
+            "caption": "Reality Fracture Collector Booster Box.",
+            "altText": "Official Reality Fracture Collector Booster Box product image.",
+            "sourceUrl": "https://magic.wizards.com/en/news/feature/collecting-reality-fracture",
+            "rightsStatus": "press-asset"
+          },
+          {
+            "imageUrl": "https://media.wizards.com/2026/fra/jj47dDe90Dll/en_xKrFh6FwrU.webp",
+            "caption": "Official Reality Fracture card image from Wizards' launch coverage.",
+            "altText": "Official Reality Fracture card image from Wizards of the Coast.",
+            "sourceUrl": "https://magic.wizards.com/en/news/feature/collecting-reality-fracture",
+            "rightsStatus": "press-asset"
+          },
+          {
+            "imageUrl": "https://media.wizards.com/2026/fra/jj47dDe90Dll/en_PKIYQCVZxX.webp",
+            "caption": "Official Reality Fracture card image from Wizards' launch coverage.",
+            "altText": "Official Reality Fracture card image from Wizards of the Coast.",
+            "sourceUrl": "https://magic.wizards.com/en/news/feature/collecting-reality-fracture",
+            "rightsStatus": "press-asset"
+          },
+          {
+            "imageUrl": "https://media.wizards.com/2026/fra/jj47dDe90Dll/en_sAPyK9H9Mj.webp",
+            "caption": "Official Reality Fracture card image from Wizards' launch coverage.",
+            "altText": "Official Reality Fracture card image from Wizards of the Coast.",
+            "sourceUrl": "https://magic.wizards.com/en/news/feature/collecting-reality-fracture",
+            "rightsStatus": "press-asset"
+          }
+        ]
+      },
+      {
+        "id": "reality-fracture-video-needed",
+        "mediaType": "rights-note",
+        "afterHeading": "What We Know",
+        "source": "Wizards of the Coast",
+        "sourceUrl": "https://magic.wizards.com/en/products/reality-fracture",
+        "caption": "MORE OFFICIAL MEDIA NEEDED: GCX found official Wizards images for launch coverage, but no directly embeddable Reality Fracture launch trailer URL in the approved source pass.",
+        "rightsStatus": "source-link-only"
+      }
+    ],
+    "body": [
+      "**Reality Fracture** launches today for **Magic: The Gathering**, bringing a new set built around a destabilized multiverse, showcase treatments, and a story thread that puts **Jace** at the center of the chaos.",
+      "For GCX, this is also a useful editorial moment. The site should be great at Pokemon coverage, but not trapped inside Pokemon coverage. A major Magic launch is exactly the kind of story that makes the TCG section feel bigger.",
+      "## New Set Features",
+      {
+        "type": "table",
+        "caption": "Wizards' official Reality Fracture pages highlight the treatments and product hooks collectors will notice first.",
+        "headers": [
+          "Feature",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Shattered mirror cards",
+            "Alternate-reality versions of recognizable Magic cards, with special facet foil versions in Collector Boosters."
+          ],
+          [
+            "Borderless echoed pairs",
+            "Two-card visuals that show characters and counterparts clashing across realities."
+          ],
+          [
+            "Special Guests panorama",
+            "A 10-card Special Guests treatment that forms a large Echoverse panorama."
+          ],
+          [
+            "Jace story hook",
+            "Reality Fracture centers on Jace's attempt to reshape the Multiverse into his own vision."
+          ]
+        ]
+      },
+      "## What Makes Reality Fracture Stand Out",
+      "Wizards is positioning Reality Fracture around multiverse instability. The set's selling point is not only new cards, but the idea that familiar Magic identities are being reflected through the Echoverse.",
+      "The most collector-facing features are **shattered mirror cards**, **borderless echoed pairs**, and premium product paths such as Collector Boosters and the Reality Fracture Secret Lair Bundle.",
+      "## Why Jace Is the Hook",
+      "Reality Fracture's marketing leans into the idea that **Jace** has reshaped the Multiverse into his ideal vision. That gives the release a cleaner narrative hook than many set launches get.",
+      "Even if you are not current on every Magic story beat, the premise is easy to understand: Jace tried to solve reality, and everyone else has to live inside the consequences.",
+      "## What We Know",
+      "* Reality Fracture releases October 2, 2026\n* Wizards is highlighting shattered mirror cards\n* borderless echoed pairs appear as a major visual treatment\n* Play Boosters and Collector Boosters are part of the launch product lineup\n* the set's narrative framing heavily involves Jace and the Echoverse",
+      "## GCX Takeaway",
+      "Reality Fracture looks like the right kind of Magic story for wider TCG coverage: big theme, clear collector hooks, and enough visual identity for casual readers to understand why the launch matters."
+    ]
+  },
+  {
+    "sourceName": "GCX Newsroom",
+    "sourceUrl": "news.html",
+    "externalUrl": "news.html",
+    "shareUrl": "community.html",
+    "type": "editorial",
+    "editorialStatus": "ready-for-publish",
+    "storyLifecycleState": "ready-for-publish",
+    "deepResearchUsed": false,
+    "livingArticle": false,
     "lastUpdated": "2026-09-25",
     "lastReviewedAt": "2026-09-25",
     "id": "gcx-newsroom-bethesda-obsidian-creative-identity-xbox-restructure",
