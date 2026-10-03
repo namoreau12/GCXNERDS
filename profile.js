@@ -96,7 +96,7 @@ function renderGroupItem(group) {
   return `
     <a class="profile-group-card" href="${escapeHtml(group.url || `community.html?group=${encodeURIComponent(group.id)}`)}">
       <strong>${escapeHtml(group.name)}</strong>
-      <span>${escapeHtml(group.category || "Community")} - ${escapeHtml(group.role || "member")}</span>
+      <span>${escapeHtml(group.category || "Community")}</span>
       <p>${escapeHtml(group.description || "Community group")}</p>
     </a>
   `;

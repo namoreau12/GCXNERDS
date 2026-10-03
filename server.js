@@ -6540,7 +6540,6 @@ async function handleCommunityApi(req, res, url) {
               name: group.name,
               category: group.category,
               description: group.description,
-              role: membership.role || "member",
               url: `community.html?group=${encodeURIComponent(group.id)}`,
             }
           : null;
