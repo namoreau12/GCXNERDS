@@ -569,7 +569,7 @@ async function loadHomeNews() {
       document.querySelector("#news")?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   } catch (error) {
-    storyGrid.innerHTML = `<div class="index-message">Top stories could not be loaded. Make sure the local server is running.</div>`;
+    storyGrid.innerHTML = `<div class="index-message">Top stories are temporarily unavailable. Try refreshing in a moment.</div>`;
   }
 }
 

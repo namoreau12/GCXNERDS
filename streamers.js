@@ -545,7 +545,7 @@ async function loadStreamers() {
     renderStreamingSpotlight();
     renderStreamers();
   } catch (error) {
-    streamerGrid.innerHTML = `<div class="index-message">Streamer highlights could not be loaded. Make sure the local server is running.</div>`;
+    streamerGrid.innerHTML = `<div class="index-message">Streamer highlights are temporarily unavailable. Try refreshing in a moment.</div>`;
   }
 }
 

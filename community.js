@@ -926,7 +926,7 @@ async function loadPosts({ append = false } = {}) {
     renderMembers();
     renderPosts();
   } catch (error) {
-    feed.innerHTML = `<div class="index-message">Community posts could not be loaded. Make sure the local server is running.</div>`;
+    feed.innerHTML = `<div class="index-message">Community posts are temporarily unavailable. Try refreshing in a moment.</div>`;
     if (loadMorePostsButton) loadMorePostsButton.hidden = true;
   }
 }

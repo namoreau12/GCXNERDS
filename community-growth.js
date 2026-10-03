@@ -521,7 +521,7 @@ async function loadGrowthDashboard() {
     const result = await response.json();
     renderDashboard(result.data || {});
   } catch (error) {
-    growthMetrics.innerHTML = `<div class="index-message">Growth dashboard could not be loaded. Make sure the local server is running.</div>`;
+    growthMetrics.innerHTML = `<div class="index-message">Growth dashboard is temporarily unavailable. Try refreshing in a moment.</div>`;
   }
 }
 

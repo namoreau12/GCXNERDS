@@ -87,7 +87,7 @@ async function loadGroups() {
     localStorage.setItem(viewerStorageKey, viewerId);
     renderGroups();
   } catch (error) {
-    groupGrid.innerHTML = `<div class="index-message">Groups could not be loaded. Make sure the local server is running.</div>`;
+    groupGrid.innerHTML = `<div class="index-message">Groups are temporarily unavailable. Try refreshing in a moment.</div>`;
   }
 }
 

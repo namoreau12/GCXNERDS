@@ -347,7 +347,7 @@ async function loadNews() {
     renderSources(result.sources || []);
   } catch (error) {
     newsGenerated.textContent = "News unavailable";
-    newsGrid.innerHTML = `<div class="index-message">News could not be loaded. Make sure the local server is running.</div>`;
+    newsGrid.innerHTML = `<div class="index-message">News is temporarily unavailable. Try refreshing in a moment.</div>`;
   }
 }
 
