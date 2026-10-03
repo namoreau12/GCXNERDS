@@ -1568,23 +1568,23 @@
     "editorialStatus": "ready-for-publish",
     "storyLifecycleState": "ready-for-publish",
     "qaScore": 91,
-    "deepResearchUsed": false,
-    "livingArticle": false,
+    "deepResearchUsed": true,
+    "livingArticle": true,
     "updateFrequency": "Update if official source pages, trailer embeds, launch details, screenshots, or post-launch patch details change.",
-    "title": "Silent Hill: Townfall Is Out Today - and Its First-Person Shift Changes More Than Just the Camera",
-    "seoTitle": "Silent Hill: Townfall Launches Today on PS5 and PC",
-    "excerpt": "Townfall brings Silent Hill to the Scottish island of St. Amelia with first-person exploration, puzzle-driven horror, and a CRTV mechanic built around unstable signals.",
-    "metaDescription": "Silent Hill: Townfall launches on PS5 and PC, bringing a first-person perspective, puzzle-driven horror, and the foggy Scottish setting of St. Amelia to Konami's horror franchise.",
+    "title": "Silent Hill: Townfall Launch Hub: First-Person Horror, St. Amelia, and Patch 1.3.1",
+    "seoTitle": "Silent Hill: Townfall Launch Hub: First-Person Horror and Patch 1.3.1",
+    "excerpt": "Silent Hill: Townfall is live on PS5 and PC, bringing the series to first person with St. Amelia, Simon Ordell, the CRTV mechanic, and an early performance patch.",
+    "metaDescription": "Silent Hill: Townfall is out on PS5, Steam, and Epic Games Store. Here is what the first-person shift changes, what Konami confirmed, and what Patch 1.3.1 fixed.",
     "category": "Gaming",
-    "articleType": "Major News / Launch Coverage",
+    "articleType": "Major News / Launch Hub",
     "publishedAt": "2026-09-24T12:00:00.000-04:00",
-    "lastUpdated": "2026-09-24",
-    "lastReviewedAt": "2026-09-24",
+    "lastUpdated": "2026-10-03",
+    "lastReviewedAt": "2026-10-03",
     "opportunityScore": 93,
     "topicCluster": "Silent Hill: Townfall",
     "canonicalTopic": "Silent Hill: Townfall",
-    "targetSearchIntent": "Silent Hill Townfall launch, Silent Hill Townfall first person, St. Amelia, PS5 PC",
-    "updatePolicy": "Preserve this URL and update if Konami, PlayStation, Screen Burn, or Annapurna publish launch patches, review timing, or additional platform details.",
+    "targetSearchIntent": "Silent Hill Townfall launch, Silent Hill Townfall first person, Silent Hill Townfall Patch 1.3.1, St Amelia CRTV",
+    "updatePolicy": "Preserve this URL as the Silent Hill: Townfall launch hub and update if Konami publishes additional patch notes, platform changes, review milestones, or official media assets.",
     "claimStatus": "Official / GCX Analysis",
     "confidence": "Official / GCX Analysis",
     "heroImage": "https://blog.playstation.com/tachyon/2026/06/d86a7dc035f1d019e05b02b9af2c5946bf406659.jpg",
@@ -1618,12 +1618,20 @@
     ],
     "sourceLinks": [
       {
-        "label": "Konami official release-date announcement",
-        "url": "https://www.konami.com/games/eu/en/topics/19146/"
+        "label": "Konami official launch announcement",
+        "url": "https://www.konami.com/games/eu/en/topics/19323/"
       },
       {
-        "label": "PlayStation Blog official Townfall feature",
+        "label": "PlayStation Blog release-date feature",
         "url": "https://blog.playstation.com/2026/06/02/silent-hill-townfall-launches-september-24-on-ps5/"
+      },
+      {
+        "label": "PlayStation Blog first-person feature",
+        "url": "https://blog.playstation.com/2026/09/21/silent-hill-townfall-9-ways-first-person-changes-the-iconic-horror-formula/"
+      },
+      {
+        "label": "Silent Hill: Townfall Patch 1.3.1 note",
+        "url": "https://www.konami.com/games/silenthill/townfall/updates/us/en/patch-note_v1-3-1"
       },
       {
         "label": "Official Silent Hill: Townfall site",
@@ -1677,25 +1685,96 @@
       }
     ],
     "body": [
-      "Silent Hill: Townfall launches today on PlayStation 5, Steam, and the Epic Games Store, giving Konami's long-running horror series another major reinvention.",
-      "Developed by **Screen Burn Interactive** and co-published by **Konami** and **Annapurna Interactive**, Townfall trades the series' usual third-person distance for a more intimate first-person perspective.",
+      "Silent Hill: Townfall is live on PlayStation 5, Steam, and the Epic Games Store, giving Konami's horror revival another major experiment: a full-length Silent Hill built around first-person psychological horror.",
+      "Developed by **Screen Burn Interactive** and co-published by **Konami** and **Annapurna Interactive**, Townfall moves the series to the foggy Scottish island of St. Amelia and puts players directly behind Simon Ordell’s eyes.",
+      "That perspective change is not cosmetic. It changes how the series handles distance, threat, puzzles, and the feeling of being watched by a place that already knows too much.",
+      "## What Konami Confirmed at Launch",
+      {
+        "type": "table",
+        "caption": "Official Silent Hill: Townfall launch facts.",
+        "headers": [
+          "Detail",
+          "Confirmed status",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Release date",
+            "September 24, 2026",
+            "Townfall is no longer a future horror beat; it is part of the live Silent Hill lineup."
+          ],
+          [
+            "Platforms",
+            "PlayStation 5, Steam, Epic Games Store",
+            "The launch is console-exclusive to PS5 while also reaching PC players."
+          ],
+          [
+            "Perspective",
+            "First-person psychological horror",
+            "This is the series’ biggest mechanical shift in years."
+          ],
+          [
+            "Setting",
+            "St. Amelia, a remote island off the coast of Scotland",
+            "The game builds dread around isolation rather than a familiar American small-town frame."
+          ],
+          [
+            "Protagonist",
+            "Simon Ordell",
+            "The story is built around an outsider returning to a town filled with memory and guilt."
+          ]
+        ]
+      },
       "## Silent Hill Moves to St. Amelia",
-      "Townfall is set on **St. Amelia**, a cold, isolated Scottish island wrapped in fog, guilt, and things that do not want to stay buried.",
-      "Players step into the role of **Simon Ordell**, who is drawn back to the island to put things right while using a strange CRTV pocket television to uncover pieces of the town's past.",
+      "Townfall is set on **St. Amelia**, a cold, isolated Scottish island wrapped in fog, silence, and fragments of memory. Konami describes Simon Ordell as an outsider who has washed onto the marina of St. Amelia, where the presence of former residents still lingers.",
+      "That setting gives Townfall a different shape from Silent Hill 2, Silent Hill f, and the original town mythology. It still looks like Silent Hill in mood, but it is not relying only on old geography to earn that name.",
       "## Why First Person Matters",
-      "Sony's preview of the game makes the angle clear: Townfall is using first person to make the horror more immediate, more vulnerable, and more claustrophobic.",
-      "Instead of watching fear happen to a character, players experience the island directly through Simon's perspective. That affects exploration, puzzle-solving, evasion, combat, and the emotional tone of the game.",
+      "The first-person shift changes the contract between player and horror. Classic Silent Hill often used distance: a character framed in the environment, the camera holding tension, the player watching dread close in. Townfall removes much of that buffer.",
+      "Sony's feature coverage frames the perspective as a way to make exploration, puzzle-solving, evasion, combat, and uncertainty feel more immediate. Instead of watching Simon move through St. Amelia, players inhabit the space where the sound, fog, and unreliable signals are pointed directly at them.",
       "## Puzzle Horror, Not Just Combat Horror",
       "Konami has described Townfall as a full-length, self-contained psychological horror game, and the design language appears to lean as hard on atmosphere and puzzles as it does on direct confrontation.",
-      "The CRTV is central to that identity. It is a core mechanic for uncovering clues, tuning into unstable signals, and navigating the layered reality of St. Amelia.",
+      "The CRTV pocket television is central to that identity. It is not just flavor dressing for a retro mood; it is tied to clues, unstable signals, and the layered reality of St. Amelia.",
+      "## Launch State and Patch 1.3.1",
+      "Konami has already posted a Patch 1.3.1 note for Townfall, released September 30, focused on a performance-related issue. That is a small update in scope, but it matters for a horror game because stutter, hitching, and instability can damage tension just as much as combat imbalance can.",
+      {
+        "type": "table",
+        "caption": "GCX launch-state watchlist.",
+        "headers": [
+          "Watch item",
+          "Why it matters",
+          "Current read"
+        ],
+        "rows": [
+          [
+            "Performance patches",
+            "Horror depends on consistent pacing, audio, and camera movement.",
+            "Patch 1.3.1 makes this a living launch page, not just a release-day note."
+          ],
+          [
+            "First-person reception",
+            "Some Silent Hill fans want reinvention; others are wary of losing the series’ older grammar.",
+            "Townfall’s long-term reputation may hinge on whether the perspective feels intimate or generic."
+          ],
+          [
+            "CRTV mechanic",
+            "A strong signature mechanic can make Townfall feel distinct from other first-person horror games.",
+            "This is the feature to watch in player discussion and post-launch analysis."
+          ],
+          [
+            "Platform expansion",
+            "Official listings focus on PS5 and PC at launch.",
+            "Any Xbox, Switch 2, or later edition news would materially change the article."
+          ]
+        ]
+      },
       "## What We Know",
-      "* Silent Hill: Townfall launches September 24, 2026\n* platforms: PS5, Steam, Epic Games Store\n* developed by Screen Burn Interactive\n* co-published by Konami and Annapurna Interactive\n* set on the island of St. Amelia\n* Simon Ordell is the player character\n* the game is played in first person\n* the CRTV is central to puzzles and exploration",
-      "## What We Still Don't Know",
-      "* how long Townfall ultimately is\n* how heavily it leans into combat versus evasion\n* whether it becomes one of the series' more influential experiments\n* how broadly players embrace the first-person approach",
-      "## A Launch Worth Watching",
-      "If the first-person approach lands, Townfall may influence what players expect from future Silent Hill games - not because it copies the past, but because it proves the franchise can still mutate without losing itself.",
-      "## Latest Update - September 24, 2026",
-      "Konami and PlayStation's official materials frame Townfall around St. Amelia, Simon Ordell, first-person horror, narrative puzzles, and the CRTV mechanic."
+      "* Silent Hill: Townfall launched September 24, 2026\n* platforms: PS5, Steam, Epic Games Store\n* developed by Screen Burn Interactive\n* co-published by Konami and Annapurna Interactive\n* set on the island of St. Amelia\n* Simon Ordell is the player character\n* the game is played in first person\n* the CRTV is central to puzzles and exploration\n* Patch 1.3.1 addressed a performance-related issue",
+      "## What We're Still Watching",
+      "* whether additional patches address performance, progression, or balance\n* how players respond to a full-length first-person Silent Hill\n* whether Townfall becomes a model for future experimental Silent Hill entries\n* whether Konami announces more platforms or physical edition details",
+      "## GCX Takeaway",
+      "Townfall matters because it tests how far Silent Hill can move without becoming just another first-person horror game. The Scottish island, CRTV mechanic, and Simon’s direct perspective give it a strong identity on paper. The launch question is whether those ideas hold through a full playthrough and whether Konami keeps the technical experience clean enough for the dread to work.",
+      "## Latest Update - October 3, 2026",
+      "GCX updated this page into a living launch hub with Konami’s launch announcement, PlayStation first-person context, and Patch 1.3.1 performance-note coverage."
     ],
     "editorialOwner": "GCX Newsroom"
   },
