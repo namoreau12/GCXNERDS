@@ -7,17 +7,17 @@
     "type": "editorial",
     "editorialStatus": "ready-for-publish",
     "storyLifecycleState": "ready-for-publish",
-    "deepResearchUsed": false,
-    "livingArticle": false,
-    "lastUpdated": "2026-10-02",
-    "lastReviewedAt": "2026-10-02",
+    "deepResearchUsed": true,
+    "livingArticle": true,
+    "lastUpdated": "2026-10-03",
+    "lastReviewedAt": "2026-10-03",
     "editorialOwner": "GCX Newsroom",
     "id": "gcx-newsroom-ps5-qssr-ai-upscaling-explained",
     "slug": "ps5-qssr-ai-upscaling-explained",
-    "title": "PS5 Is Getting AI Upscaling - and You Won't Need a PS5 Pro to Use It",
-    "seoTitle": "PS5 QSSR AI Upscaling Explained: What It Is and Which Games Support It",
-    "excerpt": "Sony is bringing QSSR AI upscaling to the standard PS5, with Marvel's Wolverine and Ghost of Yotei among the first games to support it.",
-    "metaDescription": "Sony is bringing QSSR AI upscaling to the base PS5. Here is what it does, how it differs from PS5 Pro's PSSR, and which games support it first.",
+    "title": "PS5 QSSR Explained: What Sony's Base-Console AI Upscaling Means for Players",
+    "seoTitle": "PS5 QSSR AI Upscaling Explained: QSSR vs PSSR and Supported Games",
+    "excerpt": "Sony is bringing Quick Spectral Super Resolution to the standard PS5, with Marvel's Wolverine and Ghost of Yotei leading the first wave of supported games.",
+    "metaDescription": "Sony's QSSR brings AI-guided upscaling to the standard PS5. Here is how QSSR differs from PS5 Pro's PSSR, why it matters, and what players should watch next.",
     "category": "Gaming",
     "articleType": "Major News / Platform Explainer",
     "publishedAt": "2026-10-02T21:00:00.000-04:00",
@@ -27,7 +27,7 @@
     "canonicalTopic": "PS5 QSSR AI upscaling",
     "targetSearchIntent": "PS5 QSSR AI upscaling, PS5 QSSR explained, QSSR vs PSSR, Marvel's Wolverine QSSR, Ghost of Yotei QSSR",
     "updateFrequency": "Update when Sony names more QSSR-supported games, publishes image comparisons, or expands developer guidance.",
-    "updatePolicy": "Preserve this URL as GCX's base-PS5 QSSR explainer.",
+    "updatePolicy": "Preserve this URL as GCX's base-PS5 QSSR explainer and update it when Sony names more supported games, publishes image comparisons, or expands developer guidance.",
     "claimStatus": "Official PlayStation Blog / GCX explainer",
     "confidence": "Official PlayStation Blog / GCX explainer",
     "heroImage": "https://blog.playstation.com/tachyon/2026/10/5f2b04388e41b48507f4c8d57ce8f53bd059f03a.jpg",
@@ -63,6 +63,14 @@
       {
         "label": "PlayStation Blog: AI upscaling is coming to PS5",
         "url": "https://blog.playstation.com/2026/10/01/ai-upscaling-is-coming-to-ps5/"
+      },
+      {
+        "label": "PlayStation Blog: upgraded PSSR rolling out to PS5 Pro games",
+        "url": "https://blog.playstation.com/2026/03/16/upgraded-pssr-rolling-out-to-silent-hill-f-monster-hunter-wilds-final-fantasy-vii-rebirth-crimson-desert-and-more/"
+      },
+      {
+        "label": "PlayStation Blog: upgraded PSSR upscaler coming to PS5 Pro",
+        "url": "https://blog.playstation.com/2026/02/27/upgraded-pssr-upscaler-is-coming-to-ps5-pro/"
       },
       {
         "label": "Marvel's Wolverine official support-game trailer",
@@ -124,11 +132,12 @@
       }
     ],
     "body": [
-      "Sony is bringing **AI-guided upscaling** to the standard PlayStation 5, and that instantly makes QSSR one of the most important PS5 platform updates of the year.",
-      "The feature is called **Quick Spectral Super Resolution**, or **QSSR**. Sony describes it as a new performance tier of AI upscaling built for the base PS5, while **PSSR** remains the higher-end path for PS5 Pro.",
+      "Sony is bringing **AI-guided upscaling** to the standard PlayStation 5, and that makes QSSR one of the most important PS5 platform updates of the year.",
+      "The feature is called **Quick Spectral Super Resolution**, or **QSSR**. Sony describes it as a new performance tier of AI upscaling for the base PS5, while **PSSR** remains the higher-end PlayStation Spectral Super Resolution path for PS5 Pro.",
+      "That distinction matters because this is not Sony erasing the value of PS5 Pro. It is Sony trying to bring a lighter version of the same image-quality idea to the much larger standard PS5 audience.",
       "## What QSSR Actually Is",
-      "QSSR is designed to improve image detail and stability on the standard PS5 by using a streamlined neural network architecture and a tuned implementation for the base console.",
-      "The consumer takeaway is simple: this is not just a PS5 Pro trick anymore. Sony is bringing some of the same AI-upscaling idea to the larger PS5 audience.",
+      "QSSR is designed to improve image detail and image stability on the standard PS5 by using a streamlined neural-network approach tuned for the base console.",
+      "The consumer takeaway is simple: this is not just a PS5 Pro trick anymore. More PS5 owners may start seeing games render internally at a lower or more flexible resolution, then reconstruct a cleaner final image than older upscaling methods could provide.",
       "## QSSR vs PSSR",
       {
         "type": "table",
@@ -155,21 +164,59 @@
             "Use reconstruction rather than relying only on native internal resolution."
           ],
           [
-            "Open question",
-            "Future PS5 games",
-            "How widely developers adopt QSSR after the first wave."
+            "Practical difference",
+            "Both",
+            "PSSR remains the premium path; QSSR is the broader-base-console path."
+          ]
+        ]
+      },
+      "## Why This Matters for Players",
+      "The biggest win is not a spec-sheet talking point. It is flexibility. Developers often have to decide between resolution, frame rate, ray tracing, world density, effects, and image stability. A better upscaler can give them more room to hit a stable performance target without making the final image look soft or unstable.",
+      "For players, that could mean performance modes that look cleaner, fidelity modes that hold together better in motion, or games that avoid some of the shimmer and blur associated with older reconstruction methods.",
+      "## What Developers May Gain",
+      {
+        "type": "table",
+        "caption": "What QSSR could change in real game builds.",
+        "headers": [
+          "Area",
+          "Potential benefit",
+          "What still needs proof"
+        ],
+        "rows": [
+          [
+            "Performance modes",
+            "Lower internal resolution can look cleaner after reconstruction.",
+            "Side-by-side comparisons across fast motion and dense detail."
+          ],
+          [
+            "Image stability",
+            "Fine details may shimmer less than with older upscaling paths.",
+            "How QSSR behaves in foliage, hair, particles, and UI-heavy scenes."
+          ],
+          [
+            "Developer adoption",
+            "Sony says QSSR will be broadly available to PlayStation developers.",
+            "How many first-party and third-party games patch it in."
+          ],
+          [
+            "PS5 Pro positioning",
+            "QSSR improves the base PS5 without replacing PSSR.",
+            "How visible the gap remains between QSSR on PS5 and PSSR on PS5 Pro."
           ]
         ]
       },
       "## The First Supported Games Matter",
       "Sony says the first titles to use QSSR are **Marvel's Wolverine** and **Ghost of Yotei**. That matters because the announcement is not an abstract technology promise. It starts with two highly visible PlayStation games.",
-      "If the feature works well, QSSR could become one of those behind-the-scenes upgrades players feel immediately: sharper image quality, better stability, and fewer compromises between fidelity and performance modes.",
+      "Those are exactly the kinds of titles where image reconstruction gets tested hard: character detail, open environments, motion, lighting, particle effects, and camera movement. If QSSR holds up there, it becomes much easier to imagine the feature becoming normal across future PS5 releases.",
       "## What We Know",
-      "* QSSR is coming to the base PS5\n* Sony says it uses AI-guided upscaling principles\n* PSSR remains tied to PS5 Pro\n* Marvel's Wolverine and Ghost of Yotei are the first announced QSSR titles\n* Sony plans to offer QSSR broadly to PlayStation developers",
+      "* QSSR is coming to the base PS5\n* Sony says it uses AI-guided upscaling principles\n* PSSR remains tied to PS5 Pro as the premium path\n* Marvel's Wolverine and Ghost of Yotei are the first announced QSSR titles\n* Sony plans to offer QSSR broadly to PlayStation developers\n* PlayStation's earlier PSSR posts show Sony has been steadily expanding its AI-upscaling work across PS5 Pro games",
       "## What We Still Need to See",
-      "* direct side-by-side image-quality comparisons\n* how QSSR behaves across performance and fidelity modes\n* whether existing PS5 games receive patches\n* how broad adoption becomes across first-party and third-party releases",
+      "* direct side-by-side image-quality comparisons\n* how QSSR behaves across performance and fidelity modes\n* whether existing PS5 games receive patches\n* how broad adoption becomes across first-party and third-party releases\n* whether developers expose QSSR clearly in graphics menus or simply make it part of default modes",
       "## GCX Takeaway",
-      "The most exciting part is not just that PS5 is getting a new graphics option. It is that Sony is making AI upscaling a platform feature for the console most players already own."
+      "The most exciting part is not just that PS5 is getting a new graphics option. It is that Sony is making AI upscaling a platform feature for the console most players already own.",
+      "The cautious read is just as important: QSSR is not PSSR magically transplanted into every base PS5 game overnight. It needs developer support, game-by-game tuning, and real comparisons before players know how much difference it makes. But if Sony gets this right, QSSR could make the late PS5 generation feel cleaner and more flexible without requiring a Pro upgrade.",
+      "## Latest Update - October 3, 2026",
+      "GCX expanded this explainer with official PSSR background, QSSR-vs-PSSR context, and a player/developer impact table."
     ]
   },
   {
