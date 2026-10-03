@@ -10758,13 +10758,42 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
 }
 
 /* Keep editorial/social hero titles from crowding wrapped lines or subcopy. */
+.news-page .news-hero,
+.community-page .community-hero,
+.community-page .streamer-hero,
+.profile-page .profile-hero {
+  align-items: start;
+  gap: 22px 28px;
+}
+
+.news-page .news-hero > div:first-child,
+.community-page .community-hero > div:first-child,
+.community-page .streamer-hero > div:first-child,
+.profile-page .profile-hero > div:first-child {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  min-width: 0;
+}
+
+.news-page .news-hero .kicker,
+.community-page .community-hero .kicker,
+.community-page .streamer-hero .kicker,
+.profile-page .profile-hero .kicker {
+  max-width: 100%;
+  margin: 0;
+  line-height: 1.2;
+}
+
 .news-page .news-hero h1,
 .community-page .community-hero h1,
 .community-page .streamer-hero h1,
 .profile-page .profile-hero h1 {
-  max-width: min(100%, 860px);
-  font-size: clamp(1.85rem, 3vw, 2.4rem);
-  line-height: 1.34;
+  display: block;
+  max-width: min(100%, 760px);
+  margin: 0;
+  font-size: clamp(1.7rem, 2.35vw, 2.18rem);
+  line-height: 1.28;
   letter-spacing: 0;
   overflow-wrap: anywhere;
   word-break: normal;
@@ -10775,8 +10804,11 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
 .community-page .community-hero p:not(.kicker),
 .community-page .streamer-hero p:not(.kicker),
 .profile-page .profile-hero p:not(.kicker) {
-  max-width: min(100%, 780px);
-  line-height: 1.6;
+  display: block;
+  max-width: min(100%, 760px);
+  margin: 0;
+  line-height: 1.62;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 980px) {
@@ -10796,11 +10828,18 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
 }
 
 @media (max-width: 640px) {
+  .news-page .news-hero,
+  .community-page .community-hero,
+  .community-page .streamer-hero,
+  .profile-page .profile-hero {
+    gap: 18px;
+  }
+
   .news-page .news-hero h1,
   .community-page .community-hero h1,
   .community-page .streamer-hero h1,
   .profile-page .profile-hero h1 {
-    font-size: clamp(1.42rem, 6.2vw, 1.78rem);
-    line-height: 1.36;
+    font-size: clamp(1.38rem, 5.8vw, 1.68rem);
+    line-height: 1.34;
   }
 }
