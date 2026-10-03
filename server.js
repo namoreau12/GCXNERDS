@@ -3046,6 +3046,7 @@ async function loadSupabaseDataFile(sourcePath) {
 async function sendSupabaseJsonFile(req, res, requestPath) {
   if (!supabaseConfigured() || req.method !== "GET" || !requestPath.startsWith("/data/") || !requestPath.endsWith(".json")) return false;
   const sourcePath = requestPath.replace(/^\/+/, "");
+  if (sourcePath.startsWith("data/launch-readiness/")) return false;
 
   try {
     const records = await loadSupabaseRowsBySourcePath(sourcePath);
