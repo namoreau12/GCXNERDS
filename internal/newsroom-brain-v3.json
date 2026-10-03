@@ -66,7 +66,7 @@
   ],
   "tcgPricingRule": "Never confuse MSRP, retail price, presale price, secondary-market price, and market price. Label each clearly.",
   "canonicalTopicRules": {
-    "Pokemon TCG: 30th Celebration": "Preserve the main guide URL and update existing sections before creating overlapping replacement guides.",
+    "Pokemon TCG: 30th Celebration": "Preserve the main hub URL and update existing sections before creating overlapping replacement hubs.",
     "Gamescom": "Use a hub-and-spoke system: hub, live recap, standalone major announcements, then post-event analysis."
   },
   "requiredArticlePackageFields": [

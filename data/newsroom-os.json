@@ -90,7 +90,7 @@
         "Xbox at Gamescom",
         "major reveal explainers"
       ],
-      "notes": "Before event: schedule guide. During event: live hub. After event: evergreen recap."
+      "notes": "Before event: schedule watchlist. During event: live hub. After event: evergreen recap."
     },
     {
       "id": "cluster-gta-vi",
@@ -187,7 +187,7 @@
       "topicId": "topic-pokemon-30th-celebration",
       "priority": "urgent",
       "primaryArticleId": "gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide",
-      "notes": "Main living guide intent."
+      "notes": "Main living hub intent."
     },
     {
       "id": "intent-pokemon-30th-msrp",
@@ -218,10 +218,10 @@
       "scoreCurrent": 94,
       "scorePrevious": 88,
       "scoreChange": 6,
-      "scoreChangeReason": "Collector search intent is strong and can link from the complete guide and MSRP tracker.",
+      "scoreChangeReason": "Collector search intent is strong and can link from the complete hub and MSRP tracker.",
       "recommendation": "write_now",
       "lifecycleState": "researching",
-      "articleTypeRecommended": "buyer_guide",
+      "articleTypeRecommended": "collector_hub",
       "updateOrNew": "new_article",
       "existingArticleId": "",
       "cannibalizationRisk": "low",
@@ -278,14 +278,14 @@
   ],
   "articleRelationships": [
     {
-      "id": "rel-pokemon-msrp-to-guide",
+      "id": "rel-pokemon-msrp-to-hub",
       "fromArticleId": "gcx-newsroom-pokemon-30th-celebration-msrp-preorder-tracker",
       "toArticleId": "gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide",
       "relationshipType": "supporting",
-      "anchorTextSuggestion": "Pokemon 30th Celebration complete guide"
+      "anchorTextSuggestion": "Pokemon 30th Celebration complete hub"
     },
     {
-      "id": "rel-pokemon-guide-to-msrp",
+      "id": "rel-pokemon-hub-to-msrp",
       "fromArticleId": "gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide",
       "toArticleId": "gcx-newsroom-pokemon-30th-celebration-msrp-preorder-tracker",
       "relationshipType": "child",

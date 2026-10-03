@@ -4588,29 +4588,29 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   overflow-wrap: anywhere;
 }
 
-.pokemon-guide-feature .feature-hero {
+.pokemon-hub-feature .feature-hero {
   grid-template-columns: minmax(280px, 0.58fr) minmax(0, 1fr);
   align-items: stretch;
 }
 
-.pokemon-guide-feature .feature-hero .article-hero-image {
+.pokemon-hub-feature .feature-hero .article-hero-image {
   height: 100%;
   max-height: 430px;
 }
 
-.pokemon-guide-feature .feature-hero-copy {
+.pokemon-hub-feature .feature-hero-copy {
   align-content: center;
   gap: 12px;
   padding: clamp(22px, 3vw, 34px);
 }
 
-.pokemon-guide-feature .feature-hero-copy h1 {
+.pokemon-hub-feature .feature-hero-copy h1 {
   max-width: 760px;
   font-size: clamp(1.9rem, 3.4vw, 3.1rem);
   line-height: 1.12;
 }
 
-.pokemon-guide-feature .article-dek {
+.pokemon-hub-feature .article-dek {
   max-width: 760px;
   font-size: 1rem;
   line-height: 1.48;
@@ -10170,26 +10170,26 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
     white-space: normal;
   }
 
-  .pokemon-guide-feature .feature-hero {
+  .pokemon-hub-feature .feature-hero {
     grid-template-columns: 1fr;
   }
 
-  .pokemon-guide-feature .feature-hero .article-hero-image {
+  .pokemon-hub-feature .feature-hero .article-hero-image {
     height: clamp(190px, 34vw, 250px);
     max-height: 250px;
   }
 
-  .pokemon-guide-feature .feature-hero-copy {
+  .pokemon-hub-feature .feature-hero-copy {
     gap: 10px;
     padding: 22px;
   }
 
-  .pokemon-guide-feature .feature-hero-copy h1 {
+  .pokemon-hub-feature .feature-hero-copy h1 {
     font-size: clamp(1.8rem, 5.6vw, 2.6rem);
     line-height: 1.12;
   }
 
-  .pokemon-guide-feature .article-dek {
+  .pokemon-hub-feature .article-dek {
     font-size: 0.98rem;
     line-height: 1.45;
   }
@@ -10643,36 +10643,36 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
     padding: 20px;
   }
 
-  .pokemon-guide-feature .feature-hero .article-hero-image {
+  .pokemon-hub-feature .feature-hero .article-hero-image {
     height: clamp(140px, 40vw, 172px);
   }
 
-  .pokemon-guide-feature .feature-hero-copy {
+  .pokemon-hub-feature .feature-hero-copy {
     gap: 8px;
     padding: 14px 16px 16px;
   }
 
-  .pokemon-guide-feature .feature-hero-copy h1 {
+  .pokemon-hub-feature .feature-hero-copy h1 {
     font-size: clamp(1.38rem, 5.8vw, 1.86rem);
     line-height: 1.12;
   }
 
-  .pokemon-guide-feature .feature-hero-copy .meta {
+  .pokemon-hub-feature .feature-hero-copy .meta {
     margin-bottom: 2px;
     font-size: 0.68rem;
   }
 
-  .pokemon-guide-feature .feature-hero-copy .article-actions {
+  .pokemon-hub-feature .feature-hero-copy .article-actions {
     gap: 8px;
   }
 
-  .pokemon-guide-feature .feature-hero-copy .article-actions .button {
+  .pokemon-hub-feature .feature-hero-copy .article-actions .button {
     min-height: 36px;
     padding: 0 12px;
     font-size: 0.82rem;
   }
 
-  .pokemon-guide-feature .feature-hero-copy .article-meta-panel {
+  .pokemon-hub-feature .feature-hero-copy .article-meta-panel {
     gap: 7px;
     padding: 9px 10px;
     font-size: 0.78rem;

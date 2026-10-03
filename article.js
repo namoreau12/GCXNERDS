@@ -925,7 +925,7 @@ function renderCommentsSection() {
   `;
 }
 
-function renderPremiumPokemonGuide(story) {
+function renderPremiumPokemonHub(story) {
   const sourceLinks = story.sourceLinks || [];
   const relatedLinks = story.relatedLinks || [];
   const tocItems = [
@@ -1099,7 +1099,7 @@ function renderPremiumPokemonGuide(story) {
     .join("");
 
   return `
-    <article class="article-feature pokemon-guide-feature">
+    <article class="article-feature pokemon-hub-feature">
       <section class="feature-hero" data-media-type="${escapeHtml(articleHeroMediaType(story))}">
         <img class="article-hero-image" src="${escapeHtml(storyHeroImageUrl(story))}" alt="${escapeHtml(storyHeroImageAlt(story, story.title))}" data-media-type="${escapeHtml(articleHeroMediaType(story))}" loading="eager" decoding="async" width="1200" height="675" style="${heroFocalStyle(story)}" />
         ${renderOfficialMediaReviewWarning(story)}
@@ -1536,7 +1536,7 @@ function renderArticle(story) {
   const footerMedia = renderEditorialMediaGroup(story, (item) => slugId(item.placement) === "after-body" || slugId(item.placement) === "footer");
   updateArticleMetadata(story);
   if (story.id === "gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide") {
-    articleDetail.innerHTML = renderPremiumPokemonGuide(story);
+    articleDetail.innerHTML = renderPremiumPokemonHub(story);
     return;
   }
   if (story.articleMode === "live-event") {

@@ -12,12 +12,12 @@
       "Best 30th Celebration Products to Buy"
     ],
     "recommendedHeroImage": "Official 30th Celebration key art featuring Pikachu and anniversary branding.",
-    "updatePolicy": "Preserve this URL permanently. Update existing sections instead of publishing replacement guides.",
+    "updatePolicy": "Preserve this URL permanently. Update existing sections instead of publishing replacement hubs.",
     "claimStatusSystem": {
       "official": "Direct Pokemon source",
       "verifiedReporting": "Strong reputable secondary source",
       "reportedNotOfficial": "Keep wording qualified",
-      "rumorLeak": "Exclude from core guide unless editorially necessary and explicitly labeled"
+      "rumorLeak": "Exclude from core hub unless editorially necessary and explicitly labeled"
     },
     "editorialRules": [
       "Never describe presale pricing as market value without identifying it as presale pricing.",
