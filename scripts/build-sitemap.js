@@ -16,6 +16,7 @@ const staticPages = [
   "games.html",
   "consoles.html",
   "pokemon.html",
+  "pokemon-30th-celebration.html",
   "magic.html",
   "yugioh.html",
   "community.html",
