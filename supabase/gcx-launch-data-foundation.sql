@@ -135,6 +135,21 @@ create table if not exists public.marketplace_listing_intents (
   updated_at timestamptz not null default now()
 );
 
+create table if not exists public.arcade_scores (
+  id uuid primary key default gen_random_uuid(),
+  local_id text,
+  game_id text not null,
+  day_id text not null,
+  player_key text not null,
+  player_name text not null,
+  score integer not null default 0 check (score >= 0),
+  hits integer not null default 0 check (hits >= 0),
+  duration_ms integer not null default 0 check (duration_ms >= 0),
+  submitted_at timestamptz not null default now(),
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
 alter table public.newsletter_subscriptions enable row level security;
 alter table public.collector_waitlist enable row level security;
 alter table public.news_article_comments enable row level security;
@@ -144,6 +159,7 @@ alter table public.moderation_reports enable row level security;
 alter table public.sponsor_leads enable row level security;
 alter table public.sponsor_promotions enable row level security;
 alter table public.marketplace_listing_intents enable row level security;
+alter table public.arcade_scores enable row level security;
 
 alter table public.news_article_comments add column if not exists local_id text;
 alter table public.community_posts add column if not exists local_id text;
@@ -153,6 +169,15 @@ alter table public.sponsor_leads add column if not exists local_id text;
 alter table public.sponsor_promotions add column if not exists local_id text;
 alter table public.marketplace_listing_intents add column if not exists local_id text;
 alter table public.marketplace_listing_intents add column if not exists source_id text;
+alter table public.arcade_scores add column if not exists local_id text;
+alter table public.arcade_scores add column if not exists game_id text;
+alter table public.arcade_scores add column if not exists day_id text;
+alter table public.arcade_scores add column if not exists player_key text;
+alter table public.arcade_scores add column if not exists player_name text;
+alter table public.arcade_scores add column if not exists score integer;
+alter table public.arcade_scores add column if not exists hits integer;
+alter table public.arcade_scores add column if not exists duration_ms integer;
+alter table public.arcade_scores add column if not exists submitted_at timestamptz;
 
 grant select, insert, update, delete on table
   public.newsletter_subscriptions,
@@ -163,14 +188,16 @@ grant select, insert, update, delete on table
   public.moderation_reports,
   public.sponsor_leads,
   public.sponsor_promotions,
-  public.marketplace_listing_intents
+  public.marketplace_listing_intents,
+  public.arcade_scores
 to service_role;
 
 grant select on table
   public.news_article_comments,
   public.community_posts,
   public.community_comments,
-  public.sponsor_promotions
+  public.sponsor_promotions,
+  public.arcade_scores
 to anon, authenticated;
 
 grant insert on table
@@ -199,6 +226,9 @@ create index if not exists sponsor_promotions_status_idx on public.sponsor_promo
 create unique index if not exists sponsor_promotions_local_id_idx on public.sponsor_promotions (local_id) where local_id is not null;
 create index if not exists marketplace_listing_intents_profile_idx on public.marketplace_listing_intents (profile_id, created_at desc);
 create unique index if not exists marketplace_listing_intents_local_id_idx on public.marketplace_listing_intents (local_id) where local_id is not null;
+create index if not exists arcade_scores_game_score_idx on public.arcade_scores (game_id, score desc, duration_ms asc);
+create unique index if not exists arcade_scores_game_player_idx on public.arcade_scores (game_id, player_key);
+create unique index if not exists arcade_scores_local_id_idx on public.arcade_scores (local_id) where local_id is not null;
 
 drop policy if exists "published news comments are readable" on public.news_article_comments;
 create policy "published news comments are readable"
@@ -259,3 +289,9 @@ create policy "members can view their marketplace intents"
 on public.marketplace_listing_intents for select
 to authenticated
 using ((select auth.uid()) = profile_id);
+
+drop policy if exists "daily arcade scores are readable" on public.arcade_scores;
+create policy "daily arcade scores are readable"
+on public.arcade_scores for select
+to anon, authenticated
+using (true);

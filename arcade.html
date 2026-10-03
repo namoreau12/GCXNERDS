@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GCX Rally | Daily Arcade</title>
+    <meta
+      name="description"
+      content="Play GCX Rally, the daily GCX arcade challenge. Chase today's score and climb the leaderboard before the 8 PM ET cutoff."
+    />
+    <link rel="canonical" href="https://gcxnerds.com/arcade.html" />
+    <meta property="og:title" content="GCX Rally | Daily Arcade" />
+    <meta property="og:description" content="Play the daily GCX arcade challenge and climb the leaderboard before 8 PM ET." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gcxnerds.com/arcade.html" />
+    <meta property="og:image" content="https://gcxnerds.com/assets/brand/gcx-nerds-sticker-logo.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GCX Rally | Daily Arcade" />
+    <meta name="twitter:description" content="Play the daily GCX arcade challenge and climb the leaderboard before 8 PM ET." />
+    <link rel="stylesheet" href="styles.css?v=20261003-gcx-rally" />
+  </head>
+  <body>
+    <header class="site-header has-mobile-nav">
+      <a class="brand" href="index.html" aria-label="GCX Nerds home">
+        <img class="brand-logo" src="assets/brand/gcx-nerds-sticker-logo.svg" alt="" width="390" height="120" />
+      </a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="news.html">News</a>
+        <a href="arcade.html">Daily Arcade</a>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">Community</button>
+          <div class="nav-dropdown">
+            <a href="community.html">Community Feed</a>
+            <a href="community-members.html">Members</a>
+            <a href="community-groups.html">Groups</a>
+            <a href="community-events.html">Events</a>
+          </div>
+        </div>
+        <a href="streamers.html">Streamer Highlights</a>
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button">GCX Vault</button>
+          <div class="nav-dropdown">
+            <a href="games.html">Game Database</a>
+            <a href="consoles.html">Console Database</a>
+            <a href="pokemon.html">Pokemon Cards</a>
+            <a href="magic.html">Magic Cards</a>
+            <a href="yugioh.html">Yu-Gi-Oh! Cards</a>
+            <a href="index.html#cards">Marketplace Beta</a>
+          </div>
+        </div>
+        <a href="search.html">Search</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search" role="search" action="search.html" method="get">
+          <label class="sr-only" for="site-search">Search Games Exchange</label>
+          <input id="site-search" name="q" type="search" placeholder="Search games, cards, news" />
+        </form>
+        <a class="account-link" href="auth.html">Sign In</a>
+      </div>
+    </header>
+
+    <main class="arcade-page">
+      <section class="arcade-hero">
+        <div>
+          <p class="kicker">Daily Arcade</p>
+          <h1>GCX Rally</h1>
+          <p>
+            Keep the rally alive, break targets, and post your best score before the leaderboard closes at 8 PM ET.
+            Everyone gets the same daily challenge seed.
+          </p>
+        </div>
+        <div class="arcade-countdown" aria-label="Daily leaderboard countdown">
+          <span>Leaderboard closes in</span>
+          <strong id="arcade-countdown">Loading...</strong>
+          <small id="arcade-day">Daily board</small>
+        </div>
+      </section>
+
+      <section class="arcade-shell" aria-label="GCX Rally game">
+        <div class="arcade-stage">
+          <canvas id="gcx-rally-canvas" width="960" height="540" aria-label="GCX Rally game board"></canvas>
+          <div id="arcade-overlay" class="arcade-overlay">
+            <p class="kicker">Today's Challenge</p>
+            <h2>Break targets. Keep the ball alive.</h2>
+            <p>Move with arrow keys, A/D, mouse, or touch. You get one clean daily board, plus unlimited practice energy in your own head.</p>
+            <button id="arcade-start" class="button" type="button">Start GCX Rally</button>
+          </div>
+        </div>
+
+        <aside class="arcade-panel">
+          <div class="arcade-score-grid">
+            <div><span>Score</span><strong id="arcade-score">0</strong></div>
+            <div><span>Hits</span><strong id="arcade-hits">0</strong></div>
+            <div><span>Time</span><strong id="arcade-time">0:00</strong></div>
+            <div><span>Best</span><strong id="arcade-best">0</strong></div>
+          </div>
+          <form id="arcade-submit-form" class="arcade-submit-form">
+            <label>
+              Display name
+              <input id="arcade-player-name" name="playerName" type="text" maxlength="24" placeholder="GCX Player" />
+            </label>
+            <button id="arcade-submit" class="button" type="submit" disabled>Submit score</button>
+            <button id="arcade-sound-toggle" class="button secondary" type="button">Sound on</button>
+            <p id="arcade-status" class="form-status" role="status"></p>
+          </form>
+          <div>
+            <div class="section-heading">
+              <p class="kicker">Top 5</p>
+              <h2>Daily Leaderboard</h2>
+            </div>
+            <ol id="arcade-leaderboard" class="arcade-leaderboard">
+              <li>Loading scores...</li>
+            </ol>
+          </div>
+        </aside>
+      </section>
+
+      <section class="arcade-rules">
+        <article>
+          <span>Daily seed</span>
+          <h3>Same board for everyone</h3>
+          <p>The daily challenge changes after the 8 PM ET cutoff so the leaderboard stays fresh.</p>
+        </article>
+        <article>
+          <span>Scoring</span>
+          <h3>Targets, rallies, survival</h3>
+          <p>Target breaks score big. Longer rallies add pressure and points. Missing the ball ends the run.</p>
+        </article>
+        <article>
+          <span>Fair play</span>
+          <h3>V1 leaderboard guardrails</h3>
+          <p>Scores are rate-limited and sanitized now. Server-side replay validation is the next hardening step.</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="site.js"></script>
+    <script src="arcade.js"></script>
+  </body>
+</html>

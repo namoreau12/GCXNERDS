@@ -3,6 +3,7 @@ const storyGrid = document.querySelector("#story-grid");
 const homeLeadStory = document.querySelector("#home-lead-story");
 const pulseRail = document.querySelector("#pulse-rail");
 const homeClipRail = document.querySelector("#home-clip-rail");
+const homeArcadeScore = document.querySelector("#home-arcade-score");
 let storyCards = Array.from(document.querySelectorAll(".story-card"));
 const chips = Array.from(document.querySelectorAll("[data-category-filter]"));
 const trendList = document.querySelector(".trend-list");
@@ -1710,5 +1711,23 @@ if (hasPokemonIndex) {
   renderPokemonSetModeNote();
   loadPokemonIndex();
 }
+
+async function loadHomeArcadeScore() {
+  if (!homeArcadeScore) return;
+  try {
+    const response = await fetch("/api/arcade/daily");
+    if (!response.ok) throw new Error("Arcade unavailable");
+    const payload = await response.json();
+    const topScore = payload.data?.leaderboard?.[0];
+    const challenge = payload.data?.challenge;
+    homeArcadeScore.textContent = topScore
+      ? `Current leader: ${topScore.playerName} with ${Number(topScore.score || 0).toLocaleString()} points. Board closes ${challenge?.cutoffLabel || "8 PM ET"}.`
+      : `No scores yet today. Board closes ${challenge?.cutoffLabel || "8 PM ET"}.`;
+  } catch (error) {
+    homeArcadeScore.textContent = "Daily leaderboard is warming up.";
+  }
+}
+
+loadHomeArcadeScore();
 
 prefillTradeCardFromUrl();

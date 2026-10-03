@@ -15,6 +15,7 @@ const newsCacheVersion = "image-hydration-v2";
 const newsroomDataPath = path.join(rootDir, "data", "newsroom.json");
 const newsroomOpsDataPath = path.join(rootDir, "data", "newsroom-os.json");
 const communityDataPath = path.join(rootDir, "data", "community.json");
+const arcadeDataPath = path.join(rootDir, "data", "arcade.json");
 const communityUploadsDir = path.join(rootDir, "data", "community-uploads");
 const launchReadinessDir = path.join(rootDir, "data", "launch-readiness");
 const supabaseLaunchValidationPath = path.join(rootDir, "data", "launch-readiness", "supabase-launch-data-setup.json");
@@ -1191,6 +1192,13 @@ function staticSearchDestinations() {
       category: "Games",
       url: "games.html",
       keywords: "games database consoles retro library playstation xbox nintendo sega",
+    },
+    {
+      title: "GCX Rally daily arcade",
+      excerpt: "Play the daily GCX Rally challenge and chase the leaderboard before the 8 PM ET cutoff.",
+      category: "Arcade",
+      url: "arcade.html",
+      keywords: "arcade daily game of the day gcx rally pong leaderboard high score",
     },
     {
       title: "Community feed",
@@ -2844,6 +2852,250 @@ function readRequestJson(req) {
     });
     req.on("error", reject);
   });
+}
+
+function easternDateParts(date = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  })
+    .formatToParts(date)
+    .reduce((acc, part) => {
+      if (part.type !== "literal") acc[part.type] = part.value;
+      return acc;
+    }, {});
+
+  return {
+    year: Number(parts.year),
+    month: Number(parts.month),
+    day: Number(parts.day),
+    hour: Number(parts.hour),
+    minute: Number(parts.minute),
+    second: Number(parts.second),
+  };
+}
+
+function formatArcadeDayId(parts) {
+  return `${String(parts.year).padStart(4, "0")}-${String(parts.month).padStart(2, "0")}-${String(parts.day).padStart(2, "0")}`;
+}
+
+function easternWallTimeToUtc(year, month, day, hour, minute = 0, second = 0) {
+  const targetWallMs = Date.UTC(year, month - 1, day, hour, minute, second);
+  let candidate = new Date(targetWallMs);
+  for (let index = 0; index < 3; index += 1) {
+    const parts = easternDateParts(candidate);
+    const actualWallMs = Date.UTC(parts.year, parts.month - 1, parts.day, parts.hour, parts.minute, parts.second);
+    candidate = new Date(candidate.getTime() - (actualWallMs - targetWallMs));
+  }
+  return candidate;
+}
+
+function arcadeChallengeState(now = new Date()) {
+  const eastern = easternDateParts(now);
+  const challengeDate = new Date(Date.UTC(eastern.year, eastern.month - 1, eastern.day));
+  if (eastern.hour >= 20) challengeDate.setUTCDate(challengeDate.getUTCDate() + 1);
+
+  const dayId = formatArcadeDayId({
+    year: challengeDate.getUTCFullYear(),
+    month: challengeDate.getUTCMonth() + 1,
+    day: challengeDate.getUTCDate(),
+  });
+  const cutoffUtc = easternWallTimeToUtc(challengeDate.getUTCFullYear(), challengeDate.getUTCMonth() + 1, challengeDate.getUTCDate(), 20);
+
+  return {
+    gameId: `gcx-rally-${dayId}`,
+    dayId,
+    title: "GCX Rally",
+    mode: "Daily Rally",
+    seed: crypto.createHash("sha256").update(`gcx-rally:${dayId}`).digest("hex").slice(0, 16),
+    cutoffLabel: "8:00 PM ET",
+    cutoffAt: cutoffUtc.toISOString(),
+    isOpen: now < cutoffUtc,
+  };
+}
+
+function normalizeArcadeScoreRow(row = {}) {
+  return {
+    id: row.id || row.local_id || row.localId || "",
+    gameId: row.game_id || row.gameId || "",
+    dayId: row.day_id || row.dayId || "",
+    playerKey: row.player_key || row.playerKey || "",
+    playerName: row.player_name || row.playerName || "GCX Player",
+    score: Number(row.score || 0),
+    hits: Number(row.hits || 0),
+    durationMs: Number(row.duration_ms || row.durationMs || 0),
+    submittedAt: row.submitted_at || row.submittedAt || new Date().toISOString(),
+  };
+}
+
+function arcadeScoreSupabaseRow(row = {}) {
+  return {
+    local_id: row.id,
+    game_id: row.gameId,
+    day_id: row.dayId,
+    player_key: row.playerKey,
+    player_name: row.playerName,
+    score: Number(row.score || 0),
+    hits: Number(row.hits || 0),
+    duration_ms: Number(row.durationMs || 0),
+    submitted_at: supabaseTimestamp(row.submittedAt),
+  };
+}
+
+async function persistArcadeScore(row) {
+  return safeSupabaseWrite("arcade_scores?on_conflict=game_id,player_key", arcadeScoreSupabaseRow(row));
+}
+
+async function loadArcadeData() {
+  const data = readJsonIfExists(arcadeDataPath) || {};
+  const localScores = Array.isArray(data.scores) ? data.scores.map(normalizeArcadeScoreRow) : [];
+  if (!supabaseConfigured()) return { scores: localScores };
+
+  try {
+    const rows = await supabaseRequest("arcade_scores?select=local_id,game_id,day_id,player_key,player_name,score,hits,duration_ms,submitted_at&order=submitted_at.desc&limit=1000", {
+      headers: { Prefer: "count=none" },
+    });
+    const remoteScores = Array.isArray(rows) ? rows.map(normalizeArcadeScoreRow) : [];
+    const merged = new Map();
+    [...localScores, ...remoteScores].forEach((row) => {
+      const key = `${row.gameId}:${row.playerKey}`;
+      const existing = merged.get(key);
+      if (!existing || row.score > existing.score || (row.score === existing.score && row.durationMs < existing.durationMs)) {
+        merged.set(key, row);
+      }
+    });
+    return { scores: Array.from(merged.values()) };
+  } catch (error) {
+    console.warn(`Supabase arcade score read skipped: ${error.message}`);
+    return { scores: localScores };
+  }
+}
+
+function saveArcadeData(data) {
+  return writeJson(arcadeDataPath, {
+    scores: Array.isArray(data.scores) ? data.scores : [],
+  });
+}
+
+function publicArcadeScore(row, rank = 0) {
+  return {
+    rank,
+    playerName: row.playerName,
+    score: Number(row.score || 0),
+    hits: Number(row.hits || 0),
+    durationMs: Number(row.durationMs || 0),
+    submittedAt: row.submittedAt,
+  };
+}
+
+function arcadeLeaderboard(data, gameId, limit = 5) {
+  return (data.scores || [])
+    .filter((row) => row.gameId === gameId)
+    .sort((a, b) => Number(b.score || 0) - Number(a.score || 0) || Number(a.durationMs || 0) - Number(b.durationMs || 0) || new Date(a.submittedAt) - new Date(b.submittedAt))
+    .slice(0, limit)
+    .map((row, index) => publicArcadeScore(row, index + 1));
+}
+
+async function handleArcadeApi(req, res, url) {
+  const route = url.pathname.replace(/^\/api\/arcade\/?/, "");
+  const challenge = arcadeChallengeState();
+  const data = await loadArcadeData();
+
+  if (req.method === "GET" && (route === "" || route === "daily")) {
+    sendJson(res, 200, {
+      data: {
+        challenge,
+        leaderboard: arcadeLeaderboard(data, challenge.gameId, 5),
+      },
+    });
+    return;
+  }
+
+  if (req.method === "POST" && route === "scores") {
+    const limit = rateLimit(req, "arcade-score-submit", 20, 1000 * 60 * 10);
+    if (!limit.ok) {
+      sendRateLimitExceeded(res, limit, "Too many score submissions. Try again later.");
+      return;
+    }
+
+    try {
+      const body = await readRequestJson(req);
+      const latestChallenge = arcadeChallengeState();
+      if (!latestChallenge.isOpen) {
+        sendJson(res, 409, { error: "Today's GCX Rally leaderboard is closed. Come back for the next board." });
+        return;
+      }
+
+      const score = Math.max(0, Math.min(999999, Math.round(Number(body.score || 0))));
+      const hits = Math.max(0, Math.min(9999, Math.round(Number(body.hits || 0))));
+      const durationMs = Math.max(0, Math.min(1000 * 60 * 12, Math.round(Number(body.durationMs || 0))));
+      const playerName = safeText(body.playerName || "GCX Player", 24).replace(/[^\w .'-]/g, "").trim() || "GCX Player";
+      const playerKeyRaw = safeText(body.playerKey || `${playerName}:${clientIp(req)}`, 120);
+      const playerKey = crypto.createHash("sha256").update(playerKeyRaw).digest("hex");
+
+      if (body.gameId !== latestChallenge.gameId || body.seed !== latestChallenge.seed) {
+        sendJson(res, 400, { error: "That score is for a stale GCX Rally challenge." });
+        return;
+      }
+
+      if (score < 1 || durationMs < 5000 || hits < 1) {
+        sendJson(res, 400, { error: "Finish a real GCX Rally run before submitting a score." });
+        return;
+      }
+
+      const submittedAt = new Date().toISOString();
+      let changedRow = null;
+      const existing = data.scores.find((row) => row.gameId === latestChallenge.gameId && row.playerKey === playerKey);
+      if (existing) {
+        if (score > Number(existing.score || 0) || (score === Number(existing.score || 0) && durationMs < Number(existing.durationMs || Infinity))) {
+          existing.playerName = playerName;
+          existing.score = score;
+          existing.hits = hits;
+          existing.durationMs = durationMs;
+          existing.submittedAt = submittedAt;
+          changedRow = existing;
+        }
+      } else {
+        changedRow = {
+          id: `arcade-score-${Date.now()}-${slugify(playerName) || "player"}`,
+          gameId: latestChallenge.gameId,
+          dayId: latestChallenge.dayId,
+          playerKey,
+          playerName,
+          score,
+          hits,
+          durationMs,
+          submittedAt,
+        };
+        data.scores.push(changedRow);
+      }
+
+      data.scores = data.scores
+        .filter((row) => row.gameId && row.submittedAt)
+        .sort((a, b) => new Date(b.submittedAt) - new Date(a.submittedAt))
+        .slice(0, 1000);
+      saveArcadeData(data);
+      if (changedRow) await persistArcadeScore(changedRow);
+
+      sendJson(res, 201, {
+        data: {
+          challenge: latestChallenge,
+          leaderboard: arcadeLeaderboard(data, latestChallenge.gameId, 5),
+        },
+      });
+    } catch (error) {
+      sendJson(res, 400, { error: error.message || "Score could not be submitted." });
+    }
+    return;
+  }
+
+  sendJson(res, 404, { error: "Arcade route not found." });
 }
 
 const syntheticCommunityRecordPatterns = [
@@ -9278,6 +9530,11 @@ async function handleRequest(req, res) {
 
   if (url.pathname.startsWith("/api/auth")) {
     handleAuthApi(req, res, url);
+    return;
+  }
+
+  if (url.pathname.startsWith("/api/arcade")) {
+    handleArcadeApi(req, res, url);
     return;
   }
 

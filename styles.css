@@ -11242,6 +11242,355 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   white-space: normal;
 }
 
+.arcade-page {
+  display: grid;
+  gap: var(--space-section);
+  padding: clamp(18px, 4vw, 44px);
+}
+
+.arcade-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 340px);
+  gap: 22px;
+  align-items: end;
+  padding: clamp(22px, 4vw, 42px);
+  color: white;
+  background: #171821;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.arcade-hero h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 6vw, 5.2rem);
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.arcade-hero p:not(.kicker) {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 1.04rem;
+  line-height: 1.62;
+}
+
+.arcade-countdown {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+}
+
+.arcade-countdown span,
+.arcade-countdown small {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--type-metadata);
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.arcade-countdown strong {
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  line-height: 1;
+}
+
+.arcade-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  gap: 18px;
+  align-items: start;
+}
+
+.arcade-stage {
+  position: relative;
+  overflow: hidden;
+  touch-action: none;
+  background: #111217;
+  border: 1px solid rgba(17, 18, 23, 0.22);
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+}
+
+#gcx-rally-canvas {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  background: #111217;
+}
+
+.arcade-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 14px;
+  padding: clamp(20px, 4vw, 44px);
+  color: white;
+  text-align: center;
+  background: rgba(12, 13, 18, 0.72);
+}
+
+.arcade-overlay.is-hidden {
+  display: none;
+}
+
+.arcade-overlay h2 {
+  max-width: 620px;
+  margin: 0;
+  font-size: clamp(1.55rem, 3vw, 2.5rem);
+  line-height: 1.1;
+}
+
+.arcade-overlay p:not(.kicker) {
+  max-width: 620px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+  line-height: 1.56;
+}
+
+.arcade-overlay-form {
+  display: grid;
+  gap: 12px;
+  width: min(100%, 420px);
+}
+
+.arcade-overlay-form label {
+  display: grid;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: var(--type-metadata);
+  font-weight: 850;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.arcade-overlay-form input {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  color: var(--ink);
+  background: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+}
+
+.arcade-overlay-form > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.arcade-panel {
+  display: grid;
+  gap: 18px;
+  padding: 18px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+}
+
+.arcade-score-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.arcade-score-grid div {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.arcade-score-grid span {
+  color: var(--muted);
+  font-size: var(--type-metadata);
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.arcade-score-grid strong {
+  font-size: 1.24rem;
+  line-height: 1;
+}
+
+.arcade-submit-form {
+  display: grid;
+  gap: 12px;
+}
+
+.arcade-submit-form label {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-size: var(--type-metadata);
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.arcade-submit-form input {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  color: var(--ink);
+  text-transform: none;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.arcade-leaderboard {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.arcade-leaderboard li {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  min-height: 42px;
+  padding: 8px 10px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.arcade-leaderboard span {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  color: white;
+  background: var(--ink);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.arcade-leaderboard strong,
+.arcade-leaderboard em {
+  min-width: 0;
+  font-style: normal;
+  overflow-wrap: break-word;
+}
+
+.arcade-leaderboard em {
+  color: var(--red);
+  font-weight: 900;
+}
+
+.arcade-leaderboard li.is-empty {
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.58);
+  border-style: dashed;
+}
+
+.arcade-leaderboard li.is-empty span {
+  background: var(--muted);
+}
+
+.arcade-leaderboard li.is-empty em {
+  color: var(--muted);
+}
+
+.arcade-rules {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.arcade-rules article,
+.daily-arcade-card {
+  padding: 18px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+}
+
+.arcade-rules span,
+.daily-arcade-card span {
+  color: var(--red);
+  font-size: var(--type-metadata);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.arcade-rules h3,
+.daily-arcade-card h3 {
+  margin: 8px 0;
+  font-size: var(--type-headline-md);
+  line-height: 1.16;
+}
+
+.arcade-rules p,
+.daily-arcade-card p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.daily-arcade-card {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(139, 92, 246, 0.14)),
+    white;
+}
+
+.daily-arcade-score {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  color: var(--muted);
+  font-size: var(--type-metadata);
+  font-weight: 850;
+}
+
+@media (max-width: 980px) {
+  .arcade-hero,
+  .arcade-shell,
+  .arcade-rules {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .arcade-page {
+    padding: 14px;
+  }
+
+  .arcade-hero,
+  .arcade-panel,
+  .arcade-rules article {
+    padding: 16px;
+  }
+
+  .arcade-leaderboard li {
+    grid-template-columns: 30px minmax(0, 1fr);
+  }
+
+  .arcade-leaderboard em {
+    grid-column: 2;
+  }
+}
+
 /* Article previews must grow instead of clipping headlines or decks mid-word. */
 .newsroom-grid .news-card {
   grid-template-rows: 180px auto;

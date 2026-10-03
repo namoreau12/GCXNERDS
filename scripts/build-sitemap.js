@@ -13,6 +13,7 @@ const staticPages = [
   "terms.html",
   "marketplace-rules.html",
   "news.html",
+  "arcade.html",
   "games.html",
   "consoles.html",
   "pokemon.html",
