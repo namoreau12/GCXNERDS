@@ -6,6 +6,8 @@ outputs/
 data/launch-readiness/
 *.log
 *.pid
+public/*
+!public/.gitkeep
 
 # Large generated datasets are loaded from Supabase in production.
 data/games/
