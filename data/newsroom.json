@@ -2435,26 +2435,26 @@
     "type": "editorial",
     "editorialStatus": "ready-for-publish",
     "storyLifecycleState": "ready-for-publish",
-    "qaScore": 92,
-    "deepResearchUsed": false,
-    "livingArticle": false,
+    "qaScore": 96,
+    "deepResearchUsed": true,
+    "livingArticle": true,
     "claimStatus": "Official / GCX Analysis",
     "confidence": "Official / GCX Analysis",
     "updateFrequency": "Update if Microsoft, Xbox, Activision, Undead Labs, Ninja Theory, or related official channels clarify ownership, staffing, publishing, or release timing.",
     "title": "Ninja Theory Could Close After Two Sale Deals Fell Through",
     "seoTitle": "Ninja Theory Faces Proposed Closure After Two Failed Sale Deals",
-    "excerpt": "Xbox says two proposed deals to move Ninja Theory to new ownership fell through, and consultation has begun on a proposed closure while alternatives are still being explored.",
-    "metaDescription": "Ninja Theory faces a proposed closure after two sale agreements fell through, according to Xbox's September 2026 restructuring memo.",
+    "excerpt": "Xbox has begun consultation on a proposed Ninja Theory closure after two ownership deals fell through, but Senua is still listed for 2027 and Game Pass on official pages.",
+    "metaDescription": "Ninja Theory faces a proposed closure after two ownership deals fell through. Here is what Xbox has said, what Senua still lists, and what remains unclear.",
     "category": "Gaming",
-    "articleType": "Major News",
+    "articleType": "Major News / Industry",
     "publishedAt": "2026-09-23T10:20:00.000-04:00",
-    "lastUpdated": "2026-09-23",
-    "lastReviewedAt": "2026-09-23",
+    "lastUpdated": "2026-10-03",
+    "lastReviewedAt": "2026-10-03",
     "opportunityScore": 95,
     "topicCluster": "Xbox Restructure / Ninja Theory",
     "canonicalTopic": "Ninja Theory",
     "targetSearchIntent": "Ninja Theory proposed closure, Xbox restructure, Senua 2027, two sale deals fell through",
-    "updatePolicy": "Preserve this URL and update if Microsoft confirms a final decision, a buyer emerges, or Ninja Theory clarifies the status of Senua.",
+    "updatePolicy": "Preserve this URL and update if Microsoft confirms a final closure decision, another buyer emerges, consultation ends, Senua changes status, or official store pages change publisher, platform, date, or Game Pass language.",
     "heroImage": "https://cms-assets.xboxservices.com/assets/04/85/0485e4ba-bb39-4fe3-9807-609dbeca11f2.jpg?n=246246_GLP-Page-Hero-1084_1920x1080_01.jpg",
     "heroImageSource": "Official Xbox Senua page",
     "heroImageSourceUrl": "https://www.xbox.com/en-US/games/senua",
@@ -2490,12 +2490,20 @@
         "url": "https://news.xbox.com/en-us/2026/09/22/continuing-our-reset/"
       },
       {
-        "label": "Official Senua game page",
+        "label": "Official Senua Xbox product page",
         "url": "https://www.xbox.com/en-US/games/senua"
       },
       {
         "label": "Official Senua announcement",
         "url": "https://www.senuagame.com/news/announcing-senua/"
+      },
+      {
+        "label": "Xbox Wire Senua interview",
+        "url": "https://news.xbox.com/en-us/2026/06/07/senua-ninja-theory-details-interview-action-adventure-xbox-games-showcase-2026/"
+      },
+      {
+        "label": "Xbox Games Showcase 2026 recap",
+        "url": "https://news.xbox.com/en-us/2026/06/07/xbox-games-showcase-2026-recap-everything-announced/"
       }
     ],
     "media": [
@@ -2512,9 +2520,21 @@
         "rightsStatus": "press-asset"
       },
       {
+        "id": "senua-official-announce-trailer",
+        "mediaType": "video",
+        "placement": "after-heading",
+        "afterHeading": "Senua Is Still Listed for 2027",
+        "source": "Xbox / Ninja Theory",
+        "sourceUrl": "https://www.youtube.com/watch?v=QIzdecI58uA",
+        "embedUrl": "https://www.youtube.com/embed/QIzdecI58uA",
+        "caption": "Official Senua announce trailer from Xbox Games Showcase 2026.",
+        "credit": "Video: Xbox / Ninja Theory",
+        "rightsStatus": "official-embed"
+      },
+      {
         "id": "senua-official-feature-image",
         "mediaType": "image",
-        "afterHeading": "Senua Was Announced for 2027",
+        "afterHeading": "Senua Is Still Listed for 2027",
         "source": "Xbox Game Studios / Ninja Theory",
         "sourceUrl": "https://www.xbox.com/en-US/games/senua",
         "imageUrl": "https://cms-assets.xboxservices.com/assets/a3/d6/a3d64bd9-f74d-46e3-8019-6df0d73d3cc2.jpg?n=246246_Feature-Image-Priority-Full-Width-0_1248x702_01.jpg",
@@ -2522,31 +2542,184 @@
         "credit": "Image: Xbox Game Studios / Ninja Theory",
         "altText": "Senua confronts a fantasy enemy in official Senua imagery.",
         "rightsStatus": "press-asset"
+      },
+      {
+        "id": "ninja-theory-reset-source-note",
+        "mediaType": "rights-note",
+        "afterHeading": "What Xbox Actually Said",
+        "source": "Xbox Wire",
+        "sourceUrl": "https://news.xbox.com/en-us/2026/09/22/continuing-our-reset/",
+        "caption": "Xbox says two agreements for Ninja Theory fell through and that consultation has begun on a proposed closure while other paths are still being explored.",
+        "rightsStatus": "source-link-only"
+      },
+      {
+        "id": "senua-store-status-source-note",
+        "mediaType": "rights-note",
+        "afterHeading": "What Has Not Changed on Official Pages",
+        "source": "Xbox / Senua",
+        "sourceUrl": "https://www.xbox.com/en-US/games/senua",
+        "caption": "The official Xbox product page still lists Senua for 2027, day-one Game Pass, Xbox Play Anywhere, Xbox Series X and S, PC, Steam, and PlayStation-related availability.",
+        "rightsStatus": "source-link-only"
       }
     ],
     "body": [
-      "Ninja Theory's future is suddenly in serious doubt.",
-      "Microsoft says **two separate agreements to move Ninja Theory to new ownership fell through**, and Xbox has now begun consultation with employees on a **proposed closure**.",
-      "The company says it is still exploring other possible paths forward.",
-      "## Two Sale Agreements Failed",
-      "Back in July, Microsoft said Ninja Theory had entered terms to join new ownership as part of Xbox's broader restructuring.",
-      "That transition did not happen.",
-      "In its September 22 update, Xbox said **two separate agreements fell through**.",
-      "Microsoft has not publicly detailed who the potential buyers were or why the deals collapsed.",
-      "## Consultation on Closure Has Started",
-      "Xbox says it will now begin consultation with Ninja Theory employees on a proposed closure while continuing to explore alternatives.",
-      "The wording matters.",
-      "This is not the same as saying Ninja Theory has already closed.",
-      "## Senua Was Announced for 2027",
-      "The timing makes the situation especially notable because Ninja Theory revealed **Senua**, a new action-adventure set after Hellblade II, during the Xbox Games Showcase earlier this year.",
-      "The project was announced for **2027**.",
-      "Xbox has not said in this restructuring update what happens to Senua if Ninja Theory ultimately closes.",
-      "## What We Know",
-      "* two divestiture agreements fell through\n* Microsoft has begun consultation on a proposed closure\n* other options are still being explored\n* Senua was announced for 2027\n* Microsoft has not yet said what happens to that project if the studio closes",
-      "## What We Don't Know",
-      "* who the two potential buyers were\n* why the agreements failed\n* whether another buyer is still possible\n* whether the studio can remain intact\n* what happens to Senua\n* whether the Hellblade IP stays with Microsoft if closure occurs",
-      "## Latest Update - September 23, 2026",
-      "Microsoft confirmed the proposed closure process in its September 22 Xbox restructuring update."
+      "Ninja Theory's future is uncertain, but the studio has not been officially closed as of this update.",
+      "Xbox says two separate agreements to move Ninja Theory to new ownership fell through. The company has now begun consultation with employees on a proposed closure while continuing to explore other paths forward.",
+      "That wording is important. It is a serious escalation, not a completed shutdown. For readers, the practical question is now split in two: what happens to Ninja Theory as a studio, and what happens to Senua, the 2027 Hellblade-universe project that is still live on official pages?",
+      "## What Xbox Actually Said",
+      "In its September 22, 2026 restructuring memo, Xbox framed Ninja Theory as part of the same studio-divestiture wave that moved Compulsion, Double Fine, and Undead Labs toward new ownership or management structures.",
+      "The difference is that Ninja Theory did not land the same way. Xbox says two separate agreements for the studio fell through. Because those deals failed, Microsoft says it is beginning consultation with employees on a proposed closure while it continues to explore alternatives.",
+      "That leaves the article in a narrow lane: Ninja Theory is at risk, the closure process has started, and alternatives are still possible. Anything stronger than that would outrun the official language.",
+      "## What Changed",
+      {
+        "type": "table",
+        "caption": "The closure risk changed sharply after two ownership paths collapsed.",
+        "headers": [
+          "Area",
+          "Current official status",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Ownership talks",
+            "Xbox says two separate agreements for Ninja Theory fell through.",
+            "The planned path out of Microsoft ownership is no longer intact."
+          ],
+          [
+            "Studio status",
+            "Microsoft has begun consultation on a proposed closure.",
+            "This is the formal process to watch, not a confirmed final shutdown."
+          ],
+          [
+            "Alternative paths",
+            "Xbox says it is still exploring other options.",
+            "A buyer, restructuring, or other arrangement has not been ruled out publicly."
+          ],
+          [
+            "Senua visibility",
+            "Official Senua pages remain live.",
+            "The game has not been removed from Xbox or Senua channels as of this review."
+          ]
+        ]
+      },
+      "## Senua Is Still Listed for 2027",
+      "The awkward part is that Senua still has a fully live official presence.",
+      "The Xbox product page describes Senua as an action-adventure set in the Hellblade universe, lists it as available in 2027, and still includes day-one Game Pass language. It also identifies Ninja Theory as the developer and Xbox Game Studios as publisher.",
+      "The official Senua announcement page says the game takes place after Hellblade I and Hellblade II and is coming in 2027 to PlayStation 5, Steam, Xbox Series X and S, and supported gaming handhelds.",
+      "Xbox Wire also published a June interview with Ninja Theory studio head Dom Matthews that positioned Senua as a deliberate pivot toward broader action-adventure play, deeper combat, traversal, puzzle-solving, and a larger interconnected map. The article said the full studio was focused on the project.",
+      "That is why this story is bigger than one restructuring line. Xbox has not publicly reconciled the proposed closure process with the still-live consumer promise around Senua.",
+      "## What Has Not Changed on Official Pages",
+      {
+        "type": "table",
+        "caption": "The Senua-facing pages still carry the public launch promise.",
+        "headers": [
+          "Area",
+          "Still listed",
+          "Reader takeaway"
+        ],
+        "rows": [
+          [
+            "Release window",
+            "2027",
+            "Treat 2027 as the current official target unless Xbox or Ninja Theory updates it."
+          ],
+          [
+            "Game Pass",
+            "Play day one with Game Pass",
+            "The subscription promise remains visible on the Xbox product page."
+          ],
+          [
+            "Developer",
+            "Ninja Theory",
+            "The official page still names the studio as developer."
+          ],
+          [
+            "Publisher",
+            "Xbox Game Studios",
+            "The publisher label has not yet changed to match any new ownership path."
+          ],
+          [
+            "Platforms",
+            "Xbox, PC, Steam, PlayStation, and supported handhelds",
+            "The game remains presented as a broad multiplatform release."
+          ]
+        ]
+      },
+      "## Why This Is Different From Undead Labs",
+      "Undead Labs is the cleaner version of the same Xbox-reset story: the studio completed its transition out of Microsoft ownership, Xbox says State of Decay 3 will still launch day one on Game Pass, and the official plan remains intact.",
+      "Ninja Theory is the unresolved version. Xbox tried to move the studio to new ownership, but the deals failed. Consultation has begun. The project page is still up. The result is a live contradiction in player expectations: the business story says risk, while the game page still says wishlist and Game Pass.",
+      "That does not mean Senua is canceled. It means the next official update matters more than normal because it has to answer both the employment question and the game-status question.",
+      "## What We Know vs. What We Do Not",
+      {
+        "type": "table",
+        "caption": "The safest read is to separate confirmed facts from open questions.",
+        "headers": [
+          "Confirmed",
+          "Still unknown",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Two Ninja Theory agreements fell through.",
+            "Who the potential buyers were.",
+            "The buyer identity could reveal whether Senua was part of the failed deal."
+          ],
+          [
+            "Consultation on a proposed closure has begun.",
+            "Whether closure becomes final.",
+            "Consultation is a process, not the same thing as the studio already being gone."
+          ],
+          [
+            "Senua remains live on official pages.",
+            "Whether Senua ships unchanged if the studio closes.",
+            "The project may need staffing, publishing, or ownership clarification."
+          ],
+          [
+            "Xbox says other paths are still being explored.",
+            "Whether a late buyer or internal plan can preserve the team.",
+            "This is the main reason to avoid writing the studio off as already closed."
+          ]
+        ]
+      },
+      "## What to Watch Next",
+      {
+        "type": "table",
+        "caption": "These are the updates that would materially change the story.",
+        "headers": [
+          "Signal",
+          "What would count as news",
+          "Why GCX is tracking it"
+        ],
+        "rows": [
+          [
+            "Consultation outcome",
+            "Microsoft confirms closure, preservation, sale, or restructuring.",
+            "This decides the studio-status side of the story."
+          ],
+          [
+            "Senua store-page changes",
+            "Release window, publisher, developer, Game Pass, or platform labels change.",
+            "Store metadata is often where consumer-facing plans show up first."
+          ],
+          [
+            "Ninja Theory statement",
+            "The studio comments directly on staffing or Senua.",
+            "A studio statement would clarify what is still in active development."
+          ],
+          [
+            "Xbox event appearance",
+            "Senua appears or disappears from future Xbox showcases.",
+            "Marketing presence will signal whether the 2027 plan is still being pushed."
+          ],
+          [
+            "IP ownership clarification",
+            "Microsoft explains what happens to Hellblade or Senua if closure proceeds.",
+            "The franchise future matters even if the studio structure changes."
+          ]
+        ]
+      },
+      "## Latest Update - October 3, 2026",
+      "As of this review, Xbox has not announced a final Ninja Theory closure. The company has said two agreements fell through and consultation has begun on a proposed closure. Senua remains listed for 2027 on official pages, with day-one Game Pass language still visible."
     ],
     "editorialOwner": "GCX Newsroom"
   },
