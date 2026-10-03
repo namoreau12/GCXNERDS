@@ -5,6 +5,7 @@
   --muted: #62656f;
   --line: #d9d5ca;
   --red: #d93b35;
+  --brand-blue: #2563eb;
   --teal: #087f8c;
   --gold: #f2b84b;
   --green: #1d7f58;
@@ -139,7 +140,7 @@ input {
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 1;
-  color: var(--ink);
+  color: var(--brand-blue);
   font-weight: 950;
 }
 
