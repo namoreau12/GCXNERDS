@@ -97,11 +97,11 @@ function renderNesDetail(game) {
     .join("");
   const imageMarkup = game.imageUrl
     ? `<img src="${escapeHtml(game.imageUrl)}" alt="${escapeHtml(game.title)} box art" />`
-    : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art pending review">${escapeHtml(initials)}</span>`;
+    : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art approval pending">${escapeHtml(initials)}</span>`;
   const checks = getChecklist(game).map((check) => `<li>${escapeHtml(check)}</li>`).join("");
   const editorialStatus = window.GCX_GAME_COPY?.status(game) || "needs_editorial";
   const tags = [
-    window.GCX_GAME_COPY?.statusLabel(editorialStatus) || "In editorial review",
+    window.GCX_GAME_COPY?.statusLabel(editorialStatus) || "Needs overview",
     "North American licensed release",
     game.releases?.northAmerica || "",
     game.imageProvider ? "Box art matched" : "Image pending",
@@ -124,7 +124,7 @@ function renderNesDetail(game) {
       </div>
 
       <p class="detail-section-title">Overview</p>
-      <div class="console-detail-note">${escapeHtml(window.GCX_GAME_COPY?.overviewDisplay(game, "NES") || "Editorial overview coming soon. This NES record is ready for source-backed GCX copy, screenshots, review links, and collector notes.")}</div>
+      <div class="console-detail-note">${escapeHtml(window.GCX_GAME_COPY?.overviewDisplay(game, "NES") || "Editorial overview coming soon. This NES record is ready for source-backed GCX copy, screenshots, source links, and collector notes.")}</div>
 
       <p class="detail-section-title">Marketplace Notes</p>
       <div class="console-detail-note">${escapeHtml(game.tradeNotes)}</div>

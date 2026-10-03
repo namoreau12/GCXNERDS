@@ -56,7 +56,7 @@ function buildMarkdown(report) {
     "",
     `- Image coverage: ${report.totals.imagePct}%`,
     `- Missing images: ${report.totals.missingImages.toLocaleString()}`,
-    `- Import-ready reviewed rows: ${report.totals.readyRows.toLocaleString()}`,
+    `- Import-ready approved rows: ${report.totals.readyRows.toLocaleString()}`,
     `- Finishable platform rows prepared: ${report.totals.finishableRecordCount.toLocaleString()}`,
     "",
     "## Recommended Next Step",
@@ -65,12 +65,12 @@ function buildMarkdown(report) {
     "",
     "## Import-Safe Row Requirements",
     "",
-    "A row should not be imported until it has all of these fields filled and reviewed:",
+    "A row should not be imported until it has all of these fields filled and approved:",
     "",
     "- `imageUrl`: direct image URL",
-    "- `imageSourceUrl`: page or API source URL where the image was reviewed",
+    "- `imageSourceUrl`: page or API source URL where the image was approved",
     "- `imageProvider`: provider/source name",
-    "- `reviewStatus`: `approved`, `verified`, or `reviewed`",
+    "- `reviewStatus`: `approved` or `verified`",
     "- `reviewer`: person or process that approved the row",
     "",
     "Use the dry-run command before any real import:",
@@ -144,9 +144,9 @@ function needsExternalProvider(target) {
 function nextActionForTarget(target) {
   if (!target) return "";
   if (needsExternalProvider(target)) {
-    return `${target.platformLabel} needs an external reviewed source next: ${target.providerNextRecommended}`;
+    return `${target.platformLabel} needs an external approved source next: ${target.providerNextRecommended}`;
   }
-  return `Manually review ${target.records} image rows in ${target.batchPath} to complete ${target.platformLabel}, then dry-run the import.`;
+  return `Manually approve ${target.records} image rows in ${target.batchPath} to complete ${target.platformLabel}, then dry-run the import.`;
 }
 
 function main() {
@@ -232,7 +232,7 @@ function main() {
     priorityTargets,
     milestoneTargets,
     rules: [
-      "Import only rows with a direct image URL, direct source URL, provider name, approved/verified/reviewed status, and reviewer.",
+      "Import only rows with a direct image URL, direct source URL, provider name, approved or verified status, and editor.",
       "Prefer official publisher/store/media-kit assets, then commercially appropriate providers after confirming terms.",
       "Do not bulk import scraped artwork, watermarked images, logos, screenshots, or mismatched regional covers as box art.",
     ],

@@ -247,8 +247,8 @@ function renderCoveragePlan(plan) {
     <article class="queue-milestone-card">
       <div>
         <span>Next Coverage Milestone</span>
-        <strong>${number(nextMilestone.additionalImagesNeeded)} reviewed images to ${percent(nextMilestone.targetPct)}</strong>
-        <p>Current game image coverage is ${percent(plan.totals?.imagePct)} across ${number(plan.totals?.totalGames)} game records. Import only reviewed rows with image URL, source URL, provider, status, and reviewer.</p>
+        <strong>${number(nextMilestone.additionalImagesNeeded)} approved images to ${percent(nextMilestone.targetPct)}</strong>
+        <p>Current game image coverage is ${percent(plan.totals?.imagePct)} across ${number(plan.totals?.totalGames)} game records. Import only approved rows with image URL, source URL, provider, status, and reviewer.</p>
       </div>
       <div class="queue-milestone-steps">
         ${firstPlatforms
@@ -288,16 +288,16 @@ function renderWorkplan(workplan) {
         <span>Next Safe Action</span>
         <strong>${
           nextFinishable
-            ? `Review ${number(nextFinishable.records)} ${escapeHtml(nextFinishable.platformLabel)} image rows`
-            : `Review ${number(nextMilestone.records)} rows for ${percent(nextMilestone.targetPct)} coverage`
+            ? `Approve ${number(nextFinishable.records)} ${escapeHtml(nextFinishable.platformLabel)} image rows`
+            : `Approve ${number(nextMilestone.records)} rows for ${percent(nextMilestone.targetPct)} coverage`
         }</strong>
-        <p>${escapeHtml(workplan.recommendedNextStep || "Review direct image URLs before importing any rows.")}</p>
+        <p>${escapeHtml(workplan.recommendedNextStep || "Approve direct image URLs before importing any rows.")}</p>
       </div>
       <div class="queue-workplan-stats" aria-label="Image review workplan status">
         <div>
           <span>Ready Now</span>
           <strong>${number(readyRows)}</strong>
-          <em>reviewed rows</em>
+          <em>approved rows</em>
         </div>
         <div>
           <span>Finishable</span>
@@ -365,8 +365,8 @@ function renderProviderReadiness(report) {
     <article class="queue-milestone-card queue-provider-card">
       <div>
         <span>Image Provider Readiness</span>
-        <strong>${number(report.missingImages || 0)} images still need reviewed sources</strong>
-        <p>${escapeHtml(report.recommendedNextAction || "Use reviewed imports only and avoid unlicensed bulk artwork.")}</p>
+        <strong>${number(report.missingImages || 0)} images still need approved sources</strong>
+        <p>${escapeHtml(report.recommendedNextAction || "Use approved imports only and avoid unlicensed bulk artwork.")}</p>
         ${
           launchDecision.summary
             ? `<p class="queue-provider-decision"><strong>${escapeHtml(launchDecision.label || "Provider decision")}:</strong> ${escapeHtml(launchDecision.summary)}</p>`
@@ -500,8 +500,8 @@ function renderImportReadiness(groups, report = null, workplan = null) {
     <article class="queue-import-card">
       <div>
         <span>Import Readiness</span>
-        <strong>${number(readyCount)} reviewed rows ready to import</strong>
-        <p>${number(rowCount)} rows scanned across review batches. ${number(withImageUrl)} include image URLs and ${number(totals.approved)} are marked approved, verified, or reviewed.</p>
+        <strong>${number(readyCount)} approved rows ready to import</strong>
+        <p>${number(rowCount)} rows scanned across review batches. ${number(withImageUrl)} include image URLs and ${number(totals.approved)} are marked approved or verified.</p>
         ${
           report
             ? `<p class="queue-import-status">MobyGames key: ${providerKeys.mobygames ? "configured" : "not configured"} / RAWG key: ${providerKeys.rawg ? "configured" : "not configured"}</p>`
@@ -518,16 +518,16 @@ function renderImportReadiness(groups, report = null, workplan = null) {
               <code>node scripts/import-game-image-urls.js ${escapeHtml(topReady.path)} --validate-remote</code>
             `
             : `
-              <span>Next review batch</span>
+              <span>Next approval batch</span>
               <strong>${escapeHtml(workplanTarget?.platformLabel || nextManual?.label || "No batch available")}</strong>
-              <p>${escapeHtml(workplanNextAction || reportNextAction || "Fill only verified direct image URLs, source URLs, provider, review status, and reviewer. A MobyGames API key is still the best bulk path before manual review.")}</p>
+              <p>${escapeHtml(workplanNextAction || reportNextAction || "Fill only verified direct image URLs, source URLs, provider, approval status, and editor. A MobyGames API key is still the best bulk path before manual approval.")}</p>
               ${nextReviewPath ? `<a href="${escapeHtml(nextReviewPath)}"><span>Open next batch</span><em>${escapeHtml(nextReviewPath)}</em></a>` : ""}
               ${workplanTarget?.dryRun ? `<code>${escapeHtml(workplanTarget.dryRun)}</code>` : ""}
               ${
                 milestoneTarget
                   ? `<a href="${escapeHtml(milestoneTarget.batchPath)}">
                       <span>90% milestone batch</span>
-                      <em>${number(milestoneTarget.records)} reviewed images needed for ${percent(milestoneTarget.targetPct)} coverage</em>
+                      <em>${number(milestoneTarget.records)} approved images needed for ${percent(milestoneTarget.targetPct)} coverage</em>
                     </a>
                     <code>${escapeHtml(milestoneTarget.dryRun || "")}</code>`
                   : ""

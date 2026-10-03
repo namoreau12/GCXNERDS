@@ -61,8 +61,8 @@ async function main() {
       response?.status() === 200 &&
       /rows staged/i.test(summaryText) &&
       /import ready/i.test(summaryText) &&
-      /reviewed/i.test(summaryText) &&
-      /pending reviewed imports/i.test(summaryText) &&
+      /approved/i.test(summaryText) &&
+      /pending approved imports/i.test(summaryText) &&
       /already applied/i.test(summaryText) &&
       /weak rate/i.test(summaryText) &&
       /safe import workflow/i.test(workflowText) &&
@@ -73,11 +73,11 @@ async function main() {
       /next rewrite batch/i.test(workplanText) &&
       /data\/games\/overview-rewrite-batches\//i.test(workplanText) &&
       /dry-run/i.test(workplanText) &&
-      /reviewed rows ready/i.test(importHealthText) &&
+      /approved rows ready/i.test(importHealthText) &&
       /rejected/i.test(importHealthText) &&
       /repair reasons/i.test(importHealthText) &&
       /open repair csv/i.test(importHealthText) &&
-      /open re-review packet/i.test(importHealthText) &&
+      /open refresh packet/i.test(importHealthText) &&
       (completedState || batchDownloadCount >= 8) &&
       (completedState || platformCount >= 8) &&
       (completedState || initialRecordCount > 0) &&
@@ -94,18 +94,18 @@ async function main() {
       status: response?.status(),
       hasSummary: /rows staged/i.test(summaryText) && /import ready/i.test(summaryText),
       hasProgressMetrics:
-        /reviewed/i.test(summaryText) &&
-        /pending reviewed imports/i.test(summaryText) &&
+        /approved/i.test(summaryText) &&
+        /pending approved imports/i.test(summaryText) &&
         /already applied/i.test(summaryText) &&
         /weak rate/i.test(summaryText),
       hasImportWorkflow: /safe import workflow/i.test(workflowText) && /freshness audit/i.test(workflowText) && /dry-run/i.test(workflowText),
       hasImportHealth:
         /import health/i.test(importHealthText) &&
-        /reviewed rows ready/i.test(importHealthText) &&
+        /approved rows ready/i.test(importHealthText) &&
         /rejected/i.test(importHealthText) &&
         /repair reasons/i.test(importHealthText) &&
         /open repair csv/i.test(importHealthText) &&
-        /open re-review packet/i.test(importHealthText),
+        /open refresh packet/i.test(importHealthText),
       hasWorkplanNextRewrite:
         /overview workplan/i.test(workplanText) &&
         /next rewrite batch/i.test(workplanText) &&

@@ -38,7 +38,7 @@ function replacementStatusFunctions() {
 }
 
 function editorialStatusLabel(status) {
-  return window.GCX_GAME_COPY?.statusLabel(status) || (status === "published" ? "Published overview" : "In editorial review");
+  return window.GCX_GAME_COPY?.statusLabel(status) || (status === "published" ? "Published overview" : "Needs overview");
 }`;
 }
 
@@ -55,12 +55,12 @@ function apply(fileName) {
 
   source = source.replace(
     /const overview = game\.descriptionProvider && game\.description \? game\.description : "Editorial overview coming soon\.";/g,
-    `const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "${label}") || "Editorial overview in review.";`
+    `const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "${label}") || "Editorial overview in progress.";`
   );
 
   source = source.replace(
     /const overview = game\.descriptionProvider && game\.description\s*\? game\.description\s*: "Editorial overview coming soon\.";/g,
-    `const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "${label}") || "Editorial overview in review.";`
+    `const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "${label}") || "Editorial overview in progress.";`
   );
 
   source = source.replace(
@@ -88,7 +88,7 @@ function apply(fileName) {
 
   source = source.replace(
     /hasPublishedOverview \? "Published overview" : "Needs overview"/g,
-    `window.GCX_GAME_COPY?.statusLabel(hasPublishedOverview ? "published" : "needs_editorial") || (hasPublishedOverview ? "Published overview" : "In editorial review")`
+    `window.GCX_GAME_COPY?.statusLabel(hasPublishedOverview ? "published" : "needs_editorial") || (hasPublishedOverview ? "Published overview" : "Needs overview")`
   );
 
   if (source !== before) fs.writeFileSync(filePath, source, "utf8");

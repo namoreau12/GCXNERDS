@@ -85,9 +85,9 @@ function renderSnesDetail(game, imageData) {
     .join("");
   const imageMarkup = imageData?.imageUrl
     ? `<img src="${escapeHtml(imageData.imageUrl)}" alt="${escapeHtml(game.title)} image" />`
-    : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art pending review">${escapeHtml(initials)}</span>`;
+    : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art approval pending">${escapeHtml(initials)}</span>`;
   const hasPublishedOverview = window.GCX_GAME_COPY?.status(game) === "published";
-  const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "SNES") || "Editorial overview coming soon. This SNES record is ready for source-backed GCX copy, review links, regional notes, and collector context.";
+  const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "SNES") || "Editorial overview coming soon. This SNES record is ready for source-backed GCX copy, source links, regional notes, and collector context.";
   const checks = getChecklist(game).map((check) => `<li>${escapeHtml(check)}</li>`).join("");
 
   snesDetailTarget.innerHTML = `
@@ -116,7 +116,7 @@ function renderSnesDetail(game, imageData) {
 
       <p class="detail-section-title">Data Source</p>
       <div class="console-tags">
-        <span>${escapeHtml(window.GCX_GAME_COPY?.statusLabel(hasPublishedOverview ? "published" : "needs_editorial") || "In editorial review")}</span>
+        <span>${escapeHtml(window.GCX_GAME_COPY?.statusLabel(hasPublishedOverview ? "published" : "needs_editorial") || "Needs overview")}</span>
         <span>${escapeHtml(game.wikidataId)}</span>
         <span>Wikidata import</span>
         <span>SNES</span>

@@ -136,7 +136,7 @@ function editorialStatus(game) {
 }
 
 function editorialStatusLabel(status) {
-  return window.GCX_GAME_COPY?.statusLabel(status) || (status === "published" ? "Published overview" : "In editorial review");
+  return window.GCX_GAME_COPY?.statusLabel(status) || (status === "published" ? "Published overview" : "Needs overview");
 }
 
 function renderAlphabet() {
@@ -181,11 +181,11 @@ function renderSnesGames(shouldHydrateImages = true) {
         .join("");
       const imageMarkup = game.imageUrl
         ? `<img src="${escapeHtml(game.imageUrl)}" alt="${escapeHtml(game.title)} image" loading="lazy" />`
-        : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art pending review">${escapeHtml(initials)}</span>`;
+        : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art approval pending">${escapeHtml(initials)}</span>`;
       const sourceMarkup = game.articleUrl
         ? `<a href="${escapeHtml(game.articleUrl)}" target="_blank" rel="noreferrer">Source</a>`
         : "";
-      const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "SNES") || "Editorial overview in review.";
+      const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "SNES") || "Editorial overview in progress.";
       const status = editorialStatus(game);
 
       return `

@@ -621,7 +621,7 @@ function renderWorkflow(report) {
         ? `<article>
             <span>Overview Quality</span>
             <strong>${number(overviewQualityTotals.weakTemplateCount)} Weak</strong>
-            <p>${percent(overviewQualityTotals.weakTemplatePct)} of game overviews still look template-like; ${number(overviewQualityTotals.reviewedEditorialCount || 0)} reviewed editorial overviews are recorded.</p>
+            <p>${percent(overviewQualityTotals.weakTemplatePct)} of game overviews still look template-like; ${number(overviewQualityTotals.reviewedEditorialCount || 0)} approved editorial overviews are recorded.</p>
           </article>`
         : ""
     }
@@ -630,7 +630,7 @@ function renderWorkflow(report) {
         ? `<article class="health-wide-card">
             <span>Overview Rewrite Queue</span>
             <strong>${number(overviewRewriteBatches.totalRecords || 0)} Rows Staged</strong>
-            <p>${number(overviewRewriteBatches.totalWeakOverviews || 0)} weak/template-style game overviews are flagged for editorial cleanup. ${number(overviewImportTotals.wouldImport || 0)} reviewed row${Number(overviewImportTotals.wouldImport || 0) === 1 ? "" : "s"} are currently import-ready; blank staged rows still need original copy, review notes, status, and reviewer before import.</p>
+            <p>${number(overviewRewriteBatches.totalWeakOverviews || 0)} weak/template-style game overviews are flagged for editorial cleanup. ${number(overviewImportTotals.wouldImport || 0)} approved row${Number(overviewImportTotals.wouldImport || 0) === 1 ? "" : "s"} are currently import-ready; blank staged rows still need original copy, approval notes, status, and editor before import.</p>
             <div class="health-link-list">
               <a href="overview-queue.html">
                 <span>Open overview queue</span>
@@ -660,7 +660,7 @@ function renderWorkflow(report) {
         ? `<article>
             <span>Image Provenance</span>
             <strong>${percent(imageProvenanceTotals.providerPct)} Providers</strong>
-            <p>${percent(imageProvenanceTotals.sourcePct)} source URL coverage; ${number(imageProvenanceTotals.reviewedImages || 0)} reviewed image imports recorded.</p>
+            <p>${percent(imageProvenanceTotals.sourcePct)} source URL coverage; ${number(imageProvenanceTotals.reviewedImages || 0)} approved image imports recorded.</p>
           </article>`
         : ""
     }
@@ -669,7 +669,7 @@ function renderWorkflow(report) {
         ? `<article class="health-wide-card">
             <span>Coverage Milestone</span>
             <strong>${number(nextCoverageMilestone.additionalImagesNeeded)} Images to ${percent(nextCoverageMilestone.targetPct)}</strong>
-            <p>Current game image coverage is ${percent(imageCoveragePlan.totals?.imagePct || totals.imagePct)}. Use reviewed imports only; the prepared batches currently cover ${number(imageCoveragePlan.reviewCapacity?.totalPreparedRows || 0)} candidate rows.</p>
+            <p>Current game image coverage is ${percent(imageCoveragePlan.totals?.imagePct || totals.imagePct)}. Use approved imports only; the prepared batches currently cover ${number(imageCoveragePlan.reviewCapacity?.totalPreparedRows || 0)} candidate rows.</p>
             ${
               (nextCoverageMilestone.platformPlan || []).length
                 ? `<div class="health-link-list">${nextCoverageMilestone.platformPlan
@@ -678,7 +678,7 @@ function renderWorkflow(report) {
                       (item) => `
                         <a href="image-queue.html">
                           <span>${escapeHtml(item.platform)}</span>
-                          <em>${number(item.reviewedImages)} reviewed rows toward ${percent(nextCoverageMilestone.targetPct)}</em>
+                          <em>${number(item.reviewedImages)} approved rows toward ${percent(nextCoverageMilestone.targetPct)}</em>
                         </a>
                       `
                     )
@@ -794,7 +794,7 @@ function renderWorkflow(report) {
     <article>
       <span>Workflow</span>
       <strong><a href="docs/game-image-review-workflow.md">Image Workflow</a></strong>
-      <p>Use the focused batch, validate remote images, and import only personally reviewed cover-art matches.</p>
+      <p>Use the focused batch, validate remote images, and import only personally approved cover-art matches.</p>
     </article>
     <article>
       <span>Top Image Queue</span>
@@ -898,7 +898,7 @@ function renderProviderReadiness(report) {
       }
       ${
         nextMilestone
-          ? `<p><strong>Next milestone:</strong> ${number(nextMilestone.imagesNeeded)} reviewed images for ${percent(nextMilestone.targetPct)}% coverage via <code>${escapeHtml(nextMilestone.batchPath || "")}</code></p>`
+          ? `<p><strong>Next milestone:</strong> ${number(nextMilestone.imagesNeeded)} approved images for ${percent(nextMilestone.targetPct)}% coverage via <code>${escapeHtml(nextMilestone.batchPath || "")}</code></p>`
           : `<p><strong>Next milestone:</strong> Image coverage milestones are already satisfied.</p>`
       }
       ${

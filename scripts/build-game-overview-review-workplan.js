@@ -91,14 +91,14 @@ function main() {
     rules: [
       "Rewrite the newOverview field with unique, game-specific copy that describes gameplay, structure, hook, and collector context when useful.",
       "Do not use generic templates, internal GCX/Codex instructions, or source-summary language as public overviews.",
-      "Fill reviewStatus as approved, verified, or reviewed and add a reviewer before dry-run import.",
+      "Fill reviewStatus as approved or verified and add an editor before dry-run import.",
       "Run the dry-run import first; import only if the currentOverview freshness check passes and the report has no unexpected rejected rows.",
-      "Do not force-import stale reviewed rows that are already superseded by reviewed live copy.",
+      "Do not force-import stale approved rows that are already superseded by approved live copy.",
     ],
     recommendedNextStep: pendingImports
-      ? "Dry-run the pending reviewed overview imports before writing new copy."
+      ? "Dry-run the pending approved overview imports before writing new copy."
       : nextRewriteTarget
-        ? `Rewrite and review ${nextRewriteTarget.records} rows in ${nextRewriteTarget.batchPath} for ${nextRewriteTarget.platformLabel}; then run ${nextRewriteTarget.dryRun}.`
+        ? `Rewrite and approve ${nextRewriteTarget.records} rows in ${nextRewriteTarget.batchPath} for ${nextRewriteTarget.platformLabel}; then run ${nextRewriteTarget.dryRun}.`
         : Number(quality.totals?.weakTemplateCount || 0) === 0
           ? "No weak/template-style overviews remain in the current quality audit. Continue spot-checking public platform pages and focus launch work on image coverage."
           : "No overview rewrite batches are currently available. Rebuild the overview rewrite batches.",

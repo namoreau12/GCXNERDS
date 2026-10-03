@@ -120,11 +120,11 @@ function renderSummary() {
       <strong>${number(overviewIndex?.totalWeakOverviews || 0)}</strong>
     </article>
     <article>
-      <span>Reviewed</span>
+      <span>Approved</span>
       <strong>${number(qualityTotals.reviewedEditorialCount || 0)}</strong>
     </article>
     <article>
-      <span>Pending Reviewed Imports</span>
+      <span>Pending Approved Imports</span>
       <strong>${number(freshnessTotals.wouldImport || 0)}</strong>
     </article>
     <article>
@@ -216,7 +216,7 @@ function renderImportHealth() {
             <div>
               <span>Overview Workplan</span>
               <strong>${number(workplan.totals?.rewriteRowCount || 0)} Priority Rows Staged</strong>
-              <p>${escapeHtml(workplan.recommendedNextStep || "Rewrite only game-specific, reviewed copy and dry-run imports before changing live data.")}</p>
+              <p>${escapeHtml(workplan.recommendedNextStep || "Rewrite only game-specific, approved copy and dry-run imports before changing live data.")}</p>
             </div>
             <div class="queue-import-next">
               ${
@@ -239,11 +239,11 @@ function renderImportHealth() {
     <article class="queue-import-card">
       <div>
         <span>Import Health</span>
-        <strong>${number(pending)} Reviewed Rows Ready</strong>
-        <p>${number(rejected)} old reviewed rows are rejected by the safe importer, ${number(skipped)} rows are already skipped, and ${number(superseded)} rows are superseded by reviewed live overviews. Rejected files usually need refreshed currentOverview text, stronger newOverview copy, or complete review metadata before they should be touched.</p>
+        <strong>${number(pending)} Approved Rows Ready</strong>
+        <p>${number(rejected)} old approved rows are rejected by the safe importer, ${number(skipped)} rows are already skipped, and ${number(superseded)} rows are superseded by approved live overviews. Rejected files usually need refreshed currentOverview text, stronger newOverview copy, or complete review metadata before they should be touched.</p>
       </div>
       <div class="queue-import-next">
-        <span class="queue-import-status">${pending ? "Ready rows need dry-run import" : "No reviewed imports pending"}</span>
+        <span class="queue-import-status">${pending ? "Ready rows need dry-run import" : "No approved imports pending"}</span>
         <code>node scripts/audit-reviewed-overview-import-freshness.js</code>
         <code>node scripts/build-overview-import-repair-queue.js</code>
         <code>node scripts/import-game-overview-rewrites.js [csv] --dry-run</code>
@@ -258,7 +258,7 @@ function renderImportHealth() {
         ${
           overviewRereviewPacket?.rowCount
             ? `<a href="${escapeHtml(rereviewCsv)}">
-                <span>Open re-review packet</span>
+                <span>Open refresh packet</span>
                 <em>${number(overviewRereviewPacket.rowCount)} rows with live overview and proposed copy</em>
               </a>`
             : ""
@@ -266,8 +266,8 @@ function renderImportHealth() {
         ${
           overviewRereviewClassification?.rowCount
             ? `<a href="${escapeHtml(classificationPath)}">
-                <span>Open re-review classification</span>
-                <em>${number(liveReviewedSuperseded)} superseded by reviewed live copy; ${number(weakLiveSafeCandidates)} weak-live import candidates</em>
+                <span>Open refresh classification</span>
+                <em>${number(liveReviewedSuperseded)} superseded by approved live copy; ${number(weakLiveSafeCandidates)} weak-live import candidates</em>
               </a>`
             : ""
         }
@@ -278,8 +278,8 @@ function renderImportHealth() {
         ? `<article class="queue-import-card overview-rejected-card">
             <div>
               <span>Stale Row Safety</span>
-              <strong>${number(liveReviewedSuperseded)} Rows Already Have Reviewed Live Copy</strong>
-              <p>The stale re-review packet is not a safe force-import queue. Use it for comparison only; future import work should target weak metadata rows and rows that pass a fresh dry run.</p>
+              <strong>${number(liveReviewedSuperseded)} Rows Already Have Approved Live Copy</strong>
+              <p>The stale refresh packet is not a safe force-import queue. Use it for comparison only; future import work should target weak metadata rows and rows that pass a fresh dry run.</p>
             </div>
             <div class="queue-import-next">
               <a href="${escapeHtml(classificationPath)}">
@@ -297,7 +297,7 @@ function renderImportHealth() {
             <div>
               <span>Repair Reasons</span>
               <strong>${number(overviewImportRepairQueue?.reasonCount || topReasons.length)} Reason Groups</strong>
-              <p>The largest rejection category should be handled first. Stale currentOverview rows need human re-review before force import; short or template-like rows need stronger original copy.</p>
+              <p>The largest rejection category should be handled first. Stale currentOverview rows need human refresh before force import; short or template-like rows need stronger original copy.</p>
             </div>
             <div class="queue-import-next">
               ${topReasons
@@ -319,9 +319,9 @@ function renderImportHealth() {
       topRejected.length
         ? `<article class="queue-import-card overview-rejected-card">
             <div>
-              <span>Rejected Reviewed Files</span>
+              <span>Rejected Approved Files</span>
               <strong>${number(overviewImportFreshness?.filesWithRejectedRows || 0)} Files Need Cleanup</strong>
-              <p>These are older reviewed CSVs that no longer pass the importer guardrails. Treat them as repair candidates, not safe content.</p>
+              <p>These are older approved CSVs that no longer pass the importer guardrails. Treat them as repair candidates, not safe content.</p>
             </div>
             <div class="queue-import-next">
               ${topRejected

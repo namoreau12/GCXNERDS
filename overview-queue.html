@@ -63,8 +63,8 @@
         <article class="queue-milestone-card">
           <div>
             <span>Safe Import Workflow</span>
-            <strong>Write, review, dry-run, then import</strong>
-            <p>Fill <code>newOverview</code> in the active queue CSV, set <code>reviewStatus</code> to approved, verified, or reviewed, add a reviewer, then run <code>scripts/import-game-overview-rewrites.js</code> with <code>--dry-run</code> first. The freshness audit separates truly pending reviewed imports from rows already applied to live game data.</p>
+            <strong>Write, approve, dry-run, then import</strong>
+            <p>Fill <code>newOverview</code> in the active queue CSV, set <code>reviewStatus</code> to approved or verified, add an editor, then run <code>scripts/import-game-overview-rewrites.js</code> with <code>--dry-run</code> first. The freshness audit separates truly pending approved imports from rows already applied to live game data.</p>
           </div>
           <div class="queue-milestone-steps">
             <a href="data/launch-readiness/game-overview-import-safety.json">Import Safety</a>

@@ -208,7 +208,7 @@ function renderGames() {
       const noStandardBoxArt = String(game.imageAvailabilityStatus || "").toLowerCase() === "no_standard_retail_box_art";
       const imageMarkup = game.imageUrl
         ? `<img src="${escapeHtml(game.imageUrl)}" alt="${escapeHtml(game.title)} box art" loading="lazy" />`
-        : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} ${noStandardBoxArt ? "standard retail box art not confirmed" : "box art pending review"}">${escapeHtml(initials)}</span>`;
+        : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} ${noStandardBoxArt ? "standard retail box art not confirmed" : "box art approval pending"}">${escapeHtml(initials)}</span>`;
       const sourceMarkup = game.imageSourceUrl
         ? `<a href="${escapeHtml(game.imageSourceUrl)}" target="_blank" rel="noreferrer">Image source</a>`
         : game.imageAvailabilitySourceUrl

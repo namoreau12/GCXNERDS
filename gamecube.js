@@ -44,7 +44,7 @@ function editorialStatus(game) {
 }
 
 function editorialStatusLabel(status) {
-  return window.GCX_GAME_COPY?.statusLabel(status) || (status === "published" ? "Published overview" : "In editorial review");
+  return window.GCX_GAME_COPY?.statusLabel(status) || (status === "published" ? "Published overview" : "Needs overview");
 }
 
 function gamecubeMatches(game) {
@@ -84,9 +84,9 @@ function renderGamecubeGames() {
   gamecubeGrid.innerHTML = visible.slice(0, activeLetter === "All" ? visibleLimit : visible.length).map((game) => {
     const detailUrl = `gamecube-game.html?id=${encodeURIComponent(game.id)}`;
     const initials = game.title.split(/\s+/).filter(Boolean).slice(0, 3).map((word) => word[0]).join("");
-    const imageMarkup = game.imageUrl ? `<img src="${escapeHtml(game.imageUrl)}" alt="${escapeHtml(game.title)} box art" loading="lazy" />` : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art pending review">${escapeHtml(initials)}</span>`;
+    const imageMarkup = game.imageUrl ? `<img src="${escapeHtml(game.imageUrl)}" alt="${escapeHtml(game.title)} box art" loading="lazy" />` : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art approval pending">${escapeHtml(initials)}</span>`;
     const status = editorialStatus(game);
-    const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "GameCube") || "Editorial overview in review.";
+    const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "GameCube") || "Editorial overview in progress.";
     return `
       <article class="game-db-card" data-gamecube-card-id="${escapeHtml(game.id)}">
         <a class="game-box-art" href="${detailUrl}" aria-label="View ${escapeHtml(game.title)} details">${imageMarkup}</a>

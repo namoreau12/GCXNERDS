@@ -56,12 +56,12 @@ function gcxGameEditorialStatus(game) {
 }
 
 function gcxGameEditorialStatusLabel(status) {
-  return status === "published" ? "Published overview" : "In editorial review";
+  return status === "published" ? "Published overview" : "Needs overview";
 }
 
 function gcxGameOverviewDisplay(game, platformLabel = "game") {
   if (gcxGameEditorialStatus(game) === "published") return gcxGameOverviewText(game);
-  return `Editorial overview in review. This ${platformLabel} record is being checked for source-backed gameplay context, regional notes, and collector relevance.`;
+  return `Editorial overview in progress. This ${platformLabel} record is being checked for source-backed gameplay context, regional notes, and collector relevance.`;
 }
 
 window.GCX_GAME_COPY = {

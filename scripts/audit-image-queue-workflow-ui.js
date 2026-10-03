@@ -54,16 +54,16 @@ async function main() {
       /open review batch/i.test(workplanText) &&
       /90% coverage milestone/i.test(workplanText) &&
       /next coverage milestone/i.test(milestoneText) &&
-      /reviewed images to/i.test(milestoneText) &&
+      /approved images to/i.test(milestoneText) &&
       /image provider readiness/i.test(providerText) &&
       /mobygames/i.test(providerText) &&
       /rawg/i.test(providerText) &&
       /import readiness/i.test(importReadinessText) &&
-      /reviewed rows ready to import/i.test(importReadinessText) &&
+      /approved rows ready to import/i.test(importReadinessText) &&
       /mobygames key/i.test(importReadinessText) &&
-      /next review batch/i.test(importReadinessText) &&
+      /next approval batch/i.test(importReadinessText) &&
       /gameboy/i.test(importReadinessText) &&
-      /external reviewed source/i.test(importReadinessText) &&
+      /external approved source/i.test(importReadinessText) &&
       /90% milestone batch/i.test(importReadinessText) &&
       /90-pct-image-review-batch\.csv/i.test(importReadinessText) &&
       providerTileCount >= 4 &&
@@ -86,7 +86,7 @@ async function main() {
           hasProviderReadiness: /image provider readiness/i.test(providerText),
           hasImportReadiness: /import readiness/i.test(importReadinessText),
           hasProviderKeyStatus: /mobygames key/i.test(importReadinessText),
-          hasWorkplanNextReview: /next review batch/i.test(importReadinessText) && /gameboy/i.test(importReadinessText) && /external reviewed source/i.test(importReadinessText),
+          hasWorkplanNextReview: /next approval batch/i.test(importReadinessText) && /gameboy/i.test(importReadinessText) && /external approved source/i.test(importReadinessText),
           hasMilestoneNextReview: /90% milestone batch/i.test(importReadinessText) && /90-pct-image-review-batch\.csv/i.test(importReadinessText),
           providerTileCount,
           milestoneBatchCount,

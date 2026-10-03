@@ -17,12 +17,12 @@ function getChecklist() {
 function renderSaturnDetail(game) {
   document.title = `${game.title} | Saturn Library | Games Exchange`;
   const initials = game.title.split(/\s+/).filter(Boolean).slice(0, 3).map((word) => word[0]).join("");
-  const imageMarkup = game.imageUrl ? `<img src="${escapeHtml(game.imageUrl)}" alt="${escapeHtml(game.title)} box art" />` : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art pending review">${escapeHtml(initials)}</span>`;
+  const imageMarkup = game.imageUrl ? `<img src="${escapeHtml(game.imageUrl)}" alt="${escapeHtml(game.title)} box art" />` : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art approval pending">${escapeHtml(initials)}</span>`;
   const checks = getChecklist(game).map((check) => `<li>${escapeHtml(check)}</li>`).join("");
   const hasPublishedOverview = window.GCX_GAME_COPY?.status(game) === "published";
-  const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "Saturn") || "Editorial overview in review.";
+  const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "Saturn") || "Editorial overview in progress.";
   const tags = [
-    window.GCX_GAME_COPY?.statusLabel(hasPublishedOverview ? "published" : "needs_editorial") || (hasPublishedOverview ? "Published overview" : "In editorial review"),
+    window.GCX_GAME_COPY?.statusLabel(hasPublishedOverview ? "published" : "needs_editorial") || (hasPublishedOverview ? "Published overview" : "Needs overview"),
     (game.releasedRegions || []).join(", ") || "Region unknown",
     game.imageProvider ? "Box art matched" : "Image pending",
     "Saturn",

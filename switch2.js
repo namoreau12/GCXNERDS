@@ -72,7 +72,7 @@ function editorialStatus(game) {
 }
 
 function editorialStatusLabel(status) {
-  return window.GCX_GAME_COPY?.statusLabel(status) || (status === "published" ? "Published overview" : "In editorial review");
+  return window.GCX_GAME_COPY?.statusLabel(status) || (status === "published" ? "Published overview" : "Needs overview");
 }
 
 function formatDate(game) {
@@ -150,7 +150,7 @@ function renderSwitch2Games() {
         .join("");
       const imageMarkup = game.imageUrl
         ? `<img src="${escapeHtml(game.imageUrl)}" alt="${escapeHtml(game.title)} box art" loading="lazy" />`
-        : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art pending review">${escapeHtml(initials)}</span>`;
+        : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art approval pending">${escapeHtml(initials)}</span>`;
       const coverLabel = game.coverTypeLabel || "Cover type unknown";
       const sourceMarkup = game.sourceUrl
         ? `<a href="${escapeHtml(game.sourceUrl)}" target="_blank" rel="noreferrer">Nintendo source</a>`
@@ -159,7 +159,7 @@ function renderSwitch2Games() {
       const publishers = (game.publishers || []).slice(0, 2).join(", ") || "Publisher unknown";
       const availability = (game.availability || []).join(", ") || "Nintendo Store recognized";
       const status = editorialStatus(game);
-      const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "Switch 2") || "Editorial overview in review.";
+      const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "Switch 2") || "Editorial overview in progress.";
 
       return `
         <article class="game-db-card" data-switch2-card-id="${escapeHtml(game.id)}">

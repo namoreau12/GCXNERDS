@@ -56,7 +56,7 @@ const stories = [
     metaDescription:
       "Minecraft Live returns Saturday, September 26 at 1 PM ET. Here's how to watch, what Mojang has officially confirmed, and what GCX is watching for during the latest Minecraft showcase.",
     category: "Gaming",
-    articleType: "Event Preview / Living Guide",
+    articleType: "Event Preview / Living Hub",
     publishedAt: "2026-09-24T11:00:00.000-04:00",
     lastUpdated: "2026-09-24",
     lastReviewedAt: "2026-09-24",

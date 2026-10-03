@@ -232,7 +232,7 @@ function renderConsoles() {
       const detailUrl = `console.html?id=${encodeURIComponent(item.id)}`;
       const imageMarkup = item.imageUrl
         ? `<img src="${escapeHtml(item.imageUrl)}" alt="${escapeHtml(item.name)} console image" loading="lazy" />`
-        : `<span class="image-fallback image-fallback-console" role="img" aria-label="${escapeHtml(item.name)} console image pending review">${escapeHtml(initials)}</span>`;
+        : `<span class="image-fallback image-fallback-console" role="img" aria-label="${escapeHtml(item.name)} console image approval pending">${escapeHtml(initials)}</span>`;
       const sourceMarkup = item.imageSourceUrl
         ? `<a href="${escapeHtml(item.imageSourceUrl)}" target="_blank" rel="noreferrer">Image source</a>`
         : "";

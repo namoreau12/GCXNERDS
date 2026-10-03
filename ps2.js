@@ -50,7 +50,7 @@ function editorialStatus(game) {
 }
 
 function editorialStatusLabel(status) {
-  return window.GCX_GAME_COPY?.statusLabel(status) || (status === "published" ? "Published overview" : "In editorial review");
+  return window.GCX_GAME_COPY?.statusLabel(status) || (status === "published" ? "Published overview" : "Needs overview");
 }
 
 function ps2Matches(game) {
@@ -104,8 +104,8 @@ function renderPs2Games() {
       const initials = game.title.split(/\s+/).filter(Boolean).slice(0, 3).map((word) => word[0]).join("");
       const imageMarkup = game.imageUrl
         ? `<img src="${escapeHtml(game.imageUrl)}" alt="${escapeHtml(game.title)} box art" loading="lazy" />`
-        : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art pending review">${escapeHtml(initials)}</span>`;
-      const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "PS2") || "Editorial overview in review.";
+        : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art approval pending">${escapeHtml(initials)}</span>`;
+      const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "PS2") || "Editorial overview in progress.";
       const status = editorialStatus(game);
 
       return `

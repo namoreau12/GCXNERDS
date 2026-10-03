@@ -25,12 +25,12 @@ function renderPs1Detail(game) {
   const initials = game.title.split(/\s+/).filter(Boolean).slice(0, 3).map((word) => word[0]).join("");
   const imageMarkup = game.imageUrl
     ? `<img src="${escapeHtml(game.imageUrl)}" alt="${escapeHtml(game.title)} box art" />`
-    : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art pending review">${escapeHtml(initials)}</span>`;
+    : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art approval pending">${escapeHtml(initials)}</span>`;
   const checks = getChecklist(game).map((check) => `<li>${escapeHtml(check)}</li>`).join("");
   const hasPublishedOverview = window.GCX_GAME_COPY?.status(game) === "published";
-  const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "PS1") || "Editorial overview coming soon. This PS1 record is ready for source-backed GCX copy, review links, regional notes, and collector context.";
+  const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "PS1") || "Editorial overview coming soon. This PS1 record is ready for source-backed GCX copy, source links, regional notes, and collector context.";
   const tags = [
-    window.GCX_GAME_COPY?.statusLabel(hasPublishedOverview ? "published" : "needs_editorial") || (hasPublishedOverview ? "Published overview" : "In editorial review"),
+    window.GCX_GAME_COPY?.statusLabel(hasPublishedOverview ? "published" : "needs_editorial") || (hasPublishedOverview ? "Published overview" : "Needs overview"),
     (game.releasedRegions || []).join(", ") || "Region unknown",
     game.imageProvider ? "Box art matched" : "Image pending",
     "PS1",

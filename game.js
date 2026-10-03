@@ -143,7 +143,7 @@ function renderGame(game, imageData) {
 
   const imageMarkup = imageData?.imageUrl
     ? `<img src="${escapeHtml(imageData.imageUrl)}" alt="${escapeHtml(game.title)} box art" />`
-    : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art pending review">${escapeHtml(initials)}</span>`;
+    : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art approval pending">${escapeHtml(initials)}</span>`;
   const imageSource = imageData?.sourceUrl
     ? `<a href="${escapeHtml(imageData.sourceUrl)}" target="_blank" rel="noreferrer">Image source</a>`
     : "";

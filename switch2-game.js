@@ -50,20 +50,20 @@ function renderSwitch2Detail(game) {
     .join("");
   const imageMarkup = game.imageUrl
     ? `<img src="${escapeHtml(game.imageUrl)}" alt="${escapeHtml(game.title)} box art" />`
-    : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art pending review">${escapeHtml(initials)}</span>`;
+    : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art approval pending">${escapeHtml(initials)}</span>`;
   const checks = getChecklist(game).map((check) => `<li>${escapeHtml(check)}</li>`).join("");
   const availability = (game.availability || []).join(", ") || "Nintendo Store recognized";
   const price = Number.isFinite(game.priceUsd) ? `$${game.priceUsd.toFixed(2)} USD` : "Price unavailable";
   const hasPublishedOverview = window.GCX_GAME_COPY?.status(game) === "published";
   const tags = [
-    window.GCX_GAME_COPY?.statusLabel(hasPublishedOverview ? "published" : "needs_editorial") || "In editorial review",
+    window.GCX_GAME_COPY?.statusLabel(hasPublishedOverview ? "published" : "needs_editorial") || "Needs overview",
     game.nsuid ? `NSUID ${game.nsuid}` : "",
     game.coverTypeLabel || "",
     game.esrbRating || "",
     game.edition || "",
     price,
   ].filter(Boolean).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
-  const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "Switch 2") || "Editorial overview coming soon. This Switch 2 record is ready for source-backed GCX copy, review links, edition notes, and marketplace context.";
+  const overview = window.GCX_GAME_COPY?.overviewDisplay(game, "Switch 2") || "Editorial overview coming soon. This Switch 2 record is ready for source-backed GCX copy, source links, edition notes, and marketplace context.";
 
   switch2DetailTarget.innerHTML = `
     <div class="game-detail-art">
