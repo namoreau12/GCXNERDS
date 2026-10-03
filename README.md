@@ -1,4 +1,4 @@
-# Games Cards Exchange
+# GCXNerds
 
 GCX is a vanilla HTML/CSS/JS gaming and trading-card publication with a small Node backend for local APIs, cached data, auth/session helpers, community features, newsletter/waitlist persistence, and launch-readiness checks.
 

@@ -82,6 +82,16 @@ function renderActivityItem(item) {
   `;
 }
 
+function renderCommentItem(comment) {
+  return `
+    <a class="profile-activity-item profile-reply-item" href="${escapeHtml(comment.url || `community-post.html?id=${encodeURIComponent(comment.postId || "")}`)}">
+      <strong>${escapeHtml(comment.postTitle || "Community post")}</strong>
+      <span>${escapeHtml(comment.postCategory || "Community")} - ${escapeHtml(formatDate(comment.createdAt))}</span>
+      <p>${escapeHtml(comment.body || "")}</p>
+    </a>
+  `;
+}
+
 function renderGroupItem(group) {
   return `
     <a class="profile-group-card" href="${escapeHtml(group.url || `community.html?group=${encodeURIComponent(group.id)}`)}">
@@ -128,6 +138,7 @@ function renderProfile(profile) {
         <span><strong>${Number(profile.following || 0).toLocaleString()}</strong> following</span>
         <span><strong>${Number(stats.posts || 0).toLocaleString()}</strong> posts</span>
         <span><strong>${Number(stats.reposts || 0).toLocaleString()}</strong> reposts</span>
+        <span><strong>${Number(stats.replies || 0).toLocaleString()}</strong> replies</span>
         <span><strong>${Number(stats.groups || 0).toLocaleString()}</strong> groups</span>
       </div>
       <div class="feed-tags">${interests}</div>
@@ -147,6 +158,7 @@ function renderProfile(profile) {
   profilePosts.innerHTML = [
     renderSection("Posts", "Published", (profile.posts || []).map(renderPostCard).join(""), "No original posts yet."),
     renderSection("Reposts", "Shared Again", (profile.reposts || []).map(renderPostCard).join(""), "No reposts yet."),
+    renderSection("Replies", "Conversation", (profile.comments || []).map(renderCommentItem).join(""), "No replies yet."),
     renderSection("Activity", "Social Trail", (profile.activity || []).map(renderActivityItem).join(""), "No activity yet."),
     renderSection("Groups", "Communities", (profile.groups || []).map(renderGroupItem).join(""), "No groups joined yet."),
   ].join("");

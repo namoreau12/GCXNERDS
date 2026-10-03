@@ -792,7 +792,7 @@ function renderWorkflow(report) {
       <p>Open the priority queue for platform filters, provider searches, source links, and copy-ready game ids.</p>
     </article>
     <article>
-      <span>Review Guide</span>
+      <span>Workflow</span>
       <strong><a href="docs/game-image-review-workflow.md">Image Workflow</a></strong>
       <p>Use the focused batch, validate remote images, and import only personally reviewed cover-art matches.</p>
     </article>

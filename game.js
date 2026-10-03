@@ -122,7 +122,7 @@ async function fetchGameImage(game) {
 }
 
 function renderGame(game, imageData) {
-  document.title = `${game.title} | Games Cards Exchange`;
+  document.title = `${game.title} | GCXNerds`;
 
   const tags = (game.tags || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
   const checks = getChecklist(game).map((check) => `<li>${escapeHtml(check)}</li>`).join("");

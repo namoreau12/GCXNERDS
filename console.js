@@ -173,7 +173,7 @@ function getChecklist(consoleItem) {
 }
 
 function renderDetail(consoleItem, imageData) {
-  document.title = `${consoleItem.name} | Games Cards Exchange`;
+  document.title = `${consoleItem.name} | GCXNerds`;
 
   const tags = (consoleItem.tags || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
   const checks = getChecklist(consoleItem).map((item) => `<li>${escapeHtml(item)}</li>`).join("");

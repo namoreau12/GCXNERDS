@@ -20,7 +20,7 @@ function getChecklist() {
 }
 
 function renderN64Detail(game) {
-  document.title = `${game.title} | N64 Library | Games Cards Exchange`;
+  document.title = `${game.title} | N64 Library | GCXNerds`;
 
   const initials = game.title.split(/\s+/).filter(Boolean).slice(0, 3).map((word) => word[0]).join("");
   const imageMarkup = game.imageUrl

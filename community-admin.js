@@ -785,7 +785,7 @@ creatorSpotlightForm?.addEventListener("submit", async (event) => {
     });
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || "Creator highlights could not be saved.");
-    creatorSpotlightStatus.textContent = "Creator highlights saved. The public Creators page is ready with the new six-card order.";
+    creatorSpotlightStatus.textContent = "Creator highlights saved. The public Streamer Highlights page is ready with the new six-card order.";
     if (moderationAccess) await loadStreamerOps();
   } catch (error) {
     creatorSpotlightStatus.textContent = error.message || "Creator highlights could not be saved.";

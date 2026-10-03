@@ -146,7 +146,7 @@ function renderCard(card) {
     intent: "Want to trade",
   });
 
-  document.title = `${card.name} #${card.number} | Games Cards Exchange`;
+  document.title = `${card.name} #${card.number} | GCXNerds`;
 
   const priceMarkup = prices.length
     ? prices

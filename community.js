@@ -307,7 +307,7 @@ function linkPreviewForUrl(linkUrl, fallbackTitle = "") {
   try {
     const parsed = new URL(linkUrl, window.location.href);
     const pathName = parsed.pathname.replace(/^\//, "");
-    const sourceLabel = parsed.hostname === window.location.hostname ? "Games Cards Exchange" : parsed.hostname.replace(/^www\./, "");
+    const sourceLabel = parsed.hostname === window.location.hostname ? "GCXNerds" : parsed.hostname.replace(/^www\./, "");
     const preview = {
       url: parsed.toString(),
       title: fallbackTitle || sourceLabel,

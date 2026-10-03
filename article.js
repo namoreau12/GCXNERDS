@@ -181,7 +181,7 @@ function setCanonical(url) {
 }
 
 function updateArticleMetadata(story) {
-  const title = `${story.title} | Games Cards Exchange`;
+  const title = `${story.title} | GCXNerds`;
   const description = plainText(story.excerpt || (story.body || [])[0], 220);
   const canonicalUrl = publicAbsoluteUrl(`article.html?id=${encodeURIComponent(story.id)}`);
   const heroImage = storyHeroImageUrl(story);
@@ -223,11 +223,11 @@ function updateArticleMetadata(story) {
     dateModified: modifiedDate || publishedDate || undefined,
     author: {
       "@type": "Organization",
-      name: story.sourceName || "Games Cards Exchange",
+      name: story.sourceName || "GCXNerds",
     },
     publisher: {
       "@type": "Organization",
-      name: "Games Cards Exchange",
+      name: "GCXNerds",
       logo: {
         "@type": "ImageObject",
         url: publicAbsoluteUrl("assets/news/pokemon-tcg-30th-celebration.jpg"),
@@ -619,7 +619,7 @@ function renderRelatedCoverage(relatedLinks) {
   return relatedLinks.length
     ? `
       <section class="article-related-card">
-        <p class="kicker">Related Guide</p>
+        <p class="kicker">Related Coverage</p>
         <h2>Keep Reading</h2>
         <div>
           ${relatedLinks.map((link) => `
@@ -944,10 +944,10 @@ function renderPremiumPokemonGuide(story) {
     ["Pack contents", "5 foil cards, 1 foil Basic Energy, 1 code card"],
     ["New rarity", "Futuristic Rare debuts with Mew and Mewtwo"],
     ["Product waves", "September 16, October 2, October 30, November 6"],
-    ["Tracker", "MSRP and preorder guide is now live"],
+    ["Tracker", "MSRP and preorder tracker is now live"],
   ];
   const productCards = [
-    ["Elite Trainer Box", "Sept. 16", "9 packs, Nidorina promo, sleeves, dice, guide, storage box"],
+    ["Elite Trainer Box", "Sept. 16", "9 packs, Nidorina promo, sleeves, dice, and storage box"],
     ["Poster Collection", "Sept. 16", "Legendary bird promos, 3 packs, large set poster"],
     ["Tech Sticker Collection", "Sept. 16", "Lucario or Alolan Exeggutor promo, sticker sheet, 3 packs"],
     ["Booster Bundle", "Oct. 2", "6 packs with no extra accessories"],
@@ -1118,7 +1118,7 @@ function renderPremiumPokemonGuide(story) {
       <div class="feature-layout">
         <aside class="feature-rail">
           <nav class="feature-toc" aria-label="Article table of contents">
-            <strong>In This Guide</strong>
+            <strong>In This Hub</strong>
             ${tocItems.map(([id, label]) => `<a href="#${escapeHtml(id)}">${escapeHtml(label)}</a>`).join("")}
           </nav>
           ${renderRelatedCoverage(relatedLinks)}
@@ -1127,7 +1127,7 @@ function renderPremiumPokemonGuide(story) {
         <div class="feature-main">
           <section class="feature-update-callout">
             <span>Updated Aug. 22</span>
-            <p>Lugia, Ho-Oh, Kyogre, Groudon, Zacian and Zamazenta added. GCX will keep this guide updated as Pokemon reveals more products, cards, preorder details, and availability information.</p>
+            <p>Lugia, Ho-Oh, Kyogre, Groudon, Zacian and Zamazenta added. GCX will keep this hub updated as Pokemon reveals more products, cards, preorder details, and availability information.</p>
           </section>
 
           <section class="quick-facts-grid" aria-label="30th Celebration quick facts">
@@ -1259,7 +1259,7 @@ function renderLiveEventGuide(story) {
       <div class="feature-layout">
         <aside class="feature-rail">
           <nav class="feature-toc" aria-label="Article table of contents">
-            <strong>In This Guide</strong>
+            <strong>In This Hub</strong>
             ${tocItems.map(([id, label]) => `<a href="#${escapeHtml(id)}">${escapeHtml(label)}</a>`).join("")}
           </nav>
           ${renderRelatedCoverage(relatedLinks)}
@@ -1469,7 +1469,7 @@ function renderPokemonPikachuChecklist(story) {
       <div class="feature-layout">
         <aside class="feature-rail">
           <nav class="feature-toc" aria-label="Article table of contents">
-            <strong>In This Guide</strong>
+            <strong>In This Hub</strong>
             ${tocItems.map(([id, label]) => `<a href="#${escapeHtml(id)}">${escapeHtml(label)}</a>`).join("")}
           </nav>
           ${renderRelatedCoverage(relatedLinks)}

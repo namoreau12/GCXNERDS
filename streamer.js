@@ -227,7 +227,7 @@ function renderStreamer(result) {
   const voted = new Set(readVotes());
   const hasVoted = voted.has(activeStreamer.id);
 
-  document.title = `${activeStreamer.name} Streamer Campaign | Games Cards Exchange`;
+  document.title = `${activeStreamer.name} Streamer Campaign | GCXNerds`;
   streamerImage.src = activeStreamer.imageUrl;
   streamerImage.alt = `${activeStreamer.name} streamer campaign`;
   streamerRank.textContent = `#${activeStreamer.rank} - ${activeStreamer.spotlight || activeStreamer.tier || "Streamer Campaign"}`;

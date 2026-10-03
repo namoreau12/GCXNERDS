@@ -364,7 +364,7 @@
     "excerpt": "The October 2 Pokemon TCG wave adds 30th Celebration Booster Bundles, Mini Tins, Enhanced 2-Pack Blisters, and Mini Portfolios.",
     "metaDescription": "Pokemon TCG: 30th Celebration Booster Bundles, Mini Tins, Enhanced 2-Pack Blisters, and Mini Portfolios launch on October 2. Here is what each product includes.",
     "category": "Cards",
-    "articleType": "Major News / Product Guide",
+    "articleType": "Major News / Product Hub",
     "publishedAt": "2026-10-02T20:40:00.000-04:00",
     "qaScore": 95,
     "opportunityScore": 94,
@@ -372,9 +372,9 @@
     "canonicalTopic": "Pokemon TCG 30th Celebration October 2 products",
     "targetSearchIntent": "Pokemon 30th Celebration Booster Bundle, Pokemon 30th Celebration Mini Tin, Enhanced 2-Pack Blister, Mini Portfolio October 2",
     "updateFrequency": "Update if Pokemon publishes more official product images, MSRP details, sellout notes, or restock guidance.",
-    "updatePolicy": "Preserve this URL as the October 2 30th Celebration product guide.",
-    "claimStatus": "Official Pokemon product pages / GCX collector guide",
-    "confidence": "Official Pokemon product pages / GCX collector guide",
+    "updatePolicy": "Preserve this URL as the October 2 30th Celebration product hub.",
+    "claimStatus": "Official Pokemon product pages / GCX collector hub",
+    "confidence": "Official Pokemon product pages / GCX collector hub",
     "heroImage": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/us/img/trading-card-game/tiles/2026/product-showcase/10/product-showcase-169-en.png",
     "heroImageSource": "Official Pokemon product showcase",
     "heroImageSourceUrl": "https://www.pokemon.com/us/news/check-out-every-pokemon-tcg-product-release-in-october-2026",
@@ -395,7 +395,7 @@
     ],
     "relatedLinks": [
       {
-        "label": "Pokemon 30th Celebration Complete Guide",
+        "label": "Pokemon 30th Celebration Complete Hub",
         "url": "article.html?id=gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide"
       },
       {
@@ -532,7 +532,7 @@
     "excerpt": "Reality Fracture is live for Magic: The Gathering, bringing shattered mirror cards, borderless echoed pairs, and a Jace-centered multiverse crisis.",
     "metaDescription": "Magic: The Gathering's Reality Fracture launches October 2 with new mechanics, shattered-mirror cards, borderless echoed pairs, and a multiverse story centered around Jace.",
     "category": "Cards",
-    "articleType": "Major News / Set Launch Guide",
+    "articleType": "Major News / Set Launch Hub",
     "publishedAt": "2026-10-02T20:30:00.000-04:00",
     "qaScore": 94,
     "opportunityScore": 91,
@@ -540,9 +540,9 @@
     "canonicalTopic": "Magic: The Gathering Reality Fracture",
     "targetSearchIntent": "Magic Reality Fracture launch, Reality Fracture cards, shattered mirror cards, borderless echoed pairs, Jace Reality Fracture",
     "updateFrequency": "Update if Wizards publishes additional launch videos, official card galleries, product corrections, or event details.",
-    "updatePolicy": "Preserve this URL as GCX's Reality Fracture launch guide.",
-    "claimStatus": "Official Wizards of the Coast / GCX TCG launch guide",
-    "confidence": "Official Wizards of the Coast / GCX TCG launch guide",
+    "updatePolicy": "Preserve this URL as GCX's Reality Fracture launch hub.",
+    "claimStatus": "Official Wizards of the Coast / GCX TCG launch hub",
+    "confidence": "Official Wizards of the Coast / GCX TCG launch hub",
     "heroImage": "https://images.ctfassets.net/s5n2t79q9icq/1dQnj1H9MICej73LzXygjn/e2736e3996e8515ac69400d5cf4900c5/FRA_The_Theorist__Jace_Beleren_960x540.jpg",
     "heroImageSource": "Official Wizards of the Coast article",
     "heroImageSourceUrl": "https://magic.wizards.com/en/news/feature/collecting-reality-fracture",
@@ -821,7 +821,7 @@
     "excerpt": "Deluxe Pack: Mega arrives in Pokemon TCG Pocket on September 30, with four-card packs built around a guaranteed Pokemon ex or high-rarity hit and collection-filling reprints.",
     "metaDescription": "Pokemon TCG Pocket Deluxe Pack: Mega launches September 30 with four-card packs, a guaranteed Pokemon ex or high-rarity card, and a limited collection-focused release window.",
     "category": "Cards",
-    "articleType": "Major News / Collector Guide",
+    "articleType": "Major News / Collector Hub",
     "publishedAt": "2026-09-25T18:35:00.000-04:00",
     "qaScore": 92,
     "opportunityScore": 92,
@@ -829,7 +829,7 @@
     "canonicalTopic": "Pokemon TCG Pocket Deluxe Pack: Mega",
     "targetSearchIntent": "Pokemon TCG Pocket Deluxe Pack Mega, Deluxe Pack Mega release date, Pokemon ex guaranteed pack",
     "updateFrequency": "Update as Pokemon publishes the full card list, exact rarity table, additional screenshots, and official English press assets.",
-    "updatePolicy": "Preserve this URL as a living Deluxe Pack: Mega collector guide.",
+    "updatePolicy": "Preserve this URL as a living Deluxe Pack: Mega collector hub.",
     "claimStatus": "Official / GCX collector analysis",
     "confidence": "Official / GCX collector analysis",
     "heroImage": "https://tcgpocket.pokemon.com/_images/launch/b4b_en.png",
@@ -856,7 +856,7 @@
         "url": "pokemon.html"
       },
       {
-        "label": "Pokemon 30th Celebration Complete Guide",
+        "label": "Pokemon 30th Celebration Complete Hub",
         "url": "article.html?id=gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide"
       }
     ],
@@ -962,7 +962,7 @@
     ],
     "relatedLinks": [
       {
-        "label": "Pokemon 30th Celebration Complete Guide",
+        "label": "Pokemon 30th Celebration Complete Hub",
         "url": "article.html?id=gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide"
       },
       {
@@ -1136,7 +1136,7 @@
     "excerpt": "Minecraft Live returns Saturday, September 26 at 1 PM ET. Here's how to watch, what Mojang has officially confirmed, and what we are watching for during the showcase.",
     "metaDescription": "Minecraft Live returns Saturday, September 26 at 1 PM ET. Here's how to watch, what Mojang has officially confirmed, and what GCX is watching for during the latest Minecraft showcase.",
     "category": "Gaming",
-    "articleType": "Event Preview / Living Guide",
+    "articleType": "Event Preview / Living Hub",
     "publishedAt": "2026-09-24T11:00:00.000-04:00",
     "lastUpdated": "2026-09-24",
     "lastReviewedAt": "2026-09-24",
@@ -2908,7 +2908,7 @@
         "url": "switch2.html"
       },
       {
-        "label": "Pokémon TCG 30th Celebration Complete Guide",
+        "label": "Pokémon TCG 30th Celebration Complete Hub",
         "url": "article.html?id=gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide"
       },
       {
@@ -2950,7 +2950,7 @@
         "url": "https://legends.arceus.pokemon.com/en-us/gameplay"
       },
       {
-        "label": "Official Pokemon Scarlet and Violet battle guide",
+        "label": "Official Pokemon Scarlet and Violet battle basics",
         "url": "https://scarletviolet.pokemon.com/en-us/trainers-guide/battling-pokemon/"
       },
       {
@@ -2995,7 +2995,7 @@
         "afterHeading": "The Battle System Has Already Been Changing",
         "source": "GCX Editorial Media Policy",
         "sourceUrl": "docs/editorial-media-policy.md",
-        "caption": "Only official gameplay pages, official trailers, or source-linked notes are suitable for Pokemon battle-system comparisons; leaked or speculative gameplay captures stay out of this guide.",
+        "caption": "Only official gameplay pages, official trailers, or source-linked notes are suitable for Pokemon battle-system comparisons; leaked or speculative gameplay captures stay out of this hub.",
         "rightsStatus": "source-link-only"
       },
       {
@@ -3171,7 +3171,7 @@
         "url": "article.html?id=gcx-newsroom-gamescom-2026-games-were-watching-most"
       },
       {
-        "label": "Gamescom 2026 Schedule & Complete Guide",
+        "label": "Gamescom 2026 Schedule & Complete Hub",
         "url": "article.html?id=gamescom-2026-schedule-games-announcements"
       }
     ],
@@ -3435,7 +3435,7 @@
       "## Early Chase Cards to Watch",
       "Before release, the safest collector framing is prospective. The strongest early watchlist belongs to cards with distinctive artwork, major illustrator appeal or obvious anniversary-story value, not to presale listings.",
       "## Pull Rates, Prices and Grading",
-      "One Pikachu per regular booster is the confirmed mechanic. Specific illustration odds are still unknown, so this guide does not publish a clean \"1-in-30\" claim for any particular design unless Pokémon or reliable post-release data supports it.",
+      "One Pikachu per regular booster is the confirmed mechanic. Specific illustration odds are still unknown, so this hub does not publish a clean \"1-in-30\" claim for any particular design unless Pokémon or reliable post-release data supports it.",
       "English market prices and grading populations are also not mature before retail release. Presale listings can be tracked as presale listings, but they should not be described as market value.",
       "## FAQ",
       "### How many Pikachu cards are in Pokémon TCG: 30th Celebration?",
@@ -3466,11 +3466,11 @@
       "Pikachu",
       "Pokemon Cards"
     ],
-    "editorialStatus": "living-guide",
+    "editorialStatus": "living-hub",
     "claimStatus": "Official / verified reporting for revealed cards; unrevealed slots held as placeholders",
     "updatePolicy": "Preserve this URL and update the checklist as additional Pikachu cards are officially revealed.",
     "topicCluster": "Pokemon TCG: 30th Celebration",
-    "canonicalTopic": "Pokémon TCG 30th Celebration Complete Guide",
+    "canonicalTopic": "Pokémon TCG 30th Celebration Complete Hub",
     "seoTitle": "Pokémon 30th Celebration Pikachu: All 20 Revealed Cards",
     "slug": "pokemon-30th-celebration-pikachu-cards",
     "metaDescription": "Track every Pikachu revealed for Pokémon TCG: 30th Celebration, including all 20 confirmed 30-card subset designs, artists, card numbers, Pikachu ex variants and the 10 still unrevealed.",
@@ -3853,7 +3853,7 @@
     ],
     "relatedLinks": [
       {
-        "label": "Pokémon TCG 30th Celebration: Cards, Products, Release Dates & Complete Guide",
+        "label": "Pokémon TCG 30th Celebration: Cards, Products, Release Dates & Complete Hub",
         "url": "article.html?id=gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide"
       },
       {
@@ -3876,7 +3876,7 @@
     },
     "lastReviewedAt": "2026-08-23",
     "editorialOwner": "GCX Newsroom",
-    "editorialLabel": "Living guide",
+    "editorialLabel": "Living hub",
     "heroImage": "assets/news/pokemon-30th-pikachu-checklist.jpg",
     "heroImageSource": "GCX Newsroom",
     "heroImageCredit": "Original GCX editorial checklist image",
@@ -3901,7 +3901,7 @@
       "The show floor includes more than 1,600 exhibitors, while Opening Night Live, Xbox broadcasts, the Future Games Show and individual publisher presentations will dump several days of trailers, gameplay and announcements into the same week.",
       "We are not going to pretend every appearance deserves equal attention.",
       "These are the **10 games GCX is watching most closely** based on franchise size, confirmed Gamescom plans and the likelihood that the event gives us something genuinely new.",
-      "Related: Gamescom 2026 Schedule & Complete Guide",
+      "Related: Gamescom 2026 Schedule & Complete Hub",
       {
         "type": "table",
         "caption": "GCX is prioritizing games that have a strong reason to matter during Gamescom week, not simply the loudest names on the calendar.",
@@ -4043,7 +4043,7 @@
       "The main show begins at:\n- **2:00 PM ET**\n- **11:00 AM PT**\n- **8:00 PM CEST**",
       "A 30-minute pre-show begins before the main broadcast.",
       "The main Gamescom exhibition follows from **August 26 through August 30** in Cologne, Germany.",
-      "Related: Gamescom 2026 Schedule & Complete Guide",
+      "Related: Gamescom 2026 Schedule & Complete Hub",
       "# Latest Update — August 24, 2026",
       "Gamescom Opening Night Live begins tomorrow.",
       "This article should be updated if a major game is added to or removed from the confirmed event lineup before the broadcast."
@@ -4058,7 +4058,7 @@
     "type": "editorial",
     "articleType": "Editorial Preview",
     "topicCluster": "Gamescom 2026",
-    "canonicalTopic": "Gamescom 2026 Schedule & Complete Guide",
+    "canonicalTopic": "Gamescom 2026 Schedule & Complete Hub",
     "editorialStatus": "ready-for-publish",
     "lastUpdated": "2026-08-24",
     "lastReviewedAt": "2026-08-24",
@@ -4442,7 +4442,7 @@
     "id": "gamescom-2026-schedule-games-announcements",
     "title": "Gamescom 2026 Schedule: Opening Night Live, Xbox, Future Games Show & Everything You Need to Know",
     "seoTitle": "Gamescom 2026 Schedule: Dates, Times, Games & How to Watch",
-    "excerpt": "Gamescom returns to Cologne with Opening Night Live, two Xbox broadcasts, the Future Games Show and appearances from some of 2026 and 2027's biggest games. Here's everything confirmed so far - and GCX will keep this guide updated throughout the event.",
+    "excerpt": "Gamescom returns to Cologne with Opening Night Live, two Xbox broadcasts, the Future Games Show and appearances from some of 2026 and 2027's biggest games. Here's everything confirmed so far - and GCX will keep this hub updated throughout the event.",
     "body": [
       "# Gamescom 2026 Is Almost Here - Here's the Full Schedule and What to Expect",
       "Gamescom 2026 is shaping up to be one of the biggest remaining gaming events of the year.",
@@ -4461,7 +4461,7 @@
       "CD Projekt Red has confirmed that **The Witcher 3: Wild Hunt - Songs of the Past** will appear during Opening Night Live.",
       "Gamescom describes *Songs of the Past* as a full-fledged expansion being created in partnership with Fool's Theory, whose team includes veteran *Witcher 3* developers. Geralt returns as the playable protagonist.",
       "The expansion is currently listed for PC, PlayStation 5, and Xbox Series X|S with a **2027 release window**.",
-      "This should become a standalone GCX living guide if Gamescom reveals substantial story, gameplay, pricing, or release details.",
+      "This should become a standalone GCX living hub if Gamescom reveals substantial story, gameplay, pricing, or release details.",
       "# Xbox Is Bringing a Major Gamescom Lineup",
       "Xbox is expected to have one of the largest publisher presences at the event.",
       "Games in its broader Gamescom lineup include *Call of Duty: Modern Warfare 4*, *Fable*, *Minecraft Dungeons II*, *Gears of War: E-Day*, *Metro 2039*, *Alien: Isolation 2*, *The Blood of Dawnwalker*, *Star Wars Zero Company*, *Turok: Origins*, and *Valor Mortis*.",
@@ -4471,7 +4471,7 @@
       "Final Fantasy VII Revelation should be considered for standalone coverage if Gamescom brings meaningful gameplay, release-date, platform, or story information.",
       "Gears of War: E-Day, Metro 2039, and Silent Hill: Townfall are also on GCX's watchlist, but standalone articles should depend on the substance of what is actually shown.",
       "# Confirmed vs. Rumored Games",
-      "This guide separates official confirmations from reputable reporting and rumor. Games are not moved from rumored to confirmed merely because multiple posts repeat the same claim.",
+      "This hub separates official confirmations from reputable reporting and rumor. Games are not moved from rumored to confirmed merely because multiple posts repeat the same claim.",
       "# How to Watch Gamescom Opening Night Live",
       "Opening Night Live streams worldwide on August 25 at 2 PM Eastern, 11 AM Pacific, and 8 PM Central European Summer Time.",
       "# Latest Gamescom 2026 Updates",
@@ -4489,7 +4489,7 @@
       "Nintendo-related content is represented in the broader Gamescom lineup. This answer will be updated if Nintendo announces additional showcase or booth details.",
       "# What GCX Is Watching Next",
       "The most important question is not how many games appear at Gamescom. It is which announcements actually matter once the trailers start rolling.",
-      "This guide will be updated throughout the event with newly confirmed games, schedule changes, major trailers, and links to deeper coverage."
+      "This hub will be updated throughout the event with newly confirmed games, schedule changes, major trailers, and links to deeper coverage."
     ],
     "category": "Gaming",
     "sourceName": "GCX Newsroom",
@@ -4500,7 +4500,7 @@
     "publishedAt": "2026-08-22T23:55:00.000Z",
     "type": "editorial",
     "articleMode": "live-event",
-    "editorialStatus": "living-guide",
+    "editorialStatus": "living-hub",
     "eventStatus": "upcoming",
     "status": "ready-for-publish",
     "lastUpdated": "2026-08-22",
@@ -5018,7 +5018,7 @@
     "lastUpdated": "2026-08-22",
     "relatedLinks": [
       {
-        "label": "Pokemon TCG 30th Celebration: Cards, Products, Release Dates & Complete Guide",
+        "label": "Pokemon TCG 30th Celebration: Cards, Products, Release Dates & Complete Hub",
         "url": "article.html?id=gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide"
       },
       {
@@ -5054,7 +5054,7 @@
     "updatePolicy": "Preserve this URL and update sections as new official or verified information changes.",
     "seoTitle": "Pokemon 30th Celebration MSRP & Preorder Tracker: Every Product and Price",
     "slug": "pokemon-30th-celebration-msrp-preorder-tracker",
-    "articleType": "Tracker / Buyer Guide",
+    "articleType": "Tracker / Buyer Hub",
     "topicCluster": "Pokemon TCG: 30th Celebration",
     "livingArticle": true,
     "opportunityScore": 94,
@@ -5118,7 +5118,7 @@
   },
   {
     "id": "gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide",
-    "title": "Pokémon TCG 30th Celebration: Cards, Products, Release Dates & Complete Guide",
+    "title": "Pokémon TCG 30th Celebration: Cards, Products, Release Dates & Complete Hub",
     "excerpt": "Pokémon TCG: 30th Celebration arrives September 16 with 30 collectible Pikachu cards, an all-foil set, classic reprints, new Futuristic Rares and one of the biggest anniversary product lineups Pokémon has ever assembled.",
     "body": [
       "# Pokémon TCG: 30th Celebration Is Looking Like One of the Biggest Collector Sets in Years",
@@ -5131,7 +5131,7 @@
       "Instead, **Pokémon TCG: 30th Celebration** is starting to look like one of the company's biggest collector-focused releases in years.",
       "The expansion launches worldwide on **September 16, 2026**, becoming the first Pokémon TCG expansion to receive a simultaneous global release. Every card inside a standard booster pack will be foil, every pack will contain one of 30 unique Pikachu cards, and a new Futuristic Rare card treatment will debut alongside a Classic Collection celebrating cards from throughout the game's three-decade history.",
       "And Pokémon is still revealing cards.",
-      "That means this guide isn't finished.",
+      "That means this hub isn't finished.",
       "We'll continue updating it as new cards, products, preorder information and availability details are confirmed.",
       "---",
       "## When Does Pokémon TCG: 30th Celebration Release?",
@@ -5214,7 +5214,7 @@
             "One Pikachu is guaranteed in every regular 30th Celebration booster."
           ],
           [
-            "Why does this deserve its own guide?",
+            "Why does this deserve its own hub?",
             "Artwork, illustrators, subset numbers and unrevealed slots are changing as new cards are shown."
           ]
         ]
@@ -5311,7 +5311,7 @@
       "## September 16 — Launch Day",
       "### 30th Celebration Elite Trainer Box",
       "The standard Elite Trainer Box contains:",
-      "* 9 30th Celebration booster packs\n* Full-art Nidorina promo\n* 16 foil Basic Energy cards\n* 65 card sleeves\n* Player's guide\n* Damage-counter dice\n* Coin-flip die\n* Plastic coin\n* Storage box and dividers\n* Pokémon TCG Live code card",
+      "* 9 30th Celebration booster packs\n* Full-art Nidorina promo\n* 16 foil Basic Energy cards\n* 65 card sleeves\n* Player's booklet\n* Damage-counter dice\n* Coin-flip die\n* Plastic coin\n* Storage box and dividers\n* Pokémon TCG Live code card",
       "The Nidorina choice isn't random: Nidorina is **Pokédex #0030**, a cute little anniversary detail that fits the theme perfectly.",
       "---",
       "## Pokémon Center Elite Trainer Box",
@@ -5428,7 +5428,7 @@
       "Sometimes that fear proves justified.",
       "Sometimes additional supply arrives and those early buyers dramatically overpay.",
       "Until we know more about U.S. allocation and restock patterns, collectors should be cautious about treating inflated early listings as the “real” price of these products.",
-      "We'll add a dedicated MSRP and availability tracker to this guide as confirmed retail pricing becomes clearer.",
+      "We'll add a dedicated MSRP and availability tracker to this hub as confirmed retail pricing becomes clearer.",
       "---",
       "# What Could Be the Biggest Chase Cards?",
       "It's far too early to rank the final chase cards with confidence.",
@@ -5483,7 +5483,7 @@
       "We don't know how plentiful product will actually be at launch.",
       "We don't know which cards will command the highest prices after the market settles.",
       "And we definitely don't know whether today's eye-watering presale prices will look reasonable or ridiculous six months from now.",
-      "That's why this guide will remain active.",
+      "That's why this hub will remain active.",
       "---",
       "# Pokémon TCG: 30th Celebration FAQ",
       "## When does Pokémon TCG: 30th Celebration release?",
@@ -5522,7 +5522,7 @@
       "# What We're Watching Next",
       "Our next updates will focus on:",
       "* Remaining Pikachu reveals\n* Complete official card checklist\n* Additional Classic Collection confirmations\n* U.S. MSRP by product\n* Pokémon Center preorder/restock information\n* Retail availability\n* Pull rates after launch\n* Highest-value cards after real sales begin\n* Day vs. Night UPC demand\n* Best products by cost per pack\n* Reprints and restocks after release",
-      "**Bookmark this guide — we'll continue updating it as Pokémon reveals more about 30th Celebration.**",
+      "**Bookmark this hub — we'll continue updating it as Pokémon reveals more about 30th Celebration.**",
       "---"
     ],
     "category": "Cards",
@@ -5543,7 +5543,7 @@
       "Pokémon TCG Sets",
       "Pokémon TCG 2026"
     ],
-    "editorialStatus": "living-guide",
+    "editorialStatus": "living-hub",
     "lastUpdated": "2026-08-23",
     "sourceLinks": [
       {
@@ -5579,12 +5579,12 @@
     "updatePolicy": "Preserve this URL and update sections as new official or verified information changes.",
     "media": [
       {
-        "id": "pokemon-30th-guide-visual-break",
+        "id": "pokemon-30th-hub-visual-break",
         "mediaType": "image",
         "imageUrl": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/trading-card-game/tiles/30th/cards/full/30th_EN_116.png",
         "source": "Pokemon 30th Celebration Product Showcase",
         "sourceUrl": "https://www.pokemon.com/uk/news/pokemon-tcg-30th-celebration-product-showcase",
-        "caption": "Official Pokemon card imagery gives the master guide a rights-safe visual break while the full checklist remains in the dedicated Pikachu guide.",
+        "caption": "Official Pokemon card imagery gives the main hub a rights-safe visual break while the full checklist remains on the dedicated Pikachu page.",
         "credit": "Image: The Pokemon Company",
         "altText": "Official Pokemon TCG 30th Celebration card image from the product showcase.",
         "rightsStatus": "press-asset",

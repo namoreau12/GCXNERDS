@@ -112,13 +112,30 @@ function renderComments() {
   return comments.length
     ? comments
         .map(
-          (comment) => `
+          (comment) => {
+            const profile = comment.profile || {};
+            const profileId = profile.id || comment.profileId || "";
+            const displayName = profile.displayName || comment.author || "GCX Member";
+            const handle = profile.handle || comment.handle || "";
+            const avatar = profile.avatarUrl
+              ? `<img src="${escapeHtml(profile.avatarUrl)}" alt="${escapeHtml(displayName)} avatar" loading="lazy" />`
+              : `<span>${escapeHtml(displayName.slice(0, 1))}</span>`;
+            const author = profileId
+              ? `<a href="profile.html?id=${encodeURIComponent(profileId)}">${escapeHtml(displayName)}</a>`
+              : escapeHtml(displayName);
+            return `
             <article class="comment-card">
-              <strong>${escapeHtml(comment.author)}</strong>
-              <span>${escapeHtml(comment.handle || "")} - ${escapeHtml(formatDate(comment.createdAt))}</span>
+              <div class="comment-author-row">
+                <a class="feed-avatar" href="profile.html?id=${encodeURIComponent(profileId)}">${avatar}</a>
+                <div>
+                  <strong>${author}</strong>
+                  <span>${escapeHtml(handle)} - ${escapeHtml(formatDate(comment.createdAt))}</span>
+                </div>
+              </div>
               <p>${escapeHtml(comment.body)}</p>
             </article>
-          `
+          `;
+          }
         )
         .join("")
     : `<div class="index-message">No comments yet.</div>`;
@@ -326,7 +343,14 @@ postDetail?.addEventListener("submit", async (event) => {
     });
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || "Comment could not be saved.");
-    comments.push(result.data);
+    comments.push({
+      ...result.data,
+      profile: result.data?.profile || {
+        id: result.data?.profileId || "",
+        displayName: result.data?.author || "",
+        handle: result.data?.handle || "",
+      },
+    });
     activePost.comments = Number(activePost.comments || 0) + 1;
     form.reset();
     renderPost();

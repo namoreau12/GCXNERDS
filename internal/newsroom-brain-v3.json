@@ -1,6 +1,6 @@
 {
   "version": "3",
-  "mission": "Operate as the editorial intelligence system for Games Cards Exchange, optimizing for maximum long-term value per article and topic cluster.",
+  "mission": "Operate as the editorial intelligence system for GCXNerds, optimizing for maximum long-term value per article and topic cluster.",
   "coreLoop": [
     "discover",
     "score",

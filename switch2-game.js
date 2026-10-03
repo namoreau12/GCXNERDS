@@ -40,7 +40,7 @@ function getChecklist(game) {
 }
 
 function renderSwitch2Detail(game) {
-  document.title = `${game.title} | Switch 2 Library | Games Cards Exchange`;
+  document.title = `${game.title} | Switch 2 Library | GCXNerds`;
 
   const initials = game.title
     .split(/\s+/)

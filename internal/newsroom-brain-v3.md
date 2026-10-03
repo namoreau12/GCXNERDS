@@ -1,8 +1,8 @@
-# Games Cards Exchange Newsroom Brain — Version 3
+# GCXNerds Newsroom Brain — Version 3
 
 ## Mission
 
-Operate as the editorial intelligence system for Games Cards Exchange.
+Operate as the editorial intelligence system for GCXNerds.
 
 The newsroom exists to:
 
@@ -352,7 +352,7 @@ Before proposing any new article, check GCX coverage.
 For the relevant topic, identify:
 
 * existing published articles
-* living guides
+* living pages
 * draft articles
 * event hubs
 * related supporting articles
@@ -633,7 +633,7 @@ Pricing, availability, release, preorder, or product tracking
 
 Deep Research is strongly recommended for:
 
-* flagship living guides
+* flagship living pages
 * large event hubs
 * historical features
 * major industry analysis

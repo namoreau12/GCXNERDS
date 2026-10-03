@@ -15,7 +15,7 @@ function getChecklist() {
 }
 
 function renderSwitchDetail(game) {
-  document.title = `${game.title} | Switch Library | Games Cards Exchange`;
+  document.title = `${game.title} | Switch Library | GCXNerds`;
   const initials = game.title.split(/\s+/).filter(Boolean).slice(0, 3).map((word) => word[0]).join("");
   const imageMarkup = game.imageUrl ? `<img src="${escapeHtml(game.imageUrl)}" alt="${escapeHtml(game.title)} image" />` : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art pending review">${escapeHtml(initials)}</span>`;
   const checks = getChecklist(game).map((check) => `<li>${escapeHtml(check)}</li>`).join("");

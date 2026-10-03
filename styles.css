@@ -126,17 +126,36 @@ input {
   align-items: center;
   gap: 10px;
   max-width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.28rem;
   font-weight: 850;
   letter-spacing: 0;
   min-width: 0;
 }
 
-.brand span:last-child {
+.brand-wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.08em;
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 0.95;
+}
+
+.brand-wordmark-gcx {
+  color: var(--ink);
+  font-weight: 950;
+}
+
+.brand-wordmark-nerds {
+  color: var(--red);
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-shadow: 1px 1px 0 rgba(17, 18, 23, 0.12);
+  transform: skewX(-6deg);
 }
 
 .brand-mark {
@@ -145,9 +164,17 @@ input {
   height: 34px;
   place-items: center;
   color: white;
-  background: var(--red);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.18), transparent 42%),
+    var(--red);
+  border: 1px solid rgba(17, 18, 23, 0.1);
   border-radius: 6px;
+  box-shadow:
+    0 6px 0 #a91f25,
+    0 10px 18px rgba(228, 49, 49, 0.18);
   font-size: 0.78rem;
+  font-weight: 950;
+  transform: rotate(-2deg);
 }
 
 .nav {
@@ -1443,8 +1470,8 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
 
 .gcx-pulse-band {
   display: grid;
-  grid-template-columns: minmax(170px, 0.22fr) minmax(0, 1fr);
-  gap: 14px;
+  grid-template-columns: minmax(280px, 0.32fr) minmax(0, 1fr);
+  gap: clamp(16px, 2vw, 22px);
   align-items: stretch;
   margin-top: var(--space-section);
   padding: clamp(12px, 1.8vw, 18px);
@@ -1460,16 +1487,19 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
   display: grid;
   align-content: start;
   gap: 8px;
-  padding: 10px 12px 10px 0;
+  min-width: 0;
+  padding: 10px clamp(16px, 2vw, 20px) 10px 0;
   color: white;
   border-right: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .pulse-intro h2 {
   margin: 0;
-  font-size: clamp(1.1rem, 1.55vw, 1.55rem);
-  line-height: 1.04;
+  max-width: 18ch;
+  font-size: clamp(1.05rem, 1.35vw, 1.45rem);
+  line-height: 1.08;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .pulse-intro p:not(.kicker) {
@@ -1481,8 +1511,9 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
 
 .pulse-rail {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 12px;
+  min-width: 0;
 }
 
 .pulse-card {
@@ -9805,6 +9836,20 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
 
   .creator-application-panel {
     position: static;
+  }
+
+  .pulse-intro {
+    padding: 0 0 14px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .pulse-intro h2 {
+    max-width: none;
+  }
+
+  .pulse-rail {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 
   .site-header {

@@ -248,7 +248,7 @@ function renderDashboard(data) {
   ].join("");
 
   const streamerSlots = data.streamerSlots || {};
-  const creatorSpotlight = (data.creatorSpotlight || streamerSlots.selected || [streamerSlots.popular, streamerSlots.rising, streamerSlots.third]).filter(Boolean).slice(0, 3);
+  const creatorSpotlight = (data.creatorSpotlight || streamerSlots.selected || [streamerSlots.popular, streamerSlots.rising, streamerSlots.third]).filter(Boolean).slice(0, 6);
   if (growthStreamerSlots) {
     growthStreamerSlots.innerHTML = creatorSpotlight
       .map(
@@ -289,8 +289,10 @@ function renderDashboard(data) {
         (week) => `
           <article class="traffic-analytics-card">
             <strong>${escapeHtml(week.weekLabel)}</strong>
-            <div><span>Popular winner</span><b>${escapeHtml(week.popularWinner?.name || "TBD")}</b></div>
-            <div><span>Rising winner</span><b>${escapeHtml(week.risingWinner?.name || "TBD")}</b></div>
+            ${(week.featuredCreators || [week.popularWinner, week.risingWinner].filter(Boolean))
+              .slice(0, 6)
+              .map((creator, index) => `<div><span>Featured ${index + 1}</span><b>${escapeHtml(creator?.name || "TBD")}</b></div>`)
+              .join("")}
           </article>
         `
       )

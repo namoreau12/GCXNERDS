@@ -21,7 +21,13 @@ async function loadPlaywright() {
 async function pageReport(page, pathName, viewport) {
   await page.setViewportSize(viewport);
   const url = `http://localhost:3000${pathName}`;
-  const response = await page.goto(url, { waitUntil: "networkidle", timeout: 30000 });
+  const response = await page.goto(url, { waitUntil: "domcontentloaded", timeout: 30000 });
+  await page.waitForLoadState("networkidle", { timeout: 10000 }).catch(() => {});
+  if (pathName === "/streamers.html") {
+    await page.waitForSelector(".featured-stream-card, .spotlight-slot-card, .index-message", { timeout: 15000 });
+  } else if (pathName === "/community.html") {
+    await page.waitForSelector(".feed-card, .index-message", { timeout: 15000 });
+  }
   const metrics = await page.evaluate(() => {
     const body = document.body;
     const documentElement = document.documentElement;

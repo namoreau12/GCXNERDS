@@ -220,8 +220,7 @@ function pulseTypeForStory(story = {}) {
   if (text.includes("rumor")) return "Rumor";
   if (text.includes("update") || text.includes("updated")) return "Update";
   if (text.includes("trailer")) return "Trailer";
-  if (text.includes("guide") || text.includes("explainer")) return "Explainer";
-  if (text.includes("review")) return "Review";
+  if (text.includes("hub") || text.includes("tracker") || text.includes("explainer")) return "Explainer";
   if (text.includes("card")) return "Cards";
   return "News";
 }
@@ -783,7 +782,7 @@ function renderHomeCommunityPulse(discovery = {}) {
 function renderHomeStreamers(campaign = {}) {
   if (!homeStreamerGrid) return;
   const voted = readStreamerVotes();
-  const featured = homeStreamers.slice(0, 3);
+  const featured = homeStreamers.slice(0, 6);
 
   if (!featured.length) {
     homeStreamerGrid.innerHTML = `<div class="index-message">Streamer voting could not be loaded.</div>`;
@@ -830,7 +829,7 @@ async function loadHomeStreamers() {
     if (!response.ok) throw new Error(result.error || "Streamer voting could not be loaded.");
     homeStreamers = (result.creatorSpotlight || result.data || [])
       .sort((a, b) => Number(a.spotlightOrder || 99) - Number(b.spotlightOrder || 99) || Number(b.weeklyVotes || b.votes || 0) - Number(a.weeklyVotes || a.votes || 0))
-      .slice(0, 3);
+      .slice(0, 6);
     renderHomeStreamers(result.campaign || {});
     renderHomeClips(result.streamingSpotlight || []);
   } catch (error) {

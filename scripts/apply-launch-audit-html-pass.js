@@ -24,9 +24,9 @@ const majorPages = new Set([
 ]);
 
 const header = `    <header class="site-header has-mobile-nav">
-      <a class="brand" href="index.html" aria-label="Games Cards Exchange home">
+      <a class="brand" href="index.html" aria-label="GCXNerds home">
         <span class="brand-mark">GCX</span>
-        <span>Games Cards Exchange</span>
+        <span class="brand-wordmark" aria-label="GCXNerds"><span class="brand-wordmark-gcx">GCX</span><span class="brand-wordmark-nerds">Nerds</span></span>
       </a>
       <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
       <nav class="nav" id="primary-nav" aria-label="Primary navigation">
@@ -64,8 +64,8 @@ const header = `    <header class="site-header has-mobile-nav">
 
 const footer = `    <footer class="site-footer">
       <div>
-        <p><strong>Games Cards Exchange</strong></p>
-        <p>Games, cards, movies, streaming, reviews, guides, and collector-first marketplace tools.</p>
+        <p><strong>GCXNerds</strong></p>
+        <p>Games, cards, movies, streaming, community, and collector-first marketplace tools.</p>
       </div>
       <nav class="footer-links" aria-label="Footer navigation">
         <a href="trust.html">Trust</a>
@@ -81,11 +81,11 @@ const footer = `    <footer class="site-footer">
     </footer>`;
 
 function descriptionFromHead(html) {
-  return html.match(/<meta\s+name="description"\s+content="([^"]*)"\s*\/?>/i)?.[1] || "Games Cards Exchange gaming, cards, community, and collector coverage.";
+  return html.match(/<meta\s+name="description"\s+content="([^"]*)"\s*\/?>/i)?.[1] || "GCXNerds gaming, cards, community, and collector coverage.";
 }
 
 function titleFromHead(html) {
-  return html.match(/<title>([\s\S]*?)<\/title>/i)?.[1].trim() || "Games Cards Exchange";
+  return html.match(/<title>([\s\S]*?)<\/title>/i)?.[1].trim() || "GCXNerds";
 }
 
 function removeMeta(html, pattern) {

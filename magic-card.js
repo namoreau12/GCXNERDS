@@ -65,7 +65,7 @@ function communityShareLink({ shareUrl, title, body, category }) {
 }
 
 function renderMagicCardPage(card) {
-  document.title = `${card.name} #${card.collectorNumber} | Games Cards Exchange`;
+  document.title = `${card.name} #${card.collectorNumber} | GCXNerds`;
   const imageUrl = getCardImage(card);
   const prices = getCardPrices(card);
   const legalities = Object.entries(card.legalities || {}).filter(([, status]) => status === "legal" || status === "restricted" || status === "banned");

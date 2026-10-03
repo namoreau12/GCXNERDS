@@ -87,7 +87,7 @@ async function fetchNesOverview(game) {
 }
 
 function renderNesDetail(game) {
-  document.title = `${game.title} | NES Library | Games Cards Exchange`;
+  document.title = `${game.title} | NES Library | GCXNerds`;
 
   const initials = game.title
     .split(/\s+/)

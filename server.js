@@ -3757,7 +3757,7 @@ function buildLinkPreview(data, linkUrl, fallbackTitle = "") {
   }
 
   const pathName = parsed.pathname.replace(/^\/+/, "");
-  const host = parsed.hostname === "localhost" ? "Games Cards Exchange" : parsed.hostname.replace(/^www\./, "");
+  const host = parsed.hostname === "localhost" ? "GCXNerds" : parsed.hostname.replace(/^www\./, "");
   const preview = {
     url,
     title: safeText(fallbackTitle || host, 120),
@@ -4185,7 +4185,7 @@ function promotionStatusLabel(status) {
 
 function isRisingStreamer(streamer) {
   const text = normalize([streamer.tier, streamer.spotlight, streamer.specialty, streamer.pitch].join(" "));
-  return text.includes("rising") || text.includes("community pick") || text.includes("smaller") || text.includes("nominee");
+  return text.includes("community pick") || text.includes("nominee") || text.includes("spotlight");
 }
 
 function creatorCampaignUrl(streamer) {
@@ -4430,17 +4430,17 @@ function buildStreamerSlots(data) {
     popular: popular
       ? {
           ...popular,
-          slotKey: "popular",
-          slotLabel: data.campaign?.popularSlot || "Popular Streamer of the Week",
-          slotDescription: "The bigger creator slot built to pull a larger audience into GCX voting, game libraries, cards, and sponsor paths.",
+          slotKey: "spotlight-lead",
+          slotLabel: data.campaign?.popularSlot || "Lead Creator Highlight",
+          slotDescription: "A lead creator highlight built to pull viewers into GCX voting, game libraries, cards, and sponsor paths.",
         }
       : null,
     rising: rising
       ? {
           ...rising,
-          slotKey: "rising",
-          slotLabel: data.campaign?.risingSlot || "Community Pick of the Week",
-          slotDescription: "The smaller creator slot designed to let communities campaign, invite voters, and discover GCX together.",
+          slotKey: "spotlight-community",
+          slotLabel: data.campaign?.risingSlot || "Community Creator Highlight",
+          slotDescription: "A community creator highlight designed to let viewers campaign, invite voters, and discover GCX together.",
         }
       : null,
   };
@@ -4801,7 +4801,7 @@ function buildCommunityGrowthData(data) {
     nextActions: [
       {
         title: "Push the weekly creator spotlight",
-        body: "Use the three creator spotlight cards as the recurring reason creators send viewers back to GCX.",
+        body: "Use the six creator highlight cards as the recurring reason creators send viewers back to GCX.",
         url: "streamers.html",
       },
       {
@@ -6210,6 +6210,22 @@ async function handleCommunityApi(req, res, url) {
       .sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0));
     const originalPosts = posts.filter((post) => !post.resharedPostId);
     const reposts = posts.filter((post) => post.resharedPostId);
+    const comments = (data.comments || [])
+      .filter((comment) => comment.profileId === profile.id && (comment.status || "published") === "published")
+      .sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0))
+      .slice(0, 12)
+      .map((comment) => {
+        const post = data.posts.find((item) => item.id === comment.postId && isPublicCommunityPost(item));
+        return {
+          id: comment.id,
+          postId: comment.postId,
+          body: comment.body,
+          createdAt: comment.createdAt,
+          postTitle: post?.title || "Community post",
+          postCategory: post?.category || "Community",
+          url: `community-post.html?id=${encodeURIComponent(comment.postId)}`,
+        };
+      });
     const activity = (data.activity || [])
       .filter((item) => item.profileId === profile.id || item.actorName === profile.displayName || item.actorName === profile.handle)
       .sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0))
@@ -6251,11 +6267,13 @@ async function handleCommunityApi(req, res, url) {
           friendshipId: friendship?.id || "",
           posts: originalPosts.map((post) => buildCommunityPostPayload(data, post, viewerId)),
           reposts: reposts.map((post) => buildCommunityPostPayload(data, post, viewerId)),
+          comments,
           activity,
           groups,
           stats: {
             posts: originalPosts.length,
             reposts: reposts.length,
+            replies: comments.length,
             activity: activity.length,
             groups: groups.length,
             reactions: reactionTotal,
@@ -6623,7 +6641,11 @@ async function handleCommunityApi(req, res, url) {
 
     const comments = data.comments
       .filter((comment) => comment.postId === post.id && (comment.status || "published") === "published")
-      .sort((a, b) => new Date(a.createdAt || 0) - new Date(b.createdAt || 0));
+      .sort((a, b) => new Date(a.createdAt || 0) - new Date(b.createdAt || 0))
+      .map((comment) => ({
+        ...comment,
+        profile: publicProfile(data.profiles.find((profile) => profile.id === comment.profileId)),
+      }));
     const relatedPosts = data.posts
       .filter((item) => item.id !== post.id && isPublicCommunityPost(item))
       .filter((item) => item.category === post.category || item.groupId === post.groupId || item.profileId === post.profileId)
@@ -6669,7 +6691,6 @@ async function handleCommunityApi(req, res, url) {
         feedSort === "trending"
           ? communityPostEngagementScore(data, b) - communityPostEngagementScore(data, a) || new Date(b.createdAt || 0) - new Date(a.createdAt || 0)
           : Number(b.editorialPinned || 0) - Number(a.editorialPinned || 0) ||
-            Number(b.editorialPriority || 0) - Number(a.editorialPriority || 0) ||
             new Date(b.createdAt || 0) - new Date(a.createdAt || 0)
       );
     const pagedPosts = posts.slice(offset, offset + limit);
@@ -8493,7 +8514,7 @@ async function handleStatic(req, res, url) {
       if (story) {
         const filePath = path.join(rootDir, "article.html");
         let html = fs.readFileSync(filePath, "utf8");
-        const title = `${story.title} | Games Cards Exchange`;
+        const title = `${story.title} | GCXNerds`;
         const description = plainMetaText(story.excerpt || (story.body || [])[0], 220);
         const canonicalUrl = `${publicSiteOrigin()}/article.html?id=${encodeURIComponent(story.id)}`;
         const imageUrl = story.imageUrl ? new URL(story.imageUrl, `${publicSiteOrigin()}/`).href : "";
@@ -8509,11 +8530,11 @@ async function handleStatic(req, res, url) {
           dateModified: modifiedDate || publishedDate || undefined,
           author: {
             "@type": "Organization",
-            name: story.sourceName || "Games Cards Exchange",
+            name: story.sourceName || "GCXNerds",
           },
           publisher: {
             "@type": "Organization",
-            name: "Games Cards Exchange",
+            name: "GCXNerds",
           },
           mainEntityOfPage: canonicalUrl,
         };
@@ -8994,7 +9015,7 @@ async function startServer() {
   server.listen(port, () => {
     const keyStatus = process.env.POKEMON_TCG_API_KEY ? "with API key" : "without API key";
     const supabaseStatus = supabaseConfigured() ? `Supabase ${hydrated ? "hydrated" : "configured"}` : "Supabase not configured";
-    console.log(`Games Cards Exchange running at http://localhost:${port} (${keyStatus}, ${supabaseStatus})`);
+    console.log(`GCXNerds running at http://localhost:${port} (${keyStatus}, ${supabaseStatus})`);
   });
 }
 

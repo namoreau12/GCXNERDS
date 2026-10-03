@@ -101,6 +101,8 @@ function basePost(fields, index, profile) {
     scheduledAt: fields.scheduledAt || "",
     status: "published",
     markedStale: Boolean(fields.markedStale),
+    editorialPinned: Boolean(fields.editorialPinned),
+    editorialPriority: Number(fields.editorialPriority || 0),
     likes: 0,
     reactions: { like: 0, hype: 0, want: 0, trade: 0, watch: 0 },
     comments: 0,
@@ -110,7 +112,7 @@ function basePost(fields, index, profile) {
 
 function seedTopics(data) {
   const topics = [
-    { id: "topic-gcx-news", label: "GCX News", keywords: ["gcx", "newsroom", "article", "guide"] },
+    { id: "topic-gcx-news", label: "GCX News", keywords: ["gcx", "newsroom", "article", "hub"] },
     { id: "topic-pokemon-tcg", label: "Pokemon TCG", keywords: ["pokemon", "tcg", "pikachu", "card", "collector"] },
     { id: "topic-streaming", label: "Streaming", keywords: ["stream", "twitch", "youtube", "creator", "spotlight"] },
     { id: "topic-trailers", label: "Trailers", keywords: ["trailer", "showcase", "video", "watch"] },
@@ -263,7 +265,7 @@ function seedStreamingSpotlight(data) {
       creator: "GCX Editorial",
       title: "Stale Spotlight hold test",
       game: "Editorial Ops",
-      category: "Stale Review",
+      category: "Stale Ops",
       thumbnail_url: "",
       embed_url: "",
       watch_url: "streamers.html",
@@ -380,13 +382,13 @@ function main() {
       postType: "quick_news",
       category: "Pokemon",
       title: "Pokemon 30th coverage is now a GCX hub-and-spoke project",
-      body: "The master guide stays broad, while the Pikachu checklist and preorder tracker each get their own living pages. That should make updates cleaner as new official details arrive.",
+      body: "The main hub stays broad, while the Pikachu checklist and preorder tracker each get their own living pages. That should make updates cleaner as new official details arrive.",
       linkUrl: "article.html?id=gcx-newsroom-pokemon-tcg-30th-celebration-complete-guide",
       sourceName: "GCX Newsroom",
       sourceType: "gcx",
       topic: "Pokemon 30th Celebration",
       imageUrl: "assets/news/pokemon-tcg-30th-celebration.jpg",
-      tags: ["Pokemon", "TCG", "Guide"],
+      tags: ["Pokemon", "TCG", "Hub"],
     }, 3, profile),
     basePost({
       postType: "tcg_card_post",
@@ -416,7 +418,7 @@ function main() {
       postType: "tcg_card_post",
       category: "TCG",
       title: "Pokemon 30th chase-card talk belongs in one living thread",
-      body: "GCX should keep collector speculation anchored to confirmed reveal pages and the living 30th Celebration guides. Hype is fine; calling something a confirmed chase card needs stronger evidence.",
+      body: "GCX should keep collector speculation anchored to confirmed reveal pages and the living 30th Celebration pages. Hype is fine; calling something a confirmed chase card needs stronger evidence.",
       linkUrl: "article.html?id=gcx-newsroom-pokemon-30th-celebration-pikachu-cards",
       sourceName: "GCX Pokemon 30th checklist",
       sourceType: "gcx",
@@ -460,6 +462,7 @@ function main() {
       imageUrl: "https://img.youtube.com/vi/DPrm70EK2f0/maxresdefault.jpg",
       topic: "Halo",
       editorialPriority: 45,
+      editorialPinned: true,
       tags: ["Halo", "Xbox", "Trailer"],
     }, 5, profile),
     basePost({
@@ -657,7 +660,7 @@ function main() {
       sourceName: "GCX Social schedule",
       sourceType: "gcx",
       topic: "Weekend community thread",
-      scheduledAt: "2026-10-02T16:00:00.000Z",
+      scheduledAt: "2026-10-09T16:00:00.000Z",
       tags: ["Community", "Weekend", "Discussion"],
     }, 23, profile),
     basePost({
@@ -674,11 +677,27 @@ function main() {
     }, 24, profile),
   ];
 
-  const existingKeys = new Set((data.posts || []).map((post) => post.duplicateKey || duplicateKey(post)).filter(Boolean));
-  const existingIds = new Set((data.posts || []).map((post) => post.id));
   const deprecatedPostIds = new Set(["post-social-console-price-analysis-belongs-beside-the-game-libraries"]);
   data.posts = (data.posts || []).filter((post) => !deprecatedPostIds.has(post.id));
   const incoming = [...articleSeeds, ...curatedSeeds].map((post) => ({ ...post, duplicateKey: post.duplicateKey || duplicateKey(post) }));
+  const incomingById = new Map(incoming.map((post) => [post.id, post]));
+  const incomingByKey = new Map(incoming.map((post) => [post.duplicateKey, post]));
+  data.posts = data.posts.map((post) => {
+    const incomingPost = incomingById.get(post.id) || incomingByKey.get(post.duplicateKey || duplicateKey(post));
+    if (!incomingPost) return post;
+    return {
+      ...post,
+      ...incomingPost,
+      likes: post.likes ?? incomingPost.likes,
+      reactions: post.reactions ?? incomingPost.reactions,
+      comments: post.comments ?? incomingPost.comments,
+      reports: post.reports ?? incomingPost.reports,
+      viewCount: post.viewCount ?? incomingPost.viewCount,
+      savedCount: post.savedCount ?? incomingPost.savedCount,
+    };
+  });
+  const existingKeys = new Set(data.posts.map((post) => post.duplicateKey || duplicateKey(post)).filter(Boolean));
+  const existingIds = new Set(data.posts.map((post) => post.id));
   const newPosts = incoming.filter((post) => !existingIds.has(post.id) && !existingKeys.has(post.duplicateKey));
   data.posts = [...newPosts, ...(data.posts || [])].slice(0, 500);
 
