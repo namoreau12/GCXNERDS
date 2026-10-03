@@ -227,17 +227,17 @@
     "type": "editorial",
     "editorialStatus": "ready-for-publish",
     "storyLifecycleState": "ready-for-publish",
-    "deepResearchUsed": false,
-    "livingArticle": false,
-    "lastUpdated": "2026-10-02",
-    "lastReviewedAt": "2026-10-02",
+    "deepResearchUsed": true,
+    "livingArticle": true,
+    "lastUpdated": "2026-10-03",
+    "lastReviewedAt": "2026-10-03",
     "editorialOwner": "GCX Newsroom",
     "id": "gcx-newsroom-gears-of-war-e-day-early-access-live",
     "slug": "gears-of-war-e-day-early-access-live",
     "title": "Gears of War: E-Day Is Playable Now - Here's What Early Access Includes Before the Oct. 6 Launch",
-    "seoTitle": "Gears of War: E-Day Early Access Is Live - Launch Trailer, Platforms, and Details",
-    "excerpt": "Gears of War: E-Day early access is live for Premium Edition players and Game Pass subscribers with the Premium Upgrade before the full October 6 launch.",
-    "metaDescription": "Gears of War: E-Day is now playable in early access. Here is what is available before the full Oct. 6 launch, plus platforms, Game Pass details, and the official launch trailer.",
+    "seoTitle": "Gears of War: E-Day Early Access Hub - Times, Game Pass, Editions, Modes",
+    "excerpt": "Gears of War: E-Day early access is live for Premium Edition players and eligible Game Pass players with the Premium Upgrade. Here's the timing, access paths, modes, and what to watch before the October 6 launch.",
+    "metaDescription": "Gears of War: E-Day early access is live. Track launch times, Premium Edition access, Game Pass details, platforms, campaign co-op, Horde Siege, Versus, and support links.",
     "category": "Gaming",
     "articleType": "Major News / Early Access Launch Coverage",
     "publishedAt": "2026-10-02T20:50:00.000-04:00",
@@ -245,9 +245,9 @@
     "opportunityScore": 95,
     "topicCluster": "Gears of War: E-Day",
     "canonicalTopic": "Gears of War: E-Day early access",
-    "targetSearchIntent": "Gears of War E-Day early access, Gears E-Day launch trailer, Gears E-Day platforms, Gears E-Day Game Pass",
-    "updateFrequency": "Update when Xbox publishes launch notes, server status updates, review timing, or post-launch patch details.",
-    "updatePolicy": "Preserve this URL as the early-access launch hub for Gears of War: E-Day.",
+    "targetSearchIntent": "Gears of War E-Day early access, Gears E-Day Game Pass Premium Upgrade, Gears E-Day launch time, Gears E-Day Horde Siege, Gears E-Day editions",
+    "updateFrequency": "Update when Xbox or The Coalition posts server status, day-one patch notes, known issues, roadmap details, review embargo timing, or launch-week access changes.",
+    "updatePolicy": "Preserve this URL as the GCX early-access and launch-week hub for Gears of War: E-Day. Keep access paths, Game Pass language, mode details, status links, and post-launch notes current through the October 6 full launch window.",
     "claimStatus": "Official Xbox Wire / The Coalition / GCX launch coverage",
     "confidence": "Official Xbox Wire / The Coalition / GCX launch coverage",
     "heroImage": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/10/GoW_EDAY_Adagio_4K_Final_09-0f31e58cf65dec22523a.jpg",
@@ -276,20 +276,40 @@
       {
         "label": "Xbox Game Library",
         "url": "xbox.html"
+      },
+      {
+        "label": "Community discussion",
+        "url": "community.html?topic=Gears%20of%20War"
       }
     ],
     "sourceLinks": [
       {
-        "label": "Xbox Wire early access launch article",
+        "label": "Xbox Wire: E-Day early access and launch trailer",
         "url": "https://news.xbox.com/en-us/2026/10/01/gears-of-war-e-day-early-access-launch-trailer-xbox/"
       },
       {
-        "label": "Official Gears of War site",
-        "url": "https://www.gearsofwar.com/en-us/"
+        "label": "Xbox: Gears of War: E-Day product page",
+        "url": "https://www.xbox.com/en-US/games/gears-of-war-eday"
       },
       {
-        "label": "Gears of War: E-Day gameplay updates",
+        "label": "The Coalition: E-Day gameplay updates",
         "url": "https://www.gearsofwar.com/en-us/news/e-day-gameplay-updates/"
+      },
+      {
+        "label": "The Coalition: E-Day multiplayer deep dive",
+        "url": "https://www.gearsofwar.com/en-us/news/multiplayer/"
+      },
+      {
+        "label": "Xbox Wire: gone gold, pre-install, and PC specs",
+        "url": "https://news.xbox.com/en-us/2026/09/17/gears-of-war-e-day-gone-gold-pre-install-pc-specs/"
+      },
+      {
+        "label": "Gears of War support",
+        "url": "https://www.gearsofwar.com/en-us/support/"
+      },
+      {
+        "label": "Gears of War service status",
+        "url": "https://status.gearsofwar.com/"
       },
       {
         "label": "Official launch trailer",
@@ -351,44 +371,120 @@
       }
     ],
     "body": [
-      "**Gears of War: E-Day** is now playable in early access for Premium Edition players and Game Pass subscribers with the Premium Upgrade, giving Xbox fans a head start before the full launch on **October 6, 2026**.",
-      "That makes this more than a launch-trailer story. This is the moment where the long-awaited prequel starts moving from hype to hands-on experience.",
-      "## Early Access Starts the Real Conversation",
-      "Once early access begins, the questions change. Players are no longer asking only what the game looks like in trailers. They are asking how the campaign feels, how polished the launch build is, and whether The Coalition has recaptured the weight of classic Gears.",
-      "## Platforms / Launch Timing",
+      "**Gears of War: E-Day** is now in early access, which means the conversation has finally moved out of trailer speculation and into the hands of players. Premium Edition owners and eligible Game Pass players who bought the Premium Upgrade can play before the full worldwide launch on **October 6, 2026**.",
+      "That access split is the whole point of this hub. A lot of players are not asking whether E-Day exists. They are asking whether they can play today, whether Game Pass is enough, what the Premium Upgrade actually unlocks, and what modes are available once they get in. GCX should answer those questions cleanly without making people decode three store pages and a launch post.",
+      "## Launch Timing and Access",
       {
         "type": "table",
-        "caption": "Xbox's official launch article lays out the early-access and full-release timing.",
+        "caption": "Xbox and The Coalition separate early access from the full Game Pass launch. This is the cleanest way to read the week.",
         "headers": [
-          "Item",
-          "Detail"
+          "Question",
+          "Official answer",
+          "GCX read"
         ],
         "rows": [
           [
-            "Early access",
-            "Live October 1, 2026 at 8:00 a.m. PT / 15:00 UTC for eligible players."
+            "When did early access start?",
+            "October 1, 2026 at 8:00 a.m. PT / 15:00 UTC.",
+            "If you have the right edition or upgrade, the early-access window is already active."
           ],
           [
-            "Full launch",
-            "October 6, 2026 at 8:00 a.m. PT / 15:00 UTC."
+            "When is the full launch?",
+            "October 6, 2026 at 8:00 a.m. PT / 15:00 UTC.",
+            "This is the standard launch date and the day-one Game Pass date."
           ],
           [
-            "Platforms",
-            "Xbox Series X|S, Windows PC, Steam, cloud gaming through Game Pass Ultimate and GeForce NOW."
+            "Is Game Pass alone enough for October 1?",
+            "No. Xbox says day-one Game Pass access begins October 6; early access is for Premium Edition players and Game Pass subscribers with the Premium Upgrade.",
+            "This is the access detail most likely to confuse players, so GCX should keep saying it plainly."
           ],
           [
-            "Access path",
-            "Premium Edition or Game Pass with the Premium Upgrade for early access."
+            "What platforms are covered?",
+            "Xbox Series X|S, Windows PC, Steam, and cloud through Game Pass Ultimate and GeForce NOW.",
+            "The audience is broader than console-only Gears fans, especially with Steam and cloud in the mix."
+          ]
+        ]
+      },
+      "The important distinction is that **Game Pass Ultimate and PC Game Pass get the game on October 6**, while the **Premium Edition** and **Premium Edition Upgrade** add up to five days of early access. Xbox's product page also lists Standard Edition at $69.99, Premium Edition at $99.99, and a $30 Premium Edition Upgrade for players who already own the base game.",
+      "That means a Game Pass subscriber who wants to play during early access should be looking at the Premium Upgrade path, not assuming the subscription by itself unlocks October 1. Xbox also notes the upgrade requires the base game or a Game Pass Ultimate membership, sold separately.",
+      "## What Early Access Actually Includes",
+      {
+        "type": "table",
+        "caption": "E-Day is not only a campaign launch. The official product copy and multiplayer deep dive point to campaign, Horde Siege, and Versus as the launch-week pillars.",
+        "headers": [
+          "Mode / feature",
+          "What Xbox or The Coalition says",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Campaign",
+            "Set fourteen years before the original Gears of War, following Marcus Fenix and Dominic Santiago during the first days of the Locust invasion.",
+            "This is the emotional hook: E-Day is a prequel about the moment the world breaks, not just another sequel escalation."
+          ],
+          [
+            "Co-op",
+            "Campaign supports solo play, two-player split-screen on console, and up to four players online.",
+            "Split-screen being console-only is worth calling out before players make couch co-op plans."
+          ],
+          [
+            "Horde Siege",
+            "A reimagined PvE mode with four-player squads, larger maps, objectives, classes, extraction, weapon parts, and world-boss-style events.",
+            "This is the long-tail co-op lane and probably where launch-week groups will spend a lot of time after campaign sessions."
+          ],
+          [
+            "Versus",
+            "Four-versus-four PvP launches with Team Deathmatch, Conquest, Demolition, Crucible, six new maps, Ranked, Social, and bot/practice paths.",
+            "The Coalition is trying to keep classic Gears tension while making onboarding less brutal for new or rusty players."
+          ],
+          [
+            "Customization",
+            "The Coalition says nearly every customization item can be earned by playing, with exceptions for Premium Edition content, charity offers, and crossover bundles.",
+            "That messaging matters because live-service fatigue is real; players want to know whether progression respects their time."
+          ]
+        ]
+      },
+      "The gameplay pitch is also clearer now. The Coalition says E-Day was built from scratch to \"feel like Gears but play like new,\" with rebuilt cover systems, more deliberate movement, simulated projectile ballistics, weapon tweaks, and a renewed focus on Locust threat readability. That is not just marketing texture; it is the exact design problem Gears has to solve.",
+      "If E-Day gets too loose, it stops feeling like Gears. If it gets too nostalgic, it risks feeling stuck. The most interesting launch-week question is whether the new movement, cover, weapon, and enemy work can modernize the series without sanding off its heavy, ugly, intimate combat rhythm.",
+      "## Launch-Week Watchlist",
+      {
+        "type": "table",
+        "caption": "What GCX should keep tracking through October 6 and the first post-launch window.",
+        "headers": [
+          "Watch item",
+          "Why it matters",
+          "Where GCX should point readers"
+        ],
+        "rows": [
+          [
+            "Server and launch issues",
+            "Early access is when entitlement, download, matchmaking, and service-status confusion usually surfaces first.",
+            "Gears support and the official service-status page."
+          ],
+          [
+            "Day-one patch notes",
+            "Players need to know whether campaign, PC performance, split-screen, co-op, or multiplayer fixes land before the wider launch.",
+            "Xbox Wire, GearsofWar.com, and official social/status channels."
+          ],
+          [
+            "Horde Siege balance",
+            "Classes, mission length, extraction rules, weapon parts, and shared objectives will determine whether PvE becomes a habit or a novelty.",
+            "The Coalition's multiplayer deep dive and post-launch roadmap."
+          ],
+          [
+            "Game Pass messaging",
+            "October 1 early access and October 6 Game Pass launch are easy to conflate.",
+            "Xbox product page and Xbox Wire launch post."
           ]
         ]
       },
       "## What the Game Is About",
-      "E-Day goes back to **Emergence Day**, the catastrophic beginning of the Locust invasion. The story focuses on a younger **Marcus Fenix** and **Dom Santiago**, turning the series into a prequel about horror, chaos, and survival before the legends were fully formed.",
-      "## What We Know",
-      "* Gears of War: E-Day early access is live now\n* full launch is October 6, 2026\n* the official launch trailer is live\n* the game is coming to Xbox Series X|S, Windows PC, Steam, and cloud\n* the story returns to Emergence Day\n* Marcus Fenix and Dom Santiago are central characters",
-      "## Why Players Should Care",
-      "The Coalition has been clear that E-Day is meant to feel like Gears but play like new. That means cover, weight, weapon impact, horror, and the Locust threat all have to land together.",
-      "If early access confirms that balance, this could be the Xbox release that turns October into a real event."
+      "E-Day goes back to **Emergence Day**, the catastrophic beginning of the Locust invasion. The story focuses on a younger **Marcus Fenix** and **Dom Santiago**, turning the series into a prequel about panic, horror, and survival before the franchise's heroes became legends.",
+      "That framing gives The Coalition a useful reset. The Locust are not familiar targets yet. Civilians do not understand what is happening. The COG is reacting to a disaster in real time. If the campaign lands, E-Day can make the franchise feel dangerous again instead of simply larger.",
+      "The launch trailer leans into that exact mood, using Metallica's **For Whom the Bell Tolls** over the return to Emergence Day. It is a very Gears choice: blunt, huge, and not remotely subtle. Sometimes that is the correct tool.",
+      "## GCX Takeaway",
+      "E-Day is the kind of launch GCX should treat as a living Xbox hub, not a disposable news hit. It has a clear access question, a major Game Pass angle, a franchise-history hook, and enough multiplayer detail to keep readers coming back after they finish the campaign.",
+      "The useful promise here is simple: tell players whether they can play, what they are getting, what mode they should try first, and where to check if something breaks. If GCX keeps that practical layer sharp, the article becomes more valuable every time launch-week confusion spikes."
     ]
   },
   {
