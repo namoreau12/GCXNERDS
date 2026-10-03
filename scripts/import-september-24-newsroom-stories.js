@@ -86,18 +86,6 @@ const stories = [
     sourceLinks: [minecraftLiveSource],
     media: [
       {
-        id: "minecraft-live-2026-official-key-art",
-        mediaType: "image",
-        placement: "after-dek",
-        source: "Mojang Studios / Microsoft",
-        sourceUrl: "https://www.minecraft.net/en-us/live",
-        imageUrl: proxiedImage(minecraftLiveHeroImage),
-        caption: "Mojang's official Minecraft Live page confirms the September 26 showcase timing and watch locations.",
-        credit: "Mojang Studios / Microsoft",
-        altText: "Official Minecraft Live 2026 key art.",
-        rightsStatus: "press-asset",
-      },
-      {
         id: "minecraft-live-hero-cape-official-art",
         mediaType: "image",
         afterHeading: "The Hero Cape Is Part of the Current Push",
@@ -128,7 +116,7 @@ const stories = [
         source: "Minecraft.net",
         sourceUrl: "https://www.minecraft.net/en-us/live",
         caption:
-          "GCX is linking the official Minecraft Live hub until Mojang publishes or exposes the exact approved YouTube livestream embed for this event.",
+          "Games Exchange links the official Minecraft Live hub until Mojang publishes or exposes the exact approved YouTube livestream embed for this event.",
         rightsStatus: "source-link-only",
       },
       {
@@ -138,7 +126,7 @@ const stories = [
         source: "GCX media review",
         sourceUrl: "https://www.minecraft.net/en-us/live",
         caption:
-          "MORE OFFICIAL MEDIA NEEDED: add the exact official YouTube livestream embed once Mojang publishes or exposes the approved player URL.",
+          "The article will add the exact official YouTube livestream embed once Mojang publishes or exposes the approved player URL.",
         rightsStatus: "source-link-only",
       },
     ],
@@ -156,7 +144,7 @@ const stories = [
         headers: ["Item", "Official status", "Why it matters"],
         rows: [
           ["Date and time", "September 26, 2026 at 1 PM ET", "Readers can plan around the actual showcase window."],
-          ["Watch locations", "Minecraft.net/live, YouTube, Twitch", "GCX can update with an embed once Mojang publishes the approved stream."],
+          ["Watch locations", "Minecraft.net/live, YouTube, Twitch", "The article can add an embed once Mojang publishes the approved stream."],
           ["Show length", "About 30 to 60 minutes", "Sets expectations without overselling a marathon showcase."],
           ["Next update", "Tune in to find out", "Mojang is teasing update news without naming the feature yet."],
         ],
@@ -258,7 +246,7 @@ const stories = [
         source: "GCX media review",
         sourceUrl: "https://www.konami.com/games/eu/en/topics/19146/",
         caption:
-          "MORE OFFICIAL MEDIA NEEDED: add separate official St. Amelia, CRTV, and creature screenshots once GCX has approved source URLs from Konami, PlayStation, or the press kit.",
+          "Games Exchange will add separate official St. Amelia, CRTV, and creature screenshots once approved source URLs are available from Konami, PlayStation, or the press kit.",
         rightsStatus: "source-link-only",
       },
     ],
@@ -356,7 +344,7 @@ const stories = [
         source: "Remedy media kit",
         sourceUrl: "https://www.remedygames.com/media-and-influencers",
         caption:
-          "MORE OFFICIAL MEDIA NEEDED: Remedy lists launch and Gamescom media kits; GCX should add separate combat, Manhattan, and story screenshots only after approved image URLs are captured.",
+          "Remedy lists launch and Gamescom media kits; Games Exchange will add separate combat, Manhattan, and story screenshots once approved image URLs are captured.",
         rightsStatus: "source-link-only",
       },
     ],

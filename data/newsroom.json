@@ -643,7 +643,7 @@
         "afterHeading": "What We Know",
         "source": "Wizards of the Coast",
         "sourceUrl": "https://magic.wizards.com/en/products/reality-fracture",
-        "caption": "MORE OFFICIAL MEDIA NEEDED: GCX found official Wizards images for launch coverage, but no directly embeddable Reality Fracture launch trailer URL in the approved source pass.",
+        "caption": "Games Exchange found official Wizards images for launch coverage and will add a directly embeddable Reality Fracture launch trailer when an approved player URL is available.",
         "rightsStatus": "source-link-only"
       }
     ],
@@ -1183,18 +1183,6 @@
     ],
     "media": [
       {
-        "id": "minecraft-live-2026-official-key-art",
-        "mediaType": "image",
-        "placement": "after-dek",
-        "source": "Mojang Studios / Microsoft",
-        "sourceUrl": "https://www.minecraft.net/en-us/live",
-        "imageUrl": "/api/image-proxy?url=https%3A%2F%2Fwww.minecraft.net%2Fcontent%2Fdam%2Fminecraftnet%2Fgames%2Fminecraft%2Fkey-art%2FMCL-Twitch-26_Social-Share_570x321.png",
-        "caption": "Mojang's official Minecraft Live page confirms the September 26 showcase timing and watch locations.",
-        "credit": "Mojang Studios / Microsoft",
-        "altText": "Official Minecraft Live 2026 key art.",
-        "rightsStatus": "press-asset"
-      },
-      {
         "id": "minecraft-live-hero-cape-official-art",
         "mediaType": "image",
         "afterHeading": "The Hero Cape Is Part of the Current Push",
@@ -1224,7 +1212,7 @@
         "afterHeading": "How to Watch",
         "source": "Minecraft.net",
         "sourceUrl": "https://www.minecraft.net/en-us/live",
-        "caption": "GCX is linking the official Minecraft Live hub until Mojang publishes or exposes the exact approved YouTube livestream embed for this event.",
+        "caption": "Games Exchange links the official Minecraft Live hub until Mojang publishes or exposes the exact approved YouTube livestream embed for this event.",
         "rightsStatus": "source-link-only"
       },
       {
@@ -1233,7 +1221,7 @@
         "afterHeading": "What Mojang Has Confirmed",
         "source": "GCX media review",
         "sourceUrl": "https://www.minecraft.net/en-us/live",
-        "caption": "MORE OFFICIAL MEDIA NEEDED: add the exact official YouTube livestream embed once Mojang publishes or exposes the approved player URL.",
+        "caption": "The article will add the exact official YouTube livestream embed once Mojang publishes or exposes the approved player URL.",
         "rightsStatus": "source-link-only"
       }
     ],
@@ -1262,7 +1250,7 @@
           [
             "Watch locations",
             "Minecraft.net/live, YouTube, Twitch",
-            "GCX can update with an embed once Mojang publishes the approved stream."
+            "The article can add an embed once Mojang publishes the approved stream."
           ],
           [
             "Show length",
@@ -1285,7 +1273,7 @@
       "## What We're Watching",
       "* the next update reveal\n* any Minecraft Dungeons II visibility tied to the Hero Cape push\n* creator and community segments\n* anything that clarifies Mojang's roadmap for the next few months",
       "## What Not to Present as Confirmed",
-      "GCX does not present a specific biome, expansion, surprise spin-off, platform change, or release date as confirmed unless Mojang says it directly.",
+      "Games Exchange does not present a specific biome, expansion, surprise spin-off, platform change, or release date as confirmed unless Mojang says it directly.",
       "## Latest Update - September 24, 2026",
       "Mojang's official Minecraft Live hub confirms the September 26 timing, watch locations, Hero Cape promotion, and Wilderness Bound context."
     ],
@@ -1406,7 +1394,7 @@
         "afterHeading": "What We Know",
         "source": "GCX media review",
         "sourceUrl": "https://www.konami.com/games/eu/en/topics/19146/",
-        "caption": "MORE OFFICIAL MEDIA NEEDED: add separate official St. Amelia, CRTV, and creature screenshots once GCX has approved source URLs from Konami, PlayStation, or the press kit.",
+        "caption": "Games Exchange will add separate official St. Amelia, CRTV, and creature screenshots once approved source URLs are available from Konami, PlayStation, or the press kit.",
         "rightsStatus": "source-link-only"
       }
     ],
@@ -1542,7 +1530,7 @@
         "afterHeading": "The First Hotfix Focuses on Combat Feel",
         "source": "Remedy media kit",
         "sourceUrl": "https://www.remedygames.com/media-and-influencers",
-        "caption": "MORE OFFICIAL MEDIA NEEDED: Remedy lists launch and Gamescom media kits; GCX will add separate combat, Manhattan, and story screenshots only after approved image URLs are captured.",
+        "caption": "Remedy lists launch and Gamescom media kits; Games Exchange will add separate combat, Manhattan, and story screenshots once approved image URLs are captured.",
         "rightsStatus": "source-link-only"
       }
     ],
@@ -2039,7 +2027,7 @@
       "Proto Man is not simply appearing in the story. Capcom has presented him as a playable character with his own abilities and a distinct playstyle.",
       "That gives Dual Override an immediate source of replayability if stages and bosses feel meaningfully different depending on which character you choose.",
       "## Official Trailer",
-      "Capcom's Gamescom trailer is the source of the major gameplay beats here. GCX is linking the official press source while holding the trailer embed until the approved publisher upload is added to the CMS.",
+      "Capcom's Gamescom trailer is the source of the major gameplay beats here. Games Exchange links the official press source and will add the trailer embed when the approved publisher upload is available.",
       "## Custom Chips Let You Build Your Own Mega Man",
       "The new **Custom Chip** system lets players modify and enhance abilities. Capcom's reveal showed examples such as rapid-fire shots, a protective shield bubble and hover capability.",
       "Rather than every player experiencing Mega Man in exactly the same way, Dual Override appears to let players build around preferred movement and combat styles.",
@@ -2186,7 +2174,7 @@
       "Marcus Fenix and Dom Santiago are joined by two new squadmates, **Lucas Reyes and Mags Carter**, as Bravo Squad tries to survive the first chaos of Emergence Day in the city of Kalona.",
       "The story unfolds across three nights, long before Marcus and Dom become the legends players know from the original trilogy.",
       "## Official Gameplay",
-      "Xbox Wire's hands-on coverage is the main source for the public campaign demo details. GCX is linking the official preview now and will add the official embed once the approved player URL is available.",
+      "Xbox Wire's hands-on coverage is the main source for the public campaign demo details. Games Exchange links the official preview and will add the official embed once the approved player URL is available.",
       "## The Cover System Still Has Weight",
       "One of the defining details in Xbox's hands-on coverage is how familiar movement feels. Marcus still slams into cover. Weapons still feel heavy. Combat still emphasizes positioning rather than turning the game into a hyper-mobile shooter.",
       "That matters because Gears has always been at its best when every movement feels slightly dangerous.",
@@ -2399,7 +2387,7 @@
       "Revelation appears to be making them a much larger part of the adventure. Square Enix says the guardians emerge to defend a world in crisis, wreaking destruction without distinguishing between friend and foe.",
       "The trailer shows battles across deserts, the sky and underwater, suggesting these encounters will be major set pieces rather than simple optional callbacks.",
       "## Official Trailer",
-      "Square Enix's official press release is the source for the new trailer details. GCX is linking the official source while holding the video embed until the approved publisher upload is added.",
+      "Square Enix's official press release is the source for the new trailer details. Games Exchange links the official source and will add the video embed when the approved publisher upload is available.",
       "## The Highwind Is Opening the World Up",
       "The Highwind appears prominently, reinforcing Square Enix's promise of a more open final chapter.",
       "Revelation is expected to let players travel across the planet with much greater freedom than Rebirth, bringing back the late-game sense of exploration that defined the original.",

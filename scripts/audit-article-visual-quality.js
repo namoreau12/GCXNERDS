@@ -197,7 +197,17 @@ function mediaImageUrl(item) {
 }
 
 function normalizedUrl(value) {
-  return String(value || "").trim().replace(/[?#].*$/, "");
+  const text = String(value || "").trim();
+  if (!text) return "";
+  try {
+    const parsed = new URL(text, "https://gcx.local");
+    if (parsed.pathname === "/api/image-proxy" && parsed.searchParams.get("url")) {
+      return `image-proxy:${parsed.searchParams.get("url")}`;
+    }
+  } catch {
+    // Fall through to the generic normalization below.
+  }
+  return text.replace(/[?#].*$/, "");
 }
 
 function isLongform(story, words) {
