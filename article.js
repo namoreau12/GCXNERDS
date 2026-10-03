@@ -181,7 +181,7 @@ function setCanonical(url) {
 }
 
 function updateArticleMetadata(story) {
-  const title = `${story.title} | GCXNerds`;
+  const title = `${story.title} | Games Exchange`;
   const description = plainText(story.excerpt || (story.body || [])[0], 220);
   const canonicalUrl = publicAbsoluteUrl(`article.html?id=${encodeURIComponent(story.id)}`);
   const heroImage = storyHeroImageUrl(story);
@@ -223,11 +223,11 @@ function updateArticleMetadata(story) {
     dateModified: modifiedDate || publishedDate || undefined,
     author: {
       "@type": "Organization",
-      name: story.sourceName || "GCXNerds",
+      name: story.sourceName || "Games Exchange",
     },
     publisher: {
       "@type": "Organization",
-      name: "GCXNerds",
+      name: "Games Exchange",
       logo: {
         "@type": "ImageObject",
         url: publicAbsoluteUrl("assets/news/pokemon-tcg-30th-celebration.jpg"),

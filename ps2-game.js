@@ -20,7 +20,7 @@ function getChecklist() {
 }
 
 function renderPs2Detail(game) {
-  document.title = `${game.title} | PS2 Library | GCXNerds`;
+  document.title = `${game.title} | PS2 Library | Games Exchange`;
 
   const initials = game.title.split(/\s+/).filter(Boolean).slice(0, 3).map((word) => word[0]).join("");
   const imageMarkup = game.imageUrl

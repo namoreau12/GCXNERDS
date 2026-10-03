@@ -82,7 +82,7 @@ function communityShareLink({ shareUrl, title, body, category }) {
 }
 
 function renderYugiohCardPage(card) {
-  document.title = `${card.name} | GCXNerds`;
+  document.title = `${card.name} | Games Exchange`;
   const prices = getCardPrices(card);
   const legalities = getLegalities(card);
   const variants = getVariantLabels(card);

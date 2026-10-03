@@ -133,30 +133,14 @@ input {
 }
 
 .brand-wordmark {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.08em;
+  display: inline-block;
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  line-height: 0.95;
-}
-
-.brand-wordmark-gcx {
+  line-height: 1;
   color: var(--ink);
   font-weight: 950;
-}
-
-.brand-wordmark-nerds {
-  color: #6b35d8;
-  font-family: inherit;
-  font-size: 0.84em;
-  font-style: normal;
-  font-weight: 950;
-  letter-spacing: 0;
-  text-shadow: none;
-  transform: none;
 }
 
 .brand-mark {
@@ -3587,17 +3571,18 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: end;
-  gap: 10px;
-  padding: 28px 0 8px;
+  gap: 18px 24px;
+  padding: 28px 0 12px;
 }
 
 .news-hero h1,
 .article-copy h1 {
-  margin: 0;
+  margin: 0 0 12px;
   max-width: 900px;
-  font-size: clamp(2rem, 5vw, 4.4rem);
-  line-height: 0.98;
+  font-size: clamp(2rem, 4.1vw, 3.65rem);
+  line-height: 1.12;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .news-hero p:not(.kicker),
@@ -6486,15 +6471,17 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
 .streamer-hero h1,
 .profile-hero h1 {
   max-width: 1030px;
-  margin: 0;
-  font-size: clamp(2.2rem, 4.6vw, 5.2rem);
-  line-height: 0.96;
+  margin: 0 0 14px;
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.12;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .community-hero p:not(.kicker),
 .streamer-hero p:not(.kicker),
 .profile-hero p:not(.kicker) {
+  margin: 0;
   max-width: 780px;
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.58;
@@ -8597,23 +8584,28 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
 .streamer-campaign-copy {
   display: grid;
   gap: 18px;
+  min-width: 0;
   align-content: center;
   padding: clamp(24px, 5vw, 56px);
   color: white;
 }
 
 .streamer-campaign-copy h1 {
+  min-width: 0;
   margin: 0;
-  font-size: clamp(2.4rem, 5vw, 5.8rem);
-  line-height: 0.95;
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.12;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .streamer-campaign-copy p:not(.kicker) {
+  min-width: 0;
   max-width: 720px;
   margin: 0;
   color: rgba(255, 255, 255, 0.74);
   line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 .streamer-campaign-copy .feed-tags span {

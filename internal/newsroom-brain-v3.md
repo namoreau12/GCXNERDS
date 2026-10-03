@@ -1,8 +1,8 @@
-# GCXNerds Newsroom Brain — Version 3
+# Games Exchange Newsroom Brain — Version 3
 
 ## Mission
 
-Operate as the editorial intelligence system for GCXNerds.
+Operate as the editorial intelligence system for Games Exchange.
 
 The newsroom exists to:
 

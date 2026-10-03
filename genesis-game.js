@@ -15,7 +15,7 @@ function getChecklist() {
 }
 
 function renderGenesisDetail(game) {
-  document.title = `${game.title} | Genesis Library | GCXNerds`;
+  document.title = `${game.title} | Genesis Library | Games Exchange`;
   const initials = game.title.split(/\s+/).filter(Boolean).slice(0, 3).map((word) => word[0]).join("");
   const imageMarkup = game.imageUrl ? `<img src="${escapeHtml(game.imageUrl)}" alt="${escapeHtml(game.title)} box art" />` : `<span class="image-fallback image-fallback-game" role="img" aria-label="${escapeHtml(game.title)} box art pending review">${escapeHtml(initials)}</span>`;
   const checks = getChecklist(game).map((check) => `<li>${escapeHtml(check)}</li>`).join("");

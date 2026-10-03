@@ -3757,7 +3757,7 @@ function buildLinkPreview(data, linkUrl, fallbackTitle = "") {
   }
 
   const pathName = parsed.pathname.replace(/^\/+/, "");
-  const host = parsed.hostname === "localhost" ? "GCXNerds" : parsed.hostname.replace(/^www\./, "");
+  const host = parsed.hostname === "localhost" ? "Games Exchange" : parsed.hostname.replace(/^www\./, "");
   const preview = {
     url,
     title: safeText(fallbackTitle || host, 120),
@@ -8514,7 +8514,7 @@ async function handleStatic(req, res, url) {
       if (story) {
         const filePath = path.join(rootDir, "article.html");
         let html = fs.readFileSync(filePath, "utf8");
-        const title = `${story.title} | GCXNerds`;
+        const title = `${story.title} | Games Exchange`;
         const description = plainMetaText(story.excerpt || (story.body || [])[0], 220);
         const canonicalUrl = `${publicSiteOrigin()}/article.html?id=${encodeURIComponent(story.id)}`;
         const imageUrl = story.imageUrl ? new URL(story.imageUrl, `${publicSiteOrigin()}/`).href : "";
@@ -8530,11 +8530,11 @@ async function handleStatic(req, res, url) {
           dateModified: modifiedDate || publishedDate || undefined,
           author: {
             "@type": "Organization",
-            name: story.sourceName || "GCXNerds",
+            name: story.sourceName || "Games Exchange",
           },
           publisher: {
             "@type": "Organization",
-            name: "GCXNerds",
+            name: "Games Exchange",
           },
           mainEntityOfPage: canonicalUrl,
         };
@@ -9015,7 +9015,7 @@ async function startServer() {
   server.listen(port, () => {
     const keyStatus = process.env.POKEMON_TCG_API_KEY ? "with API key" : "without API key";
     const supabaseStatus = supabaseConfigured() ? `Supabase ${hydrated ? "hydrated" : "configured"}` : "Supabase not configured";
-    console.log(`GCXNerds running at http://localhost:${port} (${keyStatus}, ${supabaseStatus})`);
+    console.log(`Games Exchange running at http://localhost:${port} (${keyStatus}, ${supabaseStatus})`);
   });
 }
 

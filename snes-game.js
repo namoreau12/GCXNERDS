@@ -75,7 +75,7 @@ async function fetchSnesImage(game) {
 }
 
 function renderSnesDetail(game, imageData) {
-  document.title = `${game.title} | SNES Library | GCXNerds`;
+  document.title = `${game.title} | SNES Library | Games Exchange`;
 
   const initials = game.title
     .split(/\s+/)
