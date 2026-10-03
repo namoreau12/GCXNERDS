@@ -263,17 +263,30 @@ async function loadDailyChallenge() {
 
 function levelDifficulty(level) {
   const safeLevel = Math.max(1, Math.round(level || 1));
+  if (safeLevel === 1) {
+    return {
+      level: 1,
+      tier: 0,
+      targetCount: 32,
+      obstacleCount: 0,
+      speed: Math.hypot(250, 360),
+      paddleWidth: 144,
+      paddleMaxSpeed: 760,
+      bonusChance: 0.22,
+      minGap: 12,
+    };
+  }
   const tier = Math.floor((safeLevel - 1) / 5);
   return {
     level: safeLevel,
     tier,
-    targetCount: clamp(10 + Math.floor(safeLevel * 1.2) + tier * 2, 12, 76),
+    targetCount: clamp(30 + Math.floor(safeLevel * 2) + tier * 2, 34, 76),
     obstacleCount: clamp(Math.floor((safeLevel - 7) / 3) + Math.floor(tier * 0.7), 0, 18),
-    speed: clamp(285 + safeLevel * 9 + tier * 16, 285, 980),
-    paddleWidth: clamp(172 - tier * 5 - Math.floor(safeLevel / 10) * 3, 96, 172),
+    speed: clamp(Math.hypot(250, 360) + (safeLevel - 1) * 12 + tier * 16, Math.hypot(250, 360), 980),
+    paddleWidth: clamp(144 - tier * 4 - Math.floor((safeLevel - 1) / 10) * 3, 96, 144),
     paddleMaxSpeed: clamp(760 + tier * 32, 760, 1040),
-    bonusChance: clamp(0.1 + tier * 0.018, 0.1, 0.32),
-    minGap: clamp(18 - Math.floor(tier / 2), 7, 18),
+    bonusChance: clamp(0.16 + tier * 0.018, 0.16, 0.32),
+    minGap: clamp(12 - Math.floor(tier / 3), 7, 12),
   };
 }
 
@@ -287,8 +300,37 @@ function candidateOverlaps(candidate, objects, gap) {
   );
 }
 
+function createOpeningTargets(seed) {
+  const random = seededRandom(seed);
+  const targets = [];
+  const rows = 4;
+  const cols = 8;
+  const gap = 12;
+  const width = 78;
+  const height = 24;
+  const startX = (canvas.width - cols * width - (cols - 1) * gap) / 2;
+  const startY = 74;
+  for (let row = 0; row < rows; row += 1) {
+    for (let col = 0; col < cols; col += 1) {
+      const bonus = random() > 0.78;
+      targets.push({
+        kind: "target",
+        x: startX + col * (width + gap),
+        y: startY + row * (height + gap),
+        w: width,
+        h: height,
+        value: bonus ? 275 : 125 + row * 35,
+        bonus,
+        alive: true,
+      });
+    }
+  }
+  return targets;
+}
+
 function generateLevelObjects(seed, level) {
   const config = levelDifficulty(level);
+  if (config.level === 1) return createOpeningTargets(seed);
   const random = seededRandom(`${seed || "gcx-rally"}:level:${config.level}`);
   const objects = [];
   const shapes = [
@@ -517,8 +559,8 @@ function prepareLevel(level) {
   game.ball.x = canvas.width / 2;
   game.ball.y = canvas.height - 94;
   game.ball.r = clamp(10 - Math.floor(config.tier / 5), 8, 10);
-  game.ball.vx = Math.sin(serveAngle) * config.speed;
-  game.ball.vy = -Math.cos(serveAngle) * config.speed;
+  game.ball.vx = level === 1 ? (random() > 0.5 ? 250 : -250) : Math.sin(serveAngle) * config.speed;
+  game.ball.vy = level === 1 ? -360 : -Math.cos(serveAngle) * config.speed;
   game.ball.speed = config.speed;
   game.targets = generateLevelObjects(challenge?.seed, level);
 }
