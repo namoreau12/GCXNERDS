@@ -201,6 +201,31 @@ function youtubeThumbnailFromEmbed(url) {
   return match?.[1] ? `https://img.youtube.com/vi/${encodeURIComponent(match[1])}/hqdefault.jpg` : "";
 }
 
+function streamPlatformClass(item) {
+  const platform = String(item?.platform || "").toLowerCase();
+  if (platform.includes("twitch")) return "is-twitch";
+  if (platform.includes("youtube")) return "is-youtube";
+  if (platform.includes("minecraft")) return "is-minecraft";
+  return "is-official";
+}
+
+function streamFallbackLabel(item) {
+  const platform = String(item?.platform || "Official stream").split("/")[0].trim();
+  return platform || "Official stream";
+}
+
+function renderStreamFallbackArt(item, mode = "card") {
+  const label = streamFallbackLabel(item);
+  const title = item?.title || label;
+  const status = streamStatusLabel(item);
+  return `
+    <div class="stream-fallback-art ${streamPlatformClass(item)} ${mode === "embed" ? "is-embed" : ""}" aria-label="${escapeHtml(title)} preview">
+      <span>${escapeHtml(label)}</span>
+      <strong>${escapeHtml(status)}</strong>
+    </div>
+  `;
+}
+
 function renderStreamMedia(item, featured = false) {
   const embedUrl = streamEmbedUrl(item);
   if (embedUrl) {
@@ -208,7 +233,7 @@ function renderStreamMedia(item, featured = false) {
     return `
       <div class="${featured ? "featured-stream-player" : "stream-card-player"} stream-embed-preview" data-stream-player>
         ${thumbnail ? `<img src="${escapeHtml(thumbnail)}" alt="${escapeHtml(item.title)} preview" loading="lazy" decoding="async" />` : ""}
-        ${thumbnail ? "" : `<span class="stream-provider-preview">${escapeHtml(item.platform || "Official stream")}</span>`}
+        ${thumbnail ? "" : renderStreamFallbackArt(item, "embed")}
         <button
           class="stream-load-embed"
           type="button"
@@ -226,7 +251,7 @@ function renderStreamMedia(item, featured = false) {
     return `<img src="${escapeHtml(item.thumbnail_url)}" alt="${escapeHtml(item.title)} preview" loading="lazy" decoding="async" />`;
   }
 
-  return `<div class="stream-placeholder">${escapeHtml(item.platform || "Stream")}</div>`;
+  return renderStreamFallbackArt(item);
 }
 
 function renderSpotlightInterest(item) {
