@@ -75,6 +75,18 @@ function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
 }
 
+function rallyIntensity() {
+  if (!game) return 0;
+  const levelHeat = Math.max(0, (game.level || 1) - 1) / 18;
+  const hitHeat = (game.hits || 0) / 90;
+  const rallyHeat = (game.rally || 0) / 130;
+  return clamp(levelHeat + hitHeat + rallyHeat, 0, 1);
+}
+
+function beatIntervalForIntensity(intensity = rallyIntensity()) {
+  return clamp(0.64 - intensity * 0.34, 0.28, 0.64);
+}
+
 function initAudio() {
   if (audio || !window.AudioContext && !window.webkitAudioContext) return audio;
   const AudioCtor = window.AudioContext || window.webkitAudioContext;
@@ -151,10 +163,54 @@ function playTone(frequency, duration = 0.12, options = {}) {
   osc.stop(now + duration + 0.03);
 }
 
+function playKick(intensity = rallyIntensity()) {
+  const system = initAudio();
+  if (!system || system.muted) return;
+  const now = system.context.currentTime;
+  const osc = system.context.createOscillator();
+  const gain = system.context.createGain();
+  osc.type = "sine";
+  osc.frequency.setValueAtTime(86 + intensity * 24, now);
+  osc.frequency.exponentialRampToValueAtTime(38 + intensity * 8, now + 0.18);
+  gain.gain.setValueAtTime(0.0001, now);
+  gain.gain.exponentialRampToValueAtTime(0.16 + intensity * 0.1, now + 0.012);
+  gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.28);
+  osc.connect(gain);
+  gain.connect(system.master);
+  osc.start(now);
+  osc.stop(now + 0.32);
+}
+
+function playDrumTick(intensity = rallyIntensity()) {
+  const system = initAudio();
+  if (!system || system.muted) return;
+  const now = system.context.currentTime;
+  const bufferSize = Math.max(1, Math.floor(system.context.sampleRate * 0.08));
+  const buffer = system.context.createBuffer(1, bufferSize, system.context.sampleRate);
+  const output = buffer.getChannelData(0);
+  for (let i = 0; i < bufferSize; i += 1) {
+    output[i] = (Math.random() * 2 - 1) * (1 - i / bufferSize);
+  }
+  const noise = system.context.createBufferSource();
+  const filter = system.context.createBiquadFilter();
+  const gain = system.context.createGain();
+  noise.buffer = buffer;
+  filter.type = "highpass";
+  filter.frequency.value = 1200 + intensity * 1800;
+  gain.gain.setValueAtTime(0.0001, now);
+  gain.gain.exponentialRampToValueAtTime(0.026 + intensity * 0.038, now + 0.008);
+  gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.07);
+  noise.connect(filter);
+  filter.connect(gain);
+  gain.connect(system.master);
+  noise.start(now);
+  noise.stop(now + 0.09);
+}
+
 function scheduleMusicPulse() {
   if (!audio) return;
   window.clearTimeout(audio.timer);
-  const intensity = Math.min(1, (game?.hits || 0) / 24 + (game?.rally || 0) / 80);
+  const intensity = rallyIntensity();
   const notes =
     intensity > 0.66
       ? [220, 293.66, 329.63, 440, 493.88, 587.33]
@@ -164,13 +220,15 @@ function scheduleMusicPulse() {
   const note = notes[audio.step % notes.length];
   const bassNote = intensity > 0.66 ? 110 : intensity > 0.32 ? 98 : 73.42;
   audio.step += 1;
-  audio.music.gain.setTargetAtTime(0.055 + intensity * 0.035, audio.context.currentTime, 0.12);
-  audio.filter.frequency.setTargetAtTime(850 + intensity * 3100, audio.context.currentTime, 0.08);
+  audio.music.gain.setTargetAtTime(0.06 + intensity * 0.05, audio.context.currentTime, 0.12);
+  audio.filter.frequency.setTargetAtTime(760 + intensity * 3900, audio.context.currentTime, 0.08);
   audio.padA.frequency.setTargetAtTime(note / 2, audio.context.currentTime, 0.12);
   audio.padB.frequency.setTargetAtTime(note * (intensity > 0.62 ? 1.5 : 1), audio.context.currentTime, 0.12);
   audio.bass.frequency.setTargetAtTime(bassNote, audio.context.currentTime, 0.18);
-  audio.bassGain.gain.setTargetAtTime(0.01 + intensity * 0.032, audio.context.currentTime, 0.16);
+  audio.bassGain.gain.setTargetAtTime(0.02 + intensity * 0.06, audio.context.currentTime, 0.12);
   if (!audio.muted && game?.running) {
+    playKick(intensity);
+    if (audio.step % 2 === 0 || intensity > 0.52) playDrumTick(intensity);
     playTone(note * (intensity > 0.66 ? 3 : 2), 0.18, {
       type: intensity > 0.62 ? "triangle" : "sine",
       gain: 0.016 + intensity * 0.04,
@@ -179,7 +237,7 @@ function scheduleMusicPulse() {
       playTone(note * 2, 0.24, { type: "sawtooth", gain: 0.018 + intensity * 0.025 });
     }
   }
-  audio.timer = window.setTimeout(scheduleMusicPulse, Math.max(190, 900 - intensity * 560));
+  audio.timer = window.setTimeout(scheduleMusicPulse, beatIntervalForIntensity(intensity) * 1000);
 }
 
 function resumeAudio() {
@@ -785,12 +843,74 @@ function updateLasers(dt) {
   if (hit) playTone(987.77, 0.06, { type: "square", gain: 0.045 });
 }
 
+function updateBassPulse(dt) {
+  if (!game) return;
+  game.beatTimer = (game.beatTimer || 0) + dt;
+  game.bassPulse = Math.max(0, (game.bassPulse || 0) - dt * 1.65);
+  if (!game.running || game.ended) return;
+  const intensity = rallyIntensity();
+  const interval = beatIntervalForIntensity(intensity);
+  if (game.beatTimer >= interval) {
+    game.beatTimer %= interval;
+    game.bassPulse = 1;
+  }
+}
+
+function colorCycle(progress, alpha) {
+  const hue = Math.round(205 + progress * 185) % 360;
+  return `hsla(${hue}, 88%, 58%, ${alpha})`;
+}
+
+function drawBassCircle() {
+  const intensity = rallyIntensity();
+  const pulse = game?.bassPulse || 0;
+  const progress = clamp(((game?.level || 1) - 1) / 24 + intensity * 0.45, 0, 1);
+  const centerX = canvas.width / 2;
+  const centerY = canvas.height * (canvasLooksMobile() ? 0.56 : 0.58);
+  const baseRadius = canvas.width * (canvasLooksMobile() ? 0.25 : 0.22);
+  const radius = baseRadius * (1 + pulse * 0.16 + intensity * 0.08);
+
+  ctx.save();
+  ctx.globalCompositeOperation = "screen";
+  const halo = ctx.createRadialGradient(centerX, centerY, radius * 0.08, centerX, centerY, radius * 1.45);
+  halo.addColorStop(0, colorCycle(progress, 0.42 + pulse * 0.22));
+  halo.addColorStop(0.38, colorCycle((progress + 0.18) % 1, 0.2 + intensity * 0.16));
+  halo.addColorStop(1, "rgba(255,255,255,0)");
+  ctx.fillStyle = halo;
+  ctx.beginPath();
+  ctx.arc(centerX, centerY, radius * 1.45, 0, Math.PI * 2);
+  ctx.fill();
+
+  ctx.globalCompositeOperation = "source-over";
+  for (let i = 0; i < 5; i += 1) {
+    const ringRadius = radius * (0.72 + i * 0.18 + pulse * 0.055);
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, ringRadius, 0, Math.PI * 2);
+    ctx.strokeStyle = colorCycle((progress + i * 0.11) % 1, 0.17 + pulse * 0.13);
+    ctx.lineWidth = canvasUnits(3 + i * 0.7 + pulse * 4);
+    ctx.stroke();
+  }
+
+  ctx.beginPath();
+  ctx.arc(centerX, centerY, radius * 0.36, 0, Math.PI * 2);
+  ctx.fillStyle = "rgba(6, 7, 12, 0.56)";
+  ctx.fill();
+  ctx.beginPath();
+  ctx.arc(centerX, centerY, radius * 0.24 * (1 + pulse * 0.1), 0, Math.PI * 2);
+  ctx.strokeStyle = "rgba(255,255,255,0.28)";
+  ctx.lineWidth = canvasUnits(2);
+  ctx.stroke();
+  ctx.restore();
+}
+
 function drawGameCoverBackground() {
+  const intensity = rallyIntensity();
+  const progress = clamp(((game?.level || 1) - 1) / 24 + intensity * 0.5, 0, 1);
   const base = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-  base.addColorStop(0, "#0d1020");
-  base.addColorStop(0.44, "#1f2d5c");
-  base.addColorStop(0.72, "#401d46");
-  base.addColorStop(1, "#120b16");
+  base.addColorStop(0, `hsl(${220 + progress * 80}, 54%, 10%)`);
+  base.addColorStop(0.44, `hsl(${225 + progress * 120}, 52%, ${18 + intensity * 5}%)`);
+  base.addColorStop(0.72, `hsl(${285 + progress * 70}, 48%, ${17 + intensity * 6}%)`);
+  base.addColorStop(1, `hsl(${335 + progress * 50}, 54%, 9%)`);
   ctx.fillStyle = base;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -812,6 +932,8 @@ function drawGameCoverBackground() {
     ctx.fill();
   });
   ctx.restore();
+
+  drawBassCircle();
 
   ctx.fillStyle = "rgba(6, 7, 12, 0.42)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -918,6 +1040,8 @@ function resetGame() {
     laserUntil: 0,
     laserTimer: 0,
     rally: 0,
+    beatTimer: 0,
+    bassPulse: 0,
     paddle: {
       x: canvas.width / 2 - 72,
       y: canvas.height - 58,
@@ -1102,6 +1226,7 @@ function update(dt) {
   if (!game?.running) return;
   const { paddle, ball } = game;
   game.lastDt = dt;
+  updateBassPulse(dt);
   const leftPressed = keys.has("ArrowLeft") || keys.has("a") || keys.has("A");
   const rightPressed = keys.has("ArrowRight") || keys.has("d") || keys.has("D");
   if (inputMode === "keyboard") {
@@ -1317,6 +1442,9 @@ async function init() {
       levelStartedAt: performance.now(),
       levelClearUntil: 0,
       hits: 0,
+      rally: 0,
+      beatTimer: 0,
+      bassPulse: 0,
       paddle: { x: canvas.width / 2 - 72, y: canvas.height - 58, w: 144, h: 16, vx: 0, maxSpeed: 760, acceleration: 4200, friction: 9 },
       ball: { x: canvas.width / 2, y: canvas.height - 92, r: 10, vx: 0, vy: -360, speed: 365 },
       targets: generateLevelObjects(challenge.seed, 1),
