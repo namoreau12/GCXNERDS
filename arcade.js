@@ -526,6 +526,15 @@ function drawPowerUp(item) {
   ctx.restore();
 }
 
+function canvasUnits(cssPx) {
+  const width = canvas.getBoundingClientRect().width || canvas.width;
+  return cssPx / Math.max(0.35, width / canvas.width);
+}
+
+function canvasLooksMobile() {
+  return (canvas.getBoundingClientRect().width || canvas.width) < 560;
+}
+
 function drawMiniRocket(rocket) {
   ctx.save();
   ctx.translate(rocket.x, rocket.y);
@@ -964,12 +973,12 @@ function draw() {
   ctx.fill();
 
   ctx.fillStyle = "rgba(255,255,255,0.84)";
-  ctx.font = "700 18px Inter, sans-serif";
-  ctx.fillText(`GCX Rally ${challenge?.dayId || ""} - Level ${game.level || 1}`, 28, 36);
+  ctx.font = `800 ${canvasUnits(canvasLooksMobile() ? 11 : 18)}px Inter, sans-serif`;
+  ctx.fillText(canvasLooksMobile() ? `Level ${game.level || 1}` : `GCX Rally ${challenge?.dayId || ""} - Level ${game.level || 1}`, canvasUnits(canvasLooksMobile() ? 10 : 28), canvasUnits(canvasLooksMobile() ? 18 : 36));
   if (game.levelClearUntil && performance.now() < game.levelClearUntil) {
     ctx.save();
     ctx.fillStyle = "rgba(255,255,255,0.9)";
-    ctx.font = "900 34px Inter, sans-serif";
+    ctx.font = `900 ${canvasUnits(canvasLooksMobile() ? 22 : 34)}px Inter, sans-serif`;
     ctx.textAlign = "center";
     ctx.fillText(`Level ${game.level}`, canvas.width / 2, canvas.height / 2);
     ctx.restore();
@@ -977,12 +986,12 @@ function draw() {
   if (game.waitingForServe && game.running && !game.ended) {
     ctx.save();
     ctx.fillStyle = "rgba(255,255,255,0.94)";
-    ctx.font = "900 28px Inter, sans-serif";
+    ctx.font = `900 ${canvasUnits(canvasLooksMobile() ? 19 : 28)}px Inter, sans-serif`;
     ctx.textAlign = "center";
-    ctx.fillText(`Level ${game.level} Ready`, canvas.width / 2, canvas.height / 2 - 10);
-    ctx.font = "800 16px Inter, sans-serif";
+    ctx.fillText(`Level ${game.level} Ready`, canvas.width / 2, canvas.height / 2 - canvasUnits(canvasLooksMobile() ? 8 : 10));
+    ctx.font = `800 ${canvasUnits(canvasLooksMobile() ? 12 : 16)}px Inter, sans-serif`;
     ctx.fillStyle = "rgba(255,255,255,0.72)";
-    ctx.fillText("Press Space or click to launch", canvas.width / 2, canvas.height / 2 + 22);
+    ctx.fillText(canvasLooksMobile() ? "Tap to launch" : "Press Space or click to launch", canvas.width / 2, canvas.height / 2 + canvasUnits(canvasLooksMobile() ? 18 : 22));
     ctx.restore();
   }
 }
