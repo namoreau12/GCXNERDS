@@ -108,6 +108,10 @@ function isSafeTwitchEmbed(url) {
   return /^https:\/\/player\.twitch\.tv\//i.test(String(url || ""));
 }
 
+function isSafeTwitchChatEmbed(url) {
+  return /^https:\/\/www\.twitch\.tv\/embed\/[^/]+\/chat/i.test(String(url || ""));
+}
+
 function twitchChannelFromUrl(url) {
   try {
     const parsed = new URL(url);
@@ -188,34 +192,21 @@ function isSafeStreamEmbed(url) {
   return isSafeYouTubeEmbed(url) || isSafeTwitchEmbed(url);
 }
 
+function isSafeCreatorStageEmbed(url) {
+  return isSafeStreamEmbed(url) || isSafeTwitchChatEmbed(url);
+}
+
 function youtubeThumbnailFromEmbed(url) {
   const match = String(url || "").match(/\/embed\/([^?/#]+)/i);
   return match?.[1] ? `https://img.youtube.com/vi/${encodeURIComponent(match[1])}/hqdefault.jpg` : "";
 }
 
-function renderStreamIframe(item, featured = false) {
-  const embedUrl = streamEmbedUrl(item);
-  if (!embedUrl) return renderStreamMedia({ ...item, embed_url: "" }, featured);
-  return `
-    <div class="${featured ? "featured-stream-player" : "stream-card-player"}" data-stream-player>
-      <iframe
-        src="${escapeHtml(embedUrl)}"
-        title="${escapeHtml(item.title)}"
-        loading="lazy"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
-  `;
-}
-
 function renderStreamMedia(item, featured = false) {
   const embedUrl = streamEmbedUrl(item);
   if (embedUrl) {
-    if (featured) return renderStreamIframe(item, true);
     const thumbnail = item.thumbnail_url || youtubeThumbnailFromEmbed(embedUrl);
     return `
-      <div class="stream-card-player stream-embed-preview" data-stream-player>
+      <div class="${featured ? "featured-stream-player" : "stream-card-player"} stream-embed-preview" data-stream-player>
         ${thumbnail ? `<img src="${escapeHtml(thumbnail)}" alt="${escapeHtml(item.title)} preview" loading="lazy" decoding="async" />` : ""}
         ${thumbnail ? "" : `<span class="stream-provider-preview">${escapeHtml(item.platform || "Official stream")}</span>`}
         <button
@@ -341,13 +332,17 @@ function renderCreatorLiveStage(selectedSpotlight = []) {
         ${
           playerUrl
             ? `
-              <iframe
-                src="${escapeHtml(playerUrl)}"
-                title="${escapeHtml(`${activeStreamer.name} Twitch player`)}"
-                loading="lazy"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <div class="creator-stage-player-preview stream-embed-preview" data-creator-stage-frame>
+                ${previewImage ? `<img src="${escapeHtml(previewImage)}" alt="${escapeHtml(activeStreamer.name)} stream preview" loading="lazy" decoding="async" />` : `<span class="stream-provider-preview">Twitch</span>`}
+                <button
+                  class="stream-load-embed"
+                  type="button"
+                  data-load-creator-stage-embed="${escapeHtml(playerUrl)}"
+                  data-creator-stage-title="${escapeHtml(`${activeStreamer.name} Twitch player`)}"
+                >
+                  Load Twitch player
+                </button>
+              </div>
             `
             : previewImage
               ? `<img src="${escapeHtml(previewImage)}" alt="${escapeHtml(activeStreamer.name)} stream preview" loading="lazy" decoding="async" />`
@@ -375,12 +370,18 @@ function renderCreatorLiveStage(selectedSpotlight = []) {
         chatUrl
           ? `
             <aside class="creator-stage-chat" aria-label="${escapeHtml(activeStreamer.name)} Twitch chat">
-              <iframe
-                src="${escapeHtml(chatUrl)}"
-                title="${escapeHtml(`${activeStreamer.name} Twitch chat`)}"
-                loading="lazy"
-                sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-modals"
-              ></iframe>
+              <div class="creator-stage-chat-preview" data-creator-stage-frame>
+                <span class="stream-provider-preview">Twitch chat</span>
+                <button
+                  class="stream-load-embed"
+                  type="button"
+                  data-load-creator-stage-embed="${escapeHtml(chatUrl)}"
+                  data-creator-stage-title="${escapeHtml(`${activeStreamer.name} Twitch chat`)}"
+                  data-creator-stage-chat="true"
+                >
+                  Load chat
+                </button>
+              </div>
             </aside>
           `
           : ""
@@ -654,6 +655,7 @@ streamerGrid?.addEventListener("click", async (event) => {
 
 document.addEventListener("click", (event) => {
   const stageButton = event.target.closest("[data-live-stage]");
+  const creatorStageButton = event.target.closest("[data-load-creator-stage-embed]");
   const button = event.target.closest("[data-load-stream-embed]");
   const watchLink = event.target.closest("[data-stream-watch]");
   if (stageButton) {
@@ -665,6 +667,24 @@ document.addEventListener("click", (event) => {
 
   if (watchLink) {
     trackStreamingSpotlightEngagement(watchLink.dataset.streamWatch, "watch_click");
+  }
+
+  if (creatorStageButton) {
+    const embedUrl = creatorStageButton.dataset.loadCreatorStageEmbed || "";
+    if (!isSafeCreatorStageEmbed(embedUrl)) return;
+    const container = creatorStageButton.closest("[data-creator-stage-frame]");
+    if (!container) return;
+    container.classList.remove("stream-embed-preview");
+    container.innerHTML = `
+      <iframe
+        src="${escapeHtml(embedUrl)}"
+        title="${escapeHtml(creatorStageButton.dataset.creatorStageTitle || "Creator stage embed")}"
+        loading="lazy"
+        allow="${creatorStageButton.dataset.creatorStageChat === "true" ? "" : "autoplay; fullscreen; picture-in-picture"}"
+        ${creatorStageButton.dataset.creatorStageChat === "true" ? 'sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-modals"' : "allowfullscreen"}
+      ></iframe>
+    `;
+    return;
   }
 
   if (!button) return;
