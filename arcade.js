@@ -561,6 +561,35 @@ function drawMiniRocket(rocket) {
   ctx.restore();
 }
 
+function drawExplosion(effect) {
+  const progress = clamp(effect.age / effect.duration, 0, 1);
+  const radius = effect.radius * (0.35 + progress);
+  const alpha = 1 - progress;
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.strokeStyle = "#f97316";
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.arc(effect.x, effect.y, radius, 0, Math.PI * 2);
+  ctx.stroke();
+  ctx.fillStyle = "rgba(250, 204, 21, 0.34)";
+  ctx.beginPath();
+  ctx.arc(effect.x, effect.y, radius * 0.62, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.strokeStyle = "rgba(255,255,255,0.72)";
+  ctx.lineWidth = 2;
+  for (let index = 0; index < 7; index += 1) {
+    const angle = effect.seed + index * ((Math.PI * 2) / 7);
+    const inner = radius * 0.45;
+    const outer = radius * (1.05 + progress * 0.55);
+    ctx.beginPath();
+    ctx.moveTo(effect.x + Math.cos(angle) * inner, effect.y + Math.sin(angle) * inner);
+    ctx.lineTo(effect.x + Math.cos(angle) * outer, effect.y + Math.sin(angle) * outer);
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
 function destroyTarget(target, multiplier = 1) {
   if (!target || !target.alive || target.kind === "obstacle") return 0;
   target.alive = false;
@@ -616,6 +645,14 @@ function nearestBreakableTarget(x, y) {
 function rocketImpact(x, y) {
   const nearest = nearestBreakableTarget(x, y);
   if (!nearest) return;
+  game.explosions.push({
+    x: nearest.centerX,
+    y: nearest.centerY,
+    radius: 34,
+    age: 0,
+    duration: 0.58,
+    seed: (game.hits + game.level) * 0.7,
+  });
   const destroyedTargets = game.targets
     .filter((target) => target.alive && target.kind !== "obstacle")
     .map((target) => {
@@ -633,6 +670,13 @@ function rocketImpact(x, y) {
     game.rally += destroyedTargets.length;
     playTone(220 + destroyedTargets.length * 44, 0.16, { type: "triangle", gain: 0.075, slideTo: 520 });
   }
+}
+
+function updateExplosions(dt) {
+  if (!game.explosions?.length) return;
+  game.explosions = game.explosions
+    .map((effect) => ({ ...effect, age: effect.age + dt }))
+    .filter((effect) => effect.age < effect.duration);
 }
 
 function spawnRocketSwarm(x, y) {
@@ -839,6 +883,7 @@ function prepareLevel(level) {
   game.targets = generateLevelObjects(challenge?.seed, level);
   game.powerUps = [];
   game.rockets = [];
+  game.explosions = [];
   game.laserUntil = 0;
   game.laserTimer = 0;
 }
@@ -869,6 +914,7 @@ function resetGame() {
     waitingForServe: true,
     powerUps: [],
     rockets: [],
+    explosions: [],
     laserUntil: 0,
     laserTimer: 0,
     rally: 0,
@@ -953,6 +999,7 @@ function draw() {
   });
   game.powerUps?.forEach(drawPowerUp);
   game.rockets?.forEach(drawMiniRocket);
+  game.explosions?.forEach(drawExplosion);
 
   drawPaddle();
   if (game.laserUntil && performance.now() < game.laserUntil) {
@@ -1082,12 +1129,14 @@ function update(dt) {
     ball.y = paddle.y - ball.r - 8;
     updatePowerUps(dt);
     updateRockets(dt);
+    updateExplosions(dt);
     updateLasers(dt);
     return;
   }
 
   updatePowerUps(dt);
   updateRockets(dt);
+  updateExplosions(dt);
   updateLasers(dt);
 
   ball.x += ball.vx * dt;
