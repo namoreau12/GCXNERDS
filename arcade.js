@@ -562,9 +562,28 @@ function explodeAt(x, y, radius) {
   }
 }
 
-function activatePowerUp(type) {
+function nearestBreakableTarget(x, y) {
+  return game.targets
+    .filter((target) => target.alive && target.kind !== "obstacle")
+    .map((target) => {
+      const centerX = target.x + target.w / 2;
+      const centerY = target.y + target.h / 2;
+      return {
+        target,
+        centerX,
+        centerY,
+        distance: Math.hypot(centerX - x, centerY - y),
+      };
+    })
+    .sort((a, b) => a.distance - b.distance)[0];
+}
+
+function activatePowerUp(type, x = game.paddle.x + game.paddle.w / 2, y = game.paddle.y) {
   if (type === "rocket") {
-    explodeAt(game.ball.x, game.ball.y, 96);
+    const nearest = nearestBreakableTarget(x, y);
+    if (nearest) {
+      explodeAt(nearest.centerX, nearest.centerY, 112);
+    }
   } else if (type === "laser") {
     game.laserUntil = performance.now() + 5000;
     playTone(783.99, 0.12, { type: "sine", gain: 0.07 });
@@ -593,7 +612,7 @@ function updatePowerUps(dt) {
       item.x >= game.paddle.x &&
       item.x <= game.paddle.x + game.paddle.w;
     if (caught) {
-      activatePowerUp(item.type);
+      activatePowerUp(item.type, item.x, item.y);
       return false;
     }
     return item.y - item.r <= canvas.height;
