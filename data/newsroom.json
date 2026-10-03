@@ -1768,7 +1768,7 @@
     "editorialStatus": "ready-for-publish",
     "storyLifecycleState": "ready-for-publish",
     "qaScore": 92,
-    "deepResearchUsed": false,
+    "deepResearchUsed": true,
     "livingArticle": false,
     "claimStatus": "Official / GCX Analysis",
     "confidence": "Official / GCX Analysis",
@@ -1780,13 +1780,13 @@
     "category": "Gaming",
     "articleType": "Major News / Industry Analysis",
     "publishedAt": "2026-09-23T10:30:00.000-04:00",
-    "lastUpdated": "2026-09-23",
-    "lastReviewedAt": "2026-09-23",
+    "lastUpdated": "2026-10-03",
+    "lastReviewedAt": "2026-10-03",
     "opportunityScore": 99,
     "topicCluster": "Halo / Xbox Restructure",
     "canonicalTopic": "Xbox Restructure",
     "targetSearchIntent": "Activision next Halo game, Xbox restructure, Halo Studios, Rare World's Edge Activision",
-    "updatePolicy": "Preserve this URL and update if Xbox names the game, confirms leadership, shows footage, or clarifies Halo Studios' ongoing role.",
+    "updatePolicy": "Preserve this URL and update if Xbox names the game, confirms leadership, shows footage, clarifies Halo Studios' ongoing role, or announces platform and edition details for the Activision-led Halo project.",
     "heroImage": "https://img.youtube.com/vi/DPrm70EK2f0/maxresdefault.jpg",
     "heroImageSource": "Official Xbox YouTube trailer thumbnail",
     "heroImageSourceUrl": "https://www.youtube.com/watch?v=DPrm70EK2f0",
@@ -1825,6 +1825,18 @@
       {
         "label": "Xbox Wire restructuring memo",
         "url": "https://news.xbox.com/en-us/2026/09/22/continuing-our-reset/"
+      },
+      {
+        "label": "Halo Waypoint: Introducing Halo: Campaign Evolved",
+        "url": "https://www.halowaypoint.com/news/introducing-halo-campaign-evolved"
+      },
+      {
+        "label": "Game Informer report on Xbox restructure and Halo move",
+        "url": "https://gameinformer.com/2026/09/22/xbox-lays-off-268-more-people-hands-halo-series-to-activision"
+      },
+      {
+        "label": "PC Gamer report on Xbox reset impact",
+        "url": "https://www.pcgamer.com/gaming-industry/latest-xbox-layoffs-reportedly-devastated-age-of-empires-developer-and-canceled-its-next-game/"
       }
     ],
     "media": [
@@ -1848,32 +1860,107 @@
         "sourceUrl": "https://news.xbox.com/en-us/2026/09/22/continuing-our-reset/",
         "caption": "The restructuring details in this story come from Xbox Wire's September 22 memo. GCX will update this page if Xbox publishes game-specific media for the new Halo project.",
         "rightsStatus": "source-link-only"
+      },
+      {
+        "id": "halo-campaign-evolved-official-video",
+        "mediaType": "video",
+        "placement": "after-heading",
+        "afterHeading": "Halo Studios Is Not Disappearing",
+        "source": "Xbox / Halo Studios",
+        "sourceUrl": "https://www.youtube.com/watch?v=DPrm70EK2f0",
+        "embedUrl": "https://www.youtube.com/watch?v=DPrm70EK2f0",
+        "caption": "Official Halo video material gives readers current franchise context while Xbox has not released media for the newly announced Activision-led Halo project.",
+        "credit": "Video: Xbox / Halo Studios",
+        "altText": "Official Halo Campaign Evolved video embed.",
+        "rightsStatus": "official-embed"
       }
     ],
     "body": [
       "Halo is changing hands.",
       "Microsoft has confirmed that **Activision will develop the next Halo title** as part of another major reshuffling of Xbox's first-party studios.",
       "The new Halo team will be **purpose-built and separate from Call of Duty**, according to Xbox, while a smaller team at Halo Studios will remain in place to support the current Halo community and games already on the market.",
+      "That split matters because Halo is not just another Xbox release. It is the franchise that helped define the original console, shaped Xbox Live culture, and still anchors a large collector and multiplayer audience across physical games, special editions, controllers, books, and long-running community history.",
       "## Activision Gets the Next Halo",
       "Xbox says Activision's remit is expanding to include both **Rare** and **World's Edge**, while the publisher also takes on development of the next Halo title.",
       "The Halo project will be led by a newly created team inside Activision.",
+      {
+        "type": "table",
+        "caption": "What Xbox says is changing",
+        "headers": [
+          "Area",
+          "New structure",
+          "Why GCX readers should care"
+        ],
+        "rows": [
+          [
+            "Next Halo",
+            "A new purpose-built Activision team leads development.",
+            "The next mainline project now sits outside the studio structure most Halo fans associate with recent entries."
+          ],
+          [
+            "Halo Studios",
+            "A smaller team continues supporting the current community and in-market games.",
+            "Existing players should watch support cadence, playlist updates, and collection-friendly editions already on shelves."
+          ],
+          [
+            "Rare and World's Edge",
+            "Both move under Activision's expanded remit.",
+            "The shift touches Sea of Thieves, Age of Empires, and broader Xbox studio identity beyond Halo."
+          ],
+          [
+            "Xbox management",
+            "Microsoft says 268 roles are being eliminated across Halo Studios, other first-party studios, and central teams.",
+            "The human cost and production disruption are part of the story, not background noise."
+          ]
+        ]
+      },
       "## Halo Studios Is Not Disappearing",
       "The existing Halo Studios operation is not being shut down.",
       "Xbox says a smaller team there will continue supporting the Halo community and current games.",
       "That suggests the franchise is entering a split structure:",
       "* Activision: next major Halo title\n* Halo Studios: live support and existing releases",
+      "The timing also creates a messaging challenge. Halo Studios is still presenting Halo: Campaign Evolved through official Halo channels, while Xbox is telling players that the next new Halo project is being built by a new Activision team. Those can both be true, but they are not the same product pipeline.",
       "## This Is Part of a Much Bigger Xbox Reorganization",
       "Xbox also announced:",
       "* Rare will move under Activision\n* World's Edge will move under Activision\n* Obsidian will move under Bethesda\n* Playground Games and Turn 10 will combine into one studio focused on Forza and Fable\n* Microsoft Casual Games will move under King",
       "Xbox also confirmed **268 role eliminations** across Halo Studios, other first-party studios, and central management functions.",
+      "## What Is Confirmed vs. Still Open",
+      {
+        "type": "table",
+        "caption": "Confirmed details and open questions",
+        "headers": [
+          "Confirmed",
+          "Still unknown"
+        ],
+        "rows": [
+          [
+            "Activision is responsible for the next Halo title.",
+            "The title, format, release date, platforms, and creative leadership have not been announced."
+          ],
+          [
+            "The team is described as separate from ongoing Call of Duty plans.",
+            "Xbox has not said whether any specific Call of Duty studio, technology group, or support team is involved."
+          ],
+          [
+            "Halo Studios keeps a smaller live-support role.",
+            "Xbox has not detailed how long that support plan runs or how much staff remains on each live product."
+          ],
+          [
+            "Halo: Campaign Evolved has its own official Halo Studios marketing track.",
+            "Xbox has not clarified how that remake, current live support, and the Activision-led project connect long-term."
+          ]
+        ]
+      },
       "## Why This Matters",
       "Halo has been one of the defining brands of Xbox since the original console launched.",
       "Moving development of the next major game under Activision signals that Microsoft is willing to reorganize even its most iconic franchises if it believes a different structure can improve execution.",
+      "For players, the key question is whether Activision brings production discipline without sanding away Halo's identity. For collectors, the watchlist is different: platform strategy, physical editions, special hardware, anniversary packaging, and whether older Halo releases become more desirable as the franchise enters a clearly new era.",
+      "For GCX, this is the kind of story that should stay alive. A studio chart today becomes a buyer's guide later if Xbox reveals editions, cross-platform plans, collector bundles, or a release window that changes demand for older Xbox and Halo items.",
       "## What We Still Don't Know",
       "Microsoft has not yet confirmed:",
       "* the title of the next Halo game\n* a release date\n* whether it is a sequel, reboot, or another format\n* who will lead the new Activision Halo team\n* how much of the current Halo Studios creative leadership moves with it\n* whether the game will remain exclusive to Xbox platforms",
       "## Latest Update - September 23, 2026",
-      "Xbox confirmed the restructuring on September 22, including Activision's expanded role and its responsibility for the next Halo title."
+      "Xbox confirmed the restructuring on September 22, including Activision's expanded role and its responsibility for the next Halo title. GCX added a clearer confirmed-vs-unknown table, additional source links, and official Halo video context on October 3."
     ],
     "editorialOwner": "GCX Newsroom"
   },
