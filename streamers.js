@@ -252,14 +252,14 @@ function renderStreamingSpotlight() {
 
 function renderStreamers() {
   const voted = new Set(readVotes());
-  const selectedSpotlight = (creatorSpotlight.length ? creatorSpotlight : slots.selected || [slots.popular, slots.rising, slots.third]).filter(Boolean).slice(0, 3);
+  const selectedSpotlight = (creatorSpotlight.length ? creatorSpotlight : slots.selected || [slots.popular, slots.rising, slots.third]).filter(Boolean).slice(0, 6);
 
   if (campaignStrip) {
     const names = selectedSpotlight.map((streamer) => streamer.name).join(" + ");
     campaignStrip.innerHTML = `
       <div>
         <strong>${escapeHtml(campaign.weekLabel || "Current voting week")}</strong>
-        <span>${escapeHtml(campaign.spotlightTheme || "Three creator spotlight")}</span>
+        <span>${escapeHtml(campaign.spotlightTheme || "Six creator highlights")}</span>
       </div>
       <div>
         <strong>${escapeHtml(names || "Spotlight selection open")}</strong>
@@ -335,7 +335,10 @@ function renderStreamers() {
       : `<div class="index-message">Past spotlight winners will appear after weekly campaigns close.</div>`;
   }
 
-  streamerGrid.innerHTML = streamers
+  const highlightedIds = new Set(selectedSpotlight.map((streamer) => streamer.id));
+  const poolStreamers = streamers.filter((streamer) => !highlightedIds.has(streamer.id));
+  streamerGrid.innerHTML = poolStreamers.length
+    ? poolStreamers
     .map((streamer, index) => {
       const platforms = (streamer.platforms || []).map((platform) => `<span>${escapeHtml(platform)}</span>`).join("");
       const hasVoted = voted.has(streamer.id);
@@ -376,7 +379,8 @@ function renderStreamers() {
         </article>
       `;
     })
-    .join("");
+    .join("")
+    : `<div class="index-message">Additional creator nominees will appear here when the pool expands beyond this week's six highlights.</div>`;
 }
 
 async function loadStreamers() {

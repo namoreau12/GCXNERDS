@@ -8071,17 +8071,24 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
 .spotlight-slots {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  gap: 18px;
 }
 
 .spotlight-slot-card {
   overflow: hidden;
   display: grid;
-  grid-template-rows: 190px 1fr;
+  min-height: 100%;
+  grid-template-rows: 210px 1fr;
   background: white;
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow-soft);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.spotlight-slot-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 44px rgba(17, 18, 23, 0.12);
 }
 
 .spotlight-slot-card.spotlight-lead,
@@ -8098,6 +8105,12 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   border-color: rgba(199, 151, 55, 0.38);
 }
 
+.spotlight-slot-card.spotlight-conversation,
+.spotlight-slot-card.spotlight-event,
+.spotlight-slot-card.spotlight-competitive {
+  border-color: rgba(33, 43, 54, 0.16);
+}
+
 .spotlight-slot-card img {
   width: 100%;
   height: 100%;
@@ -8110,6 +8123,10 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   gap: 12px;
   align-content: start;
   padding: 18px;
+}
+
+.spotlight-slot-card .streamer-actions {
+  align-self: end;
 }
 
 .spotlight-slot-card span {
@@ -8132,6 +8149,30 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
 .spotlight-slot-card p {
   color: var(--muted);
   line-height: 1.55;
+}
+
+.creator-spotlight-editor {
+  display: grid;
+  gap: 12px;
+}
+
+.creator-control-row {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.85fr) minmax(180px, 0.85fr) minmax(260px, 1.3fr);
+  gap: 12px;
+  align-items: start;
+  padding: 14px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.creator-control-row label {
+  min-width: 0;
+}
+
+.creator-control-row textarea {
+  min-height: 82px;
 }
 
 .spotlight-history {
@@ -9433,6 +9474,7 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   .creator-launch-strip,
   .campaign-strip,
   .moderation-grid,
+  .creator-control-row,
   .growth-dashboard,
   .growth-metric-grid,
   .growth-topic-grid,

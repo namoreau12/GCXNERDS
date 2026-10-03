@@ -3106,58 +3106,106 @@
   "moderationReports": [],
   "streamers": [
     {
-      "id": "nova-circuit",
-      "name": "Nova Circuit",
-      "tier": "Featured Creator",
-      "pitch": "High-energy streams built around new releases, ranked ladders, and big community nights.",
-      "votes": 612,
-      "handle": "@novacircuit",
-      "linkUrl": "https://www.twitch.tv/",
-      "imageUrl": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1100&q=80",
-      "platforms": [
-        "Twitch",
-        "YouTube"
-      ],
-      "specialty": "Competitive multiplayer, launch-week coverage, and community tournaments",
-      "spotlight": "Popular Streamer of the Week",
-      "campaignUrl": "streamer.html?id=nova-circuit",
-      "weeklyVotes": 612
-    },
-    {
-      "id": "pixel-pantry",
-      "name": "Pixel Pantry",
-      "tier": "Rising Creator",
-      "pitch": "A smaller creator with a friendly collector vibe and a strong audience fit for cards, cozy games, and trading.",
-      "votes": 284,
-      "handle": "@pixelpantry",
-      "linkUrl": "https://www.youtube.com/",
-      "imageUrl": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1100&q=80",
-      "platforms": [
-        "Twitch",
-        "TikTok",
-        "YouTube"
-      ],
-      "specialty": "Cozy indies, handheld games, Pokemon card openings, and collector Q&A",
-      "spotlight": "Community Pick of the Week",
-      "campaignUrl": "streamer.html?id=pixel-pantry",
-      "weeklyVotes": 284
-    },
-    {
-      "id": "boss-rush-brian",
-      "name": "Boss Rush Brian",
-      "tier": "Nominee",
-      "pitch": "Good fit for console library pages, replay events, and collector-driven traffic.",
-      "votes": 171,
-      "handle": "@bossrushbrian",
-      "linkUrl": "https://www.twitch.tv/",
-      "imageUrl": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1100&q=80",
+      "id": "cohhcarnage",
+      "name": "CohhCarnage",
+      "tier": "Featured Twitch Creator",
+      "pitch": "Long-form variety streams with deep community trust, RPG coverage, and a polished creator rhythm.",
+      "votes": 0,
+      "handle": "@cohhcarnage",
+      "linkUrl": "https://www.twitch.tv/cohhcarnage",
+      "imageUrl": "assets/news/gamescom-2026-showcase.jpg",
       "platforms": [
         "Twitch"
       ],
-      "specialty": "Retro challenge runs and full-library collecting",
-      "spotlight": "Voting Pool",
-      "campaignUrl": "streamer.html?id=boss-rush-brian",
-      "weeklyVotes": 171
+      "specialty": "Variety gaming, RPGs, community-first streaming",
+      "spotlight": "Editorial Pick",
+      "campaignUrl": "streamer.html?id=cohhcarnage",
+      "weeklyVotes": 0
+    },
+    {
+      "id": "lirik",
+      "name": "LIRIK",
+      "tier": "Variety Twitch Creator",
+      "pitch": "A recognizable variety channel that fits GCX discovery, trending games, and community conversation.",
+      "votes": 0,
+      "handle": "@lirik",
+      "linkUrl": "https://www.twitch.tv/lirik",
+      "imageUrl": "assets/news/gamescom-before-gta-showcase.jpg",
+      "platforms": [
+        "Twitch"
+      ],
+      "specialty": "Variety gaming, new releases, community reactions",
+      "spotlight": "Variety Pick",
+      "campaignUrl": "streamer.html?id=lirik",
+      "weeklyVotes": 0
+    },
+    {
+      "id": "shroud",
+      "name": "shroud",
+      "tier": "FPS Twitch Creator",
+      "pitch": "Clean competitive gameplay energy for FPS fans, highlight culture, and skill-focused discovery.",
+      "votes": 0,
+      "handle": "@shroud",
+      "linkUrl": "https://www.twitch.tv/shroud",
+      "imageUrl": "assets/news/phantom-blade-zero-preview.jpg",
+      "platforms": [
+        "Twitch"
+      ],
+      "specialty": "FPS, competitive shooters, high-skill highlights",
+      "spotlight": "FPS Pick",
+      "campaignUrl": "streamer.html?id=shroud",
+      "weeklyVotes": 0
+    },
+    {
+      "id": "itmejp",
+      "name": "itmeJP",
+      "tier": "Community Twitch Creator",
+      "pitch": "A conversation-heavy creator fit for interviews, industry chatter, and games-culture context.",
+      "votes": 0,
+      "handle": "@itmejp",
+      "linkUrl": "https://www.twitch.tv/itmejp",
+      "imageUrl": "assets/news/horizon-hunters-gathering.jpg",
+      "platforms": [
+        "Twitch"
+      ],
+      "specialty": "Gaming talk, tabletop energy, creator-led discussion",
+      "spotlight": "Community Host",
+      "campaignUrl": "streamer.html?id=itmejp",
+      "weeklyVotes": 0
+    },
+    {
+      "id": "gamesdonequick",
+      "name": "GamesDoneQuick",
+      "tier": "Event Twitch Channel",
+      "pitch": "Event-scale speedrun culture that gives GCX a bridge into charity, mastery, and watch-party moments.",
+      "votes": 0,
+      "handle": "@gamesdonequick",
+      "linkUrl": "https://www.twitch.tv/gamesdonequick",
+      "imageUrl": "assets/news/gta-vi-leak-editorial.jpg",
+      "platforms": [
+        "Twitch"
+      ],
+      "specialty": "Speedruns, charity events, community watch parties",
+      "spotlight": "Speedrun Pick",
+      "campaignUrl": "streamer.html?id=gamesdonequick",
+      "weeklyVotes": 0
+    },
+    {
+      "id": "iitztimmy",
+      "name": "iiTzTimmy",
+      "tier": "Competitive Twitch Creator",
+      "pitch": "Fast competitive momentum for clips, ranked storylines, and high-energy streamer discovery.",
+      "votes": 0,
+      "handle": "@iitztimmy",
+      "linkUrl": "https://www.twitch.tv/iitztimmy",
+      "imageUrl": "assets/news/next-gen-console-pricing.jpg",
+      "platforms": [
+        "Twitch"
+      ],
+      "specialty": "Competitive shooters, ranked climbs, viral highlight potential",
+      "spotlight": "Competitive Pick",
+      "campaignUrl": "streamer.html?id=iitztimmy",
+      "weeklyVotes": 0
     }
   ],
   "streamingSpotlight": [
@@ -3184,8 +3232,8 @@
       "featured": true,
       "pipelineStage": "publication",
       "duplicateKey": "https-www-youtube-com-watch-v-dprm70ek2f0",
-      "viewCount": 37,
-      "lastViewedAt": "2026-09-26T02:52:20.642Z",
+      "viewCount": 42,
+      "lastViewedAt": "2026-10-03T02:55:33.311Z",
       "watchClickCount": 1,
       "lastWatchClickedAt": "2026-09-25T09:48:52.671Z"
     },
@@ -3212,8 +3260,8 @@
       "featured": false,
       "pipelineStage": "publication",
       "duplicateKey": "https-www-youtube-com-watch-v-eolozghvkxq",
-      "viewCount": 36,
-      "lastViewedAt": "2026-09-26T02:52:20.642Z",
+      "viewCount": 41,
+      "lastViewedAt": "2026-10-03T02:55:33.311Z",
       "embedLoadCount": 1,
       "lastEmbedLoadedAt": "2026-09-25T21:59:47.309Z"
     },
@@ -3240,8 +3288,8 @@
       "featured": false,
       "pipelineStage": "publication",
       "duplicateKey": "https-www-youtube-com-watch-v-91lay9b6luc",
-      "viewCount": 36,
-      "lastViewedAt": "2026-09-26T02:52:20.642Z"
+      "viewCount": 41,
+      "lastViewedAt": "2026-10-03T02:55:33.311Z"
     },
     {
       "created_at": "2026-09-23T12:00:00.000Z",
@@ -3266,8 +3314,8 @@
       "featured": false,
       "pipelineStage": "publication",
       "duplicateKey": "https-www-youtube-com-pokemon",
-      "viewCount": 36,
-      "lastViewedAt": "2026-09-26T02:52:20.642Z"
+      "viewCount": 41,
+      "lastViewedAt": "2026-10-03T02:55:33.311Z"
     },
     {
       "created_at": "2026-09-23T12:00:00.000Z",
@@ -3292,8 +3340,8 @@
       "featured": false,
       "pipelineStage": "publication",
       "duplicateKey": "https-www-youtube-com-wizards-magic",
-      "viewCount": 36,
-      "lastViewedAt": "2026-09-26T02:52:20.642Z"
+      "viewCount": 41,
+      "lastViewedAt": "2026-10-03T02:55:33.311Z"
     },
     {
       "created_at": "2026-09-23T12:00:00.000Z",
@@ -3318,8 +3366,8 @@
       "featured": false,
       "pipelineStage": "publication",
       "duplicateKey": "https-www-twitch-tv-gamesdonequick",
-      "viewCount": 36,
-      "lastViewedAt": "2026-09-26T02:52:20.642Z"
+      "viewCount": 41,
+      "lastViewedAt": "2026-10-03T02:55:33.311Z"
     },
     {
       "created_at": "2026-09-23T12:00:00.000Z",
@@ -3344,8 +3392,8 @@
       "featured": false,
       "pipelineStage": "publication",
       "duplicateKey": "https-www-youtube-com-capcomusa",
-      "viewCount": 36,
-      "lastViewedAt": "2026-09-26T02:52:20.642Z"
+      "viewCount": 41,
+      "lastViewedAt": "2026-10-03T02:55:33.311Z"
     },
     {
       "created_at": "2026-09-23T12:00:00.000Z",
@@ -3370,8 +3418,8 @@
       "featured": false,
       "pipelineStage": "publication",
       "duplicateKey": "https-www-youtube-com-nintendoamerica",
-      "viewCount": 36,
-      "lastViewedAt": "2026-09-26T02:52:20.642Z"
+      "viewCount": 41,
+      "lastViewedAt": "2026-10-03T02:55:33.311Z"
     },
     {
       "created_at": "2026-09-23T12:00:00.000Z",
@@ -3396,8 +3444,8 @@
       "featured": false,
       "pipelineStage": "publication",
       "duplicateKey": "https-www-youtube-com-playstation",
-      "viewCount": 36,
-      "lastViewedAt": "2026-09-26T02:52:20.642Z"
+      "viewCount": 41,
+      "lastViewedAt": "2026-10-03T02:55:33.311Z"
     },
     {
       "created_at": "2026-09-23T12:00:00.000Z",
@@ -3422,8 +3470,8 @@
       "featured": false,
       "pipelineStage": "publication",
       "duplicateKey": "https-www-minecraft-net-en-us-live",
-      "viewCount": 24,
-      "lastViewedAt": "2026-09-26T02:52:20.642Z"
+      "viewCount": 29,
+      "lastViewedAt": "2026-10-03T02:55:33.311Z"
     },
     {
       "created_at": "2026-09-23T12:00:00.000Z",
@@ -5674,7 +5722,7 @@
   ],
   "campaign": {
     "weekLabel": "August 16-22, 2026",
-    "spotlightTheme": "GCX owner's three creator picks",
+    "spotlightTheme": "GCX six creator highlights",
     "risingSlot": "Community Pick of the Week",
     "popularSlot": "Popular Streamer of the Week",
     "revenueIdeas": [

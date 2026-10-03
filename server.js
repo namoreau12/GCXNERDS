@@ -4184,22 +4184,40 @@ function creatorCampaignUrl(streamer) {
 function defaultCreatorSpotlightConfig() {
   return [
     {
-      streamerId: "nova-circuit",
+      streamerId: "cohhcarnage",
       slotKey: "spotlight-lead",
-      slotLabel: "Creator Spotlight 1",
-      slotDescription: "The lead GCX creator pick for this week's games, cards, and community traffic push.",
+      slotLabel: "Editorial Pick",
+      slotDescription: "A polished variety creator who gives GCX a strong front-door creator signal.",
     },
     {
-      streamerId: "pixel-pantry",
+      streamerId: "lirik",
       slotKey: "spotlight-community",
-      slotLabel: "Creator Spotlight 2",
-      slotDescription: "A creator with a strong community fit for cards, collecting, and friendly discovery.",
+      slotLabel: "Variety Pick",
+      slotDescription: "A broad gaming channel for discovery, reactions, and what people are playing now.",
     },
     {
-      streamerId: "boss-rush-brian",
+      streamerId: "shroud",
       slotKey: "spotlight-owner",
-      slotLabel: "Creator Spotlight 3",
-      slotDescription: "A GCX owner's pick for retro libraries, challenge runs, and collector-friendly streams.",
+      slotLabel: "FPS Pick",
+      slotDescription: "A skill-first competitive creator built for highlights and FPS conversation.",
+    },
+    {
+      streamerId: "itmejp",
+      slotKey: "spotlight-conversation",
+      slotLabel: "Community Host",
+      slotDescription: "A discussion-friendly creator fit for gaming culture, interviews, and community context.",
+    },
+    {
+      streamerId: "gamesdonequick",
+      slotKey: "spotlight-event",
+      slotLabel: "Speedrun Pick",
+      slotDescription: "Event-scale gaming culture that can drive watch parties and community moments.",
+    },
+    {
+      streamerId: "iitztimmy",
+      slotKey: "spotlight-competitive",
+      slotLabel: "Competitive Pick",
+      slotDescription: "High-energy competitive streaming with strong clip and discovery potential.",
     },
   ];
 }
@@ -4216,7 +4234,7 @@ function buildCreatorSpotlight(data) {
   const usedIds = new Set();
 
   const resolved = configuredSlots
-    .slice(0, 3)
+    .slice(0, 6)
     .map((slot, index) => {
       const streamer = byId.get(slot.streamerId);
       if (!streamer || usedIds.has(streamer.id)) return null;
@@ -4232,7 +4250,7 @@ function buildCreatorSpotlight(data) {
     .filter(Boolean);
 
   ranked.forEach((streamer) => {
-    if (resolved.length >= 3 || usedIds.has(streamer.id)) return;
+    if (resolved.length >= 6 || usedIds.has(streamer.id)) return;
     usedIds.add(streamer.id);
     resolved.push({
       ...streamer,
@@ -4243,7 +4261,7 @@ function buildCreatorSpotlight(data) {
     });
   });
 
-  return resolved.slice(0, 3);
+  return resolved.slice(0, 6);
 }
 
 function buildStreamerSlots(data) {
@@ -7591,6 +7609,56 @@ async function handleCommunityApi(req, res, url) {
       },
       { "X-GCX-Data-Source": "local" }
     );
+    return;
+  }
+
+  if (req.method === "POST" && route === "streamers/spotlight") {
+    try {
+      const auth = await requireStaff(req, res, data, "update creator highlights");
+      if (!auth) return;
+      const body = await readRequestJson(req);
+      const requestedSlots = Array.isArray(body.slots) ? body.slots : [];
+      const streamerIds = new Set((data.streamers || []).map((streamer) => streamer.id));
+      const usedIds = new Set();
+      const slots = requestedSlots
+        .slice(0, 6)
+        .map((slot, index) => ({
+          streamerId: safeText(slot.streamerId, 80),
+          slotKey: safeText(slot.slotKey || `spotlight-${index + 1}`, 60),
+          slotLabel: safeText(slot.slotLabel || `Creator Highlight ${index + 1}`, 80),
+          slotDescription: safeText(slot.slotDescription || "", 260),
+        }))
+        .filter((slot) => slot.streamerId);
+
+      if (slots.length !== 6) {
+        throw new Error("Choose exactly six creator highlights.");
+      }
+
+      for (const slot of slots) {
+        if (!streamerIds.has(slot.streamerId)) {
+          throw new Error("One of the selected creators could not be found.");
+        }
+        if (usedIds.has(slot.streamerId)) {
+          throw new Error("Each creator highlight must use a different creator.");
+        }
+        usedIds.add(slot.streamerId);
+      }
+
+      data.creatorSpotlight = slots;
+      saveCommunityData(data);
+      sendJson(
+        res,
+        200,
+        {
+          data: data.creatorSpotlight,
+          creatorSpotlight: buildCreatorSpotlight(data),
+          slots: buildStreamerSlots(data),
+        },
+        { "X-GCX-Data-Source": "local" }
+      );
+    } catch (error) {
+      sendJson(res, 400, { error: error.message });
+    }
     return;
   }
 

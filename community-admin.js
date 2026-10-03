@@ -6,6 +6,9 @@ const moderationSummary = document.querySelector("#moderation-summary");
 const streamerCloseoutSummary = document.querySelector("#streamer-closeout-summary");
 const streamerCloseoutForm = document.querySelector("#streamer-closeout-form");
 const streamerCloseoutStatus = document.querySelector("#streamer-closeout-status");
+const creatorSpotlightForm = document.querySelector("#creator-spotlight-form");
+const creatorSpotlightEditor = document.querySelector("#creator-spotlight-editor");
+const creatorSpotlightStatus = document.querySelector("#creator-spotlight-status");
 const socialEditorialTools = document.querySelector("#social-editorial-tools");
 const streamingEditorialTools = document.querySelector("#streaming-editorial-tools");
 const socialIntakeForm = document.querySelector("#social-intake-form");
@@ -75,6 +78,13 @@ function setCloseoutFormEnabled(enabled) {
   });
 }
 
+function setCreatorSpotlightFormEnabled(enabled) {
+  if (!creatorSpotlightForm) return;
+  creatorSpotlightForm.querySelectorAll("input, textarea, select, button").forEach((control) => {
+    control.disabled = !enabled;
+  });
+}
+
 function setIntakeFormsEnabled(enabled) {
   [socialIntakeForm, streamingIntakeForm].forEach((form) => {
     form?.querySelectorAll("input, textarea, select, button").forEach((control) => {
@@ -106,11 +116,12 @@ function adminAccessMessage(status) {
 
 function renderAccessMessage(status) {
   moderationAccess = false;
-  [postQueue, commentQueue, nominationQueue, sponsorLeadQueue, socialEditorialTools, streamingEditorialTools].forEach((target) => {
+  [postQueue, commentQueue, nominationQueue, sponsorLeadQueue, creatorSpotlightEditor, socialEditorialTools, streamingEditorialTools].forEach((target) => {
     if (target) target.innerHTML = adminAccessMessage(status);
   });
   if (streamerCloseoutSummary) streamerCloseoutSummary.innerHTML = adminAccessMessage(status);
   setCloseoutFormEnabled(false);
+  setCreatorSpotlightFormEnabled(false);
   setIntakeFormsEnabled(false);
   if (moderationSummary) {
     moderationSummary.innerHTML = `
@@ -396,7 +407,7 @@ function renderQueue(target, items, type) {
 function renderCloseoutSummary(data) {
   if (!streamerCloseoutSummary) return;
   const slots = data.slots || {};
-  const winners = (data.creatorSpotlight || slots.selected || [slots.popular, slots.rising, slots.third]).filter(Boolean).slice(0, 3);
+  const winners = (data.creatorSpotlight || slots.selected || [slots.popular, slots.rising, slots.third]).filter(Boolean).slice(0, 6);
   streamerCloseoutSummary.innerHTML = winners.length
     ? winners
         .map(
@@ -418,6 +429,53 @@ function renderCloseoutSummary(data) {
   }
 }
 
+function renderCreatorSpotlightEditor(data) {
+  if (!creatorSpotlightEditor) return;
+  const streamers = data.data || [];
+  const slots = (data.creatorSpotlight || data.slots?.selected || []).filter(Boolean).slice(0, 6);
+
+  if (!streamers.length) {
+    creatorSpotlightEditor.innerHTML = `<div class="index-message">Creator data could not be loaded.</div>`;
+    setCreatorSpotlightFormEnabled(false);
+    return;
+  }
+
+  const rows = Array.from({ length: 6 }, (_, index) => {
+    const slot = slots[index] || {};
+    const selectedId = slot.id || slot.streamerId || streamers[index]?.id || "";
+    const options = streamers
+      .map(
+        (streamer) => `
+          <option value="${escapeHtml(streamer.id)}" ${streamer.id === selectedId ? "selected" : ""}>
+            ${escapeHtml(streamer.name)}${streamer.handle ? ` (${escapeHtml(streamer.handle)})` : ""}
+          </option>
+        `
+      )
+      .join("");
+
+    return `
+      <article class="creator-control-row" data-creator-slot="${index}">
+        <input type="hidden" name="slotKey" value="${escapeHtml(slot.slotKey || `spotlight-${index + 1}`)}" />
+        <label>
+          Slot ${index + 1}
+          <select name="streamerId" required>${options}</select>
+        </label>
+        <label>
+          Display label
+          <input name="slotLabel" type="text" maxlength="80" value="${escapeHtml(slot.slotLabel || slot.spotlight || `Creator Highlight ${index + 1}`)}" />
+        </label>
+        <label>
+          Card description
+          <textarea name="slotDescription" rows="3" maxlength="260">${escapeHtml(slot.slotDescription || slot.pitch || slot.specialty || "")}</textarea>
+        </label>
+      </article>
+    `;
+  });
+
+  creatorSpotlightEditor.innerHTML = rows.join("");
+  setCreatorSpotlightFormEnabled(moderationAccess);
+}
+
 async function loadQueue() {
   if (!hasSessionToken()) {
     renderAccessMessage(401);
@@ -434,6 +492,7 @@ async function loadQueue() {
     const data = result.data || {};
     moderationAccess = true;
     setCloseoutFormEnabled(true);
+    setCreatorSpotlightFormEnabled(true);
     setIntakeFormsEnabled(true);
     renderSummary(data.summary || {});
     renderQueue(postQueue, data.posts || [], "post");
@@ -490,10 +549,12 @@ async function loadSponsorLeads() {
 }
 
 async function loadStreamerOps() {
-  if (!streamerCloseoutSummary) return;
+  if (!streamerCloseoutSummary && !creatorSpotlightEditor) return;
   if (!moderationAccess) {
-    streamerCloseoutSummary.innerHTML = adminAccessMessage(hasSessionToken() ? 403 : 401);
+    if (streamerCloseoutSummary) streamerCloseoutSummary.innerHTML = adminAccessMessage(hasSessionToken() ? 403 : 401);
+    if (creatorSpotlightEditor) creatorSpotlightEditor.innerHTML = adminAccessMessage(hasSessionToken() ? 403 : 401);
     setCloseoutFormEnabled(false);
+    setCreatorSpotlightFormEnabled(false);
     return;
   }
   try {
@@ -501,8 +562,10 @@ async function loadStreamerOps() {
     if (!response.ok) throw new Error(`Streamer API returned ${response.status}`);
     const result = await response.json();
     renderCloseoutSummary(result || {});
+    renderCreatorSpotlightEditor(result || {});
   } catch (error) {
-    streamerCloseoutSummary.innerHTML = `<div class="index-message">Streamer closeout data could not be loaded.</div>`;
+    if (streamerCloseoutSummary) streamerCloseoutSummary.innerHTML = `<div class="index-message">Streamer closeout data could not be loaded.</div>`;
+    if (creatorSpotlightEditor) creatorSpotlightEditor.innerHTML = `<div class="index-message">Creator highlight controls could not be loaded.</div>`;
   }
 }
 
@@ -685,6 +748,48 @@ streamingIntakeForm?.addEventListener("submit", async (event) => {
     endpoint: "/api/community/editorial/streaming-spotlight/intake",
     successPrefix: "Streaming draft created",
   });
+});
+
+creatorSpotlightForm?.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  if (!hasSessionToken()) {
+    creatorSpotlightStatus.innerHTML = `Log in with a moderator or admin account before updating creator highlights. <a href="auth.html?next=community-admin.html">Sign in</a>`;
+    return;
+  }
+
+  const submitButton = creatorSpotlightForm.querySelector('button[type="submit"]');
+  const original = submitButton?.textContent || "";
+  if (submitButton) {
+    submitButton.disabled = true;
+    submitButton.textContent = "Saving...";
+  }
+  creatorSpotlightStatus.textContent = "Saving creator highlights...";
+
+  const slots = Array.from(creatorSpotlightEditor?.querySelectorAll("[data-creator-slot]") || []).map((row, index) => ({
+    streamerId: row.querySelector('[name="streamerId"]')?.value || "",
+    slotKey: row.querySelector('[name="slotKey"]')?.value || `spotlight-${index + 1}`,
+    slotLabel: row.querySelector('[name="slotLabel"]')?.value || `Creator Highlight ${index + 1}`,
+    slotDescription: row.querySelector('[name="slotDescription"]')?.value || "",
+  }));
+
+  try {
+    const response = await fetch("/api/community/streamers/spotlight", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", ...authHeaders() },
+      body: JSON.stringify({ slots }),
+    });
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error || "Creator highlights could not be saved.");
+    creatorSpotlightStatus.textContent = "Creator highlights saved. The public Creators page is ready with the new six-card order.";
+    if (moderationAccess) await loadStreamerOps();
+  } catch (error) {
+    creatorSpotlightStatus.textContent = error.message || "Creator highlights could not be saved.";
+  } finally {
+    if (submitButton) {
+      submitButton.disabled = false;
+      submitButton.textContent = original;
+    }
+  }
 });
 
 streamerCloseoutForm?.addEventListener("submit", async (event) => {
