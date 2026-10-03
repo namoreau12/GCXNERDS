@@ -28,6 +28,7 @@ let localMagicData = null;
 let localYugiohData = null;
 let communityDataCache = null;
 let communityDataCacheMtimeMs = 0;
+let gameSearchCache = null;
 let supabaseWriteQueue = Promise.resolve();
 const rateLimitBuckets = new Map();
 
@@ -1154,6 +1155,199 @@ function saveNewsroomStory(story) {
   };
   writeJson(newsroomDataPath, [nextStory, ...existingStories]);
   return loadNewsroomStories().find((item) => item.id === id) || nextStory;
+}
+
+function staticSearchDestinations() {
+  return [
+    {
+      title: "Pokemon card database",
+      excerpt: "Browse Pokemon card series, sets, card details, market fields, legalities, variants, and collector tools.",
+      category: "Cards",
+      url: "pokemon.html",
+      keywords: "pokemon tcg pikachu cards card database collector checklist",
+    },
+    {
+      title: "Magic card database",
+      excerpt: "Explore Magic sets and cards as Games Exchange expands the trading-card index.",
+      category: "Cards",
+      url: "magic.html",
+      keywords: "magic mtg cards trading card database",
+    },
+    {
+      title: "Yu-Gi-Oh! card database",
+      excerpt: "Browse Yu-Gi-Oh! sets and cards as the collector library grows.",
+      category: "Cards",
+      url: "yugioh.html",
+      keywords: "yugioh yu-gi-oh cards trading card database",
+    },
+    {
+      title: "Game database",
+      excerpt: "Search console libraries, platform pages, game overviews, and collector-relevant game records.",
+      category: "Games",
+      url: "games.html",
+      keywords: "games database consoles retro library playstation xbox nintendo sega",
+    },
+    {
+      title: "Community feed",
+      excerpt: "Join the public feed for game nights, card pulls, streaming clips, polls, and collector conversations.",
+      category: "Community",
+      url: "community.html",
+      keywords: "community social feed posts polls clips collectors",
+    },
+    {
+      title: "Streamer highlights",
+      excerpt: "Vote for featured creators and follow community spotlight campaigns.",
+      category: "Streaming",
+      url: "streamers.html",
+      keywords: "streamers creators twitch spotlight streaming",
+    },
+  ];
+}
+
+function searchScore(query, fields = []) {
+  const q = normalize(query);
+  if (!q) return 0;
+  const haystack = normalize(fields.filter(Boolean).join(" "));
+  if (!haystack) return 0;
+  let score = 0;
+  fields.forEach((field, index) => {
+    const text = normalize(field);
+    if (!text) return;
+    if (text === q) score += index === 0 ? 120 : 50;
+    if (text.startsWith(q)) score += index === 0 ? 70 : 25;
+    if (text.includes(q)) score += index === 0 ? 45 : 12;
+  });
+  q.split(/\s+/).filter(Boolean).forEach((token) => {
+    if (haystack.includes(token)) score += token.length > 3 ? 6 : 2;
+  });
+  return score;
+}
+
+function loadGameSearchRecords() {
+  if (gameSearchCache) return gameSearchCache;
+  const records = [];
+  if (!fs.existsSync(gamesDataDir)) {
+    gameSearchCache = records;
+    return records;
+  }
+
+  fs.readdirSync(gamesDataDir)
+    .filter(isGameDatasetFile)
+    .forEach((fileName) => {
+      const filePath = path.join(gamesDataDir, fileName);
+      let games = [];
+      try {
+        const parsed = JSON.parse(fs.readFileSync(filePath, "utf8"));
+        games = Array.isArray(parsed) ? parsed : Array.isArray(parsed.games) ? parsed.games : [];
+      } catch {
+        games = [];
+      }
+      const platformSlug = path.basename(fileName, ".json");
+      games.forEach((game) => {
+        if (!game?.id || !game?.title) return;
+        records.push({
+          id: safeText(game.id, 160),
+          title: safeText(game.title, 220),
+          platform: safeText(game.platform || platformSlug.toUpperCase(), 80),
+          genre: safeText(game.genre || (game.genres || [])[0] || "", 80),
+          year: safeText((game.releaseYears || [])[0] || game.firstReleased || "", 40),
+          excerpt: safeText(game.description || game.tradeNotes || "", 260),
+          url: `${platformSlug}-game.html?id=${encodeURIComponent(game.id)}`,
+          searchText: safeText(game.searchText || "", 1200),
+        });
+      });
+    });
+
+  gameSearchCache = records;
+  return records;
+}
+
+function siteSearchNewsUrl(story) {
+  const type = normalize(story?.type);
+  const sourceName = normalize(story?.sourceName);
+  if (["social", "streamer"].includes(type) || ["gcx community", "gcx streamers"].includes(sourceName)) {
+    return story.externalUrl || story.articleUrl || "news.html";
+  }
+  return story.articleUrl || story.externalUrl || "news.html";
+}
+
+async function buildSiteSearchResults(query, limit = 24) {
+  const q = safeText(query, 120);
+  if (!normalize(q)) return { query: q, data: [], totalCount: 0 };
+  const perTypeLimit = Math.max(3, Math.ceil(limit / 3));
+  const results = [];
+
+  const newsStories = await buildNewsStories();
+  newsStories
+    .map((story) => ({
+      type: "news",
+      category: story.category || "News",
+      title: story.title,
+      excerpt: storyPreviewText(story, 220),
+      url: siteSearchNewsUrl(story),
+      publishedAt: story.publishedAt,
+      score: searchScore(q, [story.title, story.excerpt, story.category, story.type, story.sourceName, story.targetSearchIntent, ...(story.body || []).map(articleBlockText)]),
+    }))
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score || new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0))
+    .slice(0, perTypeLimit)
+    .forEach((item) => results.push(item));
+
+  const communityData = loadCommunityData();
+  (communityData.posts || [])
+    .filter(isPublicCommunityPost)
+    .map((post) => ({
+      type: "community",
+      category: post.category || "Community",
+      title: post.title,
+      excerpt: post.body || post.linkPreview?.description || "Open the community post.",
+      url: `community-post.html?id=${encodeURIComponent(post.id)}`,
+      publishedAt: post.createdAt,
+      score: searchScore(q, [post.title, post.body, post.author, post.category, post.linkPreview?.title, post.linkPreview?.description, ...(post.tags || [])]),
+    }))
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score || new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0))
+    .slice(0, perTypeLimit)
+    .forEach((item) => results.push(item));
+
+  loadGameSearchRecords()
+    .map((game) => ({
+      type: "game",
+      category: game.platform || "Games",
+      title: game.title,
+      excerpt: [game.platform, game.genre, game.year, game.excerpt].filter(Boolean).join(" - "),
+      url: game.url,
+      score: searchScore(q, [game.title, game.platform, game.genre, game.year, game.searchText, game.excerpt]),
+    }))
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title))
+    .slice(0, perTypeLimit)
+    .forEach((item) => results.push(item));
+
+  staticSearchDestinations()
+    .map((item) => ({
+      type: "destination",
+      category: item.category,
+      title: item.title,
+      excerpt: item.excerpt,
+      url: item.url,
+      score: searchScore(q, [item.title, item.category, item.excerpt, item.keywords]),
+    }))
+    .filter((item) => item.score > 0)
+    .forEach((item) => results.push(item));
+
+  const data = results
+    .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title))
+    .slice(0, limit)
+    .map(({ score, ...item }) => ({
+      ...item,
+      title: safeText(item.title, 220),
+      excerpt: safeText(item.excerpt, 320),
+      category: safeText(item.category, 80),
+      url: safeText(item.url, 260),
+    }));
+
+  return { query: q, data, totalCount: data.length };
 }
 
 function newsCachePath(sourceId) {
@@ -8732,6 +8926,18 @@ async function handleRequest(req, res) {
         error: "Data health report could not be generated.",
         detail: "The report could not be built right now.",
       });
+    }
+    return;
+  }
+
+  if (url.pathname === "/api/search" && req.method === "GET") {
+    try {
+      const limit = Math.max(1, Math.min(40, Number(url.searchParams.get("limit") || 24)));
+      const result = await buildSiteSearchResults(url.searchParams.get("q") || "", limit);
+      sendJson(res, 200, { generatedAt: new Date().toISOString(), ...result }, { "X-GCX-Data-Source": "local-search" });
+    } catch (error) {
+      console.warn(`Search failed: ${error.message}`);
+      sendJson(res, 500, { error: "Search could not be generated.", detail: "Search is temporarily unavailable." });
     }
     return;
   }

@@ -81,51 +81,10 @@ function storyPreviewText(story) {
   return "Open the full GCX story for the latest confirmed details, context, and source links.";
 }
 
-function staticResults() {
-  return [
-    {
-      title: "Pokemon card database",
-      excerpt: "Browse Pokemon card series, sets, card details, market fields, legalities, variants, and collector tools.",
-      category: "Cards",
-      url: "pokemon.html",
-    },
-    {
-      title: "Magic card database",
-      excerpt: "Explore Magic sets and cards as GCX expands the trading-card index.",
-      category: "Cards",
-      url: "magic.html",
-    },
-    {
-      title: "Yu-Gi-Oh! card database",
-      excerpt: "Browse Yu-Gi-Oh! sets and cards as the collector library grows.",
-      category: "Cards",
-      url: "yugioh.html",
-    },
-    {
-      title: "Game database",
-      excerpt: "Search console libraries, platform pages, game overviews, and collector-relevant game records.",
-      category: "Games",
-      url: "games.html",
-    },
-    {
-      title: "Marketplace beta waitlist",
-      excerpt: "Join the collector waitlist before GCX opens verified trading and selling.",
-      category: "Marketplace",
-      url: "index.html#cards",
-    },
-    {
-      title: "Streamer highlights",
-      excerpt: "Vote for featured creators and follow community spotlight campaigns.",
-      category: "Community",
-      url: "streamers.html",
-    },
-  ];
-}
-
 function resultCard(result) {
   return `
     <article class="search-result-card">
-      <span>${escapeHtml(result.category || "GCX")}</span>
+      <span>${escapeHtml(result.category || "Games Exchange")}</span>
       <h3><a href="${escapeHtml(result.url || result.articleUrl)}">${escapeHtml(result.title)}</a></h3>
       <p>${escapeHtml(cleanPreviewText(result.excerpt || ""))}</p>
       <a class="feed-link" href="${escapeHtml(result.url || result.articleUrl)}">Open result</a>
@@ -143,25 +102,16 @@ async function runSearch(query) {
   }
 
   searchHeading.textContent = `Results for "${query}"`;
-  searchResults.innerHTML = `<div class="index-message">Searching GCX...</div>`;
+  searchResults.innerHTML = `<div class="index-message">Searching Games Exchange...</div>`;
 
   try {
-    const response = await fetch("/api/news?limit=40", { cache: "no-store" });
+    const response = await fetch(`/api/search?q=${encodeURIComponent(query)}&limit=24`, { cache: "no-store" });
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || "Search could not load.");
-    const newsMatches = (result.data || [])
-      .filter((story) => normalize([story.title, story.excerpt, story.category, story.sourceName, story.type, ...(story.body || []).map(articleBlockText)].join(" ")).includes(q))
-      .map((story) => ({
-        title: story.title,
-        excerpt: storyPreviewText(story),
-        category: story.category || "News",
-        url: story.articleUrl,
-      }));
-    const utilityMatches = staticResults().filter((item) => normalize([item.title, item.excerpt, item.category].join(" ")).includes(q));
-    const matches = [...newsMatches, ...utilityMatches];
+    const matches = result.data || [];
     searchResults.innerHTML = matches.length
       ? matches.map(resultCard).join("")
-      : `<div class="index-message">No GCX results matched "${escapeHtml(query)}". Try Pokemon, Switch, GTA, cards, games, or streamers.</div>`;
+      : `<div class="index-message">No Games Exchange results matched "${escapeHtml(query)}". Try Pokemon, Switch, GTA, cards, games, or streamers.</div>`;
   } catch (error) {
     searchResults.innerHTML = `<div class="index-message">Search could not load. Make sure the local server is running.</div>`;
   }
