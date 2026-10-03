@@ -1,5 +1,6 @@
 const canvas = document.querySelector("#gcx-rally-canvas");
 const ctx = canvas?.getContext("2d");
+const arcadeStage = document.querySelector(".arcade-stage");
 const startButton = document.querySelector("#arcade-start");
 const overlay = document.querySelector("#arcade-overlay");
 const scoreEl = document.querySelector("#arcade-score");
@@ -19,7 +20,6 @@ const maximizeToggle = document.querySelector("#arcade-maximize-toggle");
 const storageKey = "gcx-rally-player-v1";
 const bestStorageKey = "gcx-rally-best-v1";
 const soundMutedStorageKey = "gcx-rally-muted-v1";
-const maximizeStorageKey = "gcx-rally-maximized-v1";
 let challenge = null;
 let leaderboard = [];
 let animationId = 0;
@@ -193,11 +193,27 @@ function updateSoundToggle() {
 
 function setArcadeMaximized(isMaximized) {
   document.body.classList.toggle("is-arcade-maximized", isMaximized);
-  localStorage.setItem(maximizeStorageKey, isMaximized ? "true" : "false");
   if (maximizeToggle) {
     maximizeToggle.textContent = isMaximized ? "Restore" : "Maximize";
     maximizeToggle.setAttribute("aria-pressed", isMaximized ? "true" : "false");
   }
+}
+
+async function toggleArcadeMaximized() {
+  const isFullscreen = document.fullscreenElement === arcadeStage;
+  try {
+    if (isFullscreen) {
+      await document.exitFullscreen();
+      return;
+    }
+    if (arcadeStage?.requestFullscreen) {
+      await arcadeStage.requestFullscreen();
+      return;
+    }
+  } catch (error) {
+    // Fall back to page takeover mode when browser fullscreen is blocked.
+  }
+  setArcadeMaximized(!document.body.classList.contains("is-arcade-maximized"));
 }
 
 function updateCountdown() {
@@ -664,9 +680,10 @@ async function init() {
       updateSoundToggle();
     });
     updateSoundToggle();
-    setArcadeMaximized(localStorage.getItem(maximizeStorageKey) === "true");
-    maximizeToggle?.addEventListener("click", () => {
-      setArcadeMaximized(!document.body.classList.contains("is-arcade-maximized"));
+    setArcadeMaximized(false);
+    maximizeToggle?.addEventListener("click", toggleArcadeMaximized);
+    document.addEventListener("fullscreenchange", () => {
+      setArcadeMaximized(document.fullscreenElement === arcadeStage);
     });
     submitForm?.addEventListener("submit", submitScore);
     game = {

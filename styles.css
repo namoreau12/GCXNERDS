@@ -11604,53 +11604,74 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   background: var(--paper);
 }
 
+.arcade-stage:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  border: 0;
+  border-radius: 0;
+  background: #050711;
+}
+
+.arcade-stage:fullscreen #gcx-rally-canvas {
+  width: 100vw;
+  height: 100vh;
+  min-height: 0;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.arcade-stage:fullscreen .arcade-overlay {
+  inset: 0;
+}
+
+.arcade-stage:fullscreen .arcade-floating-controls {
+  z-index: 5;
+}
+
 .is-arcade-maximized {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .is-arcade-maximized .arcade-page {
+  padding: 0;
   max-width: none;
 }
 
+.is-arcade-maximized .site-header,
 .is-arcade-maximized .arcade-hero,
+.is-arcade-maximized .arcade-panel,
 .is-arcade-maximized .arcade-rules {
   display: none;
 }
 
 .is-arcade-maximized .arcade-shell {
-  grid-template-columns: minmax(0, 1fr);
+  display: block;
 }
 
 .is-arcade-maximized .arcade-stage {
-  width: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: 25;
+  width: 100vw;
+  height: 100vh;
+  border: 0;
+  border-radius: 0;
+  background: #050711;
 }
 
 .is-arcade-maximized #gcx-rally-canvas {
-  min-height: min(72vh, 760px);
+  width: 100vw;
+  height: 100vh;
+  min-height: 0;
+  aspect-ratio: auto;
   object-fit: contain;
-}
-
-.is-arcade-maximized .arcade-panel {
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
-  align-items: start;
-}
-
-.is-arcade-maximized .arcade-panel > div:last-child {
-  grid-column: 2;
-  grid-row: 1 / span 3;
 }
 
 @media (max-width: 980px) {
   .arcade-hero,
   .arcade-shell,
-  .arcade-rules,
-  .is-arcade-maximized .arcade-panel {
+  .arcade-rules {
     grid-template-columns: 1fr;
-  }
-
-  .is-arcade-maximized .arcade-panel > div:last-child {
-    grid-column: auto;
-    grid-row: auto;
   }
 }
 
@@ -11676,10 +11697,6 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   .arcade-floating-controls {
     right: 10px;
     bottom: 10px;
-  }
-
-  .is-arcade-maximized #gcx-rally-canvas {
-    min-height: 0;
   }
 }
 
