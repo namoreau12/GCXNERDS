@@ -11677,17 +11677,100 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
 
 @media (max-width: 640px) {
   .arcade-page {
-    padding: 14px;
+    gap: 14px;
+    padding: 12px;
   }
 
   .arcade-hero,
   .arcade-panel,
   .arcade-rules article {
-    padding: 16px;
+    padding: 14px;
+  }
+
+  .arcade-hero {
+    gap: 14px;
+  }
+
+  .arcade-hero h1 {
+    font-size: clamp(2rem, 12vw, 2.8rem);
+  }
+
+  .arcade-shell {
+    gap: 12px;
+  }
+
+  .arcade-stage {
+    overflow: hidden;
+    padding-bottom: 58px;
+  }
+
+  #gcx-rally-canvas {
+    height: clamp(205px, 74vw, 300px);
+    aspect-ratio: auto;
+  }
+
+  .arcade-overlay {
+    gap: 9px;
+    inset: 0 0 58px;
+    padding: 14px;
+  }
+
+  .arcade-overlay h2 {
+    font-size: clamp(1.2rem, 6vw, 1.55rem);
+  }
+
+  .arcade-overlay p:not(.kicker) {
+    font-size: 0.86rem;
+    line-height: 1.4;
+  }
+
+  .arcade-overlay-form {
+    gap: 9px;
+  }
+
+  .arcade-overlay-form input {
+    min-height: 42px;
+  }
+
+  .arcade-overlay-form > div {
+    gap: 8px;
+  }
+
+  .arcade-overlay-form .button {
+    flex: 1 1 130px;
+    min-width: 0;
+    padding-inline: 10px;
+  }
+
+  .arcade-panel {
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+
+  .arcade-score-grid {
+    gap: 8px;
+  }
+
+  .arcade-score-grid div {
+    padding: 10px;
+  }
+
+  .arcade-score-grid strong {
+    font-size: 1.12rem;
+  }
+
+  .arcade-submit-form {
+    gap: 10px;
+  }
+
+  .arcade-submit-form .button {
+    width: 100%;
+    min-width: 0;
   }
 
   .arcade-leaderboard li {
     grid-template-columns: 30px minmax(0, 1fr);
+    gap: 8px;
   }
 
   .arcade-leaderboard em {
@@ -11695,8 +11778,66 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   }
 
   .arcade-floating-controls {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    z-index: 2;
+    justify-content: stretch;
+    max-width: none;
+    padding: 6px;
+    background: rgba(247, 244, 237, 0.94);
+    box-shadow: none;
+  }
+
+  .arcade-floating-controls button {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 8px 6px;
+    font-size: 0.68rem;
+  }
+
+  .is-arcade-maximized .arcade-floating-controls,
+  .arcade-stage:fullscreen .arcade-floating-controls {
+    position: fixed;
     right: 10px;
     bottom: 10px;
+    max-width: min(92vw, 360px);
+    box-shadow: 0 12px 28px rgba(17, 18, 23, 0.16);
+  }
+
+  .is-arcade-maximized .arcade-stage,
+  .arcade-stage:fullscreen {
+    padding-bottom: 0;
+  }
+
+  .is-arcade-maximized #gcx-rally-canvas,
+  .arcade-stage:fullscreen #gcx-rally-canvas {
+    height: 100vh;
+  }
+
+  .is-arcade-maximized .arcade-overlay,
+  .arcade-stage:fullscreen .arcade-overlay {
+    inset: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .arcade-page {
+    padding: 10px;
+  }
+
+  .arcade-panel,
+  .arcade-rules article {
+    padding: 12px;
+  }
+
+  .arcade-score-grid div {
+    padding: 9px;
+  }
+
+  .arcade-floating-controls button {
+    font-size: 0.64rem;
   }
 }
 
