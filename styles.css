@@ -149,13 +149,14 @@ input {
 }
 
 .brand-wordmark-nerds {
-  color: var(--red);
-  font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  font-weight: 900;
+  color: #6b35d8;
+  font-family: inherit;
+  font-size: 0.84em;
+  font-style: normal;
+  font-weight: 950;
   letter-spacing: 0;
-  text-shadow: 1px 1px 0 rgba(17, 18, 23, 0.12);
-  transform: skewX(-6deg);
+  text-shadow: none;
+  transform: none;
 }
 
 .brand-mark {
