@@ -759,6 +759,10 @@
       {
         "label": "Grounded 2 official trailer from Obsidian",
         "url": "https://www.youtube.com/watch?v=q0HQNOtg1WI"
+      },
+      {
+        "label": "Official Grounded 2 site from Obsidian",
+        "url": "https://grounded2.obsidian.net/"
       }
     ],
     "media": [
@@ -778,8 +782,26 @@
         "id": "fallout-project-media-rights-note",
         "mediaType": "rights-note",
         "afterHeading": "The Fallout Connection Is the Biggest Wild Card",
-        "caption": "GCX is not using fabricated Fallout project art. Microsoft has acknowledged a new Fallout collaboration, but the project has not been formally revealed with title art, screenshots, or a trailer.",
+        "caption": "Games Exchange is not using fabricated Fallout project art. Microsoft has acknowledged a new Fallout collaboration, but the project has not been formally revealed with title art, screenshots, or a trailer.",
         "sourceUrl": "https://news.xbox.com/en-us/2026/09/22/continuing-our-reset/"
+      },
+      {
+        "id": "obsidian-current-project-source-note",
+        "mediaType": "rights-note",
+        "afterHeading": "Source Map",
+        "caption": "The official Grounded 2 site and trailer are used only as current Obsidian project context while the Fallout collaboration remains unrevealed.",
+        "sourceUrl": "https://grounded2.obsidian.net/",
+        "rightsStatus": "source-link-only"
+      },
+      {
+        "id": "grounded-2-official-site-source-card",
+        "mediaType": "source-card",
+        "afterHeading": "Source Map",
+        "source": "Obsidian Entertainment",
+        "url": "https://grounded2.obsidian.net/",
+        "title": "Official Grounded 2 site",
+        "caption": "Official Obsidian project page used as current-project context while the Fallout collaboration remains unrevealed.",
+        "rightsStatus": "source-link-only"
       }
     ],
     "body": [
@@ -790,14 +812,84 @@
       "That makes this more than a simple org-chart note. Obsidian is one of Xbox's most recognizable RPG studios, and the Fallout connection immediately raises expectations because of Fallout: New Vegas.",
       "## Bethesda's Message: Keep Being Obsidian",
       "The reassurance matters because studio mergers and reporting changes often raise immediate questions about creative autonomy. Braff's reported message suggests Bethesda wants Obsidian to maintain its creative principles, internal identity, RPG design instincts, and development culture.",
+      {
+        "type": "table",
+        "caption": "What changes and what still needs clarification after Obsidian moves under Bethesda.",
+        "headers": [
+          "Area",
+          "What is confirmed",
+          "What is still unclear"
+        ],
+        "rows": [
+          [
+            "Reporting structure",
+            "Obsidian moves under Bethesda as Xbox reorganizes its studio groups.",
+            "How much day-to-day operational control changes for individual teams."
+          ],
+          [
+            "Current projects",
+            "Xbox says Obsidian will continue current work, including Grounded.",
+            "Whether schedules, budgets, or staffing priorities shift after the move."
+          ],
+          [
+            "Creative identity",
+            "Bethesda leadership reportedly told staff the studio should keep its creative identity.",
+            "How that promise shows up in future game scope, tone, and production decisions."
+          ],
+          [
+            "Fallout collaboration",
+            "Obsidian is tied to a new Fallout project with Bethesda Game Studios.",
+            "Title, format, timeline, platforms, and creative ownership remain unrevealed."
+          ]
+        ]
+      },
       "## The Fallout Connection Is the Biggest Wild Card",
       "Obsidian famously developed Fallout: New Vegas. Now the studio is officially tied to a new Fallout project being made in collaboration with Bethesda Game Studios.",
-      "Microsoft has not revealed the project's title, scope, timeline, platforms, or creative structure. Until it does, GCX is treating the Fallout angle as confirmed collaboration context, not as a revealed game.",
+      "Microsoft has not revealed the project's title, scope, timeline, platforms, or creative structure. Until it does, Games Exchange is treating the Fallout angle as confirmed collaboration context, not as a revealed game.",
+      "## Source Map",
+      {
+        "type": "table",
+        "caption": "Source map for the Obsidian and Bethesda restructure story.",
+        "headers": [
+          "Source lane",
+          "What it supports",
+          "What it does not prove"
+        ],
+        "rows": [
+          [
+            "Xbox Wire restructure post",
+            "The broader Xbox organization changes and the official Fallout collaboration context.",
+            "It does not reveal the Fallout project title, release window, or creative lead split."
+          ],
+          [
+            "Reported Braff memo coverage",
+            "Bethesda leadership messaging to Obsidian staff about identity and reporting structure.",
+            "It does not guarantee how future budgets, staffing, or greenlight decisions will work."
+          ],
+          [
+            "Official Grounded 2 materials",
+            "Current Obsidian project context and rights-safe trailer/media placement.",
+            "It is not evidence for the unannounced Fallout collaboration."
+          ],
+          [
+            "Fallout official brand context",
+            "Why Obsidian plus Bethesda carries unusual audience expectations.",
+            "It does not confirm New Vegas-style design, setting, platforms, or scope."
+          ]
+        ]
+      },
+      "## Source Box: What This Story Is Based On",
+      "* Xbox Wire confirmed the wider studio reorganization and the Obsidian/Fallout collaboration context.\n* Reporting on the Braff memo supplies the creative-identity reassurance to Obsidian staff.\n* The Grounded 2 trailer is included only as current Obsidian project context, not as Fallout project media.",
       "## What We Know",
       "* Obsidian is moving under Bethesda\n* Jill Braff reportedly framed the move as primarily a reporting change\n* Bethesda says Obsidian's creative identity should remain intact\n* Obsidian will continue current projects\n* Obsidian is collaborating with Bethesda Game Studios on a new Fallout project",
       "## What We Still Do Not Know",
       "* what the new Fallout project actually is\n* how much operational control Bethesda will have\n* whether staffing or leadership structures will change\n* whether future Obsidian games will shift in scope or style",
-      "## GCX Takeaway",
+      "## Why Players Care",
+      "Obsidian has built its reputation on choice-heavy RPGs, sharp dialogue, and worlds that often feel messier and stranger than a normal franchise installment. That is why a reporting change can feel bigger than corporate housekeeping to players who care about the studio's voice.",
+      "The Fallout collaboration makes the concern louder. Fans are not only asking whether Obsidian will keep making Obsidian-style games; they are asking whether Xbox can use Bethesda and Obsidian together without sanding off what made either studio matter.",
+      "## What to Watch Next",
+      "* whether Xbox publishes leadership or staffing details for the new reporting structure\n* whether Obsidian discusses how the move affects current projects\n* whether the Fallout collaboration receives a title, teaser, or platform plan\n* whether future Obsidian announcements still emphasize the studio's own tone and systems-first RPG identity",
+      "## Games Exchange Takeaway",
       "The key question is whether Xbox can reorganize its studios without flattening the voices that made those studios worth owning. For Obsidian, the promise is clear: Bethesda says the studio should still feel like Obsidian. The proof will come from the games that follow."
     ],
     "editorialOwner": "GCX Newsroom"
@@ -891,7 +983,7 @@
         "id": "pokemon-pocket-card-gallery-hold",
         "mediaType": "rights-note",
         "afterHeading": "What We Still Need to See",
-        "caption": "MORE OFFICIAL CARD MEDIA NEEDED: GCX is holding individual card images until approved English card images or official press-gallery assets are attached to the CMS.",
+        "caption": "Games Exchange will add individual card images once approved English card images or official press-gallery assets are available for the CMS.",
         "sourceUrl": "https://the-pokemon-company-international.prezly.com/nouveau-booster-special-du-jcc-pokemon-pocket-deluxe-pack-mega-lancement-le-30-septembre"
       }
     ],
@@ -900,15 +992,51 @@
       "Deluxe Pack: Mega contains four cards per pack, with a guaranteed Pokemon ex or high-rarity card in every pack. Pokemon is positioning the release as a collection-building pack rather than a normal expansion cycle.",
       "## One Pokemon ex in Every Pack",
       "Pokemon's official materials say each Deluxe Pack: Mega booster contains four cards and includes one guaranteed Pokemon ex or card of equivalent high rarity. That changes the feel of opening packs: every pack has at least one headline hit instead of leaving the entire top-end experience to chance.",
+      "The catch is that guaranteed excitement is not the same thing as guaranteed completion. A four-card pack can still leave players chasing specific art variants, missing reprints, or the exact card that fits a deck plan.",
       "## A Collector-Focused Release",
       "The pack appears designed around collection completion as much as competitive play. The Pokemon Company press release says the pack includes previously released cards from the B-series era, with new artwork, parallel foil treatments, and metallic-style patterns also expected.",
+      {
+        "type": "table",
+        "caption": "How Deluxe Pack: Mega changes the usual Pocket pack-opening calculation.",
+        "headers": [
+          "Reader question",
+          "What Pokemon confirmed",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "When does it arrive?",
+            "September 30, 2026",
+            "Players have a short window to decide whether this is a must-open pack or a wait-and-see release."
+          ],
+          [
+            "How big is each pack?",
+            "Four cards",
+            "The pack is smaller than a normal physical booster, so every slot matters more."
+          ],
+          [
+            "What is guaranteed?",
+            "One Pokemon ex or equivalent high-rarity card",
+            "The top-end floor is higher, but individual chase cards can still be hard to complete."
+          ],
+          [
+            "What is the purpose?",
+            "Collection building with reprints, new artwork, and special treatments",
+            "The value depends on whether a player wants completion help, art variants, or competitive upgrades."
+          ]
+        ]
+      },
       "## What Every Pack Guarantees",
       "* release date: September 30, 2026\n* limited availability window: September 30 through October 29\n* each pack contains four cards\n* every pack guarantees a Pokemon ex or high-rarity card\n* the release is focused heavily on collection building",
       "## What We Still Need to See",
       "* complete card list\n* full rarity breakdown\n* exact pull structure beyond the guaranteed high-rarity card\n* how many exclusive or alternate-art cards are included\n* whether the pack changes the competitive Pocket meta",
       "## Why This Could Be a Big Pack",
       "A guaranteed ex changes the psychology of opening packs. Even if the rarest chase cards remain difficult to pull, players know every pack contains something substantial.",
-      "For GCX, this is the kind of Pokemon Pocket release that should eventually become a living tracker: pack window, confirmed cards, art variants, high-interest pulls, and whether the set becomes worth opening for new players or mainly for completionists."
+      "For newer Pocket players, that could make Deluxe Pack: Mega feel like a catch-up lane. For daily players with deep collections, the real question is whether the new art and special treatments justify spending resources during the limited window.",
+      "## What to Watch Next",
+      "* whether Pokemon publishes the complete card list before launch\n* how many cards are exclusive to Deluxe Pack: Mega\n* whether players treat the pack as efficient collection help or a cosmetic chase\n* whether any guaranteed-hit structure changes Pocket event expectations later",
+      "## Games Exchange Takeaway",
+      "This is the kind of Pokemon Pocket release that should eventually become a living tracker: pack window, confirmed cards, art variants, high-interest pulls, and whether the set becomes worth opening for new players or mainly for completionists."
     ],
     "editorialOwner": "GCX Pokemon Desk"
   },
@@ -989,14 +1117,14 @@
         "id": "classic-collection-legality-callout",
         "mediaType": "rights-note",
         "afterHeading": "The Classic Collection Is Excluded",
-        "caption": "CLASSIC COLLECTION IS NOT TOURNAMENT LEGAL: Pokemon explicitly separates the main expansion legality date from the Classic Collection subset.",
+        "caption": "Pokemon explicitly separates the main expansion legality date from the Classic Collection subset: Classic Collection cards are not tournament legal.",
         "sourceUrl": "https://www.pokemon.com/us/news/pokemon-tcg-30th-celebration-is-now-available-in-pokemon-tcg-live"
       },
       {
         "id": "30th-card-image-hold",
         "mediaType": "rights-note",
         "afterHeading": "What Players Should Check",
-        "caption": "MORE OFFICIAL CARD MEDIA NEEDED: GCX will add individual card images only from approved official card records or API-permitted sources, preserving full card aspect ratio.",
+        "caption": "Games Exchange will add individual card images only from approved official card records or API-permitted sources, preserving full card aspect ratio.",
         "sourceUrl": "https://www.pokemon.com/us/pokemon-tcg/30th-celebration"
       }
     ],
@@ -1005,15 +1133,50 @@
       "There is one major exception: the Classic Collection subset is not tournament legal.",
       "## The Main Set Is Now Playable",
       "Pokemon confirmed the legality date directly in its official 30th Celebration coverage. Cards from the main expansion are eligible for Play! Pokemon tournament use beginning September 25, subject to normal format rules and the current Tournament Handbook.",
+      "That matters because anniversary sets often blur collector excitement with playability. The legal line here is not simply “30th Celebration equals legal.” Players need to know which part of the product a card comes from before sleeving it for an event.",
       "## The Classic Collection Is Excluded",
       "The Classic Collection reprints famous cards from older eras, but Pokemon explicitly says that subset is not tournament legal. Collectors can still chase them; competitive players should not assume a nostalgic reprint is playable simply because it appears in the anniversary release.",
+      {
+        "type": "table",
+        "caption": "Tournament legality split for Pokemon TCG: 30th Celebration.",
+        "headers": [
+          "Card source",
+          "Tournament status",
+          "Practical takeaway"
+        ],
+        "rows": [
+          [
+            "Main 30th Celebration expansion",
+            "Legal beginning September 25, 2026, subject to format rules",
+            "Deck builders can evaluate these cards for current Play! Pokemon formats."
+          ],
+          [
+            "Classic Collection subset",
+            "Not tournament legal",
+            "Treat these as collector reprints, not automatic deck options."
+          ],
+          [
+            "Pokemon TCG Live availability",
+            "Set is available digitally",
+            "Digital availability does not override the Classic Collection tournament restriction."
+          ],
+          [
+            "Future events",
+            "Check the current Tournament Handbook",
+            "Legality can depend on format, event type, and any later official updates."
+          ]
+        ]
+      },
       "## What Players Should Check",
       "* confirm the card belongs to the main expansion\n* confirm it is legal in the current tournament format\n* do not assume Classic Collection cards are legal\n* check the current Pokemon TCG Tournament Handbook before an event",
       "## What We Know",
       "* main 30th Celebration cards become tournament legal September 25, 2026\n* the Classic Collection subset is not tournament legal\n* the set is available in Pokemon TCG Live",
       "## What Comes Next",
       "The next question is whether any 30th Celebration cards actually reshape competitive play. That answer will come from event results, deck adoption, and whether the new cards create format pressure beyond collector demand.",
-      "## GCX Takeaway",
+      "For local events, judges and players should expect the Classic Collection question to come up quickly. The simplest prep is to verify card source before deck registration rather than trying to settle the issue at the table.",
+      "## What to Watch Next",
+      "* official Tournament Handbook updates\n* Play! Pokemon rulings or clarifications\n* early decklists using main 30th Celebration cards\n* collector demand for Classic Collection cards even without tournament legality",
+      "## Games Exchange Takeaway",
       "For collectors, Classic Collection cards remain one of the most exciting parts of the release. For tournament players, the clean rule is simple: main set first, Classic Collection out."
     ],
     "editorialOwner": "GCX Pokemon Desk"
@@ -1095,7 +1258,7 @@
         "id": "nintendo-legal-document-source-note",
         "mediaType": "rights-note",
         "afterHeading": "Why This Case Stands Out",
-        "caption": "GCX is using official Nintendo imagery and source links, not fake courtroom, hacker, or legal-document art. This is a civil/default-judgment story, not a criminal-conviction story.",
+        "caption": "Games Exchange uses official Nintendo imagery and source links here, not fake courtroom, hacker, or legal-document art. This is a civil/default-judgment story, not a criminal-conviction story.",
         "sourceUrl": "https://torrentfreak.com/nintendo-wins-4-5-million-judgment-against-r-switchpirates-mod-archbox/"
       }
     ],
@@ -1106,14 +1269,49 @@
       "## Why This Case Stands Out",
       "Nintendo has pursued piracy cases aggressively for years, but this case is notable because it targets an individual tied to online piracy communities rather than only a commercial operator.",
       "The ruling shows that Nintendo is still willing to pursue substantial financial judgments even when the defendant is not a large company.",
+      "The default-judgment posture also matters. It means the court granted Nintendo's requested relief after the defendant did not successfully contest the claims in the way an ordinary fully litigated trial would. Readers should treat the number as a serious legal result while still separating it from a criminal conviction or a jury finding after trial.",
+      {
+        "type": "table",
+        "caption": "What the Nintendo judgment changes for readers following Switch piracy enforcement.",
+        "headers": [
+          "Point",
+          "What changed",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Dollar amount",
+            "$4.5 million default judgment",
+            "The award gives Nintendo another large civil judgment it can cite when warning piracy communities and tool distributors."
+          ],
+          [
+            "Target",
+            "An individual tied to Reddit moderation and piracy sharing",
+            "The case shows Nintendo is not limiting enforcement pressure to storefronts, resellers, or commercial device sellers."
+          ],
+          [
+            "Scope",
+            "Alleged distribution of pirated games and circumvention tools",
+            "Nintendo continues to frame piracy and bypass tooling as connected threats to Switch software sales and platform control."
+          ],
+          [
+            "Open question",
+            "Collection, appeal, or follow-up action",
+            "The next practical question is not only who won, but whether money is collected and whether related communities change behavior."
+          ]
+        ]
+      },
       "## What We Know",
       "* Nintendo won a default judgment\n* the award totals $4.5 million\n* the defendant is James \"Archbox\" Williams\n* Nintendo accused him of distributing large numbers of pirated Switch games\n* the ruling came from the U.S. District Court for the Western District of Washington",
       "## What We Do Not Know",
       "* how much of the judgment Nintendo will ultimately collect\n* whether Williams will seek any further legal relief\n* whether additional related actions will follow",
       "## Why It Matters",
       "A $4.5 million judgment raises the legal stakes for people operating or facilitating piracy communities. It also reinforces Nintendo's long-running legal posture around Switch software, circumvention tools, and online distribution networks.",
-      "## GCX Legal Note",
-      "This is a civil default-judgment story based on legal reporting and court filings. GCX is not describing it as a criminal conviction, and we are not linking to piracy tools, shops, or instructions."
+      "For ordinary players and collectors, the case is less about one Reddit account and more about Nintendo's broader enforcement message: Switch piracy, modding tools used for infringement, and communities that organize access to copied games can attract real civil exposure.",
+      "## What to Watch Next",
+      "* whether Nintendo reports collection or settlement activity\n* whether Williams seeks to reopen, appeal, or otherwise challenge the judgment\n* whether Nintendo uses the judgment in future takedown notices or civil filings\n* whether major Switch piracy communities change moderation, linking, or file-sharing behavior",
+      "## Games Exchange Legal Note",
+      "This is a civil default-judgment story based on legal reporting and court filings. Games Exchange is not describing it as a criminal conviction, and we are not linking to piracy tools, shops, or instructions."
     ],
     "editorialOwner": "GCX Newsroom"
   },
