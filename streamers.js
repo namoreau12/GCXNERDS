@@ -734,7 +734,7 @@ nominationForm?.addEventListener("submit", async (event) => {
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || "Nomination could not be saved.");
     nominationForm.reset();
-    nominationStatus.textContent = `${result.data.name} was added to the creator review queue.`;
+    nominationStatus.textContent = `${result.data.name} was added to the creator approval queue.`;
   } catch (error) {
     nominationStatus.textContent = error.message;
   } finally {

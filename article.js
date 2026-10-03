@@ -752,11 +752,11 @@ function editorialMediaRightsLabel(item) {
     licensed: "Licensed media",
     owned: "GCX original media",
     "permission-granted": "Permission granted",
-    "fair-use-review": "Editorial fair-use review",
+    "fair-use-review": "Editorial fair-use check",
     "source-link-only": "Source link only",
-    "pending-review": "Pending media review",
+    "pending-review": "Pending media approval",
   };
-  return labels[status] || "Pending media review";
+  return labels[status] || "Pending media approval";
 }
 
 function canDisplayEditorialImage(item) {
@@ -860,7 +860,7 @@ function renderEditorialMediaItem(item, story = null) {
     return `
       <aside class="editorial-media editorial-media-rights-note">
         <span>${escapeHtml(editorialMediaRightsLabel(item))}</span>
-        <p>${escapeHtml(item.caption || rightsNote || "Media is queued for editorial review before display.")}</p>
+        <p>${escapeHtml(item.caption || rightsNote || "Media is queued for editorial approval before display.")}</p>
         ${item.sourceUrl ? `<a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noopener">Open source</a>` : ""}
       </aside>
     `;
@@ -1186,7 +1186,7 @@ function renderRightsManagedCardArt(card) {
   return `
     <div class="pikachu-card-art pikachu-card-art-unavailable" role="img" aria-label="Card image unavailable">
       <strong>Image unavailable</strong>
-      <small>${escapeHtml(card.rightsStatus === "source-link-only" ? "Rights review" : "Media review")}</small>
+      <small>${escapeHtml(card.rightsStatus === "source-link-only" ? "Rights approval" : "Media approval")}</small>
     </div>
   `;
 }
@@ -1394,7 +1394,7 @@ function renderPokemonPikachuChecklist(story) {
                   <p class="pikachu-card-number">${escapeHtml(card.number)} - ${escapeHtml(card.illustrator)}</p>
                   <p>${escapeHtml(card.note)}</p>
                   <b>${escapeHtml(card.chase)} watchlist</b>
-                  <span class="image-rights-note">${escapeHtml(card.rightsStatus === "source-link-only" ? "Image held until usage rights are approved." : card.rightsNote || "Image status under review.")}</span>
+                  <span class="image-rights-note">${escapeHtml(card.rightsStatus === "source-link-only" ? "Image held until usage rights are approved." : card.rightsNote || "Image approval status pending.")}</span>
                   ${card.visualUrl || card.imageSourceUrl ? `<a class="pikachu-source-link" href="${escapeHtml(card.visualUrl || card.imageSourceUrl)}" target="_blank" rel="noopener">View source card page</a>` : ""}
                 </div>
               </article>
