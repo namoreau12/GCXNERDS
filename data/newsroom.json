@@ -615,17 +615,17 @@
     "type": "editorial",
     "editorialStatus": "ready-for-publish",
     "storyLifecycleState": "ready-for-publish",
-    "deepResearchUsed": false,
-    "livingArticle": false,
-    "lastUpdated": "2026-10-02",
-    "lastReviewedAt": "2026-10-02",
+    "deepResearchUsed": true,
+    "livingArticle": true,
+    "lastUpdated": "2026-10-03",
+    "lastReviewedAt": "2026-10-03",
     "editorialOwner": "GCX Newsroom",
     "id": "gcx-newsroom-magic-the-gathering-reality-fracture-launch",
     "slug": "magic-the-gathering-reality-fracture-launch",
     "title": "Magic: The Gathering's Reality Fracture Launches Today - and Jace Has Apparently Broken the Multiverse",
-    "seoTitle": "Magic: The Gathering Reality Fracture Launches Today - New Cards, Mechanics, and Products",
-    "excerpt": "Reality Fracture is live for Magic: The Gathering, bringing shattered mirror cards, borderless echoed pairs, and a Jace-centered multiverse crisis.",
-    "metaDescription": "Magic: The Gathering's Reality Fracture launches October 2 with new mechanics, shattered-mirror cards, borderless echoed pairs, and a multiverse story centered around Jace.",
+    "seoTitle": "Magic: The Gathering Reality Fracture Launch Hub - Cards, Mechanics, Products, Events",
+    "excerpt": "Reality Fracture is live for Magic: The Gathering, turning Jace's Echoverse into a full set launch with echoed pairs, shattered mirror cards, new mechanics, store events, and collector-heavy products.",
+    "metaDescription": "Magic: The Gathering Reality Fracture is live. Track Jace's Echoverse story, echoed pairs, shattered mirror cards, products, mechanics, legality, and store events.",
     "category": "Cards",
     "articleType": "Major News / Set Launch Hub",
     "publishedAt": "2026-10-02T20:30:00.000-04:00",
@@ -633,9 +633,9 @@
     "opportunityScore": 91,
     "topicCluster": "Magic: The Gathering - Reality Fracture",
     "canonicalTopic": "Magic: The Gathering Reality Fracture",
-    "targetSearchIntent": "Magic Reality Fracture launch, Reality Fracture cards, shattered mirror cards, borderless echoed pairs, Jace Reality Fracture",
-    "updateFrequency": "Update if Wizards publishes additional launch videos, official card galleries, product corrections, or event details.",
-    "updatePolicy": "Preserve this URL as GCX's Reality Fracture launch hub.",
+    "targetSearchIntent": "Magic Reality Fracture launch, Reality Fracture echoed pairs, shattered mirror cards, empower Jace, Reality Fracture products, Reality Fracture events",
+    "updateFrequency": "Update when Wizards publishes product corrections, card-gallery additions, rules updates, store-event changes, or additional Reality Fracture story and video links.",
+    "updatePolicy": "Preserve this URL as GCX's Reality Fracture launch hub. Keep official Wizards product, event, mechanics, legality, and collector-treatment details current as the set moves from launch to event season.",
     "claimStatus": "Official Wizards of the Coast / GCX TCG launch hub",
     "confidence": "Official Wizards of the Coast / GCX TCG launch hub",
     "heroImage": "https://images.ctfassets.net/s5n2t79q9icq/1dQnj1H9MICej73LzXygjn/e2736e3996e8515ac69400d5cf4900c5/FRA_The_Theorist__Jace_Beleren_960x540.jpg",
@@ -663,7 +663,11 @@
       },
       {
         "label": "Trading Card News",
-        "url": "news.html"
+        "url": "news.html?filter=cards"
+      },
+      {
+        "label": "Community discussion",
+        "url": "community.html?topic=Magic%20TCG"
       }
     ],
     "sourceLinks": [
@@ -676,12 +680,24 @@
         "url": "https://magic.wizards.com/en/news/feature/collecting-reality-fracture"
       },
       {
-        "label": "Wizards: Reality Fracture Card Image Gallery",
-        "url": "https://magic.wizards.com/en/products/reality-fracture/card-image-gallery"
+        "label": "Wizards: Reality Fracture Mechanics",
+        "url": "https://magic.wizards.com/en/news/feature/reality-fracture-mechanics"
       },
       {
-        "label": "Wizards: Where to Find Reality Fracture Previews",
-        "url": "https://magic.wizards.com/en/news/announcements/where-to-find-reality-fracture-previews"
+        "label": "Wizards: Where to Play Reality Fracture",
+        "url": "https://magic.wizards.com/en/news/feature/where-to-play-reality-fracture"
+      },
+      {
+        "label": "Wizards: Planeswalker's Guide to Reality Fracture",
+        "url": "https://magic.wizards.com/en/news/magic-story/planeswalkers-guide-to-reality-fracture"
+      },
+      {
+        "label": "WPN: Reality Fracture dates and details",
+        "url": "https://wpn.wizards.com/en/news/reality-fracture-dates-and-details"
+      },
+      {
+        "label": "Wizards: Reality Fracture Card Image Gallery",
+        "url": "https://magic.wizards.com/en/products/reality-fracture/card-image-gallery"
       }
     ],
     "media": [
@@ -743,45 +759,121 @@
       }
     ],
     "body": [
-      "**Reality Fracture** launches today for **Magic: The Gathering**, bringing a new set built around a destabilized multiverse, showcase treatments, and a story thread that puts **Jace** at the center of the chaos.",
-      "That matters for Games Exchange because the site is bigger than one card lane: Pokemon coverage can stay strong while Magic, Yu-Gi-Oh, and other TCG launches get room to breathe.",
-      "## New Set Features",
+      "**Reality Fracture** is no longer just the next Magic: The Gathering set on the calendar. It is Wizards of the Coast turning Jace Beleren's Echoverse idea into a full launch moment: cards, products, store events, Arena timing, Commander hooks, and enough collector treatments to make even casual Magic fans ask what exactly broke.",
+      "For GCX, this is the kind of Magic story that deserves a durable hub instead of a quick headline. Pokemon coverage can still be a major strength, but Reality Fracture gives the card side of the site a different flavor: one part story climax, one part booster-fun checklist, one part local-store event calendar.",
+      "## Reality Fracture At a Glance",
       {
         "type": "table",
-        "caption": "Wizards' official Reality Fracture pages highlight the treatments and product hooks collectors will notice first.",
+        "caption": "The core Reality Fracture facts GCX readers need before buying packs, joining events, or catching up on the story.",
         "headers": [
-          "Feature",
-          "Why it matters"
+          "Area",
+          "Official detail",
+          "Why GCX readers should care"
         ],
         "rows": [
           [
-            "Shattered mirror cards",
-            "Alternate-reality versions of recognizable Magic cards, with special facet foil versions in Collector Boosters."
+            "Tabletop launch",
+            "Reality Fracture releases on October 2, 2026, after prerelease events from September 25 through October 1.",
+            "Collectors can separate prerelease-week availability from the wider release date and avoid confusing early-sales chatter with a second launch."
           ],
           [
-            "Borderless echoed pairs",
-            "Two-card visuals that show characters and counterparts clashing across realities."
+            "Digital launch",
+            "MTG Arena receives Reality Fracture on September 29.",
+            "Arena players get an earlier way to learn cards and mechanics before the tabletop release weekend."
           ],
           [
-            "Special Guests panorama",
-            "A 10-card Special Guests treatment that forms a large Echoverse panorama."
+            "Story premise",
+            "Jace's Echoverse is a rewritten reality that collides with the existing Magic Multiverse.",
+            "The set's hook is simple enough for returning players: familiar characters and cards are being reflected through Jace's altered world."
           ],
           [
-            "Jace story hook",
-            "Reality Fracture centers on Jace's attempt to reshape the Multiverse into his own vision."
+            "Set code and legality",
+            "Reality Fracture uses FRA, Commander cards use FRC, and Special Guests use SPG.",
+            "Those codes matter for database searches, deck legality, sealed pools, and collector checklists."
           ]
         ]
       },
-      "## What Makes Reality Fracture Stand Out",
-      "Wizards is positioning Reality Fracture around multiverse instability. The set's selling point is not only new cards, but the idea that familiar Magic identities are being reflected through the Echoverse.",
-      "The most collector-facing features are **shattered mirror cards**, **borderless echoed pairs**, and premium product paths such as Collector Boosters and the Reality Fracture Secret Lair Bundle.",
-      "## Why Jace Is the Hook",
-      "Reality Fracture's marketing leans into the idea that **Jace** has reshaped the Multiverse into his ideal vision. That gives the release a cleaner narrative hook than many set launches get.",
-      "Even if you are not current on every Magic story beat, the premise is easy to understand: Jace tried to solve reality, and everyone else has to live inside the consequences.",
-      "## What We Know",
-      "* Reality Fracture releases October 2, 2026\n* Wizards is highlighting shattered mirror cards\n* borderless echoed pairs appear as a major visual treatment\n* Play Boosters and Collector Boosters are part of the launch product lineup\n* the set's narrative framing heavily involves Jace and the Echoverse",
+      "The short version: Reality Fracture is a set about the cost of Jace trying to solve the Multiverse by replacing it. The product page frames the launch around a reality where Jace's plan worked and the consequences are now everybody else's problem.",
+      "That gives the set a cleaner identity than a normal seasonal release. You do not need to know every recent Magic story beat to understand why the visuals land. The appeal is seeing the familiar Multiverse through a wrong mirror: alternate Chandra, alternate Ajani, alternate Karn, and a tower full of Jace logic that absolutely nobody should trust without reading the fine print.",
+      "## Collector Treatments to Watch",
+      {
+        "type": "table",
+        "caption": "Reality Fracture's major collector hooks are not all the same product chase. Some are broad set identity; some are Collector Booster-specific.",
+        "headers": [
+          "Treatment",
+          "Where it fits",
+          "GCX read"
+        ],
+        "rows": [
+          [
+            "Echoed pairs",
+            "Every Play Booster and Collector Booster contains echoed pairs. Wizards lists 66 uncommon, 14 rare, and 6 mythic rare individual echoed-pair cards.",
+            "This is the set's main identity, not just a premium chase. It is the best shorthand for the Echoverse concept."
+          ],
+          [
+            "Borderless echoed pairs",
+            "Two-card borderless scenes show characters and counterparts clashing across realities, with non-foil and traditional foil versions in Play and Collector Boosters.",
+            "These are the binder-page cards casual collectors will understand immediately because the art literally spans the conflict."
+          ],
+          [
+            "Shattered mirror cards",
+            "Rare and mythic rare alternate-path cards appear in Play and Collector Boosters; facet foil versions are Collector Booster-only and always English.",
+            "This is the premium chase lane. GCX should track these carefully because foil language and approximate print-volume notes affect collecting behavior."
+          ],
+          [
+            "Special Guests panorama",
+            "Ten Special Guests cards form a wraparound Echoverse panorama illustrated by Marina Banker.",
+            "This is the display-set hook: less about a single chase card and more about completing a visual scene."
+          ],
+          [
+            "Secret Lair Bundle",
+            "The Reality Fracture Secret Lair Bundle combines set product with exclusive Secret Lair-style promo treatments.",
+            "This creates a separate collector path from normal boxes, especially for players who care about treatment exclusivity."
+          ]
+        ]
+      },
+      "The most important thing for readers is that Reality Fracture has multiple collector lanes. Echoed pairs explain the set. Shattered mirror cards drive the premium hunt. Special Guests give completionists a panorama project. The Secret Lair Bundle creates a product-specific promo path. Those should not be flattened into one vague phrase like \"new variants.\"",
+      "## Mechanics and Play Identity",
+      "Reality Fracture also has a mechanical identity beyond the card treatments. Wizards highlights **empower Jace** as the marquee keyword action. In practice, that means cards can create or grow a blue Jace planeswalker token, giving the set a literal board-state expression of Jace inserting himself into everything. It is funny, ominous, and extremely on brand.",
+      "The mechanics article also calls out **Heartwood tokens**, a new predefined token type that produces red or green mana, and the return of **prepare** cards, which split creature bodies and spell options across the card frame. That matters because the set is not only selling alternate-reality art. It is also asking players to manage extra objects, modes, and resource lines in games.",
+      "For newer or returning players, the practical takeaway is simple: Reality Fracture may read busy at first. Learn the Jace token flow, pay attention to which cards are echoed pairs, and treat prerelease as a good place to see how the mechanics actually feel before buying hard into a constructed deck idea.",
+      "## Products, Events, and What Happens Next",
+      {
+        "type": "table",
+        "caption": "Reality Fracture continues after release day through store events, Commander nights, and seasonal play.",
+        "headers": [
+          "Window",
+          "Official event/product note",
+          "What GCX should track"
+        ],
+        "rows": [
+          [
+            "September 25-October 1",
+            "Prerelease events use Reality Fracture Prerelease Packs with six Play Boosters, a foil promo card, a deck box, and a Spindown die.",
+            "Early impressions, sealed archetypes, and whether prerelease demand creates product pressure."
+          ],
+          [
+            "October 2",
+            "Tabletop release, Friday Night Magic season start, Standard Showdown season start, and Learn to Play / Deck Building Magic Academy period begin.",
+            "Which events local stores actually run and whether beginner-facing events make the set approachable."
+          ],
+          [
+            "October 9-15 and October 23-29",
+            "Commander Party rounds are scheduled for the Reality Fracture season.",
+            "Commander interest around Multiverse Reforged and whether Jace-themed play pulls casual groups in."
+          ],
+          [
+            "October 16-November 5",
+            "Magic Presents: Reality Echoes is scheduled, with Wizards listing a Reality Fracture set symbol pin as the winner prize.",
+            "Store-level demand for themed prizes and whether this becomes a repeat-visit driver."
+          ]
+        ]
+      },
+      "The product spread is also broad: Play Boosters, Collector Boosters, Bundle, Draft Night, Multiverse Reforged Commander Deck, Foundations Commander Decks, and the Secret Lair Bundle. GCX should keep those separated in future updates because a player trying to draft, a Commander buyer, and a treatment collector are making different decisions.",
       "## GCX Takeaway",
-      "Reality Fracture looks like the right kind of Magic story for wider TCG coverage: big theme, clear collector hooks, and enough visual identity for casual readers to understand why the launch matters."
+      "Reality Fracture is exactly the kind of Magic launch that can make GCX feel more complete as a gaming-and-card community. It has a bold story premise, recognizable character drama, local-store event utility, booster-fun detail, and visual treatments that work well for card database discovery.",
+      "The risk is noise. Wizards has enough Reality Fracture products, treatments, dates, and events that a casual reader can bounce off immediately. GCX's job is to keep the hub practical: what launched, what the set is about, which treatments matter, where to play, and what deserves follow-up as the event season unfolds.",
+      "This page will stay as the Reality Fracture launch hub. The next useful updates are individual chase-card tracking, a clean echoed-pair explainer for collectors, and a community prompt asking Magic players whether Jace's Echoverse is a great story climax or the most complicated way imaginable to say \"therapy might have helped.\""
     ]
   },
   {
