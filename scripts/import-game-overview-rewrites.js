@@ -28,7 +28,7 @@ const weakPatterns = [
   /is a (?:party|shooter|strategy|visual novel|role-playing|racing|sports|simulation|action) game for/i,
   /\bGCX should\b/i,
   /\bGCX(?:'s|’s)?\b/i,
-  /\bThe listing should\b/i,
+  /\b(?:The\s+)?Listings? should\b/i,
   /\b(?:The|This) page should\b/i,
   /\b(?:The|This) overview should\b/i,
   /\bThe record should\b/i,

@@ -80,6 +80,15 @@ function main() {
     { ...baseRow, reviewStatus: "", reviewer: "", newOverview: "Too short." },
     { ...baseRow, gameId: `${game.id}-duplicate`, currentOverview: "stale source text", newOverview: baseRow.newOverview, reviewStatus: "approved", reviewer: "launch-audit" },
     { ...baseRow, gameId: `${game.id}-bad-url`, sourceUrl: "not a url", newOverview: baseRow.newOverview, reviewStatus: "approved", reviewer: "launch-audit" },
+    {
+      ...baseRow,
+      gameId: `${game.id}-listing-language`,
+      newOverview:
+        `${game.title} is presented here with enough length to look superficially complete, but it still uses process-copy language instead of a player-facing overview. ` +
+        "Listings should spell out region, format, edition, included extras, and condition, which is exactly the kind of marketplace instruction this importer must reject.",
+      reviewStatus: "approved",
+      reviewer: "launch-audit",
+    },
   ]);
 
   const failures = [];
@@ -97,7 +106,7 @@ function main() {
   assert(validReport?.mode === "dry-run", "Valid report did not record dry-run mode.", failures);
   assert((validReport?.importedRows || []).length === 1, "Valid dry-run report should include one importable row.", failures);
   assert((validReport?.rejected || []).length === 0, "Valid dry-run row should not be rejected.", failures);
-  assert((invalidReport?.rejected || []).length >= 3, "Invalid dry-run report should reject weak/missing-review/stale/bad-url rows.", failures);
+  assert((invalidReport?.rejected || []).length >= 4, "Invalid dry-run report should reject weak/missing-review/stale/bad-url/listing-language rows.", failures);
   assert(
     (invalidReport?.rejected || []).some((row) => /reviewStatus|too short|template/i.test(row.reason || "")),
     "Invalid report did not reject missing review status or weak overview copy.",
