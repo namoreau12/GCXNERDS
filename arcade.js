@@ -267,13 +267,13 @@ function levelDifficulty(level) {
   return {
     level: safeLevel,
     tier,
-    targetCount: clamp(18 + Math.floor(safeLevel * 1.45) + tier * 2, 20, 78),
-    obstacleCount: clamp(Math.floor((safeLevel - 3) / 3) + Math.floor(tier * 0.8), 0, 18),
-    speed: clamp(365 + safeLevel * 14 + tier * 18, 365, 980),
-    paddleWidth: clamp(150 - tier * 5 - Math.floor(safeLevel / 9) * 4, 92, 150),
+    targetCount: clamp(10 + Math.floor(safeLevel * 1.2) + tier * 2, 12, 76),
+    obstacleCount: clamp(Math.floor((safeLevel - 7) / 3) + Math.floor(tier * 0.7), 0, 18),
+    speed: clamp(285 + safeLevel * 9 + tier * 16, 285, 980),
+    paddleWidth: clamp(172 - tier * 5 - Math.floor(safeLevel / 10) * 3, 96, 172),
     paddleMaxSpeed: clamp(760 + tier * 32, 760, 1040),
-    bonusChance: clamp(0.13 + tier * 0.018, 0.13, 0.32),
-    minGap: clamp(15 - Math.floor(tier / 2), 6, 15),
+    bonusChance: clamp(0.1 + tier * 0.018, 0.1, 0.32),
+    minGap: clamp(18 - Math.floor(tier / 2), 7, 18),
   };
 }
 
@@ -638,7 +638,7 @@ function draw() {
 function normalizeBallSpeed(targetSpeed) {
   const { ball } = game;
   const currentSpeed = Math.hypot(ball.vx, ball.vy) || targetSpeed;
-  const speed = clamp(targetSpeed, 330, 1040);
+  const speed = clamp(targetSpeed, 280, 1040);
   ball.vx = (ball.vx / currentSpeed) * speed;
   ball.vy = (ball.vy / currentSpeed) * speed;
   if (Math.abs(ball.vy) < speed * 0.48) {
@@ -738,7 +738,7 @@ function update(dt) {
     const hitPosition = (ball.x - (paddle.x + paddle.w / 2)) / (paddle.w / 2);
     const config = levelDifficulty(game.level);
     const bounceAngle = clamp(hitPosition, -0.92, 0.92) * 1.08;
-    const targetSpeed = clamp((ball.speed || config.speed) + 12 + game.level * 0.7, config.speed, 1080);
+    const targetSpeed = clamp((ball.speed || config.speed) + 8 + game.level * 0.55, config.speed, 1080);
     ball.speed = targetSpeed;
     ball.vx = Math.sin(bounceAngle) * targetSpeed;
     ball.vy = -Math.cos(bounceAngle) * targetSpeed;
