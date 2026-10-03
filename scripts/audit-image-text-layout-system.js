@@ -147,10 +147,11 @@ async function inspect(page, targetPath, viewport) {
 
       textElements.forEach((element) => {
         const style = getComputedStyle(element);
+        const hasIntentionalLineClamp = style.webkitLineClamp && style.webkitLineClamp !== "none";
         if (element.scrollWidth > element.clientWidth + 2 && !["visible", "clip"].includes(style.overflowX)) {
           failures.push({ code: "text-clipped-x", card: cardLabel, text: element.textContent.trim().slice(0, 120), rect: roundedRect(element) });
         }
-        if (element.scrollHeight > element.clientHeight + 2 && !["visible", "clip"].includes(style.overflowY)) {
+        if (element.scrollHeight > element.clientHeight + 2 && !hasIntentionalLineClamp && !["visible", "clip"].includes(style.overflowY)) {
           failures.push({ code: "text-clipped-y", card: cardLabel, text: element.textContent.trim().slice(0, 120), rect: roundedRect(element) });
         }
       });
