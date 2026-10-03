@@ -3578,22 +3578,29 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
   padding: 28px 0 12px;
 }
 
+.news-hero > div {
+  min-width: 0;
+}
+
 .news-hero h1,
 .article-copy h1 {
   margin: 0 0 12px;
-  max-width: 900px;
-  font-size: clamp(2rem, 4.1vw, 3.65rem);
-  line-height: 1.12;
+  max-width: 820px;
+  font-size: clamp(2rem, 3.7vw, 3.25rem);
+  line-height: 1.15;
   letter-spacing: 0;
   overflow-wrap: anywhere;
+  text-wrap: balance;
 }
 
 .news-hero p:not(.kicker),
 .article-dek {
   margin: 0;
+  max-width: 860px;
   color: var(--muted);
   font-size: 1.05rem;
   line-height: 1.55;
+  overflow-wrap: break-word;
 }
 
 .news-hero-meta {
@@ -3601,6 +3608,7 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
   justify-items: end;
   gap: 8px;
   min-width: 190px;
+  max-width: 100%;
   color: var(--muted);
   font-size: 0.86rem;
   font-weight: 850;
@@ -6485,6 +6493,12 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   border-radius: 8px;
 }
 
+.community-hero > div,
+.streamer-hero > div,
+.profile-hero > div {
+  min-width: 0;
+}
+
 .profile-hero {
   grid-template-columns: 170px minmax(0, 1fr);
   align-items: center;
@@ -6501,12 +6515,13 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
 .community-hero h1,
 .streamer-hero h1,
 .profile-hero h1 {
-  max-width: 1030px;
+  max-width: 920px;
   margin: 0 0 14px;
-  font-size: clamp(2rem, 4vw, 4rem);
-  line-height: 1.12;
+  font-size: clamp(2rem, 3.6vw, 3.35rem);
+  line-height: 1.15;
   letter-spacing: 0;
   overflow-wrap: anywhere;
+  text-wrap: balance;
 }
 
 .community-hero p:not(.kicker),
@@ -6516,6 +6531,7 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   max-width: 780px;
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.58;
+  overflow-wrap: break-word;
 }
 
 .streamer-hero-actions {
@@ -6523,6 +6539,8 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   flex-wrap: wrap;
   gap: 10px;
   justify-content: flex-end;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .streamer-hero .button.secondary {
@@ -9875,6 +9893,22 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   .console-detail-copy h1 {
     font-size: clamp(2rem, 10vw, 3.2rem);
     line-height: 1.12;
+  }
+
+  .news-hero h1,
+  .community-hero h1,
+  .streamer-hero h1,
+  .profile-hero h1 {
+    max-width: 100%;
+    font-size: clamp(1.9rem, 7.6vw, 2.8rem);
+    line-height: 1.16;
+  }
+
+  .news-hero p:not(.kicker),
+  .community-hero p:not(.kicker),
+  .streamer-hero p:not(.kicker),
+  .profile-hero p:not(.kicker) {
+    max-width: 100%;
   }
 
   .creator-application-panel {
