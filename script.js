@@ -1,6 +1,8 @@
 const searchInput = document.querySelector("#site-search");
 const storyGrid = document.querySelector("#story-grid");
 const homeLeadStory = document.querySelector("#home-lead-story");
+const pulseRail = document.querySelector("#pulse-rail");
+const homeClipRail = document.querySelector("#home-clip-rail");
 let storyCards = Array.from(document.querySelectorAll(".story-card"));
 const chips = Array.from(document.querySelectorAll("[data-category-filter]"));
 const trendList = document.querySelector(".trend-list");
@@ -11,6 +13,12 @@ const streamerVoteStorageKey = "gcx-streamer-votes-v1";
 let activeCategory = "all";
 let activeQuery = "";
 let homeStreamers = [];
+let homeLeadStoryKey = "";
+let homeLeadSlides = [];
+let homeLeadSlideIndex = 0;
+let homeLeadRotationTimer = 0;
+let homeLeadRotationPaused = false;
+const homeLeadRotationDelayMs = 6000;
 
 function normalize(value) {
   return String(value || "")
@@ -167,6 +175,123 @@ function storyHeroMediaType(story) {
   return normalize(story?.mediaType || story?.leadMediaType || story?.imageType || "screenshot") || "screenshot";
 }
 
+function canonicalContentKey(item = {}) {
+  const candidate =
+    item.id ||
+    item.slug ||
+    item.duplicateKey ||
+    item.canonicalUrl ||
+    item.articleUrl ||
+    item.externalUrl ||
+    item.watch_url ||
+    item.watchUrl ||
+    item.sourceUrl ||
+    item.url ||
+    item.title;
+  return normalize(candidate).replace(/[^a-z0-9]+/g, "-");
+}
+
+function dedupeContent(items = []) {
+  const seen = new Set();
+  return items.filter((item) => {
+    const key = canonicalContentKey(item);
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+function relativeTimeLabel(value) {
+  const timestamp = new Date(value || "").getTime();
+  if (!Number.isFinite(timestamp)) return "";
+  const seconds = Math.max(1, Math.floor((Date.now() - timestamp) / 1000));
+  if (seconds < 60) return "just now";
+  const minutes = Math.floor(seconds / 60);
+  if (minutes < 60) return `${minutes}m ago`;
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) return `${hours}h ago`;
+  const days = Math.floor(hours / 24);
+  if (days < 14) return `${days}d ago`;
+  return new Date(timestamp).toLocaleDateString(undefined, { month: "short", day: "numeric" });
+}
+
+function pulseTypeForStory(story = {}) {
+  const text = normalize([story.type, story.articleType, story.category, story.title, story.claimStatus].join(" "));
+  if (text.includes("rumor")) return "Rumor";
+  if (text.includes("update") || text.includes("updated")) return "Update";
+  if (text.includes("trailer")) return "Trailer";
+  if (text.includes("guide") || text.includes("explainer")) return "Explainer";
+  if (text.includes("review")) return "Review";
+  if (text.includes("card")) return "Cards";
+  return "News";
+}
+
+function pulseItemsFromStories(stories = []) {
+  return dedupeContent(stories)
+    .slice(0, 5)
+    .map((story, index) => ({
+      id: canonicalContentKey(story) || `story-${index}`,
+      type: pulseTypeForStory(story),
+      headline: story.title,
+      summary: storyPreviewText(story, index === 0 ? 160 : 120),
+      media: storyHeroImageUrl(story),
+      mediaAlt: storyHeroImageAlt(story, story.title),
+      source: story.sourceName || "GCX Newsroom",
+      game: story.topicCluster || story.canonicalTopic || story.category || "",
+      publishedAt: story.publishedAt || story.lastUpdated || story.lastReviewedAt,
+      link: story.articleUrl || story.externalUrl || "news.html",
+      status: story.claimStatus || story.confidence || "",
+      variant: index === 0 ? "lead" : index === 1 ? "wide" : "standard",
+    }));
+}
+
+function renderPulse(stories = []) {
+  if (!pulseRail) return;
+  const items = pulseItemsFromStories(stories);
+  if (!items.length) {
+    pulseRail.innerHTML = `<div class="index-message">Pulse will appear after stories load.</div>`;
+    return;
+  }
+
+  pulseRail.innerHTML = items
+    .map((item) => {
+      const timeLabel = relativeTimeLabel(item.publishedAt);
+      const absoluteTime = item.publishedAt ? new Date(item.publishedAt).toLocaleString() : "";
+      return `
+        <article class="pulse-card pulse-card-${escapeHtml(item.variant)}${item.media ? "" : " pulse-card-no-media"}">
+          ${
+            item.media
+              ? `<a class="pulse-media" href="${escapeHtml(item.link)}"><img src="${escapeHtml(item.media)}" alt="${escapeHtml(item.mediaAlt)}" loading="${item.variant === "lead" ? "eager" : "lazy"}" decoding="async" width="640" height="360" /></a>`
+              : ""
+          }
+          <div class="pulse-copy">
+            <div class="pulse-meta">
+              <span>${escapeHtml(item.type)}</span>
+              ${timeLabel ? `<time datetime="${escapeHtml(item.publishedAt)}" title="${escapeHtml(absoluteTime)}">${escapeHtml(timeLabel)}</time>` : ""}
+            </div>
+            <h3><a href="${escapeHtml(item.link)}">${escapeHtml(item.headline)}</a></h3>
+            <p>${escapeHtml(item.summary)}</p>
+            <div class="pulse-source">
+              <span>${escapeHtml(item.source)}</span>
+              ${item.status ? `<span>${escapeHtml(item.status)}</span>` : ""}
+            </div>
+          </div>
+        </article>
+      `;
+    })
+    .join("");
+}
+
+function streamingThumbnailUrl(item = {}) {
+  const explicit = item.thumbnail_url || item.thumbnailUrl || "";
+  const platform = normalize(item.platform);
+  const contentId = item.external_content_id || item.externalContentId || "";
+  if (platform.includes("youtube") && contentId) {
+    return `https://img.youtube.com/vi/${encodeURIComponent(contentId)}/hqdefault.jpg`;
+  }
+  return explicit;
+}
+
 function isGamingStory(story) {
   return normalize(story?.category || story?.type).includes("gaming");
 }
@@ -313,21 +438,34 @@ function renderTrendingTopics(stories = []) {
 
 function renderHomeLead(stories = []) {
   if (!homeLeadStory) return;
-  const lead = stories
+  homeLeadSlides = stories
     .filter((story) => homeLeadCandidateScore(story) >= 0)
-    .sort((a, b) => homeLeadCandidateScore(b) - homeLeadCandidateScore(a))[0];
-  if (!lead) return;
+    .sort((a, b) => homeLeadCandidateScore(b) - homeLeadCandidateScore(a))
+    .slice(0, 3);
+  homeLeadSlideIndex = 0;
+  renderHomeLeadSlide(0);
+  startHomeLeadRotation();
+}
+
+function renderHomeLeadSlide(index) {
+  if (!homeLeadStory || !homeLeadSlides.length) return;
+  const normalizedIndex = (index + homeLeadSlides.length) % homeLeadSlides.length;
+  const lead = homeLeadSlides[normalizedIndex];
+  homeLeadSlideIndex = normalizedIndex;
+  homeLeadStoryKey = canonicalContentKey(lead);
 
   const image = homeLeadStory.querySelector("img");
   const kicker = homeLeadStory.querySelector(".kicker");
   const title = homeLeadStory.querySelector("h1");
   const excerpt = homeLeadStory.querySelector(".hero-copy p:not(.kicker)");
   const link = homeLeadStory.querySelector(".button");
+  let controls = homeLeadStory.querySelector(".hero-story-dots");
 
   const displayTitle = homeLeadDisplayTitle(lead);
   homeLeadStory.dataset.title = displayTitle;
   homeLeadStory.dataset.category = homeStoryCategory(lead);
   homeLeadStory.dataset.mediaType = storyLeadMediaType(lead);
+  homeLeadStory.dataset.activeSlide = String(normalizedIndex + 1);
   applyImageCardFocalPoint(homeLeadStory, lead);
   if (image) {
     image.src = storyHeroImageUrl(lead);
@@ -341,28 +479,70 @@ function renderHomeLead(stories = []) {
     link.href = lead.articleUrl;
     link.textContent = "Read the lead";
   }
+
+  if (homeLeadSlides.length > 1 && !controls) {
+    controls = document.createElement("div");
+    controls.className = "hero-story-dots";
+    controls.setAttribute("role", "tablist");
+    controls.setAttribute("aria-label", "Featured story carousel");
+    homeLeadStory.append(controls);
+  }
+
+  if (controls) {
+    controls.hidden = homeLeadSlides.length < 2;
+    controls.innerHTML = homeLeadSlides
+      .map((story, dotIndex) => {
+        const isActive = dotIndex === normalizedIndex;
+        const label = homeLeadDisplayTitle(story);
+        return `
+          <button
+            type="button"
+            class="hero-story-dot${isActive ? " is-active" : ""}"
+            data-home-lead-slide="${dotIndex}"
+            role="tab"
+            aria-selected="${isActive ? "true" : "false"}"
+            aria-label="Show featured story ${dotIndex + 1}: ${escapeHtml(label)}"
+          >
+            <span class="sr-only">${escapeHtml(label)}</span>
+          </button>
+        `;
+      })
+      .join("");
+  }
+}
+
+function startHomeLeadRotation() {
+  window.clearInterval(homeLeadRotationTimer);
+  if (homeLeadSlides.length < 2) return;
+  if (window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches) return;
+  homeLeadRotationTimer = window.setInterval(() => {
+    if (homeLeadRotationPaused) return;
+    renderHomeLeadSlide(homeLeadSlideIndex + 1);
+  }, homeLeadRotationDelayMs);
 }
 
 function renderHomeNews(stories = []) {
   if (!storyGrid) return;
   const externalStories = stories
-    .filter((story) => !["streamer", "social"].includes(normalize(story.type)))
+    .filter((story) => !["streamer", "social"].includes(normalize(story.type)) && canonicalContentKey(story) !== homeLeadStoryKey)
     .sort((a, b) => storyImageProminenceScore(b) - storyImageProminenceScore(a));
-  const gcxStories = stories.filter((story) => ["streamer", "social"].includes(normalize(story.type)));
-  const balancedStories = [...externalStories.slice(0, 6), ...gcxStories.slice(0, 2)].slice(0, 6);
+  const gcxStories = stories.filter((story) => ["streamer", "social"].includes(normalize(story.type)) && canonicalContentKey(story) !== homeLeadStoryKey);
+  const balancedStories = dedupeContent([...externalStories.slice(0, 7), ...gcxStories.slice(0, 2)]).slice(0, 8);
 
   storyGrid.innerHTML = balancedStories
-    .map(
-      (story) => `
-        <article class="story-card" data-category="${escapeHtml(homeStoryCategory(story))}" data-title="${escapeHtml(story.title)}" data-search="${escapeHtml([story.title, story.excerpt, story.category, story.sourceName, story.type].filter(Boolean).join(" "))}">
+    .map((story, index) => {
+      const variant = index === 0 ? "story-card-large" : index === 1 ? "story-card-standard story-card-breaking" : "story-card-standard";
+      const timeLabel = relativeTimeLabel(story.publishedAt || story.lastUpdated || story.lastReviewedAt);
+      return `
+        <article class="story-card ${variant}" data-category="${escapeHtml(homeStoryCategory(story))}" data-title="${escapeHtml(story.title)}" data-search="${escapeHtml([story.title, story.excerpt, story.category, story.sourceName, story.type].filter(Boolean).join(" "))}">
           <a class="story-card-image" href="${escapeHtml(story.articleUrl)}" data-media-type="${escapeHtml(storyLeadMediaType(story))}" style="--image-card-focal-x: ${escapeHtml(normalizeFocalValue(story.heroImageFocalX ?? story.imageFocalX, "50%"))}; --image-card-focal-y: ${escapeHtml(normalizeFocalValue(story.heroImageFocalY ?? story.imageFocalY, "42%"))};">
             <img src="${escapeHtml(storyHeroImageUrl(story))}" alt="${escapeHtml(storyHeroImageAlt(story, story.title))}" data-media-type="${escapeHtml(storyLeadMediaType(story))}" loading="lazy" decoding="async" width="640" height="360" />
             ${renderOfficialMediaWarning(story)}
           </a>
           <div>
-            <p class="meta">${escapeHtml(story.category || "News")} - ${escapeHtml(story.sourceName || "GCX")}</p>
+            <p class="meta">${escapeHtml(story.category || "News")} - ${escapeHtml(story.sourceName || "GCX")}${timeLabel ? ` - ${escapeHtml(timeLabel)}` : ""}</p>
             <h3><a href="${escapeHtml(story.articleUrl)}">${escapeHtml(story.title)}</a></h3>
-            <p>${escapeHtml(storyPreviewText(story, 172))}</p>
+            <p>${escapeHtml(storyPreviewText(story, index === 0 ? 230 : 172))}</p>
             ${
               (story.sourceLinks || []).length
                 ? `<p class="story-source-note">${Number(story.sourceLinks.length).toLocaleString()} sources used</p>`
@@ -370,8 +550,8 @@ function renderHomeNews(stories = []) {
             }
           </div>
         </article>
-      `
-    )
+      `;
+    })
     .join("");
   applyFilters();
 }
@@ -383,6 +563,7 @@ async function loadHomeNews() {
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || "News could not be loaded.");
     renderHomeLead(result.data || []);
+    renderPulse(result.data || []);
     renderHomeNews(result.data || []);
     renderTrendingTopics(result.data || []);
     if (activeQuery) {
@@ -391,6 +572,40 @@ async function loadHomeNews() {
   } catch (error) {
     storyGrid.innerHTML = `<div class="index-message">Top stories could not be loaded. Make sure the local server is running.</div>`;
   }
+}
+
+function renderHomeClips(items = []) {
+  if (!homeClipRail) return;
+  const clips = dedupeContent(items)
+    .filter((item) => streamingThumbnailUrl(item))
+    .slice(0, 8);
+
+  if (!clips.length) {
+    homeClipRail.innerHTML = `<div class="index-message">Clip picks will appear after the creator hub loads.</div>`;
+    return;
+  }
+
+  homeClipRail.innerHTML = clips
+    .map((clip) => {
+      const watchUrl = clip.watch_url || clip.watchUrl || clip.url || "streamers.html";
+      const thumbnail = streamingThumbnailUrl(clip);
+      const status = clip.is_live ? "Live" : clip.status || clip.category || "Watch";
+      const source = clip.source || clip.platform || "Creator source";
+      return `
+        <article class="clip-card">
+          <a class="clip-thumb" href="${escapeHtml(watchUrl)}" target="${/^https?:\/\//i.test(watchUrl) ? "_blank" : "_self"}" rel="noopener">
+            <img src="${escapeHtml(thumbnail)}" alt="${escapeHtml(clip.title || "GCX clip pick")}" loading="lazy" decoding="async" width="480" height="270" />
+            <span>${escapeHtml(status)}</span>
+          </a>
+          <div>
+            <p class="meta">${escapeHtml(clip.platform || "Video")} - Via ${escapeHtml(source)}</p>
+            <h3><a href="${escapeHtml(watchUrl)}" target="${/^https?:\/\//i.test(watchUrl) ? "_blank" : "_self"}" rel="noopener">${escapeHtml(clip.title || "Open clip")}</a></h3>
+            <p>${escapeHtml([clip.creator, clip.game].filter(Boolean).join(" - ") || clip.editorial_reason || "GCX watch pick")}</p>
+          </div>
+        </article>
+      `;
+    })
+    .join("");
 }
 
 chips.forEach((chip) => {
@@ -409,6 +624,29 @@ trendList?.addEventListener("click", (event) => {
   applyFilters();
   updateSearchUrl();
   document.querySelector("#news")?.scrollIntoView({ behavior: "smooth" });
+});
+
+homeLeadStory?.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-home-lead-slide]");
+  if (!button) return;
+  renderHomeLeadSlide(Number(button.dataset.homeLeadSlide || 0));
+  startHomeLeadRotation();
+});
+
+homeLeadStory?.addEventListener("mouseenter", () => {
+  homeLeadRotationPaused = true;
+});
+
+homeLeadStory?.addEventListener("mouseleave", () => {
+  homeLeadRotationPaused = false;
+});
+
+homeLeadStory?.addEventListener("focusin", () => {
+  homeLeadRotationPaused = true;
+});
+
+homeLeadStory?.addEventListener("focusout", () => {
+  homeLeadRotationPaused = false;
 });
 
 searchInput?.addEventListener("input", (event) => {
@@ -594,8 +832,10 @@ async function loadHomeStreamers() {
       .sort((a, b) => Number(a.spotlightOrder || 99) - Number(b.spotlightOrder || 99) || Number(b.weeklyVotes || b.votes || 0) - Number(a.weeklyVotes || a.votes || 0))
       .slice(0, 3);
     renderHomeStreamers(result.campaign || {});
+    renderHomeClips(result.streamingSpotlight || []);
   } catch (error) {
     homeStreamerGrid.innerHTML = `<div class="index-message">Streamer voting could not be loaded.</div>`;
+    renderHomeClips([]);
   }
 }
 
