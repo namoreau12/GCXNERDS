@@ -1326,23 +1326,23 @@
     "editorialStatus": "ready-for-publish",
     "storyLifecycleState": "ready-for-publish",
     "qaScore": 91,
-    "deepResearchUsed": false,
-    "livingArticle": false,
+    "deepResearchUsed": true,
+    "livingArticle": true,
     "updateFrequency": "Update if official source pages, trailer embeds, launch details, screenshots, or post-launch patch details change.",
-    "title": "Minecraft Live Is This Saturday - Here's the Time, Where to Watch, and What Mojang Is Teasing",
-    "seoTitle": "Minecraft Live 2026: Time, How to Watch, and What to Expect",
-    "excerpt": "Minecraft Live returns Saturday, September 26 at 1 PM ET. Here's how to watch, what Mojang has officially confirmed, and what we are watching for during the showcase.",
-    "metaDescription": "Minecraft Live returns Saturday, September 26 at 1 PM ET. Here's how to watch, what Mojang has officially confirmed, and what GCX is watching for during the latest Minecraft showcase.",
+    "title": "Minecraft Live September 2026 Recap: The Sift, Dungeons II, Switch 2, and What Comes Next",
+    "seoTitle": "Minecraft Live September 2026 Recap: The Sift, Dungeons II, and More",
+    "excerpt": "Minecraft Live has wrapped, and Mojang used the September 2026 show to spotlight The Sift, Minecraft Dungeons II, Minecraft World, Switch 2, and new community goals.",
+    "metaDescription": "Minecraft Live September 2026 recap: The Sift, Minecraft Dungeons II, Minecraft World, Switch 2 support, and the Minecraft updates GCX is watching next.",
     "category": "Gaming",
-    "articleType": "Event Preview / Living Hub",
+    "articleType": "Event Recap / Living Hub",
     "publishedAt": "2026-09-24T11:00:00.000-04:00",
-    "lastUpdated": "2026-09-24",
-    "lastReviewedAt": "2026-09-24",
+    "lastUpdated": "2026-10-03",
+    "lastReviewedAt": "2026-10-03",
     "opportunityScore": 91,
     "topicCluster": "Minecraft Live September 2026",
     "canonicalTopic": "Minecraft Live",
-    "targetSearchIntent": "Minecraft Live September 2026 time, how to watch Minecraft Live, Minecraft Live 1 PM ET",
-    "updatePolicy": "Preserve this URL and update it into a live recap or reveal tracker when Mojang's September 26 showcase begins.",
+    "targetSearchIntent": "Minecraft Live September 2026 recap, The Sift Minecraft, Minecraft Dungeons II launch, Minecraft Switch 2 date",
+    "updatePolicy": "Preserve this URL and update it when Mojang publishes deeper Sift details, Minecraft Dungeons II post-launch notes, Switch 2 edition details, or follow-up Minecraft Live announcements.",
     "claimStatus": "Official / GCX Analysis",
     "confidence": "Official / GCX Analysis",
     "heroImage": "/api/image-proxy?url=https%3A%2F%2Fwww.minecraft.net%2Fcontent%2Fdam%2Fminecraftnet%2Fgames%2Fminecraft%2Fkey-art%2FMCL-Twitch-26_Social-Share_570x321.png",
@@ -1352,7 +1352,7 @@
     "heroImageAlt": "Official artwork for Minecraft Live 2026 promoting the September 26 livestream.",
     "heroImageFocalX": "50%",
     "heroImageFocalY": "50%",
-    "trailerUrl": "https://www.minecraft.net/en-us/live",
+    "trailerUrl": "https://www.minecraft.net/en-us/article/mclive_sept2026_recap",
     "mediaType": "promotional-art",
     "imageUrl": "/api/image-proxy?url=https%3A%2F%2Fwww.minecraft.net%2Fcontent%2Fdam%2Fminecraftnet%2Fgames%2Fminecraft%2Fkey-art%2FMCL-Twitch-26_Social-Share_570x321.png",
     "imageCredit": "Mojang Studios / Microsoft",
@@ -1375,105 +1375,137 @@
     ],
     "sourceLinks": [
       {
+        "label": "Minecraft Live September 2026 official recap",
+        "url": "https://www.minecraft.net/en-us/article/mclive_sept2026_recap"
+      },
+      {
         "label": "Official Minecraft Live hub and FAQ",
         "url": "https://www.minecraft.net/en-us/live"
+      },
+      {
+        "label": "Minecraft Dungeons II launch article",
+        "url": "https://www.minecraft.net/en-us/article/minecraft-dungeons-ii-is-live"
+      },
+      {
+        "label": "Xbox Wire: Minecraft Live returns this Saturday",
+        "url": "https://news.xbox.com/en-us/2026/09/24/minecraft-live-returns-this-saturday/"
       }
     ],
     "media": [
       {
-        "id": "minecraft-live-hero-cape-official-art",
+        "id": "minecraft-live-september-2026-recap-official-art",
         "mediaType": "image",
-        "afterHeading": "The Hero Cape Is Part of the Current Push",
+        "afterHeading": "The Biggest Reveals",
         "source": "Mojang Studios / Microsoft",
-        "sourceUrl": "https://www.minecraft.net/en-us/live",
-        "imageUrl": "/api/image-proxy?url=https%3A%2F%2Fwww.minecraft.net%2Fcontent%2Fdam%2Fminecraftnet%2Fgames%2Fspicewood%2Fkey-art%2FDungeons-I_Media-Block-B_Hero-Cape_888x500.png",
-        "caption": "Official Hero Cape promotional image from the Minecraft Live page.",
+        "sourceUrl": "https://www.minecraft.net/en-us/article/mclive_sept2026_recap",
+        "imageUrl": "/api/image-proxy?url=https%3A%2F%2Fwww.minecraft.net%2Fcontent%2Fdam%2Fminecraftnet%2Fgames%2Fminecraft%2Fkey-art%2FMCL-Twitch-26_Social-Share_570x321.png",
+        "caption": "Official Minecraft Live September 2026 artwork from Mojang Studios.",
         "credit": "Mojang Studios / Microsoft",
-        "altText": "Official Minecraft Hero Cape promotional image.",
+        "altText": "Official Minecraft Live September 2026 artwork.",
         "rightsStatus": "press-asset"
       },
       {
-        "id": "minecraft-live-wilderness-bound-official-art",
-        "mediaType": "image",
-        "afterHeading": "Wilderness Bound Is Already Live",
-        "source": "Mojang Studios / Microsoft",
-        "sourceUrl": "https://www.minecraft.net/en-us/live",
-        "imageUrl": "/api/image-proxy?url=https%3A%2F%2Fwww.minecraft.net%2Fcontent%2Fdam%2Fminecraftnet%2Fgames%2Fminecraft%2Fkey-art%2FMCL-Fall-26_Media-Block-B_FGD-25_888x540.jpg",
-        "caption": "Official Minecraft Live page artwork tied to the current Wilderness Bound game drop.",
-        "credit": "Mojang Studios / Microsoft",
-        "altText": "Official Minecraft Wilderness Bound promotional artwork.",
-        "rightsStatus": "press-asset"
-      },
-      {
-        "id": "minecraft-live-stream-source-note",
+        "id": "minecraft-dungeons-ii-sift-official-art",
         "mediaType": "rights-note",
-        "afterHeading": "How to Watch",
-        "source": "Minecraft.net",
-        "sourceUrl": "https://www.minecraft.net/en-us/live",
-        "caption": "Games Exchange links the official Minecraft Live hub until Mojang publishes or exposes the exact approved YouTube livestream embed for this event.",
+        "afterHeading": "Why The Sift Matters",
+        "source": "Mojang Studios / Microsoft",
+        "sourceUrl": "https://www.minecraft.net/en-us/article/minecraft-dungeons-ii-is-live",
+        "caption": "Mojang is positioning The Sift as a new Minecraft Dungeons II destination and a future Minecraft Java and Bedrock dimension.",
         "rightsStatus": "source-link-only"
       },
       {
-        "id": "minecraft-live-more-official-media-needed",
+        "id": "minecraft-dungeons-ii-launch-official-header",
+        "mediaType": "image",
+        "afterHeading": "Dungeons II Is the Immediate Follow-Through",
+        "source": "Mojang Studios / Microsoft",
+        "sourceUrl": "https://www.minecraft.net/en-us/article/minecraft-dungeons-ii-is-live",
+        "imageUrl": "/api/image-proxy?url=https%3A%2F%2Fwww.minecraft.net%2Fcontent%2Fdam%2Fminecraftnet%2Fgames%2Fspicewood%2Fkey-art%2Fdungeons2launch_header.jpg",
+        "caption": "Official Minecraft Dungeons II launch artwork from Mojang Studios.",
+        "credit": "Mojang Studios / Microsoft",
+        "altText": "Official Minecraft Dungeons II launch artwork showing heroes charging into battle.",
+        "rightsStatus": "press-asset"
+      },
+      {
+        "id": "minecraft-live-official-source-note",
         "mediaType": "rights-note",
-        "afterHeading": "What Mojang Has Confirmed",
-        "source": "GCX media review",
-        "sourceUrl": "https://www.minecraft.net/en-us/live",
-        "caption": "The article will add the exact official YouTube livestream embed once Mojang publishes or exposes the approved player URL.",
+        "afterHeading": "What Comes Next",
+        "source": "Minecraft.net",
+        "sourceUrl": "https://www.minecraft.net/en-us/article/mclive_sept2026_recap",
+        "caption": "Games Exchange is using Mojang's written recap and official live hub as the source of record for the September 2026 Minecraft Live updates.",
         "rightsStatus": "source-link-only"
       }
     ],
     "body": [
-      "Minecraft Live returns this Saturday, September 26, and Mojang is once again using the livestream format to deliver updates, creators, and news from across the wider Minecraft ecosystem.",
-      "The next show is scheduled for **1 PM ET / 10 AM PT**, and Mojang's official Minecraft Live hub says viewers can watch on Minecraft.net/live, YouTube, and Twitch.",
-      "## How to Watch",
-      "**Date:** Saturday, September 26, 2026\n**Time:** 1 PM ET / 10 AM PT\n**Where:** Minecraft.net/live, YouTube, and Twitch\n**Expected length:** about 30 to 60 minutes",
-      "## What Mojang Has Confirmed",
-      "Mojang describes Minecraft Live as a virtual event with news about Minecraft games, content creators, updates, and more.",
-      "The official FAQ also says the show typically runs between thirty minutes and one hour, depending on how much there is to share.",
+      "Minecraft Live September 2026 is no longer a future showcase. Mojang has published the official recap, and the event gave the Minecraft ecosystem one of its biggest directional signals in years: **The Sift** is coming to Minecraft after launching first through Minecraft Dungeons II.",
+      "The show also touched Minecraft World, creator tools, Minecraft Education, Minecraft on Nintendo Switch 2, and a new community challenge, but the heart of the broadcast was clear. Mojang wants the Minecraft universe to feel connected across vanilla Minecraft, Dungeons II, live events, creator play, and real-world experiences.",
+      "## The Biggest Reveals",
       {
         "type": "table",
-        "caption": "Minecraft Live quick facts from Mojang's official hub.",
+        "caption": "Minecraft Live September 2026 recap highlights.",
         "headers": [
-          "Item",
-          "Official status",
-          "Why it matters"
+          "Reveal",
+          "What Mojang said",
+          "Why GCX readers should care"
         ],
         "rows": [
           [
-            "Date and time",
-            "September 26, 2026 at 1 PM ET",
-            "Readers can plan around the actual showcase window."
+            "The Sift",
+            "A new dimension appears in Minecraft Dungeons II and is planned for Minecraft Java and Bedrock next year.",
+            "A fourth Minecraft dimension is a rare franchise-level moment, not just another feature drop."
           ],
           [
-            "Watch locations",
-            "Minecraft.net/live, YouTube, Twitch",
-            "The article can add an embed once Mojang publishes the approved stream."
+            "Minecraft Dungeons II",
+            "The sequel launched September 29, 2026 with an interconnected world, rifts, new enemies, loot, and co-op play.",
+            "It turns the event from a showcase into an immediate buying and Game Pass watch point."
           ],
           [
-            "Show length",
-            "About 30 to 60 minutes",
-            "Sets expectations without overselling a marathon showcase."
+            "Nintendo Switch 2",
+            "Minecraft is coming to Nintendo Switch 2 on October 27.",
+            "Collectors and platform players now have a concrete date to watch for edition details and upgrade messaging."
           ],
           [
-            "Next update",
-            "Tune in to find out",
-            "Mojang is teasing update news without naming the feature yet."
+            "Community goals",
+            "Mojang highlighted massive placement goals for straw beds and cushions around the Overworld.",
+            "It keeps the event tied to participatory Minecraft culture rather than only trailers."
           ]
         ]
       },
-      "## The Hero Cape Is Part of the Current Push",
-      "One concrete promotion tied to the current Minecraft Live page is the **Hero Cape**.",
-      "Mojang says players who use the same Microsoft account to play Minecraft Dungeons I and Minecraft Dungeons II can qualify for the cape in Minecraft Dungeons II and in Minecraft: Java Edition and Bedrock Edition.",
-      "## Wilderness Bound Is Already Live",
-      "The Minecraft Live hub also highlights **Wilderness Bound**, the current game drop available now in Minecraft.",
-      "That gives the event immediate context: Mojang is not just promoting a future show, it is using the page to connect current content with whatever comes next.",
-      "## What We're Watching",
-      "* the next update reveal\n* any Minecraft Dungeons II visibility tied to the Hero Cape push\n* creator and community segments\n* anything that clarifies Mojang's roadmap for the next few months",
-      "## What Not to Present as Confirmed",
-      "Games Exchange does not present a specific biome, expansion, surprise spin-off, platform change, or release date as confirmed unless Mojang says it directly.",
-      "## Latest Update - September 24, 2026",
-      "Mojang's official Minecraft Live hub confirms the September 26 timing, watch locations, Hero Cape promotion, and Wilderness Bound context."
+      "## Why The Sift Matters",
+      "The Sift is the headline because Mojang describes it as the first new Minecraft dimension in more than fourteen years. That places it beside the Overworld, Nether, and End as a major world-building addition rather than a seasonal cosmetic beat.",
+      "There is one important distinction: players can experience The Sift immediately through Minecraft Dungeons II, while the main Minecraft Java and Bedrock version is planned for next year. That staggered rollout gives Dungeons II a stronger reason to exist in the broader Minecraft ecosystem and gives vanilla players a long runway of speculation, snapshots, and feature expectations.",
+      "## Dungeons II Is the Immediate Follow-Through",
+      "Mojang followed the showcase by launching Minecraft Dungeons II on September 29 for Steam, Xbox Series X|S, PlayStation 5, Nintendo Switch, Nintendo Switch 2, Xbox on PC, and Game Pass. The official launch article frames the game around the Illager High Council, rifts across the Overworld, co-op combat, loot, talismans, artifacts, and the Sift itself.",
+      "That matters for Games Exchange because this is where the showcase becomes useful for readers. If someone watched Minecraft Live for the main game, Dungeons II is now the playable bridge to the future dimension Mojang just teased.",
+      "## What Changed Since the Preview",
+      {
+        "type": "table",
+        "caption": "How this article changed after the event.",
+        "headers": [
+          "Before the show",
+          "After the show"
+        ],
+        "rows": [
+          [
+            "The article focused on time, watch locations, and official expectations.",
+            "It now tracks the official recap, major reveals, and post-show follow-through."
+          ],
+          [
+            "The Hero Cape and Wilderness Bound were the clearest official page hooks.",
+            "The Sift, Dungeons II, Switch 2, and community goals are now the durable news hooks."
+          ],
+          [
+            "Mojang had not yet named the next big reveal in the preview source list.",
+            "Mojang has now confirmed the new dimension and published a written recap."
+          ]
+        ]
+      },
+      "## What Comes Next",
+      "The biggest watch item is how Mojang translates The Sift from Dungeons II into Minecraft Java and Bedrock. The official recap says it is coming next year, but it does not yet lock down a release window, snapshot cadence, full mob list, building rules, survival progression, or how the new dimension connects to existing late-game Minecraft systems.",
+      "We are also watching the Switch 2 version for edition details, performance claims, physical release signals, and whether Microsoft uses Minecraft as a bigger cross-platform showcase on Nintendo hardware.",
+      "## What Not to Overstate",
+      "Games Exchange is not treating every social theory around an End overhaul, new boss, or full progression rewrite as confirmed. The official news is already big enough: The Sift exists, Dungeons II is live, and mainline Minecraft is getting its first new dimension in over a decade.",
+      "## Latest Update - October 3, 2026",
+      "GCX converted this page from a pre-show watch guide into a post-show recap using Mojang's official September 2026 recap, the Minecraft Live hub, the Minecraft Dungeons II launch article, and Xbox Wire's event notice."
     ],
     "editorialOwner": "GCX Newsroom"
   },
