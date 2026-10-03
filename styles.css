@@ -11397,22 +11397,6 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   box-shadow: var(--shadow-soft);
 }
 
-.arcade-control-row {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-}
-
-.arcade-control-row .button {
-  width: 100%;
-  min-height: 42px;
-}
-
-.arcade-control-row .button.is-muted {
-  color: var(--muted);
-  background: var(--paper);
-}
-
 .arcade-score-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -11579,6 +11563,47 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   font-weight: 850;
 }
 
+.arcade-floating-controls {
+  position: fixed;
+  right: clamp(12px, 2vw, 22px);
+  bottom: clamp(12px, 2vw, 22px);
+  z-index: 30;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+  max-width: min(92vw, 360px);
+  padding: 8px;
+  background: rgba(247, 244, 237, 0.86);
+  border: 1px solid rgba(17, 18, 23, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(17, 18, 23, 0.16);
+  backdrop-filter: blur(12px);
+}
+
+.arcade-floating-controls button {
+  min-height: 32px;
+  padding: 7px 10px;
+  color: var(--ink);
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.arcade-floating-controls button:hover {
+  border-color: var(--ink);
+}
+
+.arcade-floating-controls button.is-muted {
+  color: var(--muted);
+  background: var(--paper);
+}
+
 .is-arcade-maximized {
   overflow-x: hidden;
 }
@@ -11648,8 +11673,9 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
     grid-column: 2;
   }
 
-  .arcade-control-row {
-    grid-template-columns: 1fr;
+  .arcade-floating-controls {
+    right: 10px;
+    bottom: 10px;
   }
 
   .is-arcade-maximized #gcx-rally-canvas {

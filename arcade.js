@@ -195,7 +195,7 @@ function setArcadeMaximized(isMaximized) {
   document.body.classList.toggle("is-arcade-maximized", isMaximized);
   localStorage.setItem(maximizeStorageKey, isMaximized ? "true" : "false");
   if (maximizeToggle) {
-    maximizeToggle.textContent = isMaximized ? "Restore game" : "Maximize game";
+    maximizeToggle.textContent = isMaximized ? "Restore" : "Maximize";
     maximizeToggle.setAttribute("aria-pressed", isMaximized ? "true" : "false");
   }
 }
