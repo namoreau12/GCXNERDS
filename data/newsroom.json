@@ -352,17 +352,17 @@
     "type": "editorial",
     "editorialStatus": "ready-for-publish",
     "storyLifecycleState": "ready-for-publish",
-    "deepResearchUsed": false,
-    "livingArticle": false,
-    "lastUpdated": "2026-10-02",
-    "lastReviewedAt": "2026-10-02",
+    "deepResearchUsed": true,
+    "livingArticle": true,
+    "lastUpdated": "2026-10-03",
+    "lastReviewedAt": "2026-10-03",
     "editorialOwner": "GCX Newsroom",
     "id": "gcx-newsroom-pokemon-30th-celebration-booster-bundles-mini-tins-october-2",
     "slug": "pokemon-30th-celebration-booster-bundles-mini-tins-october-2",
-    "title": "Pokemon 30th Celebration Booster Bundles and Mini Tins Are Finally Here - Here's What's Inside",
-    "seoTitle": "Pokemon 30th Celebration Booster Bundles, Mini Tins, and More Launch Today",
-    "excerpt": "The October 2 Pokemon TCG wave adds 30th Celebration Booster Bundles, Mini Tins, Enhanced 2-Pack Blisters, and Mini Portfolios.",
-    "metaDescription": "Pokemon TCG: 30th Celebration Booster Bundles, Mini Tins, Enhanced 2-Pack Blisters, and Mini Portfolios launch on October 2. Here is what each product includes.",
+    "title": "Pokemon 30th Celebration Booster Bundles and Mini Tins Are Live - What's Inside and What to Watch",
+    "seoTitle": "Pokemon 30th Celebration Booster Bundles and Mini Tins: October 2026 Launch Hub",
+    "excerpt": "Pokemon TCG: 30th Celebration Booster Bundles and Mini Tins are live in the October wave, with six-pack bundles, ten tin designs, and fresh collector questions around availability.",
+    "metaDescription": "Pokemon TCG: 30th Celebration Booster Bundles, Mini Tins, Enhanced 2-Pack Blisters, and Mini Portfolios are live in October 2026. Here is what each product includes and what collectors should watch.",
     "category": "Cards",
     "articleType": "Major News / Product Hub",
     "publishedAt": "2026-10-02T20:40:00.000-04:00",
@@ -370,9 +370,9 @@
     "opportunityScore": 94,
     "topicCluster": "Pokemon TCG: 30th Celebration",
     "canonicalTopic": "Pokemon TCG 30th Celebration October 2 products",
-    "targetSearchIntent": "Pokemon 30th Celebration Booster Bundle, Pokemon 30th Celebration Mini Tin, Enhanced 2-Pack Blister, Mini Portfolio October 2",
+    "targetSearchIntent": "Pokemon 30th Celebration Booster Bundle contents, Pokemon 30th Celebration Mini Tin contents, October 2026 Pokemon TCG products, Pokemon Center preorder dates",
     "updateFrequency": "Update if Pokemon publishes more official product images, MSRP details, sellout notes, or restock guidance.",
-    "updatePolicy": "Preserve this URL as the October 2 30th Celebration product hub.",
+    "updatePolicy": "Preserve this URL as the October 2 30th Celebration product hub and update it if Pokemon Center changes shipping estimates, Pokemon publishes restock guidance, or official MSRP/product contents change.",
     "claimStatus": "Official Pokemon product pages / GCX collector hub",
     "confidence": "Official Pokemon product pages / GCX collector hub",
     "heroImage": "https://mcdn.pokemon.com/pokemon-prod/image/upload/c_limit,w_1920/f_auto/v1/live/pcom-cms/static-assets/cms3/us/img/trading-card-game/tiles/2026/product-showcase/10/product-showcase-169-en.png",
@@ -411,6 +411,14 @@
       {
         "label": "Pokemon TCG: 30th Celebration product showcase",
         "url": "https://www.pokemon.com/us/news/pokemon-tcg-30th-celebration-product-showcase"
+      },
+      {
+        "label": "Pokemon Center estimated preorder release dates",
+        "url": "https://support.pokemoncenter.com/hc/en-us/articles/4407702295572-Estimated-Preorder-Release-Dates"
+      },
+      {
+        "label": "Pokemon TCG: 30th Celebration expansion is available now",
+        "url": "https://www.pokemon.com/us/news/the-pokemon-tcg-30th-celebration-expansion-is-available-now"
       }
     ],
     "media": [
@@ -463,9 +471,10 @@
       }
     ],
     "body": [
-      "The next big wave of **Pokemon TCG: 30th Celebration** products launches today, **October 2**, giving collectors several new ways to open the anniversary set.",
-      "The lineup includes the Booster Bundle, Mini Tins, Enhanced 2-Pack Blister, and Mini Portfolio. For collectors, the biggest hook is simple: this wave is practical. It is built around pack access, collectible tins, and shelf-friendly accessories.",
-      "## What's Inside Each Product",
+      "The October wave of **Pokemon TCG: 30th Celebration** products is live, and it gives collectors several new ways to open or display the anniversary set without jumping straight to the biggest boxed products.",
+      "The headliners are the **Booster Bundle** and **Mini Tins**, but the October 2 lineup also includes the Enhanced 2-Pack Blister and Mini Portfolio. The practical question is not only what comes in each product. It is which one actually fits what a collector is trying to do: open packs, chase promos, build a display row, or keep sealed product clean for later.",
+      "Pokemon has also framed 30th Celebration as a set built around anniversary nostalgia, Mewtwo ex and Mew ex, popular allies, and 30 Pikachu rare cards, so the October products are not isolated accessories. They are another way into the core anniversary chase.",
+      "## What Is Live in the October Wave",
       {
         "type": "table",
         "caption": "Official Pokemon product pages list the core contents for the October 2 wave.",
@@ -498,18 +507,57 @@
         ]
       },
       "## Booster Bundle",
-      "The **Booster Bundle** is the straightforward one: six 30th Celebration booster packs and no extra ceremony. If you want packs more than accessories, this is the cleanest product in the wave.",
+      "The **Booster Bundle** is the cleanest pack-opening product in this wave: six 30th Celebration booster packs and no extra accessories to price into the decision. If your goal is simply to open the anniversary set, this is the easiest product to compare against any other sealed option.",
+      "That also means it may be one of the first products buyers use to judge real demand. If Booster Bundles disappear faster than accessory-heavy products, that usually says collectors are valuing pack access over shelf extras.",
       "## Mini Tins",
-      "The **Mini Tins** are the visual star. Pokemon says there are **10 different designs**, and the artwork can be combined to form two large images: one day-themed and one night-themed.",
-      "Each tin includes two 30th Celebration booster packs, a sticker sheet, and a Pokemon art card matching the tin design.",
+      "The **Mini Tins** are the visual star of the October 2 wave. Pokemon says there are **10 different designs**, and the artwork can be combined to form two large images: one day-themed and one night-themed.",
+      "Each tin includes two 30th Celebration booster packs, a sticker sheet, and a Pokemon art card matching the tin design. That makes the Mini Tin line a hybrid product: part pack purchase, part display chase, part low-cost sealed collectible.",
       "## Enhanced 2-Pack Blister",
       "The Enhanced 2-Pack Blister adds a foil promo card and coin to the two-pack format. Pokemon's October product page highlights Gengar, Marshadow, and Team Rocket's Mimikyu as featured foil-card possibilities.",
+      "This is the product to watch if promo demand starts driving prices separately from pack demand. A blister can look modest on release day, then become the thing collectors remember if one of its featured cards becomes the chase.",
       "## Mini Portfolio",
-      "The Mini Portfolio is the small binder option. It comes with one booster pack and gives collectors an easy place to start storing favorite pulls from the anniversary set.",
+      "The Mini Portfolio is the small binder option. It comes with one booster pack and gives newer collectors an easy place to start storing favorite pulls from the anniversary set.",
+      "It is not the most pack-efficient product, but it has a clear audience: younger collectors, gift buyers, and anyone who wants a low-friction accessory rather than another box for the sealed pile.",
+      "## Which Product Fits Which Collector?",
+      {
+        "type": "table",
+        "caption": "GCX collector read on the October 2 products.",
+        "headers": [
+          "Collector goal",
+          "Best fit",
+          "Reason to be careful"
+        ],
+        "rows": [
+          [
+            "Open the most packs with the least clutter",
+            "Booster Bundle",
+            "Demand may be highest because the value is easy to understand."
+          ],
+          [
+            "Build a display set",
+            "Mini Tins",
+            "There are ten designs, so singles can become unevenly available."
+          ],
+          [
+            "Chase promos while still opening packs",
+            "Enhanced 2-Pack Blister",
+            "Promo interest can make some variants harder to find than others."
+          ],
+          [
+            "Give a simple starter product",
+            "Mini Portfolio",
+            "Pack count is low, so the binder/accessory has to matter to the buyer."
+          ]
+        ]
+      },
+      "## Availability Notes",
+      "Pokemon's official October product roundup lists the Booster Bundle and Mini Tin as October 2 releases. Pokemon Center support also lists 30th Celebration Booster Bundles and Mini Tins in its estimated preorder release-date table, with US, Canada, and UK timing shown around early October or late October depending on the listing group.",
+      "That is why GCX is treating this as a living product hub rather than a one-and-done announcement. The contents are official, but availability can change by retailer, region, allocation, and restock timing.",
       "## What We Know",
-      "* the products launch October 2, 2026\n* Booster Bundles include 6 packs\n* Mini Tins come in 10 designs\n* each Mini Tin includes 2 packs, stickers, and an art card\n* Enhanced 2-Pack Blisters include 2 packs, a foil promo, and a coin\n* Mini Portfolios include 1 pack and a mini binder",
+      "* the products launch in the October 2026 wave\n* Booster Bundles include 6 packs\n* Mini Tins come in 10 designs\n* each Mini Tin includes 2 packs, stickers, and an art card\n* Enhanced 2-Pack Blisters include 2 packs, a foil promo, and a coin\n* Mini Portfolios include 1 pack and a mini binder\n* Pokemon Center lists Booster Bundles and Mini Tins in its preorder release-date support table",
       "## GCX Takeaway",
-      "This is the most collector-friendly 30th Celebration wave so far because each product has a clear job. Booster Bundles are for opening packs, Mini Tins are for display and set building, Blisters add promo value, and Mini Portfolios give newer collectors a simple place to keep the cards they pull."
+      "This is the most collector-friendly 30th Celebration wave so far because each product has a clear job. Booster Bundles are for opening packs, Mini Tins are for display and set building, Blisters add promo value, and Mini Portfolios give newer collectors a simple place to keep the cards they pull.",
+      "The best version of this page is not just a product list. It should keep helping readers decide what to buy, what to open, and what to watch as official availability and retailer stock settle after launch."
     ]
   },
   {
