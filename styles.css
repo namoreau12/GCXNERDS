@@ -5464,6 +5464,14 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   background: white;
 }
 
+.form-hint {
+  margin: -4px 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 760;
+  line-height: 1.4;
+}
+
 .social-auth {
   display: grid;
   gap: 8px;

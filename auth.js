@@ -37,6 +37,23 @@ function refreshToken() {
   return localStorage.getItem(refreshStorageKey) || "";
 }
 
+function passwordStrengthError(password, email = "", displayName = "") {
+  const value = String(password || "");
+  if (value.length < 12) return "Password must be at least 12 characters.";
+  if (value.length > 128) return "Password must be 128 characters or fewer.";
+  if (/\s{2,}/.test(value)) return "Password cannot contain repeated spaces.";
+  const classes = [/[a-z]/, /[A-Z]/, /\d/, /[^A-Za-z0-9]/].filter((pattern) => pattern.test(value)).length;
+  if (classes < 3) return "Password must mix at least 3 of these: uppercase, lowercase, numbers, and symbols.";
+  const lowered = value.toLowerCase();
+  const emailName = String(email || "").split("@")[0].toLowerCase();
+  if (emailName.length >= 4 && lowered.includes(emailName)) return "Password cannot include the email name.";
+  const nameParts = String(displayName || "").toLowerCase().split(/[^a-z0-9]+/).filter((part) => part.length >= 4);
+  if (nameParts.some((part) => lowered.includes(part))) return "Password cannot include your display name.";
+  const common = ["password", "letmein", "qwerty", "dragon", "pokemon", "charizard", "nintendo", "playstation", "xbox", "gcxnerds"];
+  if (common.some((term) => lowered.includes(term))) return "Password is too easy to guess.";
+  return "";
+}
+
 function storedSessionIsStale(now = Date.now()) {
   const hasStoredToken = Boolean(localStorage.getItem(sessionStorageKey) || localStorage.getItem(refreshStorageKey));
   if (!hasStoredToken) return false;
@@ -160,6 +177,14 @@ async function submitAuthForm(form, endpoint, statusNode) {
     form.querySelector('input[name="confirmPassword"]')?.focus();
     return;
   }
+  if (endpoint === "signup") {
+    const passwordError = passwordStrengthError(data.password, data.email, data.displayName);
+    if (passwordError) {
+      statusNode.textContent = passwordError;
+      form.querySelector('input[name="password"]')?.focus();
+      return;
+    }
+  }
   delete data.confirmPassword;
   try {
     const response = await fetch(`/api/auth/${endpoint}`, {
@@ -215,6 +240,12 @@ resetPasswordForm?.addEventListener("submit", async (event) => {
   if (data.password !== data.confirmPassword) {
     resetPasswordStatus.textContent = "Passwords do not match.";
     resetPasswordForm.querySelector('input[name="confirmPassword"]')?.focus();
+    return;
+  }
+  const passwordError = passwordStrengthError(data.password);
+  if (passwordError) {
+    resetPasswordStatus.textContent = passwordError;
+    resetPasswordForm.querySelector('input[name="password"]')?.focus();
     return;
   }
 

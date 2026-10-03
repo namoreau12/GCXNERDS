@@ -101,14 +101,15 @@
             <label>
               New password
               <span class="password-field">
-                <input name="password" type="password" minlength="8" autocomplete="new-password" required />
+                <input name="password" type="password" minlength="12" maxlength="128" autocomplete="new-password" required aria-describedby="reset-password-help" />
                 <button class="password-toggle" type="button" aria-label="Show password" title="Show password">Show</button>
               </span>
             </label>
+            <p id="reset-password-help" class="form-hint">Use at least 12 characters and mix uppercase, lowercase, numbers, and symbols.</p>
             <label>
               Verify password
               <span class="password-field">
-                <input name="confirmPassword" type="password" minlength="8" autocomplete="new-password" required />
+                <input name="confirmPassword" type="password" minlength="12" maxlength="128" autocomplete="new-password" required />
                 <button class="password-toggle" type="button" aria-label="Show password" title="Show password">Show</button>
               </span>
             </label>
@@ -130,14 +131,15 @@
             <label>
               Password
               <span class="password-field">
-                <input name="password" type="password" minlength="8" autocomplete="new-password" required />
+                <input name="password" type="password" minlength="12" maxlength="128" autocomplete="new-password" required aria-describedby="signup-password-help" />
                 <button class="password-toggle" type="button" aria-label="Show password" title="Show password">Show</button>
               </span>
             </label>
+            <p id="signup-password-help" class="form-hint">Use at least 12 characters and mix uppercase, lowercase, numbers, and symbols.</p>
             <label>
               Verify password
               <span class="password-field">
-                <input name="confirmPassword" type="password" minlength="8" autocomplete="new-password" required />
+                <input name="confirmPassword" type="password" minlength="12" maxlength="128" autocomplete="new-password" required />
                 <button class="password-toggle" type="button" aria-label="Show password" title="Show password">Show</button>
               </span>
             </label>

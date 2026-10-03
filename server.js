@@ -2242,6 +2242,45 @@ function capAccountSessions(sessions, accountId, limit = 5) {
     .map(scrubLocalSession);
 }
 
+function normalizeEmailAddress(value) {
+  return safeText(value, 254).toLowerCase();
+}
+
+function emailLooksValid(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(email || ""));
+}
+
+function validateDisplayName(value) {
+  const displayName = safeText(value, 80);
+  if (displayName.length < 2) return { ok: false, displayName, error: "Display name must be at least 2 characters." };
+  if (!/^[\p{L}\p{N}][\p{L}\p{N}\s._'-]{0,78}[\p{L}\p{N}]$/u.test(displayName)) {
+    return { ok: false, displayName, error: "Display name can use letters, numbers, spaces, periods, underscores, apostrophes, and hyphens." };
+  }
+  return { ok: true, displayName };
+}
+
+function validatePasswordStrength(password, email = "", displayName = "") {
+  const value = String(password || "");
+  if (value.length < 12) return { ok: false, error: "Password must be at least 12 characters." };
+  if (value.length > 128) return { ok: false, error: "Password must be 128 characters or fewer." };
+  if (/\s{2,}/.test(value)) return { ok: false, error: "Password cannot contain repeated spaces." };
+  const classes = [/[a-z]/, /[A-Z]/, /\d/, /[^A-Za-z0-9]/].filter((pattern) => pattern.test(value)).length;
+  if (classes < 3) return { ok: false, error: "Password must mix at least 3 of these: uppercase, lowercase, numbers, and symbols." };
+  const emailName = String(email || "").split("@")[0].toLowerCase();
+  const lowered = value.toLowerCase();
+  if (emailName && emailName.length >= 4 && lowered.includes(emailName)) return { ok: false, error: "Password cannot include the email name." };
+  const nameParts = String(displayName || "").toLowerCase().split(/[^a-z0-9]+/).filter((part) => part.length >= 4);
+  if (nameParts.some((part) => lowered.includes(part))) return { ok: false, error: "Password cannot include your display name." };
+  const common = ["password", "letmein", "qwerty", "dragon", "pokemon", "charizard", "nintendo", "playstation", "xbox", "gcxnerds"];
+  if (common.some((term) => lowered.includes(term))) return { ok: false, error: "Password is too easy to guess." };
+  return { ok: true };
+}
+
+function authEmailRateLimit(req, action, email, limit = 5, windowMs = 1000 * 60 * 30) {
+  const emailKey = normalizeEmailAddress(email).replace(/[^a-z0-9@._-]/g, "").slice(0, 120) || "unknown";
+  return rateLimit(req, `auth-${action}:${emailKey}`, limit, windowMs);
+}
+
 async function requireStaff(req, res, data, action = "perform this action") {
   const auth = await authenticatedAccount(req, data);
   if (!auth) {
@@ -2344,6 +2383,32 @@ function supabaseAccountPayload(user, profile) {
 
 function passwordHash(password, salt) {
   return crypto.createHash("sha256").update(`${salt}:${password}`).digest("hex");
+}
+
+function passwordHashV2(password, salt, iterations = 210000) {
+  return crypto.pbkdf2Sync(String(password || ""), salt, iterations, 32, "sha256").toString("hex");
+}
+
+function localPasswordRecord(password) {
+  const salt = crypto.randomBytes(16).toString("hex");
+  const iterations = 210000;
+  return {
+    passwordAlgorithm: "pbkdf2-sha256",
+    passwordIterations: iterations,
+    passwordSalt: salt,
+    passwordHash: passwordHashV2(password, salt, iterations),
+  };
+}
+
+function verifyLocalPassword(password, account = {}) {
+  if (account.passwordAlgorithm === "pbkdf2-sha256") {
+    const expected = Buffer.from(String(account.passwordHash || ""), "hex");
+    const actual = Buffer.from(passwordHashV2(password, account.passwordSalt, Number(account.passwordIterations || 210000)), "hex");
+    return expected.length === actual.length && crypto.timingSafeEqual(expected, actual);
+  }
+  const expected = Buffer.from(String(account.passwordHash || ""), "hex");
+  const actual = Buffer.from(passwordHash(password, account.passwordSalt), "hex");
+  return expected.length === actual.length && crypto.timingSafeEqual(expected, actual);
 }
 
 function sessionTokenHash(token) {
@@ -7794,13 +7859,28 @@ async function handleAuthApi(req, res, url) {
         return;
       }
       const body = await readRequestJson(req);
-      const email = safeText(body.email, 160).toLowerCase();
+      const email = normalizeEmailAddress(body.email);
       const password = String(body.password || "");
-      const displayName = safeText(body.displayName, 80);
+      const displayNameValidation = validateDisplayName(body.displayName);
+      const displayName = displayNameValidation.displayName;
       const handleBase = safeText(body.handle || displayName, 60);
+      const emailLimit = authEmailRateLimit(req, "signup-email", email, 3, 1000 * 60 * 60);
 
-      if (!email || !email.includes("@") || password.length < 8 || !displayName) {
-        sendJson(res, 400, { error: "Sign up needs a display name, valid email, and password with at least 8 characters." });
+      if (!emailLimit.ok) {
+        sendJson(res, 429, { error: "Too many sign-up attempts for that email. Try again later." }, { "Retry-After": String(emailLimit.retryAfter) });
+        return;
+      }
+      if (!emailLooksValid(email)) {
+        sendJson(res, 400, { error: "Enter a valid email address." });
+        return;
+      }
+      if (!displayNameValidation.ok) {
+        sendJson(res, 400, { error: displayNameValidation.error });
+        return;
+      }
+      const passwordValidation = validatePasswordStrength(password, email, displayName);
+      if (!passwordValidation.ok) {
+        sendJson(res, 400, { error: passwordValidation.error });
         return;
       }
 
@@ -7880,12 +7960,11 @@ async function handleAuthApi(req, res, url) {
         joinedAt: new Date().toISOString(),
         status: "active",
       };
-      const salt = crypto.randomBytes(16).toString("hex");
+      const passwordRecord = localPasswordRecord(password);
       const account = {
         id: `account-${Date.now()}-${slugify(displayName) || "member"}`,
         email,
-        passwordSalt: salt,
-        passwordHash: passwordHash(password, salt),
+        ...passwordRecord,
         profileId: profile.id,
         createdAt: new Date().toISOString(),
         status: "active",
@@ -7919,8 +7998,13 @@ async function handleAuthApi(req, res, url) {
         return;
       }
       const body = await readRequestJson(req);
-      const email = safeText(body.email, 160).toLowerCase();
+      const email = normalizeEmailAddress(body.email);
       const password = String(body.password || "");
+      const emailLimit = authEmailRateLimit(req, "login-email", email, 12, 1000 * 60 * 30);
+      if (!emailLimit.ok) {
+        sendJson(res, 429, { error: "Too many login attempts for that email. Try again later." }, { "Retry-After": String(emailLimit.retryAfter) });
+        return;
+      }
 
       if (supabaseAuthEnabled()) {
         let result = null;
@@ -7956,7 +8040,7 @@ async function handleAuthApi(req, res, url) {
 
       const account = (data.accounts || []).find((item) => item.email === email && (item.status || "active") === "active");
 
-      if (!account || passwordHash(password, account.passwordSalt) !== account.passwordHash) {
+      if (!account || !verifyLocalPassword(password, account)) {
         sendJson(res, 401, { error: "Email or password did not match." });
         return;
       }
@@ -8032,8 +8116,13 @@ async function handleAuthApi(req, res, url) {
         return;
       }
       const body = await readRequestJson(req);
-      const email = safeText(body.email, 160).toLowerCase();
-      if (!email || !email.includes("@")) {
+      const email = normalizeEmailAddress(body.email);
+      const emailLimit = authEmailRateLimit(req, "forgot-password-email", email, 3, 1000 * 60 * 60);
+      if (!emailLimit.ok) {
+        sendJson(res, 429, { error: "Too many password reset requests for that email. Try again later." }, { "Retry-After": String(emailLimit.retryAfter) });
+        return;
+      }
+      if (!emailLooksValid(email)) {
         sendJson(res, 400, { error: "Enter a valid email address." });
         return;
       }
@@ -8073,8 +8162,9 @@ async function handleAuthApi(req, res, url) {
         sendJson(res, 401, { error: "Open your reset link again, then choose a new password." });
         return;
       }
-      if (password.length < 8) {
-        sendJson(res, 400, { error: "Password must be at least 8 characters." });
+      const passwordValidation = validatePasswordStrength(password);
+      if (!passwordValidation.ok) {
+        sendJson(res, 400, { error: passwordValidation.error });
         return;
       }
       await supabaseAuthRequest("user", {
