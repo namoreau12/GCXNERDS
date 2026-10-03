@@ -95,13 +95,16 @@
             <div><span>Time</span><strong id="arcade-time">0:00</strong></div>
             <div><span>Best</span><strong id="arcade-best">0</strong></div>
           </div>
+          <div class="arcade-control-row" aria-label="Arcade display and audio controls">
+            <button id="arcade-sound-toggle" class="button secondary" type="button">Sound: On</button>
+            <button id="arcade-maximize-toggle" class="button secondary" type="button">Maximize game</button>
+          </div>
           <form id="arcade-submit-form" class="arcade-submit-form">
             <label>
               Display name
               <input id="arcade-player-name" name="playerName" type="text" maxlength="24" placeholder="GCX Player" />
             </label>
             <button id="arcade-submit" class="button" type="submit" disabled>Submit score</button>
-            <button id="arcade-sound-toggle" class="button secondary" type="button">Sound on</button>
             <p id="arcade-status" class="form-status" role="status"></p>
           </form>
           <div>

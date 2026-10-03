@@ -14,9 +14,12 @@ const submitButton = document.querySelector("#arcade-submit");
 const statusEl = document.querySelector("#arcade-status");
 const playerNameInput = document.querySelector("#arcade-player-name");
 const soundToggle = document.querySelector("#arcade-sound-toggle");
+const maximizeToggle = document.querySelector("#arcade-maximize-toggle");
 
 const storageKey = "gcx-rally-player-v1";
 const bestStorageKey = "gcx-rally-best-v1";
+const soundMutedStorageKey = "gcx-rally-muted-v1";
+const maximizeStorageKey = "gcx-rally-maximized-v1";
 let challenge = null;
 let leaderboard = [];
 let animationId = 0;
@@ -114,10 +117,11 @@ function initAudio() {
     padB,
     bass,
     bassGain,
-    muted: false,
+    muted: localStorage.getItem(soundMutedStorageKey) === "true",
     step: 0,
     timer: 0,
   };
+  master.gain.value = audio.muted ? 0 : 0.16;
 
   scheduleMusicPulse();
   return audio;
@@ -181,8 +185,19 @@ function resumeAudio() {
 
 function updateSoundToggle() {
   if (!soundToggle) return;
-  soundToggle.textContent = audio?.muted ? "Sound off" : "Sound on";
-  soundToggle.setAttribute("aria-pressed", audio?.muted ? "true" : "false");
+  const muted = audio?.muted || localStorage.getItem(soundMutedStorageKey) === "true";
+  soundToggle.textContent = muted ? "Sound: Off" : "Sound: On";
+  soundToggle.classList.toggle("is-muted", muted);
+  soundToggle.setAttribute("aria-pressed", muted ? "true" : "false");
+}
+
+function setArcadeMaximized(isMaximized) {
+  document.body.classList.toggle("is-arcade-maximized", isMaximized);
+  localStorage.setItem(maximizeStorageKey, isMaximized ? "true" : "false");
+  if (maximizeToggle) {
+    maximizeToggle.textContent = isMaximized ? "Restore game" : "Maximize game";
+    maximizeToggle.setAttribute("aria-pressed", isMaximized ? "true" : "false");
+  }
 }
 
 function updateCountdown() {
@@ -643,11 +658,16 @@ async function init() {
       const system = initAudio();
       if (!system) return;
       system.muted = !system.muted;
+      localStorage.setItem(soundMutedStorageKey, system.muted ? "true" : "false");
       system.master.gain.setTargetAtTime(system.muted ? 0 : 0.16, system.context.currentTime, 0.04);
       if (!system.muted && system.context.state === "suspended") system.context.resume();
       updateSoundToggle();
     });
     updateSoundToggle();
+    setArcadeMaximized(localStorage.getItem(maximizeStorageKey) === "true");
+    maximizeToggle?.addEventListener("click", () => {
+      setArcadeMaximized(!document.body.classList.contains("is-arcade-maximized"));
+    });
     submitForm?.addEventListener("submit", submitScore);
     game = {
       running: false,
