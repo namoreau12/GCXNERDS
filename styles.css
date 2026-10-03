@@ -1443,39 +1443,45 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
 
 .gcx-pulse-band {
   display: grid;
-  grid-template-columns: minmax(240px, 0.32fr) minmax(0, 1fr);
-  gap: 20px;
+  grid-template-columns: minmax(170px, 0.22fr) minmax(0, 1fr);
+  gap: 14px;
   align-items: stretch;
   margin-top: var(--space-section);
-  padding: clamp(20px, 3vw, 30px);
-  background: var(--surface-charcoal);
+  padding: clamp(12px, 1.8vw, 18px);
+  background:
+    linear-gradient(135deg, rgba(24, 25, 32, 0.98), rgba(34, 36, 44, 0.94)),
+    var(--surface-charcoal);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
   box-shadow: var(--shadow-soft);
 }
 
 .pulse-intro {
   display: grid;
-  align-content: center;
-  gap: 12px;
+  align-content: start;
+  gap: 8px;
+  padding: 10px 12px 10px 0;
   color: white;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .pulse-intro h2 {
   margin: 0;
-  font-size: var(--type-headline-lg);
-  line-height: 1.08;
+  font-size: clamp(1.1rem, 1.55vw, 1.55rem);
+  line-height: 1.04;
   letter-spacing: 0;
 }
 
 .pulse-intro p:not(.kicker) {
   margin: 0;
-  color: var(--text-on-dark);
-  line-height: 1.58;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.9rem;
+  line-height: 1.42;
 }
 
 .pulse-rail {
   display: grid;
-  grid-template-columns: minmax(280px, 1.2fr) repeat(2, minmax(170px, 0.8fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 12px;
 }
 
@@ -1484,17 +1490,27 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
   display: grid;
   min-width: 0;
   background: white;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-top: 3px solid var(--red);
   border-radius: 8px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.pulse-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 46px rgba(0, 0, 0, 0.24);
 }
 
 .pulse-card-lead {
-  grid-row: span 2;
+  grid-row: auto;
 }
 
 .pulse-card-wide {
-  grid-column: span 2;
-  grid-template-columns: minmax(160px, 0.45fr) minmax(0, 0.55fr);
+  grid-column: auto;
+  grid-template-columns: 1fr;
 }
 
 .pulse-card-no-media {
@@ -1507,13 +1523,23 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
 
 .pulse-media {
   display: block;
-  min-height: 132px;
+  height: clamp(118px, 10vw, 158px);
+  min-height: 0;
   overflow: hidden;
   background: var(--media-bg);
 }
 
+.pulse-media img {
+  transition: transform 220ms ease;
+}
+
+.pulse-card:hover .pulse-media img {
+  transform: scale(1.025);
+}
+
 .pulse-card-lead .pulse-media {
-  min-height: clamp(220px, 25vw, 330px);
+  height: clamp(132px, 12vw, 176px);
+  min-height: 0;
 }
 
 .pulse-media img {
@@ -1524,9 +1550,9 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
 
 .pulse-copy {
   display: grid;
-  gap: 10px;
+  gap: 8px;
   align-content: start;
-  padding: clamp(14px, 2vw, 20px);
+  padding: clamp(12px, 1.4vw, 16px);
 }
 
 .pulse-meta,
@@ -1554,10 +1580,14 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
   font-size: var(--type-headline-sm);
   line-height: 1.18;
   letter-spacing: 0;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .pulse-card-lead h3 {
-  font-size: var(--type-headline-md);
+  font-size: clamp(1.05rem, 1.2vw, 1.25rem);
 }
 
 .pulse-card h3 a:hover {
@@ -1569,6 +1599,32 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
   color: var(--muted);
   line-height: 1.5;
   overflow-wrap: anywhere;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.pulse-source {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-card,
+  .pulse-media img {
+    transition: none;
+  }
+
+  .pulse-card:hover {
+    transform: none;
+  }
+
+  .pulse-card:hover .pulse-media img {
+    transform: none;
+  }
 }
 
 .clip-band {
@@ -10174,6 +10230,12 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   .gcx-pulse-band {
     gap: 16px;
     padding: 18px;
+  }
+
+  .pulse-intro {
+    padding: 0 0 14px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   }
 
   .pulse-card-lead,
