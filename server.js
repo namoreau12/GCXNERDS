@@ -441,6 +441,7 @@ function buildPublicHealthStatus() {
   const launchReport = readJsonIfExists(path.join(launchReadinessDir, "latest.json"));
   const dataFreshness = readJsonIfExists(path.join(launchReadinessDir, "supabase-data-freshness.json"));
   const runtimeLinks = readJsonIfExists(path.join(launchReadinessDir, "runtime-links.json"));
+  const hasLaunchReport = Boolean(launchReport);
   const status = launchReport?.status || "unknown";
   const blockers = Array.isArray(launchReport?.blockers) ? launchReport.blockers : [];
   const warnings = Array.isArray(launchReport?.warnings) ? launchReport.warnings : [];
@@ -452,11 +453,12 @@ function buildPublicHealthStatus() {
     return true;
   });
   const onlySelfCheckBlockers = blockers.length > 0 && effectiveBlockers.length === 0;
-  const effectiveStatus = status === "blocked" && onlySelfCheckBlockers ? "ready-with-warnings" : status;
+  const effectiveStatus = !hasLaunchReport ? "ready-with-warnings" : status === "blocked" && onlySelfCheckBlockers ? "ready-with-warnings" : status;
   const staleFiles = Array.isArray(dataFreshness?.stale) ? dataFreshness.stale : [];
   const runtimeOk = runtimeLinks ? Boolean(runtimeLinks.ok) : null;
   const dataFreshnessOk = dataFreshness ? Boolean(dataFreshness.ok && staleFiles.length === 0) : null;
-  const launchReady = Boolean((launchReport?.launchReady || onlySelfCheckBlockers) && effectiveBlockers.length === 0);
+  const launchReady = Boolean(((hasLaunchReport ? launchReport?.launchReady : true) || onlySelfCheckBlockers) && effectiveBlockers.length === 0);
+  const publicWarnings = hasLaunchReport ? warnings : [{ label: "Launch readiness reports unavailable" }];
 
   return {
     ok: launchReady && dataFreshnessOk !== false && runtimeOk !== false,
@@ -466,8 +468,8 @@ function buildPublicHealthStatus() {
     launchReport: {
       generatedAt: launchReport?.generatedAt || "",
       blockers: effectiveBlockers.length,
-      warnings: warnings.length,
-      warningLabels: warnings.map((warning) => warning.label || warning.id || "Launch warning").slice(0, 8),
+      warnings: publicWarnings.length,
+      warningLabels: publicWarnings.map((warning) => warning.label || warning.id || "Launch warning").slice(0, 8),
     },
     dataFreshness: {
       configured: Boolean(dataFreshness?.configured),
