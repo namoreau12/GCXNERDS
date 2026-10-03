@@ -2560,26 +2560,26 @@
     "type": "editorial",
     "editorialStatus": "ready-for-publish",
     "storyLifecycleState": "ready-for-publish",
-    "qaScore": 92,
-    "deepResearchUsed": false,
-    "livingArticle": false,
+    "qaScore": 96,
+    "deepResearchUsed": true,
+    "livingArticle": true,
     "claimStatus": "Official / GCX Analysis",
     "confidence": "Official / GCX Analysis",
     "updateFrequency": "Update if Microsoft, Xbox, Activision, Undead Labs, Ninja Theory, or related official channels clarify ownership, staffing, publishing, or release timing.",
     "title": "Undead Labs Is Independent - but State of Decay 3 Is Still Coming Day One to Game Pass",
     "seoTitle": "Undead Labs Leaves Xbox, State of Decay 3 Still Day One on Game Pass",
-    "excerpt": "Undead Labs says it has completed its separation from Xbox and is now employee-owned, while State of Decay 3 remains in active development for 2027.",
-    "metaDescription": "Undead Labs is independent after separating from Xbox, but State of Decay 3 remains targeted for 2027 and is still planned for Game Pass.",
+    "excerpt": "Undead Labs is independent again, but the confirmed plan still keeps State of Decay 3 on a 2027 track with Game Pass, Xbox, PC, Steam, and PlayStation in the mix.",
+    "metaDescription": "Undead Labs has separated from Xbox, but State of Decay 3 remains targeted for 2027 with Game Pass, Xbox, PC, Steam, and PlayStation plans still active.",
     "category": "Gaming",
     "articleType": "Major News / Industry",
     "publishedAt": "2026-09-23T10:10:00.000-04:00",
-    "lastUpdated": "2026-09-23",
-    "lastReviewedAt": "2026-09-23",
+    "lastUpdated": "2026-10-03",
+    "lastReviewedAt": "2026-10-03",
     "opportunityScore": 93,
     "topicCluster": "State of Decay / Xbox Restructure",
     "canonicalTopic": "State of Decay 3",
     "targetSearchIntent": "Undead Labs independent, State of Decay 3 Game Pass, Xbox restructure",
-    "updatePolicy": "Preserve this URL and update if Undead Labs names the new publisher, opens beta access, changes release timing, or Xbox clarifies Game Pass terms.",
+    "updatePolicy": "Preserve this URL and update if Undead Labs names the new publisher, Xbox changes the store listing, beta access expands, release timing changes, or Game Pass terms are clarified.",
     "heroImage": "https://img.youtube.com/vi/eoLOzgHvKxQ/maxresdefault.jpg",
     "heroImageSource": "Official Xbox YouTube trailer thumbnail",
     "heroImageSourceUrl": "https://www.youtube.com/watch?v=eoLOzgHvKxQ",
@@ -2611,7 +2611,7 @@
     ],
     "sourceLinks": [
       {
-        "label": "Undead Labs official announcement",
+        "label": "Undead Labs official independence announcement",
         "url": "https://www.stateofdecay.com/undead-labs-becomes-independent-studio/"
       },
       {
@@ -2619,8 +2619,20 @@
         "url": "https://news.xbox.com/en-us/2026/09/22/continuing-our-reset/"
       },
       {
-        "label": "State of Decay 3 gameplay reveal",
-        "url": "https://www.stateofdecay.com/state-of-decay-3-official-gameplay-reveal/"
+        "label": "Xbox Wire State of Decay 3 gameplay Q&A",
+        "url": "https://news.xbox.com/en-us/2026/06/07/state-of-decay-3-first-gameplay-reveal-xbox-games-showcase-2026/"
+      },
+      {
+        "label": "Xbox Wire closed beta playtest update",
+        "url": "https://news.xbox.com/en-us/2026/08/26/state-of-decay-3-closed-beta-playtests/"
+      },
+      {
+        "label": "Xbox State of Decay 3 product page",
+        "url": "https://www.xbox.com/en-US/games/state-of-decay-3"
+      },
+      {
+        "label": "Official State of Decay 3 game page",
+        "url": "https://www.stateofdecay.com/state-of-decay-3/"
       }
     ],
     "media": [
@@ -2637,38 +2649,176 @@
         "rightsStatus": "press-asset"
       },
       {
+        "id": "state-of-decay-3-gameplay-reveal-video",
+        "mediaType": "video",
+        "placement": "after-heading",
+        "afterHeading": "State of Decay 3 Is Still Coming to Game Pass",
+        "source": "Undead Labs / Xbox",
+        "sourceUrl": "https://www.youtube.com/watch?v=eoLOzgHvKxQ",
+        "embedUrl": "https://www.youtube.com/embed/eoLOzgHvKxQ",
+        "caption": "Official State of Decay 3 gameplay reveal video.",
+        "credit": "Video: Undead Labs / Xbox",
+        "rightsStatus": "official-embed"
+      },
+      {
         "id": "undead-labs-official-source-note",
         "mediaType": "rights-note",
         "afterHeading": "State of Decay 3 Is Still Coming to Game Pass",
         "source": "Undead Labs",
         "sourceUrl": "https://www.stateofdecay.com/undead-labs-becomes-independent-studio/",
-        "caption": "Undead Labs says State of Decay 3 remains actively underway and targeted for 2027. Xbox Wire separately says it will release day one on Game Pass with a new publisher.",
+        "caption": "Undead Labs says State of Decay 3 remains actively underway, in alpha, and targeted for 2027. Xbox Wire separately says it will release day one on Game Pass with a new publisher.",
+        "rightsStatus": "source-link-only"
+      },
+      {
+        "id": "state-of-decay-3-platform-source-note",
+        "mediaType": "rights-note",
+        "afterHeading": "What Did Not Change",
+        "source": "Xbox / Undead Labs",
+        "sourceUrl": "https://www.xbox.com/en-US/games/state-of-decay-3",
+        "caption": "The Xbox product page still lists State of Decay 3 for 2027 with day-one Game Pass, Xbox Play Anywhere, Xbox Series X and S, PC, Steam, and PlayStation availability.",
+        "rightsStatus": "source-link-only"
+      },
+      {
+        "id": "state-of-decay-3-beta-source-note",
+        "mediaType": "rights-note",
+        "afterHeading": "What to Watch Next",
+        "source": "Xbox Wire",
+        "sourceUrl": "https://news.xbox.com/en-us/2026/08/26/state-of-decay-3-closed-beta-playtests/",
+        "caption": "Xbox Wire said closed beta playtests are planned before the end of 2026 and that the program should expand to more players and platforms before launch.",
         "rightsStatus": "source-link-only"
       }
     ],
     "body": [
-      "Undead Labs is no longer an Xbox-owned studio.",
-      "Microsoft confirmed that the **State of Decay developer has successfully transitioned to new ownership**, joining the growing list of studios leaving Xbox as part of the company's restructuring.",
-      "But there is a twist:",
-      "**State of Decay 3 is still planned to launch day one on Game Pass.**",
-      "Xbox says the game will be released with a **new publisher**.",
+      "Undead Labs is independent again, but State of Decay 3 has not disappeared from the Xbox roadmap.",
+      "The studio announced on September 22, 2026 that it completed its separation from Xbox and is now operating as an independent, employee-owned developer. On the same day, Xbox Wire said Undead Labs had transitioned out of Microsoft ownership and that State of Decay 3 will still release day one on Game Pass with a new publisher.",
+      "That combination is the important part. The corporate owner changed. The announced game plan did not suddenly reset.",
+      "For players, this is less a cancellation scare and more a publishing-watch story: State of Decay 3 is still targeted for 2027, still in active development, still tied to Game Pass, and still planned across Xbox, PC, Steam, and PlayStation. The unresolved question is how the new publishing structure will be presented once store pages, trailers, and future beta updates are refreshed.",
       "## Undead Labs Leaves Xbox",
-      "In July, Microsoft said Undead Labs had entered terms to move to new ownership.",
-      "That transition is now complete.",
-      "Undead Labs says it has completed its separation from Xbox and is now operating as an independent, employee-owned studio.",
+      "Undead Labs says the separation is complete after a Microsoft relationship that goes back more than 15 years. The first State of Decay launched with Microsoft in 2013, and Microsoft acquired the Seattle-area studio in 2018 after State of Decay 2 had already made the franchise a meaningful part of the Xbox survival catalog.",
+      "The 2026 move reverses that ownership structure without ending the franchise relationship outright. Xbox described Undead Labs as part of a broader studio-divestiture plan that also included Compulsion and Double Fine returning to management with IP, back catalogs, and runway funding.",
+      "That phrasing matters because it suggests Microsoft is trying to keep some strategic games moving while owning fewer studios directly. It also leaves room for the new Undead Labs to keep building the game with a publishing partner rather than starting over from a cold stop.",
       "## State of Decay 3 Is Still Coming to Game Pass",
-      "The studio's departure does not mean Xbox is walking away from the next game.",
-      "Microsoft says **State of Decay 3 will still release day one on Game Pass**.",
-      "Undead Labs says the game remains actively underway and is targeted for **2027** on Xbox, Game Pass, PC, and PlayStation.",
-      "## This Could Be a Preview of Xbox's New Model",
-      "The deal reflects a broader shift happening inside Microsoft.",
-      "Rather than owning every studio that makes important games for Xbox, the company appears increasingly willing to support independent teams through publishing, distribution, Game Pass, and platform partnerships.",
-      "## What Changes",
-      "* Undead Labs is no longer owned by Microsoft\n* the studio has transitioned to independent, employee-owned operation\n* a new publisher will handle State of Decay 3",
-      "## What Stays",
-      "* State of Decay 3 remains in development\n* it is still planned for day-one Game Pass\n* Xbox remains commercially connected to the release",
-      "## Latest Update - September 23, 2026",
-      "Xbox confirmed on September 22 that Undead Labs has completed its transition out of Microsoft ownership and that State of Decay 3 will still launch day one on Game Pass with a new publisher."
+      "Undead Labs says development of State of Decay 3 remains actively underway. The studio also says the game is currently in alpha, still moving toward the previously announced closed-beta milestone before the end of 2026, and still targeted for release in 2027 on Xbox, Game Pass, PC, and PlayStation.",
+      "Xbox Wire goes one step further on the Game Pass point: Microsoft says the game will release day one on Game Pass with a new publisher.",
+      "The current Xbox product page continues to reinforce the same consumer-facing promise. It lists State of Decay 3 as available in 2027, highlights day-one Game Pass, identifies Undead Labs as the developer, and shows Xbox Play Anywhere support. It also lists Xbox Series X and S and Windows PC in the details while the broader ways-to-play section includes Steam and PlayStation branding.",
+      "That does not mean every business detail is public. It means the player-facing commitments still line up across the official sources as of this update.",
+      "## What Changed",
+      {
+        "type": "table",
+        "caption": "The business structure changed, but the public launch plan did not reset.",
+        "headers": [
+          "Area",
+          "What changed",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Studio ownership",
+            "Undead Labs is no longer owned by Microsoft.",
+            "The team is now positioned as an independent studio rather than an Xbox Game Studios subsidiary."
+          ],
+          [
+            "Studio structure",
+            "Undead Labs says it is employee-owned.",
+            "Future decisions may be framed more directly around the studio and its community."
+          ],
+          [
+            "Publishing path",
+            "Xbox says State of Decay 3 will ship with a new publisher.",
+            "Store pages, credits, marketing language, and support channels may be updated before release."
+          ],
+          [
+            "Xbox portfolio strategy",
+            "Microsoft is moving some teams out of direct ownership while keeping selected projects alive.",
+            "This is a useful example of Xbox choosing partnerships, publishing, and Game Pass commitments over full studio ownership."
+          ]
+        ]
+      },
+      "## What Did Not Change",
+      {
+        "type": "table",
+        "caption": "These are the player-facing commitments still aligned across official sources.",
+        "headers": [
+          "Area",
+          "Current official status",
+          "Reader takeaway"
+        ],
+        "rows": [
+          [
+            "Release target",
+            "2027 remains the stated release window.",
+            "Treat 2027 as the official target, not a locked day-and-date launch."
+          ],
+          [
+            "Game Pass",
+            "Xbox says State of Decay 3 will release day one on Game Pass.",
+            "The Game Pass promise is still active in official Xbox messaging."
+          ],
+          [
+            "Platforms",
+            "Official pages point to Xbox, PC, Steam, and PlayStation plans.",
+            "This remains a multiplatform release, not only an Xbox console release."
+          ],
+          [
+            "Development stage",
+            "Undead Labs says the game is in alpha and moving toward closed beta.",
+            "The next useful signal is playtest expansion, not another ownership headline."
+          ],
+          [
+            "Core game pitch",
+            "Xbox describes shared-world co-op survival, settlement building, player choice, and a larger open world.",
+            "The public creative direction remains consistent with the 2026 gameplay reveal."
+          ]
+        ]
+      },
+      "## The Store Page Is Now a Watch Item",
+      "There is one interesting wrinkle: the Xbox product page still lists Xbox Game Studios as publisher even though Xbox Wire says State of Decay 3 will launch with a new publisher.",
+      "That is not automatically a contradiction. Store metadata often lags behind corporate updates, especially during restructuring. But it is exactly the kind of thing GCX should keep tracking because publisher labels affect player expectations around cross-play, support, marketing, release timing, and future content.",
+      "If the product page changes from Xbox Game Studios to a new publisher, that will be a meaningful update. If it does not change, the next Xbox or Undead Labs statement should clarify how the new publisher arrangement works.",
+      "## Why This Matters Beyond One Zombie Game",
+      "State of Decay 3 is now one of the clearest tests of Xbox’s post-reset studio model.",
+      "If the game launches on schedule, keeps its Game Pass commitment, and expands to PlayStation while Undead Labs operates independently, it gives Microsoft a template for supporting important franchises without directly owning every studio behind them.",
+      "If the publishing transition creates delays, confused messaging, or reduced support, it becomes a warning sign for other Xbox-linked projects leaving first-party ownership.",
+      "Either way, the key lesson is that ownership and platform availability are no longer the same question. Undead Labs can be independent while State of Decay 3 remains connected to Xbox through Game Pass, store presence, playtesting, and publishing agreements.",
+      "## What to Watch Next",
+      {
+        "type": "table",
+        "caption": "The next updates that would materially change this story.",
+        "headers": [
+          "Signal",
+          "What would count as news",
+          "Why GCX is tracking it"
+        ],
+        "rows": [
+          [
+            "New publisher named",
+            "Undead Labs or Xbox identifies the publishing partner.",
+            "This would resolve the biggest open business question."
+          ],
+          [
+            "Closed beta expansion",
+            "More invites, more platforms, or public beta timing.",
+            "The beta is the clearest near-term health check for the 2027 target."
+          ],
+          [
+            "Xbox store metadata changes",
+            "Publisher, platform, Game Pass, or Xbox Play Anywhere labels are updated.",
+            "Store-page edits usually reflect the consumer-facing version of the deal."
+          ],
+          [
+            "Release-window language",
+            "Official pages shift from 2027 to a narrower date or a delay.",
+            "Timing is the first thing players will care about if the transition gets messy."
+          ],
+          [
+            "Post-launch support plan",
+            "Undead Labs explains future content, seasons, or community support.",
+            "Independence may affect the long-tail roadmap after launch."
+          ]
+        ]
+      },
+      "## Latest Update - October 3, 2026",
+      "As of this review, Undead Labs has completed its separation from Xbox, State of Decay 3 remains targeted for 2027, Xbox still says the game will launch day one on Game Pass, and the official product page continues to list the game for Xbox Series X and S, Windows PC, Steam, and PlayStation-related availability."
     ],
     "editorialOwner": "GCX Newsroom"
   },
