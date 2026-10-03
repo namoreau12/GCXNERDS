@@ -1710,23 +1710,23 @@
     "editorialStatus": "ready-for-publish",
     "storyLifecycleState": "ready-for-publish",
     "qaScore": 91,
-    "deepResearchUsed": false,
-    "livingArticle": false,
+    "deepResearchUsed": true,
+    "livingArticle": true,
     "updateFrequency": "Update if official source pages, trailer embeds, launch details, screenshots, or post-launch patch details change.",
-    "title": "CONTROL Resonant Is Out Now - and Remedy's First Hotfix Goes Straight After Early Combat Complaints",
-    "seoTitle": "CONTROL Resonant Launches With First Hotfix for Early Combat Issues",
-    "excerpt": "Remedy's CONTROL sequel is out now, and the launch conversation is already being shaped by a fast first hotfix aimed at early combat feel.",
-    "metaDescription": "CONTROL Resonant is out now on PS5, Xbox Series X and Series S, and PC, and Remedy has already pushed its first hotfix to address early complaints about enemy durability and combat flow.",
+    "title": "CONTROL Resonant Launch Patch Tracker: Combat Hotfix, New Game++, and 1.4.1 Fixes",
+    "seoTitle": "CONTROL Resonant Patch Tracker: Combat Hotfix, New Game++, and 1.4.1",
+    "excerpt": "CONTROL Resonant's launch is now a fast-moving patch story, from the day-one combat hotfix to New Game++ and the 1.4.1 quest and dash fixes.",
+    "metaDescription": "CONTROL Resonant launched with a combat hotfix and has already moved through New Game++ update 1.4.0 and hotfix 1.4.1. Here is what changed and what players should watch.",
     "category": "Gaming",
-    "articleType": "Major News / Launch Coverage",
+    "articleType": "Major News / Launch Patch Tracker",
     "publishedAt": "2026-09-24T13:00:00.000-04:00",
-    "lastUpdated": "2026-09-24",
-    "lastReviewedAt": "2026-09-24",
+    "lastUpdated": "2026-10-03",
+    "lastReviewedAt": "2026-10-03",
     "opportunityScore": 94,
     "topicCluster": "CONTROL Resonant",
     "canonicalTopic": "CONTROL Resonant",
-    "targetSearchIntent": "Control Resonant launch hotfix, Remedy combat patch, Control Resonant enemy health",
-    "updatePolicy": "Preserve this URL and update if Remedy publishes additional patch notes, launch statements, or official media assets.",
+    "targetSearchIntent": "CONTROL Resonant patch notes, Control Resonant hotfix 1.3.3, Control Resonant update 1.4.0, Control Resonant hotfix 1.4.1",
+    "updatePolicy": "Preserve this URL as the CONTROL Resonant launch patch tracker and update it when Remedy publishes new hotfixes, platform-specific patch notes, Mac release timing, or additional known-issue guidance.",
     "claimStatus": "Official / Verified Reporting / GCX Analysis",
     "confidence": "Official / Verified Reporting / GCX Analysis",
     "heroImage": "https://img.youtube.com/vi/SqvAvOAd1VA/maxresdefault.jpg",
@@ -1766,12 +1766,20 @@
         "url": "https://mailchi.mp/remedygames.com/controlresonantlaunchtrailer"
       },
       {
-        "label": "Remedy media and influencers page",
-        "url": "https://www.remedygames.com/media-and-influencers"
+        "label": "CONTROL Resonant official patch notes hub",
+        "url": "https://remedy.helpshift.com/hc/en/5-control-resonant/section/55-patch-notes/"
       },
       {
         "label": "Official CONTROL Resonant Steam announcements",
         "url": "https://steamcommunity.com/app/3669870/announcements/"
+      },
+      {
+        "label": "Hotfix 1.4.1 official blog",
+        "url": "https://controlgame.com/en/blog/control-resonant-hotfix-141"
+      },
+      {
+        "label": "Game Update 1.4.0 official blog",
+        "url": "https://controlgame.com/en/blog/control-resonant-game-update-140"
       },
       {
         "label": "Remedy official support",
@@ -1813,27 +1821,86 @@
       }
     ],
     "body": [
-      "CONTROL Resonant launches today for PlayStation 5, Xbox Series X and Series S, and PC, bringing players back into Remedy's paranatural universe with Dylan Faden at the center of the story.",
-      "But the launch-day conversation is not just about the game finally being available.",
-      "Remedy has already pushed out its first hotfix, addressing one of the biggest early complaints around the game's combat: enemies feeling too durable in the opening hours.",
+      "CONTROL Resonant launched for PlayStation 5, Xbox Series X and Series S, and PC with Dylan Faden at the center of Remedy's paranatural sequel, but the launch story has quickly become a patch story too.",
+      "The first hotfix targeted early combat friction. Then Remedy followed with the larger 1.4.0 Game Update, including New Game++ and quality-of-life fixes, before shipping Hotfix 1.4.1 to repair two regressions introduced by that bigger update.",
+      "That pace matters. For players, it changes the answer to a simple question: should you start now, wait for more patches, or come back after finishing another game?",
       "## Remedy's Sequel Is Finally Here",
       "Remedy locked in the September 24 release date earlier this year, confirming a worldwide launch across PS5, Xbox Series X and Series S, Steam, and the Epic Games Store.",
       "The sequel shifts the spotlight from Jesse Faden to **Dylan Faden**, who is sent into a Manhattan being warped by new supernatural forces.",
-      "## The First Hotfix Focuses on Combat Feel",
-      "Launch-day patch coverage suggests Remedy moved quickly to respond to one of the loudest early criticisms: combat pacing.",
-      "The first hotfix reportedly lowers base health for most enemies, adjusts Falter requirements, improves Dylan's damage scaling, reduces respeccing friction, and clarifies some UI wording around combat stats.",
-      "## Why the Patch Matters",
-      "Fast balance updates are becoming normal, but this one is notable because it hits one of the game's defining systems right away.",
-      "If players feel underpowered and combat feels sticky in the first few hours, that can shape the game's reputation almost immediately. By moving on day one, Remedy is trying to get ahead of that narrative.",
+      "## Patch Timeline So Far",
+      {
+        "type": "table",
+        "caption": "CONTROL Resonant launch patch timeline.",
+        "headers": [
+          "Update",
+          "Main focus",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Launch / Hotfix 1.3.3",
+            "Enemy health, Falter requirements, Dylan's early combat strength, respec friction, and combat-stat clarity.",
+            "The first public correction went straight at early combat feel, which was the loudest launch concern."
+          ],
+          [
+            "Game Update 1.4.0",
+            "New Game++, Build Power visibility, and a wider set of quality-of-life and bug fixes.",
+            "The game moved beyond launch triage into retention and replayability."
+          ],
+          [
+            "Hotfix 1.4.1",
+            "Fixes for The Park Resonant quest blocker and Dash-to-Elevate momentum.",
+            "The follow-up shows Remedy is reacting quickly when a larger patch breaks specific play paths."
+          ]
+        ]
+      },
+      "## The First Hotfix Focused on Combat Feel",
+      "The launch hotfix matters because it hit one of the game’s defining systems right away. Remedy’s patch-note hub describes Hotfix 1.3.3 as reducing enemy health and Falter requirements while increasing Dylan’s combat strength.",
+      "In practice, that is a direct answer to the early complaint that encounters could feel too sticky before Dylan’s build had enough tools to carry the player. The change does not simply make a number smaller; it changes how fast the game starts feeling like a Remedy power fantasy instead of a slow damage check.",
+      "## 1.4.0 and 1.4.1 Changed the Story Again",
+      "The bigger 1.4.0 update added New Game++ and quality-of-life changes, including clearer Build Power visibility. That is important because combat complaints are not only about difficulty. They are also about whether the game explains when a player is underpowered, poorly specced, or fighting above their build level.",
+      "Hotfix 1.4.1 then addressed two specific problems caused by 1.4.0: a progression issue in The Park Resonant quest involving Mold, and a movement issue where Dash momentum was not carrying properly into Elevate and Surge.",
+      "## What Players Should Check Before Starting",
+      {
+        "type": "table",
+        "caption": "Practical launch-readiness checklist for players.",
+        "headers": [
+          "Question",
+          "Why it matters",
+          "GCX read"
+        ],
+        "rows": [
+          [
+            "Are you updated to the latest patch?",
+            "The launch build, 1.3.3, 1.4.0, and 1.4.1 can feel different in combat and movement.",
+            "Update fully before judging the early hours."
+          ],
+          [
+            "Are you sensitive to combat friction?",
+            "The first hotfix specifically reduces early enemy durability and Falter friction.",
+            "The current version is the better entry point than day one."
+          ],
+          [
+            "Do you care about replayability?",
+            "New Game++ changes the long-tail value for players who want repeated runs.",
+            "This makes the launch window more attractive for build-minded players."
+          ],
+          [
+            "Are you worried about bugs?",
+            "1.4.1 exists because 1.4.0 introduced two specific regressions.",
+            "Watch the patch notes if you are deep into side quests or movement-heavy combat."
+          ]
+        ]
+      },
       "## What We Know",
-      "* CONTROL Resonant launches September 24, 2026\n* platforms: PS5, Xbox Series X and Series S, Steam, Epic Games Store\n* Mac version is still planned for later in 2026\n* Dylan Faden is the playable lead\n* Remedy has shipped a first hotfix focused on early combat balance and progression feel",
-      "## What We Still Don't Know",
-      "* whether the launch-day hotfix fully solves early combat complaints\n* whether additional balance patches are already planned\n* how the wider player base will respond over the first weekend\n* when the Mac version will arrive",
-      "## Launch Day Is Now Also Patch Day",
-      "That is not automatically a bad sign. Sometimes it simply means a studio is reacting fast.",
-      "Still, the first big conversation around CONTROL Resonant is no longer just that the sequel is out. It is also that Remedy is already tuning the combat.",
-      "## Latest Update - September 24, 2026",
-      "Remedy's official launch-trailer press release confirms the September 24 launch, platforms, edition details, and official media-kit availability. GCX is tracking the first hotfix through official announcement channels."
+      "* CONTROL Resonant launched September 24, 2026\n* platforms: PS5, Xbox Series X and Series S, Steam, Epic Games Store\n* Mac version is still planned for later in 2026\n* Dylan Faden is the playable lead\n* Hotfix 1.3.3 targeted early combat balance and progression feel\n* Game Update 1.4.0 added New Game++ and quality-of-life changes\n* Hotfix 1.4.1 fixed The Park Resonant quest blocker and Dash-to-Elevate momentum",
+      "## What We're Still Watching",
+      "* whether Remedy publishes more hotfixes for remaining progression or performance reports\n* when the Mac version receives a firm release date\n* whether New Game++ meaningfully improves long-term player retention\n* whether the current combat tuning becomes the accepted baseline or keeps changing",
+      "## GCX Takeaway",
+      "CONTROL Resonant is not having a quiet launch. The good version of that story is that Remedy is moving quickly, patching the combat feel, and responding when later updates create new problems. The caution is that players who hate launch-window turbulence should watch the patch notes before jumping in.",
+      "For GCX readers, the practical answer is simple: if you are starting now, make sure you are on the latest version. If you bounced off the launch build because enemies felt too durable or movement felt strange after the 1.4.0 update, the current patch state is meaningfully different from the first day.",
+      "## Latest Update - October 3, 2026",
+      "GCX updated this article from a launch-day hotfix story into a living patch tracker covering Hotfix 1.3.3, Game Update 1.4.0, and Hotfix 1.4.1."
     ],
     "editorialOwner": "GCX Newsroom"
   },
