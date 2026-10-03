@@ -4,7 +4,7 @@ const path = require("node:path");
 const rootDir = path.resolve(__dirname, "..");
 const requiredFiles = [
   "server.js",
-  "api/index.js",
+  "api/index.mjs",
   "vercel.json",
   "package.json",
   "index.html",
@@ -69,8 +69,8 @@ if (!packageJson.scripts?.start) failures.push("package.json is missing scripts.
 if (!packageJson.scripts?.build) failures.push("package.json is missing scripts.build.");
 
 const vercelJson = readJson("vercel.json");
-if (!Array.isArray(vercelJson.rewrites) || !vercelJson.rewrites.some((rewrite) => rewrite.destination === "/api/index.js")) {
-  failures.push("vercel.json must rewrite requests to /api/index.js.");
+if (!Array.isArray(vercelJson.rewrites) || !vercelJson.rewrites.some((rewrite) => rewrite.destination === "/api/index")) {
+  failures.push("vercel.json must rewrite requests to /api/index.");
 }
 
 const envExample = fs.existsSync(path.join(rootDir, ".env.example"))
