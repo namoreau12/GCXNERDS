@@ -29,6 +29,7 @@ let pointerX = null;
 let inputMode = "pointer";
 let game = null;
 let audio = null;
+const movementKeys = ["ArrowLeft", "ArrowRight", "a", "A", "d", "D"];
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -280,13 +281,13 @@ function levelDifficulty(level) {
   return {
     level: safeLevel,
     tier,
-    targetCount: clamp(30 + Math.floor(safeLevel * 2) + tier * 2, 34, 76),
-    obstacleCount: clamp(Math.floor((safeLevel - 7) / 3) + Math.floor(tier * 0.7), 0, 18),
-    speed: clamp(Math.hypot(250, 360) + (safeLevel - 1) * 12 + tier * 16, Math.hypot(250, 360), 980),
-    paddleWidth: clamp(144 - tier * 4 - Math.floor((safeLevel - 1) / 10) * 3, 96, 144),
+    targetCount: clamp(22 + Math.floor(safeLevel * 2) + tier * 2, 26, 72),
+    obstacleCount: clamp(Math.floor((safeLevel - 8) / 3) + Math.floor(tier * 0.6), 0, 16),
+    speed: clamp(Math.hypot(200, 300) + (safeLevel - 1) * 8 + tier * 12, Math.hypot(200, 300), 940),
+    paddleWidth: clamp(154 - tier * 3 - Math.floor((safeLevel - 1) / 12) * 3, 102, 154),
     paddleMaxSpeed: clamp(760 + tier * 32, 760, 1040),
     bonusChance: clamp(0.16 + tier * 0.018, 0.16, 0.32),
-    minGap: clamp(12 - Math.floor(tier / 3), 7, 12),
+    minGap: clamp(16 - Math.floor(tier / 3), 8, 16),
   };
 }
 
@@ -330,7 +331,7 @@ function createOpeningTargets(seed) {
 
 function generateLevelObjects(seed, level) {
   const config = levelDifficulty(level);
-  if (config.level === 1) return createOpeningTargets(seed);
+  if (config.level === 1) return assignLevelPowerUps(createOpeningTargets(seed), config.level, seed);
   const random = seededRandom(`${seed || "gcx-rally"}:level:${config.level}`);
   const objects = [];
   const shapes = [
@@ -343,7 +344,7 @@ function generateLevelObjects(seed, level) {
   const playLeft = 38;
   const playRight = canvas.width - 38;
   const playTop = 68;
-  const playBottom = Math.min(394, canvas.height - 132);
+  const playBottom = Math.min(config.level <= 4 ? 292 : 350, canvas.height - 158);
 
   const pickShape = () => {
     const roll = random();
@@ -393,7 +394,7 @@ function generateLevelObjects(seed, level) {
     objects.push(target);
   }
 
-  return objects.sort((a, b) => a.y - b.y || a.x - b.x);
+  return assignLevelPowerUps(objects.sort((a, b) => a.y - b.y || a.x - b.x), config.level, seed);
 }
 
 function roundedRectPath(context, x, y, width, height, radius) {
@@ -409,6 +410,38 @@ function roundedRectPath(context, x, y, width, height, radius) {
   context.lineTo(x, y + r);
   context.quadraticCurveTo(x, y, x + r, y);
   context.closePath();
+}
+
+function assignLevelPowerUps(targets, level, seed) {
+  const breakables = targets.filter((target) => target.kind !== "obstacle");
+  if (!breakables.length) return targets;
+  const random = seededRandom(`${seed || "gcx-rally"}:powerups:${level}`);
+  const pick = () => breakables[Math.floor(random() * breakables.length)];
+  const rocketTarget = pick();
+  if (rocketTarget) rocketTarget.powerUp = "rocket";
+  if (level >= 2) {
+    const laserTarget = pick();
+    if (laserTarget && laserTarget !== rocketTarget) laserTarget.powerUp = "laser";
+  }
+  if (level >= 4 && random() > 0.62) {
+    const bombTarget = pick();
+    if (bombTarget && !bombTarget.powerUp) bombTarget.powerUp = "bomb";
+  }
+  return targets;
+}
+
+function powerUpLabel(type) {
+  if (type === "rocket") return "R";
+  if (type === "laser") return "L";
+  if (type === "bomb") return "B";
+  return "?";
+}
+
+function powerUpColor(type) {
+  if (type === "rocket") return "#f97316";
+  if (type === "laser") return "#38bdf8";
+  if (type === "bomb") return "#facc15";
+  return "#ffffff";
 }
 
 function drawTargetTile(target) {
@@ -470,6 +503,120 @@ function drawTargetTile(target) {
   ctx.fill();
 
   ctx.restore();
+}
+
+function drawPowerUp(item) {
+  ctx.save();
+  const color = powerUpColor(item.type);
+  ctx.shadowColor = color;
+  ctx.shadowBlur = 14;
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  ctx.arc(item.x, item.y, item.r, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.shadowColor = "transparent";
+  ctx.strokeStyle = "rgba(255,255,255,0.75)";
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  ctx.fillStyle = "#111217";
+  ctx.font = "900 13px Inter, sans-serif";
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillText(powerUpLabel(item.type), item.x, item.y + 0.5);
+  ctx.restore();
+}
+
+function destroyTarget(target, multiplier = 1) {
+  if (!target || !target.alive || target.kind === "obstacle") return 0;
+  target.alive = false;
+  const points = Math.round((target.value || 100) * multiplier);
+  game.hits += 1;
+  game.score += points;
+  if (target.powerUp) {
+    game.powerUps.push({
+      type: target.powerUp,
+      x: target.x + target.w / 2,
+      y: target.y + target.h / 2,
+      r: target.powerUp === "bomb" ? 10 : 9,
+      vy: 128,
+    });
+    target.powerUp = "";
+  }
+  return points;
+}
+
+function explodeAt(x, y, radius) {
+  let destroyed = 0;
+  for (const target of game.targets) {
+    if (!target.alive || target.kind === "obstacle") continue;
+    const centerX = target.x + target.w / 2;
+    const centerY = target.y + target.h / 2;
+    if (Math.hypot(centerX - x, centerY - y) <= radius) {
+      destroyTarget(target, 0.85);
+      destroyed += 1;
+    }
+  }
+  if (destroyed) {
+    game.rally += destroyed;
+    playTone(196 + destroyed * 18, 0.16, { type: "triangle", gain: 0.075, slideTo: 392 + destroyed * 20 });
+  }
+}
+
+function activatePowerUp(type) {
+  if (type === "rocket") {
+    explodeAt(game.ball.x, game.ball.y, 96);
+  } else if (type === "laser") {
+    game.laserUntil = performance.now() + 5000;
+    playTone(783.99, 0.12, { type: "sine", gain: 0.07 });
+  } else if (type === "bomb") {
+    let destroyed = 0;
+    for (const target of game.targets) {
+      if (target.alive && target.kind !== "obstacle") {
+        destroyTarget(target, 0.65);
+        destroyed += 1;
+      }
+    }
+    game.rally += destroyed;
+    playTone(110, 0.32, { type: "sawtooth", gain: 0.095, slideTo: 55 });
+  }
+}
+
+function updatePowerUps(dt) {
+  if (!game.powerUps?.length) return;
+  game.powerUps.forEach((item) => {
+    item.y += item.vy * dt;
+  });
+  game.powerUps = game.powerUps.filter((item) => {
+    const caught =
+      item.y + item.r >= game.paddle.y &&
+      item.y - item.r <= game.paddle.y + game.paddle.h &&
+      item.x >= game.paddle.x &&
+      item.x <= game.paddle.x + game.paddle.w;
+    if (caught) {
+      activatePowerUp(item.type);
+      return false;
+    }
+    return item.y - item.r <= canvas.height;
+  });
+}
+
+function updateLasers(dt) {
+  if (!game.laserUntil || performance.now() > game.laserUntil) return;
+  game.laserTimer = (game.laserTimer || 0) - dt;
+  if (game.laserTimer > 0) return;
+  game.laserTimer = 0.22;
+  const beams = [game.paddle.x + 12, game.paddle.x + game.paddle.w - 12];
+  let hit = false;
+  for (const beamX of beams) {
+    const targets = game.targets
+      .filter((target) => target.alive && target.kind !== "obstacle" && beamX >= target.x && beamX <= target.x + target.w)
+      .sort((a, b) => b.y - a.y);
+    if (targets[0]) {
+      destroyTarget(targets[0], 1);
+      hit = true;
+    }
+  }
+  if (hit) playTone(987.77, 0.06, { type: "square", gain: 0.045 });
 }
 
 function drawGameCoverBackground() {
@@ -568,6 +715,9 @@ function prepareLevel(level) {
   game.ball.pendingVy = launchVy;
   game.ball.speed = config.speed;
   game.targets = generateLevelObjects(challenge?.seed, level);
+  game.powerUps = [];
+  game.laserUntil = 0;
+  game.laserTimer = 0;
 }
 
 function launchLevel() {
@@ -594,6 +744,9 @@ function resetGame() {
     levelStartedAt: performance.now(),
     levelClearUntil: 0,
     waitingForServe: true,
+    powerUps: [],
+    laserUntil: 0,
+    laserTimer: 0,
     rally: 0,
     paddle: {
       x: canvas.width / 2 - 72,
@@ -674,8 +827,21 @@ function draw() {
     if (!target.alive) return;
     drawTargetTile(target);
   });
+  game.powerUps?.forEach(drawPowerUp);
 
   drawPaddle();
+  if (game.laserUntil && performance.now() < game.laserUntil) {
+    ctx.save();
+    ctx.strokeStyle = "rgba(56, 189, 248, 0.88)";
+    ctx.lineWidth = 3;
+    [game.paddle.x + 12, game.paddle.x + game.paddle.w - 12].forEach((beamX) => {
+      ctx.beginPath();
+      ctx.moveTo(beamX, game.paddle.y);
+      ctx.lineTo(beamX, 42);
+      ctx.stroke();
+    });
+    ctx.restore();
+  }
   ctx.fillStyle = "#ffffff";
   ctx.beginPath();
   ctx.arc(game.ball.x, game.ball.y, game.ball.r, 0, Math.PI * 2);
@@ -789,8 +955,13 @@ function update(dt) {
   if (game.waitingForServe) {
     ball.x = paddle.x + paddle.w / 2;
     ball.y = paddle.y - ball.r - 8;
+    updatePowerUps(dt);
+    updateLasers(dt);
     return;
   }
+
+  updatePowerUps(dt);
+  updateLasers(dt);
 
   ball.x += ball.vx * dt;
   ball.y += ball.vy * dt;
@@ -833,10 +1004,9 @@ function update(dt) {
       game.score += 8 + game.level;
       playTone(174.61 + Math.min(120, game.level * 4), 0.08, { type: "square", gain: 0.038 });
     } else {
-      target.alive = false;
-      game.hits += 1;
+      destroyTarget(target, 1);
       game.rally += 2;
-      game.score += target.value + Math.min(360, game.rally * 12) + game.level * 5;
+      game.score += Math.min(360, game.rally * 12) + game.level * 5;
       playTone(target.bonus ? 659.25 : 523.25, 0.13, { type: "sine", gain: target.bonus ? 0.09 : 0.07, slideTo: target.bonus ? 880 : 659.25 });
     }
     break;
@@ -902,9 +1072,12 @@ function bindControls() {
       target?.isContentEditable;
     if (isTyping) return;
     if (event.key === " " || event.code === "Space") launchLevel();
-    if (["ArrowLeft", "ArrowRight", "a", "A", "d", "D"].includes(event.key)) inputMode = "keyboard";
+    if (movementKeys.includes(event.key)) {
+      inputMode = "keyboard";
+      pointerX = null;
+    }
     keys.add(event.key);
-    if (["ArrowLeft", "ArrowRight", "a", "A", "d", "D", " "].includes(event.key)) event.preventDefault();
+    if ([...movementKeys, " "].includes(event.key)) event.preventDefault();
   });
   window.addEventListener("keyup", (event) => {
     const target = event.target;
@@ -920,11 +1093,13 @@ function bindControls() {
     if (!canvas) return;
     const rect = canvas.getBoundingClientRect();
     inputMode = "pointer";
+    movementKeys.forEach((key) => keys.delete(key));
     pointerX = ((event.clientX - rect.left) / rect.width) * canvas.width;
   });
   canvas?.addEventListener("pointerdown", (event) => {
     const rect = canvas.getBoundingClientRect();
     inputMode = "pointer";
+    movementKeys.forEach((key) => keys.delete(key));
     pointerX = ((event.clientX - rect.left) / rect.width) * canvas.width;
     launchLevel();
     canvas.setPointerCapture?.(event.pointerId);
