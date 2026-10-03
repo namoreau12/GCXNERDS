@@ -3324,6 +3324,62 @@ html[data-gcx-debug-image-cards="true"] .hero-copy {
   color: var(--muted);
 }
 
+.search-starter-panel {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.search-starter-copy {
+  display: grid;
+  gap: 5px;
+}
+
+.search-starter-copy strong {
+  font-size: 1.12rem;
+}
+
+.search-starter-copy span {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.search-starter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.search-starter-grid a {
+  display: grid;
+  gap: 6px;
+  min-height: 100%;
+  padding: 14px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid rgba(36, 40, 48, 0.1);
+  border-radius: 8px;
+}
+
+.search-starter-grid a:hover {
+  border-color: rgba(217, 59, 53, 0.38);
+  box-shadow: 0 10px 24px rgba(17, 18, 23, 0.08);
+}
+
+.search-starter-grid strong {
+  font-size: 0.98rem;
+}
+
+.search-starter-grid span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
 .tcg-tools-strip {
   display: grid;
   grid-template-columns: minmax(260px, 1.2fr) repeat(3, minmax(0, 1fr));
@@ -10288,6 +10344,7 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   .pikachu-ex-grid,
   .pikachu-status-panel,
   .search-results-grid,
+  .search-starter-grid,
   .trust-standard-grid,
   .tcg-tools-strip,
   .sponsor-mini-grid,
@@ -10519,6 +10576,7 @@ html[data-gcx-debug-image-cards="true"] :is(.story-card-image, .news-card-image,
   .editorial-gallery > div,
   .culture-loop-grid,
   .search-results-grid,
+  .search-starter-grid,
   .trust-standard-grid,
   .sponsor-mini-grid,
   .home-streamer-grid,

@@ -93,13 +93,68 @@ function resultTypeLabel(type) {
   return labels[String(type || "").toLowerCase()] || "Result";
 }
 
-function emptyResultsMessage(query) {
+const searchStarterLinks = [
+  {
+    label: "Latest news",
+    href: "news.html",
+    body: "Original GCX reporting, major updates, and collector watchlists.",
+  },
+  {
+    label: "Game database",
+    href: "games.html",
+    body: "Browse platform records, source-backed overviews, and collector notes.",
+  },
+  {
+    label: "Card indexes",
+    href: "pokemon.html",
+    body: "Jump into Pokemon, Magic, and Yu-Gi-Oh card search paths.",
+  },
+  {
+    label: "Community feed",
+    href: "community.html",
+    body: "See posts, clips, pulls, comments, groups, and events.",
+  },
+  {
+    label: "Streamer highlights",
+    href: "streamers.html",
+    body: "Find spotlight creators, official streams, replays, and nominations.",
+  },
+  {
+    label: "Marketplace beta",
+    href: "index.html#cards",
+    body: "Track interest for games, cards, consoles, and bundles.",
+  },
+];
+
+function searchStarterGrid(query = "") {
+  const heading = query
+    ? `No Games Exchange results matched "${escapeHtml(query)}".`
+    : "Start with a GCX lane.";
+  const body = query
+    ? "Try one of these paths, or search a broader game, card, creator, or community term."
+    : "Search everything, or jump straight into the part of Games Exchange you came for.";
   return `
-    <div class="index-message search-empty-state">
-      <strong>No Games Exchange results matched "${escapeHtml(query)}".</strong>
-      <span>Try Pokemon, Final Fantasy, streamers, community, Magic, or another game title.</span>
+    <div class="search-starter-panel">
+      <div class="search-starter-copy">
+        <strong>${heading}</strong>
+        <span>${body}</span>
+      </div>
+      <div class="search-starter-grid">
+        ${searchStarterLinks
+          .map((item) => `
+            <a href="${escapeHtml(item.href)}">
+              <strong>${escapeHtml(item.label)}</strong>
+              <span>${escapeHtml(item.body)}</span>
+            </a>
+          `)
+          .join("")}
+      </div>
     </div>
   `;
+}
+
+function emptyResultsMessage(query) {
+  return searchStarterGrid(query);
 }
 
 function resultCard(result) {
@@ -124,7 +179,7 @@ async function runSearch(query) {
   if (searchInput) searchInput.value = query;
   if (!q) {
     searchHeading.textContent = "Search results";
-    searchResults.innerHTML = `<div class="index-message">Enter a search above.</div>`;
+    searchResults.innerHTML = searchStarterGrid();
     return;
   }
 
