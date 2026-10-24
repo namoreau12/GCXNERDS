@@ -3086,8 +3086,19 @@ async function handleArcadeApi(req, res, url) {
         .filter((row) => row.gameId && row.submittedAt)
         .sort((a, b) => new Date(b.submittedAt) - new Date(a.submittedAt))
         .slice(0, 1000);
-      saveArcadeData(data);
-      if (changedRow) await persistArcadeScore(changedRow);
+      const scoreToSave = changedRow || existing;
+      if (supabaseConfigured()) {
+        const saved = await persistArcadeScore(scoreToSave);
+        if (!saved.ok) {
+          sendJson(res, 503, { error: "Your score could not be saved. Please try submitting again." });
+          return;
+        }
+      }
+      const savedLocally = saveArcadeData(data);
+      if (!supabaseConfigured() && !savedLocally) {
+        sendJson(res, 503, { error: "Score storage is unavailable. Please try submitting again." });
+        return;
+      }
 
       sendJson(res, 201, {
         data: {
